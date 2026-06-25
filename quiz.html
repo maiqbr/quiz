@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz de Bandeiras</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0810;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #f1f0ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ── */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 28px;
+    border-bottom: 1px solid rgba(139,92,246,0.2);
+    background: rgba(255,255,255,0.02);
+    flex-shrink: 0;
+    gap: 12px;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .logo-icon {
+    width: 32px; height: 32px;
+    background: linear-gradient(135deg, #7c3aed, #ec4899);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+  }
+  .logo-text { font-size: 16px; font-weight: 600; color: #f1f0ff; }
+  .logo-text span { color: #a78bfa; }
+
+  .header-center { display: flex; align-items: center; gap: 10px; }
+
+  .round-pill {
+    background: rgba(139,92,246,0.12);
+    border: 1px solid rgba(139,92,246,0.3);
+    border-radius: 99px;
+    padding: 5px 16px;
+    font-size: 13px;
+    color: #a78bfa;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .mode-pill {
+    border-radius: 99px;
+    padding: 5px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    border: 1px solid;
+  }
+  .mode-pill.all    { background: rgba(139,92,246,0.1); border-color: rgba(139,92,246,0.3); color: #a78bfa; }
+  .mode-pill.copa   { background: rgba(234,179,8,0.1);  border-color: rgba(234,179,8,0.3);  color: #fbbf24; }
+  .mode-pill.cont   { background: rgba(236,72,153,0.1); border-color: rgba(236,72,153,0.3); color: #f9a8d4; }
+
+  .header-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+  .acertos-badge {
+    background: rgba(52,211,153,0.1);
+    border: 1px solid rgba(52,211,153,0.25);
+    border-radius: 99px;
+    padding: 5px 14px;
+    font-size: 12px;
+    color: #34d399;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .hdr-btn {
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid;
+    font-family: inherit;
+    transition: all 0.12s;
+    display: flex; align-items: center; gap: 6px;
+    white-space: nowrap;
+  }
+  .hdr-btn:active { transform: scale(0.97); }
+  .btn-mode-hdr {
+    border-color: rgba(139,92,246,0.35);
+    background: rgba(139,92,246,0.1);
+    color: #a78bfa;
+  }
+  .btn-mode-hdr:hover { background: rgba(139,92,246,0.2); }
+  .btn-reset-hdr {
+    border-color: rgba(248,113,113,0.3);
+    background: rgba(248,113,113,0.07);
+    color: #f87171;
+  }
+  .btn-reset-hdr:hover { background: rgba(248,113,113,0.15); }
+
+  /* ── Main ── */
+  .main { flex: 1; display: flex; overflow: hidden; }
+
+  /* ── Left ── */
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px 40px;
+    border-right: 1px solid rgba(139,92,246,0.15);
+    position: relative;
+  }
+  .glow-orb {
+    position: absolute;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(124,58,237,0.06);
+    filter: blur(60px);
+    pointer-events: none;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .flag-card {
+    width: 360px; height: 240px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(139,92,246,0.05);
+    border: 1px solid rgba(139,92,246,0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  .flag-card::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, rgba(139,92,246,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  #flag-img { width: 280px; height: 186px; object-fit: contain; border-radius: 4px; display: block; }
+  #flag-placeholder { font-size: 48px; color: rgba(139,92,246,0.3); display: none; }
+
+  #country-reveal { font-size: 15px; color: #9b91c1; min-height: 22px; letter-spacing: 0.04em; text-align: center; }
+
+  .input-area {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 12px; width: 100%; max-width: 400px;
+  }
+  #guess-input {
+    width: 100%; font-size: 17px;
+    padding: 13px 20px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(139,92,246,0.35);
+    background: rgba(255,255,255,0.04);
+    color: #f1f0ff; text-align: center; outline: none;
+    transition: border-color 0.15s, background 0.15s;
+    font-family: inherit;
+  }
+  #guess-input::placeholder { color: #4e4470; }
+  #guess-input:focus { border-color: #a78bfa; background: rgba(139,92,246,0.07); }
+  #guess-input.correct { border-color: #34d399; background: rgba(52,211,153,0.08); color: #34d399; }
+  #guess-input.wrong   { border-color: #f87171; background: rgba(248,113,113,0.08); color: #f87171; }
+
+  #feedback { font-size: 14px; font-weight: 500; min-height: 20px; text-align: center; }
+  #feedback.success { color: #34d399; }
+  #feedback.danger  { color: #f87171; }
+
+  .btn-row { display: flex; gap: 10px; }
+  .btn {
+    padding: 10px 26px; border-radius: 11px;
+    font-size: 14px; font-weight: 500; cursor: pointer;
+    border: 1.5px solid; font-family: inherit;
+    transition: all 0.12s; display: flex; align-items: center; gap: 7px;
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn-skip { border-color: rgba(248,113,113,0.4); background: rgba(248,113,113,0.07); color: #f87171; }
+  .btn-skip:hover { background: rgba(248,113,113,0.15); }
+  .btn-next { border-color: #7c3aed; background: #7c3aed; color: #fff; }
+  .btn-next:hover { background: #6d28d9; }
+
+  /* ── Right panel ── */
+  .right {
+    width: 280px; display: flex; flex-direction: column;
+    background: rgba(255,255,255,0.015); flex-shrink: 0;
+  }
+  .panel-header {
+    padding: 16px 18px 12px;
+    border-bottom: 1px solid rgba(139,92,246,0.15);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .panel-title { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6b5fa0; }
+  #players-list {
+    flex: 1; overflow-y: auto; padding: 10px 12px;
+    display: flex; flex-direction: column; gap: 6px;
+    scrollbar-width: thin; scrollbar-color: rgba(139,92,246,0.2) transparent;
+  }
+  #players-list::-webkit-scrollbar { width: 4px; }
+  #players-list::-webkit-scrollbar-thumb { background: rgba(139,92,246,0.2); border-radius: 99px; }
+
+  .player-row {
+    display: flex; align-items: center; gap: 9px;
+    padding: 9px 11px; border-radius: 10px;
+    border: 1px solid rgba(139,92,246,0.15);
+    background: rgba(255,255,255,0.02);
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .player-row.leader { border-color: rgba(167,139,250,0.45); background: rgba(139,92,246,0.08); }
+  .player-avatar {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: rgba(139,92,246,0.18); border: 1px solid rgba(139,92,246,0.3);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 600; color: #a78bfa;
+    flex-shrink: 0; text-transform: uppercase;
+  }
+  .leader .player-avatar { background: rgba(236,72,153,0.18); border-color: rgba(236,72,153,0.35); color: #f9a8d4; }
+  .player-info { flex: 1; min-width: 0; }
+  .player-name { font-size: 13px; font-weight: 500; color: #e2deff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .leader .player-name { color: #c4b5fd; }
+  .player-rank { font-size: 11px; color: #6b5fa0; margin-top: 1px; }
+  .leader .player-rank { color: #9b80e4; }
+  .score-controls { display: flex; align-items: center; gap: 5px; }
+  .score-val { font-size: 17px; font-weight: 600; min-width: 24px; text-align: center; color: #f1f0ff; }
+  .leader .score-val { color: #f9a8d4; }
+  .sc-btn {
+    width: 24px; height: 24px; border-radius: 6px;
+    border: 1px solid rgba(139,92,246,0.3); background: transparent;
+    color: #6b5fa0; font-size: 15px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: all 0.1s; font-family: inherit; line-height: 1;
+  }
+  .sc-btn:hover { background: rgba(139,92,246,0.18); color: #a78bfa; border-color: rgba(139,92,246,0.5); }
+  .del-btn {
+    width: 20px; height: 20px; border: none; background: transparent;
+    color: #4e4470; font-size: 13px; cursor: pointer; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    transition: color 0.1s; flex-shrink: 0;
+  }
+  .del-btn:hover { color: #f87171; }
+  .add-section {
+    padding: 10px 12px 14px; border-top: 1px solid rgba(139,92,246,0.15);
+    display: flex; gap: 7px;
+  }
+  #new-player-input {
+    flex: 1; font-size: 13px; padding: 8px 11px;
+    border-radius: 8px; border: 1px solid rgba(139,92,246,0.25);
+    background: rgba(255,255,255,0.03); color: #f1f0ff;
+    outline: none; font-family: inherit;
+  }
+  #new-player-input::placeholder { color: #4e4470; }
+  #new-player-input:focus { border-color: #a78bfa; background: rgba(139,92,246,0.06); }
+  #btn-add {
+    padding: 8px 13px; font-size: 13px; font-weight: 500;
+    border-radius: 8px; border: 1px solid rgba(139,92,246,0.4);
+    background: rgba(124,58,237,0.14); color: #a78bfa;
+    cursor: pointer; font-family: inherit; transition: background 0.12s; white-space: nowrap;
+  }
+  #btn-add:hover { background: rgba(124,58,237,0.28); }
+
+  /* ── Modal overlay ── */
+  .overlay {
+    position: fixed; inset: 0;
+    background: rgba(5,3,12,0.82);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+  }
+  .overlay.hidden { display: none; }
+
+  .modal {
+    background: #120f1e;
+    border: 1px solid rgba(139,92,246,0.3);
+    border-radius: 20px;
+    padding: 32px 36px;
+    width: 520px;
+    max-width: 95vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(139,92,246,0.2) transparent;
+  }
+  .modal-title {
+    font-size: 18px; font-weight: 600; color: #f1f0ff;
+    margin-bottom: 6px;
+  }
+  .modal-sub {
+    font-size: 13px; color: #6b5fa0; margin-bottom: 28px; line-height: 1.5;
+  }
+
+  /* mode cards */
+  .mode-section-title {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #6b5fa0; margin-bottom: 12px;
+  }
+  .mode-cards { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+  .mode-card {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 16px; border-radius: 13px;
+    border: 1.5px solid rgba(139,92,246,0.15);
+    background: rgba(255,255,255,0.02);
+    cursor: pointer; transition: all 0.15s;
+  }
+  .mode-card:hover { border-color: rgba(139,92,246,0.4); background: rgba(139,92,246,0.07); }
+  .mode-card.selected { border-color: #7c3aed; background: rgba(139,92,246,0.12); }
+  .mode-card.selected.copa { border-color: #d97706; background: rgba(234,179,8,0.08); }
+  .mode-icon {
+    width: 40px; height: 40px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+  .mode-info { flex: 1; }
+  .mode-name { font-size: 14px; font-weight: 600; color: #e2deff; margin-bottom: 2px; }
+  .mode-desc { font-size: 12px; color: #6b5fa0; line-height: 1.4; }
+  .mode-count {
+    font-size: 11px; font-weight: 600; border-radius: 99px; padding: 3px 10px;
+    border: 1px solid;
+  }
+
+  /* continent grid */
+  .cont-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 24px; }
+  .cont-card {
+    display: flex; align-items: center; gap: 10px;
+    padding: 11px 13px; border-radius: 11px;
+    border: 1.5px solid rgba(139,92,246,0.15);
+    background: rgba(255,255,255,0.02);
+    cursor: pointer; transition: all 0.15s;
+  }
+  .cont-card:hover { border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.06); }
+  .cont-card.selected { border-color: #ec4899; background: rgba(236,72,153,0.1); }
+  .cont-icon { font-size: 20px; }
+  .cont-info { flex: 1; }
+  .cont-name { font-size: 13px; font-weight: 500; color: #e2deff; }
+  .cont-count { font-size: 11px; color: #6b5fa0; }
+
+  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 8px; }
+  .modal-btn {
+    padding: 10px 22px; border-radius: 10px; font-size: 14px; font-weight: 500;
+    cursor: pointer; border: 1.5px solid; font-family: inherit; transition: all 0.12s;
+  }
+  .modal-btn:active { transform: scale(0.97); }
+  .modal-btn-cancel { border-color: rgba(139,92,246,0.25); background: transparent; color: #6b5fa0; }
+  .modal-btn-cancel:hover { color: #a78bfa; border-color: rgba(139,92,246,0.45); }
+  .modal-btn-confirm { border-color: #7c3aed; background: #7c3aed; color: #fff; }
+  .modal-btn-confirm:hover { background: #6d28d9; }
+  .modal-btn-danger { border-color: rgba(248,113,113,0.4); background: rgba(248,113,113,0.08); color: #f87171; }
+  .modal-btn-danger:hover { background: rgba(248,113,113,0.18); }
+
+  /* confirm modal */
+  .confirm-icon { font-size: 36px; margin-bottom: 14px; }
+  .confirm-title { font-size: 17px; font-weight: 600; color: #f1f0ff; margin-bottom: 8px; }
+  .confirm-text { font-size: 13px; color: #9b91c1; line-height: 1.6; margin-bottom: 28px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🌍</div>
+    <div class="logo-text">Quiz de <span>Bandeiras</span></div>
+  </div>
+  <div class="header-center">
+    <div class="round-pill" id="round-label">Rodada 1</div>
+    <div class="mode-pill all" id="mode-pill">Todos os países</div>
+  </div>
+  <div class="header-right">
+    <div class="acertos-badge" id="acertos-badge">0 acertos</div>
+    <button class="hdr-btn btn-mode-hdr" id="btn-open-mode">⚙ Modo de jogo</button>
+    <button class="hdr-btn btn-reset-hdr" id="btn-open-reset">↺ Reiniciar</button>
+  </div>
+</header>
+
+<div class="main">
+  <div class="left">
+    <div class="glow-orb"></div>
+    <div class="flag-card">
+      <img id="flag-img" src="" alt="Bandeira" />
+      <div id="flag-placeholder">🏳</div>
+    </div>
+    <div id="country-reveal"></div>
+    <div class="input-area">
+      <input id="guess-input" type="text" placeholder="Digite o nome do país..." autocomplete="off" spellcheck="false" />
+      <div id="feedback">&nbsp;</div>
+      <div class="btn-row">
+        <button class="btn btn-skip" id="btn-skip">✕ Desistir</button>
+        <button class="btn btn-next" id="btn-next" style="display:none">Próxima →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="panel-header">
+      <span style="font-size:15px">🏆</span>
+      <span class="panel-title">Placar</span>
+    </div>
+    <div id="players-list"></div>
+    <div class="add-section">
+      <input id="new-player-input" type="text" placeholder="Nome do jogador..." />
+      <button id="btn-add">+ Add</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: modo de jogo -->
+<div class="overlay hidden" id="overlay-mode">
+  <div class="modal">
+    <div class="modal-title">Modo de jogo</div>
+    <div class="modal-sub">Escolha o conjunto de países para o quiz. A fila atual será reiniciada.</div>
+
+    <div class="mode-section-title">Categorias</div>
+    <div class="mode-cards">
+      <div class="mode-card selected" data-mode="all">
+        <div class="mode-icon" style="background:rgba(139,92,246,0.15)">🌍</div>
+        <div class="mode-info">
+          <div class="mode-name">Todos os países</div>
+          <div class="mode-desc">Todos os países do mundo com bandeira disponível</div>
+        </div>
+        <div class="mode-count" style="background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.3);color:#a78bfa" id="count-all">— países</div>
+      </div>
+      <div class="mode-card" data-mode="copa">
+        <div class="mode-icon" style="background:rgba(234,179,8,0.12)">⚽</div>
+        <div class="mode-info">
+          <div class="mode-name">Copa do Mundo FIFA 2026</div>
+          <div class="mode-desc">48 seleções classificadas para a Copa de 2026 (EUA, México e Canadá)</div>
+        </div>
+        <div class="mode-count" style="background:rgba(234,179,8,0.1);border-color:rgba(234,179,8,0.3);color:#fbbf24">48 países</div>
+      </div>
+      <div class="mode-card" data-mode="continente">
+        <div class="mode-icon" style="background:rgba(236,72,153,0.12)">🗺️</div>
+        <div class="mode-info">
+          <div class="mode-name">Por continente</div>
+          <div class="mode-desc">Escolha um continente específico abaixo</div>
+        </div>
+        <div class="mode-count" style="background:rgba(236,72,153,0.1);border-color:rgba(236,72,153,0.3);color:#f9a8d4">6 opções</div>
+      </div>
+    </div>
+
+    <div id="cont-section" style="display:none">
+      <div class="mode-section-title">Escolha o continente</div>
+      <div class="cont-grid">
+        <div class="cont-card selected" data-cont="americas">
+          <span class="cont-icon">🌎</span>
+          <div class="cont-info">
+            <div class="cont-name">Américas</div>
+            <div class="cont-count" id="cc-americas">— países</div>
+          </div>
+        </div>
+        <div class="cont-card" data-cont="europa">
+          <span class="cont-icon">🏰</span>
+          <div class="cont-info">
+            <div class="cont-name">Europa</div>
+            <div class="cont-count" id="cc-europa">— países</div>
+          </div>
+        </div>
+        <div class="cont-card" data-cont="africa">
+          <span class="cont-icon">🌍</span>
+          <div class="cont-info">
+            <div class="cont-name">África</div>
+            <div class="cont-count" id="cc-africa">— países</div>
+          </div>
+        </div>
+        <div class="cont-card" data-cont="asia">
+          <span class="cont-icon">🏯</span>
+          <div class="cont-info">
+            <div class="cont-name">Ásia</div>
+            <div class="cont-count" id="cc-asia">— países</div>
+          </div>
+        </div>
+        <div class="cont-card" data-cont="oceania">
+          <span class="cont-icon">🦘</span>
+          <div class="cont-info">
+            <div class="cont-name">Oceania</div>
+            <div class="cont-count" id="cc-oceania">— países</div>
+          </div>
+        </div>
+        <div class="cont-card" data-cont="oriente">
+          <span class="cont-icon">🕌</span>
+          <div class="cont-info">
+            <div class="cont-name">Oriente Médio</div>
+            <div class="cont-count" id="cc-oriente">— países</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="modal-btn modal-btn-cancel" id="btn-mode-cancel">Cancelar</button>
+      <button class="modal-btn modal-btn-confirm" id="btn-mode-confirm">Aplicar modo</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: confirmar reset -->
+<div class="overlay hidden" id="overlay-reset">
+  <div class="modal" style="width:380px;text-align:center">
+    <div class="confirm-icon">↺</div>
+    <div class="confirm-title">Reiniciar o quiz?</div>
+    <div class="confirm-text">
+      Isso volta para a Rodada 1 e embaralha uma nova fila de países.<br>
+      O placar dos jogadores <strong style="color:#f1f0ff">não</strong> será apagado.
+    </div>
+    <div class="modal-actions" style="justify-content:center">
+      <button class="modal-btn modal-btn-cancel" id="btn-reset-cancel">Cancelar</button>
+      <button class="modal-btn modal-btn-danger" id="btn-reset-confirm">Sim, reiniciar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Dataset ──
+const ALL = [
+  // Américas do Sul
+  {code:"br",name:"Brasil",a:["brazil","brasil"],cont:"americas"},
+  {code:"ar",name:"Argentina",a:["argentina"],cont:"americas"},
+  {code:"cl",name:"Chile",a:["chile"],cont:"americas"},
+  {code:"co",name:"Colômbia",a:["colombia"],cont:"americas"},
+  {code:"pe",name:"Peru",a:["peru"],cont:"americas"},
+  {code:"ve",name:"Venezuela",a:["venezuela"],cont:"americas"},
+  {code:"bo",name:"Bolívia",a:["bolivia"],cont:"americas"},
+  {code:"ec",name:"Equador",a:["equador","ecuador"],cont:"americas"},
+  {code:"py",name:"Paraguai",a:["paraguai","paraguay"],cont:"americas"},
+  {code:"uy",name:"Uruguai",a:["uruguai","uruguay"],cont:"americas"},
+  {code:"gy",name:"Guiana",a:["guiana","guyana"],cont:"americas"},
+  {code:"sr",name:"Suriname",a:["suriname"],cont:"americas"},
+  // América Central e Caribe
+  {code:"mx",name:"México",a:["mexico"],cont:"americas"},
+  {code:"cu",name:"Cuba",a:["cuba"],cont:"americas"},
+  {code:"pa",name:"Panamá",a:["panama"],cont:"americas"},
+  {code:"cr",name:"Costa Rica",a:["costa rica"],cont:"americas"},
+  {code:"gt",name:"Guatemala",a:["guatemala"],cont:"americas"},
+  {code:"hn",name:"Honduras",a:["honduras"],cont:"americas"},
+  {code:"sv",name:"El Salvador",a:["el salvador","salvador"],cont:"americas"},
+  {code:"ni",name:"Nicarágua",a:["nicaragua"],cont:"americas"},
+  {code:"do",name:"República Dominicana",a:["republica dominicana","dominican republic","rd"],cont:"americas"},
+  {code:"ht",name:"Haiti",a:["haiti"],cont:"americas"},
+  {code:"jm",name:"Jamaica",a:["jamaica"],cont:"americas"},
+  {code:"tt",name:"Trinidad e Tobago",a:["trinidad","trinidad e tobago"],cont:"americas"},
+  {code:"bb",name:"Barbados",a:["barbados"],cont:"americas"},
+  {code:"bs",name:"Bahamas",a:["bahamas"],cont:"americas"},
+  // América do Norte
+  {code:"us",name:"Estados Unidos",a:["estados unidos","usa","eua","united states","america","estados"],cont:"americas"},
+  {code:"ca",name:"Canadá",a:["canada"],cont:"americas"},
+  // Europa
+  {code:"pt",name:"Portugal",a:["portugal"],cont:"europa"},
+  {code:"es",name:"Espanha",a:["espanha","spain"],cont:"europa"},
+  {code:"fr",name:"França",a:["franca","france"],cont:"europa"},
+  {code:"de",name:"Alemanha",a:["alemanha","germany"],cont:"europa"},
+  {code:"it",name:"Itália",a:["italia","italy"],cont:"europa"},
+  {code:"gb",name:"Reino Unido",a:["reino unido","uk","united kingdom","inglaterra","england"],cont:"europa"},
+  {code:"nl",name:"Holanda",a:["holanda","netherlands","paises baixos"],cont:"europa"},
+  {code:"be",name:"Bélgica",a:["belgica","belgium"],cont:"europa"},
+  {code:"ch",name:"Suíça",a:["suica","switzerland"],cont:"europa"},
+  {code:"at",name:"Áustria",a:["austria"],cont:"europa"},
+  {code:"se",name:"Suécia",a:["suecia","sweden"],cont:"europa"},
+  {code:"no",name:"Noruega",a:["noruega","norway"],cont:"europa"},
+  {code:"dk",name:"Dinamarca",a:["dinamarca","denmark"],cont:"europa"},
+  {code:"fi",name:"Finlândia",a:["finlandia","finland"],cont:"europa"},
+  {code:"pl",name:"Polônia",a:["polonia","poland"],cont:"europa"},
+  {code:"gr",name:"Grécia",a:["grecia","greece"],cont:"europa"},
+  {code:"cz",name:"República Tcheca",a:["republica tcheca","czech republic","tchequia","czechia"],cont:"europa"},
+  {code:"sk",name:"Eslováquia",a:["eslovaquia","slovakia"],cont:"europa"},
+  {code:"hu",name:"Hungria",a:["hungria","hungary"],cont:"europa"},
+  {code:"ro",name:"Romênia",a:["romenia","romania"],cont:"europa"},
+  {code:"bg",name:"Bulgária",a:["bulgaria"],cont:"europa"},
+  {code:"hr",name:"Croácia",a:["croacia","croatia"],cont:"europa"},
+  {code:"rs",name:"Sérvia",a:["servia","serbia"],cont:"europa"},
+  {code:"ua",name:"Ucrânia",a:["ucrania","ukraine"],cont:"europa"},
+  {code:"ie",name:"Irlanda",a:["irlanda","ireland"],cont:"europa"},
+  {code:"is",name:"Islândia",a:["islandia","iceland"],cont:"europa"},
+  {code:"lu",name:"Luxemburgo",a:["luxemburgo","luxembourg"],cont:"europa"},
+  {code:"mt",name:"Malta",a:["malta"],cont:"europa"},
+  {code:"cy",name:"Chipre",a:["chipre","cyprus"],cont:"europa"},
+  {code:"al",name:"Albânia",a:["albania"],cont:"europa"},
+  {code:"ba",name:"Bósnia",a:["bosnia","bosnia e herzegovina"],cont:"europa"},
+  {code:"mk",name:"Macedônia do Norte",a:["macedonia","north macedonia","macedonia do norte"],cont:"europa"},
+  {code:"me",name:"Montenegro",a:["montenegro"],cont:"europa"},
+  {code:"si",name:"Eslovênia",a:["eslovenia","slovenia"],cont:"europa"},
+  {code:"lv",name:"Letônia",a:["letonia","latvia"],cont:"europa"},
+  {code:"lt",name:"Lituânia",a:["lituania","lithuania"],cont:"europa"},
+  {code:"ee",name:"Estônia",a:["estonia"],cont:"europa"},
+  {code:"by",name:"Bielorrússia",a:["bielorrussia","belarus"],cont:"europa"},
+  {code:"md",name:"Moldávia",a:["moldavia","moldova"],cont:"europa"},
+  // Ásia
+  {code:"jp",name:"Japão",a:["japao","japan"],cont:"asia"},
+  {code:"cn",name:"China",a:["china"],cont:"asia"},
+  {code:"kr",name:"Coreia do Sul",a:["coreia do sul","south korea","coreia"],cont:"asia"},
+  {code:"kp",name:"Coreia do Norte",a:["coreia do norte","north korea"],cont:"asia"},
+  {code:"in",name:"Índia",a:["india"],cont:"asia"},
+  {code:"pk",name:"Paquistão",a:["paquistao","pakistan"],cont:"asia"},
+  {code:"bd",name:"Bangladesh",a:["bangladesh"],cont:"asia"},
+  {code:"id",name:"Indonésia",a:["indonesia"],cont:"asia"},
+  {code:"my",name:"Malásia",a:["malasia","malaysia"],cont:"asia"},
+  {code:"th",name:"Tailândia",a:["tailandia","thailand"],cont:"asia"},
+  {code:"vn",name:"Vietnã",a:["vietna","vietnam"],cont:"asia"},
+  {code:"ph",name:"Filipinas",a:["filipinas","philippines"],cont:"asia"},
+  {code:"sg",name:"Singapura",a:["singapura","singapore"],cont:"asia"},
+  {code:"mm",name:"Mianmar",a:["mianmar","myanmar","birmania"],cont:"asia"},
+  {code:"kh",name:"Camboja",a:["camboja","cambodia"],cont:"asia"},
+  {code:"la",name:"Laos",a:["laos"],cont:"asia"},
+  {code:"np",name:"Nepal",a:["nepal"],cont:"asia"},
+  {code:"lk",name:"Sri Lanka",a:["sri lanka"],cont:"asia"},
+  {code:"mn",name:"Mongólia",a:["mongolia"],cont:"asia"},
+  {code:"kz",name:"Cazaquistão",a:["cazaquistao","kazakhstan"],cont:"asia"},
+  {code:"uz",name:"Uzbequistão",a:["uzbequistao","uzbekistan"],cont:"asia"},
+  {code:"af",name:"Afeganistão",a:["afeganistao","afghanistan"],cont:"asia"},
+  {code:"ge",name:"Geórgia",a:["georgia"],cont:"asia"},
+  {code:"am",name:"Armênia",a:["armenia"],cont:"asia"},
+  {code:"az",name:"Azerbaijão",a:["azerbaijao","azerbaijan"],cont:"asia"},
+  {code:"ru",name:"Rússia",a:["russia"],cont:"asia"},
+  {code:"tr",name:"Turquia",a:["turquia","turkey"],cont:"asia"},
+  // Oriente Médio
+  {code:"il",name:"Israel",a:["israel"],cont:"oriente"},
+  {code:"sa",name:"Arábia Saudita",a:["arabia saudita","saudi arabia"],cont:"oriente"},
+  {code:"ir",name:"Irã",a:["ira","iran"],cont:"oriente"},
+  {code:"iq",name:"Iraque",a:["iraque","iraq"],cont:"oriente"},
+  {code:"ae",name:"Emirados Árabes",a:["emirados arabes","uae","emirados"],cont:"oriente"},
+  {code:"kw",name:"Kuwait",a:["kuwait"],cont:"oriente"},
+  {code:"bh",name:"Barein",a:["barein","bahrain"],cont:"oriente"},
+  {code:"om",name:"Omã",a:["oma","oman"],cont:"oriente"},
+  {code:"ye",name:"Iêmen",a:["iemen","yemen"],cont:"oriente"},
+  {code:"jo",name:"Jordânia",a:["jordania","jordan"],cont:"oriente"},
+  {code:"lb",name:"Líbano",a:["libano","lebanon"],cont:"oriente"},
+  {code:"sy",name:"Síria",a:["siria","syria"],cont:"oriente"},
+  {code:"qa",name:"Catar",a:["catar","qatar"],cont:"oriente"},
+  // África
+  {code:"za",name:"África do Sul",a:["africa do sul","south africa"],cont:"africa"},
+  {code:"ng",name:"Nigéria",a:["nigeria"],cont:"africa"},
+  {code:"eg",name:"Egito",a:["egito","egypt"],cont:"africa"},
+  {code:"ke",name:"Quênia",a:["quenia","kenya"],cont:"africa"},
+  {code:"gh",name:"Gana",a:["gana","ghana"],cont:"africa"},
+  {code:"ma",name:"Marrocos",a:["marrocos","morocco"],cont:"africa"},
+  {code:"tz",name:"Tanzânia",a:["tanzania"],cont:"africa"},
+  {code:"et",name:"Etiópia",a:["etiopia","ethiopia"],cont:"africa"},
+  {code:"ao",name:"Angola",a:["angola"],cont:"africa"},
+  {code:"mz",name:"Moçambique",a:["mocambique","mozambique"],cont:"africa"},
+  {code:"cv",name:"Cabo Verde",a:["cabo verde"],cont:"africa"},
+  {code:"sn",name:"Senegal",a:["senegal"],cont:"africa"},
+  {code:"ci",name:"Costa do Marfim",a:["costa do marfim","ivory coast"],cont:"africa"},
+  {code:"ml",name:"Mali",a:["mali"],cont:"africa"},
+  {code:"bf",name:"Burkina Faso",a:["burkina faso"],cont:"africa"},
+  {code:"ne",name:"Níger",a:["niger"],cont:"africa"},
+  {code:"td",name:"Chade",a:["chade","chad"],cont:"africa"},
+  {code:"lr",name:"Libéria",a:["liberia"],cont:"africa"},
+  {code:"sl",name:"Serra Leoa",a:["serra leoa","sierra leone"],cont:"africa"},
+  {code:"gn",name:"Guiné",a:["guine","guinea"],cont:"africa"},
+  {code:"mg",name:"Madagascar",a:["madagascar"],cont:"africa"},
+  {code:"zw",name:"Zimbábue",a:["zimbabue","zimbabwe"],cont:"africa"},
+  {code:"zm",name:"Zâmbia",a:["zambia"],cont:"africa"},
+  {code:"mw",name:"Malaui",a:["malawi"],cont:"africa"},
+  {code:"bw",name:"Botsuana",a:["botsuana","botswana"],cont:"africa"},
+  {code:"na",name:"Namíbia",a:["namibia"],cont:"africa"},
+  {code:"rw",name:"Ruanda",a:["ruanda","rwanda"],cont:"africa"},
+  {code:"ug",name:"Uganda",a:["uganda"],cont:"africa"},
+  {code:"cm",name:"Camarões",a:["camaroes","cameroon"],cont:"africa"},
+  {code:"cd",name:"Congo",a:["congo","rdc","rep dem congo"],cont:"africa"},
+  {code:"so",name:"Somália",a:["somalia"],cont:"africa"},
+  {code:"sd",name:"Sudão",a:["sudao","sudan"],cont:"africa"},
+  {code:"ss",name:"Sudão do Sul",a:["sudao do sul","south sudan"],cont:"africa"},
+  {code:"ly",name:"Líbia",a:["libia","libya"],cont:"africa"},
+  {code:"tn",name:"Tunísia",a:["tunisia"],cont:"africa"},
+  {code:"dz",name:"Argélia",a:["argelia","algeria"],cont:"africa"},
+  {code:"bi",name:"Burundi",a:["burundi"],cont:"africa"},
+  // Oceania
+  {code:"au",name:"Austrália",a:["australia"],cont:"oceania"},
+  {code:"nz",name:"Nova Zelândia",a:["nova zelandia","new zealand"],cont:"oceania"},
+  {code:"fj",name:"Fiji",a:["fiji"],cont:"oceania"},
+  {code:"pg",name:"Papua-Nova Guiné",a:["papua","papua nova guine"],cont:"oceania"},
+  {code:"to",name:"Tonga",a:["tonga"],cont:"oceania"},
+  {code:"ws",name:"Samoa",a:["samoa"],cont:"oceania"},
+  {code:"sb",name:"Ilhas Salomão",a:["ilhas salomao","solomon islands"],cont:"oceania"},
+  {code:"vu",name:"Vanuatu",a:["vanuatu"],cont:"oceania"},
+];
+
+// Copa do Mundo FIFA 2026 — 48 seleções classificadas
+const COPA_CODES = new Set([
+  "us","ca","mx",    // anfitriões
+  "br","ar","co","ec","uy","ve","py","bo",  // CONMEBOL
+  "de","fr","es","pt","gb","nl","be","it","hr","at","hu","tr","ro","si","al","me","ge","rs","cz","sk","ua","no","is","ch",  // UEFA
+  "ma","ng","eg","sn","ci","cm","rw","za",  // CAF
+  "jp","kr","sa","ir","ae","jo","uz","bh",  // AFC
+  "us","ca","mx","gt","pa","jm",  // CONCACAF extras
+  "nz","au",  // OFC/AFC
+]);
+// Filtro correto — só países que existem no ALL
+const COPA = ALL.filter(c => COPA_CODES.has(c.code));
+
+function norm(s){ return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim(); }
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+// Update counts in modal
+function updateCounts(){
+  document.getElementById('count-all').textContent = ALL.length+' países';
+  const conts = ['americas','europa','africa','asia','oceania','oriente'];
+  conts.forEach(c=>{
+    const el=document.getElementById('cc-'+c);
+    if(el) el.textContent = ALL.filter(x=>x.cont===c).length+' países';
+  });
+}
+
+// ── State ──
+let queue=[], current=null, round=0, revealed=false;
+let players=[], pid=1, totalAcertos=0;
+let currentMode='all', currentCont='americas';
+let pendingMode='all', pendingCont='americas';
+
+function getPool(){
+  if(currentMode==='copa') return COPA;
+  if(currentMode==='continente') return ALL.filter(c=>c.cont===currentCont);
+  return ALL;
+}
+
+function flagUrl(code){ return 'https://flagcdn.com/w320/'+code+'.png'; }
+
+function startFresh(){
+  queue = shuffle([...getPool()]);
+  round=0; totalAcertos=0;
+  document.getElementById('acertos-badge').textContent='0 acertos';
+  nextRound();
+}
+
+function nextRound(){
+  if(queue.length===0) queue=shuffle([...getPool()]);
+  current=queue.pop();
+  round++;
+  revealed=false;
+  const img=document.getElementById('flag-img');
+  const ph=document.getElementById('flag-placeholder');
+  img.style.display='block'; ph.style.display='none';
+  img.src=flagUrl(current.code);
+  img.onerror=()=>{ img.style.display='none'; ph.style.display='block'; };
+  document.getElementById('country-reveal').textContent='';
+  document.getElementById('round-label').textContent='Rodada '+round;
+  const inp=document.getElementById('guess-input');
+  inp.value=''; inp.className=''; inp.disabled=false;
+  document.getElementById('feedback').innerHTML='&nbsp;';
+  document.getElementById('feedback').className='';
+  document.getElementById('btn-next').style.display='none';
+  document.getElementById('btn-skip').style.display='';
+  inp.focus();
+}
+
+function reveal(skipped){
+  revealed=true;
+  document.getElementById('country-reveal').textContent=current.name;
+  const inp=document.getElementById('guess-input');
+  inp.disabled=true;
+  document.getElementById('btn-next').style.display='';
+  document.getElementById('btn-skip').style.display='none';
+  if(skipped){
+    inp.value=current.name; inp.className='wrong';
+    const fb=document.getElementById('feedback');
+    fb.textContent='Ninguém acertou — era '+current.name;
+    fb.className='danger';
+  }
+}
+
+document.getElementById('guess-input').addEventListener('input',function(){
+  if(revealed) return;
+  const v=norm(this.value);
+  if(!v){this.className='';return;}
+  const hit=current.a.some(x=>norm(x)===v)||norm(current.name)===v;
+  if(hit){
+    this.className='correct';
+    totalAcertos++;
+    document.getElementById('acertos-badge').textContent=totalAcertos+' acerto'+(totalAcertos!==1?'s':'');
+    document.getElementById('feedback').textContent='✓ Correto! '+current.name;
+    document.getElementById('feedback').className='success';
+    reveal(false);
+  }
+});
+
+document.getElementById('btn-skip').addEventListener('click',()=>reveal(true));
+document.getElementById('btn-next').addEventListener('click',nextRound);
+
+// ── Placar ──
+function renderPlayers(){
+  const list=document.getElementById('players-list');
+  const sorted=[...players].sort((a,b)=>b.score-a.score);
+  const max=sorted.length?sorted[0].score:0;
+  list.innerHTML='';
+  sorted.forEach((p,i)=>{
+    const isLeader=p.score>0&&p.score===max;
+    const initials=p.name.trim().split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase();
+    const row=document.createElement('div');
+    row.className='player-row'+(isLeader?' leader':'');
+    row.innerHTML=`
+      <div class="player-avatar">${initials}</div>
+      <div class="player-info">
+        <div class="player-name">${p.name}</div>
+        <div class="player-rank">${isLeader?'👑 Líder':'#'+(i+1)}</div>
+      </div>
+      <div class="score-controls">
+        <button class="sc-btn" data-id="${p.id}" data-d="-1">−</button>
+        <span class="score-val">${p.score}</span>
+        <button class="sc-btn" data-id="${p.id}" data-d="1">+</button>
+      </div>
+      <button class="del-btn" data-del="${p.id}" title="Remover">✕</button>
+    `;
+    list.appendChild(row);
+  });
+}
+
+document.getElementById('players-list').addEventListener('click',function(e){
+  const sb=e.target.closest('.sc-btn');
+  if(sb){ const p=players.find(x=>x.id===parseInt(sb.dataset.id)); if(p){p.score=Math.max(0,p.score+parseInt(sb.dataset.d));renderPlayers();} return; }
+  const db=e.target.closest('.del-btn');
+  if(db){ players=players.filter(x=>x.id!==parseInt(db.dataset.del)); renderPlayers(); }
+});
+
+function addPlayer(name){ name=name.trim(); if(!name) return; players.push({id:pid++,name,score:0}); renderPlayers(); }
+document.getElementById('btn-add').addEventListener('click',()=>{ const inp=document.getElementById('new-player-input'); addPlayer(inp.value); inp.value=''; inp.focus(); });
+document.getElementById('new-player-input').addEventListener('keydown',e=>{ if(e.key==='Enter'){addPlayer(e.target.value);e.target.value='';} });
+
+// ── Modal modo ──
+function openModeModal(){
+  pendingMode=currentMode; pendingCont=currentCont;
+  syncModeUI();
+  document.getElementById('overlay-mode').classList.remove('hidden');
+}
+function closeModeModal(){ document.getElementById('overlay-mode').classList.add('hidden'); }
+
+function syncModeUI(){
+  document.querySelectorAll('.mode-card').forEach(c=>{
+    c.classList.toggle('selected', c.dataset.mode===pendingMode);
+    c.classList.toggle('copa', c.dataset.mode==='copa');
+  });
+  const contSec=document.getElementById('cont-section');
+  contSec.style.display=pendingMode==='continente'?'block':'none';
+  document.querySelectorAll('.cont-card').forEach(c=>{
+    c.classList.toggle('selected', c.dataset.cont===pendingCont);
+  });
+}
+
+document.querySelectorAll('.mode-card').forEach(card=>{
+  card.addEventListener('click',()=>{ pendingMode=card.dataset.mode; syncModeUI(); });
+});
+document.querySelectorAll('.cont-card').forEach(card=>{
+  card.addEventListener('click',()=>{ pendingCont=card.dataset.cont; syncModeUI(); });
+});
+
+document.getElementById('btn-open-mode').addEventListener('click', openModeModal);
+document.getElementById('btn-mode-cancel').addEventListener('click', closeModeModal);
+document.getElementById('overlay-mode').addEventListener('click',e=>{ if(e.target===e.currentTarget) closeModeModal(); });
+
+document.getElementById('btn-mode-confirm').addEventListener('click',()=>{
+  if(pendingMode==='continente' && !pendingCont) return;
+  currentMode=pendingMode; currentCont=pendingCont;
+  updateModePill();
+  closeModeModal();
+  startFresh();
+});
+
+function updateModePill(){
+  const pill=document.getElementById('mode-pill');
+  const contNames={americas:'Américas',europa:'Europa',africa:'África',asia:'Ásia',oceania:'Oceania',oriente:'Oriente Médio'};
+  pill.className='mode-pill';
+  if(currentMode==='all'){ pill.classList.add('all'); pill.textContent='Todos os países'; }
+  else if(currentMode==='copa'){ pill.classList.add('copa'); pill.textContent='Copa 2026'; }
+  else { pill.classList.add('cont'); pill.textContent=contNames[currentCont]||currentCont; }
+}
+
+// ── Modal reset ──
+document.getElementById('btn-open-reset').addEventListener('click',()=>{
+  document.getElementById('overlay-reset').classList.remove('hidden');
+});
+document.getElementById('btn-reset-cancel').addEventListener('click',()=>{
+  document.getElementById('overlay-reset').classList.add('hidden');
+});
+document.getElementById('overlay-reset').addEventListener('click',e=>{ if(e.target===e.currentTarget) document.getElementById('overlay-reset').classList.add('hidden'); });
+document.getElementById('btn-reset-confirm').addEventListener('click',()=>{
+  document.getElementById('overlay-reset').classList.add('hidden');
+  startFresh();
+});
+
+// Atalhos
+document.addEventListener('keydown',e=>{
+  if(e.target===document.getElementById('guess-input')) return;
+  if(e.target===document.getElementById('new-player-input')) return;
+  if(e.key==='Enter'&&revealed) nextRound();
+  if(e.key==='Escape'){
+    if(!document.getElementById('overlay-mode').classList.contains('hidden')){ closeModeModal(); return; }
+    if(!document.getElementById('overlay-reset').classList.contains('hidden')){ document.getElementById('overlay-reset').classList.add('hidden'); return; }
+    if(!revealed) reveal(true);
+  }
+});
+
+// Init
+updateCounts();
+startFresh();
+</script>
+</body>
+</html>
