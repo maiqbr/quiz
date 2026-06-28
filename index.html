@@ -2,515 +2,265 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz de Bandeiras</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>QuizArena</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: #0a0810;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color: #f1f0ff;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  /* ── Header ── */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 28px;
-    border-bottom: 1px solid rgba(139,92,246,0.2);
-    background: rgba(255,255,255,0.02);
-    flex-shrink: 0;
-    gap: 12px;
-  }
-  .logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-  .logo-icon {
-    width: 32px; height: 32px;
-    background: linear-gradient(135deg, #7c3aed, #ec4899);
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 16px;
-  }
-  .logo-text { font-size: 16px; font-weight: 600; color: #f1f0ff; }
-  .logo-text span { color: #a78bfa; }
-
-  .header-center { display: flex; align-items: center; gap: 10px; }
-
-  .round-pill {
-    background: rgba(139,92,246,0.12);
-    border: 1px solid rgba(139,92,246,0.3);
-    border-radius: 99px;
-    padding: 5px 16px;
-    font-size: 13px;
-    color: #a78bfa;
-    font-weight: 500;
-    white-space: nowrap;
-  }
-
-  .mode-pill {
-    border-radius: 99px;
-    padding: 5px 14px;
-    font-size: 12px;
-    font-weight: 500;
-    white-space: nowrap;
-    border: 1px solid;
-  }
-  .mode-pill.all    { background: rgba(139,92,246,0.1); border-color: rgba(139,92,246,0.3); color: #a78bfa; }
-  .mode-pill.copa   { background: rgba(234,179,8,0.1);  border-color: rgba(234,179,8,0.3);  color: #fbbf24; }
-  .mode-pill.cont   { background: rgba(236,72,153,0.1); border-color: rgba(236,72,153,0.3); color: #f9a8d4; }
-
-  .header-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-  .acertos-badge {
-    background: rgba(52,211,153,0.1);
-    border: 1px solid rgba(52,211,153,0.25);
-    border-radius: 99px;
-    padding: 5px 14px;
-    font-size: 12px;
-    color: #34d399;
-    font-weight: 500;
-    white-space: nowrap;
-  }
-  .hdr-btn {
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    border: 1px solid;
-    font-family: inherit;
-    transition: all 0.12s;
-    display: flex; align-items: center; gap: 6px;
-    white-space: nowrap;
-  }
-  .hdr-btn:active { transform: scale(0.97); }
-  .btn-mode-hdr {
-    border-color: rgba(139,92,246,0.35);
-    background: rgba(139,92,246,0.1);
-    color: #a78bfa;
-  }
-  .btn-mode-hdr:hover { background: rgba(139,92,246,0.2); }
-  .btn-reset-hdr {
-    border-color: rgba(248,113,113,0.3);
-    background: rgba(248,113,113,0.07);
-    color: #f87171;
-  }
-  .btn-reset-hdr:hover { background: rgba(248,113,113,0.15); }
-
-  /* ── Main ── */
-  .main { flex: 1; display: flex; overflow: hidden; }
-
-  /* ── Left ── */
-  .left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 32px 40px;
-    border-right: 1px solid rgba(139,92,246,0.15);
-    position: relative;
-  }
-  .glow-orb {
-    position: absolute;
-    width: 320px; height: 320px;
-    border-radius: 50%;
-    background: rgba(124,58,237,0.06);
-    filter: blur(60px);
-    pointer-events: none;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .flag-card {
-    width: 360px; height: 240px;
-    display: flex; align-items: center; justify-content: center;
-    background: rgba(139,92,246,0.05);
-    border: 1px solid rgba(139,92,246,0.25);
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-  }
-  .flag-card::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse at center, rgba(139,92,246,0.08) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  #flag-img { width: 280px; height: 186px; object-fit: contain; border-radius: 4px; display: block; }
-  #flag-placeholder { font-size: 48px; color: rgba(139,92,246,0.3); display: none; }
-
-  #country-reveal { font-size: 15px; color: #9b91c1; min-height: 22px; letter-spacing: 0.04em; text-align: center; }
-
-  .input-area {
-    display: flex; flex-direction: column; align-items: center;
-    gap: 12px; width: 100%; max-width: 400px;
-  }
-  #guess-input {
-    width: 100%; font-size: 17px;
-    padding: 13px 20px;
-    border-radius: 12px;
-    border: 1.5px solid rgba(139,92,246,0.35);
-    background: rgba(255,255,255,0.04);
-    color: #f1f0ff; text-align: center; outline: none;
-    transition: border-color 0.15s, background 0.15s;
-    font-family: inherit;
-  }
-  #guess-input::placeholder { color: #4e4470; }
-  #guess-input:focus { border-color: #a78bfa; background: rgba(139,92,246,0.07); }
-  #guess-input.correct { border-color: #34d399; background: rgba(52,211,153,0.08); color: #34d399; }
-  #guess-input.wrong   { border-color: #f87171; background: rgba(248,113,113,0.08); color: #f87171; }
-
-  #feedback { font-size: 14px; font-weight: 500; min-height: 20px; text-align: center; }
-  #feedback.success { color: #34d399; }
-  #feedback.danger  { color: #f87171; }
-
-  .btn-row { display: flex; gap: 10px; }
-  .btn {
-    padding: 10px 26px; border-radius: 11px;
-    font-size: 14px; font-weight: 500; cursor: pointer;
-    border: 1.5px solid; font-family: inherit;
-    transition: all 0.12s; display: flex; align-items: center; gap: 7px;
-  }
-  .btn:active { transform: scale(0.97); }
-  .btn-skip { border-color: rgba(248,113,113,0.4); background: rgba(248,113,113,0.07); color: #f87171; }
-  .btn-skip:hover { background: rgba(248,113,113,0.15); }
-  .btn-next { border-color: #7c3aed; background: #7c3aed; color: #fff; }
-  .btn-next:hover { background: #6d28d9; }
-
-  /* ── Right panel ── */
-  .right {
-    width: 280px; display: flex; flex-direction: column;
-    background: rgba(255,255,255,0.015); flex-shrink: 0;
-  }
-  .panel-header {
-    padding: 16px 18px 12px;
-    border-bottom: 1px solid rgba(139,92,246,0.15);
-    display: flex; align-items: center; gap: 8px;
-  }
-  .panel-title { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6b5fa0; }
-  #players-list {
-    flex: 1; overflow-y: auto; padding: 10px 12px;
-    display: flex; flex-direction: column; gap: 6px;
-    scrollbar-width: thin; scrollbar-color: rgba(139,92,246,0.2) transparent;
-  }
-  #players-list::-webkit-scrollbar { width: 4px; }
-  #players-list::-webkit-scrollbar-thumb { background: rgba(139,92,246,0.2); border-radius: 99px; }
-
-  .player-row {
-    display: flex; align-items: center; gap: 9px;
-    padding: 9px 11px; border-radius: 10px;
-    border: 1px solid rgba(139,92,246,0.15);
-    background: rgba(255,255,255,0.02);
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .player-row.leader { border-color: rgba(167,139,250,0.45); background: rgba(139,92,246,0.08); }
-  .player-avatar {
-    width: 32px; height: 32px; border-radius: 50%;
-    background: rgba(139,92,246,0.18); border: 1px solid rgba(139,92,246,0.3);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 11px; font-weight: 600; color: #a78bfa;
-    flex-shrink: 0; text-transform: uppercase;
-  }
-  .leader .player-avatar { background: rgba(236,72,153,0.18); border-color: rgba(236,72,153,0.35); color: #f9a8d4; }
-  .player-info { flex: 1; min-width: 0; }
-  .player-name { font-size: 13px; font-weight: 500; color: #e2deff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .leader .player-name { color: #c4b5fd; }
-  .player-rank { font-size: 11px; color: #6b5fa0; margin-top: 1px; }
-  .leader .player-rank { color: #9b80e4; }
-  .score-controls { display: flex; align-items: center; gap: 5px; }
-  .score-val { font-size: 17px; font-weight: 600; min-width: 24px; text-align: center; color: #f1f0ff; }
-  .leader .score-val { color: #f9a8d4; }
-  .sc-btn {
-    width: 24px; height: 24px; border-radius: 6px;
-    border: 1px solid rgba(139,92,246,0.3); background: transparent;
-    color: #6b5fa0; font-size: 15px;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer; transition: all 0.1s; font-family: inherit; line-height: 1;
-  }
-  .sc-btn:hover { background: rgba(139,92,246,0.18); color: #a78bfa; border-color: rgba(139,92,246,0.5); }
-  .del-btn {
-    width: 20px; height: 20px; border: none; background: transparent;
-    color: #4e4470; font-size: 13px; cursor: pointer; border-radius: 4px;
-    display: flex; align-items: center; justify-content: center;
-    transition: color 0.1s; flex-shrink: 0;
-  }
-  .del-btn:hover { color: #f87171; }
-  .add-section {
-    padding: 10px 12px 14px; border-top: 1px solid rgba(139,92,246,0.15);
-    display: flex; gap: 7px;
-  }
-  #new-player-input {
-    flex: 1; font-size: 13px; padding: 8px 11px;
-    border-radius: 8px; border: 1px solid rgba(139,92,246,0.25);
-    background: rgba(255,255,255,0.03); color: #f1f0ff;
-    outline: none; font-family: inherit;
-  }
-  #new-player-input::placeholder { color: #4e4470; }
-  #new-player-input:focus { border-color: #a78bfa; background: rgba(139,92,246,0.06); }
-  #btn-add {
-    padding: 8px 13px; font-size: 13px; font-weight: 500;
-    border-radius: 8px; border: 1px solid rgba(139,92,246,0.4);
-    background: rgba(124,58,237,0.14); color: #a78bfa;
-    cursor: pointer; font-family: inherit; transition: background 0.12s; white-space: nowrap;
-  }
-  #btn-add:hover { background: rgba(124,58,237,0.28); }
-
-  /* ── Modal overlay ── */
-  .overlay {
-    position: fixed; inset: 0;
-    background: rgba(5,3,12,0.82);
-    display: flex; align-items: center; justify-content: center;
-    z-index: 100;
-    backdrop-filter: blur(4px);
-  }
-  .overlay.hidden { display: none; }
-
-  .modal {
-    background: #120f1e;
-    border: 1px solid rgba(139,92,246,0.3);
-    border-radius: 20px;
-    padding: 32px 36px;
-    width: 520px;
-    max-width: 95vw;
-    max-height: 90vh;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(139,92,246,0.2) transparent;
-  }
-  .modal-title {
-    font-size: 18px; font-weight: 600; color: #f1f0ff;
-    margin-bottom: 6px;
-  }
-  .modal-sub {
-    font-size: 13px; color: #6b5fa0; margin-bottom: 28px; line-height: 1.5;
-  }
-
-  /* mode cards */
-  .mode-section-title {
-    font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
-    text-transform: uppercase; color: #6b5fa0; margin-bottom: 12px;
-  }
-  .mode-cards { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
-  .mode-card {
-    display: flex; align-items: center; gap: 14px;
-    padding: 14px 16px; border-radius: 13px;
-    border: 1.5px solid rgba(139,92,246,0.15);
-    background: rgba(255,255,255,0.02);
-    cursor: pointer; transition: all 0.15s;
-  }
-  .mode-card:hover { border-color: rgba(139,92,246,0.4); background: rgba(139,92,246,0.07); }
-  .mode-card.selected { border-color: #7c3aed; background: rgba(139,92,246,0.12); }
-  .mode-card.selected.copa { border-color: #d97706; background: rgba(234,179,8,0.08); }
-  .mode-icon {
-    width: 40px; height: 40px; border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px; flex-shrink: 0;
-  }
-  .mode-info { flex: 1; }
-  .mode-name { font-size: 14px; font-weight: 600; color: #e2deff; margin-bottom: 2px; }
-  .mode-desc { font-size: 12px; color: #6b5fa0; line-height: 1.4; }
-  .mode-count {
-    font-size: 11px; font-weight: 600; border-radius: 99px; padding: 3px 10px;
-    border: 1px solid;
-  }
-
-  /* continent grid */
-  .cont-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 24px; }
-  .cont-card {
-    display: flex; align-items: center; gap: 10px;
-    padding: 11px 13px; border-radius: 11px;
-    border: 1.5px solid rgba(139,92,246,0.15);
-    background: rgba(255,255,255,0.02);
-    cursor: pointer; transition: all 0.15s;
-  }
-  .cont-card:hover { border-color: rgba(236,72,153,0.4); background: rgba(236,72,153,0.06); }
-  .cont-card.selected { border-color: #ec4899; background: rgba(236,72,153,0.1); }
-  .cont-icon { font-size: 20px; }
-  .cont-info { flex: 1; }
-  .cont-name { font-size: 13px; font-weight: 500; color: #e2deff; }
-  .cont-count { font-size: 11px; color: #6b5fa0; }
-
-  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 8px; }
-  .modal-btn {
-    padding: 10px 22px; border-radius: 10px; font-size: 14px; font-weight: 500;
-    cursor: pointer; border: 1.5px solid; font-family: inherit; transition: all 0.12s;
-  }
-  .modal-btn:active { transform: scale(0.97); }
-  .modal-btn-cancel { border-color: rgba(139,92,246,0.25); background: transparent; color: #6b5fa0; }
-  .modal-btn-cancel:hover { color: #a78bfa; border-color: rgba(139,92,246,0.45); }
-  .modal-btn-confirm { border-color: #7c3aed; background: #7c3aed; color: #fff; }
-  .modal-btn-confirm:hover { background: #6d28d9; }
-  .modal-btn-danger { border-color: rgba(248,113,113,0.4); background: rgba(248,113,113,0.08); color: #f87171; }
-  .modal-btn-danger:hover { background: rgba(248,113,113,0.18); }
-
-  /* confirm modal */
-  .confirm-icon { font-size: 36px; margin-bottom: 14px; }
-  .confirm-title { font-size: 17px; font-weight: 600; color: #f1f0ff; margin-bottom: 8px; }
-  .confirm-text { font-size: 13px; color: #9b91c1; line-height: 1.6; margin-bottom: 28px; }
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0810;--panel:#120f1e;--border:rgba(139,92,246,.18);--border2:rgba(139,92,246,.38);
+  --purple:#7c3aed;--purple2:#a78bfa;--pink:#ec4899;--pink2:#f9a8d4;
+  --text:#f1f0ff;--muted:#9b91c1;--dim:#4e4470;
+  --success:#34d399;--danger:#f87171;--gold:#fbbf24;
+}
+html,body{height:100%;overflow:hidden}
+body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text);display:flex;flex-direction:column}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(139,92,246,.25);border-radius:99px}
+.screen{display:none;flex-direction:column;flex:1;overflow:hidden}.screen.active{display:flex}
+/* HOME */
+#home{overflow-y:auto;padding:0 16px 40px}
+.home-hero{text-align:center;padding:48px 16px 32px}
+.home-logo{display:inline-flex;align-items:center;gap:12px;margin-bottom:16px}
+.home-logo-icon{width:50px;height:50px;background:linear-gradient(135deg,var(--purple),var(--pink));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 0 32px rgba(124,58,237,.4)}
+.home-logo-name{font-size:28px;font-weight:700;letter-spacing:-.5px}
+.home-logo-name span{background:linear-gradient(90deg,var(--purple2),var(--pink2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.home-tagline{font-size:14px;color:var(--muted);max-width:400px;margin:0 auto;line-height:1.6}
+.home-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;max-width:960px;margin:0 auto}
+.quiz-card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:22px 20px;cursor:pointer;transition:border-color .18s,background .18s,transform .15s,box-shadow .18s;position:relative;overflow:hidden}
+.quiz-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(139,92,246,.07),transparent 65%);pointer-events:none}
+.quiz-card:hover{border-color:var(--border2);background:rgba(139,92,246,.07);transform:translateY(-3px);box-shadow:0 12px 36px rgba(124,58,237,.18)}
+.quiz-card:active{transform:translateY(-1px)}
+.card-icon{font-size:32px;margin-bottom:12px}.card-title{font-size:15px;font-weight:600;margin-bottom:5px}
+.card-desc{font-size:12px;color:var(--muted);line-height:1.5;margin-bottom:12px}
+.card-meta{display:flex;gap:7px;flex-wrap:wrap}
+.card-tag{font-size:10px;font-weight:500;border-radius:99px;padding:2px 9px;border:1px solid}
+.tag-purple{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3);color:var(--purple2)}
+.tag-pink{background:rgba(236,72,153,.1);border-color:rgba(236,72,153,.3);color:var(--pink2)}
+.tag-gold{background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.3);color:var(--gold)}
+.tag-green{background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.3);color:var(--success)}
+/* GAME */
+#game{flex-direction:column}
+.g-header{display:flex;align-items:center;padding:8px 14px;gap:8px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.015);flex-shrink:0;flex-wrap:wrap}
+.g-back{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .12s;flex-shrink:0}
+.g-back:hover{border-color:var(--border2);color:var(--text)}
+.g-quiz-name{font-size:13px;font-weight:600;color:var(--purple2);white-space:nowrap}
+.g-pill{border-radius:99px;padding:4px 11px;font-size:11px;font-weight:500;border:1px solid;white-space:nowrap}
+.g-pill.round{background:rgba(139,92,246,.12);border-color:rgba(139,92,246,.3);color:var(--purple2)}
+.g-pill.mode-all{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3);color:var(--purple2)}
+.g-pill.mode-copa{background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.3);color:var(--gold)}
+.g-pill.mode-cont{background:rgba(236,72,153,.1);border-color:rgba(236,72,153,.3);color:var(--pink2)}
+.g-pill.hits{background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.25);color:var(--success)}
+.g-pill.timer{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1);color:var(--muted);font-variant-numeric:tabular-nums;min-width:58px;text-align:center}
+.g-hdr-right{display:flex;align-items:center;gap:7px;margin-left:auto;flex-shrink:0}
+.hbtn{padding:5px 11px;border-radius:7px;font-size:11px;font-weight:500;cursor:pointer;border:1px solid;font-family:inherit;transition:all .12s;white-space:nowrap}
+.hbtn:active{transform:scale(.97)}
+.hbtn-mode{border-color:rgba(139,92,246,.35);background:rgba(139,92,246,.1);color:var(--purple2)}.hbtn-mode:hover{background:rgba(139,92,246,.2)}
+.hbtn-reset{border-color:rgba(248,113,113,.3);background:rgba(248,113,113,.07);color:var(--danger)}.hbtn-reset:hover{background:rgba(248,113,113,.15)}
+.hbtn-sidebar{border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.08);color:var(--purple2)}.hbtn-sidebar:hover{background:rgba(139,92,246,.18)}
+.g-body{flex:1;display:flex;overflow:hidden;min-height:0}
+.g-left{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:20px;border-right:1px solid var(--border);position:relative;overflow:hidden;min-width:0}
+.g-glow{position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(124,58,237,.06);filter:blur(60px);pointer-events:none;top:50%;left:50%;transform:translate(-50%,-50%)}
+.g-image-wrap{display:flex;align-items:center;justify-content:center;width:100%;max-width:560px;height:380px;flex-shrink:0}
+.g-image-card{display:flex;align-items:center;justify-content:center;background:rgba(139,92,246,.05);border:1px solid rgba(139,92,246,.25);border-radius:16px;overflow:hidden;position:relative;width:100%;height:100%;flex-shrink:0;transition:width .18s ease,height .18s ease}
+.g-image-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(139,92,246,.07),transparent 70%);pointer-events:none;z-index:1}
+#g-img{max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain;position:relative;z-index:2;display:none}
+#g-img-ph{font-size:44px;color:rgba(139,92,246,.3);z-index:2;position:relative;display:flex;flex-direction:column;align-items:center;gap:8px}
+#g-img-ph span{font-size:11px;color:var(--dim);font-family:inherit}
+.g-qlabel{font-size:12px;color:var(--muted);text-align:center;min-height:18px}
+.g-hint-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center}
+.g-hint{font-size:12px;color:var(--muted);background:rgba(139,92,246,.07);border:1px solid var(--border);border-radius:7px;padding:4px 11px}
+.g-input-area{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;max-width:390px}
+#g-input{width:100%;font-size:16px;padding:11px 18px;border-radius:11px;border:1.5px solid rgba(139,92,246,.35);background:rgba(255,255,255,.04);color:var(--text);text-align:center;outline:none;transition:border-color .15s,background .15s;font-family:inherit}
+#g-input::placeholder{color:var(--dim)}
+#g-input:focus{border-color:var(--purple2);background:rgba(139,92,246,.07)}
+#g-input.correct{border-color:var(--success);background:rgba(52,211,153,.08);color:var(--success)}
+#g-input.wrong{border-color:var(--danger);background:rgba(248,113,113,.08);color:var(--danger)}
+#g-feedback{font-size:13px;font-weight:500;min-height:18px;text-align:center}
+#g-feedback.success{color:var(--success)}#g-feedback.danger{color:var(--danger)}
+.g-btn-row{display:flex;gap:9px}
+.gbtn{padding:9px 22px;border-radius:10px;font-size:13px;font-weight:500;cursor:pointer;border:1.5px solid;font-family:inherit;transition:all .12s}
+.gbtn:active{transform:scale(.97)}
+.gbtn-skip{border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.07);color:var(--danger)}.gbtn-skip:hover{background:rgba(248,113,113,.15)}
+.gbtn-next{border-color:var(--purple);background:var(--purple);color:#fff}.gbtn-next:hover{background:#6d28d9}
+/* SIDEBAR */
+.g-right{width:258px;display:flex;flex-direction:column;background:rgba(255,255,255,.012);flex-shrink:0;transition:width .22s;overflow:hidden}
+.g-right.collapsed{width:0}
+.g-right-inner{width:258px;display:flex;flex-direction:column;height:100%}
+.g-panel-hdr{padding:13px 15px 10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.g-panel-title{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+#g-players-list{flex:1;overflow-y:auto;padding:9px 11px;display:flex;flex-direction:column;gap:5px}
+.p-row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:10px;border:1px solid rgba(139,92,246,.14);background:rgba(255,255,255,.02)}
+.p-row.leader{border-color:rgba(167,139,250,.4);background:rgba(139,92,246,.08)}
+.p-avatar{width:30px;height:30px;border-radius:50%;background:rgba(139,92,246,.18);border:1px solid rgba(139,92,246,.3);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;color:var(--purple2);flex-shrink:0;text-transform:uppercase}
+.leader .p-avatar{background:rgba(236,72,153,.18);border-color:rgba(236,72,153,.35);color:var(--pink2)}
+.p-info{flex:1;min-width:0}
+.p-name{font-size:12px;font-weight:500;color:#e2deff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.leader .p-name{color:var(--purple2)}.p-rank{font-size:10px;color:var(--dim);margin-top:1px}.leader .p-rank{color:#9b80e4}
+.p-sc{display:flex;align-items:center;gap:4px}
+.p-score{font-size:15px;font-weight:600;min-width:22px;text-align:center;color:var(--text)}.leader .p-score{color:var(--pink2)}
+.p-sc-btn{width:22px;height:22px;border-radius:6px;border:1px solid rgba(139,92,246,.28);background:transparent;color:var(--dim);font-size:14px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:inherit;line-height:1}
+.p-sc-btn:hover{background:rgba(139,92,246,.18);color:var(--purple2)}
+.p-del{width:18px;height:18px;border:none;background:transparent;color:var(--dim);font-size:12px;cursor:pointer;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.p-del:hover{color:var(--danger)}
+.g-add{padding:8px 11px 12px;border-top:1px solid var(--border);display:flex;gap:6px}
+#g-new-player{flex:1;font-size:12px;padding:7px 10px;border-radius:7px;border:1px solid rgba(139,92,246,.22);background:rgba(255,255,255,.03);color:var(--text);outline:none;font-family:inherit}
+#g-new-player::placeholder{color:var(--dim)}#g-new-player:focus{border-color:var(--purple2)}
+#g-add-btn{padding:7px 11px;font-size:12px;font-weight:500;border-radius:7px;border:1px solid rgba(139,92,246,.38);background:rgba(124,58,237,.13);color:var(--purple2);cursor:pointer;font-family:inherit;white-space:nowrap}
+#g-add-btn:hover{background:rgba(124,58,237,.26)}
+/* MODALS */
+.overlay{position:fixed;inset:0;background:rgba(5,3,12,.82);display:flex;align-items:center;justify-content:center;z-index:200;backdrop-filter:blur(5px)}
+.overlay.hidden{display:none}
+.modal{background:#130e20;border:1px solid rgba(139,92,246,.3);border-radius:18px;padding:26px 28px;width:490px;max-width:95vw;max-height:90vh;overflow-y:auto}
+.modal-title{font-size:16px;font-weight:600;color:var(--text);margin-bottom:4px}.modal-sub{font-size:12px;color:var(--dim);margin-bottom:20px;line-height:1.5}
+.msec{font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);margin-bottom:9px}
+.m-cards{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.m-card{display:flex;align-items:center;gap:12px;padding:11px 13px;border-radius:12px;border:1.5px solid rgba(139,92,246,.14);background:rgba(255,255,255,.02);cursor:pointer;transition:all .15s}
+.m-card:hover{border-color:rgba(139,92,246,.38);background:rgba(139,92,246,.07)}.m-card.sel{border-color:var(--purple);background:rgba(139,92,246,.11)}.m-card.sel.copa-c{border-color:#d97706;background:rgba(234,179,8,.08)}
+.m-icon{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.m-info{flex:1}.m-name{font-size:13px;font-weight:600;color:#e2deff;margin-bottom:1px}.m-desc{font-size:11px;color:var(--dim);line-height:1.4}
+.m-badge{font-size:10px;font-weight:600;border-radius:99px;padding:2px 8px;border:1px solid;white-space:nowrap}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:18px}
+.c-card{display:flex;align-items:center;gap:9px;padding:9px 11px;border-radius:10px;border:1.5px solid rgba(139,92,246,.14);background:rgba(255,255,255,.02);cursor:pointer;transition:all .15s}
+.c-card:hover{border-color:rgba(236,72,153,.38);background:rgba(236,72,153,.06)}.c-card.sel{border-color:var(--pink);background:rgba(236,72,153,.09)}
+.c-icon{font-size:17px}.c-name{font-size:12px;font-weight:500;color:#e2deff}.c-count{font-size:10px;color:var(--dim)}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:6px}
+.mbtn{padding:8px 18px;border-radius:9px;font-size:13px;font-weight:500;cursor:pointer;border:1.5px solid;font-family:inherit;transition:all .12s}.mbtn:active{transform:scale(.97)}
+.mbtn-cancel{border-color:rgba(139,92,246,.22);background:transparent;color:var(--dim)}.mbtn-cancel:hover{color:var(--purple2)}
+.mbtn-ok{border-color:var(--purple);background:var(--purple);color:#fff}.mbtn-ok:hover{background:#6d28d9}
+.mbtn-danger{border-color:rgba(248,113,113,.38);background:rgba(248,113,113,.08);color:var(--danger)}.mbtn-danger:hover{background:rgba(248,113,113,.18)}
+.conf-icon{font-size:32px;margin-bottom:10px;text-align:center}.conf-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px;text-align:center}
+.conf-text{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:22px;text-align:center}
+/* MOBILE */
+@media(max-width:700px){
+  .home-hero{padding:28px 14px 20px}.home-logo-name{font-size:22px}
+  .home-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .quiz-card{padding:14px 12px;border-radius:14px}.card-icon{font-size:26px;margin-bottom:9px}.card-title{font-size:13px}.card-desc{font-size:11px;margin-bottom:8px}
+  .g-header{padding:7px 10px;gap:5px}.g-quiz-name{font-size:11px}.g-pill{font-size:10px;padding:3px 8px}.hbtn{font-size:10px;padding:4px 8px}
+  .g-body{flex-direction:column;overflow-y:auto;overflow-x:hidden}
+  .g-left{border-right:none;border-bottom:1px solid var(--border);padding:14px 12px;gap:12px;flex:none}
+  .g-image-wrap{height:230px;max-width:100%}#g-input{font-size:15px;padding:10px 14px}.gbtn{padding:8px 16px;font-size:12px}
+  .g-right{width:100%!important;height:auto;border-top:1px solid var(--border);max-height:260px;flex-shrink:0;transition:max-height .22s}
+  .g-right.collapsed{max-height:0;overflow:hidden}.g-right-inner{width:100%}#g-players-list{max-height:150px}
+}
+@media(max-width:400px){.home-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="logo">
-    <div class="logo-icon">🌍</div>
-    <div class="logo-text">Quiz de <span>Bandeiras</span></div>
+<div id="home" class="screen active">
+  <div class="home-hero">
+    <div class="home-logo"><div class="home-logo-icon">🎯</div><div class="home-logo-name">Quiz<span>Arena</span></div></div>
+    <p class="home-tagline">Escolha um quiz, projete na tela e jogue com seus amigos em tempo real.</p>
   </div>
-  <div class="header-center">
-    <div class="round-pill" id="round-label">Rodada 1</div>
-    <div class="mode-pill all" id="mode-pill">Todos os países</div>
-  </div>
-  <div class="header-right">
-    <div class="acertos-badge" id="acertos-badge">0 acertos</div>
-    <button class="hdr-btn btn-mode-hdr" id="btn-open-mode">⚙ Modo de jogo</button>
-    <button class="hdr-btn btn-reset-hdr" id="btn-open-reset">↺ Reiniciar</button>
-  </div>
-</header>
-
-<div class="main">
-  <div class="left">
-    <div class="glow-orb"></div>
-    <div class="flag-card">
-      <img id="flag-img" src="" alt="Bandeira" />
-      <div id="flag-placeholder">🏳</div>
+  <div class="home-grid" id="quiz-grid"></div>
+</div>
+<div id="game" class="screen">
+  <div class="g-header">
+    <button class="g-back" id="g-back">←</button>
+    <div class="g-quiz-name" id="g-quiz-name">Quiz</div>
+    <div class="g-pill round" id="g-round">Rodada 1</div>
+    <div class="g-pill mode-all" id="g-mode-pill" style="display:none">Todos</div>
+    <div class="g-pill hits" id="g-hits">0 acertos</div>
+    <div class="g-pill timer" id="g-timer">00:00</div>
+    <div class="g-hdr-right">
+      <button class="hbtn hbtn-mode" id="g-btn-mode" style="display:none">⚙ Modo</button>
+      <button class="hbtn hbtn-reset" id="g-btn-reset">↺ Reiniciar</button>
+      <button class="hbtn hbtn-sidebar" id="g-btn-sidebar">◀ Placar</button>
     </div>
-    <div id="country-reveal"></div>
-    <div class="input-area">
-      <input id="guess-input" type="text" placeholder="Digite o nome do país..." autocomplete="off" spellcheck="false" />
-      <div id="feedback">&nbsp;</div>
-      <div class="btn-row">
-        <button class="btn btn-skip" id="btn-skip">✕ Desistir</button>
-        <button class="btn btn-next" id="btn-next" style="display:none">Próxima →</button>
+  </div>
+  <div class="g-body">
+    <div class="g-left">
+      <div class="g-glow"></div>
+      <div class="g-image-wrap">
+      <div class="g-image-card" id="g-image-card">
+        <img id="g-img" src="" alt=""/>
+        <div id="g-img-ph"><span id="g-img-ph-icon">⏳</span><span id="g-img-ph-label"></span></div>
+      </div>
+      </div>
+      <div id="g-qlabel" class="g-qlabel"></div>
+      <div id="g-hint-row" class="g-hint-row" style="display:none"></div>
+      <div class="g-input-area">
+        <input id="g-input" type="text" placeholder="Digite a resposta..." autocomplete="off" spellcheck="false"/>
+        <div id="g-feedback">&nbsp;</div>
+        <div class="g-btn-row">
+          <button class="gbtn gbtn-skip" id="g-skip">✕ Desistir</button>
+          <button class="gbtn gbtn-next" id="g-next" style="display:none">Próxima →</button>
+        </div>
+      </div>
+    </div>
+    <div class="g-right" id="g-right">
+      <div class="g-right-inner">
+        <div class="g-panel-hdr"><span style="font-size:14px">🏆</span><span class="g-panel-title">Placar</span></div>
+        <div id="g-players-list"></div>
+        <div class="g-add">
+          <input id="g-new-player" type="text" placeholder="Nome do jogador..."/>
+          <button id="g-add-btn">+ Add</button>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="right">
-    <div class="panel-header">
-      <span style="font-size:15px">🏆</span>
-      <span class="panel-title">Placar</span>
-    </div>
-    <div id="players-list"></div>
-    <div class="add-section">
-      <input id="new-player-input" type="text" placeholder="Nome do jogador..." />
-      <button id="btn-add">+ Add</button>
-    </div>
-  </div>
 </div>
-
-<!-- Modal: modo de jogo -->
-<div class="overlay hidden" id="overlay-mode">
+<div class="overlay hidden" id="ov-mode">
   <div class="modal">
     <div class="modal-title">Modo de jogo</div>
-    <div class="modal-sub">Escolha o conjunto de países para o quiz. A fila atual será reiniciada.</div>
-
-    <div class="mode-section-title">Categorias</div>
-    <div class="mode-cards">
-      <div class="mode-card selected" data-mode="all">
-        <div class="mode-icon" style="background:rgba(139,92,246,0.15)">🌍</div>
-        <div class="mode-info">
-          <div class="mode-name">Todos os países</div>
-          <div class="mode-desc">Todos os países do mundo com bandeira disponível</div>
-        </div>
-        <div class="mode-count" style="background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.3);color:#a78bfa" id="count-all">— países</div>
-      </div>
-      <div class="mode-card" data-mode="copa">
-        <div class="mode-icon" style="background:rgba(234,179,8,0.12)">⚽</div>
-        <div class="mode-info">
-          <div class="mode-name">Copa do Mundo FIFA 2026</div>
-          <div class="mode-desc">48 seleções classificadas para a Copa de 2026 (EUA, México e Canadá)</div>
-        </div>
-        <div class="mode-count" style="background:rgba(234,179,8,0.1);border-color:rgba(234,179,8,0.3);color:#fbbf24">48 países</div>
-      </div>
-      <div class="mode-card" data-mode="continente">
-        <div class="mode-icon" style="background:rgba(236,72,153,0.12)">🗺️</div>
-        <div class="mode-info">
-          <div class="mode-name">Por continente</div>
-          <div class="mode-desc">Escolha um continente específico abaixo</div>
-        </div>
-        <div class="mode-count" style="background:rgba(236,72,153,0.1);border-color:rgba(236,72,153,0.3);color:#f9a8d4">6 opções</div>
-      </div>
-    </div>
-
-    <div id="cont-section" style="display:none">
-      <div class="mode-section-title">Escolha o continente</div>
-      <div class="cont-grid">
-        <div class="cont-card selected" data-cont="americas">
-          <span class="cont-icon">🌎</span>
-          <div class="cont-info">
-            <div class="cont-name">Américas</div>
-            <div class="cont-count" id="cc-americas">— países</div>
-          </div>
-        </div>
-        <div class="cont-card" data-cont="europa">
-          <span class="cont-icon">🏰</span>
-          <div class="cont-info">
-            <div class="cont-name">Europa</div>
-            <div class="cont-count" id="cc-europa">— países</div>
-          </div>
-        </div>
-        <div class="cont-card" data-cont="africa">
-          <span class="cont-icon">🌍</span>
-          <div class="cont-info">
-            <div class="cont-name">África</div>
-            <div class="cont-count" id="cc-africa">— países</div>
-          </div>
-        </div>
-        <div class="cont-card" data-cont="asia">
-          <span class="cont-icon">🏯</span>
-          <div class="cont-info">
-            <div class="cont-name">Ásia</div>
-            <div class="cont-count" id="cc-asia">— países</div>
-          </div>
-        </div>
-        <div class="cont-card" data-cont="oceania">
-          <span class="cont-icon">🦘</span>
-          <div class="cont-info">
-            <div class="cont-name">Oceania</div>
-            <div class="cont-count" id="cc-oceania">— países</div>
-          </div>
-        </div>
-        <div class="cont-card" data-cont="oriente">
-          <span class="cont-icon">🕌</span>
-          <div class="cont-info">
-            <div class="cont-name">Oriente Médio</div>
-            <div class="cont-count" id="cc-oriente">— países</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal-actions">
-      <button class="modal-btn modal-btn-cancel" id="btn-mode-cancel">Cancelar</button>
-      <button class="modal-btn modal-btn-confirm" id="btn-mode-confirm">Aplicar modo</button>
-    </div>
+    <div class="modal-sub">Escolha o conjunto de itens. A fila será reiniciada.</div>
+    <div class="msec">Categoria</div><div class="m-cards" id="m-cards"></div>
+    <div id="cont-sec" style="display:none"><div class="msec">Continente</div><div class="c-grid" id="c-grid"></div></div>
+    <div class="modal-actions"><button class="mbtn mbtn-cancel" id="mode-cancel">Cancelar</button><button class="mbtn mbtn-ok" id="mode-ok">Aplicar</button></div>
   </div>
 </div>
-
-<!-- Modal: confirmar reset -->
-<div class="overlay hidden" id="overlay-reset">
-  <div class="modal" style="width:380px;text-align:center">
-    <div class="confirm-icon">↺</div>
-    <div class="confirm-title">Reiniciar o quiz?</div>
-    <div class="confirm-text">
-      Isso volta para a Rodada 1 e embaralha uma nova fila de países.<br>
-      O placar dos jogadores <strong style="color:#f1f0ff">não</strong> será apagado.
-    </div>
-    <div class="modal-actions" style="justify-content:center">
-      <button class="modal-btn modal-btn-cancel" id="btn-reset-cancel">Cancelar</button>
-      <button class="modal-btn modal-btn-danger" id="btn-reset-confirm">Sim, reiniciar</button>
-    </div>
+<div class="overlay hidden" id="ov-reset">
+  <div class="modal" style="width:340px;text-align:center">
+    <div class="conf-icon">↺</div><div class="conf-title">Reiniciar o quiz?</div>
+    <div class="conf-text">Volta para a Rodada 1 com fila nova.<br>O placar <strong style="color:var(--text)">não</strong> será apagado.</div>
+    <div class="modal-actions" style="justify-content:center"><button class="mbtn mbtn-cancel" id="reset-cancel">Cancelar</button><button class="mbtn mbtn-danger" id="reset-ok">Sim, reiniciar</button></div>
   </div>
 </div>
-
 <script>
-// ── Dataset ──
-const ALL = [
-  // Américas do Sul
+/* ══════════════════════════════════════════════════════════════════
+   IMAGE LOADER
+   Usa a Wikipedia REST API (CORS aberto, funciona de file://)
+   para buscar a thumbnail real de cada item.
+   Cache em memória para não repetir requests.
+══════════════════════════════════════════════════════════════════ */
+const imgCache = {};
+
+async function fetchWikiImage(title, width = 500) {
+  if (imgCache[title]) return imgCache[title];
+  try {
+    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(res.status);
+    const data = await res.json();
+    const src = data?.thumbnail?.source?.replace(/\/\d+px-/, `/${width}px-`) || null;
+    imgCache[title] = src;
+    return src;
+  } catch {
+    imgCache[title] = null;
+    return null;
+  }
+}
+
+async function fetchWikiImagePT(title, width = 500) {
+  if (imgCache['pt:'+title]) return imgCache['pt:'+title];
+  try {
+    const url = `https://pt.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(res.status);
+    const data = await res.json();
+    const src = data?.thumbnail?.source?.replace(/\/\d+px-/, `/${width}px-`) || null;
+    imgCache['pt:'+title] = src;
+    return src;
+  } catch {
+    imgCache['pt:'+title] = null;
+    return null;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   DATASETS
+══════════════════════════════════════════════════════════════════ */
+
+// BANDEIRAS — flagcdn (funciona sempre)
+const PAISES=[
   {code:"br",name:"Brasil",a:["brazil","brasil"],cont:"americas"},
   {code:"ar",name:"Argentina",a:["argentina"],cont:"americas"},
   {code:"cl",name:"Chile",a:["chile"],cont:"americas"},
@@ -523,7 +273,6 @@ const ALL = [
   {code:"uy",name:"Uruguai",a:["uruguai","uruguay"],cont:"americas"},
   {code:"gy",name:"Guiana",a:["guiana","guyana"],cont:"americas"},
   {code:"sr",name:"Suriname",a:["suriname"],cont:"americas"},
-  // América Central e Caribe
   {code:"mx",name:"México",a:["mexico"],cont:"americas"},
   {code:"cu",name:"Cuba",a:["cuba"],cont:"americas"},
   {code:"pa",name:"Panamá",a:["panama"],cont:"americas"},
@@ -532,16 +281,12 @@ const ALL = [
   {code:"hn",name:"Honduras",a:["honduras"],cont:"americas"},
   {code:"sv",name:"El Salvador",a:["el salvador","salvador"],cont:"americas"},
   {code:"ni",name:"Nicarágua",a:["nicaragua"],cont:"americas"},
-  {code:"do",name:"República Dominicana",a:["republica dominicana","dominican republic","rd"],cont:"americas"},
+  {code:"do",name:"República Dominicana",a:["republica dominicana","rd"],cont:"americas"},
   {code:"ht",name:"Haiti",a:["haiti"],cont:"americas"},
   {code:"jm",name:"Jamaica",a:["jamaica"],cont:"americas"},
   {code:"tt",name:"Trinidad e Tobago",a:["trinidad","trinidad e tobago"],cont:"americas"},
-  {code:"bb",name:"Barbados",a:["barbados"],cont:"americas"},
-  {code:"bs",name:"Bahamas",a:["bahamas"],cont:"americas"},
-  // América do Norte
-  {code:"us",name:"Estados Unidos",a:["estados unidos","usa","eua","united states","america","estados"],cont:"americas"},
+  {code:"us",name:"Estados Unidos",a:["estados unidos","usa","eua","united states","america"],cont:"americas"},
   {code:"ca",name:"Canadá",a:["canada"],cont:"americas"},
-  // Europa
   {code:"pt",name:"Portugal",a:["portugal"],cont:"europa"},
   {code:"es",name:"Espanha",a:["espanha","spain"],cont:"europa"},
   {code:"fr",name:"França",a:["franca","france"],cont:"europa"},
@@ -558,7 +303,7 @@ const ALL = [
   {code:"fi",name:"Finlândia",a:["finlandia","finland"],cont:"europa"},
   {code:"pl",name:"Polônia",a:["polonia","poland"],cont:"europa"},
   {code:"gr",name:"Grécia",a:["grecia","greece"],cont:"europa"},
-  {code:"cz",name:"República Tcheca",a:["republica tcheca","czech republic","tchequia","czechia"],cont:"europa"},
+  {code:"cz",name:"República Tcheca",a:["republica tcheca","tchequia","czechia"],cont:"europa"},
   {code:"sk",name:"Eslováquia",a:["eslovaquia","slovakia"],cont:"europa"},
   {code:"hu",name:"Hungria",a:["hungria","hungary"],cont:"europa"},
   {code:"ro",name:"Romênia",a:["romenia","romania"],cont:"europa"},
@@ -572,7 +317,7 @@ const ALL = [
   {code:"mt",name:"Malta",a:["malta"],cont:"europa"},
   {code:"cy",name:"Chipre",a:["chipre","cyprus"],cont:"europa"},
   {code:"al",name:"Albânia",a:["albania"],cont:"europa"},
-  {code:"ba",name:"Bósnia",a:["bosnia","bosnia e herzegovina"],cont:"europa"},
+  {code:"ba",name:"Bósnia",a:["bosnia"],cont:"europa"},
   {code:"mk",name:"Macedônia do Norte",a:["macedonia","north macedonia","macedonia do norte"],cont:"europa"},
   {code:"me",name:"Montenegro",a:["montenegro"],cont:"europa"},
   {code:"si",name:"Eslovênia",a:["eslovenia","slovenia"],cont:"europa"},
@@ -581,7 +326,6 @@ const ALL = [
   {code:"ee",name:"Estônia",a:["estonia"],cont:"europa"},
   {code:"by",name:"Bielorrússia",a:["bielorrussia","belarus"],cont:"europa"},
   {code:"md",name:"Moldávia",a:["moldavia","moldova"],cont:"europa"},
-  // Ásia
   {code:"jp",name:"Japão",a:["japao","japan"],cont:"asia"},
   {code:"cn",name:"China",a:["china"],cont:"asia"},
   {code:"kr",name:"Coreia do Sul",a:["coreia do sul","south korea","coreia"],cont:"asia"},
@@ -595,35 +339,29 @@ const ALL = [
   {code:"vn",name:"Vietnã",a:["vietna","vietnam"],cont:"asia"},
   {code:"ph",name:"Filipinas",a:["filipinas","philippines"],cont:"asia"},
   {code:"sg",name:"Singapura",a:["singapura","singapore"],cont:"asia"},
-  {code:"mm",name:"Mianmar",a:["mianmar","myanmar","birmania"],cont:"asia"},
+  {code:"mm",name:"Mianmar",a:["mianmar","myanmar"],cont:"asia"},
   {code:"kh",name:"Camboja",a:["camboja","cambodia"],cont:"asia"},
-  {code:"la",name:"Laos",a:["laos"],cont:"asia"},
   {code:"np",name:"Nepal",a:["nepal"],cont:"asia"},
   {code:"lk",name:"Sri Lanka",a:["sri lanka"],cont:"asia"},
   {code:"mn",name:"Mongólia",a:["mongolia"],cont:"asia"},
   {code:"kz",name:"Cazaquistão",a:["cazaquistao","kazakhstan"],cont:"asia"},
   {code:"uz",name:"Uzbequistão",a:["uzbequistao","uzbekistan"],cont:"asia"},
-  {code:"af",name:"Afeganistão",a:["afeganistao","afghanistan"],cont:"asia"},
   {code:"ge",name:"Geórgia",a:["georgia"],cont:"asia"},
   {code:"am",name:"Armênia",a:["armenia"],cont:"asia"},
   {code:"az",name:"Azerbaijão",a:["azerbaijao","azerbaijan"],cont:"asia"},
   {code:"ru",name:"Rússia",a:["russia"],cont:"asia"},
   {code:"tr",name:"Turquia",a:["turquia","turkey"],cont:"asia"},
-  // Oriente Médio
   {code:"il",name:"Israel",a:["israel"],cont:"oriente"},
   {code:"sa",name:"Arábia Saudita",a:["arabia saudita","saudi arabia"],cont:"oriente"},
   {code:"ir",name:"Irã",a:["ira","iran"],cont:"oriente"},
   {code:"iq",name:"Iraque",a:["iraque","iraq"],cont:"oriente"},
   {code:"ae",name:"Emirados Árabes",a:["emirados arabes","uae","emirados"],cont:"oriente"},
   {code:"kw",name:"Kuwait",a:["kuwait"],cont:"oriente"},
-  {code:"bh",name:"Barein",a:["barein","bahrain"],cont:"oriente"},
   {code:"om",name:"Omã",a:["oma","oman"],cont:"oriente"},
   {code:"ye",name:"Iêmen",a:["iemen","yemen"],cont:"oriente"},
   {code:"jo",name:"Jordânia",a:["jordania","jordan"],cont:"oriente"},
   {code:"lb",name:"Líbano",a:["libano","lebanon"],cont:"oriente"},
-  {code:"sy",name:"Síria",a:["siria","syria"],cont:"oriente"},
   {code:"qa",name:"Catar",a:["catar","qatar"],cont:"oriente"},
-  // África
   {code:"za",name:"África do Sul",a:["africa do sul","south africa"],cont:"africa"},
   {code:"ng",name:"Nigéria",a:["nigeria"],cont:"africa"},
   {code:"eg",name:"Egito",a:["egito","egypt"],cont:"africa"},
@@ -637,257 +375,495 @@ const ALL = [
   {code:"cv",name:"Cabo Verde",a:["cabo verde"],cont:"africa"},
   {code:"sn",name:"Senegal",a:["senegal"],cont:"africa"},
   {code:"ci",name:"Costa do Marfim",a:["costa do marfim","ivory coast"],cont:"africa"},
-  {code:"ml",name:"Mali",a:["mali"],cont:"africa"},
-  {code:"bf",name:"Burkina Faso",a:["burkina faso"],cont:"africa"},
-  {code:"ne",name:"Níger",a:["niger"],cont:"africa"},
-  {code:"td",name:"Chade",a:["chade","chad"],cont:"africa"},
-  {code:"lr",name:"Libéria",a:["liberia"],cont:"africa"},
-  {code:"sl",name:"Serra Leoa",a:["serra leoa","sierra leone"],cont:"africa"},
-  {code:"gn",name:"Guiné",a:["guine","guinea"],cont:"africa"},
-  {code:"mg",name:"Madagascar",a:["madagascar"],cont:"africa"},
-  {code:"zw",name:"Zimbábue",a:["zimbabue","zimbabwe"],cont:"africa"},
-  {code:"zm",name:"Zâmbia",a:["zambia"],cont:"africa"},
-  {code:"mw",name:"Malaui",a:["malawi"],cont:"africa"},
-  {code:"bw",name:"Botsuana",a:["botsuana","botswana"],cont:"africa"},
-  {code:"na",name:"Namíbia",a:["namibia"],cont:"africa"},
+  {code:"cm",name:"Camarões",a:["camaroes","cameroon"],cont:"africa"},
   {code:"rw",name:"Ruanda",a:["ruanda","rwanda"],cont:"africa"},
   {code:"ug",name:"Uganda",a:["uganda"],cont:"africa"},
-  {code:"cm",name:"Camarões",a:["camaroes","cameroon"],cont:"africa"},
-  {code:"cd",name:"Congo",a:["congo","rdc","rep dem congo"],cont:"africa"},
-  {code:"so",name:"Somália",a:["somalia"],cont:"africa"},
-  {code:"sd",name:"Sudão",a:["sudao","sudan"],cont:"africa"},
-  {code:"ss",name:"Sudão do Sul",a:["sudao do sul","south sudan"],cont:"africa"},
-  {code:"ly",name:"Líbia",a:["libia","libya"],cont:"africa"},
-  {code:"tn",name:"Tunísia",a:["tunisia"],cont:"africa"},
+  {code:"cd",name:"Congo",a:["congo","rdc"],cont:"africa"},
   {code:"dz",name:"Argélia",a:["argelia","algeria"],cont:"africa"},
-  {code:"bi",name:"Burundi",a:["burundi"],cont:"africa"},
-  // Oceania
+  {code:"tn",name:"Tunísia",a:["tunisia"],cont:"africa"},
+  {code:"ly",name:"Líbia",a:["libia","libya"],cont:"africa"},
   {code:"au",name:"Austrália",a:["australia"],cont:"oceania"},
   {code:"nz",name:"Nova Zelândia",a:["nova zelandia","new zealand"],cont:"oceania"},
   {code:"fj",name:"Fiji",a:["fiji"],cont:"oceania"},
   {code:"pg",name:"Papua-Nova Guiné",a:["papua","papua nova guine"],cont:"oceania"},
-  {code:"to",name:"Tonga",a:["tonga"],cont:"oceania"},
-  {code:"ws",name:"Samoa",a:["samoa"],cont:"oceania"},
-  {code:"sb",name:"Ilhas Salomão",a:["ilhas salomao","solomon islands"],cont:"oceania"},
-  {code:"vu",name:"Vanuatu",a:["vanuatu"],cont:"oceania"},
+];
+const COPA_CODES=new Set(["us","ca","mx","br","ar","co","ec","uy","ve","py","de","fr","es","pt","gb","nl","be","it","hr","at","hu","tr","ro","si","al","me","ge","rs","cz","sk","ua","no","is","ch","ma","ng","eg","sn","ci","cm","rw","za","jp","kr","sa","ir","ae","jo","uz","gt","pa","jm","nz","au"]);
+const COPA=PAISES.filter(c=>COPA_CODES.has(c.code));
+
+// CAPITAIS — bandeira do país como imagem + nome do país como hint
+const CAPITAIS=[
+  {code:"br",name:"Brasília",a:["brasilia"],hint:"Brasil"},
+  {code:"ar",name:"Buenos Aires",a:["buenos aires"],hint:"Argentina"},
+  {code:"cl",name:"Santiago",a:["santiago"],hint:"Chile"},
+  {code:"co",name:"Bogotá",a:["bogota"],hint:"Colômbia"},
+  {code:"pe",name:"Lima",a:["lima"],hint:"Peru"},
+  {code:"ve",name:"Caracas",a:["caracas"],hint:"Venezuela"},
+  {code:"uy",name:"Montevidéu",a:["montevideu","montevideo"],hint:"Uruguai"},
+  {code:"py",name:"Assunção",a:["assuncao","asuncion"],hint:"Paraguai"},
+  {code:"bo",name:"La Paz",a:["la paz"],hint:"Bolívia"},
+  {code:"ec",name:"Quito",a:["quito"],hint:"Equador"},
+  {code:"mx",name:"Cidade do México",a:["cidade do mexico","mexico city","mexico"],hint:"México"},
+  {code:"us",name:"Washington D.C.",a:["washington","washington dc"],hint:"EUA"},
+  {code:"ca",name:"Ottawa",a:["ottawa"],hint:"Canadá"},
+  {code:"cu",name:"Havana",a:["havana"],hint:"Cuba"},
+  {code:"gt",name:"Cidade da Guatemala",a:["cidade da guatemala","guatemala city","guatemala"],hint:"Guatemala"},
+  {code:"hn",name:"Tegucigalpa",a:["tegucigalpa"],hint:"Honduras"},
+  {code:"pa",name:"Cidade do Panamá",a:["cidade do panama","panama city","panama"],hint:"Panamá"},
+  {code:"cr",name:"San José",a:["san jose"],hint:"Costa Rica"},
+  {code:"do",name:"Santo Domingo",a:["santo domingo"],hint:"Rep. Dominicana"},
+  {code:"ht",name:"Porto Príncipe",a:["porto principe","port-au-prince"],hint:"Haiti"},
+  {code:"jm",name:"Kingston",a:["kingston"],hint:"Jamaica"},
+  {code:"pt",name:"Lisboa",a:["lisboa","lisbon"],hint:"Portugal"},
+  {code:"es",name:"Madri",a:["madri","madrid"],hint:"Espanha"},
+  {code:"fr",name:"Paris",a:["paris"],hint:"França"},
+  {code:"de",name:"Berlim",a:["berlim","berlin"],hint:"Alemanha"},
+  {code:"it",name:"Roma",a:["roma","rome"],hint:"Itália"},
+  {code:"gb",name:"Londres",a:["londres","london"],hint:"Reino Unido"},
+  {code:"nl",name:"Amsterdã",a:["amsterda","amsterdam"],hint:"Holanda"},
+  {code:"be",name:"Bruxelas",a:["bruxelas","brussels"],hint:"Bélgica"},
+  {code:"ch",name:"Berna",a:["berna","bern"],hint:"Suíça"},
+  {code:"at",name:"Viena",a:["viena","vienna"],hint:"Áustria"},
+  {code:"se",name:"Estocolmo",a:["estocolmo","stockholm"],hint:"Suécia"},
+  {code:"no",name:"Oslo",a:["oslo"],hint:"Noruega"},
+  {code:"dk",name:"Copenhague",a:["copenhague","copenhagen"],hint:"Dinamarca"},
+  {code:"fi",name:"Helsinque",a:["helsinque","helsinki"],hint:"Finlândia"},
+  {code:"pl",name:"Varsóvia",a:["varsovia","warsaw"],hint:"Polônia"},
+  {code:"gr",name:"Atenas",a:["atenas","athens"],hint:"Grécia"},
+  {code:"cz",name:"Praga",a:["praga","prague"],hint:"Rep. Tcheca"},
+  {code:"hu",name:"Budapeste",a:["budapeste","budapest"],hint:"Hungria"},
+  {code:"ro",name:"Bucareste",a:["bucareste","bucharest"],hint:"Romênia"},
+  {code:"ua",name:"Kiev",a:["kiev","kyiv"],hint:"Ucrânia"},
+  {code:"ie",name:"Dublim",a:["dublim","dublin"],hint:"Irlanda"},
+  {code:"ru",name:"Moscou",a:["moscou","moscow"],hint:"Rússia"},
+  {code:"tr",name:"Ancara",a:["ancara","ankara"],hint:"Turquia"},
+  {code:"jp",name:"Tóquio",a:["toquio","tokyo"],hint:"Japão"},
+  {code:"cn",name:"Pequim",a:["pequim","beijing"],hint:"China"},
+  {code:"kr",name:"Seul",a:["seul","seoul"],hint:"Coreia do Sul"},
+  {code:"in",name:"Nova Déli",a:["nova deli","new delhi"],hint:"Índia"},
+  {code:"pk",name:"Islamabade",a:["islamabade","islamabad"],hint:"Paquistão"},
+  {code:"id",name:"Jacarta",a:["jacarta","jakarta"],hint:"Indonésia"},
+  {code:"my",name:"Kuala Lumpur",a:["kuala lumpur"],hint:"Malásia"},
+  {code:"th",name:"Bangkok",a:["bangkok"],hint:"Tailândia"},
+  {code:"vn",name:"Hanói",a:["hanoi"],hint:"Vietnã"},
+  {code:"ph",name:"Manila",a:["manila"],hint:"Filipinas"},
+  {code:"sg",name:"Singapura",a:["singapura","singapore"],hint:"Singapura"},
+  {code:"np",name:"Catmandu",a:["catmandu","kathmandu"],hint:"Nepal"},
+  {code:"sa",name:"Riade",a:["riade","riyadh"],hint:"Arábia Saudita"},
+  {code:"ir",name:"Teerã",a:["teera","tehran"],hint:"Irã"},
+  {code:"iq",name:"Bagdá",a:["bagda","baghdad"],hint:"Iraque"},
+  {code:"qa",name:"Doha",a:["doha"],hint:"Catar"},
+  {code:"ae",name:"Abu Dhabi",a:["abu dhabi"],hint:"Emirados Árabes"},
+  {code:"jo",name:"Amã",a:["ama","amman"],hint:"Jordânia"},
+  {code:"il",name:"Jerusalém",a:["jerusalem"],hint:"Israel"},
+  {code:"ke",name:"Nairóbi",a:["nairobi"],hint:"Quênia"},
+  {code:"gh",name:"Acra",a:["acra","accra"],hint:"Gana"},
+  {code:"ma",name:"Rabat",a:["rabat"],hint:"Marrocos"},
+  {code:"eg",name:"Cairo",a:["cairo"],hint:"Egito"},
+  {code:"et",name:"Adis Abeba",a:["adis abeba","addis ababa"],hint:"Etiópia"},
+  {code:"ao",name:"Luanda",a:["luanda"],hint:"Angola"},
+  {code:"sn",name:"Dacar",a:["dacar","dakar"],hint:"Senegal"},
+  {code:"za",name:"Pretória",a:["pretoria"],hint:"África do Sul"},
+  {code:"ng",name:"Abuja",a:["abuja"],hint:"Nigéria"},
+  {code:"au",name:"Canberra",a:["canberra"],hint:"Austrália"},
+  {code:"nz",name:"Wellington",a:["wellington"],hint:"Nova Zelândia"},
 ];
 
-// Copa do Mundo FIFA 2026 — 48 seleções classificadas
-const COPA_CODES = new Set([
-  "us","ca","mx",    // anfitriões
-  "br","ar","co","ec","uy","ve","py","bo",  // CONMEBOL
-  "de","fr","es","pt","gb","nl","be","it","hr","at","hu","tr","ro","si","al","me","ge","rs","cz","sk","ua","no","is","ch",  // UEFA
-  "ma","ng","eg","sn","ci","cm","rw","za",  // CAF
-  "jp","kr","sa","ir","ae","jo","uz","bh",  // AFC
-  "us","ca","mx","gt","pa","jm",  // CONCACAF extras
-  "nz","au",  // OFC/AFC
-]);
-// Filtro correto — só países que existem no ALL
-const COPA = ALL.filter(c => COPA_CODES.has(c.code));
+// ANIMAIS — título da página Wikipedia em inglês para buscar thumbnail
+const ANIMAIS=[
+  {wiki:"Lion",name:"Leão",a:["leao","lion","leão"]},
+  {wiki:"Tiger",name:"Tigre",a:["tigre","tiger"]},
+  {wiki:"African_bush_elephant",name:"Elefante",a:["elefante","elephant"]},
+  {wiki:"Giraffe",name:"Girafa",a:["girafa","giraffe"]},
+  {wiki:"Jaguar",name:"Onça-pintada",a:["onca","jaguar","onça","onca pintada"]},
+  {wiki:"Gray_wolf",name:"Lobo",a:["lobo","wolf"]},
+  {wiki:"Brown_bear",name:"Urso-pardo",a:["urso","bear","urso pardo"]},
+  {wiki:"Gorilla",name:"Gorila",a:["gorila","gorilla"]},
+  {wiki:"Bottlenose_dolphin",name:"Golfinho",a:["golfinho","dolphin"]},
+  {wiki:"Giant_panda",name:"Panda",a:["panda","panda gigante"]},
+  {wiki:"Moose",name:"Alce",a:["alce","moose","elk"]},
+  {wiki:"Koala",name:"Coala",a:["coala","koala"]},
+  {wiki:"Llama",name:"Lhama",a:["lhama","llama"]},
+  {wiki:"Indian_peafowl",name:"Pavão",a:["pavao","peacock","pavão"]},
+  {wiki:"American_crocodile",name:"Crocodilo",a:["crocodilo","crocodile"]},
+  {wiki:"Red_kangaroo",name:"Canguru",a:["canguru","kangaroo"]},
+  {wiki:"Greater_flamingo",name:"Flamingo",a:["flamingo"]},
+  {wiki:"Plains_zebra",name:"Zebra",a:["zebra"]},
+  {wiki:"Cheetah",name:"Guepardo",a:["guepardo","cheetah","chita"]},
+  {wiki:"White_rhinoceros",name:"Rinoceronte",a:["rinoceronte","rhinoceros","rhino"]},
+  {wiki:"Bornean_orangutan",name:"Orangotango",a:["orangotango","orangutan"]},
+  {wiki:"Green_sea_turtle",name:"Tartaruga-marinha",a:["tartaruga marinha","tartaruga","turtle","sea turtle"]},
+  {wiki:"Great_white_shark",name:"Tubarão",a:["tubarao","shark","tubarão"]},
+  {wiki:"Orca",name:"Orca",a:["orca","killer whale"]},
+  {wiki:"Scarlet_macaw",name:"Arara",a:["arara","macaw"]},
+  {wiki:"King_cobra",name:"Cobra",a:["cobra","snake","serpente"]},
+  {wiki:"Bald_eagle",name:"Águia-americana",a:["aguia","eagle","águia","aguia americana"]},
+  {wiki:"Common_octopus",name:"Polvo",a:["polvo","octopus"]},
+  {wiki:"California_sea_lion",name:"Leão-marinho",a:["leao marinho","sea lion","foca"]},
+  {wiki:"Emperor_penguin",name:"Pinguim",a:["pinguim","penguin"]},
+  {wiki:"Humpback_whale",name:"Baleia-jubarte",a:["baleia jubarte","baleia","whale","jubarte"]},
+  {wiki:"Giant_anteater",name:"Tamanduá-bandeira",a:["tamandua","anteater","tamanduá","tamandua bandeira"]},
+  {wiki:"Hippopotamus",name:"Hipopótamo",a:["hipopotamo","hippopotamus","hippo"]},
+  {wiki:"North_American_beaver",name:"Castor",a:["castor","beaver"]},
+  {wiki:"North_American_river_otter",name:"Lontra",a:["lontra","otter"]},
+];
 
-function norm(s){ return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim(); }
-function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+// ARTE — título Wikipedia inglês
+const ARTE=[
+  {wiki:"Mona_Lisa",name:"Mona Lisa",a:["mona lisa","gioconda","la gioconda"],hint:"Leonardo da Vinci, ~1503"},
+  {wiki:"The_Scream",name:"O Grito",a:["o grito","the scream","grito"],hint:"Edvard Munch, 1893"},
+  {wiki:"The_Starry_Night",name:"A Noite Estrelada",a:["a noite estrelada","noite estrelada","starry night"],hint:"Vincent van Gogh, 1889"},
+  {wiki:"Guernica_(Picasso)",name:"Guernica",a:["guernica"],hint:"Pablo Picasso, 1937"},
+  {wiki:"The_Great_Wave_off_Kanagawa",name:"A Grande Onda de Kanagawa",a:["a grande onda","grande onda","the great wave","kanagawa"],hint:"Katsushika Hokusai, ~1831"},
+  {wiki:"The_Birth_of_Venus_(Botticelli)",name:"O Nascimento de Vênus",a:["nascimento de venus","o nascimento de venus","birth of venus"],hint:"Sandro Botticelli, ~1486"},
+  {wiki:"The_Creation_of_Adam",name:"A Criação de Adão",a:["a criacao de adao","criacao de adao","creation of adam"],hint:"Michelangelo, ~1512"},
+  {wiki:"The_Persistence_of_Memory",name:"A Persistência da Memória",a:["persistencia da memoria","a persistencia da memoria","persistence of memory","dali"],hint:"Salvador Dalí, 1931"},
+  {wiki:"Saturn_Devouring_His_Son",name:"Saturno Devorando o Filho",a:["saturno devorando o filho","saturno","saturn"],hint:"Francisco Goya, ~1823"},
+  {wiki:"School_of_Athens",name:"A Escola de Atenas",a:["a escola de atenas","escola de atenas","school of athens"],hint:"Rafael, ~1511"},
+  {wiki:"David_(Michelangelo)",name:"Davi",a:["davi","david"],hint:"Michelangelo, 1504"},
+  {wiki:"Girl_with_a_Pearl_Earring",name:"Moça com Brinco de Pérola",a:["moca com brinco de perola","girl with a pearl earring","brinco de perola"],hint:"Johannes Vermeer, ~1665"},
+  {wiki:"American_Gothic",name:"American Gothic",a:["american gothic"],hint:"Grant Wood, 1930"},
+  {wiki:"Nighthawks",name:"Nighthawks",a:["nighthawks"],hint:"Edward Hopper, 1942"},
+  {wiki:"A_Sunday_on_La_Grande_Jatte",name:"Uma Tarde de Domingo na Grande Jatte",a:["uma tarde de domingo na grande jatte","grande jatte","sunday on la grande jatte"],hint:"Georges Seurat, 1886"},
+  {wiki:"The_Last_Supper_(Leonardo_da_Vinci)",name:"A Última Ceia",a:["a ultima ceia","ultima ceia","the last supper"],hint:"Leonardo da Vinci, ~1498"},
+  {wiki:"Las_Meninas",name:"As Meninas",a:["as meninas","las meninas"],hint:"Diego Velázquez, 1656"},
+  {wiki:"Venus_de_Milo",name:"Vênus de Milo",a:["venus de milo","venus","vênus de milo"],hint:"Escultura grega, ~100 a.C."},
+  {wiki:"Sistine_Chapel_ceiling",name:"Teto da Capela Sistina",a:["teto da capela sistina","sistine chapel","chapel sistina","cappella sistina"],hint:"Michelangelo, 1508–1512"},
+  {wiki:"The_Kiss_(Klimt)",name:"O Beijo",a:["o beijo","the kiss","beijo","klimt"],hint:"Gustav Klimt, 1907–1908"},
+];
 
-// Update counts in modal
-function updateCounts(){
-  document.getElementById('count-all').textContent = ALL.length+' países';
-  const conts = ['americas','europa','africa','asia','oceania','oriente'];
-  conts.forEach(c=>{
-    const el=document.getElementById('cc-'+c);
-    if(el) el.textContent = ALL.filter(x=>x.cont===c).length+' países';
+// MONUMENTOS — título Wikipedia inglês
+const MONUMENTOS=[
+  {wiki:"Eiffel_Tower",name:"Torre Eiffel",a:["torre eiffel","eiffel","eiffel tower"],hint:"Paris, França"},
+  {wiki:"Taj_Mahal",name:"Taj Mahal",a:["taj mahal"],hint:"Agra, Índia"},
+  {wiki:"Great_Wall_of_China",name:"Grande Muralha da China",a:["grande muralha da china","muralha da china","great wall","grande muralha"],hint:"China"},
+  {wiki:"Colosseum",name:"Coliseu",a:["coliseu","colosseum","coliseum"],hint:"Roma, Itália"},
+  {wiki:"Sydney_Opera_House",name:"Ópera de Sydney",a:["opera de sydney","sydney opera house","opera sydney"],hint:"Sydney, Austrália"},
+  {wiki:"Machu_Picchu",name:"Machu Picchu",a:["machu picchu"],hint:"Peru"},
+  {wiki:"Golden_Gate_Bridge",name:"Golden Gate",a:["golden gate","golden gate bridge"],hint:"São Francisco, EUA"},
+  {wiki:"Empire_State_Building",name:"Empire State Building",a:["empire state","empire state building"],hint:"Nova York, EUA"},
+  {wiki:"Burj_Khalifa",name:"Burj Khalifa",a:["burj khalifa","burj"],hint:"Dubai, Emirados Árabes"},
+  {wiki:"Christ_the_Redeemer_(statue)",name:"Cristo Redentor",a:["cristo redentor","christ the redeemer","cristo"],hint:"Rio de Janeiro, Brasil"},
+  {wiki:"Big_Ben",name:"Big Ben",a:["big ben","elizabeth tower"],hint:"Londres, Reino Unido"},
+  {wiki:"Stonehenge",name:"Stonehenge",a:["stonehenge"],hint:"Wiltshire, Reino Unido"},
+  {wiki:"Hagia_Sophia",name:"Santa Sofia",a:["santa sofia","hagia sophia","aya sofia"],hint:"Istambul, Turquia"},
+  {wiki:"Sagrada_Família",name:"Sagrada Família",a:["sagrada familia","sagrada família"],hint:"Barcelona, Espanha"},
+  {wiki:"Angkor_Wat",name:"Angkor Wat",a:["angkor wat","angkor"],hint:"Camboja"},
+  {wiki:"Parthenon",name:"Partenon",a:["partenon","parthenon"],hint:"Atenas, Grécia"},
+  {wiki:"St._Peter's_Basilica",name:"Basílica de São Pedro",a:["basilica de sao pedro","sao pedro","saint peter","vaticano"],hint:"Vaticano, Roma"},
+  {wiki:"Leaning_Tower_of_Pisa",name:"Torre de Pisa",a:["torre de pisa","pisa","leaning tower"],hint:"Pisa, Itália"},
+  {wiki:"Notre-Dame_de_Paris",name:"Notre-Dame de Paris",a:["notre dame","notre-dame","catedral notre dame"],hint:"Paris, França"},
+  {wiki:"Acropolis_of_Athens",name:"Acrópole de Atenas",a:["acropole de atenas","acropolis","acropole"],hint:"Atenas, Grécia"},
+];
+
+// TIMES — título Wikipedia inglês
+const TIMES=[
+  {wiki:"Clube_de_Regatas_do_Flamengo",name:"Flamengo",a:["flamengo","fla"],hint:"Rio de Janeiro, Brasil"},
+  {wiki:"Sport_Club_Corinthians_Paulista",name:"Corinthians",a:["corinthians","timão","timao"],hint:"São Paulo, Brasil"},
+  {wiki:"Sociedade_Esportiva_Palmeiras",name:"Palmeiras",a:["palmeiras","verdão","verdao"],hint:"São Paulo, Brasil"},
+  {wiki:"São_Paulo_FC",name:"São Paulo",a:["sao paulo","spfc","são paulo"],hint:"São Paulo, Brasil"},
+  {wiki:"Santos_FC",name:"Santos",a:["santos","peixe"],hint:"Santos, Brasil"},
+  {wiki:"Clube_Atlético_Mineiro",name:"Atlético Mineiro",a:["atletico mineiro","atletico","galo"],hint:"Belo Horizonte, Brasil"},
+  {wiki:"Grêmio_Foot-Ball_Porto_Alegrense",name:"Grêmio",a:["gremio","grêmio"],hint:"Porto Alegre, Brasil"},
+  {wiki:"Sport_Club_Internacional",name:"Internacional",a:["internacional","inter","colorado"],hint:"Porto Alegre, Brasil"},
+  {wiki:"Club_de_Regatas_Vasco_da_Gama",name:"Vasco da Gama",a:["vasco da gama","vasco"],hint:"Rio de Janeiro, Brasil"},
+  {wiki:"Botafogo_de_Futebol_e_Regatas",name:"Botafogo",a:["botafogo","glorioso"],hint:"Rio de Janeiro, Brasil"},
+  {wiki:"FC_Barcelona",name:"Barcelona",a:["barcelona","barca","fc barcelona"],hint:"Barcelona, Espanha"},
+  {wiki:"Real_Madrid_CF",name:"Real Madrid",a:["real madrid","madrid"],hint:"Madrid, Espanha"},
+  {wiki:"Arsenal_F.C.",name:"Arsenal",a:["arsenal"],hint:"Londres, Inglaterra"},
+  {wiki:"Liverpool_F.C.",name:"Liverpool",a:["liverpool"],hint:"Liverpool, Inglaterra"},
+  {wiki:"Manchester_United_F.C.",name:"Manchester United",a:["manchester united","man united","man utd"],hint:"Manchester, Inglaterra"},
+  {wiki:"Manchester_City_F.C.",name:"Manchester City",a:["manchester city","man city","city"],hint:"Manchester, Inglaterra"},
+  {wiki:"FC_Internazionale_Milano",name:"Inter de Milão",a:["inter de milao","inter milan","inter","internazionale"],hint:"Milão, Itália"},
+  {wiki:"Juventus_F.C.",name:"Juventus",a:["juventus","juve"],hint:"Turim, Itália"},
+  {wiki:"FC_Bayern_Munich",name:"Bayern de Munique",a:["bayern de munique","bayern munich","bayern"],hint:"Munique, Alemanha"},
+  {wiki:"Borussia_Dortmund",name:"Borussia Dortmund",a:["borussia dortmund","dortmund","bvb"],hint:"Dortmund, Alemanha"},
+  {wiki:"Chelsea_F.C.",name:"Chelsea",a:["chelsea"],hint:"Londres, Inglaterra"},
+  {wiki:"Tottenham_Hotspur_F.C.",name:"Tottenham",a:["tottenham","spurs"],hint:"Londres, Inglaterra"},
+  {wiki:"AFC_Ajax",name:"Ajax",a:["ajax"],hint:"Amsterdã, Holanda"},
+  {wiki:"Atlético_Madrid",name:"Atlético de Madrid",a:["atletico de madrid","atletico madrid","atletico"],hint:"Madrid, Espanha"},
+  {wiki:"A.C._Milan",name:"AC Milan",a:["ac milan","milan"],hint:"Milão, Itália"},
+  {wiki:"Paris_Saint-Germain_F.C.",name:"Paris Saint-Germain",a:["paris saint germain","psg"],hint:"Paris, França"},
+  {wiki:"S.L._Benfica",name:"Benfica",a:["benfica","sl benfica"],hint:"Lisboa, Portugal"},
+  {wiki:"FC_Porto",name:"Porto",a:["porto","fc porto"],hint:"Porto, Portugal"},
+  {wiki:"AS_Roma",name:"AS Roma",a:["as roma","roma"],hint:"Roma, Itália"},
+  {wiki:"S.S.C._Napoli",name:"Napoli",a:["napoli","ssc napoli"],hint:"Nápoles, Itália"},
+];
+
+/* ══════════════════════════════════════════════════════════════════
+   QUIZ DEFINITIONS
+══════════════════════════════════════════════════════════════════ */
+const QUIZZES=[
+  {
+    id:"bandeiras",icon:"🌍",title:"Bandeiras do Mundo",
+    desc:"Veja a bandeira e adivinhe o país. +130 países.",
+    tags:[{t:"130+ países",cls:"tag-purple"},{t:"flagcdn.com",cls:"tag-green"}],
+    question:"De qual país é esta bandeira?",placeholder:"Digite o nome do país...",
+    hasModes:true,
+    getPool(m,c){return m==="copa"?COPA:m==="continente"?PAISES.filter(p=>p.cont===c):PAISES;},
+    async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
+    getHints(){return[];},
+    modes:[
+      {id:"all",icon:"🌍",label:"Todos os países",desc:"Todos os disponíveis",cls:"",bg:"rgba(139,92,246,.1)",bc:"rgba(139,92,246,.3)",fc:"#a78bfa"},
+      {id:"copa",icon:"⚽",label:"Copa do Mundo 2026",desc:"48 seleções classificadas",cls:"copa-c",bg:"rgba(234,179,8,.1)",bc:"rgba(234,179,8,.3)",fc:"#fbbf24"},
+      {id:"continente",icon:"🗺️",label:"Por continente",desc:"Escolha um continente",cls:"",bg:"rgba(236,72,153,.1)",bc:"rgba(236,72,153,.3)",fc:"#f9a8d4"},
+    ],
+    continentes:[
+      {id:"americas",icon:"🌎",name:"Américas"},
+      {id:"europa",icon:"🏰",name:"Europa"},
+      {id:"africa",icon:"🌍",name:"África"},
+      {id:"asia",icon:"🏯",name:"Ásia"},
+      {id:"oceania",icon:"🦘",name:"Oceania"},
+      {id:"oriente",icon:"🕌",name:"Oriente Médio"},
+    ],
+  },
+  {
+    id:"capitais",icon:"🏛️",title:"Capitais do Mundo",
+    desc:"Veja a bandeira e adivinhe a capital do país. 70+ capitais.",
+    tags:[{t:"70+ capitais",cls:"tag-purple"},{t:"flagcdn.com",cls:"tag-green"}],
+    question:"Qual é a capital deste país?",placeholder:"Digite o nome da capital...",
+    hasModes:false,
+    getPool(){return CAPITAIS;},
+    async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
+    getHints(item){return["País: "+item.hint];},
+  },
+  {
+    id:"animais",icon:"🦁",title:"Animais do Mundo",
+    desc:"Foto real do animal via Wikipedia. 35 espécies.",
+    tags:[{t:"35 animais",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-green"}],
+    question:"Que animal é este?",placeholder:"Digite o nome do animal...",
+    hasModes:false,
+    getPool(){return ANIMAIS;},
+    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
+    getHints(){return[];},
+  },
+  {
+    id:"arte",icon:"🖼️",title:"Arte Famosa",
+    desc:"Obras de arte reais via Wikipedia. 20 obras.",
+    tags:[{t:"20 obras",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-gold"}],
+    question:"Qual é o nome desta obra?",placeholder:"Digite o nome da obra...",
+    hasModes:false,
+    getPool(){return ARTE;},
+    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
+    getHints(item){return[item.hint];},
+  },
+  {
+    id:"monumentos",icon:"🗿",title:"Monumentos do Mundo",
+    desc:"Monumentos e maravilhas reais via Wikipedia. 20 locais.",
+    tags:[{t:"20 monumentos",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-pink"}],
+    question:"Que monumento ou lugar é este?",placeholder:"Digite o nome do lugar...",
+    hasModes:false,
+    getPool(){return MONUMENTOS;},
+    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
+    getHints(item){return[item.hint];},
+  },
+  {
+    id:"times",icon:"⚽",title:"Clubes de Futebol",
+    desc:"Foto real do estádio/clube via Wikipedia. 30 clubes.",
+    tags:[{t:"30 clubes",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-gold"}],
+    question:"De qual clube é esta imagem?",placeholder:"Digite o nome do clube...",
+    hasModes:false,
+    getPool(){return TIMES;},
+    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
+    getHints(item){return[item.hint];},
+  },
+];
+
+/* ══════════════════════════════════════════════════════════════════
+   UTILS
+══════════════════════════════════════════════════════════════════ */
+function norm(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();}
+function shuffle(a){let b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function $(id){return document.getElementById(id);}
+
+/* ══════════════════════════════════════════════════════════════════
+   HOME
+══════════════════════════════════════════════════════════════════ */
+(function(){
+  const g=$("quiz-grid");g.innerHTML="";
+  QUIZZES.forEach(q=>{
+    const c=document.createElement("div");c.className="quiz-card";
+    c.innerHTML=`<div class="card-icon">${q.icon}</div><div class="card-title">${q.title}</div><div class="card-desc">${q.desc}</div><div class="card-meta">${q.tags.map(t=>`<span class="card-tag ${t.cls}">${t.t}</span>`).join("")}</div>`;
+    c.addEventListener("click",()=>startQuiz(q.id));g.appendChild(c);
   });
+})();
+
+/* ══════════════════════════════════════════════════════════════════
+   STATE
+══════════════════════════════════════════════════════════════════ */
+let AQ=null,queue=[],current=null,round=0,hits=0,revealed=false;
+let players=[],pid=1,sidebarOpen=true;
+let gameMode="all",gameCont="americas",pendingMode="all",pendingCont="americas";
+let timerSec=0,timerInt=null;
+let loadingRound=0; // track async loads
+
+function isMobile(){return window.innerWidth<=700;}
+
+function startQuiz(id){
+  AQ=QUIZZES.find(q=>q.id===id);
+  gameMode="all";gameCont="americas";round=0;hits=0;players=[];
+  $("g-quiz-name").textContent=AQ.icon+" "+AQ.title;
+  $("g-btn-mode").style.display=AQ.hasModes?"":"none";
+  $("g-mode-pill").style.display=AQ.hasModes?"":"none";
+  $("home").classList.remove("active");$("game").classList.add("active");
+  sidebarOpen=true;applySidebar();renderPlayers();freshStart();
+}
+function goHome(){stopTimer();$("game").classList.remove("active");$("home").classList.add("active");}
+
+function startTimer(){stopTimer();timerSec=0;updateTimer();timerInt=setInterval(()=>{timerSec++;updateTimer();},1000);}
+function stopTimer(){if(timerInt){clearInterval(timerInt);timerInt=null;}}
+function updateTimer(){const m=String(Math.floor(timerSec/60)).padStart(2,"0"),s=String(timerSec%60).padStart(2,"0");$("g-timer").textContent=m+":"+s;}
+
+function freshStart(){
+  queue=shuffle([...AQ.getPool(gameMode,gameCont)]);
+  round=0;hits=0;$("g-hits").textContent="0 acertos";$("g-timer").textContent="00:00";
+  startTimer();nextRound();
 }
 
-// ── State ──
-let queue=[], current=null, round=0, revealed=false;
-let players=[], pid=1, totalAcertos=0;
-let currentMode='all', currentCont='americas';
-let pendingMode='all', pendingCont='americas';
-
-function getPool(){
-  if(currentMode==='copa') return COPA;
-  if(currentMode==='continente') return ALL.filter(c=>c.cont===currentCont);
-  return ALL;
+function resetImageCardSize(){
+  const card=$("g-image-card");
+  card.style.width="100%";card.style.height="100%";
+}
+function fitImageCard(img){
+  const card=$("g-image-card"),wrap=card.parentElement;
+  const maxW=wrap.clientWidth,maxH=wrap.clientHeight;
+  const ratio=img.naturalWidth/img.naturalHeight;
+  if(!ratio||!isFinite(ratio)){resetImageCardSize();return;}
+  let w=maxW,h=w/ratio;
+  if(h>maxH){h=maxH;w=h*ratio;}
+  card.style.width=Math.round(w)+"px";
+  card.style.height=Math.round(h)+"px";
 }
 
-function flagUrl(code){ return 'https://flagcdn.com/w320/'+code+'.png'; }
+async function nextRound(){
+  if(!queue.length)queue=shuffle([...AQ.getPool(gameMode,gameCont)]);
+  current=queue.pop();round++;revealed=false;
+  const thisRound=round;
+  loadingRound=round;
 
-function startFresh(){
-  queue = shuffle([...getPool()]);
-  round=0; totalAcertos=0;
-  document.getElementById('acertos-badge').textContent='0 acertos';
-  nextRound();
-}
+  // Reset UI
+  const img=$("g-img"),ph=$("g-img-ph"),phIcon=$("g-img-ph-icon"),phLabel=$("g-img-ph-label");
+  img.style.display="none";ph.style.display="flex";
+  resetImageCardSize();
+  phIcon.textContent="⏳";phLabel.textContent="Carregando...";
 
-function nextRound(){
-  if(queue.length===0) queue=shuffle([...getPool()]);
-  current=queue.pop();
-  round++;
-  revealed=false;
-  const img=document.getElementById('flag-img');
-  const ph=document.getElementById('flag-placeholder');
-  img.style.display='block'; ph.style.display='none';
-  img.src=flagUrl(current.code);
-  img.onerror=()=>{ img.style.display='none'; ph.style.display='block'; };
-  document.getElementById('country-reveal').textContent='';
-  document.getElementById('round-label').textContent='Rodada '+round;
-  const inp=document.getElementById('guess-input');
-  inp.value=''; inp.className=''; inp.disabled=false;
-  document.getElementById('feedback').innerHTML='&nbsp;';
-  document.getElementById('feedback').className='';
-  document.getElementById('btn-next').style.display='none';
-  document.getElementById('btn-skip').style.display='';
+  $("g-round").textContent="Rodada "+round;
+  $("g-qlabel").textContent=AQ.question;
+  const hints=AQ.getHints(current),hr=$("g-hint-row");
+  if(hints.length){hr.style.display="flex";hr.innerHTML=hints.map(h=>`<span class="g-hint">${h}</span>`).join("");}
+  else{hr.style.display="none";hr.innerHTML="";}
+  const inp=$("g-input");
+  inp.value="";inp.className="";inp.disabled=false;inp.placeholder=AQ.placeholder;
+  $("g-feedback").innerHTML="&nbsp;";$("g-feedback").className="";
+  $("g-next").style.display="none";$("g-skip").style.display="";
   inp.focus();
+
+  // Load image async
+  try{
+    const src=await AQ.loadImage(current);
+    if(loadingRound!==thisRound)return; // stale round
+    if(src){
+      img.onload=()=>{if(loadingRound===thisRound){fitImageCard(img);img.style.display="block";ph.style.display="none";}};
+      img.onerror=()=>{if(loadingRound===thisRound){phIcon.textContent="❓";phLabel.textContent="Imagem indisponível";}};
+      img.src=src;
+    } else {
+      phIcon.textContent="❓";phLabel.textContent="Imagem indisponível";
+    }
+  }catch{
+    phIcon.textContent="❓";phLabel.textContent="Erro ao carregar";
+  }
 }
 
 function reveal(skipped){
-  revealed=true;
-  document.getElementById('country-reveal').textContent=current.name;
-  const inp=document.getElementById('guess-input');
-  inp.disabled=true;
-  document.getElementById('btn-next').style.display='';
-  document.getElementById('btn-skip').style.display='none';
-  if(skipped){
-    inp.value=current.name; inp.className='wrong';
-    const fb=document.getElementById('feedback');
-    fb.textContent='Ninguém acertou — era '+current.name;
-    fb.className='danger';
-  }
+  revealed=true;loadingRound=-1;
+  const inp=$("g-input");inp.disabled=true;
+  $("g-next").style.display="";$("g-skip").style.display="none";
+  if(skipped){inp.value=current.name;inp.className="wrong";$("g-feedback").textContent="Ninguém acertou — era: "+current.name;$("g-feedback").className="danger";}
 }
 
-document.getElementById('guess-input').addEventListener('input',function(){
-  if(revealed) return;
-  const v=norm(this.value);
-  if(!v){this.className='';return;}
-  const hit=current.a.some(x=>norm(x)===v)||norm(current.name)===v;
-  if(hit){
-    this.className='correct';
-    totalAcertos++;
-    document.getElementById('acertos-badge').textContent=totalAcertos+' acerto'+(totalAcertos!==1?'s':'');
-    document.getElementById('feedback').textContent='✓ Correto! '+current.name;
-    document.getElementById('feedback').className='success';
-    reveal(false);
-  }
+$("g-input").addEventListener("input",function(){
+  if(revealed)return;
+  const v=norm(this.value);if(!v){this.className="";return;}
+  const hit=(current.a||[]).some(x=>norm(x)===v)||norm(current.name)===v;
+  if(hit){this.className="correct";hits++;$("g-hits").textContent=hits+" acerto"+(hits!==1?"s":"");$("g-feedback").textContent="✓ Correto! "+current.name;$("g-feedback").className="success";reveal(false);}
 });
+$("g-skip").addEventListener("click",()=>reveal(true));
+$("g-next").addEventListener("click",nextRound);
+$("g-back").addEventListener("click",()=>{if(confirm("Voltar ao início?"))goHome();});
 
-document.getElementById('btn-skip').addEventListener('click',()=>reveal(true));
-document.getElementById('btn-next').addEventListener('click',nextRound);
+/* SIDEBAR */
+function applySidebar(){
+  $("g-right").classList.toggle("collapsed",!sidebarOpen);
+  $("g-btn-sidebar").textContent=sidebarOpen?(isMobile()?"▲ Placar":"◀ Placar"):(isMobile()?"▼ Placar":"▶ Placar");
+}
+$("g-btn-sidebar").addEventListener("click",()=>{sidebarOpen=!sidebarOpen;applySidebar();});
+window.addEventListener("resize",applySidebar);
 
-// ── Placar ──
+/* SCOREBOARD */
 function renderPlayers(){
-  const list=document.getElementById('players-list');
-  const sorted=[...players].sort((a,b)=>b.score-a.score);
-  const max=sorted.length?sorted[0].score:0;
-  list.innerHTML='';
+  const list=$("g-players-list"),sorted=[...players].sort((a,b)=>b.score-a.score),max=sorted.length?sorted[0].score:0;
+  list.innerHTML="";
   sorted.forEach((p,i)=>{
-    const isLeader=p.score>0&&p.score===max;
-    const initials=p.name.trim().split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase();
-    const row=document.createElement('div');
-    row.className='player-row'+(isLeader?' leader':'');
-    row.innerHTML=`
-      <div class="player-avatar">${initials}</div>
-      <div class="player-info">
-        <div class="player-name">${p.name}</div>
-        <div class="player-rank">${isLeader?'👑 Líder':'#'+(i+1)}</div>
-      </div>
-      <div class="score-controls">
-        <button class="sc-btn" data-id="${p.id}" data-d="-1">−</button>
-        <span class="score-val">${p.score}</span>
-        <button class="sc-btn" data-id="${p.id}" data-d="1">+</button>
-      </div>
-      <button class="del-btn" data-del="${p.id}" title="Remover">✕</button>
-    `;
+    const lead=p.score>0&&p.score===max,init=p.name.trim().split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase();
+    const row=document.createElement("div");row.className="p-row"+(lead?" leader":"");
+    row.innerHTML=`<div class="p-avatar">${init}</div><div class="p-info"><div class="p-name">${p.name}</div><div class="p-rank">${lead?"👑 Líder":"#"+(i+1)}</div></div><div class="p-sc"><button class="p-sc-btn" data-id="${p.id}" data-d="-1">−</button><span class="p-score">${p.score}</span><button class="p-sc-btn" data-id="${p.id}" data-d="1">+</button></div><button class="p-del" data-del="${p.id}">✕</button>`;
     list.appendChild(row);
   });
 }
-
-document.getElementById('players-list').addEventListener('click',function(e){
-  const sb=e.target.closest('.sc-btn');
-  if(sb){ const p=players.find(x=>x.id===parseInt(sb.dataset.id)); if(p){p.score=Math.max(0,p.score+parseInt(sb.dataset.d));renderPlayers();} return; }
-  const db=e.target.closest('.del-btn');
-  if(db){ players=players.filter(x=>x.id!==parseInt(db.dataset.del)); renderPlayers(); }
+$("g-players-list").addEventListener("click",function(e){
+  const sb=e.target.closest(".p-sc-btn");if(sb){const p=players.find(x=>x.id===+sb.dataset.id);if(p){p.score=Math.max(0,p.score+ +sb.dataset.d);renderPlayers();}return;}
+  const db=e.target.closest(".p-del");if(db){players=players.filter(x=>x.id!==+db.dataset.del);renderPlayers();}
 });
+function addPlayer(n){n=n.trim();if(!n)return;players.push({id:pid++,name:n,score:0});renderPlayers();}
+$("g-add-btn").addEventListener("click",()=>{const i=$("g-new-player");addPlayer(i.value);i.value="";i.focus();});
+$("g-new-player").addEventListener("keydown",e=>{if(e.key==="Enter"){addPlayer(e.target.value);e.target.value="";}});
 
-function addPlayer(name){ name=name.trim(); if(!name) return; players.push({id:pid++,name,score:0}); renderPlayers(); }
-document.getElementById('btn-add').addEventListener('click',()=>{ const inp=document.getElementById('new-player-input'); addPlayer(inp.value); inp.value=''; inp.focus(); });
-document.getElementById('new-player-input').addEventListener('keydown',e=>{ if(e.key==='Enter'){addPlayer(e.target.value);e.target.value='';} });
-
-// ── Modal modo ──
-function openModeModal(){
-  pendingMode=currentMode; pendingCont=currentCont;
-  syncModeUI();
-  document.getElementById('overlay-mode').classList.remove('hidden');
-}
-function closeModeModal(){ document.getElementById('overlay-mode').classList.add('hidden'); }
-
-function syncModeUI(){
-  document.querySelectorAll('.mode-card').forEach(c=>{
-    c.classList.toggle('selected', c.dataset.mode===pendingMode);
-    c.classList.toggle('copa', c.dataset.mode==='copa');
+/* MODAL MODO */
+function openMode(){pendingMode=gameMode;pendingCont=gameCont;buildMode();$("ov-mode").classList.remove("hidden");}
+function closeMode(){$("ov-mode").classList.add("hidden");}
+function buildMode(){
+  const mc=$("m-cards");mc.innerHTML="";
+  AQ.modes.forEach(m=>{
+    const cnt=m.id==="copa"?COPA.length:m.id==="continente"?"":AQ.getPool("all").length;
+    const badge=cnt!==""?`<span class="m-badge" style="background:${m.bg};border-color:${m.bc};color:${m.fc}">${cnt}</span>`:"";
+    const c=document.createElement("div");c.className="m-card"+(pendingMode===m.id?" sel":"")+(m.cls?" "+m.cls:"");c.dataset.mode=m.id;
+    c.innerHTML=`<div class="m-icon" style="background:${m.bg}">${m.icon}</div><div class="m-info"><div class="m-name">${m.label}</div><div class="m-desc">${m.desc}</div></div>${badge}`;
+    c.addEventListener("click",()=>{pendingMode=m.id;buildMode();});mc.appendChild(c);
   });
-  const contSec=document.getElementById('cont-section');
-  contSec.style.display=pendingMode==='continente'?'block':'none';
-  document.querySelectorAll('.cont-card').forEach(c=>{
-    c.classList.toggle('selected', c.dataset.cont===pendingCont);
+  $("cont-sec").style.display=pendingMode==="continente"?"block":"none";
+  const cg=$("c-grid");cg.innerHTML="";
+  (AQ.continentes||[]).forEach(c=>{
+    const cnt=PAISES.filter(p=>p.cont===c.id).length;
+    const cd=document.createElement("div");cd.className="c-card"+(pendingCont===c.id?" sel":"");cd.dataset.cont=c.id;
+    cd.innerHTML=`<span class="c-icon">${c.icon}</span><div><div class="c-name">${c.name}</div><div class="c-count">${cnt} países</div></div>`;
+    cd.addEventListener("click",()=>{pendingCont=c.id;buildMode();});cg.appendChild(cd);
   });
 }
-
-document.querySelectorAll('.mode-card').forEach(card=>{
-  card.addEventListener('click',()=>{ pendingMode=card.dataset.mode; syncModeUI(); });
-});
-document.querySelectorAll('.cont-card').forEach(card=>{
-  card.addEventListener('click',()=>{ pendingCont=card.dataset.cont; syncModeUI(); });
-});
-
-document.getElementById('btn-open-mode').addEventListener('click', openModeModal);
-document.getElementById('btn-mode-cancel').addEventListener('click', closeModeModal);
-document.getElementById('overlay-mode').addEventListener('click',e=>{ if(e.target===e.currentTarget) closeModeModal(); });
-
-document.getElementById('btn-mode-confirm').addEventListener('click',()=>{
-  if(pendingMode==='continente' && !pendingCont) return;
-  currentMode=pendingMode; currentCont=pendingCont;
-  updateModePill();
-  closeModeModal();
-  startFresh();
-});
-
+$("g-btn-mode").addEventListener("click",openMode);
+$("mode-cancel").addEventListener("click",closeMode);
+$("ov-mode").addEventListener("click",e=>{if(e.target===e.currentTarget)closeMode();});
+$("mode-ok").addEventListener("click",()=>{gameMode=pendingMode;gameCont=pendingCont;updateModePill();closeMode();freshStart();});
 function updateModePill(){
-  const pill=document.getElementById('mode-pill');
-  const contNames={americas:'Américas',europa:'Europa',africa:'África',asia:'Ásia',oceania:'Oceania',oriente:'Oriente Médio'};
-  pill.className='mode-pill';
-  if(currentMode==='all'){ pill.classList.add('all'); pill.textContent='Todos os países'; }
-  else if(currentMode==='copa'){ pill.classList.add('copa'); pill.textContent='Copa 2026'; }
-  else { pill.classList.add('cont'); pill.textContent=contNames[currentCont]||currentCont; }
+  const pill=$("g-mode-pill"),names={americas:"Américas",europa:"Europa",africa:"África",asia:"Ásia",oceania:"Oceania",oriente:"Oriente Médio"};
+  pill.className="g-pill";
+  if(gameMode==="all"){pill.classList.add("mode-all");pill.textContent="Todos";}
+  else if(gameMode==="copa"){pill.classList.add("mode-copa");pill.textContent="Copa 2026";}
+  else{pill.classList.add("mode-cont");pill.textContent=names[gameCont]||gameCont;}
 }
 
-// ── Modal reset ──
-document.getElementById('btn-open-reset').addEventListener('click',()=>{
-  document.getElementById('overlay-reset').classList.remove('hidden');
-});
-document.getElementById('btn-reset-cancel').addEventListener('click',()=>{
-  document.getElementById('overlay-reset').classList.add('hidden');
-});
-document.getElementById('overlay-reset').addEventListener('click',e=>{ if(e.target===e.currentTarget) document.getElementById('overlay-reset').classList.add('hidden'); });
-document.getElementById('btn-reset-confirm').addEventListener('click',()=>{
-  document.getElementById('overlay-reset').classList.add('hidden');
-  startFresh();
-});
+/* MODAL RESET */
+$("g-btn-reset").addEventListener("click",()=>$("ov-reset").classList.remove("hidden"));
+$("reset-cancel").addEventListener("click",()=>$("ov-reset").classList.add("hidden"));
+$("ov-reset").addEventListener("click",e=>{if(e.target===e.currentTarget)$("ov-reset").classList.add("hidden");});
+$("reset-ok").addEventListener("click",()=>{$("ov-reset").classList.add("hidden");freshStart();});
 
-// Atalhos
-document.addEventListener('keydown',e=>{
-  if(e.target===document.getElementById('guess-input')) return;
-  if(e.target===document.getElementById('new-player-input')) return;
-  if(e.key==='Enter'&&revealed) nextRound();
-  if(e.key==='Escape'){
-    if(!document.getElementById('overlay-mode').classList.contains('hidden')){ closeModeModal(); return; }
-    if(!document.getElementById('overlay-reset').classList.contains('hidden')){ document.getElementById('overlay-reset').classList.add('hidden'); return; }
-    if(!revealed) reveal(true);
-  }
+/* KEYBOARD */
+document.addEventListener("keydown",e=>{
+  if(e.target===$("g-input")||e.target===$("g-new-player"))return;
+  if(!$("ov-mode").classList.contains("hidden")||!$("ov-reset").classList.contains("hidden")){if(e.key==="Escape"){$("ov-mode").classList.add("hidden");$("ov-reset").classList.add("hidden");}return;}
+  if(e.key==="Enter"&&revealed)nextRound();
+  if(e.key==="Escape"&&!revealed)reveal(true);
 });
-
-// Init
-updateCounts();
-startFresh();
 </script>
 </body>
 </html>
+
