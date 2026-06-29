@@ -74,6 +74,16 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 .g-opt.correct{border-color:var(--success);background:rgba(52,211,153,.12);color:var(--success)}
 .g-opt.wrong{border-color:var(--danger);background:rgba(248,113,113,.12);color:var(--danger)}
 @media(max-width:480px){.g-options{grid-template-columns:1fr}}
+.g-text-card{display:flex;align-items:center;justify-content:center;width:100%;max-width:560px;height:380px;flex-shrink:0;background:rgba(139,92,246,.05);border:1px solid rgba(139,92,246,.25);border-radius:16px;padding:32px;box-sizing:border-box}
+.g-text-phrase{font-size:26px;font-weight:600;color:var(--text);text-align:center;line-height:1.6;letter-spacing:.01em}
+@media(max-width:700px){
+  .g-text-card{height:180px;padding:20px}
+  .g-text-phrase{font-size:20px}
+}
+@media(max-width:700px){
+  .g-opt{padding:12px 12px;font-size:15px}
+  .g-image-wrap{height:180px}
+}
 .hbtn-reset{border-color:rgba(248,113,113,.3);background:rgba(248,113,113,.07);color:var(--danger)}.hbtn-reset:hover{background:rgba(248,113,113,.15)}
 .hbtn-sidebar{border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.08);color:var(--purple2)}.hbtn-sidebar:hover{background:rgba(139,92,246,.18)}
 .g-body{flex:1;display:flex;overflow:hidden;min-height:0}
@@ -200,6 +210,9 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
       <div class="g-image-card" id="g-image-card">
         <img id="g-img" src="" alt=""/>
         <div id="g-img-ph"><span id="g-img-ph-icon">⏳</span><span id="g-img-ph-label"></span></div>
+      </div>
+      <div class="g-text-card" id="g-text-card" style="display:none">
+        <div class="g-text-phrase" id="g-text-phrase"></div>
       </div>
       </div>
       <div id="g-qlabel" class="g-qlabel"></div>
@@ -972,6 +985,105 @@ const SUPER_HEROIS=[
   {wiki:"Vulture_(Marvel_Comics)",name:"Abutre",a:["abutre","vulture"],hint:"Marvel - Vilão"},
 ];
 
+
+// LÍNGUA DO PAÍS — bandeira → idioma oficial
+const LINGUA_PAISES=[
+  {code:"br",country:"Brasil",name:"Português",a:["portugues","português"]},
+  {code:"pt",country:"Portugal",name:"Português",a:["portugues","português"]},
+  {code:"ao",country:"Angola",name:"Português",a:["portugues","português"]},
+  {code:"es",country:"Espanha",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
+  {code:"mx",country:"México",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
+  {code:"ar",country:"Argentina",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
+  {code:"co",country:"Colômbia",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
+  {code:"fr",country:"França",name:"Francês",a:["frances","francês"]},
+  {code:"be",country:"Bélgica",name:"Francês",a:["frances","francês"]},
+  {code:"de",country:"Alemanha",name:"Alemão",a:["alemao","alemão"]},
+  {code:"at",country:"Áustria",name:"Alemão",a:["alemao","alemão"]},
+  {code:"it",country:"Itália",name:"Italiano",a:["italiano"]},
+  {code:"jp",country:"Japão",name:"Japonês",a:["japones","japonês"]},
+  {code:"cn",country:"China",name:"Mandarim",a:["mandarim","chines","chinês"]},
+  {code:"ru",country:"Rússia",name:"Russo",a:["russo"]},
+  {code:"ua",country:"Ucrânia",name:"Ucraniano",a:["ucraniano"]},
+  {code:"gb",country:"Reino Unido",name:"Inglês",a:["ingles","inglês"]},
+  {code:"us",country:"EUA",name:"Inglês",a:["ingles","inglês"]},
+  {code:"au",country:"Austrália",name:"Inglês",a:["ingles","inglês"]},
+  {code:"kr",country:"Coreia do Sul",name:"Coreano",a:["coreano"]},
+  {code:"nl",country:"Holanda",name:"Holandês",a:["holandes","holandês","neerlandes","neerlandês"]},
+  {code:"pl",country:"Polônia",name:"Polonês",a:["polones","polonês"]},
+  {code:"tr",country:"Turquia",name:"Turco",a:["turco"]},
+  {code:"gr",country:"Grécia",name:"Grego",a:["grego"]},
+  {code:"sa",country:"Arábia Saudita",name:"Árabe",a:["arabe","árabe"]},
+  {code:"eg",country:"Egito",name:"Árabe",a:["arabe","árabe"]},
+  {code:"ma",country:"Marrocos",name:"Árabe",a:["arabe","árabe"]},
+  {code:"se",country:"Suécia",name:"Sueco",a:["sueco"]},
+  {code:"no",country:"Noruega",name:"Norueguês",a:["noruegues","norueguês"]},
+  {code:"dk",country:"Dinamarca",name:"Dinamarquês",a:["dinamarques","dinamarquês"]},
+  {code:"fi",country:"Finlândia",name:"Finlandês",a:["finlandes","finlandês"]},
+  {code:"th",country:"Tailândia",name:"Tailandês",a:["tailandes","tailandês"]},
+  {code:"vn",country:"Vietnã",name:"Vietnamita",a:["vietnamita"]},
+  {code:"id",country:"Indonésia",name:"Indonésio",a:["indonesio","indonésio"]},
+  {code:"in",country:"Índia",name:"Hindi",a:["hindi"]},
+  {code:"il",country:"Israel",name:"Hebraico",a:["hebraico"]},
+  {code:"hu",country:"Hungria",name:"Húngaro",a:["hungaro","húngaro"]},
+  {code:"cz",country:"Rep. Tcheca",name:"Tcheco",a:["tcheco"]},
+  {code:"ro",country:"Romênia",name:"Romeno",a:["romeno"]},
+  {code:"ph",country:"Filipinas",name:"Filipino",a:["filipino","tagalog","filipinos"]},
+];
+
+// LÍNGUAS DO MUNDO — frase no idioma → adivinhar o idioma
+const LINGUAS_FRASES=[
+  {phrase:"Olá, como vai você?",name:"Português",a:["portugues","português"]},
+  {phrase:"Buenos días, ¿cómo estás?",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
+  {phrase:"Bonjour, comment allez-vous?",name:"Francês",a:["frances","francês"]},
+  {phrase:"Guten Morgen, wie geht es Ihnen?",name:"Alemão",a:["alemao","alemão"]},
+  {phrase:"Buongiorno, come stai?",name:"Italiano",a:["italiano"]},
+  {phrase:"Good morning, how are you?",name:"Inglês",a:["ingles","inglês"]},
+  {phrase:"おはようございます。お元気ですか？",name:"Japonês",a:["japones","japonês"]},
+  {phrase:"你好，你怎么样？",name:"Mandarim",a:["mandarim","chines","chinês"]},
+  {phrase:"안녕하세요, 어떻게 지내세요?",name:"Coreano",a:["coreano"]},
+  {phrase:"Доброе утро, как дела?",name:"Russo",a:["russo"]},
+  {phrase:"Bom dia, tudo bem com você?",name:"Português",a:["portugues","português"]},
+  {phrase:"مرحبا، كيف حالك؟",name:"Árabe",a:["arabe","árabe"]},
+  {phrase:"Hola, ¿qué tal?",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
+  {phrase:"Bonjour, ça va bien?",name:"Francês",a:["frances","francês"]},
+  {phrase:"こんにちは、元気ですか？",name:"Japonês",a:["japones","japonês"]},
+  {phrase:"Goddag, hvordan har du det?",name:"Dinamarquês",a:["dinamarques","dinamarquês"]},
+  {phrase:"Hej, hur mår du?",name:"Sueco",a:["sueco"]},
+  {phrase:"Hei, hvordan går det?",name:"Norueguês",a:["noruegues","norueguês"]},
+  {phrase:"Hyvää huomenta, kuinka voit?",name:"Finlandês",a:["finlandes","finlandês"]},
+  {phrase:"Dzień dobry, jak się masz?",name:"Polonês",a:["polones","polonês"]},
+  {phrase:"Günaydın, nasılsın?",name:"Turco",a:["turco"]},
+  {phrase:"Καλημέρα, τι κάνεις;",name:"Grego",a:["grego"]},
+  {phrase:"Jó reggelt, hogy vagy?",name:"Húngaro",a:["hungaro","húngaro"]},
+  {phrase:"Dobré ráno, jak se máš?",name:"Tcheco",a:["tcheco"]},
+  {phrase:"Bună ziua, ce mai faci?",name:"Romeno",a:["romeno"]},
+  {phrase:"Доброго ранку, як справи?",name:"Ucraniano",a:["ucraniano"]},
+  {phrase:"Xin chào, bạn khỏe không?",name:"Vietnamita",a:["vietnamita"]},
+  {phrase:"नमस्ते, आप कैसे हैं?",name:"Hindi",a:["hindi"]},
+  {phrase:"שלום, מה שלומך?",name:"Hebraico",a:["hebraico"]},
+  {phrase:"Hoe gaat het met jou?",name:"Holandês",a:["holandes","holandês","neerlandes"]},
+  {phrase:"Selamat pagi, apa kabar?",name:"Indonésio",a:["indonesio","indonésio"]},
+  {phrase:"สวัสดี คุณเป็นยังไงบ้าง?",name:"Tailandês",a:["tailandes","tailandês"]},
+  {phrase:"Kumusta ka?",name:"Filipino",a:["filipino","tagalog"]},
+  {phrase:"Olá, tudo bem?",name:"Português",a:["portugues","português"]},
+  {phrase:"¿Cómo te llamas?",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
+  {phrase:"Comment vous appelez-vous?",name:"Francês",a:["frances","francês"]},
+  {phrase:"Wie heißen Sie?",name:"Alemão",a:["alemao","alemão"]},
+  {phrase:"Come si chiama?",name:"Italiano",a:["italiano"]},
+  {phrase:"What is your name?",name:"Inglês",a:["ingles","inglês"]},
+  {phrase:"Où est la bibliothèque?",name:"Francês",a:["frances","francês"]},
+  {phrase:"¿Dónde está el baño?",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
+  {phrase:"Ich spreche ein bisschen Deutsch.",name:"Alemão",a:["alemao","alemão"]},
+  {phrase:"Parlo un po' di italiano.",name:"Italiano",a:["italiano"]},
+  {phrase:"I love you very much.",name:"Inglês",a:["ingles","inglês"]},
+  {phrase:"Eu te amo muito.",name:"Português",a:["portugues","português"]},
+  {phrase:"私はあなたを愛しています。",name:"Japonês",a:["japones","japonês"]},
+  {phrase:"我爱你。",name:"Mandarim",a:["mandarim","chines","chinês"]},
+  {phrase:"나는 당신을 사랑합니다.",name:"Coreano",a:["coreano"]},
+  {phrase:"Я тебя люблю.",name:"Russo",a:["russo"]},
+  {phrase:"أنا أحبك.",name:"Árabe",a:["arabe","árabe"]},
+];
+
 /* ══════════════════════════════════════════════════════════════════
    QUIZ DEFINITIONS
 ══════════════════════════════════════════════════════════════════ */
@@ -1008,6 +1120,27 @@ const QUIZZES=[
     getPool(){return CAPITAIS;},
     async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
     getHints(item){return["País: "+item.hint];},
+  },
+  {
+    id:"lingua-paises",icon:"🗺️",title:"Língua do País",
+    desc:"Veja a bandeira e adivinhe o idioma oficial do país!",
+    tags:[{t:"40 países",cls:"tag-purple"},{t:"flagcdn.com",cls:"tag-green"}],
+    question:"Qual é o idioma oficial deste país?",placeholder:"Digite o nome do idioma...",
+    hasModes:false,
+    getPool(){return LINGUA_PAISES;},
+    async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
+    getHints(item){return["País: "+item.country];},
+  },
+  {
+    id:"linguas-frases",icon:"💬",title:"Línguas do Mundo",
+    desc:"Leia a frase e adivinhe em que idioma ela está escrita!",
+    tags:[{t:"50+ frases",cls:"tag-purple"},{t:"Texto",cls:"tag-pink"}],
+    question:"Em que idioma está esta frase?",placeholder:"Digite o nome do idioma...",
+    hasModes:false,
+    getPool(){return LINGUAS_FRASES;},
+    async loadImage(){return null;},
+    getText(item){return item.phrase;},
+    getHints(){return[];},
   },
   {
     id:"animais",icon:"🦁",title:"Animais do Mundo",
@@ -1068,7 +1201,7 @@ const QUIZZES=[
     hasModes:false,
     getPool(){return ANIME_TITULOS;},
     async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(item){return[item.hint];},
+    getHints(){return[];},
   },
   {
     id:"super-herois",icon:"🦸",title:"Super-Heróis",
@@ -1078,7 +1211,7 @@ const QUIZZES=[
     hasModes:false,
     getPool(){return SUPER_HEROIS;},
     async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(item){return[item.hint];},
+    getHints(){return[];},
   },
 ];
 
@@ -1157,6 +1290,7 @@ async function nextRound(){
 
   // Reset UI
   const img=$("g-img"),ph=$("g-img-ph"),phIcon=$("g-img-ph-icon"),phLabel=$("g-img-ph-label");
+  const imageCard=$("g-image-card"),textCard=$("g-text-card");
   img.style.display="none";ph.style.display="flex";
   resetImageCardSize();
   phIcon.textContent="⏳";phLabel.textContent="Carregando...";
@@ -1169,6 +1303,17 @@ async function nextRound(){
   $("g-feedback").innerHTML="&nbsp;";$("g-feedback").className="";
   $("g-next").style.display="none";$("g-skip").style.display="";
   renderAnswerUI();
+
+  // Text-based quiz
+  if(AQ.getText){
+    imageCard.style.display="none";
+    textCard.style.display="flex";
+    $("g-text-phrase").textContent=AQ.getText(current);
+    loadingRound=-1;
+    return;
+  }
+  imageCard.style.display="";
+  textCard.style.display="none";
 
   // Load image async
   try{
