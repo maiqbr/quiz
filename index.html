@@ -1068,7 +1068,7 @@ const QUIZZES=[
     hasModes:false,
     getPool(){return ANIME_TITULOS;},
     async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(item){return[item.hint];},
+    getHints(){return[];},
   },
   {
     id:"super-herois",icon:"🦸",title:"Super-Heróis",
@@ -1078,7 +1078,7 @@ const QUIZZES=[
     hasModes:false,
     getPool(){return SUPER_HEROIS;},
     async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(item){return[item.hint];},
+    getHints(){return[];},
   },
 ];
 
