@@ -54,6 +54,15 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 .hbtn{padding:5px 11px;border-radius:7px;font-size:11px;font-weight:500;cursor:pointer;border:1px solid;font-family:inherit;transition:all .12s;white-space:nowrap}
 .hbtn:active{transform:scale(.97)}
 .hbtn-mode{border-color:rgba(139,92,246,.35);background:rgba(139,92,246,.1);color:var(--purple2)}.hbtn-mode:hover{background:rgba(139,92,246,.2)}
+.hbtn-diff{border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.1);color:var(--success)}.hbtn-diff:hover{background:rgba(52,211,153,.2)}
+.hbtn-diff.is-easy{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.1);color:#fbbf24}.hbtn-diff.is-easy:hover{background:rgba(251,191,36,.2)}
+.g-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
+.g-opt{padding:13px 14px;border-radius:11px;border:1.5px solid rgba(139,92,246,.35);background:rgba(255,255,255,.04);color:var(--text);font-family:inherit;font-size:15px;font-weight:500;cursor:pointer;transition:all .12s;text-align:center}
+.g-opt:hover:not(:disabled){border-color:var(--purple2);background:rgba(139,92,246,.1)}
+.g-opt:disabled{cursor:default}
+.g-opt.correct{border-color:var(--success);background:rgba(52,211,153,.12);color:var(--success)}
+.g-opt.wrong{border-color:var(--danger);background:rgba(248,113,113,.12);color:var(--danger)}
+@media(max-width:480px){.g-options{grid-template-columns:1fr}}
 .hbtn-reset{border-color:rgba(248,113,113,.3);background:rgba(248,113,113,.07);color:var(--danger)}.hbtn-reset:hover{background:rgba(248,113,113,.15)}
 .hbtn-sidebar{border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.08);color:var(--purple2)}.hbtn-sidebar:hover{background:rgba(139,92,246,.18)}
 .g-body{flex:1;display:flex;overflow:hidden;min-height:0}
@@ -161,6 +170,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
     <div class="g-pill hits" id="g-hits">0 acertos</div>
     <div class="g-pill timer" id="g-timer">00:00</div>
     <div class="g-hdr-right">
+      <button class="hbtn hbtn-diff" id="g-btn-diff">🎯 Difícil</button>
       <button class="hbtn hbtn-mode" id="g-btn-mode" style="display:none">⚙ Modo</button>
       <button class="hbtn hbtn-reset" id="g-btn-reset">↺ Reiniciar</button>
       <button class="hbtn hbtn-sidebar" id="g-btn-sidebar">◀ Placar</button>
@@ -179,6 +189,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
       <div id="g-hint-row" class="g-hint-row" style="display:none"></div>
       <div class="g-input-area">
         <input id="g-input" type="text" placeholder="Digite a resposta..." autocomplete="off" spellcheck="false"/>
+        <div id="g-options" class="g-options" style="display:none"></div>
         <div id="g-feedback">&nbsp;</div>
         <div class="g-btn-row">
           <button class="gbtn gbtn-skip" id="g-skip">✕ Desistir</button>
@@ -1052,6 +1063,7 @@ let players=[],pid=1,sidebarOpen=true;
 let gameMode="all",gameCont="americas",pendingMode="all",pendingCont="americas";
 let timerSec=0,timerInt=null;
 let loadingRound=0; // track async loads
+let difficulty=localStorage.getItem("quizDifficulty")||"hard"; // "hard" = digitar | "easy" = múltipla escolha
 
 function isMobile(){return window.innerWidth<=700;}
 
@@ -1108,11 +1120,9 @@ async function nextRound(){
   const hints=AQ.getHints(current),hr=$("g-hint-row");
   if(hints.length){hr.style.display="flex";hr.innerHTML=hints.map(h=>`<span class="g-hint">${h}</span>`).join("");}
   else{hr.style.display="none";hr.innerHTML="";}
-  const inp=$("g-input");
-  inp.value="";inp.className="";inp.disabled=false;inp.placeholder=AQ.placeholder;
   $("g-feedback").innerHTML="&nbsp;";$("g-feedback").className="";
   $("g-next").style.display="none";$("g-skip").style.display="";
-  inp.focus();
+  renderAnswerUI();
 
   // Load image async
   try{
@@ -1130,22 +1140,94 @@ async function nextRound(){
   }
 }
 
-function reveal(skipped){
+function reveal(skipped,wrongLabel){
   revealed=true;loadingRound=-1;
   const inp=$("g-input");inp.disabled=true;
   $("g-next").style.display="";$("g-skip").style.display="none";
-  if(skipped){inp.value=current.name;inp.className="wrong";$("g-feedback").textContent="Ninguém acertou — era: "+current.name;$("g-feedback").className="danger";}
+  if(skipped){
+    inp.value=current.name;inp.className="wrong";
+    $("g-feedback").textContent=(wrongLabel||"Ninguém acertou")+" — era: "+current.name;
+    $("g-feedback").className="danger";
+  }
+  if(difficulty==="easy"){
+    const opts=$("g-options");
+    Array.from(opts.children).forEach(c=>{
+      c.disabled=true;
+      if(c.textContent===current.name)c.classList.add("correct");
+    });
+  }
+}
+
+function markCorrect(){
+  hits++;$("g-hits").textContent=hits+" acerto"+(hits!==1?"s":"");
+  $("g-feedback").textContent="✓ Correto! "+current.name;$("g-feedback").className="success";
+}
+
+function setDifficulty(mode){
+  difficulty=mode;localStorage.setItem("quizDifficulty",mode);
+  const btn=$("g-btn-diff");
+  if(mode==="easy"){btn.textContent="🎓 Fácil";btn.classList.add("is-easy");}
+  else{btn.textContent="🎯 Difícil";btn.classList.remove("is-easy");}
+  if(AQ&&current&&!revealed)renderAnswerUI();
+}
+
+function renderAnswerUI(){
+  const inp=$("g-input"),opts=$("g-options"),skip=$("g-skip");
+  inp.value="";inp.className="";inp.disabled=false;inp.placeholder=AQ.placeholder;
+  if(difficulty==="easy"){
+    inp.style.display="none";opts.style.display="grid";skip.style.display="none";
+    opts.innerHTML="";
+    buildOptions(current).forEach(opt=>{
+      const b=document.createElement("button");
+      b.className="g-opt";b.type="button";b.textContent=opt.name;
+      b.addEventListener("click",()=>{
+        if(revealed)return;
+        Array.from(opts.children).forEach(c=>c.disabled=true);
+        if(opt.isCorrect){b.classList.add("correct");markCorrect();reveal(false);}
+        else{
+          b.classList.add("wrong");
+          reveal(true,"Resposta errada");
+        }
+      });
+      opts.appendChild(b);
+    });
+  } else {
+    opts.style.display="none";opts.innerHTML="";
+    inp.style.display="";skip.style.display="";
+    inp.focus();
+  }
+}
+
+function buildOptions(item){
+  const pool=AQ.getPool(gameMode,gameCont);
+  const correctName=item.name;
+  const others=shuffle(pool.filter(p=>p.name!==correctName));
+  const picked=[],seen=new Set([norm(correctName)]);
+  for(const p of others){
+    const key=norm(p.name);
+    if(seen.has(key))continue;
+    seen.add(key);picked.push(p.name);
+    if(picked.length===3)break;
+  }
+  const list=shuffle([{name:correctName,isCorrect:true},...picked.map(n=>({name:n,isCorrect:false}))]);
+  return list;
 }
 
 $("g-input").addEventListener("input",function(){
   if(revealed)return;
   const v=norm(this.value);if(!v){this.className="";return;}
   const hit=(current.a||[]).some(x=>norm(x)===v)||norm(current.name)===v;
-  if(hit){this.className="correct";hits++;$("g-hits").textContent=hits+" acerto"+(hits!==1?"s":"");$("g-feedback").textContent="✓ Correto! "+current.name;$("g-feedback").className="success";reveal(false);}
+  if(hit){this.className="correct";markCorrect();reveal(false);}
 });
+$("g-btn-diff").addEventListener("click",()=>setDifficulty(difficulty==="easy"?"hard":"easy"));
 $("g-skip").addEventListener("click",()=>reveal(true));
 $("g-next").addEventListener("click",nextRound);
 $("g-back").addEventListener("click",()=>{if(confirm("Voltar ao início?"))goHome();});
+(function initDiffButton(){
+  const btn=$("g-btn-diff");
+  if(difficulty==="easy"){btn.textContent="🎓 Fácil";btn.classList.add("is-easy");}
+  else{btn.textContent="🎯 Difícil";btn.classList.remove("is-easy");}
+})();
 
 /* SIDEBAR */
 function applySidebar(){
