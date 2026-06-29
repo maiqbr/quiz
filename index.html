@@ -39,11 +39,11 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 .tag-green{background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.3);color:var(--success)}
 /* GAME */
 #game{flex-direction:column}
-.g-header{display:flex;align-items:center;padding:8px 14px;gap:8px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.015);flex-shrink:0;flex-wrap:wrap}
-.g-back{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .12s;flex-shrink:0}
+.g-header{display:flex;align-items:center;padding:10px 16px;gap:10px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.015);flex-shrink:0;flex-wrap:wrap;min-height:54px}
+.g-back{width:38px;height:38px;border-radius:9px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .12s;flex-shrink:0}
 .g-back:hover{border-color:var(--border2);color:var(--text)}
 .g-quiz-name{font-size:13px;font-weight:600;color:var(--purple2);white-space:nowrap}
-.g-pill{border-radius:99px;padding:4px 11px;font-size:11px;font-weight:500;border:1px solid;white-space:nowrap}
+.g-pill{border-radius:99px;padding:6px 13px;font-size:12px;font-weight:500;border:1px solid;white-space:nowrap}
 .g-pill.round{background:rgba(139,92,246,.12);border-color:rgba(139,92,246,.3);color:var(--purple2)}
 .g-pill.mode-all{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3);color:var(--purple2)}
 .g-pill.mode-copa{background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.3);color:var(--gold)}
@@ -51,11 +51,22 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 .g-pill.hits{background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.25);color:var(--success)}
 .g-pill.timer{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1);color:var(--muted);font-variant-numeric:tabular-nums;min-width:58px;text-align:center}
 .g-hdr-right{display:flex;align-items:center;gap:7px;margin-left:auto;flex-shrink:0}
-.hbtn{padding:5px 11px;border-radius:7px;font-size:11px;font-weight:500;cursor:pointer;border:1px solid;font-family:inherit;transition:all .12s;white-space:nowrap}
+.hbtn{padding:7px 14px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;border:1px solid;font-family:inherit;transition:all .12s;white-space:nowrap}
 .hbtn:active{transform:scale(.97)}
 .hbtn-mode{border-color:rgba(139,92,246,.35);background:rgba(139,92,246,.1);color:var(--purple2)}.hbtn-mode:hover{background:rgba(139,92,246,.2)}
 .hbtn-diff{border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.1);color:var(--success)}.hbtn-diff:hover{background:rgba(52,211,153,.2)}
 .hbtn-diff.is-easy{border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.1);color:#fbbf24}.hbtn-diff.is-easy:hover{background:rgba(251,191,36,.2)}
+/* diff toggle switch */
+.diff-toggle{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;flex-shrink:0}
+.diff-toggle-label{font-size:11px;font-weight:600;white-space:nowrap;transition:color .2s}
+.diff-toggle-label.easy-lbl{color:var(--gold)}
+.diff-toggle-label.hard-lbl{color:var(--success)}
+.diff-toggle-track{width:52px;height:26px;border-radius:99px;border:1.5px solid;position:relative;transition:all .25s;flex-shrink:0}
+.diff-toggle-track.is-easy{background:rgba(251,191,36,.15);border-color:rgba(251,191,36,.5)}
+.diff-toggle-track.is-hard{background:rgba(52,211,153,.12);border-color:rgba(52,211,153,.4)}
+.diff-toggle-knob{position:absolute;top:2px;width:18px;height:18px;border-radius:50%;transition:all .25s;display:flex;align-items:center;justify-content:center;font-size:10px}
+.diff-toggle-track.is-easy .diff-toggle-knob{left:2px;background:var(--gold);box-shadow:0 0 8px rgba(251,191,36,.5)}
+.diff-toggle-track.is-hard .diff-toggle-knob{left:28px;background:var(--success);box-shadow:0 0 8px rgba(52,211,153,.4)}
 .g-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%}
 .g-opt{padding:13px 14px;border-radius:11px;border:1.5px solid rgba(139,92,246,.35);background:rgba(255,255,255,.04);color:var(--text);font-family:inherit;font-size:15px;font-weight:500;cursor:pointer;transition:all .12s;text-align:center}
 .g-opt:hover:not(:disabled){border-color:var(--purple2);background:rgba(139,92,246,.1)}
@@ -143,7 +154,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
   .home-hero{padding:28px 14px 20px}.home-logo-name{font-size:22px}
   .home-grid{grid-template-columns:1fr 1fr;gap:10px}
   .quiz-card{padding:14px 12px;border-radius:14px}.card-icon{font-size:26px;margin-bottom:9px}.card-title{font-size:13px}.card-desc{font-size:11px;margin-bottom:8px}
-  .g-header{padding:7px 10px;gap:5px}.g-quiz-name{font-size:11px}.g-pill{font-size:10px;padding:3px 8px}.hbtn{font-size:10px;padding:4px 8px}
+  .g-header{padding:9px 12px;gap:7px}.g-quiz-name{font-size:12px}.g-pill{font-size:11px;padding:5px 10px}.hbtn{font-size:11px;padding:7px 12px}
   .g-body{flex-direction:column;overflow-y:auto;overflow-x:hidden}
   .g-left{border-right:none;border-bottom:1px solid var(--border);padding:14px 12px;gap:12px;flex:none}
   .g-image-wrap{height:230px;max-width:100%}#g-input{font-size:15px;padding:10px 14px}.gbtn{padding:8px 16px;font-size:12px}
@@ -170,7 +181,13 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
     <div class="g-pill hits" id="g-hits">0 acertos</div>
     <div class="g-pill timer" id="g-timer">00:00</div>
     <div class="g-hdr-right">
-      <button class="hbtn hbtn-diff" id="g-btn-diff">🎯 Difícil</button>
+      <div class="diff-toggle" id="g-btn-diff" title="Alternar dificuldade">
+        <span class="diff-toggle-label easy-lbl">Fácil</span>
+        <div class="diff-toggle-track is-hard" id="diff-track">
+          <div class="diff-toggle-knob">🎯</div>
+        </div>
+        <span class="diff-toggle-label hard-lbl">Difícil</span>
+      </div>
       <button class="hbtn hbtn-mode" id="g-btn-mode" style="display:none">⚙ Modo</button>
       <button class="hbtn hbtn-reset" id="g-btn-reset">↺ Reiniciar</button>
       <button class="hbtn hbtn-sidebar" id="g-btn-sidebar">◀ Placar</button>
@@ -235,19 +252,22 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 const imgCache = {};
 
 async function fetchWikiImage(title, width = 500) {
-  if (imgCache[title]) return imgCache[title];
-  try {
-    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(res.status);
-    const data = await res.json();
-    const src = data?.thumbnail?.source?.replace(/\/\d+px-/, `/${width}px-`) || null;
-    imgCache[title] = src;
-    return src;
-  } catch {
-    imgCache[title] = null;
-    return null;
+  // title can be a string or array of fallbacks
+  const titles = Array.isArray(title) ? title : [title];
+  const cacheKey = titles[0];
+  if (imgCache[cacheKey] !== undefined) return imgCache[cacheKey];
+  for (const t of titles) {
+    try {
+      const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(t)}`;
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const data = await res.json();
+      const src = data?.thumbnail?.source?.replace(/\/\d+px-/, `/${width}px-`) || null;
+      if (src) { imgCache[cacheKey] = src; return src; }
+    } catch {}
   }
+  imgCache[cacheKey] = null;
+  return null;
 }
 
 async function fetchWikiImagePT(title, width = 500) {
@@ -586,7 +606,7 @@ const ARTE=[
   {wiki:"David_(Michelangelo)",name:"Davi",a:["davi","david"],hint:"Michelangelo, 1504"},
   {wiki:"Girl_with_a_Pearl_Earring",name:"Moça com Brinco de Pérola",a:["moca com brinco de perola","girl with a pearl earring","brinco de perola"],hint:"Johannes Vermeer, ~1665"},
   {wiki:"American_Gothic",name:"American Gothic",a:["american gothic"],hint:"Grant Wood, 1930"},
-  {wiki:"Nighthawks",name:"Nighthawks",a:["nighthawks"],hint:"Edward Hopper, 1942"},
+  {wiki:"Nighthawks_(painting)",name:"Nighthawks",a:["nighthawks"],hint:"Edward Hopper, 1942"},
   {wiki:"A_Sunday_on_La_Grande_Jatte",name:"Uma Tarde de Domingo na Grande Jatte",a:["uma tarde de domingo na grande jatte","grande jatte","sunday on la grande jatte"],hint:"Georges Seurat, 1886"},
   {wiki:"The_Last_Supper_(Leonardo_da_Vinci)",name:"A Última Ceia",a:["a ultima ceia","ultima ceia","the last supper"],hint:"Leonardo da Vinci, ~1498"},
   {wiki:"Las_Meninas",name:"As Meninas",a:["as meninas","las meninas"],hint:"Diego Velázquez, 1656"},
@@ -611,11 +631,11 @@ const ARTE=[
   {wiki:"The_Two_Fridas",name:"As Duas Fridas",a:["as duas fridas","the two fridas","duas fridas"],hint:"Frida Kahlo, 1939"},
   {wiki:"Les_Demoiselles_d'Avignon",name:"As Senhoritas de Avignon",a:["as senhoritas de avignon","demoiselles davignon"],hint:"Pablo Picasso, 1907"},
   {wiki:"The_Son_of_Man",name:"O Filho do Homem",a:["o filho do homem","son of man"],hint:"René Magritte, 1964"},
-  {wiki:"Weeping_Woman",name:"A Mulher que Chora",a:["a mulher que chora","weeping woman"],hint:"Pablo Picasso, 1937"},
+  {wiki:"Weeping_Woman_(Picasso)",name:"A Mulher que Chora",a:["a mulher que chora","weeping woman"],hint:"Pablo Picasso, 1937"},
   {wiki:"Ophelia_(painting)",name:"Ofélia",a:["ofelia","ophelia"],hint:"John Everett Millais, 1851–1852"},
   {wiki:"The_Death_of_Marat",name:"A Morte de Marat",a:["a morte de marat","death of marat"],hint:"Jacques-Louis David, 1793"},
   {wiki:"The_Tower_of_Babel_(Bruegel)",name:"A Torre de Babel",a:["a torre de babel","tower of babel"],hint:"Pieter Bruegel, 1563"},
-  {wiki:"Composition_VIII",name:"Composição VIII",a:["composicao viii","composition viii"],hint:"Wassily Kandinsky, 1923"},
+  {wiki:"Composition_VIII_(Kandinsky)",name:"Composição VIII",a:["composicao viii","composition viii"],hint:"Wassily Kandinsky, 1923"},
 ];
 
 // MONUMENTOS — título Wikipedia inglês
@@ -650,8 +670,8 @@ const MONUMENTOS=[
   {wiki:"Brandenburg_Gate",name:"Portão de Brandemburgo",a:["portao de brandemburgo","brandenburg gate"],hint:"Berlim, Alemanha"},
   {wiki:"Moscow_Kremlin",name:"Kremlin de Moscou",a:["kremlin","kremlin de moscou","moscow kremlin"],hint:"Moscou, Rússia"},
   {wiki:"Tower_Bridge",name:"Tower Bridge",a:["tower bridge"],hint:"Londres, Reino Unido"},
-  {wiki:"CN_Tower",name:"Torre CN",a:["torre cn","cn tower"],hint:"Toronto, Canadá"},
-  {wiki:"Petronas_Towers",name:"Torres Petronas",a:["torres petronas","petronas towers","petronas"],hint:"Kuala Lumpur, Malásia"},
+  {wiki:"CN_Tower,_Toronto",name:"Torre CN",a:["torre cn","cn tower"],hint:"Toronto, Canadá"},
+  {wiki:"Petronas_Twin_Towers",name:"Torres Petronas",a:["torres petronas","petronas towers","petronas"],hint:"Kuala Lumpur, Malásia"},
   {wiki:"Moai",name:"Moai",a:["moai","estatuas da ilha de pascoa"],hint:"Ilha de Páscoa, Chile"},
   {wiki:"Alhambra",name:"Alhambra",a:["alhambra"],hint:"Granada, Espanha"},
   {wiki:"Sultan_Ahmed_Mosque",name:"Mesquita Azul",a:["mesquita azul","blue mosque"],hint:"Istambul, Turquia"},
@@ -775,18 +795,32 @@ const INSTRUMENTOS=[
   {wiki:"Trumpet",name:"Trompete",a:["trompete","trumpet"]},
   {wiki:"Flute",name:"Flauta",a:["flauta","flute"]},
   {wiki:"Cello",name:"Violoncelo",a:["violoncelo","cello"]},
-  {wiki:"Harp",name:"Harpa",a:["harpa","harp"]},
+  {wiki:"Concert_harp",name:"Harpa",a:["harpa","harp"]},
   {wiki:"Accordion",name:"Acordeão",a:["acordeao","accordion","acordeão","sanfona"]},
   {wiki:"Clarinet",name:"Clarinete",a:["clarinete","clarinet"]},
   {wiki:"Trombone",name:"Trombone",a:["trombone"]},
-  {wiki:"Banjo",name:"Banjo",a:["banjo"]},
+  {wiki:"Five-string_banjo",name:"Banjo",a:["banjo"]},
   {wiki:"Ukulele",name:"Ukulele",a:["ukulele","havaiana"]},
   {wiki:"Bagpipes",name:"Gaita de Foles",a:["gaita de foles","bagpipes","gaita"]},
-  {wiki:"Xylophone",name:"Xilofone",a:["xilofone","xylophone"]},
+  {wiki:["Xylophone","Xylophone_(musical_instrument)"],name:"Xilofone",a:["xilofone","xylophone"]},
   {wiki:"Tambourine",name:"Pandeiro/Tamborim",a:["pandeiro","tamborim","tambourine"]},
   {wiki:"Maracas",name:"Maracas",a:["maracas"]},
   {wiki:"Sitar",name:"Sitar",a:["sitar"]},
   {wiki:"Harmonica",name:"Gaita de Boca",a:["gaita de boca","harmonica","gaita boca"]},
+  {wiki:"Double_bass",name:"Contrabaixo",a:["contrabaixo","double bass","baixo acustico"]},
+  {wiki:"Electric_guitar",name:"Guitarra Elétrica",a:["guitarra eletrica","electric guitar","guitarra"]},
+  {wiki:"Bass_guitar",name:"Baixo",a:["baixo","bass guitar","guitarra baixo"]},
+  {wiki:"French_horn",name:"Trompa",a:["trompa","french horn"]},
+  {wiki:"Tuba",name:"Tuba",a:["tuba"]},
+  {wiki:"Oboe",name:"Oboé",a:["oboe","oboé"]},
+  {wiki:"Bassoon",name:"Fagote",a:["fagote","bassoon"]},
+  {wiki:"Mandolin",name:"Bandolim",a:["bandolim","mandolin"]},
+  {wiki:"Didgeridoo",name:"Didgeridoo",a:["didgeridoo"]},
+  {wiki:"Balalaika",name:"Balalaica",a:["balalaica","balalaika"]},
+  {wiki:"Erhu",name:"Erhu",a:["erhu"]},
+  {wiki:"Tabla",name:"Tabla",a:["tabla"]},
+  {wiki:"Steel_drum",name:"Steel Drum",a:["steel drum","tambor de aco"]},
+  {wiki:"Hurdy-gurdy",name:"Sanfona Medieval",a:["sanfona medieval","hurdy gurdy"]},
 ];
 
 // ANIME & MANGÁ — imagem de um personagem icônico (sem texto), resposta é o nome da obra
@@ -795,18 +829,18 @@ const ANIME_TITULOS=[
   {wiki:"Sasuke_Uchiha",name:"Naruto",a:["naruto"],hint:"Personagem: Sasuke Uchiha"},
   {wiki:"Monkey_D._Luffy",name:"One Piece",a:["one piece"],hint:"Personagem: Luffy"},
   {wiki:"Roronoa_Zoro",name:"One Piece",a:["one piece"],hint:"Personagem: Zoro"},
-  {wiki:"Son_Goku",name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Goku"},
+  {wiki:["Goku","Dragon_Ball_(manga)"],name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Goku"},
   {wiki:"Vegeta",name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Vegeta"},
   {wiki:"Edward_Elric",name:"Fullmetal Alchemist",a:["fullmetal alchemist","full metal alchemist"],hint:"Personagem: Edward Elric"},
   {wiki:"Light_Yagami",name:"Death Note",a:["death note"],hint:"Personagem: Light Yagami"},
   {wiki:"L_(Death_Note)",name:"Death Note",a:["death note"],hint:"Personagem: L"},
   {wiki:"Ichigo_Kurosaki",name:"Bleach",a:["bleach"],hint:"Personagem: Ichigo Kurosaki"},
-  {wiki:"Eren_Yeager",name:"Attack on Titan",a:["attack on titan","ataque dos titas","shingeki no kyojin"],hint:"Personagem: Eren Yeager"},
+  {wiki:["Eren_Yeager","Attack_on_Titan"],name:"Attack on Titan",a:["attack on titan","ataque dos titas","shingeki no kyojin"],hint:"Personagem: Eren Yeager"},
   {wiki:"Mikasa_Ackerman",name:"Attack on Titan",a:["attack on titan","ataque dos titas","shingeki no kyojin"],hint:"Personagem: Mikasa Ackerman"},
   {wiki:"Tanjiro_Kamado",name:"Demon Slayer",a:["demon slayer","kimetsu no yaiba"],hint:"Personagem: Tanjiro Kamado"},
   {wiki:"Nezuko_Kamado",name:"Demon Slayer",a:["demon slayer","kimetsu no yaiba"],hint:"Personagem: Nezuko Kamado"},
-  {wiki:"Izuku_Midoriya",name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: Izuku Midoriya (Deku)"},
-  {wiki:"Katsuki_Bakugo",name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: Bakugo"},
+  {wiki:["Izuku_Midoriya","My_Hero_Academia"],name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: Izuku Midoriya (Deku)"},
+  {wiki:["Katsuki_Bakugo","My_Hero_Academia"],name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: Bakugo"},
   {wiki:"Saitama_(One-Punch_Man)",name:"One-Punch Man",a:["one punch man","one-punch man"],hint:"Personagem: Saitama"},
   {wiki:"Spike_Spiegel",name:"Cowboy Bebop",a:["cowboy bebop"],hint:"Personagem: Spike Spiegel"},
   {wiki:"Lelouch_Lamperouge",name:"Code Geass",a:["code geass"],hint:"Personagem: Lelouch"},
@@ -814,7 +848,7 @@ const ANIME_TITULOS=[
   {wiki:"Usagi_Tsukino",name:"Sailor Moon",a:["sailor moon"],hint:"Personagem: Usagi Tsukino"},
   {wiki:"Pikachu",name:"Pokémon",a:["pokemon","pokémon"],hint:"Personagem: Pikachu"},
   {wiki:"Ash_Ketchum",name:"Pokémon",a:["pokemon","pokémon"],hint:"Personagem: Ash Ketchum"},
-  {wiki:"Kirito_(Sword_Art_Online)",name:"Sword Art Online",a:["sword art online","sao"],hint:"Personagem: Kirito"},
+  {wiki:"Sword_Art_Online",name:"Sword Art Online",a:["sword art online","sao"],hint:"Personagem: Kirito"},
   {wiki:"Killua_Zoldyck",name:"Hunter x Hunter",a:["hunter x hunter","hunter×hunter"],hint:"Personagem: Killua Zoldyck"},
   {wiki:"Gon_Freecss",name:"Hunter x Hunter",a:["hunter x hunter","hunter×hunter"],hint:"Personagem: Gon Freecss"},
   {wiki:"Yusuke_Urameshi",name:"Yu Yu Hakusho",a:["yu yu hakusho","yuyu hakusho"],hint:"Personagem: Yusuke Urameshi"},
@@ -823,7 +857,7 @@ const ANIME_TITULOS=[
   {wiki:"Yuji_Itadori",name:"Jujutsu Kaisen",a:["jujutsu kaisen","jjk"],hint:"Personagem: Yuji Itadori"},
   {wiki:"Denji_(Chainsaw_Man)",name:"Chainsaw Man",a:["chainsaw man"],hint:"Personagem: Denji"},
   {wiki:"Loid_Forger",name:"Spy x Family",a:["spy x family","spy×family"],hint:"Personagem: Loid Forger"},
-  {wiki:"Ken_Kaneki",name:"Tokyo Ghoul",a:["tokyo ghoul"],hint:"Personagem: Ken Kaneki"},
+  {wiki:["Ken_Kaneki","Tokyo_Ghoul"],name:"Tokyo Ghoul",a:["tokyo ghoul"],hint:"Personagem: Ken Kaneki"},
   {wiki:"Natsu_Dragneel",name:"Fairy Tail",a:["fairy tail"],hint:"Personagem: Natsu Dragneel"},
   {wiki:"Asta_(Black_Clover)",name:"Black Clover",a:["black clover"],hint:"Personagem: Asta"},
   {wiki:"Shoyo_Hinata",name:"Haikyu!!",a:["haikyu","haikyuu"],hint:"Personagem: Hinata Shoyo"},
@@ -839,14 +873,14 @@ const ANIME_TITULOS=[
   {wiki:"Bulma",name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Bulma"},
   {wiki:"Zenitsu_Agatsuma",name:"Demon Slayer",a:["demon slayer","kimetsu no yaiba"],hint:"Personagem: Zenitsu Agatsuma"},
   {wiki:"Inosuke_Hashibira",name:"Demon Slayer",a:["demon slayer","kimetsu no yaiba"],hint:"Personagem: Inosuke Hashibira"},
-  {wiki:"All_Might",name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: All Might"},
-  {wiki:"Levi_Ackerman",name:"Attack on Titan",a:["attack on titan","ataque dos titas","shingeki no kyojin"],hint:"Personagem: Levi Ackerman"},
+  {wiki:["All_Might_(My_Hero_Academia)","My_Hero_Academia"],name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: All Might"},
+  {wiki:["Levi_Ackerman","Attack_on_Titan"],name:"Attack on Titan",a:["attack on titan","ataque dos titas","shingeki no kyojin"],hint:"Personagem: Levi Ackerman"},
   {wiki:"Rukia_Kuchiki",name:"Bleach",a:["bleach"],hint:"Personagem: Rukia Kuchiki"},
-  {wiki:"Hisoka_Morow",name:"Hunter x Hunter",a:["hunter x hunter","hunter×hunter"],hint:"Personagem: Hisoka Morow"},
-  {wiki:"Asuna_Yuuki",name:"Sword Art Online",a:["sword art online","sao"],hint:"Personagem: Asuna Yuuki"},
+  {wiki:["Hisoka_Morow","Hunter_%C3%97_Hunter"],name:"Hunter x Hunter",a:["hunter x hunter","hunter×hunter"],hint:"Personagem: Hisoka Morow"},
+  {wiki:["Asuna_Yuuki","Sword_Art_Online"],name:"Sword Art Online",a:["sword art online","sao"],hint:"Personagem: Asuna Yuuki"},
   {wiki:"Rei_Ayanami",name:"Evangelion",a:["evangelion","neon genesis evangelion"],hint:"Personagem: Rei Ayanami"},
   {wiki:"Asuka_Langley_Soryu",name:"Evangelion",a:["evangelion","neon genesis evangelion"],hint:"Personagem: Asuka Langley"},
-  {wiki:"Faye_Valentine",name:"Cowboy Bebop",a:["cowboy bebop"],hint:"Personagem: Faye Valentine"},
+  {wiki:["Faye_Valentine","Cowboy_Bebop"],name:"Cowboy Bebop",a:["cowboy bebop"],hint:"Personagem: Faye Valentine"},
   {wiki:"Misty_(Pokémon)",name:"Pokémon",a:["pokemon","pokémon"],hint:"Personagem: Misty"},
   {wiki:"Senku_Ishigami",name:"Dr. Stone",a:["dr stone","dr. stone"],hint:"Personagem: Senku Ishigami"},
   {wiki:"Emma_(The_Promised_Neverland)",name:"The Promised Neverland",a:["the promised neverland","promised neverland"],hint:"Personagem: Emma"},
@@ -854,12 +888,12 @@ const ANIME_TITULOS=[
   {wiki:"Thorfinn_(Vinland_Saga)",name:"Vinland Saga",a:["vinland saga"],hint:"Personagem: Thorfinn"},
   {wiki:"Shigeo_Kageyama",name:"Mob Psycho 100",a:["mob psycho 100","mob psycho"],hint:"Personagem: Mob (Shigeo Kageyama)"},
   {wiki:"Jotaro_Kujo",name:"JoJo's Bizarre Adventure",a:["jojos bizarre adventure","jojo"],hint:"Personagem: Jotaro Kujo"},
-  {wiki:"Subaru_Natsuki",name:"Re:Zero",a:["re zero","rezero"],hint:"Personagem: Subaru Natsuki"},
-  {wiki:"Megumin",name:"Konosuba",a:["konosuba"],hint:"Personagem: Megumin"},
+  {wiki:["Re:Zero","Re:Zero_−_Starting_Life_in_Another_World"],name:"Re:Zero",a:["re zero","rezero"],hint:"Personagem: Subaru Natsuki"},
+  {wiki:["Megumin","KonoSuba"],name:"Konosuba",a:["konosuba"],hint:"Personagem: Megumin"},
   {wiki:"Tohru_Honda",name:"Fruits Basket",a:["fruits basket"],hint:"Personagem: Tohru Honda"},
-  {wiki:"Soul_Eater_(character)",name:"Soul Eater",a:["soul eater"],hint:"Personagem: Soul Eater"},
+  {wiki:["Soul_Eater_(manga)","Soul_Eater_(character)"],name:"Soul Eater",a:["soul eater"],hint:"Personagem: Soul Eater"},
   {wiki:"Yugi_Muto",name:"Yu-Gi-Oh!",a:["yu gi oh","yugioh"],hint:"Personagem: Yugi Muto"},
-  {wiki:"Agumon",name:"Digimon",a:["digimon"],hint:"Personagem: Agumon"},
+  {wiki:["Agumon","Digimon"],name:"Digimon",a:["digimon"],hint:"Personagem: Agumon"},
   {wiki:"Sakata_Gintoki",name:"Gintama",a:["gintama"],hint:"Personagem: Sakata Gintoki"},
 ];
 
@@ -869,7 +903,7 @@ const SUPER_HEROIS=[
   {wiki:"Batman",name:"Batman",a:["batman"],hint:"DC Comics"},
   {wiki:"Spider-Man",name:"Homem-Aranha",a:["homem aranha","spider man","spiderman","homem-aranha"],hint:"Marvel"},
   {wiki:"Iron_Man",name:"Homem de Ferro",a:["homem de ferro","iron man"],hint:"Marvel"},
-  {wiki:"Captain_America",name:"Capitão América",a:["capitao america","captain america","capitão america"],hint:"Marvel"},
+  {wiki:["Captain_America_(Marvel_Comics)","Captain_America"],name:"Capitão América",a:["capitao america","captain america","capitão america"],hint:"Marvel"},
   {wiki:"Thor_(Marvel_Comics)",name:"Thor",a:["thor"],hint:"Marvel"},
   {wiki:"Hulk_(comics)",name:"Hulk",a:["hulk"],hint:"Marvel"},
   {wiki:"Wonder_Woman",name:"Mulher-Maravilha",a:["mulher maravilha","wonder woman","mulher-maravilha"],hint:"DC Comics"},
@@ -879,7 +913,7 @@ const SUPER_HEROIS=[
   {wiki:"Black_Panther_(character)",name:"Pantera Negra",a:["pantera negra","black panther"],hint:"Marvel"},
   {wiki:"Doctor_Strange",name:"Doutor Estranho",a:["doutor estranho","doctor strange"],hint:"Marvel"},
   {wiki:"Black_Widow_(Natasha_Romanoff)",name:"Viúva Negra",a:["viuva negra","black widow","viúva negra"],hint:"Marvel"},
-  {wiki:"Hawkeye_(comics)",name:"Gavião Arqueiro",a:["gaviao arqueiro","hawkeye","gavião arqueiro"],hint:"Marvel"},
+  {wiki:["Hawkeye_(Marvel_Comics)","Hawkeye_(comics)"],name:"Gavião Arqueiro",a:["gaviao arqueiro","hawkeye","gavião arqueiro"],hint:"Marvel"},
   {wiki:"Wolverine_(character)",name:"Wolverine",a:["wolverine"],hint:"Marvel"},
   {wiki:"Deadpool",name:"Deadpool",a:["deadpool"],hint:"Marvel"},
   {wiki:"Daredevil_(Marvel_Comics_character)",name:"Demolidor",a:["demolidor","daredevil"],hint:"Marvel"},
@@ -904,17 +938,38 @@ const SUPER_HEROIS=[
   {wiki:"Jean_Grey",name:"Jean Grey",a:["jean grey"],hint:"Marvel"},
   {wiki:"Beast_(Marvel_Comics)",name:"Fera",a:["fera","beast"],hint:"Marvel"},
   {wiki:"Professor_X",name:"Professor X",a:["professor x"],hint:"Marvel"},
-  {wiki:"Magneto_(comics)",name:"Magneto",a:["magneto"],hint:"Marvel"},
+  {wiki:["Magneto_(Marvel_Comics)","Magneto_(character)"],name:"Magneto",a:["magneto"],hint:"Marvel"},
   {wiki:"Nick_Fury",name:"Nick Fury",a:["nick fury"],hint:"Marvel"},
-  {wiki:"Falcon_(Marvel_Comics)",name:"Falcão",a:["falcao","falcon","falcão"],hint:"Marvel"},
+  {wiki:["Falcon_(Marvel_Comics)","Sam_Wilson_(Marvel_Comics)"],name:"Falcão",a:["falcao","falcon","falcão"],hint:"Marvel"},
   {wiki:"War_Machine",name:"Máquina de Combate",a:["maquina de combate","war machine"],hint:"Marvel"},
   {wiki:"Vision_(Marvel_Comics)",name:"Visão",a:["visao","vision","visão"],hint:"Marvel"},
   {wiki:"Iron_Fist_(comics)",name:"Punho de Ferro",a:["punho de ferro","iron fist"],hint:"Marvel"},
   {wiki:"Luke_Cage",name:"Luke Cage",a:["luke cage"],hint:"Marvel"},
   {wiki:"Moon_Knight",name:"Cavaleiro da Lua",a:["cavaleiro da lua","moon knight"],hint:"Marvel"},
-  {wiki:"She-Hulk_(character)",name:"Mulher-Hulk",a:["mulher hulk","she hulk","mulher-hulk"],hint:"Marvel"},
+  {wiki:["She-Hulk","She-Hulk_(character)"],name:"Mulher-Hulk",a:["mulher hulk","she hulk","mulher-hulk"],hint:"Marvel"},
   {wiki:"Ms._Marvel_(Kamala_Khan)",name:"Miss Marvel",a:["miss marvel","ms marvel","kamala khan"],hint:"Marvel"},
   {wiki:"Wasp_(Marvel_Comics)",name:"Vespa",a:["vespa","wasp"],hint:"Marvel"},
+  // VILÕES
+  {wiki:"Joker_(character)",name:"Coringa",a:["coringa","joker"],hint:"DC - Vilão"},
+  {wiki:"Thanos",name:"Thanos",a:["thanos"],hint:"Marvel - Vilão"},
+  {wiki:"Lex_Luthor",name:"Lex Luthor",a:["lex luthor"],hint:"DC - Vilão"},
+  {wiki:"Venom_(Marvel_Comics_character)",name:"Venom",a:["venom"],hint:"Marvel - Vilão"},
+  {wiki:"Green_Goblin",name:"Duende Verde",a:["duende verde","green goblin"],hint:"Marvel - Vilão"},
+  {wiki:"Loki_(Marvel_Comics)",name:"Loki",a:["loki"],hint:"Marvel - Vilão"},
+  {wiki:"Red_Skull",name:"Caveira Vermelha",a:["caveira vermelha","red skull"],hint:"Marvel - Vilão"},
+  {wiki:"Doctor_Doom",name:"Doutor Destino",a:["doutor destino","doctor doom"],hint:"Marvel - Vilão"},
+  {wiki:"Ultron",name:"Ultron",a:["ultron"],hint:"Marvel - Vilão"},
+  {wiki:"Mystique_(X-Men)",name:"Mística",a:["mistica","mystique","mística"],hint:"Marvel - Vilão"},
+  {wiki:"Poison_Ivy_(character)",name:"Hera Venenosa",a:["hera venenosa","poison ivy"],hint:"DC - Vilão"},
+  {wiki:"Harley_Quinn",name:"Arlequina",a:["arlequina","harley quinn"],hint:"DC - Vilão"},
+  {wiki:"Two-Face",name:"Duas Caras",a:["duas caras","two face"],hint:"DC - Vilão"},
+  {wiki:"Bane_(DC_Comics)",name:"Bane",a:["bane"],hint:"DC - Vilão"},
+  {wiki:"Ra's_al_Ghul",name:"Ra's al Ghul",a:["ras al ghul","ra's al ghul"],hint:"DC - Vilão"},
+  {wiki:"Darkseid",name:"Darkseid",a:["darkseid"],hint:"DC - Vilão"},
+  {wiki:"Doomsday_(DC_Comics)",name:"Apocalipse",a:["apocalipse","doomsday"],hint:"DC - Vilão"},
+  {wiki:"Carnage_(character)",name:"Carnificina",a:["carnificina","carnage"],hint:"Marvel - Vilão"},
+  {wiki:"Electro_(Marvel_Comics)",name:"Electro",a:["electro"],hint:"Marvel - Vilão"},
+  {wiki:"Vulture_(Marvel_Comics)",name:"Abutre",a:["abutre","vulture"],hint:"Marvel - Vilão"},
 ];
 
 /* ══════════════════════════════════════════════════════════════════
@@ -984,16 +1039,7 @@ const QUIZZES=[
     async loadImage(item){return await fetchWikiImage(item.wiki,500);},
     getHints(item){return[item.hint];},
   },
-  {
-    id:"times",icon:"⚽",title:"Clubes de Futebol",
-    desc:"Teste seus conhecimentos sobre os clubes de futebol mais famosos!",
-    tags:[{t:"56 clubes",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-gold"}],
-    question:"De qual clube é esta imagem?",placeholder:"Digite o nome do clube...",
-    hasModes:false,
-    getPool(){return TIMES;},
-    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(item){return[item.hint];},
-  },
+  
   {
     id:"comidas",icon:"🍽️",title:"Pratos Típicos",
     desc:"Teste seus conhecimentos sobre os pratos típicos do mundo!",
@@ -1165,9 +1211,7 @@ function markCorrect(){
 
 function setDifficulty(mode){
   difficulty=mode;localStorage.setItem("quizDifficulty",mode);
-  const btn=$("g-btn-diff");
-  if(mode==="easy"){btn.textContent="🎓 Fácil";btn.classList.add("is-easy");}
-  else{btn.textContent="🎯 Difícil";btn.classList.remove("is-easy");}
+  updateDiffToggle();
   if(AQ&&current&&!revealed)renderAnswerUI();
 }
 
@@ -1224,10 +1268,21 @@ $("g-skip").addEventListener("click",()=>reveal(true));
 $("g-next").addEventListener("click",nextRound);
 $("g-back").addEventListener("click",()=>{if(confirm("Voltar ao início?"))goHome();});
 (function initDiffButton(){
-  const btn=$("g-btn-diff");
-  if(difficulty==="easy"){btn.textContent="🎓 Fácil";btn.classList.add("is-easy");}
-  else{btn.textContent="🎯 Difícil";btn.classList.remove("is-easy");}
+  updateDiffToggle();
 })();
+
+function updateDiffToggle(){
+  const track=document.getElementById("diff-track");
+  const knob=track?.querySelector(".diff-toggle-knob");
+  if(!track)return;
+  if(difficulty==="easy"){
+    track.className="diff-toggle-track is-easy";
+    if(knob)knob.textContent="🎓";
+  } else {
+    track.className="diff-toggle-track is-hard";
+    if(knob)knob.textContent="🎯";
+  }
+}
 
 /* SIDEBAR */
 function applySidebar(){
