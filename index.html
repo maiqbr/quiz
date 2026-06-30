@@ -34,6 +34,15 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 .home-logo-name{font-size:28px;font-weight:700;letter-spacing:-.5px}
 .home-logo-name span{background:linear-gradient(90deg,var(--purple2),var(--pink2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .home-tagline{font-size:14px;color:var(--muted);max-width:400px;margin:0 auto;line-height:1.6}
+.install-btn{margin-top:18px;padding:12px 26px;border-radius:12px;border:1.5px solid rgba(139,92,246,.45);background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 4px 20px rgba(124,58,237,.35);transition:transform .12s,box-shadow .12s}
+.install-btn:hover{transform:translateY(-1px);box-shadow:0 6px 26px rgba(124,58,237,.5)}
+.install-btn:active{transform:translateY(0)}
+.ios-install-modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:999;padding:20px}
+.ios-install-card{background:var(--card,#1a1428);border:1px solid rgba(139,92,246,.35);border-radius:16px;padding:24px;max-width:340px;text-align:center}
+.ios-install-card h3{margin:0 0 14px;font-size:17px}
+.ios-install-card p{font-size:14px;color:var(--muted);line-height:1.7;margin:0 0 18px;text-align:left}
+.ios-install-card .ios-step{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.ios-install-card button{padding:10px 24px;border-radius:10px;border:1.5px solid rgba(139,92,246,.4);background:rgba(255,255,255,.06);color:var(--text);font-family:inherit;font-size:14px;cursor:pointer}
 .home-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;max-width:960px;margin:0 auto}
 .quiz-card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:22px 20px;cursor:pointer;transition:border-color .18s,background .18s,transform .15s,box-shadow .18s;position:relative;overflow:hidden}
 .quiz-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(139,92,246,.07),transparent 65%);pointer-events:none}
@@ -192,6 +201,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
   <div class="home-hero">
     <div class="home-logo"><div class="home-logo-icon"><img src="icon-192.png" alt="QuizArena"/></div><div class="home-logo-name">Quiz<span>Arena</span></div></div>
     <p class="home-tagline">Escolha um quiz, projete na tela e jogue com seus amigos em tempo real.</p>
+    <button id="install-btn" class="install-btn" style="display:none">⬇ Instalar App</button>
   </div>
   <div class="home-grid" id="quiz-grid"></div>
 </div>
@@ -1528,6 +1538,84 @@ if("serviceWorker" in navigator){
     navigator.serviceWorker.register("sw.js").catch(()=>{});
   });
 }
+
+// ---- Install App button ----
+(function(){
+  const btn=document.getElementById("install-btn");
+  if(!btn)return;
+  const isStandalone=window.matchMedia("(display-mode: standalone)").matches||window.navigator.standalone===true;
+  if(isStandalone)return; // already installed, keep button hidden
+
+  const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  let deferredPrompt=null;
+
+  window.addEventListener("beforeinstallprompt",(e)=>{
+    e.preventDefault();
+    deferredPrompt=e;
+    btn.style.display="inline-block";
+  });
+
+  window.addEventListener("appinstalled",()=>{
+    btn.style.display="none";
+    deferredPrompt=null;
+  });
+
+  // iOS Safari never fires beforeinstallprompt, so always show the button there
+  // and explain the manual steps when tapped.
+  if(isIOS){
+    btn.style.display="inline-block";
+  }
+
+  btn.addEventListener("click",async()=>{
+    if(deferredPrompt){
+      deferredPrompt.prompt();
+      const choice=await deferredPrompt.userChoice;
+      if(choice.outcome==="accepted")btn.style.display="none";
+      deferredPrompt=null;
+      return;
+    }
+    if(isIOS){
+      showIOSInstructions();
+      return;
+    }
+    // Fallback: browser doesn't support the install prompt API
+    showGenericInstructions();
+  });
+
+  function showIOSInstructions(){
+    const modal=document.createElement("div");
+    modal.className="ios-install-modal";
+    modal.innerHTML=`
+      <div class="ios-install-card">
+        <h3>📲 Instalar QuizArena</h3>
+        <p>
+          <div class="ios-step">1️⃣ Toque no ícone de compartilhar <strong>⬆️</strong> na barra do Safari</div>
+          <div class="ios-step">2️⃣ Role e toque em <strong>"Adicionar à Tela de Início"</strong></div>
+          <div class="ios-step">3️⃣ Toque em <strong>"Adicionar"</strong> no canto superior</div>
+        </p>
+        <button id="ios-modal-close">Entendi</button>
+      </div>`;
+    document.body.appendChild(modal);
+    modal.addEventListener("click",(e)=>{if(e.target===modal)modal.remove();});
+    modal.querySelector("#ios-modal-close").addEventListener("click",()=>modal.remove());
+  }
+
+  function showGenericInstructions(){
+    const modal=document.createElement("div");
+    modal.className="ios-install-modal";
+    modal.innerHTML=`
+      <div class="ios-install-card">
+        <h3>📲 Instalar QuizArena</h3>
+        <p>
+          <div class="ios-step">No menu do navegador (⋮ ou ≡), procure por <strong>"Instalar app"</strong> ou <strong>"Adicionar à tela inicial"</strong>.</div>
+        </p>
+        <button id="generic-modal-close">Entendi</button>
+      </div>`;
+    document.body.appendChild(modal);
+    modal.addEventListener("click",(e)=>{if(e.target===modal)modal.remove();});
+    modal.querySelector("#generic-modal-close").addEventListener("click",()=>modal.remove());
+  }
+})();
 </script>
 </body>
 </html>
