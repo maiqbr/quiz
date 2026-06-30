@@ -1549,22 +1549,19 @@ if("serviceWorker" in navigator){
   const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
   let deferredPrompt=null;
 
+  // Show the button right away — don't wait for beforeinstallprompt,
+  // since Chrome only fires it after its own engagement heuristics are met.
+  btn.style.display="inline-block";
+
   window.addEventListener("beforeinstallprompt",(e)=>{
     e.preventDefault();
     deferredPrompt=e;
-    btn.style.display="inline-block";
   });
 
   window.addEventListener("appinstalled",()=>{
     btn.style.display="none";
     deferredPrompt=null;
   });
-
-  // iOS Safari never fires beforeinstallprompt, so always show the button there
-  // and explain the manual steps when tapped.
-  if(isIOS){
-    btn.style.display="inline-block";
-  }
 
   btn.addEventListener("click",async()=>{
     if(deferredPrompt){
@@ -1578,7 +1575,7 @@ if("serviceWorker" in navigator){
       showIOSInstructions();
       return;
     }
-    // Fallback: browser doesn't support the install prompt API
+    // Fallback: browser hasn't granted the native prompt yet (or doesn't support it)
     showGenericInstructions();
   });
 
@@ -1607,7 +1604,8 @@ if("serviceWorker" in navigator){
       <div class="ios-install-card">
         <h3>📲 Instalar QuizArena</h3>
         <p>
-          <div class="ios-step">No menu do navegador (⋮ ou ≡), procure por <strong>"Instalar app"</strong> ou <strong>"Adicionar à tela inicial"</strong>.</div>
+          <div class="ios-step">No menu do navegador (geralmente ⋮ ou ≡, no canto superior), procure por <strong>"Instalar app"</strong> ou <strong>"Adicionar à tela inicial"</strong>.</div>
+          <div class="ios-step">Se não encontrar, navegue um pouco pelo site e tente de novo em alguns segundos — alguns navegadores liberam essa opção só após um pouco de uso.</div>
         </p>
         <button id="generic-modal-close">Entendi</button>
       </div>`;
@@ -1619,4 +1617,3 @@ if("serviceWorker" in navigator){
 </script>
 </body>
 </html>
-
