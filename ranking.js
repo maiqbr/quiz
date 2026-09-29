@@ -58,14 +58,34 @@
     try{const data=await api('/api/run/start',{method:'POST',body:JSON.stringify({quiz:el('rank-category').value,difficulty:el('rank-difficulty').value})});runId=data.runId;hits=data.hits;renderQuestion(data.question);status(data.resumed?'Partida em andamento retomada.':'')}
     catch(error){status(error.message)}finally{busy=false}
   }
-  function listRow(target,item,record=false){const row=document.createElement('div');row.className='profile-row';const main=document.createElement('strong');main.textContent=`${title[item.quiz_id]||item.quiz_id} · ${difficulty[item.difficulty]||item.difficulty}`;const stats=document.createElement('span');stats.textContent=`${item.hits}/${item.total} acertos · ${duration(item.elapsed_ms)}`;const detail=document.createElement('small');detail.textContent=record?`#${item.position} no ranking · ${date(item.finished_at)}`:date(item.finished_at);row.append(main,stats,detail);target.append(row)}
+  const profileText=(tag,className,value)=>{const element=document.createElement(tag);element.className=className;element.textContent=value;return element};
+  function profileIcon(id){const image=document.createElement('img');image.className='profile-theme-icon';image.src=categories.some(category=>category.id===id)&&id!=='misto'?`category-icons/${id}.png`:'icon-192.png';image.alt='';image.loading='lazy';return image}
+  function recordCard(target,item){
+    const card=profileText('article','profile-record','');
+    const top=profileText('div','profile-record-top','');
+    const theme=profileText('div','profile-record-theme','');theme.append(profileIcon(item.quiz_id),profileText('strong','',title[item.quiz_id]||item.quiz_id));
+    top.append(theme,profileText('span',`profile-difficulty ${item.difficulty}`,difficulty[item.difficulty]||item.difficulty));
+    const result=profileText('div','profile-record-result','');
+    const score=profileText('div','profile-record-score','');score.append(profileText('strong','',String(item.hits)),profileText('span','',`/ ${item.total} acertos`));
+    result.append(score,profileText('span','profile-record-position',`#${item.position} no ranking`));
+    const track=profileText('div','profile-record-track','');const fill=document.createElement('span');fill.style.width=`${Math.min(100,Math.max(0,item.hits/item.total*100))}%`;track.append(fill);
+    const foot=profileText('div','profile-record-foot','');foot.append(profileText('span','',`Tempo ${duration(item.elapsed_ms)}`),profileText('span','',date(item.finished_at)));
+    card.append(top,result,track,foot);target.append(card);
+  }
+  function historyRow(target,{id,name,mode,hits,total,elapsed,at}){
+    const row=profileText('div','profile-entry','');row.append(profileIcon(id));
+    const main=profileText('div','profile-entry-main','');main.append(profileText('strong','',name),profileText('span','',mode));
+    const result=profileText('div','profile-entry-result','');result.append(profileText('strong','',`${hits}/${total}`),profileText('span','',`${duration(elapsed)} · ${date(at)}`));
+    row.append(main,result);target.append(row);
+  }
+  function emptyProfile(target,message){target.append(profileText('p','profile-empty',message))}
   async function profile(reset=true){
     if(!user){location.href='/auth/discord/start';return}show('profile');
     try{const data=await api(`/api/profile?offset=${reset?0:profileOffset}`);if(reset){el('profile-name').textContent=data.user.name;avatar(el('profile-avatar'),data.user);el('profile-stats').replaceChildren();
-        for(const [label,value] of [['Partidas completas',data.summary.completed],['Acertos acumulados',data.summary.hits],['Perguntas respondidas',data.summary.questions]]){const card=document.createElement('div');card.className='profile-stat';const strong=document.createElement('strong');strong.textContent=value;const span=document.createElement('span');span.textContent=label;card.append(strong,span);el('profile-stats').append(card)}
-        const records=el('profile-records');records.replaceChildren();if(!data.records.length)records.textContent='Conclua uma partida ranqueada para criar seu primeiro recorde.';else data.records.forEach(item=>listRow(records,item,true));
-        el('profile-history').replaceChildren();const local=el('profile-local');local.replaceChildren();let saved=[];try{saved=JSON.parse(localStorage.getItem('quizHistory')||'[]')}catch{}if(!saved.length)local.textContent='Nenhuma partida local neste navegador.';else saved.forEach(item=>{const row=document.createElement('div');row.className='profile-row';row.textContent=`${item.quiz} · ${item.mode==='host'?'Apresentação':'Solo'} · ${item.hits}/${item.rounds} · ${duration(item.seconds*1000)} · ${date(item.at)}`;local.append(row)})}
-      if(!data.history.length&&reset)el('profile-history').textContent='Nenhuma partida online concluída.';else data.history.forEach(item=>listRow(el('profile-history'),item));
+        for(const [label,value] of [['Partidas completas',data.summary.completed],['Acertos acumulados',data.summary.hits],['Perguntas respondidas',data.summary.questions]]){const card=profileText('div','profile-stat','');card.append(profileText('strong','',Number(value).toLocaleString('pt-BR')),profileText('span','',label));el('profile-stats').append(card)}
+        const records=el('profile-records');records.replaceChildren();if(!data.records.length)emptyProfile(records,'Conclua uma partida ranqueada para começar sua coleção de recordes.');else data.records.forEach(item=>recordCard(records,item));
+        el('profile-history').replaceChildren();const local=el('profile-local');local.replaceChildren();let saved=[];try{saved=JSON.parse(localStorage.getItem('quizHistory')||'[]')}catch{}if(!Array.isArray(saved))saved=[];if(!saved.length)emptyProfile(local,'Suas partidas solo e apresentações neste navegador aparecerão aqui.');else saved.forEach(item=>historyRow(local,{id:item.quizId,name:item.quiz,mode:item.mode==='host'?'Apresentação com placar':`Solo · ${item.length==='quick'?'Rápida':'Completa'}`,hits:item.hits,total:item.rounds,elapsed:item.seconds*1000,at:item.at}))}
+      if(!data.history.length&&reset)emptyProfile(el('profile-history'),'Sua primeira partida ranqueada aparecerá aqui.');else data.history.forEach(item=>historyRow(el('profile-history'),{id:item.quiz_id,name:title[item.quiz_id]||item.quiz_id,mode:`Ranqueada · ${difficulty[item.difficulty]||item.difficulty}`,hits:item.hits,total:item.total,elapsed:item.elapsed_ms,at:item.finished_at}));
       profileOffset=data.nextOffset;el('profile-more').hidden=data.nextOffset===null;
     }catch(error){el('profile-history').textContent=error.message}
   }

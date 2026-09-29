@@ -209,7 +209,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 </div>
 <div id="ranked" class="screen"><header class="flow-header"><button id="rank-back" type="button">Voltar</button><span>QUIZARENA / RANQUEADO</span><strong id="rank-flow-title">Desafio</strong></header><main class="ranked-main"><div id="rank-game" class="ranked-card" hidden><div class="ranked-progress"><span>Pergunta <strong id="rank-position"></strong></span><span><strong id="rank-hits">0</strong> acertos</span><span id="rank-time">45s</span></div><div class="ranked-progress-track"><span id="rank-progress-bar"></span></div><h1 id="rank-prompt"></h1><div id="rank-media" class="rank-media" hidden></div><div id="rank-options" class="rank-options"></div><form id="rank-answer" class="rank-answer" hidden><input id="rank-input" aria-label="Sua resposta" autocomplete="off" maxlength="120"><button type="submit">Responder</button></form><p id="rank-game-status" role="status"></p></div><div id="rank-finish" class="ranked-card" hidden><span class="eyebrow">PARTIDA CONCLUÍDA</span><h1>Seu resultado</h1><p id="rank-result"></p><button id="rank-restart" class="rank-action" type="button">Voltar aos quizzes</button></div></main></div>
 <div id="host-info" class="host-info-modal" role="dialog" aria-modal="true" aria-labelledby="host-info-title" hidden><div class="host-info-card"><span class="eyebrow">PARA JOGAR EM GRUPO</span><h2 id="host-info-title">Apresentar com placar</h2><p>Compartilhe sua tela com a turma. Leia a pergunta, escolha quem respondeu e marque os pontos no painel lateral.</p><p>Você pode adicionar pessoas ou equipes, ajustar o tempo por pergunta e ver o resumo no fim. A pontuação fica neste navegador.</p><button id="host-info-close" type="button">Entendi, vamos jogar</button></div></div>
-<div id="profile" class="screen"><header class="flow-header"><button id="profile-back" type="button">Voltar</button><span>QUIZARENA / PERFIL</span><button id="profile-logout" type="button">Sair do Discord</button></header><main class="profile-main"><div class="profile-title"><span id="profile-avatar" class="profile-avatar" aria-hidden="true"></span><div><span class="eyebrow">SUA CONTA</span><h1 id="profile-name">Perfil</h1><p>Resultados e posições das partidas online.</p></div></div><div id="profile-stats" class="profile-stats"></div><section class="profile-section"><h2>Seus recordes</h2><div id="profile-records" class="profile-records"></div></section><section class="profile-section"><h2>Histórico online</h2><div id="profile-history" class="profile-history"></div><button id="profile-more" type="button" hidden>Carregar mais</button></section><section class="profile-section"><h2>Neste navegador</h2><div id="profile-local" class="profile-history"></div></section></main></div>
+<div id="profile" class="screen"><header class="flow-header profile-flow"><button id="profile-back" type="button">Voltar aos quizzes</button><span>QUIZARENA / JOGADOR</span><button id="profile-logout" type="button">Sair do Discord</button></header><main class="profile-main"><div class="profile-hero"><div class="profile-hero-top"><span class="eyebrow">PERFIL DO JOGADOR</span><span class="profile-online"><span></span> Conectado com Discord</span></div><div class="profile-title"><span id="profile-avatar" class="profile-avatar" aria-hidden="true"></span><div><h1 id="profile-name">Perfil</h1><p>Seus resultados, recordes e posições em um só lugar.</p></div></div><div id="profile-stats" class="profile-stats"></div></div><section class="profile-section profile-records-section"><div class="profile-section-head"><div><span class="eyebrow">MELHORES MARCAS</span><h2>Seus recordes</h2></div><p>Um resultado por tema e dificuldade.</p></div><div id="profile-records" class="profile-records"></div></section><div class="profile-activity"><section class="profile-section"><div class="profile-section-head"><div><span class="eyebrow">PARTIDAS RANQUEADAS</span><h2>Histórico online</h2></div></div><div id="profile-history" class="profile-history"></div><button id="profile-more" type="button" hidden>Carregar mais</button></section><section class="profile-section"><div class="profile-section-head"><div><span class="eyebrow">NESTE DISPOSITIVO</span><h2>Partidas locais</h2></div></div><div id="profile-local" class="profile-history"></div></section></div></main></div>
 <div id="game" class="screen">
   <div class="g-header">
     <button class="g-back" id="g-back">←</button>
@@ -228,7 +228,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
         </div>
         <span class="diff-toggle-label hard-lbl">Difícil</span>
       </div>
-      <button class="hbtn hbtn-mode" id="g-btn-mode" style="display:none">Modo</button>
+      <button class="hbtn hbtn-mode" id="g-btn-mode" style="display:none">Filtrar</button>
       <button class="hbtn hbtn-reset" id="g-btn-reset">↺ Reiniciar</button>
       <label class="time-limit-control" id="time-limit-control">Tempo <select id="time-limit"><option value="0">Livre</option><option value="30">30s</option><option value="60">60s</option><option value="90">90s</option></select></label>
       <button class="hbtn" id="g-btn-end">Encerrar</button>
@@ -383,7 +383,7 @@ function startQuiz(id,mixed=false){
   $("g-quiz-name").textContent=isMixed?'Quiz Misto':AQ.title;
   $("g-btn-mode").style.display=AQ.hasModes&&!isMixed?"":"none";
   $("g-btn-diff").style.display=AQ.kind==="map"?"none":"";
-  $("g-mode-pill").style.display=AQ.hasModes&&!isMixed?"":"none";
+  updateModePill();
   $('g-btn-sidebar').style.display=playMode==='host'?'':'none';
   $('time-limit-control').style.display=playMode==='host'?'':'none';
   $('g-round-timer').style.display=playMode==='solo'||Number($('time-limit').value)>0?'':'none';
@@ -774,6 +774,7 @@ $("ov-mode").addEventListener("click",e=>{if(e.target===e.currentTarget)closeMod
 $("mode-ok").addEventListener("click",()=>{gameMode=pendingMode;gameCont=pendingCont;updateModePill();closeMode();freshStart();});
 function updateModePill(){
   const pill=$("g-mode-pill"),names={americas:"Américas",europa:"Europa",africa:"África",asia:"Ásia",oceania:"Oceania",oriente:"Oriente Médio"};
+  pill.style.display=AQ.hasModes&&!isMixed&&gameMode!=="all"?"":"none";
   pill.className="g-pill";
   if(gameMode==="all"){pill.classList.add("mode-all");pill.textContent="Todos";}
   else if(gameMode==="copa"){pill.classList.add("mode-copa");pill.textContent="Futebol";}
