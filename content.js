@@ -4773,7 +4773,7 @@ const QUIZZES=[
     async loadImage(item){return fetchCuratedMedia(item);},
     getHints(item){return[item.hint];},
   },
-  
+
   {
     id:"comidas",title:"Pratos Típicos",
     desc:"Teste seus conhecimentos sobre os pratos típicos do mundo!",
@@ -4844,4 +4844,3 @@ const QUIZZES=[
     getPool(){return AUDIO_INSTRUMENTS;},getHints(){return[];}
   },
 ];
-
