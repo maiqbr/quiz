@@ -44,7 +44,7 @@ export default {async fetch(request,env){
       const name=cleanName(profile.global_name||profile.username),avatar=profile.avatar&&/^[a-f0-9_]+$/.test(profile.avatar)?`https://cdn.discordapp.com/avatars/${profile.id}/${profile.avatar}.png?size=64`:null;
       await env.DB.prepare('INSERT INTO users(id,name,avatar,updated_at) VALUES(?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,avatar=excluded.avatar,updated_at=excluded.updated_at').bind(profile.id,name,avatar,Date.now()).run();
       const session=randomToken();await env.DB.prepare('INSERT INTO sessions(token_hash,user_id,expires_at) VALUES(?,?,?)').bind(await digest(session),profile.id,Date.now()+SESSION_MS).run();
-      return new Response(null,{status:302,headers:{Location:origin+'/ranking.html','Set-Cookie':setCookie('qa_session',session,Math.floor(SESSION_MS/1000),origin),'Cache-Control':'no-store'}});
+      return new Response(null,{status:302,headers:{Location:origin+'/index.html#ranking','Set-Cookie':setCookie('qa_session',session,Math.floor(SESSION_MS/1000),origin),'Cache-Control':'no-store'}});
     }
     if(path==='/api/me'&&request.method==='GET')return json({user:await userFor(request,env)});
     if(path==='/api/run/current'&&request.method==='GET'){
@@ -97,6 +97,14 @@ export default {async fetch(request,env){
       const user=await userFor(request,env);if(!user)return json({error:'Entre com Discord'},401);
       const {results}=await env.DB.prepare('SELECT quiz_id,difficulty,hits,total,elapsed_ms,finished_at FROM runs WHERE user_id=? AND finished_at IS NOT NULL ORDER BY finished_at DESC LIMIT 20').bind(user.id).all();
       return json({runs:results});
+    }
+    if(path==='/api/profile'&&request.method==='GET'){
+      const user=await userFor(request,env);if(!user)return json({error:'Entre com Discord'},401);
+      const offset=Math.min(1_000_000,Math.max(0,Number.parseInt(url.searchParams.get('offset')||'0',10)||0));
+      const summary=await env.DB.prepare('SELECT COUNT(*) AS completed,COALESCE(SUM(hits),0) AS hits,COALESCE(SUM(total),0) AS questions FROM runs WHERE user_id=? AND finished_at IS NOT NULL').bind(user.id).first();
+      const {results:records}=await env.DB.prepare(`WITH best AS (SELECT user_id,quiz_id,difficulty,hits,total,elapsed_ms,finished_at,ROW_NUMBER() OVER (PARTITION BY user_id,quiz_id,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC) AS own_order FROM runs WHERE finished_at IS NOT NULL), ranked AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY quiz_id,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC) AS position FROM best WHERE own_order=1) SELECT quiz_id,difficulty,hits,total,elapsed_ms,finished_at,position FROM ranked WHERE user_id=? ORDER BY quiz_id,difficulty`).bind(user.id).all();
+      const {results:history}=await env.DB.prepare('SELECT quiz_id,difficulty,hits,total,elapsed_ms,finished_at FROM runs WHERE user_id=? AND finished_at IS NOT NULL ORDER BY finished_at DESC LIMIT 21 OFFSET ?').bind(user.id,offset).all();
+      return json({user,summary,records,history:history.slice(0,20),nextOffset:history.length>20?offset+20:null});
     }
     if(path.startsWith('/api/')||path.startsWith('/auth/'))return json({error:'Rota não encontrada'},404);
     return env.ASSETS.fetch(request);

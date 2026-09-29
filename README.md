@@ -12,7 +12,7 @@ As coleções atuais têm: bandeiras 139, capitais 83, língua do país 62, lín
 
 ## Ranking online
 
-O ranking **casual** está publicado no Cloudflare Worker em `quiz.maiq.dev.br`, com login Discord e D1. Os temas disponíveis são **Capitais (83)**, **Idiomas (74)** e **Misto (157)**. Cada partida ranqueada percorre o conjunto inteiro. Fácil usa quatro opções; difícil exige digitar. Os placares são independentes por tema e dificuldade, ordenados por acertos e depois por tempo.
+O ranking **casual** aparece na página inicial, junto dos quizzes. O login Discord fica no topo; depois de entrar, o botão de perfil mostra histórico online paginado, recordes e posição em cada placar. Os temas disponíveis são **Capitais (83)**, **Idiomas (74)** e **Misto (157)**. Cada partida ranqueada percorre o conjunto inteiro. Fácil usa quatro opções; difícil exige digitar. Os placares são independentes por tema e dificuldade, ordenados por acertos e depois por tempo. O endereço antigo `ranking.html` redireciona para a seção de ranking da página inicial.
 
 O Worker cria a sequência e calcula os acertos e o tempo. Ele não aceita pontuação enviada pelo cliente, confere respostas uma vez por posição, limita partidas por conta e guarda a sessão em cookie HttpOnly. **Isso impede alterar o resultado por um simples `fetch` no console, mas não torna o ranking imune a automação**: perguntas e respostas do quiz estão no repositório público e podem ser consultadas. O ranking não deve ser usado como competição com prêmio. Para resistência maior seriam necessários um banco privado de questões inéditas, detecção de abuso e moderação.
 
@@ -27,4 +27,4 @@ Para reproduzir a instalação em outra conta:
 
 ## Repositório público e mídia
 
-O `.gitignore` exclui `node_modules`, variáveis de ambiente, estado local do Wrangler, build e arquivos de QA. Os arquivos versionáveis necessários são o código, conteúdo, documentos, ícones e migrações. O ID do D1 e o Client ID do Discord não são senhas; o Client Secret fica apenas no Cloudflare. O arquivo original do logo mantém seus pixels; a interface recorta visualmente a faixa preta exterior. Confira [Fontes e expansão](FONTES-E-EXPANSAO.md), [Privacidade](PRIVACY.md), [Mídia e atribuição](NOTICE.md), [Contribuição](CONTRIBUTING.md) e a [licença MIT](LICENSE).
+O `.gitignore` exclui `node_modules`, variáveis de ambiente, estado local do Wrangler, build e arquivos de QA. Os arquivos versionáveis necessários são o código, conteúdo, documentos, ícones e migrações. O ID do D1 e o Client ID do Discord não são senhas; o Client Secret fica apenas no Cloudflare. Os PNGs do logo têm transparência real na área exterior, preservando as cores do desenho. Confira [Fontes e expansão](FONTES-E-EXPANSAO.md), [Privacidade](PRIVACY.md), [Mídia e atribuição](NOTICE.md), [Contribuição](CONTRIBUTING.md) e a [licença MIT](LICENSE).
