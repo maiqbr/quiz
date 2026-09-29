@@ -1,5 +1,5 @@
 // QuizArena Service Worker
-const CACHE_NAME = "quizarena-v8";
+const CACHE_NAME = "quizarena-v9";
 const CORE_ASSETS = [
   "./",
   "./index.html",

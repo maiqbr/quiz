@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>QuizArena</title>
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#160f1d">
+<meta name="theme-color" content="#130d1b">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("quizTheme")==="light"?"light":"dark"}catch{document.documentElement.dataset.theme="dark"}</script>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -355,7 +355,7 @@ function renderHistory(){
 setPlayMode(playMode);
 function setTheme(theme){
   document.documentElement.dataset.theme=theme;
-  document.querySelector('meta[name="theme-color"]').content=theme==="dark"?"#160f1d":"#f7f0e2";
+  document.querySelector('meta[name="theme-color"]').content=theme==="dark"?"#130d1b":"#f4eefb";
   document.querySelectorAll(".theme-switch").forEach(button=>{
     button.setAttribute("aria-checked",String(theme==="dark"));
     button.setAttribute("aria-label",theme==="dark"?"Modo escuro ativo; alternar para modo claro":"Modo claro ativo; alternar para modo escuro");
