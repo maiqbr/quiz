@@ -1,8 +1,15 @@
 (()=>{
   const el=id=>document.getElementById(id);
-  const title={capitais:'Capitais',idiomas:'Idiomas',misto:'Misto'};
+  const title=Object.fromEntries(QUIZZES.map(quiz=>[quiz.id,quiz.title]));title.misto='Misto';title.idiomas='Línguas do Mundo';
   const difficulty={easy:'Fácil',hard:'Difícil'};
-  let user=null,runId=null,current=null,hits=0,deadline=0,tick=null,busy=false,profileOffset=0;
+  let user=null,runId=null,current=null,hits=0,deadline=0,tick=null,busy=false,profileOffset=0,boardDifficulty='easy';
+  const categories=[{id:'misto',title:'Misto',count:QUIZZES.reduce((sum,quiz)=>sum+quiz.getPool('all').length,0)},...QUIZZES.map(quiz=>({id:quiz.id,title:quiz.title,count:quiz.getPool('all').length}))];
+  for(const [id,includeCount] of [['rank-category',true],['board-category',false]]){
+    const select=el(id);select.replaceChildren();
+    categories.forEach(category=>{const option=document.createElement('option');option.value=category.id;option.textContent=includeCount?`${category.title} · ${category.count}`:category.title;select.append(option)});
+    select.value=id==='rank-category'?'capitais':'misto';
+  }
+  function setBoardDifficulty(value){boardDifficulty=value;document.querySelectorAll('[data-board-difficulty]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.boardDifficulty===value)));board()}
   const duration=ms=>`${Math.floor(ms/60000)}m ${String(Math.floor(ms/1000)%60).padStart(2,'0')}s`;
   const date=stamp=>new Date(stamp).toLocaleDateString('pt-BR');
   async function api(path,options={}){
@@ -16,7 +23,7 @@
   function avatar(target,account){target.replaceChildren();if(account.avatar){const img=document.createElement('img');img.src=account.avatar;img.alt='';img.referrerPolicy='no-referrer';target.append(img)}else target.textContent=(account.name||'?').slice(0,1).toUpperCase()}
   async function board(){
     const rows=el('rank-rows');rows.replaceChildren();
-    try{const data=await api(`/api/rankings?quiz=${el('board-category').value}&difficulty=${el('board-difficulty').value}`);
+    try{const data=await api(`/api/rankings?quiz=${el('board-category').value}&difficulty=${boardDifficulty}`);
       el('rank-board-count').textContent=`${data.rows.length} jogadores`;
       if(!data.rows.length){const row=document.createElement('tr');const cell=document.createElement('td');cell.colSpan=4;cell.textContent='Seja o primeiro neste ranking.';row.append(cell);rows.append(row)}
       data.rows.forEach((item,index)=>{const row=document.createElement('tr');[index+1,item.name,`${item.hits}/${item.total}`,duration(item.elapsed_ms)].forEach(value=>{const cell=document.createElement('td');cell.textContent=value;row.append(cell)});rows.append(row)})
@@ -27,7 +34,12 @@
     el('rank-game').hidden=false;el('rank-finish').hidden=true;el('rank-flow-title').textContent=title[question.category]||'Desafio';
     el('rank-position').textContent=`${question.number} / ${question.total}`;el('rank-hits').textContent=hits;
     el('rank-progress-bar').style.width=`${(question.number-1)/question.total*100}%`;el('rank-prompt').textContent=question.text;
-    gameStatus('');const choices=el('rank-options');choices.replaceChildren();choices.hidden=question.difficulty==='hard';el('rank-answer').hidden=question.difficulty!=='hard';
+    gameStatus('');const media=el('rank-media');media.replaceChildren();media.hidden=!question.media&&!question.clue;
+    if(question.media?.type==='image'){const img=document.createElement('img');img.src=question.media.src;img.alt='Imagem da pergunta';img.referrerPolicy='no-referrer';img.onerror=()=>{media.replaceChildren();media.textContent=question.clue||'Imagem indisponível.'};media.append(img)}
+    else if(question.media?.type==='audio'){const audio=document.createElement('audio');audio.src=question.media.src;audio.preload='none';const button=document.createElement('button');button.type='button';button.textContent='Ouvir trecho';button.addEventListener('click',()=>{audio.currentTime=0;audio.play().catch(()=>{gameStatus('Não foi possível carregar o áudio.')})});media.append(button,audio)}
+    else if(question.clue)media.textContent=question.clue;
+    if(question.media?.source){const source=document.createElement('a');source.href=question.media.source;source.target='_blank';source.rel='noopener noreferrer';source.textContent=question.media.attribution||'Fonte: Wikimedia Commons';media.append(source)}
+    const choices=el('rank-options');choices.replaceChildren();choices.hidden=question.difficulty==='hard';el('rank-answer').hidden=question.difficulty!=='hard';
     if(question.difficulty==='easy')question.options.forEach((name,index)=>{const button=document.createElement('button');button.type='button';button.textContent=name;button.addEventListener('click',()=>answer(index));choices.append(button)});
     else{el('rank-input').value='';el('rank-input').disabled=false;el('rank-input').focus()}
     clearInterval(tick);function update(){const left=Math.max(0,Math.ceil((deadline-Date.now())/1000));el('rank-time').textContent=`${left}s`;if(!left&&!busy){clearInterval(tick);answer(question.difficulty==='hard'?'':-1)}}update();tick=setInterval(update,250)
@@ -57,10 +69,10 @@
       profileOffset=data.nextOffset;el('profile-more').hidden=data.nextOffset===null;
     }catch(error){el('profile-history').textContent=error.message}
   }
-  async function logout(){try{await api('/api/logout',{method:'POST',body:'{}'});location.href='/index.html'}catch(error){status(error.message)}}
+  async function logout(){try{await api('/api/logout',{method:'POST',body:'{}'});location.href='/'}catch(error){status(error.message)}}
   el('rank-begin').addEventListener('click',start);el('rank-answer').addEventListener('submit',event=>{event.preventDefault();answer(el('rank-input').value)});
   el('rank-back').addEventListener('click',()=>{clearInterval(tick);current=null;show('home')});el('rank-restart').addEventListener('click',()=>{show('home');location.hash='ranking'});
-  el('board-category').addEventListener('change',board);el('board-difficulty').addEventListener('change',board);
+  el('board-category').addEventListener('change',board);document.querySelectorAll('[data-board-difficulty]').forEach(button=>button.addEventListener('click',()=>setBoardDifficulty(button.dataset.boardDifficulty)));setBoardDifficulty(boardDifficulty);
   el('header-profile').addEventListener('click',()=>profile());el('profile-back').addEventListener('click',()=>show('home'));
   el('profile-more').addEventListener('click',()=>profile(false));el('rank-logout').addEventListener('click',logout);el('profile-logout').addEventListener('click',logout);
   (async()=>{try{const data=await api('/api/me');user=data.user;if(user){el('header-discord-login').hidden=true;el('header-profile').hidden=false;el('header-name').textContent=user.name;avatar(el('header-avatar'),user);el('rank-connect').hidden=true;el('rank-signed').hidden=false;el('rank-user').textContent=user.name;if(await resume())status('Partida em andamento retomada.')}await board()}catch(error){status(error.message);await board()}})();

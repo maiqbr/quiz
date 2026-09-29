@@ -2,7 +2,7 @@
   "name": "QuizArena",
   "short_name": "QuizArena",
   "description": "Quiz para jogar em grupo na mesma tela, com imagens e curiosidades sobre o mundo",
-  "start_url": "./index.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",

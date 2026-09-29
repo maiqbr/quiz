@@ -1,8 +1,13 @@
 import {QUESTIONS} from './questions.mjs';
 
 const BY_ID=new Map(QUESTIONS.map(question=>[question.id,question]));
+const CATEGORY_COUNTS=Object.fromEntries([...new Set(QUESTIONS.map(question=>question.quiz))].map(id=>[id,QUESTIONS.filter(question=>question.quiz===id).length]));
+CATEGORY_COUNTS.misto=QUESTIONS.length;
+const CATEGORY_IDS=Object.keys(CATEGORY_COUNTS);
+const VALID_RUNS_SQL=[...Object.entries(CATEGORY_COUNTS),['idiomas',CATEGORY_COUNTS['linguas-frases']]].map(([id,total])=>{if(!/^[a-z-]+$/.test(id))throw new Error('ID de categoria inválido');return `(quiz_id='${id}' AND total=${total})`}).join(' OR ');
 const SESSION_MS=7*24*60*60*1000;
 const QUESTION_MS=45_000;
+const RUN_MS=24*60*60*1000;
 const json=(data,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 const randomToken=()=>Array.from(crypto.getRandomValues(new Uint8Array(32)),byte=>byte.toString(16).padStart(2,'0')).join('');
 async function digest(value){const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));return Array.from(new Uint8Array(bytes),byte=>byte.toString(16).padStart(2,'0')).join('')}
@@ -10,7 +15,7 @@ function cookie(request,name){return (request.headers.get('cookie')||'').split('
 function setCookie(name,value,age,origin){return `${name}=${value}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${age}${new URL(origin).hostname==='localhost'?'':'; Secure'}`}
 function cleanName(value){return String(value||'Jogador').replace(/[\u0000-\u001f<>]/g,'').trim().slice(0,40)||'Jogador'}
 function originFor(request,env){return env.APP_ORIGIN||new URL(request.url).origin}
-function questionView(question,position,total,startedAt,difficulty){return {id:question.id,category:question.quiz,text:question.text,options:difficulty==='easy'?question.options:undefined,number:position+1,total,difficulty,secondsLeft:Math.max(0,Math.ceil((QUESTION_MS-(Date.now()-startedAt))/1000))}}
+function questionView(question,position,total,startedAt,difficulty){return {id:question.id,category:question.quiz,text:question.text,media:question.media,clue:question.clue,options:difficulty==='easy'?question.options:undefined,number:position+1,total,difficulty,secondsLeft:Math.max(0,Math.ceil((QUESTION_MS-(Date.now()-startedAt))/1000))}}
 const normalize=value=>String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function shuffle(list){const array=[...list];for(let i=array.length-1;i>0;i--){const j=crypto.getRandomValues(new Uint32Array(1))[0]%(i+1);[array[i],array[j]]=[array[j],array[i]]}return array}
 async function userFor(request,env){
@@ -44,20 +49,20 @@ export default {async fetch(request,env){
       const name=cleanName(profile.global_name||profile.username),avatar=profile.avatar&&/^[a-f0-9_]+$/.test(profile.avatar)?`https://cdn.discordapp.com/avatars/${profile.id}/${profile.avatar}.png?size=64`:null;
       await env.DB.prepare('INSERT INTO users(id,name,avatar,updated_at) VALUES(?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name,avatar=excluded.avatar,updated_at=excluded.updated_at').bind(profile.id,name,avatar,Date.now()).run();
       const session=randomToken();await env.DB.prepare('INSERT INTO sessions(token_hash,user_id,expires_at) VALUES(?,?,?)').bind(await digest(session),profile.id,Date.now()+SESSION_MS).run();
-      return new Response(null,{status:302,headers:{Location:origin+'/index.html#ranking','Set-Cookie':setCookie('qa_session',session,Math.floor(SESSION_MS/1000),origin),'Cache-Control':'no-store'}});
+      return new Response(null,{status:302,headers:{Location:origin+'/','Set-Cookie':setCookie('qa_session',session,Math.floor(SESSION_MS/1000),origin),'Cache-Control':'no-store'}});
     }
     if(path==='/api/me'&&request.method==='GET')return json({user:await userFor(request,env)});
     if(path==='/api/run/current'&&request.method==='GET'){
       const user=await userFor(request,env);if(!user)return json({run:null});
-      const run=await env.DB.prepare('SELECT * FROM runs WHERE user_id=? AND finished_at IS NULL AND abandoned_at IS NULL AND started_at>? ORDER BY started_at DESC LIMIT 1').bind(user.id,Date.now()-14_400_000).first();
+      const run=await env.DB.prepare('SELECT * FROM runs WHERE user_id=? AND finished_at IS NULL AND abandoned_at IS NULL AND started_at>? ORDER BY started_at DESC LIMIT 1').bind(user.id,Date.now()-RUN_MS).first();
       if(!run)return json({run:null});
       const ids=JSON.parse(run.question_ids),question=BY_ID.get(ids[run.position]);
       return json({run:{runId:run.id,quiz:run.quiz_id,difficulty:run.difficulty,hits:run.hits,question:questionView(question,run.position,ids.length,run.question_started_at,run.difficulty)}});
     }
     if(path==='/api/rankings'&&request.method==='GET'){
-      const quiz=['misto','capitais','idiomas'].includes(url.searchParams.get('quiz'))?url.searchParams.get('quiz'):'misto',difficulty=url.searchParams.get('difficulty')==='hard'?'hard':'easy';
-      const {results}=await env.DB.prepare('WITH best AS (SELECT runs.*,ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY hits DESC,elapsed_ms ASC) AS row_num FROM runs WHERE quiz_id=? AND difficulty=? AND finished_at IS NOT NULL) SELECT users.name,best.hits,best.total,best.elapsed_ms,best.finished_at FROM best JOIN users ON users.id=best.user_id WHERE row_num=1 ORDER BY best.hits DESC,best.elapsed_ms ASC LIMIT 50').bind(quiz,difficulty).all();
-      return json({quiz,difficulty,rows:results});
+      const quiz=CATEGORY_IDS.includes(url.searchParams.get('quiz'))?url.searchParams.get('quiz'):'misto',difficulty=url.searchParams.get('difficulty')==='hard'?'hard':'easy';
+      const {results}=await env.DB.prepare("WITH best AS (SELECT runs.*,ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY hits DESC,elapsed_ms ASC) AS row_num FROM runs WHERE (quiz_id=? OR (quiz_id='idiomas' AND ?='linguas-frases')) AND difficulty=? AND total=? AND finished_at IS NOT NULL) SELECT users.name,best.hits,best.total,best.elapsed_ms,best.finished_at FROM best JOIN users ON users.id=best.user_id WHERE row_num=1 ORDER BY best.hits DESC,best.elapsed_ms ASC LIMIT 50").bind(quiz,quiz,difficulty,CATEGORY_COUNTS[quiz]).all();
+      return json({quiz,difficulty,total:CATEGORY_COUNTS[quiz],rows:results});
     }
     if(path.startsWith('/api/')&&request.method==='POST'&&invalidOrigin(request))return json({error:'Origem inválida'},403);
     if(path==='/api/logout'&&request.method==='POST'){
@@ -67,8 +72,8 @@ export default {async fetch(request,env){
     if(path==='/api/run/start'&&request.method==='POST'){
       const user=await userFor(request,env);if(!user)return json({error:'Entre com Discord para jogar no ranking'},401);
       const body=await readJson(request),quiz=body?.quiz,difficulty=body?.difficulty;
-      if(!['misto','capitais','idiomas'].includes(quiz)||!['easy','hard'].includes(difficulty))return json({error:'Categoria ou dificuldade inválida'},400);
-      await env.DB.prepare('UPDATE runs SET abandoned_at=? WHERE user_id=? AND finished_at IS NULL AND abandoned_at IS NULL AND started_at<?').bind(Date.now(),user.id,Date.now()-14_400_000).run();
+      if(!CATEGORY_IDS.includes(quiz)||!['easy','hard'].includes(difficulty))return json({error:'Categoria ou dificuldade inválida'},400);
+      await env.DB.prepare('UPDATE runs SET abandoned_at=? WHERE user_id=? AND finished_at IS NULL AND abandoned_at IS NULL AND started_at<?').bind(Date.now(),user.id,Date.now()-RUN_MS).run();
       const active=await env.DB.prepare('SELECT * FROM runs WHERE user_id=? AND finished_at IS NULL AND abandoned_at IS NULL ORDER BY started_at DESC LIMIT 1').bind(user.id).first();
       if(active){const ids=JSON.parse(active.question_ids),question=BY_ID.get(ids[active.position]);return json({runId:active.id,question:questionView(question,active.position,ids.length,active.question_started_at,active.difficulty),hits:active.hits,resumed:true})}
       const recent=await env.DB.prepare('SELECT COUNT(*) AS count,MAX(started_at) AS latest FROM runs WHERE user_id=? AND started_at>?').bind(user.id,Date.now()-86_400_000).first();
@@ -83,7 +88,7 @@ export default {async fetch(request,env){
       const body=await readJson(request);
       if(!body||!/^[-a-f0-9]{36}$/.test(body.runId||''))return json({error:'Resposta inválida'},400);
       const run=await env.DB.prepare('SELECT * FROM runs WHERE id=? AND user_id=?').bind(body.runId,user.id).first();
-      if(!run||run.finished_at!==null||run.abandoned_at!==null||run.started_at<Date.now()-14_400_000)return json({error:'Partida encerrada ou inexistente'},404);
+      if(!run||run.finished_at!==null||run.abandoned_at!==null||run.started_at<Date.now()-RUN_MS)return json({error:'Partida encerrada ou inexistente'},404);
       const ids=JSON.parse(run.question_ids);if(run.position>=ids.length)return json({error:'Partida encerrada'},404);
       const question=BY_ID.get(ids[run.position]);if(!question)return json({error:'Pergunta indisponível'},500);
       if(run.difficulty==='easy'&&(!Number.isInteger(body.choice)||body.choice< -1||body.choice>3)||run.difficulty==='hard'&&(typeof body.choice!=='string'||body.choice.length>120))return json({error:'Resposta inválida'},400);
@@ -102,7 +107,7 @@ export default {async fetch(request,env){
       const user=await userFor(request,env);if(!user)return json({error:'Entre com Discord'},401);
       const offset=Math.min(1_000_000,Math.max(0,Number.parseInt(url.searchParams.get('offset')||'0',10)||0));
       const summary=await env.DB.prepare('SELECT COUNT(*) AS completed,COALESCE(SUM(hits),0) AS hits,COALESCE(SUM(total),0) AS questions FROM runs WHERE user_id=? AND finished_at IS NOT NULL').bind(user.id).first();
-      const {results:records}=await env.DB.prepare(`WITH best AS (SELECT user_id,quiz_id,difficulty,hits,total,elapsed_ms,finished_at,ROW_NUMBER() OVER (PARTITION BY user_id,quiz_id,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC) AS own_order FROM runs WHERE finished_at IS NOT NULL), ranked AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY quiz_id,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC) AS position FROM best WHERE own_order=1) SELECT quiz_id,difficulty,hits,total,elapsed_ms,finished_at,position FROM ranked WHERE user_id=? ORDER BY quiz_id,difficulty`).bind(user.id).all();
+      const {results:records}=await env.DB.prepare(`WITH eligible AS (SELECT user_id,CASE WHEN quiz_id='idiomas' THEN 'linguas-frases' ELSE quiz_id END AS quiz_id,difficulty,hits,total,elapsed_ms,finished_at FROM runs WHERE finished_at IS NOT NULL AND (${VALID_RUNS_SQL})), best AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY user_id,quiz_id,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC) AS own_order FROM eligible), ranked AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY quiz_id,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC) AS position FROM best WHERE own_order=1) SELECT quiz_id,difficulty,hits,total,elapsed_ms,finished_at,position FROM ranked WHERE user_id=? ORDER BY quiz_id,difficulty`).bind(user.id).all();
       const {results:history}=await env.DB.prepare('SELECT quiz_id,difficulty,hits,total,elapsed_ms,finished_at FROM runs WHERE user_id=? AND finished_at IS NOT NULL ORDER BY finished_at DESC LIMIT 21 OFFSET ?').bind(user.id,offset).all();
       return json({user,summary,records,history:history.slice(0,20),nextOffset:history.length>20?offset+20:null});
     }

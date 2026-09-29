@@ -4649,30 +4649,46 @@ for(const item of [ANIMAIS,ARTE,MONUMENTOS,COMIDAS,INSTRUMENTOS,ANIME_TITULOS,SU
 
 // Formatos de sequência e associação: cada rodada usa quatro respostas.
 const HISTORY_EVENTS=[
+  {year:476,label:"Fim do Império Romano do Ocidente"},
+  {year:622,label:"Hégira, marco inicial do calendário islâmico"},
+  {year:800,label:"Carlos Magno é coroado imperador"},
+  {year:1215,label:"Assinatura da Magna Carta"},
+  {year:1347,label:"Peste Negra chega à Europa"},
   {year:1450,label:"Difusão da prensa de Gutenberg"},
   {year:1492,label:"Chegada de Colombo às Américas"},
   {year:1517,label:"Publicação das 95 teses de Lutero"},
   {year:1609,label:"Galileu passa a observar o céu com telescópio"},
   {year:1687,label:"Publicação dos Principia de Newton"},
+  {year:1776,label:"Declaração de Independência dos Estados Unidos"},
   {year:1789,label:"Início da Revolução Francesa"},
+  {year:1804,label:"Napoleão é coroado imperador"},
   {year:1822,label:"Independência do Brasil"},
   {year:1859,label:"Publicação de A Origem das Espécies"},
+  {year:1865,label:"Fim da Guerra Civil dos Estados Unidos"},
   {year:1876,label:"Patente do telefone de Bell"},
+  {year:1889,label:"Inauguração da Torre Eiffel"},
   {year:1903,label:"Primeiro voo dos irmãos Wright"},
   {year:1912,label:"Naufrágio do Titanic"},
+  {year:1914,label:"Início da Primeira Guerra Mundial"},
   {year:1928,label:"Descoberta da penicilina"},
+  {year:1929,label:"Quebra da Bolsa de Nova York"},
+  {year:1939,label:"Início da Segunda Guerra Mundial"},
   {year:1945,label:"Fundação das Nações Unidas"},
   {year:1957,label:"Lançamento do Sputnik 1"},
   {year:1969,label:"Primeiro pouso humano na Lua"},
+  {year:1986,label:"Acidente nuclear de Chernobyl"},
   {year:1989,label:"Queda do Muro de Berlim"},
   {year:1991,label:"World Wide Web é aberta ao público"},
-  {year:2007,label:"Lançamento do primeiro iPhone"}
+  {year:1994,label:"Nelson Mandela assume a presidência da África do Sul"},
+  {year:2001,label:"Lançamento da Wikipédia"},
+  {year:2007,label:"Lançamento do primeiro iPhone"},
+  {year:2020,label:"OMS declara a pandemia de COVID-19"}
 ];
-const TIMELINE_ROUNDS=Array.from({length:12},(_,index)=>{
-  const events=[HISTORY_EVENTS[index],HISTORY_EVENTS[index+2],HISTORY_EVENTS[index+4],HISTORY_EVENTS[index+6]];
+const TIMELINE_ROUNDS=Array.from({length:30},(_,index)=>{
+  const events=[0,7,15,23].map(offset=>HISTORY_EVENTS[(index+offset)%HISTORY_EVENTS.length]).sort((a,b)=>a.year-b.year);
   return {name:events.map(event=>event.label).join(' → '),a:['sequência '+(index+1)],events};
 });
-const MATCH_ROUNDS=Array.from({length:12},(_,index)=>{
+const MATCH_ROUNDS=Array.from({length:20},(_,index)=>{
   const pairs=CAPITAIS.slice(index*4,index*4+4).map(item=>({country:item.hint,capital:item.name}));
   return {name:pairs.map(pair=>pair.country+' — '+pair.capital).join('; '),a:['pares '+(index+1)],pairs};
 });
@@ -4681,7 +4697,13 @@ const AUDIO_INSTRUMENTS=[
   {name:"Piano",a:["piano"],file:"E major piano.ogg",author:"→ROUX ₪",license:"CC0 1.0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",reviewed:"2026-09-29"},
   {name:"Flauta",a:["flauta","flute"],file:"Flute.ogg",author:"hokuspokus",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"},
   {name:"Violino",a:["violino","violin"],file:"Violin-440Hz.ogg",author:"SVGguru",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",reviewed:"2026-09-29"},
-  {name:"Bateria",a:["bateria","drums"],file:"Drum - Cadence A.ogg",author:"United States Navy Band",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"}
+  {name:"Bateria",a:["bateria","drums"],file:"Drum - Cadence A.ogg",author:"United States Navy Band",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"},
+  {name:"Violão",a:["violão","violao","guitarra acústica"],file:"AcousticGuitarSample.ogg",author:"RyGuy",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"},
+  {name:"Clarinete",a:["clarinete","clarinet"],file:"Jazz Clarinet.ogg",author:"Serolillo",license:"CC BY 2.5",licenseUrl:"https://creativecommons.org/licenses/by/2.5/",reviewed:"2026-09-29"},
+  {name:"Acordeão",a:["acordeão","acordeao","sanfona"],file:"Accordion registers.ogg",author:"Necz0r",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"},
+  {name:"Violoncelo",a:["violoncelo","cello"],file:"Cello strings.ogg",author:"Georg Feitscher",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",reviewed:"2026-09-29"},
+  {name:"Saxofone",a:["saxofone","saxophone","sax"],file:"Stlouisblues-9bars.ogg",author:"Julien Grandgagnage",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",reviewed:"2026-09-29"},
+  {name:"Trompete",a:["trompete","trumpet"],file:"06. F5-trumpet.ogg",author:"ПростоУчастник",license:"CC0 1.0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",reviewed:"2026-09-29"}
 ];
 for(const item of AUDIO_INSTRUMENTS){item.fileUrl='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(item.file.replaceAll(' ','_'));item.src='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+encodeURIComponent(item.file);}
 
@@ -4827,19 +4849,19 @@ const QUIZZES=[
   },
   {
     id:"linha-do-tempo",title:"Linha do Tempo",desc:"Coloque quatro acontecimentos em ordem cronológica.",
-    tags:[{t:"12 sequências",cls:"tag-purple"},{t:"Ordem",cls:"tag-green"}],
+    tags:[{t:"30 sequências",cls:"tag-purple"},{t:"Ordem",cls:"tag-green"}],
     question:"Toque do mais antigo para o mais recente.",placeholder:"",kind:"timeline",hasModes:false,
     getPool(){return TIMELINE_ROUNDS;},getHints(){return[];}
   },
   {
     id:"associacoes",title:"País e Capital",desc:"Associe quatro países às suas capitais.",
-    tags:[{t:"12 rodadas",cls:"tag-purple"},{t:"Pares",cls:"tag-green"}],
+    tags:[{t:"20 rodadas",cls:"tag-purple"},{t:"Pares",cls:"tag-green"}],
     question:"Escolha um país e depois sua capital.",placeholder:"",kind:"match",hasModes:false,
     getPool(){return MATCH_ROUNDS;},getHints(){return[];}
   },
   {
     id:"audio-instrumentos",title:"Som dos Instrumentos",desc:"Ouça trechos reais e identifique os instrumentos.",
-    tags:[{t:"4 trechos",cls:"tag-purple"},{t:"Áudio",cls:"tag-green"}],
+    tags:[{t:"10 trechos",cls:"tag-purple"},{t:"Áudio",cls:"tag-green"}],
     question:"Qual instrumento você ouve?",placeholder:"Digite o instrumento...",kind:"audio",hasModes:false,
     getPool(){return AUDIO_INSTRUMENTS;},getHints(){return[];}
   },

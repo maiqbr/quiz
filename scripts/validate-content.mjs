@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
 
 const source=readFileSync(new URL('../content.js',import.meta.url),'utf8');
-const {QUIZZES,MAPA_CAPITAIS,HERO_CLUES}=runInNewContext(source+'\n({QUIZZES,MAPA_CAPITAIS,HERO_CLUES})');
+const {QUIZZES,MAPA_CAPITAIS,HERO_CLUES,TIMELINE_ROUNDS,MATCH_ROUNDS,AUDIO_INSTRUMENTS}=runInNewContext(source+'\n({QUIZZES,MAPA_CAPITAIS,HERO_CLUES,TIMELINE_ROUNDS,MATCH_ROUNDS,AUDIO_INSTRUMENTS})');
 const errors=[];
 const ids=new Set();
 for(const quiz of QUIZZES){
@@ -29,6 +29,9 @@ for(const quiz of QUIZZES){
       }else if(item.media?.status!=='no-free-image')errors.push(`${label}: situação de mídia desconhecida`);
     }
     if(quiz.id==='linguas-frases'&&!item.phrase?.trim())errors.push(`${label}: frase ausente`);
+    if(quiz.kind==='audio'&&(!item.fileUrl?.startsWith('https://commons.wikimedia.org/wiki/File:')||!item.src?.startsWith('https://commons.wikimedia.org/wiki/Special:Redirect/file/')||!item.author||!item.license||!item.licenseUrl||!item.reviewed))errors.push(`${label}: áudio sem fonte ou licença`);
+    if(quiz.kind==='timeline'&&(item.events.length!==4||item.events.some((event,i)=>i>0&&item.events[i-1].year>=event.year)))errors.push(`${label}: sequência histórica inválida`);
+    if(quiz.kind==='match'&&(item.pairs.length!==4||new Set(item.pairs.map(pair=>pair.country)).size!==4||new Set(item.pairs.map(pair=>pair.capital)).size!==4))errors.push(`${label}: pares inválidos`);
     if(quiz.id==='super-herois'&&!HERO_CLUES[item.name])errors.push(`${label}: pista textual ausente`);
     for(const answer of [item.name,...item.a||[]]){
       const key=answer.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
@@ -39,5 +42,7 @@ for(const quiz of QUIZZES){
   console.log(`${quiz.id}: ${pool.length} itens`);
 }
 if(MAPA_CAPITAIS.length!==new Set(MAPA_CAPITAIS.map(item=>item.name)).size)errors.push('Mapa: capital repetida');
+if(TIMELINE_ROUNDS.length!==new Set(TIMELINE_ROUNDS.map(item=>item.events.map(event=>event.year).join(','))).size)errors.push('Linha do tempo: rodada repetida');
+if(AUDIO_INSTRUMENTS.length!==new Set(AUDIO_INSTRUMENTS.map(item=>item.file)).size)errors.push('Áudio: arquivo repetido');
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
 else console.log('Catálogo válido.');

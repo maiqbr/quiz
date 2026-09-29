@@ -16,13 +16,13 @@ Revisado em 29/09/2026.
 
 ## Formatos e partidas
 
-Há linha do tempo, associação país/capital, áudio de instrumentos, mapa, texto, bandeiras e imagens. Solo e apresentação têm resumo e histórico local. O modo de apresentação permite pontuação manual de equipes durante a transmissão da tela. O ranking online foi iniciado com os dois temas textuais/estruturados que têm gabarito inequívoco: capitais e idiomas. Cada um usa o conjunto completo; Misto reúne ambos.
+Há linha do tempo, associação país/capital, áudio de instrumentos, mapa, texto, bandeiras e imagens. Solo e apresentação têm resumo e histórico local. O modo de apresentação permite pontuação manual de equipes durante a transmissão da tela. As coleções de linha do tempo, associações e áudio foram ampliadas para 30, 20 e 10 rodadas. O ranking online abrange as 15 categorias e Misto reúne todas elas. Mapa, linha do tempo e associação têm perguntas de resposta única no ranking para manter uma regra de validação no servidor.
 
 Próximas expansões úteis:
 
 1. Revisar visualmente cada arquivo curado e substituir pistas textuais por imagens adequadas quando existir uma opção reutilizável.
-2. Ampliar áudios com trechos curtos e licença conferida, e adicionar mais sequências históricas e associações.
-3. Levar os demais temas ao ranking com bancos de perguntas específicos por formato, sem reduzir o conteúdo a pistas que revelem a resposta. Para competição séria, criar um conjunto de perguntas privado diferente do catálogo aberto.
+2. Continuar a curadoria de áudios curtos e acessíveis, com licença conferida, e adicionar novas sequências históricas e associações.
+3. Refinar os formatos especiais no ranking sem perder a validação no servidor. Para competição séria, criar um conjunto de perguntas privado diferente do catálogo aberto.
 4. Criar salas sincronizadas somente se houver demanda por jogadores em aparelhos separados; a apresentação na mesma tela já cobre o uso em grupo atual.
 
 Para novos dados de países, a [REST Countries](https://restcountries.com/) pode auxiliar uma geração de snapshot revisado; respostas do jogo não devem depender de uma API em tempo real.

@@ -1,5 +1,5 @@
 // QuizArena Service Worker
-const CACHE_NAME = "quizarena-v9";
+const CACHE_NAME = "quizarena-v11";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -36,7 +36,8 @@ self.addEventListener("activate", (event) => {
 });
 
 // Fetch strategy:
-// - Core app shell (HTML/CSS/JS/manifest/icons): cache-first, so the app opens instantly offline.
+// - Navigations: network-first with offline fallback, so login returns to the current page.
+// - Static assets: cache-first until the cache version changes.
 // - External images and API responses stay under the provider's cache policy.
 self.addEventListener("fetch", (event) => {
   const req = event.request;
@@ -44,6 +45,11 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(req.url);
   const isSameOrigin = url.origin === self.location.origin;
+
+  if (isSameOrigin && req.mode === 'navigate') {
+    event.respondWith(fetch(req).catch(() => caches.match(req, { ignoreSearch: true })));
+    return;
+  }
 
   if (isSameOrigin && !url.pathname.startsWith('/api/') && !url.pathname.startsWith('/auth/')) {
     // Cache-first for our own app shell files
