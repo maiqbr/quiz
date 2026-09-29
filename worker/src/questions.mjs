@@ -17330,7 +17330,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/E%20major%20piano.ogg",
+      "src": "audio/piano.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:E_major_piano.ogg",
       "attribution": "→ROUX ₪ · CC0 1.0"
     },
@@ -17353,7 +17353,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flute.ogg",
+      "src": "audio/flauta.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:Flute.ogg",
       "attribution": "hokuspokus · Domínio público"
     },
@@ -17376,7 +17376,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Violin-440Hz.ogg",
+      "src": "audio/violino.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:Violin-440Hz.ogg",
       "attribution": "SVGguru · CC BY-SA 4.0"
     },
@@ -17399,7 +17399,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Drum%20-%20Cadence%20A.ogg",
+      "src": "audio/bateria.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:Drum_-_Cadence_A.ogg",
       "attribution": "United States Navy Band · Domínio público"
     },
@@ -17423,7 +17423,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/AcousticGuitarSample.ogg",
+      "src": "audio/violao.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:AcousticGuitarSample.ogg",
       "attribution": "RyGuy · Domínio público"
     },
@@ -17446,7 +17446,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Jazz%20Clarinet.ogg",
+      "src": "audio/clarinete.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:Jazz_Clarinet.ogg",
       "attribution": "Serolillo · CC BY 2.5"
     },
@@ -17470,7 +17470,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Accordion%20registers.ogg",
+      "src": "audio/acordeao.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:Accordion_registers.ogg",
       "attribution": "Necz0r · Domínio público"
     },
@@ -17493,7 +17493,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cello%20strings.ogg",
+      "src": "audio/violoncelo.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:Cello_strings.ogg",
       "attribution": "Georg Feitscher · CC BY-SA 3.0"
     },
@@ -17517,7 +17517,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Stlouisblues-9bars.ogg",
+      "src": "audio/saxofone.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:Stlouisblues-9bars.ogg",
       "attribution": "Julien Grandgagnage · CC BY-SA 3.0"
     },
@@ -17540,7 +17540,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "audio",
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/06.%20F5-trumpet.ogg",
+      "src": "audio/trompete.ogg",
       "source": "https://commons.wikimedia.org/wiki/File:06._F5-trumpet.ogg",
       "attribution": "ПростоУчастник · CC0 1.0"
     },

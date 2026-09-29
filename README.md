@@ -6,7 +6,7 @@ O modo solo percorre **todas** as perguntas do tema. O switch **Rápida** limita
 
 ## Rodar e verificar
 
-O jogo local é estático. Sirva a raiz com `python -m http.server 8765` e abra `http://localhost:8765`. Execute `node scripts/validate-content.mjs` para validar as 15 coleções. `content.js` contém perguntas, respostas e curadoria de mídia; `visual.css` contém a identidade visual. `category-icons/` e `icon-*.png` contêm os ícones raster originais usados na interface e na PWA.
+O jogo local é estático. Sirva a raiz com `python -m http.server 8765` e abra `http://localhost:8765`. Execute `node scripts/validate-content.mjs` para validar as 15 coleções. `content.js` contém perguntas, respostas e curadoria de mídia; `visual.css` contém a identidade visual. `category-icons/` e `icon-*.png` contêm os ícones raster originais usados na interface e na PWA. Os trechos de `audio/` são cópias locais dos arquivos creditados em `content.js`; `node scripts/download-audio.mjs` pode atualizar essas cópias.
 
 As coleções atuais têm: bandeiras 139, capitais 83, língua do país 62, línguas do mundo 74, animais 95, arte 47, monumentos 54, pratos 37, instrumentos 39, anime e mangá 75, heróis e vilões 75, mapa 35, linha do tempo 30, associação país/capital 20 e áudio de instrumentos 10.
 

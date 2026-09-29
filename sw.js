@@ -1,5 +1,5 @@
 // QuizArena Service Worker
-const CACHE_NAME = "quizarena-v11";
+const CACHE_NAME = "quizarena-v12";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -45,6 +45,9 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(req.url);
   const isSameOrigin = url.origin === self.location.origin;
+
+  // Let the browser request audio byte ranges directly from the Worker assets.
+  if (isSameOrigin && url.pathname.startsWith('/audio/')) return;
 
   if (isSameOrigin && req.mode === 'navigate') {
     event.respondWith(fetch(req).catch(() => caches.match(req, { ignoreSearch: true })));

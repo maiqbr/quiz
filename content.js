@@ -4705,7 +4705,7 @@ const AUDIO_INSTRUMENTS=[
   {name:"Saxofone",a:["saxofone","saxophone","sax"],file:"Stlouisblues-9bars.ogg",author:"Julien Grandgagnage",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",reviewed:"2026-09-29"},
   {name:"Trompete",a:["trompete","trumpet"],file:"06. F5-trumpet.ogg",author:"ПростоУчастник",license:"CC0 1.0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",reviewed:"2026-09-29"}
 ];
-for(const item of AUDIO_INSTRUMENTS){item.fileUrl='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(item.file.replaceAll(' ','_'));item.src='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+encodeURIComponent(item.file);}
+for(const item of AUDIO_INSTRUMENTS){item.fileUrl='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(item.file.replaceAll(' ','_'));item.asset=item.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-');item.src='audio/'+item.asset+'.ogg';}
 
 /* ══════════════════════════════════════════════════════════════════
    QUIZ DEFINITIONS

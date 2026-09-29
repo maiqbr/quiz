@@ -1,4 +1,4 @@
-import {readFileSync} from 'node:fs';
+import {readFileSync,existsSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
 
 const source=readFileSync(new URL('../content.js',import.meta.url),'utf8');
@@ -29,7 +29,8 @@ for(const quiz of QUIZZES){
       }else if(item.media?.status!=='no-free-image')errors.push(`${label}: situação de mídia desconhecida`);
     }
     if(quiz.id==='linguas-frases'&&!item.phrase?.trim())errors.push(`${label}: frase ausente`);
-    if(quiz.kind==='audio'&&(!item.fileUrl?.startsWith('https://commons.wikimedia.org/wiki/File:')||!item.src?.startsWith('https://commons.wikimedia.org/wiki/Special:Redirect/file/')||!item.author||!item.license||!item.licenseUrl||!item.reviewed))errors.push(`${label}: áudio sem fonte ou licença`);
+    if(quiz.kind==='audio'&&(!item.fileUrl?.startsWith('https://commons.wikimedia.org/wiki/File:')||!/^audio\/[a-z0-9-]+\.ogg$/.test(item.src||'')||!item.author||!item.license||!item.licenseUrl||!item.reviewed))errors.push(`${label}: áudio sem fonte ou licença`);
+    if(quiz.kind==='audio'&&!existsSync(new URL('../'+item.src,import.meta.url)))errors.push(`${label}: arquivo de áudio ausente`);
     if(quiz.kind==='timeline'&&(item.events.length!==4||item.events.some((event,i)=>i>0&&item.events[i-1].year>=event.year)))errors.push(`${label}: sequência histórica inválida`);
     if(quiz.kind==='match'&&(item.pairs.length!==4||new Set(item.pairs.map(pair=>pair.country)).size!==4||new Set(item.pairs.map(pair=>pair.capital)).size!==4))errors.push(`${label}: pares inválidos`);
     if(quiz.id==='super-herois'&&!HERO_CLUES[item.name])errors.push(`${label}: pista textual ausente`);

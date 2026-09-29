@@ -27,6 +27,7 @@ function invalidOrigin(request){return request.headers.get('origin')!==new URL(r
 
 export default {async fetch(request,env){
   const url=new URL(request.url),path=url.pathname,origin=originFor(request,env);
+  if(path==='/index.html'&&request.method==='GET')return Response.redirect(origin+'/'+url.search,308);
   if(!env.DB)return json({error:'Banco indisponível'},503);
   try{
     if(path==='/auth/discord/start'&&request.method==='GET'){
