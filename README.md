@@ -1,0 +1,30 @@
+# QuizArena
+
+Quiz de 15 temas para jogar sozinho ou apresentar em uma tela compartilhada. [Site publicado](https://quiz.maiq.dev.br), servido por Cloudflare Workers com D1 para o ranking.
+
+O modo solo percorre **todas** as perguntas do tema. A opção **Rápido** limita a partida a até 10 perguntas. O modo de apresentação mantém um placar manual para pessoas ou equipes, tempo opcional por pergunta, resumo e histórico no navegador. Os dois modos funcionam sem conta. O tema escuro é o padrão; há um switch para o modo claro.
+
+## Rodar e verificar
+
+O jogo local é estático. Sirva a raiz com `python -m http.server 8765` e abra `http://localhost:8765`. Execute `node scripts/validate-content.mjs` para validar as 15 coleções. `content.js` contém perguntas, respostas e curadoria de mídia; `visual.css` contém a identidade visual. `category-icons/` e `icon-*.png` contêm os ícones raster originais usados na interface e na PWA.
+
+As coleções atuais têm: bandeiras 139, capitais 83, língua do país 62, línguas do mundo 74, animais 95, arte 47, monumentos 54, pratos 37, instrumentos 39, anime e mangá 75, heróis e vilões 75, mapa 35, linha do tempo 12, associação país/capital 12 e áudio de instrumentos 4.
+
+## Ranking online
+
+O ranking **casual** está publicado no Cloudflare Worker em `quiz.maiq.dev.br`, com login Discord e D1. Os temas disponíveis são **Capitais (83)**, **Idiomas (74)** e **Misto (157)**. Cada partida ranqueada percorre o conjunto inteiro. Fácil usa quatro opções; difícil exige digitar. Os placares são independentes por tema e dificuldade, ordenados por acertos e depois por tempo.
+
+O Worker cria a sequência e calcula os acertos e o tempo. Ele não aceita pontuação enviada pelo cliente, confere respostas uma vez por posição, limita partidas por conta e guarda a sessão em cookie HttpOnly. **Isso impede alterar o resultado por um simples `fetch` no console, mas não torna o ranking imune a automação**: perguntas e respostas do quiz estão no repositório público e podem ser consultadas. O ranking não deve ser usado como competição com prêmio. Para resistência maior seriam necessários um banco privado de questões inéditas, detecção de abuso e moderação.
+
+Para reproduzir a instalação em outra conta:
+
+1. Crie uma aplicação no [Discord Developer Portal](https://discord.com/developers/applications) e registre `https://SEU-DOMINIO/auth/discord/callback` como Redirect URI. Use apenas o escopo `identify`.
+2. Crie um D1 chamado `quizarena`, coloque seu `database_id` em `worker/wrangler.jsonc` e configure domínio e Client ID nesse arquivo.
+3. Na pasta `worker/`, rode `npm install`, `npm run build` e `npx wrangler d1 migrations apply quizarena --remote`. Salve `DISCORD_CLIENT_SECRET` com `npx wrangler secret put DISCORD_CLIENT_SECRET` ou no painel como Secret. Não coloque segredos no Git.
+4. Publique com `npm run deploy`. A rota `quiz.maiq.dev.br/*` existente no projeto usa o registro DNS já intermediado pela Cloudflare. O Worker serve os arquivos estáticos e as rotas `/auth/*` e `/api/*` na mesma origem.
+
+`scripts/build-worker-assets.mjs` gera a cópia estática ignorada em `worker/public/` e atualiza `worker/src/questions.mjs`. O ranking local foi verificado com D1, 83 respostas obrigatórias, separação de dificuldade, rejeição de origem externa e tentativa de enviar pontuação e tempo falsos. No domínio público foram verificados assets, APIs e início do OAuth; a conclusão do login depende de teste com uma conta Discord.
+
+## Repositório público e mídia
+
+O `.gitignore` exclui `node_modules`, variáveis de ambiente, estado local do Wrangler, build e arquivos de QA. Os arquivos versionáveis necessários são o código, conteúdo, documentos, ícones e migrações. O ID do D1 e o Client ID do Discord não são senhas; o Client Secret fica apenas no Cloudflare. O arquivo original do logo mantém seus pixels; a interface recorta visualmente a faixa preta exterior. Confira [Fontes e expansão](FONTES-E-EXPANSAO.md), [Privacidade](PRIVACY.md), [Mídia e atribuição](NOTICE.md), [Contribuição](CONTRIBUTING.md) e a [licença MIT](LICENSE).

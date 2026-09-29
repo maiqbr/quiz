@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+qa-*.png
+playwright-report/
+test-results/
+worker/public/
+worker/.wrangler/
+.wrangler-config/

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>QuizArena</title>
 <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#7c3aed">
+<meta name="theme-color" content="#160f1d">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("quizTheme")==="light"?"light":"dark"}catch{document.documentElement.dataset.theme="dark"}</script>
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="QuizArena">
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -195,15 +195,18 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 }
 @media(max-width:400px){.home-grid{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="visual.css">
 </head>
 <body>
 <div id="home" class="screen active">
-  <div class="home-hero">
-    <div class="home-logo"><div class="home-logo-icon"><img src="icon-192.png" alt="QuizArena"/></div><div class="home-logo-name">Quiz<span>Arena</span></div></div>
-    <p class="home-tagline">Escolha um quiz, projete na tela e jogue com seus amigos em tempo real.</p>
-    <button id="install-btn" class="install-btn" style="display:none">⬇ Instalar App</button>
-  </div>
+  <header class="home-topbar"><div class="home-logo"><div class="home-logo-icon" aria-hidden="true"><img src="icon-192.png" alt=""></div><div class="home-logo-name">Quiz<span>Arena</span></div></div><div class="home-actions"><button class="theme-switch" type="button" role="switch" aria-checked="true" aria-label="Modo escuro ativo; alternar para modo claro"><span class="theme-switch-track" aria-hidden="true"><span></span></span><span class="theme-switch-label">Escuro</span></button><button id="install-btn" class="install-btn" style="display:none">Instalar aplicativo <span aria-hidden="true">↗</span></button></div></header>
+  <section class="play-mode" aria-label="Como você vai jogar"><div><strong>Como você vai jogar?</strong><p id="play-mode-description">Todas as perguntas do tema, com resultado ao final.</p></div><div class="play-mode-buttons" role="group" aria-label="Tipo de partida"><button type="button" data-play-mode="solo">Jogar sozinho</button><button type="button" data-play-mode="host">Apresentar para a turma</button></div><div class="solo-length" id="solo-length"><label for="solo-length-select">Duração</label><select id="solo-length-select"><option value="full">Completo · todas as perguntas</option><option value="quick">Rápido · até 10 perguntas</option></select></div></section>
+  <a class="ranking-link" href="ranking.html"><span><strong>Ranking online</strong><small>Desafio individual com tempo e acertos</small></span><span aria-hidden="true">↗</span></a>
+  <div class="home-hero"><div class="hero-copy"><span class="eyebrow">UMA BOA PERGUNTA MUDA O JOGO</span><h1>Reúna a turma.<br><em>Comece a jogar.</em></h1><p class="home-tagline">Conhecimento, disputa e boas conversas. Escolha um tema, coloque na tela e veja quem sabe mais.</p><a class="hero-link" href="#quiz-grid">Explorar quizzes <span aria-hidden="true">↗</span></a></div><div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><img class="hero-disc" src="icon-512.png" alt=""><span class="art-mark mark-one">01 / 15</span><span class="art-mark mark-two">JOGUE JUNTO</span></div></div>
+  <div class="catalog-heading"><div><span class="eyebrow">COLEÇÃO / 01</span><h2>Escolha o próximo assunto</h2></div><p>Quinze formas de testar o que você sabe.</p></div>
   <div class="home-grid" id="quiz-grid"></div>
+  <section class="home-history" id="home-history"></section>
+  <footer class="home-footer"><span>QUIZARENA · FEITO PARA JOGAR JUNTO</span><span>Escolha um tema e comece.</span></footer>
 </div>
 <div id="game" class="screen">
   <div class="g-header">
@@ -213,16 +216,20 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
     <div class="g-pill mode-all" id="g-mode-pill" style="display:none">Todos</div>
     <div class="g-pill hits" id="g-hits">0 acertos</div>
     <div class="g-pill timer" id="g-timer">00:00</div>
+    <div class="g-pill timer" id="g-round-timer" aria-label="Tempo da pergunta">45s</div>
     <div class="g-hdr-right">
+      <button class="theme-switch" type="button" role="switch" aria-checked="true" aria-label="Modo escuro ativo; alternar para modo claro"><span class="theme-switch-track" aria-hidden="true"><span></span></span><span class="theme-switch-label">Escuro</span></button>
       <div class="diff-toggle" id="g-btn-diff" title="Alternar dificuldade">
         <span class="diff-toggle-label easy-lbl">Fácil</span>
         <div class="diff-toggle-track is-hard" id="diff-track">
-          <div class="diff-toggle-knob">🎯</div>
+          <div class="diff-toggle-knob"></div>
         </div>
         <span class="diff-toggle-label hard-lbl">Difícil</span>
       </div>
-      <button class="hbtn hbtn-mode" id="g-btn-mode" style="display:none">⚙ Modo</button>
+      <button class="hbtn hbtn-mode" id="g-btn-mode" style="display:none">Modo</button>
       <button class="hbtn hbtn-reset" id="g-btn-reset">↺ Reiniciar</button>
+      <label class="time-limit-control" id="time-limit-control">Tempo <select id="time-limit"><option value="0">Livre</option><option value="30">30s</option><option value="60">60s</option><option value="90">90s</option></select></label>
+      <button class="hbtn" id="g-btn-end">Encerrar</button>
       <button class="hbtn hbtn-sidebar" id="g-btn-sidebar">◀ Placar</button>
     </div>
   </div>
@@ -231,13 +238,17 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
       <div class="g-glow"></div>
       <div class="g-image-wrap" id="g-image-wrap-el">
       <div class="g-image-card" id="g-image-card">
-        <img id="g-img" src="" alt=""/>
-        <div id="g-img-ph"><span id="g-img-ph-icon">⏳</span><span id="g-img-ph-label"></span></div>
+        <img id="g-img" src="" alt="Imagem da pergunta"/>
+        <div id="g-img-ph"><span id="g-img-ph-icon">···</span><span id="g-img-ph-label"></span></div>
       </div>
       <div class="g-text-card" id="g-text-card" style="display:none">
         <div class="g-text-phrase" id="g-text-phrase"></div>
       </div>
+      <div class="g-map-card" id="g-map-card" style="display:none"></div>
+      <div class="g-format-card" id="g-format-card" style="display:none"></div>
+      <div class="g-audio-card" id="g-audio-card" style="display:none"><span class="eyebrow">DESAFIO DE ESCUTA</span><button type="button" id="g-audio-play">Ouvir trecho</button><audio id="g-audio" preload="none"></audio><p>O áudio é carregado da Wikimedia Commons.</p></div>
       </div>
+      <div id="g-image-credit" class="g-image-credit" style="display:none"></div>
       <div id="g-qlabel" class="g-qlabel"></div>
       <div id="g-hint-row" class="g-hint-row" style="display:none"></div>
       <div class="g-input-area">
@@ -245,14 +256,14 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
         <div id="g-options" class="g-options" style="display:none"></div>
         <div id="g-feedback">&nbsp;</div>
         <div class="g-btn-row">
-          <button class="gbtn gbtn-skip" id="g-skip">✕ Desistir</button>
+          <button class="gbtn gbtn-skip" id="g-skip">Desistir</button>
           <button class="gbtn gbtn-next" id="g-next" style="display:none">Próxima →</button>
         </div>
       </div>
     </div>
     <div class="g-right" id="g-right">
       <div class="g-right-inner">
-        <div class="g-panel-hdr"><span style="font-size:14px">🏆</span><span class="g-panel-title">Placar</span></div>
+        <div class="g-panel-hdr"><span class="panel-symbol" aria-hidden="true">#</span><span class="g-panel-title">Placar</span></div>
         <div id="g-players-list"></div>
         <div class="g-add">
           <input id="g-new-player" type="text" placeholder="Nome do jogador..."/>
@@ -265,6 +276,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
     </div>
   </div>
 </div>
+<div class="overlay hidden" id="ov-summary"><div class="modal summary-modal"><div class="modal-title">Partida encerrada</div><p id="summary-main" class="modal-sub"></p><div id="summary-details"></div><div class="modal-actions"><button class="mbtn mbtn-cancel" id="summary-home">Voltar ao início</button><button class="mbtn mbtn-ok" id="summary-again">Jogar de novo</button></div></div></div>
 <div class="overlay hidden" id="ov-mode">
   <div class="modal">
     <div class="modal-title">Modo de jogo</div>
@@ -281,965 +293,12 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
     <div class="modal-actions" style="justify-content:center"><button class="mbtn mbtn-cancel" id="reset-cancel">Cancelar</button><button class="mbtn mbtn-danger" id="reset-ok">Sim, reiniciar</button></div>
   </div>
 </div>
+<script src="content.js"></script>
 <script>
-/* ══════════════════════════════════════════════════════════════════
-   IMAGE LOADER
-   Usa a Wikipedia REST API (CORS aberto)
-   para buscar a thumbnail real de cada item.
-   Cache em memória para não repetir requests.
-══════════════════════════════════════════════════════════════════ */
-const imgCache = {};
+/* A curadoria fica em content.js; nenhuma miniatura muda durante a partida. */
+function fetchCuratedMedia(item){return item.media?.status==="selected"?item.media:null;}
 
-async function fetchWikiImage(title, width = 500) {
-  // title can be a string or array of fallbacks
-  const titles = Array.isArray(title) ? title : [title];
-  const cacheKey = titles[0];
-  if (imgCache[cacheKey] !== undefined) return imgCache[cacheKey];
-  for (const t of titles) {
-    try {
-      const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(t)}`;
-      const res = await fetch(url);
-      if (!res.ok) continue;
-      const data = await res.json();
-      const src = data?.thumbnail?.source?.replace(/\/\d+px-/, `/${width}px-`) || null;
-      if (src) { imgCache[cacheKey] = src; return src; }
-    } catch {}
-  }
-  imgCache[cacheKey] = null;
-  return null;
-}
-
-async function fetchWikiImagePT(title, width = 500) {
-  if (imgCache['pt:'+title]) return imgCache['pt:'+title];
-  try {
-    const url = `https://pt.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(res.status);
-    const data = await res.json();
-    const src = data?.thumbnail?.source?.replace(/\/\d+px-/, `/${width}px-`) || null;
-    imgCache['pt:'+title] = src;
-    return src;
-  } catch {
-    imgCache['pt:'+title] = null;
-    return null;
-  }
-}
-
-/* ══════════════════════════════════════════════════════════════════
-   DATASETS
-══════════════════════════════════════════════════════════════════ */
-
-// BANDEIRAS — flagcdn (funciona sempre)
-const PAISES=[
-  {code:"br",name:"Brasil",a:["brazil","brasil"],cont:"americas"},
-  {code:"ar",name:"Argentina",a:["argentina"],cont:"americas"},
-  {code:"cl",name:"Chile",a:["chile"],cont:"americas"},
-  {code:"co",name:"Colômbia",a:["colombia"],cont:"americas"},
-  {code:"pe",name:"Peru",a:["peru"],cont:"americas"},
-  {code:"ve",name:"Venezuela",a:["venezuela"],cont:"americas"},
-  {code:"bo",name:"Bolívia",a:["bolivia"],cont:"americas"},
-  {code:"ec",name:"Equador",a:["equador","ecuador"],cont:"americas"},
-  {code:"py",name:"Paraguai",a:["paraguai","paraguay"],cont:"americas"},
-  {code:"uy",name:"Uruguai",a:["uruguai","uruguay"],cont:"americas"},
-  {code:"gy",name:"Guiana",a:["guiana","guyana"],cont:"americas"},
-  {code:"sr",name:"Suriname",a:["suriname"],cont:"americas"},
-  {code:"mx",name:"México",a:["mexico"],cont:"americas"},
-  {code:"cu",name:"Cuba",a:["cuba"],cont:"americas"},
-  {code:"pa",name:"Panamá",a:["panama"],cont:"americas"},
-  {code:"cr",name:"Costa Rica",a:["costa rica"],cont:"americas"},
-  {code:"gt",name:"Guatemala",a:["guatemala"],cont:"americas"},
-  {code:"hn",name:"Honduras",a:["honduras"],cont:"americas"},
-  {code:"sv",name:"El Salvador",a:["el salvador","salvador"],cont:"americas"},
-  {code:"ni",name:"Nicarágua",a:["nicaragua"],cont:"americas"},
-  {code:"do",name:"República Dominicana",a:["republica dominicana","rd"],cont:"americas"},
-  {code:"ht",name:"Haiti",a:["haiti"],cont:"americas"},
-  {code:"jm",name:"Jamaica",a:["jamaica"],cont:"americas"},
-  {code:"tt",name:"Trinidad e Tobago",a:["trinidad","trinidad e tobago"],cont:"americas"},
-  {code:"us",name:"Estados Unidos",a:["estados unidos","usa","eua","united states","america"],cont:"americas"},
-  {code:"ca",name:"Canadá",a:["canada"],cont:"americas"},
-  {code:"pt",name:"Portugal",a:["portugal"],cont:"europa"},
-  {code:"es",name:"Espanha",a:["espanha","spain"],cont:"europa"},
-  {code:"fr",name:"França",a:["franca","france"],cont:"europa"},
-  {code:"de",name:"Alemanha",a:["alemanha","germany"],cont:"europa"},
-  {code:"it",name:"Itália",a:["italia","italy"],cont:"europa"},
-  {code:"gb",name:"Reino Unido",a:["reino unido","uk","united kingdom","inglaterra","england"],cont:"europa"},
-  {code:"nl",name:"Holanda",a:["holanda","netherlands","paises baixos"],cont:"europa"},
-  {code:"be",name:"Bélgica",a:["belgica","belgium"],cont:"europa"},
-  {code:"ch",name:"Suíça",a:["suica","switzerland"],cont:"europa"},
-  {code:"at",name:"Áustria",a:["austria"],cont:"europa"},
-  {code:"se",name:"Suécia",a:["suecia","sweden"],cont:"europa"},
-  {code:"no",name:"Noruega",a:["noruega","norway"],cont:"europa"},
-  {code:"dk",name:"Dinamarca",a:["dinamarca","denmark"],cont:"europa"},
-  {code:"fi",name:"Finlândia",a:["finlandia","finland"],cont:"europa"},
-  {code:"pl",name:"Polônia",a:["polonia","poland"],cont:"europa"},
-  {code:"gr",name:"Grécia",a:["grecia","greece"],cont:"europa"},
-  {code:"cz",name:"República Tcheca",a:["republica tcheca","tchequia","czechia"],cont:"europa"},
-  {code:"sk",name:"Eslováquia",a:["eslovaquia","slovakia"],cont:"europa"},
-  {code:"hu",name:"Hungria",a:["hungria","hungary"],cont:"europa"},
-  {code:"ro",name:"Romênia",a:["romenia","romania"],cont:"europa"},
-  {code:"bg",name:"Bulgária",a:["bulgaria"],cont:"europa"},
-  {code:"hr",name:"Croácia",a:["croacia","croatia"],cont:"europa"},
-  {code:"rs",name:"Sérvia",a:["servia","serbia"],cont:"europa"},
-  {code:"ua",name:"Ucrânia",a:["ucrania","ukraine"],cont:"europa"},
-  {code:"ie",name:"Irlanda",a:["irlanda","ireland"],cont:"europa"},
-  {code:"is",name:"Islândia",a:["islandia","iceland"],cont:"europa"},
-  {code:"lu",name:"Luxemburgo",a:["luxemburgo","luxembourg"],cont:"europa"},
-  {code:"mt",name:"Malta",a:["malta"],cont:"europa"},
-  {code:"cy",name:"Chipre",a:["chipre","cyprus"],cont:"europa"},
-  {code:"al",name:"Albânia",a:["albania"],cont:"europa"},
-  {code:"ba",name:"Bósnia",a:["bosnia"],cont:"europa"},
-  {code:"mk",name:"Macedônia do Norte",a:["macedonia","north macedonia","macedonia do norte"],cont:"europa"},
-  {code:"me",name:"Montenegro",a:["montenegro"],cont:"europa"},
-  {code:"si",name:"Eslovênia",a:["eslovenia","slovenia"],cont:"europa"},
-  {code:"lv",name:"Letônia",a:["letonia","latvia"],cont:"europa"},
-  {code:"lt",name:"Lituânia",a:["lituania","lithuania"],cont:"europa"},
-  {code:"ee",name:"Estônia",a:["estonia"],cont:"europa"},
-  {code:"by",name:"Bielorrússia",a:["bielorrussia","belarus"],cont:"europa"},
-  {code:"md",name:"Moldávia",a:["moldavia","moldova"],cont:"europa"},
-  {code:"jp",name:"Japão",a:["japao","japan"],cont:"asia"},
-  {code:"cn",name:"China",a:["china"],cont:"asia"},
-  {code:"kr",name:"Coreia do Sul",a:["coreia do sul","south korea","coreia"],cont:"asia"},
-  {code:"kp",name:"Coreia do Norte",a:["coreia do norte","north korea"],cont:"asia"},
-  {code:"in",name:"Índia",a:["india"],cont:"asia"},
-  {code:"pk",name:"Paquistão",a:["paquistao","pakistan"],cont:"asia"},
-  {code:"bd",name:"Bangladesh",a:["bangladesh"],cont:"asia"},
-  {code:"id",name:"Indonésia",a:["indonesia"],cont:"asia"},
-  {code:"my",name:"Malásia",a:["malasia","malaysia"],cont:"asia"},
-  {code:"th",name:"Tailândia",a:["tailandia","thailand"],cont:"asia"},
-  {code:"vn",name:"Vietnã",a:["vietna","vietnam"],cont:"asia"},
-  {code:"ph",name:"Filipinas",a:["filipinas","philippines"],cont:"asia"},
-  {code:"sg",name:"Singapura",a:["singapura","singapore"],cont:"asia"},
-  {code:"mm",name:"Mianmar",a:["mianmar","myanmar"],cont:"asia"},
-  {code:"kh",name:"Camboja",a:["camboja","cambodia"],cont:"asia"},
-  {code:"np",name:"Nepal",a:["nepal"],cont:"asia"},
-  {code:"lk",name:"Sri Lanka",a:["sri lanka"],cont:"asia"},
-  {code:"mn",name:"Mongólia",a:["mongolia"],cont:"asia"},
-  {code:"kz",name:"Cazaquistão",a:["cazaquistao","kazakhstan"],cont:"asia"},
-  {code:"uz",name:"Uzbequistão",a:["uzbequistao","uzbekistan"],cont:"asia"},
-  {code:"ge",name:"Geórgia",a:["georgia"],cont:"asia"},
-  {code:"am",name:"Armênia",a:["armenia"],cont:"asia"},
-  {code:"az",name:"Azerbaijão",a:["azerbaijao","azerbaijan"],cont:"asia"},
-  {code:"ru",name:"Rússia",a:["russia"],cont:"asia"},
-  {code:"tr",name:"Turquia",a:["turquia","turkey"],cont:"asia"},
-  {code:"il",name:"Israel",a:["israel"],cont:"oriente"},
-  {code:"sa",name:"Arábia Saudita",a:["arabia saudita","saudi arabia"],cont:"oriente"},
-  {code:"ir",name:"Irã",a:["ira","iran"],cont:"oriente"},
-  {code:"iq",name:"Iraque",a:["iraque","iraq"],cont:"oriente"},
-  {code:"ae",name:"Emirados Árabes",a:["emirados arabes","uae","emirados"],cont:"oriente"},
-  {code:"kw",name:"Kuwait",a:["kuwait"],cont:"oriente"},
-  {code:"om",name:"Omã",a:["oma","oman"],cont:"oriente"},
-  {code:"ye",name:"Iêmen",a:["iemen","yemen"],cont:"oriente"},
-  {code:"jo",name:"Jordânia",a:["jordania","jordan"],cont:"oriente"},
-  {code:"lb",name:"Líbano",a:["libano","lebanon"],cont:"oriente"},
-  {code:"qa",name:"Catar",a:["catar","qatar"],cont:"oriente"},
-  {code:"za",name:"África do Sul",a:["africa do sul","south africa"],cont:"africa"},
-  {code:"ng",name:"Nigéria",a:["nigeria"],cont:"africa"},
-  {code:"eg",name:"Egito",a:["egito","egypt"],cont:"africa"},
-  {code:"ke",name:"Quênia",a:["quenia","kenya"],cont:"africa"},
-  {code:"gh",name:"Gana",a:["gana","ghana"],cont:"africa"},
-  {code:"ma",name:"Marrocos",a:["marrocos","morocco"],cont:"africa"},
-  {code:"tz",name:"Tanzânia",a:["tanzania"],cont:"africa"},
-  {code:"et",name:"Etiópia",a:["etiopia","ethiopia"],cont:"africa"},
-  {code:"ao",name:"Angola",a:["angola"],cont:"africa"},
-  {code:"mz",name:"Moçambique",a:["mocambique","mozambique"],cont:"africa"},
-  {code:"cv",name:"Cabo Verde",a:["cabo verde"],cont:"africa"},
-  {code:"sn",name:"Senegal",a:["senegal"],cont:"africa"},
-  {code:"ci",name:"Costa do Marfim",a:["costa do marfim","ivory coast"],cont:"africa"},
-  {code:"cm",name:"Camarões",a:["camaroes","cameroon"],cont:"africa"},
-  {code:"rw",name:"Ruanda",a:["ruanda","rwanda"],cont:"africa"},
-  {code:"ug",name:"Uganda",a:["uganda"],cont:"africa"},
-  {code:"cd",name:"Congo",a:["congo","rdc"],cont:"africa"},
-  {code:"dz",name:"Argélia",a:["argelia","algeria"],cont:"africa"},
-  {code:"tn",name:"Tunísia",a:["tunisia"],cont:"africa"},
-  {code:"ly",name:"Líbia",a:["libia","libya"],cont:"africa"},
-  {code:"au",name:"Austrália",a:["australia"],cont:"oceania"},
-  {code:"nz",name:"Nova Zelândia",a:["nova zelandia","new zealand"],cont:"oceania"},
-  {code:"fj",name:"Fiji",a:["fiji"],cont:"oceania"},
-  {code:"pg",name:"Papua-Nova Guiné",a:["papua","papua nova guine"],cont:"oceania"},
-];
-const COPA_CODES=new Set(["us","ca","mx","br","ar","co","ec","uy","ve","py","de","fr","es","pt","gb","nl","be","it","hr","at","hu","tr","ro","si","al","me","ge","rs","cz","sk","ua","no","is","ch","ma","ng","eg","sn","ci","cm","rw","za","jp","kr","sa","ir","ae","jo","uz","gt","pa","jm","nz","au"]);
-const COPA=PAISES.filter(c=>COPA_CODES.has(c.code));
-
-// CAPITAIS — bandeira do país como imagem + nome do país como hint
-const CAPITAIS=[
-  {code:"br",name:"Brasília",a:["brasilia"],hint:"Brasil"},
-  {code:"ar",name:"Buenos Aires",a:["buenos aires"],hint:"Argentina"},
-  {code:"cl",name:"Santiago",a:["santiago"],hint:"Chile"},
-  {code:"co",name:"Bogotá",a:["bogota"],hint:"Colômbia"},
-  {code:"pe",name:"Lima",a:["lima"],hint:"Peru"},
-  {code:"ve",name:"Caracas",a:["caracas"],hint:"Venezuela"},
-  {code:"uy",name:"Montevidéu",a:["montevideu","montevideo"],hint:"Uruguai"},
-  {code:"py",name:"Assunção",a:["assuncao","asuncion"],hint:"Paraguai"},
-  {code:"bo",name:"La Paz",a:["la paz"],hint:"Bolívia"},
-  {code:"ec",name:"Quito",a:["quito"],hint:"Equador"},
-  {code:"mx",name:"Cidade do México",a:["cidade do mexico","mexico city","mexico"],hint:"México"},
-  {code:"us",name:"Washington D.C.",a:["washington","washington dc"],hint:"EUA"},
-  {code:"ca",name:"Ottawa",a:["ottawa"],hint:"Canadá"},
-  {code:"cu",name:"Havana",a:["havana"],hint:"Cuba"},
-  {code:"gt",name:"Cidade da Guatemala",a:["cidade da guatemala","guatemala city","guatemala"],hint:"Guatemala"},
-  {code:"hn",name:"Tegucigalpa",a:["tegucigalpa"],hint:"Honduras"},
-  {code:"pa",name:"Cidade do Panamá",a:["cidade do panama","panama city","panama"],hint:"Panamá"},
-  {code:"cr",name:"San José",a:["san jose"],hint:"Costa Rica"},
-  {code:"do",name:"Santo Domingo",a:["santo domingo"],hint:"Rep. Dominicana"},
-  {code:"ht",name:"Porto Príncipe",a:["porto principe","port-au-prince"],hint:"Haiti"},
-  {code:"jm",name:"Kingston",a:["kingston"],hint:"Jamaica"},
-  {code:"pt",name:"Lisboa",a:["lisboa","lisbon"],hint:"Portugal"},
-  {code:"es",name:"Madri",a:["madri","madrid"],hint:"Espanha"},
-  {code:"fr",name:"Paris",a:["paris"],hint:"França"},
-  {code:"de",name:"Berlim",a:["berlim","berlin"],hint:"Alemanha"},
-  {code:"it",name:"Roma",a:["roma","rome"],hint:"Itália"},
-  {code:"gb",name:"Londres",a:["londres","london"],hint:"Reino Unido"},
-  {code:"nl",name:"Amsterdã",a:["amsterda","amsterdam"],hint:"Holanda"},
-  {code:"be",name:"Bruxelas",a:["bruxelas","brussels"],hint:"Bélgica"},
-  {code:"ch",name:"Berna",a:["berna","bern"],hint:"Suíça"},
-  {code:"at",name:"Viena",a:["viena","vienna"],hint:"Áustria"},
-  {code:"se",name:"Estocolmo",a:["estocolmo","stockholm"],hint:"Suécia"},
-  {code:"no",name:"Oslo",a:["oslo"],hint:"Noruega"},
-  {code:"dk",name:"Copenhague",a:["copenhague","copenhagen"],hint:"Dinamarca"},
-  {code:"fi",name:"Helsinque",a:["helsinque","helsinki"],hint:"Finlândia"},
-  {code:"pl",name:"Varsóvia",a:["varsovia","warsaw"],hint:"Polônia"},
-  {code:"gr",name:"Atenas",a:["atenas","athens"],hint:"Grécia"},
-  {code:"cz",name:"Praga",a:["praga","prague"],hint:"Rep. Tcheca"},
-  {code:"hu",name:"Budapeste",a:["budapeste","budapest"],hint:"Hungria"},
-  {code:"ro",name:"Bucareste",a:["bucareste","bucharest"],hint:"Romênia"},
-  {code:"ua",name:"Kiev",a:["kiev","kyiv"],hint:"Ucrânia"},
-  {code:"ie",name:"Dublim",a:["dublim","dublin"],hint:"Irlanda"},
-  {code:"ru",name:"Moscou",a:["moscou","moscow"],hint:"Rússia"},
-  {code:"tr",name:"Ancara",a:["ancara","ankara"],hint:"Turquia"},
-  {code:"jp",name:"Tóquio",a:["toquio","tokyo"],hint:"Japão"},
-  {code:"cn",name:"Pequim",a:["pequim","beijing"],hint:"China"},
-  {code:"kr",name:"Seul",a:["seul","seoul"],hint:"Coreia do Sul"},
-  {code:"in",name:"Nova Déli",a:["nova deli","new delhi"],hint:"Índia"},
-  {code:"pk",name:"Islamabade",a:["islamabade","islamabad"],hint:"Paquistão"},
-  {code:"id",name:"Jacarta",a:["jacarta","jakarta"],hint:"Indonésia"},
-  {code:"my",name:"Kuala Lumpur",a:["kuala lumpur"],hint:"Malásia"},
-  {code:"th",name:"Bangkok",a:["bangkok"],hint:"Tailândia"},
-  {code:"vn",name:"Hanói",a:["hanoi"],hint:"Vietnã"},
-  {code:"ph",name:"Manila",a:["manila"],hint:"Filipinas"},
-  {code:"sg",name:"Singapura",a:["singapura","singapore"],hint:"Singapura"},
-  {code:"np",name:"Catmandu",a:["catmandu","kathmandu"],hint:"Nepal"},
-  {code:"sa",name:"Riade",a:["riade","riyadh"],hint:"Arábia Saudita"},
-  {code:"ir",name:"Teerã",a:["teera","tehran"],hint:"Irã"},
-  {code:"iq",name:"Bagdá",a:["bagda","baghdad"],hint:"Iraque"},
-  {code:"qa",name:"Doha",a:["doha"],hint:"Catar"},
-  {code:"ae",name:"Abu Dhabi",a:["abu dhabi"],hint:"Emirados Árabes"},
-  {code:"jo",name:"Amã",a:["ama","amman"],hint:"Jordânia"},
-  {code:"il",name:"Jerusalém",a:["jerusalem"],hint:"Israel"},
-  {code:"ke",name:"Nairóbi",a:["nairobi"],hint:"Quênia"},
-  {code:"gh",name:"Acra",a:["acra","accra"],hint:"Gana"},
-  {code:"ma",name:"Rabat",a:["rabat"],hint:"Marrocos"},
-  {code:"eg",name:"Cairo",a:["cairo"],hint:"Egito"},
-  {code:"et",name:"Adis Abeba",a:["adis abeba","addis ababa"],hint:"Etiópia"},
-  {code:"ao",name:"Luanda",a:["luanda"],hint:"Angola"},
-  {code:"sn",name:"Dacar",a:["dacar","dakar"],hint:"Senegal"},
-  {code:"za",name:"Pretória",a:["pretoria"],hint:"África do Sul"},
-  {code:"ng",name:"Abuja",a:["abuja"],hint:"Nigéria"},
-  {code:"au",name:"Canberra",a:["canberra"],hint:"Austrália"},
-  {code:"nz",name:"Wellington",a:["wellington"],hint:"Nova Zelândia"},
-];
-
-// ANIMAIS — título da página Wikipedia em inglês para buscar thumbnail
-const ANIMAIS=[
-  {wiki:"Lion",name:"Leão",a:["leao","lion","leão"]},
-  {wiki:"Tiger",name:"Tigre",a:["tigre","tiger"]},
-  {wiki:"African_bush_elephant",name:"Elefante",a:["elefante","elephant"]},
-  {wiki:"Giraffe",name:"Girafa",a:["girafa","giraffe"]},
-  {wiki:"Jaguar",name:"Onça-pintada",a:["onca","jaguar","onça","onca pintada"]},
-  {wiki:"Gray_wolf",name:"Lobo",a:["lobo","wolf"]},
-  {wiki:"Brown_bear",name:"Urso-pardo",a:["urso","bear","urso pardo"]},
-  {wiki:"Gorilla",name:"Gorila",a:["gorila","gorilla"]},
-  {wiki:"Bottlenose_dolphin",name:"Golfinho",a:["golfinho","dolphin"]},
-  {wiki:"Giant_panda",name:"Panda",a:["panda","panda gigante"]},
-  {wiki:"Moose",name:"Alce",a:["alce","moose","elk"]},
-  {wiki:"Koala",name:"Coala",a:["coala","koala"]},
-  {wiki:"Llama",name:"Lhama",a:["lhama","llama"]},
-  {wiki:"Indian_peafowl",name:"Pavão",a:["pavao","peacock","pavão"]},
-  {wiki:"American_crocodile",name:"Crocodilo",a:["crocodilo","crocodile"]},
-  {wiki:"Red_kangaroo",name:"Canguru",a:["canguru","kangaroo"]},
-  {wiki:"Greater_flamingo",name:"Flamingo",a:["flamingo"]},
-  {wiki:"Plains_zebra",name:"Zebra",a:["zebra"]},
-  {wiki:"Cheetah",name:"Guepardo",a:["guepardo","cheetah","chita"]},
-  {wiki:"White_rhinoceros",name:"Rinoceronte",a:["rinoceronte","rhinoceros","rhino"]},
-  {wiki:"Bornean_orangutan",name:"Orangotango",a:["orangotango","orangutan"]},
-  {wiki:"Green_sea_turtle",name:"Tartaruga-marinha",a:["tartaruga marinha","tartaruga","turtle","sea turtle"]},
-  {wiki:"Great_white_shark",name:"Tubarão",a:["tubarao","shark","tubarão"]},
-  {wiki:"Orca",name:"Orca",a:["orca","killer whale"]},
-  {wiki:"Scarlet_macaw",name:"Arara",a:["arara","macaw"]},
-  {wiki:"King_cobra",name:"Cobra",a:["cobra","snake","serpente"]},
-  {wiki:"Bald_eagle",name:"Águia-americana",a:["aguia","eagle","águia","aguia americana"]},
-  {wiki:"Common_octopus",name:"Polvo",a:["polvo","octopus"]},
-  {wiki:"California_sea_lion",name:"Leão-marinho",a:["leao marinho","sea lion","foca"]},
-  {wiki:"Emperor_penguin",name:"Pinguim",a:["pinguim","penguin"]},
-  {wiki:"Humpback_whale",name:"Baleia-jubarte",a:["baleia jubarte","baleia","whale","jubarte"]},
-  {wiki:"Giant_anteater",name:"Tamanduá-bandeira",a:["tamandua","anteater","tamanduá","tamandua bandeira"]},
-  {wiki:"Hippopotamus",name:"Hipopótamo",a:["hipopotamo","hippopotamus","hippo"]},
-  {wiki:"North_American_beaver",name:"Castor",a:["castor","beaver"]},
-  {wiki:"North_American_river_otter",name:"Lontra",a:["lontra","otter"]},
-  {wiki:"Snow_leopard",name:"Leopardo-das-neves",a:["leopardo das neves","snow leopard"]},
-  {wiki:"Leopard",name:"Leopardo",a:["leopardo","leopard"]},
-  {wiki:"Komodo_dragon",name:"Dragão de Komodo",a:["dragao de komodo","komodo dragon","komodo"]},
-  {wiki:"Common_ostrich",name:"Avestruz",a:["avestruz","ostrich"]},
-  {wiki:"Common_chimpanzee",name:"Chimpanzé",a:["chimpanze","chimpanzee","chimpanzé"]},
-  {wiki:"Spotted_hyena",name:"Hiena",a:["hiena","hyena"]},
-  {wiki:"Meerkat",name:"Suricato",a:["suricato","meerkat"]},
-  {wiki:"Sloth",name:"Bicho-preguiça",a:["bicho preguica","preguica","sloth","bicho-preguiça"]},
-  {wiki:"Capybara",name:"Capivara",a:["capivara","capybara"]},
-  {wiki:"Toco_toucan",name:"Tucano",a:["tucano","toucan"]},
-  {wiki:"Red_panda",name:"Panda-vermelho",a:["panda vermelho","red panda"]},
-  {wiki:"Arctic_fox",name:"Raposa-do-ártico",a:["raposa do artico","arctic fox","raposa polar"]},
-  {wiki:"Polar_bear",name:"Urso-polar",a:["urso polar","polar bear"]},
-  {wiki:"American_bison",name:"Bisão",a:["bisao","bison","búfalo americano"]},
-  {wiki:"Wildebeest",name:"Nhu",a:["nhu","wildebeest","gnu"]},
-  {wiki:"Porcupine",name:"Porco-espinho",a:["porco espinho","porcupine"]},
-  {wiki:"Chameleon",name:"Camaleão",a:["camaleao","chameleon","camaleão"]},
-  {wiki:"Green_iguana",name:"Iguana",a:["iguana"]},
-  {wiki:"Seahorse",name:"Cavalo-marinho",a:["cavalo marinho","seahorse"]},
-  {wiki:"Atlantic_puffin",name:"Papagaio-do-mar",a:["papagaio do mar","puffin"]},
-  {wiki:"Walrus",name:"Morsa",a:["morsa","walrus"]},
-  {wiki:"Narwhal",name:"Narval",a:["narval","narwhal"]},
-  {wiki:"Platypus",name:"Ornitorrinco",a:["ornitorrinco","platypus"]},
-  {wiki:"Tasmanian_devil",name:"Diabo-da-tasmânia",a:["diabo da tasmania","tasmanian devil"]},
-  {wiki:"Common_wombat",name:"Vombate",a:["vombate","wombat"]},
-  {wiki:"Emu",name:"Emu",a:["emu"]},
-  {wiki:"Kiwi_(bird)",name:"Kiwi",a:["kiwi"]},
-  {wiki:"Griffon_vulture",name:"Abutre",a:["abutre","vulture"]},
-  {wiki:"Eurasian_eagle-owl",name:"Coruja",a:["coruja","owl"]},
-  {wiki:"Peregrine_falcon",name:"Falcão-peregrino",a:["falcao peregrino","peregrine falcon","falcão"]},
-  {wiki:"Mandrill",name:"Mandril",a:["mandril","mandrill"]},
-  {wiki:"Ring-tailed_lemur",name:"Lêmure",a:["lemure","lemur","lêmure"]},
-  {wiki:"Raccoon",name:"Guaxinim",a:["guaxinim","raccoon"]},
-  {wiki:"Coyote",name:"Coiote",a:["coiote","coyote"]},
-  {wiki:"Bobcat",name:"Lince",a:["lince","bobcat","lynx"]},
-  {wiki:"Cougar",name:"Puma",a:["puma","cougar","onça-parda","onca parda","mountain lion"]},
-  {wiki:"Fennec_fox",name:"Raposa-do-deserto",a:["raposa do deserto","fennec fox","fennec"]},
-  {wiki:"Nine-banded_armadillo",name:"Tatu",a:["tatu","armadillo"]},
-  {wiki:"Hummingbird",name:"Beija-flor",a:["beija flor","hummingbird","beija-flor"]},
-  {wiki:"Cane_toad",name:"Sapo",a:["sapo","toad"]},
-  {wiki:"Frog",name:"Rã",a:["ra","frog","rã"]},
-  {wiki:"Common_vampire_bat",name:"Morcego",a:["morcego","bat"]},
-  {wiki:"Columbidae",name:"Pombo",a:["pombo","pigeon"]},
-  {wiki:"Carrion_crow",name:"Corvo",a:["corvo","crow"]},
-  {wiki:"Eastern_gray_squirrel",name:"Esquilo",a:["esquilo","squirrel"]},
-  {wiki:"European_rabbit",name:"Coelho",a:["coelho","rabbit"]},
-  {wiki:"Hamster",name:"Hamster",a:["hamster","hâmster"]},
-  {wiki:"Guinea_pig",name:"Porquinho-da-índia",a:["porquinho da india","guinea pig"]},
-  {wiki:"House_mouse",name:"Camundongo",a:["camundongo","mouse","rato"]},
-  {wiki:"European_hare",name:"Lebre",a:["lebre","hare"]},
-  {wiki:"European_mole",name:"Toupeira",a:["toupeira","mole"]},
-  {wiki:"Striped_skunk",name:"Gambá",a:["gamba","skunk","gambá"]},
-  {wiki:"European_badger",name:"Texugo",a:["texugo","badger"]},
-];
-
-// ARTE — título Wikipedia inglês
-const ARTE=[
-  {wiki:"Mona_Lisa",name:"Mona Lisa",a:["mona lisa","gioconda","la gioconda"],hint:"Leonardo da Vinci, ~1503"},
-  {wiki:"The_Scream",name:"O Grito",a:["o grito","the scream","grito"],hint:"Edvard Munch, 1893"},
-  {wiki:"The_Starry_Night",name:"A Noite Estrelada",a:["a noite estrelada","noite estrelada","starry night"],hint:"Vincent van Gogh, 1889"},
-  {wiki:"Guernica_(Picasso)",name:"Guernica",a:["guernica"],hint:"Pablo Picasso, 1937"},
-  {wiki:"The_Great_Wave_off_Kanagawa",name:"A Grande Onda de Kanagawa",a:["a grande onda","grande onda","the great wave","kanagawa"],hint:"Katsushika Hokusai, ~1831"},
-  {wiki:"The_Birth_of_Venus_(Botticelli)",name:"O Nascimento de Vênus",a:["nascimento de venus","o nascimento de venus","birth of venus"],hint:"Sandro Botticelli, ~1486"},
-  {wiki:"The_Creation_of_Adam",name:"A Criação de Adão",a:["a criacao de adao","criacao de adao","creation of adam"],hint:"Michelangelo, ~1512"},
-  {wiki:"The_Persistence_of_Memory",name:"A Persistência da Memória",a:["persistencia da memoria","a persistencia da memoria","persistence of memory","dali"],hint:"Salvador Dalí, 1931"},
-  {wiki:"Saturn_Devouring_His_Son",name:"Saturno Devorando o Filho",a:["saturno devorando o filho","saturno","saturn"],hint:"Francisco Goya, ~1823"},
-  {wiki:"School_of_Athens",name:"A Escola de Atenas",a:["a escola de atenas","escola de atenas","school of athens"],hint:"Rafael, ~1511"},
-  {wiki:"David_(Michelangelo)",name:"Davi",a:["davi","david"],hint:"Michelangelo, 1504"},
-  {wiki:"Girl_with_a_Pearl_Earring",name:"Moça com Brinco de Pérola",a:["moca com brinco de perola","girl with a pearl earring","brinco de perola"],hint:"Johannes Vermeer, ~1665"},
-  {wiki:"American_Gothic",name:"American Gothic",a:["american gothic"],hint:"Grant Wood, 1930"},
-  {wiki:"Nighthawks_(painting)",name:"Nighthawks",a:["nighthawks"],hint:"Edward Hopper, 1942"},
-  {wiki:"A_Sunday_on_La_Grande_Jatte",name:"Uma Tarde de Domingo na Grande Jatte",a:["uma tarde de domingo na grande jatte","grande jatte","sunday on la grande jatte"],hint:"Georges Seurat, 1886"},
-  {wiki:"The_Last_Supper_(Leonardo_da_Vinci)",name:"A Última Ceia",a:["a ultima ceia","ultima ceia","the last supper"],hint:"Leonardo da Vinci, ~1498"},
-  {wiki:"Las_Meninas",name:"As Meninas",a:["as meninas","las meninas"],hint:"Diego Velázquez, 1656"},
-  {wiki:"Venus_de_Milo",name:"Vênus de Milo",a:["venus de milo","venus","vênus de milo"],hint:"Escultura grega, ~100 a.C."},
-  {wiki:"Sistine_Chapel_ceiling",name:"Teto da Capela Sistina",a:["teto da capela sistina","sistine chapel","chapel sistina","cappella sistina"],hint:"Michelangelo, 1508–1512"},
-  {wiki:"The_Kiss_(Klimt)",name:"O Beijo",a:["o beijo","the kiss","beijo","klimt"],hint:"Gustav Klimt, 1907–1908"},
-  {wiki:"Whistler's_Mother",name:"Retrato da Mãe do Artista",a:["whistlers mother","retrato da mae","mae do artista"],hint:"James Whistler, 1871"},
-  {wiki:"The_Night_Watch",name:"A Ronda Noturna",a:["a ronda noturna","ronda noturna","night watch"],hint:"Rembrandt, 1642"},
-  {wiki:"Liberty_Leading_the_People",name:"A Liberdade Guiando o Povo",a:["a liberdade guiando o povo","liberty leading the people"],hint:"Eugène Delacroix, 1830"},
-  {wiki:"The_Garden_of_Earthly_Delights",name:"O Jardim das Delícias",a:["o jardim das delicias","jardim das delicias","garden of earthly delights"],hint:"Hieronymus Bosch, ~1500"},
-  {wiki:"Olympia_(Manet)",name:"Olympia",a:["olympia"],hint:"Édouard Manet, 1863"},
-  {wiki:"The_Arnolfini_Portrait",name:"Retrato dos Arnolfini",a:["retrato dos arnolfini","arnolfini portrait"],hint:"Jan van Eyck, 1434"},
-  {wiki:"Wanderer_above_the_Sea_of_Fog",name:"Andarilho sobre o Mar de Névoa",a:["andarilho sobre o mar de nevoa","wanderer above the sea of fog"],hint:"Caspar David Friedrich, 1818"},
-  {wiki:"Bal_du_moulin_de_la_Galette",name:"Baile no Moulin de la Galette",a:["baile no moulin de la galette","moulin de la galette"],hint:"Renoir, 1876"},
-  {wiki:"Impression,_Sunrise",name:"Impressão, Nascer do Sol",a:["impressao nascer do sol","impression sunrise"],hint:"Claude Monet, 1872"},
-  {wiki:"The_Hay_Wain",name:"O Carro de Feno",a:["o carro de feno","carro de feno","hay wain"],hint:"John Constable, 1821"},
-  {wiki:"Christina's_World",name:"O Mundo de Christina",a:["o mundo de christina","christinas world"],hint:"Andrew Wyeth, 1948"},
-  {wiki:"The_Sleeping_Gypsy",name:"A Cigana Dormindo",a:["a cigana dormindo","sleeping gypsy"],hint:"Henri Rousseau, 1897"},
-  {wiki:"Whistlejacket",name:"Whistlejacket",a:["whistlejacket"],hint:"George Stubbs, 1762"},
-  {wiki:"The_Card_Players",name:"Os Jogadores de Cartas",a:["os jogadores de cartas","card players"],hint:"Paul Cézanne, ~1895"},
-  {wiki:"Self-Portrait_with_Thorn_Necklace_and_Hummingbird",name:"Autorretrato com Colar de Espinhos",a:["autorretrato com colar de espinhos","frida kahlo"],hint:"Frida Kahlo, 1940"},
-  {wiki:"The_Two_Fridas",name:"As Duas Fridas",a:["as duas fridas","the two fridas","duas fridas"],hint:"Frida Kahlo, 1939"},
-  {wiki:"Les_Demoiselles_d'Avignon",name:"As Senhoritas de Avignon",a:["as senhoritas de avignon","demoiselles davignon"],hint:"Pablo Picasso, 1907"},
-  {wiki:"The_Son_of_Man",name:"O Filho do Homem",a:["o filho do homem","son of man"],hint:"René Magritte, 1964"},
-  {wiki:"Weeping_Woman_(Picasso)",name:"A Mulher que Chora",a:["a mulher que chora","weeping woman"],hint:"Pablo Picasso, 1937"},
-  {wiki:"Ophelia_(painting)",name:"Ofélia",a:["ofelia","ophelia"],hint:"John Everett Millais, 1851–1852"},
-  {wiki:"The_Death_of_Marat",name:"A Morte de Marat",a:["a morte de marat","death of marat"],hint:"Jacques-Louis David, 1793"},
-  {wiki:"The_Tower_of_Babel_(Bruegel)",name:"A Torre de Babel",a:["a torre de babel","tower of babel"],hint:"Pieter Bruegel, 1563"},
-  {wiki:"Composition_VIII_(Kandinsky)",name:"Composição VIII",a:["composicao viii","composition viii"],hint:"Wassily Kandinsky, 1923"},
-];
-
-// MONUMENTOS — título Wikipedia inglês
-const MONUMENTOS=[
-  {wiki:"Eiffel_Tower",name:"Torre Eiffel",a:["torre eiffel","eiffel","eiffel tower"],hint:"Paris, França"},
-  {wiki:"Taj_Mahal",name:"Taj Mahal",a:["taj mahal"],hint:"Agra, Índia"},
-  {wiki:"Great_Wall_of_China",name:"Grande Muralha da China",a:["grande muralha da china","muralha da china","great wall","grande muralha"],hint:"China"},
-  {wiki:"Colosseum",name:"Coliseu",a:["coliseu","colosseum","coliseum"],hint:"Roma, Itália"},
-  {wiki:"Sydney_Opera_House",name:"Ópera de Sydney",a:["opera de sydney","sydney opera house","opera sydney"],hint:"Sydney, Austrália"},
-  {wiki:"Machu_Picchu",name:"Machu Picchu",a:["machu picchu"],hint:"Peru"},
-  {wiki:"Golden_Gate_Bridge",name:"Golden Gate",a:["golden gate","golden gate bridge"],hint:"São Francisco, EUA"},
-  {wiki:"Empire_State_Building",name:"Empire State Building",a:["empire state","empire state building"],hint:"Nova York, EUA"},
-  {wiki:"Burj_Khalifa",name:"Burj Khalifa",a:["burj khalifa","burj"],hint:"Dubai, Emirados Árabes"},
-  {wiki:"Christ_the_Redeemer_(statue)",name:"Cristo Redentor",a:["cristo redentor","christ the redeemer","cristo"],hint:"Rio de Janeiro, Brasil"},
-  {wiki:"Big_Ben",name:"Big Ben",a:["big ben","elizabeth tower"],hint:"Londres, Reino Unido"},
-  {wiki:"Stonehenge",name:"Stonehenge",a:["stonehenge"],hint:"Wiltshire, Reino Unido"},
-  {wiki:"Hagia_Sophia",name:"Santa Sofia",a:["santa sofia","hagia sophia","aya sofia"],hint:"Istambul, Turquia"},
-  {wiki:"Sagrada_Família",name:"Sagrada Família",a:["sagrada familia","sagrada família"],hint:"Barcelona, Espanha"},
-  {wiki:"Angkor_Wat",name:"Angkor Wat",a:["angkor wat","angkor"],hint:"Camboja"},
-  {wiki:"Parthenon",name:"Partenon",a:["partenon","parthenon"],hint:"Atenas, Grécia"},
-  {wiki:"St._Peter's_Basilica",name:"Basílica de São Pedro",a:["basilica de sao pedro","sao pedro","saint peter","vaticano"],hint:"Vaticano, Roma"},
-  {wiki:"Leaning_Tower_of_Pisa",name:"Torre de Pisa",a:["torre de pisa","pisa","leaning tower"],hint:"Pisa, Itália"},
-  {wiki:"Notre-Dame_de_Paris",name:"Notre-Dame de Paris",a:["notre dame","notre-dame","catedral notre dame"],hint:"Paris, França"},
-  {wiki:"Acropolis_of_Athens",name:"Acrópole de Atenas",a:["acropole de atenas","acropolis","acropole"],hint:"Atenas, Grécia"},
-  {wiki:"Petra",name:"Petra",a:["petra"],hint:"Jordânia"},
-  {wiki:"Chichen_Itza",name:"Chichén Itzá",a:["chichen itza","chichén itzá"],hint:"México"},
-  {wiki:"Forbidden_City",name:"Cidade Proibida",a:["cidade proibida","forbidden city"],hint:"Pequim, China"},
-  {wiki:"Mount_Rushmore",name:"Monte Rushmore",a:["monte rushmore","mount rushmore"],hint:"Dakota do Sul, EUA"},
-  {wiki:"Statue_of_Liberty",name:"Estátua da Liberdade",a:["estatua da liberdade","statue of liberty"],hint:"Nova York, EUA"},
-  {wiki:"Neuschwanstein_Castle",name:"Castelo de Neuschwanstein",a:["castelo de neuschwanstein","neuschwanstein"],hint:"Baviera, Alemanha"},
-  {wiki:"Mont-Saint-Michel",name:"Mont-Saint-Michel",a:["mont saint michel","mont-saint-michel"],hint:"Normandia, França"},
-  {wiki:"Brandenburg_Gate",name:"Portão de Brandemburgo",a:["portao de brandemburgo","brandenburg gate"],hint:"Berlim, Alemanha"},
-  {wiki:"Moscow_Kremlin",name:"Kremlin de Moscou",a:["kremlin","kremlin de moscou","moscow kremlin"],hint:"Moscou, Rússia"},
-  {wiki:"Tower_Bridge",name:"Tower Bridge",a:["tower bridge"],hint:"Londres, Reino Unido"},
-  {wiki:"CN_Tower,_Toronto",name:"Torre CN",a:["torre cn","cn tower"],hint:"Toronto, Canadá"},
-  {wiki:"Petronas_Twin_Towers",name:"Torres Petronas",a:["torres petronas","petronas towers","petronas"],hint:"Kuala Lumpur, Malásia"},
-  {wiki:"Moai",name:"Moai",a:["moai","estatuas da ilha de pascoa"],hint:"Ilha de Páscoa, Chile"},
-  {wiki:"Alhambra",name:"Alhambra",a:["alhambra"],hint:"Granada, Espanha"},
-  {wiki:"Sultan_Ahmed_Mosque",name:"Mesquita Azul",a:["mesquita azul","blue mosque"],hint:"Istambul, Turquia"},
-  {wiki:"Potala_Palace",name:"Palácio de Potala",a:["palacio de potala","potala palace"],hint:"Lhasa, Tibete"},
-  {wiki:"Great_Pyramid_of_Giza",name:"Grande Pirâmide de Gizé",a:["grande piramide de gize","piramide de gize","great pyramid of giza","piramides do egito"],hint:"Gizé, Egito"},
-  {wiki:"Great_Sphinx_of_Giza",name:"Esfinge de Gizé",a:["esfinge de gize","esfinge","sphinx"],hint:"Gizé, Egito"},
-  {wiki:"Borobudur",name:"Borobudur",a:["borobudur"],hint:"Java, Indonésia"},
-  {wiki:"Palace_of_Versailles",name:"Palácio de Versalhes",a:["palacio de versalhes","versailles"],hint:"Versalhes, França"},
-  {wiki:"Windsor_Castle",name:"Castelo de Windsor",a:["castelo de windsor","windsor castle"],hint:"Windsor, Reino Unido"},
-  {wiki:"Edinburgh_Castle",name:"Castelo de Edimburgo",a:["castelo de edimburgo","edinburgh castle"],hint:"Edimburgo, Escócia"},
-  {wiki:"Charles_Bridge",name:"Ponte Carlos",a:["ponte carlos","charles bridge"],hint:"Praga, Rep. Tcheca"},
-  {wiki:"Himeji_Castle",name:"Castelo de Himeji",a:["castelo de himeji","himeji castle"],hint:"Himeji, Japão"},
-  {wiki:"Kinkaku-ji",name:"Pavilhão Dourado",a:["pavilhao dourado","kinkaku-ji","kinkakuji"],hint:"Quioto, Japão"},
-  {wiki:"Fushimi_Inari-taisha",name:"Santuário Fushimi Inari",a:["fushimi inari","santuario fushimi inari"],hint:"Quioto, Japão"},
-  {wiki:"Lincoln_Memorial",name:"Memorial Lincoln",a:["memorial lincoln","lincoln memorial"],hint:"Washington, EUA"},
-  {wiki:"White_House",name:"Casa Branca",a:["casa branca","white house"],hint:"Washington, EUA"},
-  {wiki:"Buckingham_Palace",name:"Palácio de Buckingham",a:["palacio de buckingham","buckingham palace"],hint:"Londres, Reino Unido"},
-];
-
-// TIMES — título Wikipedia inglês
-const TIMES=[
-  {wiki:"Clube_de_Regatas_do_Flamengo",name:"Flamengo",a:["flamengo","fla"],hint:"Rio de Janeiro, Brasil"},
-  {wiki:"Sport_Club_Corinthians_Paulista",name:"Corinthians",a:["corinthians","timão","timao"],hint:"São Paulo, Brasil"},
-  {wiki:"Sociedade_Esportiva_Palmeiras",name:"Palmeiras",a:["palmeiras","verdão","verdao"],hint:"São Paulo, Brasil"},
-  {wiki:"São_Paulo_FC",name:"São Paulo",a:["sao paulo","spfc","são paulo"],hint:"São Paulo, Brasil"},
-  {wiki:"Santos_FC",name:"Santos",a:["santos","peixe"],hint:"Santos, Brasil"},
-  {wiki:"Clube_Atlético_Mineiro",name:"Atlético Mineiro",a:["atletico mineiro","atletico","galo"],hint:"Belo Horizonte, Brasil"},
-  {wiki:"Grêmio_Foot-Ball_Porto_Alegrense",name:"Grêmio",a:["gremio","grêmio"],hint:"Porto Alegre, Brasil"},
-  {wiki:"Sport_Club_Internacional",name:"Internacional",a:["internacional","inter","colorado"],hint:"Porto Alegre, Brasil"},
-  {wiki:"Club_de_Regatas_Vasco_da_Gama",name:"Vasco da Gama",a:["vasco da gama","vasco"],hint:"Rio de Janeiro, Brasil"},
-  {wiki:"Botafogo_de_Futebol_e_Regatas",name:"Botafogo",a:["botafogo","glorioso"],hint:"Rio de Janeiro, Brasil"},
-  {wiki:"FC_Barcelona",name:"Barcelona",a:["barcelona","barca","fc barcelona"],hint:"Barcelona, Espanha"},
-  {wiki:"Real_Madrid_CF",name:"Real Madrid",a:["real madrid","madrid"],hint:"Madrid, Espanha"},
-  {wiki:"Arsenal_F.C.",name:"Arsenal",a:["arsenal"],hint:"Londres, Inglaterra"},
-  {wiki:"Liverpool_F.C.",name:"Liverpool",a:["liverpool"],hint:"Liverpool, Inglaterra"},
-  {wiki:"Manchester_United_F.C.",name:"Manchester United",a:["manchester united","man united","man utd"],hint:"Manchester, Inglaterra"},
-  {wiki:"Manchester_City_F.C.",name:"Manchester City",a:["manchester city","man city","city"],hint:"Manchester, Inglaterra"},
-  {wiki:"FC_Internazionale_Milano",name:"Inter de Milão",a:["inter de milao","inter milan","inter","internazionale"],hint:"Milão, Itália"},
-  {wiki:"Juventus_F.C.",name:"Juventus",a:["juventus","juve"],hint:"Turim, Itália"},
-  {wiki:"FC_Bayern_Munich",name:"Bayern de Munique",a:["bayern de munique","bayern munich","bayern"],hint:"Munique, Alemanha"},
-  {wiki:"Borussia_Dortmund",name:"Borussia Dortmund",a:["borussia dortmund","dortmund","bvb"],hint:"Dortmund, Alemanha"},
-  {wiki:"Chelsea_F.C.",name:"Chelsea",a:["chelsea"],hint:"Londres, Inglaterra"},
-  {wiki:"Tottenham_Hotspur_F.C.",name:"Tottenham",a:["tottenham","spurs"],hint:"Londres, Inglaterra"},
-  {wiki:"AFC_Ajax",name:"Ajax",a:["ajax"],hint:"Amsterdã, Holanda"},
-  {wiki:"Atlético_Madrid",name:"Atlético de Madrid",a:["atletico de madrid","atletico madrid","atletico"],hint:"Madrid, Espanha"},
-  {wiki:"A.C._Milan",name:"AC Milan",a:["ac milan","milan"],hint:"Milão, Itália"},
-  {wiki:"Paris_Saint-Germain_F.C.",name:"Paris Saint-Germain",a:["paris saint germain","psg"],hint:"Paris, França"},
-  {wiki:"S.L._Benfica",name:"Benfica",a:["benfica","sl benfica"],hint:"Lisboa, Portugal"},
-  {wiki:"FC_Porto",name:"Porto",a:["porto","fc porto"],hint:"Porto, Portugal"},
-  {wiki:"AS_Roma",name:"AS Roma",a:["as roma","roma"],hint:"Roma, Itália"},
-  {wiki:"S.S.C._Napoli",name:"Napoli",a:["napoli","ssc napoli"],hint:"Nápoles, Itália"},
-  {wiki:"Olympique_de_Marseille",name:"Olympique de Marselha",a:["olympique de marselha","marseille","marselha"],hint:"Marselha, França"},
-  {wiki:"Sevilla_FC",name:"Sevilla",a:["sevilla","sevilha"],hint:"Sevilha, Espanha"},
-  {wiki:"Athletic_Bilbao",name:"Athletic Bilbao",a:["athletic bilbao","bilbao"],hint:"Bilbau, Espanha"},
-  {wiki:"West_Ham_United_F.C.",name:"West Ham United",a:["west ham united","west ham"],hint:"Londres, Inglaterra"},
-  {wiki:"Everton_F.C.",name:"Everton",a:["everton"],hint:"Liverpool, Inglaterra"},
-  {wiki:"Newcastle_United_F.C.",name:"Newcastle United",a:["newcastle united","newcastle"],hint:"Newcastle, Inglaterra"},
-  {wiki:"Aston_Villa_F.C.",name:"Aston Villa",a:["aston villa"],hint:"Birmingham, Inglaterra"},
-  {wiki:"Celtic_F.C.",name:"Celtic",a:["celtic"],hint:"Glasgow, Escócia"},
-  {wiki:"Rangers_F.C.",name:"Rangers",a:["rangers"],hint:"Glasgow, Escócia"},
-  {wiki:"PSV_Eindhoven",name:"PSV Eindhoven",a:["psv eindhoven","psv"],hint:"Eindhoven, Holanda"},
-  {wiki:"Feyenoord",name:"Feyenoord",a:["feyenoord"],hint:"Roterdã, Holanda"},
-  {wiki:"Boca_Juniors",name:"Boca Juniors",a:["boca juniors","boca"],hint:"Buenos Aires, Argentina"},
-  {wiki:"Club_Atlético_River_Plate",name:"River Plate",a:["river plate","river"],hint:"Buenos Aires, Argentina"},
-  {wiki:"Cruzeiro_Esporte_Clube",name:"Cruzeiro",a:["cruzeiro","raposa"],hint:"Belo Horizonte, Brasil"},
-  {wiki:"Fluminense_FC",name:"Fluminense",a:["fluminense","flu"],hint:"Rio de Janeiro, Brasil"},
-  {wiki:"LOSC_Lille",name:"Lille",a:["lille","losc"],hint:"Lille, França"},
-  {wiki:"AS_Monaco_FC",name:"Monaco",a:["monaco","as monaco"],hint:"Mônaco"},
-  {wiki:"Galatasaray_S.K.",name:"Galatasaray",a:["galatasaray"],hint:"Istambul, Turquia"},
-  {wiki:"Fenerbahçe_S.K.",name:"Fenerbahçe",a:["fenerbahce","fenerbahçe"],hint:"Istambul, Turquia"},
-  {wiki:"Beşiktaş_J.K.",name:"Beşiktaş",a:["besiktas","beşiktaş"],hint:"Istambul, Turquia"},
-  {wiki:"Olympiacos_F.C.",name:"Olympiacos",a:["olympiacos"],hint:"Pireu, Grécia"},
-  {wiki:"Club_América",name:"América",a:["america","club america"],hint:"Cidade do México, México"},
-  {wiki:"CF_Monterrey",name:"Monterrey",a:["monterrey","cf monterrey"],hint:"Monterrey, México"},
-  {wiki:"LA_Galaxy",name:"LA Galaxy",a:["la galaxy","galaxy"],hint:"Los Angeles, EUA"},
-  {wiki:"Inter_Miami_CF",name:"Inter Miami",a:["inter miami"],hint:"Miami, EUA"},
-  {wiki:"Shakhtar_Donetsk",name:"Shakhtar Donetsk",a:["shakhtar donetsk","shakhtar"],hint:"Donetsk, Ucrânia"},
-];
-
-// COMIDAS — título Wikipedia inglês
-const COMIDAS=[
-  {wiki:"Pizza",name:"Pizza",a:["pizza"],hint:"Itália"},
-  {wiki:"Sushi",name:"Sushi",a:["sushi"],hint:"Japão"},
-  {wiki:"Hamburger",name:"Hambúrguer",a:["hamburguer","hamburger","hambúrguer"],hint:"EUA"},
-  {wiki:"Taco",name:"Taco",a:["taco"],hint:"México"},
-  {wiki:"Paella",name:"Paella",a:["paella"],hint:"Espanha"},
-  {wiki:"Croissant",name:"Croissant",a:["croissant"],hint:"França"},
-  {wiki:"Pho",name:"Pho",a:["pho"],hint:"Vietnã"},
-  {wiki:"Ramen",name:"Ramen",a:["ramen"],hint:"Japão"},
-  {wiki:"Falafel",name:"Falafel",a:["falafel"],hint:"Oriente Médio"},
-  {wiki:"Feijoada",name:"Feijoada",a:["feijoada"],hint:"Brasil"},
-  {wiki:"Pad_thai",name:"Pad Thai",a:["pad thai"],hint:"Tailândia"},
-  {wiki:"Kimchi",name:"Kimchi",a:["kimchi"],hint:"Coreia do Sul"},
-  {wiki:"Empanada",name:"Empanada",a:["empanada"],hint:"América Latina"},
-  {wiki:"Ceviche",name:"Ceviche",a:["ceviche"],hint:"Peru"},
-  {wiki:"Baklava",name:"Baklava",a:["baklava"],hint:"Turquia"},
-  {wiki:"Gelato",name:"Gelato",a:["gelato","sorvete italiano"],hint:"Itália"},
-  {wiki:"Crêpe",name:"Crepe",a:["crepe","crêpe"],hint:"França"},
-  {wiki:"Fondue",name:"Fondue",a:["fondue"],hint:"Suíça"},
-  {wiki:"Tiramisu",name:"Tiramisù",a:["tiramisu","tiramisù"],hint:"Itália"},
-  {wiki:"Poutine",name:"Poutine",a:["poutine"],hint:"Canadá"},
-  {wiki:"Goulash",name:"Goulash",a:["goulash","gulache"],hint:"Hungria"},
-  {wiki:"Hot_dog",name:"Cachorro-quente",a:["cachorro quente","hot dog","cachorro-quente"],hint:"EUA"},
-  {wiki:"Burrito",name:"Burrito",a:["burrito"],hint:"México"},
-  {wiki:"Bibimbap",name:"Bibimbap",a:["bibimbap"],hint:"Coreia do Sul"},
-  {wiki:"Macaron",name:"Macaron",a:["macaron"],hint:"França"},
-  {wiki:"Belgian_waffle",name:"Waffle",a:["waffle"],hint:"Bélgica"},
-  {wiki:"Risotto",name:"Risoto",a:["risoto","risotto"],hint:"Itália"},
-  {wiki:"Churro",name:"Churro",a:["churro","churros"],hint:"Espanha"},
-  {wiki:"Sashimi",name:"Sashimi",a:["sashimi"],hint:"Japão"},
-  {wiki:"Dim_sum",name:"Dim Sum",a:["dim sum"],hint:"China"},
-];
-
-// INSTRUMENTOS — título Wikipedia inglês
-const INSTRUMENTOS=[
-  {wiki:"Guitar",name:"Violão/Guitarra",a:["violao","guitarra","guitar","violão"]},
-  {wiki:"Piano",name:"Piano",a:["piano"]},
-  {wiki:"Violin",name:"Violino",a:["violino","violin"]},
-  {wiki:"Drum_kit",name:"Bateria",a:["bateria","drum kit","drums"]},
-  {wiki:"Saxophone",name:"Saxofone",a:["saxofone","saxophone","sax"]},
-  {wiki:"Trumpet",name:"Trompete",a:["trompete","trumpet"]},
-  {wiki:"Flute",name:"Flauta",a:["flauta","flute"]},
-  {wiki:"Cello",name:"Violoncelo",a:["violoncelo","cello"]},
-  {wiki:"Concert_harp",name:"Harpa",a:["harpa","harp"]},
-  {wiki:"Accordion",name:"Acordeão",a:["acordeao","accordion","acordeão","sanfona"]},
-  {wiki:"Clarinet",name:"Clarinete",a:["clarinete","clarinet"]},
-  {wiki:"Trombone",name:"Trombone",a:["trombone"]},
-  {wiki:"Five-string_banjo",name:"Banjo",a:["banjo"]},
-  {wiki:"Ukulele",name:"Ukulele",a:["ukulele","havaiana"]},
-  {wiki:"Bagpipes",name:"Gaita de Foles",a:["gaita de foles","bagpipes","gaita"]},
-  {wiki:["Xylophone","Xylophone_(musical_instrument)"],name:"Xilofone",a:["xilofone","xylophone"]},
-  {wiki:"Tambourine",name:"Pandeiro/Tamborim",a:["pandeiro","tamborim","tambourine"]},
-  {wiki:"Maracas",name:"Maracas",a:["maracas"]},
-  {wiki:"Sitar",name:"Sitar",a:["sitar"]},
-  {wiki:"Harmonica",name:"Gaita de Boca",a:["gaita de boca","harmonica","gaita boca"]},
-  {wiki:"Double_bass",name:"Contrabaixo",a:["contrabaixo","double bass","baixo acustico"]},
-  {wiki:"Electric_guitar",name:"Guitarra Elétrica",a:["guitarra eletrica","electric guitar","guitarra"]},
-  {wiki:"Bass_guitar",name:"Baixo",a:["baixo","bass guitar","guitarra baixo"]},
-  {wiki:"French_horn",name:"Trompa",a:["trompa","french horn"]},
-  {wiki:"Tuba",name:"Tuba",a:["tuba"]},
-  {wiki:"Oboe",name:"Oboé",a:["oboe","oboé"]},
-  {wiki:"Bassoon",name:"Fagote",a:["fagote","bassoon"]},
-  {wiki:"Mandolin",name:"Bandolim",a:["bandolim","mandolin"]},
-  {wiki:"Didgeridoo",name:"Didgeridoo",a:["didgeridoo"]},
-  {wiki:"Balalaika",name:"Balalaica",a:["balalaica","balalaika"]},
-  {wiki:"Erhu",name:"Erhu",a:["erhu"]},
-  {wiki:"Tabla",name:"Tabla",a:["tabla"]},
-  {wiki:"Steel_drum",name:"Steel Drum",a:["steel drum","tambor de aco"]},
-  {wiki:"Hurdy-gurdy",name:"Sanfona Medieval",a:["sanfona medieval","hurdy gurdy"]},
-];
-
-// ANIME & MANGÁ — imagem de um personagem icônico (sem texto), resposta é o nome da obra
-const ANIME_TITULOS=[
-  {wiki:"Naruto_Uzumaki",name:"Naruto",a:["naruto"],hint:"Personagem: Naruto Uzumaki"},
-  {wiki:"Sasuke_Uchiha",name:"Naruto",a:["naruto"],hint:"Personagem: Sasuke Uchiha"},
-  {wiki:"Monkey_D._Luffy",name:"One Piece",a:["one piece"],hint:"Personagem: Luffy"},
-  {wiki:"Roronoa_Zoro",name:"One Piece",a:["one piece"],hint:"Personagem: Zoro"},
-  {wiki:["Goku","Dragon_Ball_(manga)"],name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Goku"},
-  {wiki:"Vegeta",name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Vegeta"},
-  {wiki:"Edward_Elric",name:"Fullmetal Alchemist",a:["fullmetal alchemist","full metal alchemist"],hint:"Personagem: Edward Elric"},
-  {wiki:"Light_Yagami",name:"Death Note",a:["death note"],hint:"Personagem: Light Yagami"},
-  {wiki:"L_(Death_Note)",name:"Death Note",a:["death note"],hint:"Personagem: L"},
-  {wiki:"Ichigo_Kurosaki",name:"Bleach",a:["bleach"],hint:"Personagem: Ichigo Kurosaki"},
-  {wiki:["Eren_Yeager","Attack_on_Titan"],name:"Attack on Titan",a:["attack on titan","ataque dos titas","shingeki no kyojin"],hint:"Personagem: Eren Yeager"},
-  {wiki:"Mikasa_Ackerman",name:"Attack on Titan",a:["attack on titan","ataque dos titas","shingeki no kyojin"],hint:"Personagem: Mikasa Ackerman"},
-  {wiki:"Tanjiro_Kamado",name:"Demon Slayer",a:["demon slayer","kimetsu no yaiba"],hint:"Personagem: Tanjiro Kamado"},
-  {wiki:"Nezuko_Kamado",name:"Demon Slayer",a:["demon slayer","kimetsu no yaiba"],hint:"Personagem: Nezuko Kamado"},
-  {wiki:["Izuku_Midoriya","My_Hero_Academia"],name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: Izuku Midoriya (Deku)"},
-  {wiki:["Katsuki_Bakugo","My_Hero_Academia"],name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: Bakugo"},
-  {wiki:"Saitama_(One-Punch_Man)",name:"One-Punch Man",a:["one punch man","one-punch man"],hint:"Personagem: Saitama"},
-  {wiki:"Spike_Spiegel",name:"Cowboy Bebop",a:["cowboy bebop"],hint:"Personagem: Spike Spiegel"},
-  {wiki:"Lelouch_Lamperouge",name:"Code Geass",a:["code geass"],hint:"Personagem: Lelouch"},
-  {wiki:"Shinji_Ikari",name:"Evangelion",a:["evangelion","neon genesis evangelion"],hint:"Personagem: Shinji Ikari"},
-  {wiki:"Usagi_Tsukino",name:"Sailor Moon",a:["sailor moon"],hint:"Personagem: Usagi Tsukino"},
-  {wiki:"Pikachu",name:"Pokémon",a:["pokemon","pokémon"],hint:"Personagem: Pikachu"},
-  {wiki:"Ash_Ketchum",name:"Pokémon",a:["pokemon","pokémon"],hint:"Personagem: Ash Ketchum"},
-  {wiki:"Sword_Art_Online",name:"Sword Art Online",a:["sword art online","sao"],hint:"Personagem: Kirito"},
-  {wiki:"Killua_Zoldyck",name:"Hunter x Hunter",a:["hunter x hunter","hunter×hunter"],hint:"Personagem: Killua Zoldyck"},
-  {wiki:"Gon_Freecss",name:"Hunter x Hunter",a:["hunter x hunter","hunter×hunter"],hint:"Personagem: Gon Freecss"},
-  {wiki:"Yusuke_Urameshi",name:"Yu Yu Hakusho",a:["yu yu hakusho","yuyu hakusho"],hint:"Personagem: Yusuke Urameshi"},
-  {wiki:"Inuyasha",name:"Inuyasha",a:["inuyasha"],hint:"Personagem: Inuyasha"},
-  {wiki:"Doraemon",name:"Doraemon",a:["doraemon"],hint:"Personagem: Doraemon"},
-  {wiki:"Yuji_Itadori",name:"Jujutsu Kaisen",a:["jujutsu kaisen","jjk"],hint:"Personagem: Yuji Itadori"},
-  {wiki:"Denji_(Chainsaw_Man)",name:"Chainsaw Man",a:["chainsaw man"],hint:"Personagem: Denji"},
-  {wiki:"Loid_Forger",name:"Spy x Family",a:["spy x family","spy×family"],hint:"Personagem: Loid Forger"},
-  {wiki:["Ken_Kaneki","Tokyo_Ghoul"],name:"Tokyo Ghoul",a:["tokyo ghoul"],hint:"Personagem: Ken Kaneki"},
-  {wiki:"Natsu_Dragneel",name:"Fairy Tail",a:["fairy tail"],hint:"Personagem: Natsu Dragneel"},
-  {wiki:"Asta_(Black_Clover)",name:"Black Clover",a:["black clover"],hint:"Personagem: Asta"},
-  {wiki:"Shoyo_Hinata",name:"Haikyu!!",a:["haikyu","haikyuu"],hint:"Personagem: Hinata Shoyo"},
-  {wiki:"Kakashi_Hatake",name:"Naruto",a:["naruto"],hint:"Personagem: Kakashi Hatake"},
-  {wiki:"Itachi_Uchiha",name:"Naruto",a:["naruto"],hint:"Personagem: Itachi Uchiha"},
-  {wiki:"Gaara",name:"Naruto",a:["naruto"],hint:"Personagem: Gaara"},
-  {wiki:"Hinata_Hyuga",name:"Naruto",a:["naruto"],hint:"Personagem: Hinata Hyuga"},
-  {wiki:"Nami_(One_Piece)",name:"One Piece",a:["one piece"],hint:"Personagem: Nami"},
-  {wiki:"Sanji_(One_Piece)",name:"One Piece",a:["one piece"],hint:"Personagem: Sanji"},
-  {wiki:"Tony_Tony_Chopper",name:"One Piece",a:["one piece"],hint:"Personagem: Chopper"},
-  {wiki:"Piccolo_(Dragon_Ball)",name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Piccolo"},
-  {wiki:"Gohan",name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Gohan"},
-  {wiki:"Bulma",name:"Dragon Ball",a:["dragon ball","dragonball"],hint:"Personagem: Bulma"},
-  {wiki:"Zenitsu_Agatsuma",name:"Demon Slayer",a:["demon slayer","kimetsu no yaiba"],hint:"Personagem: Zenitsu Agatsuma"},
-  {wiki:"Inosuke_Hashibira",name:"Demon Slayer",a:["demon slayer","kimetsu no yaiba"],hint:"Personagem: Inosuke Hashibira"},
-  {wiki:["All_Might_(My_Hero_Academia)","My_Hero_Academia"],name:"My Hero Academia",a:["my hero academia","boku no hero academia"],hint:"Personagem: All Might"},
-  {wiki:["Levi_Ackerman","Attack_on_Titan"],name:"Attack on Titan",a:["attack on titan","ataque dos titas","shingeki no kyojin"],hint:"Personagem: Levi Ackerman"},
-  {wiki:"Rukia_Kuchiki",name:"Bleach",a:["bleach"],hint:"Personagem: Rukia Kuchiki"},
-  {wiki:["Hisoka_Morow","Hunter_%C3%97_Hunter"],name:"Hunter x Hunter",a:["hunter x hunter","hunter×hunter"],hint:"Personagem: Hisoka Morow"},
-  {wiki:["Asuna_Yuuki","Sword_Art_Online"],name:"Sword Art Online",a:["sword art online","sao"],hint:"Personagem: Asuna Yuuki"},
-  {wiki:"Rei_Ayanami",name:"Evangelion",a:["evangelion","neon genesis evangelion"],hint:"Personagem: Rei Ayanami"},
-  {wiki:"Asuka_Langley_Soryu",name:"Evangelion",a:["evangelion","neon genesis evangelion"],hint:"Personagem: Asuka Langley"},
-  {wiki:["Faye_Valentine","Cowboy_Bebop"],name:"Cowboy Bebop",a:["cowboy bebop"],hint:"Personagem: Faye Valentine"},
-  {wiki:"Misty_(Pokémon)",name:"Pokémon",a:["pokemon","pokémon"],hint:"Personagem: Misty"},
-  {wiki:"Senku_Ishigami",name:"Dr. Stone",a:["dr stone","dr. stone"],hint:"Personagem: Senku Ishigami"},
-  {wiki:"Emma_(The_Promised_Neverland)",name:"The Promised Neverland",a:["the promised neverland","promised neverland"],hint:"Personagem: Emma"},
-  {wiki:"Guts_(Berserk)",name:"Berserk",a:["berserk"],hint:"Personagem: Guts"},
-  {wiki:"Thorfinn_(Vinland_Saga)",name:"Vinland Saga",a:["vinland saga"],hint:"Personagem: Thorfinn"},
-  {wiki:"Shigeo_Kageyama",name:"Mob Psycho 100",a:["mob psycho 100","mob psycho"],hint:"Personagem: Mob (Shigeo Kageyama)"},
-  {wiki:"Jotaro_Kujo",name:"JoJo's Bizarre Adventure",a:["jojos bizarre adventure","jojo"],hint:"Personagem: Jotaro Kujo"},
-  {wiki:["Re:Zero","Re:Zero_−_Starting_Life_in_Another_World"],name:"Re:Zero",a:["re zero","rezero"],hint:"Personagem: Subaru Natsuki"},
-  {wiki:["Megumin","KonoSuba"],name:"Konosuba",a:["konosuba"],hint:"Personagem: Megumin"},
-  {wiki:"Tohru_Honda",name:"Fruits Basket",a:["fruits basket"],hint:"Personagem: Tohru Honda"},
-  {wiki:["Soul_Eater_(manga)","Soul_Eater_(character)"],name:"Soul Eater",a:["soul eater"],hint:"Personagem: Soul Eater"},
-  {wiki:"Yugi_Muto",name:"Yu-Gi-Oh!",a:["yu gi oh","yugioh"],hint:"Personagem: Yugi Muto"},
-  {wiki:["Agumon","Digimon"],name:"Digimon",a:["digimon"],hint:"Personagem: Agumon"},
-  {wiki:"Sakata_Gintoki",name:"Gintama",a:["gintama"],hint:"Personagem: Sakata Gintoki"},
-];
-
-// SUPER-HERÓIS — título Wikipedia inglês
-const SUPER_HEROIS=[
-  {wiki:"Superman",name:"Superman",a:["superman"],hint:"DC Comics"},
-  {wiki:"Batman",name:"Batman",a:["batman"],hint:"DC Comics"},
-  {wiki:"Spider-Man",name:"Homem-Aranha",a:["homem aranha","spider man","spiderman","homem-aranha"],hint:"Marvel"},
-  {wiki:"Iron_Man",name:"Homem de Ferro",a:["homem de ferro","iron man"],hint:"Marvel"},
-  {wiki:["Captain_America_(Marvel_Comics)","Captain_America"],name:"Capitão América",a:["capitao america","captain america","capitão america"],hint:"Marvel"},
-  {wiki:"Thor_(Marvel_Comics)",name:"Thor",a:["thor"],hint:"Marvel"},
-  {wiki:"Hulk_(comics)",name:"Hulk",a:["hulk"],hint:"Marvel"},
-  {wiki:"Wonder_Woman",name:"Mulher-Maravilha",a:["mulher maravilha","wonder woman","mulher-maravilha"],hint:"DC Comics"},
-  {wiki:"The_Flash",name:"Flash",a:["flash"],hint:"DC Comics"},
-  {wiki:"Aquaman",name:"Aquaman",a:["aquaman"],hint:"DC Comics"},
-  {wiki:"Green_Lantern",name:"Lanterna Verde",a:["lanterna verde","green lantern"],hint:"DC Comics"},
-  {wiki:"Black_Panther_(character)",name:"Pantera Negra",a:["pantera negra","black panther"],hint:"Marvel"},
-  {wiki:"Doctor_Strange",name:"Doutor Estranho",a:["doutor estranho","doctor strange"],hint:"Marvel"},
-  {wiki:"Black_Widow_(Natasha_Romanoff)",name:"Viúva Negra",a:["viuva negra","black widow","viúva negra"],hint:"Marvel"},
-  {wiki:["Hawkeye_(Marvel_Comics)","Hawkeye_(comics)"],name:"Gavião Arqueiro",a:["gaviao arqueiro","hawkeye","gavião arqueiro"],hint:"Marvel"},
-  {wiki:"Wolverine_(character)",name:"Wolverine",a:["wolverine"],hint:"Marvel"},
-  {wiki:"Deadpool",name:"Deadpool",a:["deadpool"],hint:"Marvel"},
-  {wiki:"Daredevil_(Marvel_Comics_character)",name:"Demolidor",a:["demolidor","daredevil"],hint:"Marvel"},
-  {wiki:"Ant-Man",name:"Homem-Formiga",a:["homem formiga","ant man","homem-formiga"],hint:"Marvel"},
-  {wiki:"Captain_Marvel_(Carol_Danvers)",name:"Capitã Marvel",a:["capita marvel","captain marvel","capitã marvel"],hint:"Marvel"},
-  {wiki:"Scarlet_Witch",name:"Feiticeira Escarlate",a:["feiticeira escarlate","scarlet witch"],hint:"Marvel"},
-  {wiki:"Star-Lord",name:"Senhor das Estrelas",a:["senhor das estrelas","star lord","star-lord"],hint:"Marvel"},
-  {wiki:"Groot",name:"Groot",a:["groot"],hint:"Marvel"},
-  {wiki:"Rocket_Raccoon",name:"Rocket Raccoon",a:["rocket raccoon","rocket"],hint:"Marvel"},
-  {wiki:"Gamora",name:"Gamora",a:["gamora"],hint:"Marvel"},
-  {wiki:"Nightwing",name:"Asa Noturna",a:["asa noturna","nightwing"],hint:"DC Comics"},
-  {wiki:"Robin_(character)",name:"Robin",a:["robin"],hint:"DC Comics"},
-  {wiki:"Catwoman",name:"Mulher-Gato",a:["mulher gato","catwoman","mulher-gato"],hint:"DC Comics"},
-  {wiki:"Green_Arrow",name:"Arqueiro Verde",a:["arqueiro verde","green arrow"],hint:"DC Comics"},
-  {wiki:"Cyborg_(DC_Comics)",name:"Cyborg",a:["cyborg"],hint:"DC Comics"},
-  {wiki:"Shazam_(DC_Comics)",name:"Shazam",a:["shazam"],hint:"DC Comics"},
-  {wiki:"Martian_Manhunter",name:"Caçador de Marte",a:["cacador de marte","martian manhunter","caçador de marte"],hint:"DC Comics"},
-  {wiki:"Supergirl",name:"Supergirl",a:["supergirl"],hint:"DC Comics"},
-  {wiki:"Batgirl",name:"Batgirl",a:["batgirl"],hint:"DC Comics"},
-  {wiki:"Storm_(Marvel_Comics)",name:"Tempestade",a:["tempestade","storm"],hint:"Marvel"},
-  {wiki:"Cyclops_(Marvel_Comics)",name:"Ciclope",a:["ciclope","cyclops","ciclope"],hint:"Marvel"},
-  {wiki:"Jean_Grey",name:"Jean Grey",a:["jean grey"],hint:"Marvel"},
-  {wiki:"Beast_(Marvel_Comics)",name:"Fera",a:["fera","beast"],hint:"Marvel"},
-  {wiki:"Professor_X",name:"Professor X",a:["professor x"],hint:"Marvel"},
-  {wiki:["Magneto_(Marvel_Comics)","Magneto_(character)"],name:"Magneto",a:["magneto"],hint:"Marvel"},
-  {wiki:"Nick_Fury",name:"Nick Fury",a:["nick fury"],hint:"Marvel"},
-  {wiki:["Falcon_(Marvel_Comics)","Sam_Wilson_(Marvel_Comics)"],name:"Falcão",a:["falcao","falcon","falcão"],hint:"Marvel"},
-  {wiki:"War_Machine",name:"Máquina de Combate",a:["maquina de combate","war machine"],hint:"Marvel"},
-  {wiki:"Vision_(Marvel_Comics)",name:"Visão",a:["visao","vision","visão"],hint:"Marvel"},
-  {wiki:"Iron_Fist_(comics)",name:"Punho de Ferro",a:["punho de ferro","iron fist"],hint:"Marvel"},
-  {wiki:"Luke_Cage",name:"Luke Cage",a:["luke cage"],hint:"Marvel"},
-  {wiki:"Moon_Knight",name:"Cavaleiro da Lua",a:["cavaleiro da lua","moon knight"],hint:"Marvel"},
-  {wiki:["She-Hulk","She-Hulk_(character)"],name:"Mulher-Hulk",a:["mulher hulk","she hulk","mulher-hulk"],hint:"Marvel"},
-  {wiki:"Ms._Marvel_(Kamala_Khan)",name:"Miss Marvel",a:["miss marvel","ms marvel","kamala khan"],hint:"Marvel"},
-  {wiki:"Wasp_(Marvel_Comics)",name:"Vespa",a:["vespa","wasp"],hint:"Marvel"},
-  // VILÕES
-  {wiki:"Joker_(character)",name:"Coringa",a:["coringa","joker"],hint:"DC - Vilão"},
-  {wiki:"Thanos",name:"Thanos",a:["thanos"],hint:"Marvel - Vilão"},
-  {wiki:"Lex_Luthor",name:"Lex Luthor",a:["lex luthor"],hint:"DC - Vilão"},
-  {wiki:"Venom_(Marvel_Comics_character)",name:"Venom",a:["venom"],hint:"Marvel - Vilão"},
-  {wiki:"Green_Goblin",name:"Duende Verde",a:["duende verde","green goblin"],hint:"Marvel - Vilão"},
-  {wiki:"Loki_(Marvel_Comics)",name:"Loki",a:["loki"],hint:"Marvel - Vilão"},
-  {wiki:"Red_Skull",name:"Caveira Vermelha",a:["caveira vermelha","red skull"],hint:"Marvel - Vilão"},
-  {wiki:"Doctor_Doom",name:"Doutor Destino",a:["doutor destino","doctor doom"],hint:"Marvel - Vilão"},
-  {wiki:"Ultron",name:"Ultron",a:["ultron"],hint:"Marvel - Vilão"},
-  {wiki:"Mystique_(X-Men)",name:"Mística",a:["mistica","mystique","mística"],hint:"Marvel - Vilão"},
-  {wiki:"Poison_Ivy_(character)",name:"Hera Venenosa",a:["hera venenosa","poison ivy"],hint:"DC - Vilão"},
-  {wiki:"Harley_Quinn",name:"Arlequina",a:["arlequina","harley quinn"],hint:"DC - Vilão"},
-  {wiki:"Two-Face",name:"Duas Caras",a:["duas caras","two face"],hint:"DC - Vilão"},
-  {wiki:"Bane_(DC_Comics)",name:"Bane",a:["bane"],hint:"DC - Vilão"},
-  {wiki:"Ra's_al_Ghul",name:"Ra's al Ghul",a:["ras al ghul","ra's al ghul"],hint:"DC - Vilão"},
-  {wiki:"Darkseid",name:"Darkseid",a:["darkseid"],hint:"DC - Vilão"},
-  {wiki:"Doomsday_(DC_Comics)",name:"Apocalipse",a:["apocalipse","doomsday"],hint:"DC - Vilão"},
-  {wiki:"Carnage_(character)",name:"Carnificina",a:["carnificina","carnage"],hint:"Marvel - Vilão"},
-  {wiki:"Electro_(Marvel_Comics)",name:"Electro",a:["electro"],hint:"Marvel - Vilão"},
-  {wiki:"Vulture_(Marvel_Comics)",name:"Abutre",a:["abutre","vulture"],hint:"Marvel - Vilão"},
-];
-
-
-// LÍNGUA DO PAÍS — bandeira → idioma oficial
-const LINGUA_PAISES=[
-  {code:"br",country:"Brasil",name:"Português",a:["portugues","português"]},
-  {code:"pt",country:"Portugal",name:"Português",a:["portugues","português"]},
-  {code:"ao",country:"Angola",name:"Português",a:["portugues","português"]},
-  {code:"es",country:"Espanha",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
-  {code:"mx",country:"México",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
-  {code:"ar",country:"Argentina",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
-  {code:"co",country:"Colômbia",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
-  {code:"fr",country:"França",name:"Francês",a:["frances","francês"]},
-  {code:"be",country:"Bélgica",name:"Francês",a:["frances","francês"]},
-  {code:"de",country:"Alemanha",name:"Alemão",a:["alemao","alemão"]},
-  {code:"at",country:"Áustria",name:"Alemão",a:["alemao","alemão"]},
-  {code:"it",country:"Itália",name:"Italiano",a:["italiano"]},
-  {code:"jp",country:"Japão",name:"Japonês",a:["japones","japonês"]},
-  {code:"cn",country:"China",name:"Mandarim",a:["mandarim","chines","chinês"]},
-  {code:"ru",country:"Rússia",name:"Russo",a:["russo"]},
-  {code:"ua",country:"Ucrânia",name:"Ucraniano",a:["ucraniano"]},
-  {code:"gb",country:"Reino Unido",name:"Inglês",a:["ingles","inglês"]},
-  {code:"us",country:"EUA",name:"Inglês",a:["ingles","inglês"]},
-  {code:"au",country:"Austrália",name:"Inglês",a:["ingles","inglês"]},
-  {code:"kr",country:"Coreia do Sul",name:"Coreano",a:["coreano"]},
-  {code:"nl",country:"Holanda",name:"Holandês",a:["holandes","holandês","neerlandes","neerlandês"]},
-  {code:"pl",country:"Polônia",name:"Polonês",a:["polones","polonês"]},
-  {code:"tr",country:"Turquia",name:"Turco",a:["turco"]},
-  {code:"gr",country:"Grécia",name:"Grego",a:["grego"]},
-  {code:"sa",country:"Arábia Saudita",name:"Árabe",a:["arabe","árabe"]},
-  {code:"eg",country:"Egito",name:"Árabe",a:["arabe","árabe"]},
-  {code:"ma",country:"Marrocos",name:"Árabe",a:["arabe","árabe"]},
-  {code:"se",country:"Suécia",name:"Sueco",a:["sueco"]},
-  {code:"no",country:"Noruega",name:"Norueguês",a:["noruegues","norueguês"]},
-  {code:"dk",country:"Dinamarca",name:"Dinamarquês",a:["dinamarques","dinamarquês"]},
-  {code:"fi",country:"Finlândia",name:"Finlandês",a:["finlandes","finlandês"]},
-  {code:"th",country:"Tailândia",name:"Tailandês",a:["tailandes","tailandês"]},
-  {code:"vn",country:"Vietnã",name:"Vietnamita",a:["vietnamita"]},
-  {code:"id",country:"Indonésia",name:"Indonésio",a:["indonesio","indonésio"]},
-  {code:"in",country:"Índia",name:"Hindi",a:["hindi"]},
-  {code:"il",country:"Israel",name:"Hebraico",a:["hebraico"]},
-  {code:"hu",country:"Hungria",name:"Húngaro",a:["hungaro","húngaro"]},
-  {code:"cz",country:"Rep. Tcheca",name:"Tcheco",a:["tcheco"]},
-  {code:"ro",country:"Romênia",name:"Romeno",a:["romeno"]},
-  {code:"ph",country:"Filipinas",name:"Filipino",a:["filipino","tagalog","filipinos"]},
-];
-
-// LÍNGUAS DO MUNDO — frase no idioma → adivinhar o idioma
-const LINGUAS_FRASES=[
-  {phrase:"Olá, como vai você?",name:"Português",a:["portugues","português"]},
-  {phrase:"Buenos días, ¿cómo estás?",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
-  {phrase:"Bonjour, comment allez-vous?",name:"Francês",a:["frances","francês"]},
-  {phrase:"Guten Morgen, wie geht es Ihnen?",name:"Alemão",a:["alemao","alemão"]},
-  {phrase:"Buongiorno, come stai?",name:"Italiano",a:["italiano"]},
-  {phrase:"Good morning, how are you?",name:"Inglês",a:["ingles","inglês"]},
-  {phrase:"おはようございます。お元気ですか？",name:"Japonês",a:["japones","japonês"]},
-  {phrase:"你好，你怎么样？",name:"Mandarim",a:["mandarim","chines","chinês"]},
-  {phrase:"안녕하세요, 어떻게 지내세요?",name:"Coreano",a:["coreano"]},
-  {phrase:"Доброе утро, как дела?",name:"Russo",a:["russo"]},
-  {phrase:"Bom dia, tudo bem com você?",name:"Português",a:["portugues","português"]},
-  {phrase:"مرحبا، كيف حالك؟",name:"Árabe",a:["arabe","árabe"]},
-  {phrase:"Hola, ¿qué tal?",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
-  {phrase:"Bonjour, ça va bien?",name:"Francês",a:["frances","francês"]},
-  {phrase:"こんにちは、元気ですか？",name:"Japonês",a:["japones","japonês"]},
-  {phrase:"Goddag, hvordan har du det?",name:"Dinamarquês",a:["dinamarques","dinamarquês"]},
-  {phrase:"Hej, hur mår du?",name:"Sueco",a:["sueco"]},
-  {phrase:"Hei, hvordan går det?",name:"Norueguês",a:["noruegues","norueguês"]},
-  {phrase:"Hyvää huomenta, kuinka voit?",name:"Finlandês",a:["finlandes","finlandês"]},
-  {phrase:"Dzień dobry, jak się masz?",name:"Polonês",a:["polones","polonês"]},
-  {phrase:"Günaydın, nasılsın?",name:"Turco",a:["turco"]},
-  {phrase:"Καλημέρα, τι κάνεις;",name:"Grego",a:["grego"]},
-  {phrase:"Jó reggelt, hogy vagy?",name:"Húngaro",a:["hungaro","húngaro"]},
-  {phrase:"Dobré ráno, jak se máš?",name:"Tcheco",a:["tcheco"]},
-  {phrase:"Bună ziua, ce mai faci?",name:"Romeno",a:["romeno"]},
-  {phrase:"Доброго ранку, як справи?",name:"Ucraniano",a:["ucraniano"]},
-  {phrase:"Xin chào, bạn khỏe không?",name:"Vietnamita",a:["vietnamita"]},
-  {phrase:"नमस्ते, आप कैसे हैं?",name:"Hindi",a:["hindi"]},
-  {phrase:"שלום, מה שלומך?",name:"Hebraico",a:["hebraico"]},
-  {phrase:"Hoe gaat het met jou?",name:"Holandês",a:["holandes","holandês","neerlandes"]},
-  {phrase:"Selamat pagi, apa kabar?",name:"Indonésio",a:["indonesio","indonésio"]},
-  {phrase:"สวัสดี คุณเป็นยังไงบ้าง?",name:"Tailandês",a:["tailandes","tailandês"]},
-  {phrase:"Kumusta ka?",name:"Filipino",a:["filipino","tagalog"]},
-  {phrase:"Olá, tudo bem?",name:"Português",a:["portugues","português"]},
-  {phrase:"¿Cómo te llamas?",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
-  {phrase:"Comment vous appelez-vous?",name:"Francês",a:["frances","francês"]},
-  {phrase:"Wie heißen Sie?",name:"Alemão",a:["alemao","alemão"]},
-  {phrase:"Come si chiama?",name:"Italiano",a:["italiano"]},
-  {phrase:"What is your name?",name:"Inglês",a:["ingles","inglês"]},
-  {phrase:"Où est la bibliothèque?",name:"Francês",a:["frances","francês"]},
-  {phrase:"¿Dónde está el baño?",name:"Espanhol",a:["espanhol","castelhano","espanol"]},
-  {phrase:"Ich spreche ein bisschen Deutsch.",name:"Alemão",a:["alemao","alemão"]},
-  {phrase:"Parlo un po' di italiano.",name:"Italiano",a:["italiano"]},
-  {phrase:"I love you very much.",name:"Inglês",a:["ingles","inglês"]},
-  {phrase:"Eu te amo muito.",name:"Português",a:["portugues","português"]},
-  {phrase:"私はあなたを愛しています。",name:"Japonês",a:["japones","japonês"]},
-  {phrase:"我爱你。",name:"Mandarim",a:["mandarim","chines","chinês"]},
-  {phrase:"나는 당신을 사랑합니다.",name:"Coreano",a:["coreano"]},
-  {phrase:"Я тебя люблю.",name:"Russo",a:["russo"]},
-  {phrase:"أنا أحبك.",name:"Árabe",a:["arabe","árabe"]},
-];
-
-/* ══════════════════════════════════════════════════════════════════
-   QUIZ DEFINITIONS
-══════════════════════════════════════════════════════════════════ */
-const QUIZZES=[
-  {
-    id:"bandeiras",icon:"🌍",title:"Bandeiras do Mundo",
-    desc:"Teste seus conhecimentos sobre as bandeiras do mundo!",
-    tags:[{t:"130+ países",cls:"tag-purple"},{t:"flagcdn.com",cls:"tag-green"}],
-    question:"De qual país é esta bandeira?",placeholder:"Digite o nome do país...",
-    hasModes:true,
-    getPool(m,c){return m==="copa"?COPA:m==="continente"?PAISES.filter(p=>p.cont===c):PAISES;},
-    async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
-    getHints(){return[];},
-    modes:[
-      {id:"all",icon:"🌍",label:"Todos os países",desc:"Todos os disponíveis",cls:"",bg:"rgba(139,92,246,.1)",bc:"rgba(139,92,246,.3)",fc:"#a78bfa"},
-      {id:"copa",icon:"⚽",label:"Copa do Mundo 2026",desc:"48 seleções classificadas",cls:"copa-c",bg:"rgba(234,179,8,.1)",bc:"rgba(234,179,8,.3)",fc:"#fbbf24"},
-      {id:"continente",icon:"🗺️",label:"Por continente",desc:"Escolha um continente",cls:"",bg:"rgba(236,72,153,.1)",bc:"rgba(236,72,153,.3)",fc:"#f9a8d4"},
-    ],
-    continentes:[
-      {id:"americas",icon:"🌎",name:"Américas"},
-      {id:"europa",icon:"🏰",name:"Europa"},
-      {id:"africa",icon:"🌍",name:"África"},
-      {id:"asia",icon:"🏯",name:"Ásia"},
-      {id:"oceania",icon:"🦘",name:"Oceania"},
-      {id:"oriente",icon:"🕌",name:"Oriente Médio"},
-    ],
-  },
-  {
-    id:"capitais",icon:"🏛️",title:"Capitais do Mundo",
-    desc:"Teste seus conhecimentos sobre as capitais do mundo!",
-    tags:[{t:"70+ capitais",cls:"tag-purple"},{t:"flagcdn.com",cls:"tag-green"}],
-    question:"Qual é a capital deste país?",placeholder:"Digite o nome da capital...",
-    hasModes:false,
-    getPool(){return CAPITAIS;},
-    async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
-    getHints(item){return["País: "+item.hint];},
-  },
-  {
-    id:"lingua-paises",icon:"🗺️",title:"Língua do País",
-    desc:"Veja a bandeira e adivinhe o idioma oficial do país!",
-    tags:[{t:"40 países",cls:"tag-purple"},{t:"flagcdn.com",cls:"tag-green"}],
-    question:"Qual é o idioma oficial deste país?",placeholder:"Digite o nome do idioma...",
-    hasModes:false,
-    getPool(){return LINGUA_PAISES;},
-    async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
-    getHints(item){return["País: "+item.country];},
-  },
-  {
-    id:"linguas-frases",icon:"💬",title:"Línguas do Mundo",
-    desc:"Leia a frase e adivinhe em que idioma ela está escrita!",
-    tags:[{t:"50+ frases",cls:"tag-purple"},{t:"Texto",cls:"tag-pink"}],
-    question:"Em que idioma está esta frase?",placeholder:"Digite o nome do idioma...",
-    hasModes:false,
-    getPool(){return LINGUAS_FRASES;},
-    async loadImage(){return null;},
-    getText(item){return item.phrase;},
-    getHints(){return[];},
-  },
-  {
-    id:"animais",icon:"🦁",title:"Animais do Mundo",
-    desc:"Teste seus conhecimentos sobre o reino animal!",
-    tags:[{t:"88 animais",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-green"}],
-    question:"Que animal é este?",placeholder:"Digite o nome do animal...",
-    hasModes:false,
-    getPool(){return ANIMAIS;},
-    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(){return[];},
-  },
-  {
-    id:"arte",icon:"🖼️",title:"Arte Famosa",
-    desc:"Teste seus conhecimentos sobre as maiores obras de arte da história!",
-    tags:[{t:"43 obras",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-gold"}],
-    question:"Qual é o nome desta obra?",placeholder:"Digite o nome da obra...",
-    hasModes:false,
-    getPool(){return ARTE;},
-    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(item){return[item.hint];},
-  },
-  {
-    id:"monumentos",icon:"🗿",title:"Monumentos do Mundo",
-    desc:"Teste seus conhecimentos sobre os monumentos e maravilhas do mundo!",
-    tags:[{t:"49 monumentos",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-pink"}],
-    question:"Que monumento ou lugar é este?",placeholder:"Digite o nome do lugar...",
-    hasModes:false,
-    getPool(){return MONUMENTOS;},
-    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(item){return[item.hint];},
-  },
-  
-  {
-    id:"comidas",icon:"🍽️",title:"Pratos Típicos",
-    desc:"Teste seus conhecimentos sobre os pratos típicos do mundo!",
-    tags:[{t:"30 pratos",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-green"}],
-    question:"Que prato é este?",placeholder:"Digite o nome do prato...",
-    hasModes:false,
-    getPool(){return COMIDAS;},
-    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(item){return[item.hint];},
-  },
-  {
-    id:"instrumentos",icon:"🎸",title:"Instrumentos Musicais",
-    desc:"Teste seus conhecimentos sobre os instrumentos musicais!",
-    tags:[{t:"20 instrumentos",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-pink"}],
-    question:"Que instrumento musical é este?",placeholder:"Digite o nome do instrumento...",
-    hasModes:false,
-    getPool(){return INSTRUMENTOS;},
-    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(){return[];},
-  },
-  {
-    id:"anime",icon:"🍥",title:"Anime & Mangá",
-    desc:"Reconheça o personagem e descubra de qual anime ou mangá ele é!",
-    tags:[{t:"70 imagens",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-pink"}],
-    question:"Que anime ou mangá é este?",placeholder:"Digite o nome da obra...",
-    hasModes:false,
-    getPool(){return ANIME_TITULOS;},
-    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(){return[];},
-  },
-  {
-    id:"super-herois",icon:"🦸",title:"Super-Heróis",
-    desc:"Teste seus conhecimentos sobre os heróis da Marvel e da DC!",
-    tags:[{t:"50 heróis",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-gold"}],
-    question:"Que super-herói é este?",placeholder:"Digite o nome do herói...",
-    hasModes:false,
-    getPool(){return SUPER_HEROIS;},
-    async loadImage(item){return await fetchWikiImage(item.wiki,500);},
-    getHints(){return[];},
-  },
-];
+// Dados e definição dos quizzes em content.js.
 
 /* ══════════════════════════════════════════════════════════════════
    UTILS
@@ -1254,8 +313,8 @@ function $(id){return document.getElementById(id);}
 (function(){
   const g=$("quiz-grid");g.innerHTML="";
   QUIZZES.forEach(q=>{
-    const c=document.createElement("div");c.className="quiz-card";
-    c.innerHTML=`<div class="card-icon">${q.icon}</div><div class="card-title">${q.title}</div><div class="card-desc">${q.desc}</div><div class="card-meta">${q.tags.map(t=>`<span class="card-tag ${t.cls}">${t.t}</span>`).join("")}</div>`;
+    const c=document.createElement("button");c.type="button";c.className="quiz-card";c.dataset.index=String(g.children.length+1).padStart(2,"0");
+    c.innerHTML=`<img class="card-icon" src="category-icons/${q.id}.png" alt="" loading="lazy"><span class="card-title">${q.title}</span><span class="card-desc">${q.desc}</span><span class="card-meta">${q.tags.map(t=>`<span class="card-tag ${t.cls}">${t.t}</span>`).join("")}</span>`;
     c.addEventListener("click",()=>startQuiz(q.id));g.appendChild(c);
   });
 })();
@@ -1263,35 +322,93 @@ function $(id){return document.getElementById(id);}
 /* ══════════════════════════════════════════════════════════════════
    STATE
 ══════════════════════════════════════════════════════════════════ */
-let AQ=null,queue=[],current=null,round=0,hits=0,revealed=false;
+let AQ=null,queue=[],current=null,round=0,hits=0,revealed=false,currentMedia=null,mapOptions=[];
 let players=[],pid=1,sidebarOpen=true;
 let gameMode="all",gameCont="americas",pendingMode="all",pendingCont="americas";
 let timerSec=0,timerInt=null;
-let loadingRound=0; // track async loads
+let loadingRound=0,requestToken=0; // track async loads across quiz changes
 let difficulty=localStorage.getItem("quizDifficulty")||"hard"; // "hard" = digitar | "easy" = múltipla escolha
+let playMode=localStorage.getItem("quizPlayMode")==="host"?"host":"solo";
+let questionSecondsLeft=0,roundStartedAt=0,roundResults=[],roundCorrect=false,sessionClosed=false;
+let soloLength=localStorage.getItem('quizSoloLength')==='quick'?'quick':'full';
+const soloLengthSelect=$('solo-length-select');soloLengthSelect.value=soloLength;
+soloLengthSelect.addEventListener('change',()=>{soloLength=soloLengthSelect.value;try{localStorage.setItem('quizSoloLength',soloLength)}catch{}});
+function setPlayMode(mode){
+  playMode=mode;document.body.dataset.playMode=mode;
+  document.querySelectorAll('[data-play-mode]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.playMode===mode)));
+  $('play-mode-description').textContent=mode==='host'?'Placar manual para pessoas ou equipes, ideal para transmitir a tela.':'Todas as perguntas do tema, com resultado ao final.';
+  $('solo-length').hidden=mode!=='solo';
+  try{localStorage.setItem('quizPlayMode',mode)}catch{}
+  renderHistory();
+}
+document.querySelectorAll('.play-mode-buttons button').forEach(button=>button.addEventListener('click',()=>setPlayMode(button.dataset.playMode)));
+function savedHistory(){try{return JSON.parse(localStorage.getItem('quizHistory')||'[]')}catch{return[]}}
+function renderHistory(){
+  const panel=$('home-history'),history=savedHistory().filter(item=>item.mode===playMode).slice(0,5);
+  panel.replaceChildren();
+  const heading=document.createElement('h2');heading.textContent='Partidas recentes';panel.appendChild(heading);
+  if(!history.length){const empty=document.createElement('p');empty.textContent='Suas partidas concluídas aparecerão aqui, apenas neste navegador.';panel.appendChild(empty);return;}
+  const list=document.createElement('div');list.className='history-list';
+  history.forEach(item=>{const row=document.createElement('div');row.className='history-row';row.textContent=`${item.quiz} · ${item.hits}/${item.rounds} acertos · ${Math.floor(item.seconds/60)}m ${String(item.seconds%60).padStart(2,'0')}s · ${new Date(item.at).toLocaleDateString('pt-BR')}`;list.appendChild(row)});
+  panel.appendChild(list);
+}
+setPlayMode(playMode);
+function setTheme(theme){
+  document.documentElement.dataset.theme=theme;
+  document.querySelector('meta[name="theme-color"]').content=theme==="dark"?"#160f1d":"#f7f0e2";
+  document.querySelectorAll(".theme-switch").forEach(button=>{
+    button.setAttribute("aria-checked",String(theme==="dark"));
+    button.setAttribute("aria-label",theme==="dark"?"Modo escuro ativo; alternar para modo claro":"Modo claro ativo; alternar para modo escuro");
+    button.querySelector(".theme-switch-label").textContent=theme==="dark"?"Escuro":"Claro";
+  });
+  try{localStorage.setItem("quizTheme",theme)}catch{}
+}
+document.querySelectorAll(".theme-switch").forEach(button=>button.addEventListener("click",()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark")));
+setTheme(document.documentElement.dataset.theme);
 
 function isMobile(){return window.innerWidth<=700;}
 
 function startQuiz(id){
   AQ=QUIZZES.find(q=>q.id===id);
-  gameMode="all";gameCont="americas";round=0;hits=0;players=[];
-  $("g-quiz-name").textContent=AQ.icon+" "+AQ.title;
+  gameMode="all";gameCont="americas";round=0;hits=0;players=[];sessionClosed=false;
+  $("g-quiz-name").textContent=AQ.title;
   $("g-btn-mode").style.display=AQ.hasModes?"":"none";
+  $("g-btn-diff").style.display=AQ.kind==="map"?"none":"";
   $("g-mode-pill").style.display=AQ.hasModes?"":"none";
+  $('g-btn-sidebar').style.display=playMode==='host'?'':'none';
+  $('time-limit-control').style.display=playMode==='host'?'':'none';
+  $('g-round-timer').style.display=playMode==='solo'||Number($('time-limit').value)>0?'':'none';
+  $('g-btn-end').textContent=playMode==='host'?'Encerrar':'Ver resultado';
   $("home").classList.remove("active");$("game").classList.add("active");
   sidebarOpen=true;applySidebar();renderPlayers();freshStart();
 }
-function goHome(){stopTimer();$("game").classList.remove("active");$("home").classList.add("active");}
+function goHome(){stopTimer();loadingRound=-1;$("game").classList.remove("active");$("home").classList.add("active");}
 
-function startTimer(){stopTimer();timerSec=0;updateTimer();timerInt=setInterval(()=>{timerSec++;updateTimer();},1000);}
+function startTimer(){stopTimer();timerSec=0;updateTimer();timerInt=setInterval(()=>{timerSec++;if(!revealed&&questionSecondsLeft>0){questionSecondsLeft--;if(questionSecondsLeft===0)reveal(true,'Tempo esgotado')}updateTimer()},1000);}
 function stopTimer(){if(timerInt){clearInterval(timerInt);timerInt=null;}}
-function updateTimer(){const m=String(Math.floor(timerSec/60)).padStart(2,"0"),s=String(timerSec%60).padStart(2,"0");$("g-timer").textContent=m+":"+s;}
+function updateTimer(){const m=String(Math.floor(timerSec/60)).padStart(2,"0"),s=String(timerSec%60).padStart(2,"0");$("g-timer").textContent=m+":"+s;$('g-round-timer').textContent=questionSecondsLeft+'s';}
 
 function freshStart(){
   queue=shuffle([...AQ.getPool(gameMode,gameCont)]);
-  round=0;hits=0;$("g-hits").textContent="0 acertos";$("g-timer").textContent="00:00";
+  round=0;hits=0;roundResults=[];sessionClosed=false;$("g-hits").textContent="0 acertos";$("g-timer").textContent="00:00";
   startTimer();nextRound();
 }
+function finishSession(){
+  if(sessionClosed)return;
+  sessionClosed=true;stopTimer();loadingRound=-1;
+  const completed=roundResults.length;
+  const record={mode:playMode,length:playMode==='solo'?soloLength:'full',quiz:AQ.title,quizId:AQ.id,hits,rounds:completed,seconds:timerSec,at:new Date().toISOString(),players:playMode==='host'?players.map(p=>({name:p.name,score:p.score})):[]};
+  if(completed){try{localStorage.setItem('quizHistory',JSON.stringify([record,...savedHistory()].slice(0,20)))}catch{}}
+  $('summary-main').textContent=`${hits} de ${completed} acertos em ${Math.floor(timerSec/60)}m ${String(timerSec%60).padStart(2,'0')}s.`;
+  const details=$('summary-details');details.replaceChildren();
+  if(playMode==='host'&&players.length){const title=document.createElement('h3');title.textContent='Placar da turma';details.append(title);[...players].sort((a,b)=>b.score-a.score).forEach(p=>{const row=document.createElement('p');row.textContent=`${p.name}: ${p.score}`;details.append(row)})}
+  else{const title=document.createElement('h3');title.textContent='Por pergunta';details.append(title);roundResults.forEach((result,i)=>{const row=document.createElement('p');row.textContent=`${i+1}. ${result.name} · ${result.correct?'Acertou':'Não acertou'} · ${result.seconds}s`;details.append(row)})}
+  $('ov-summary').classList.remove('hidden');renderHistory();
+}
+$('g-btn-end').addEventListener('click',finishSession);
+$('summary-home').addEventListener('click',()=>{$('ov-summary').classList.add('hidden');goHome()});
+$('summary-again').addEventListener('click',()=>{$('ov-summary').classList.add('hidden');freshStart()});
+$('time-limit').addEventListener('change',()=>{$('g-round-timer').style.display=playMode==='solo'||Number($('time-limit').value)>0?'':'none';questionSecondsLeft=playMode==='solo'?45:Number($('time-limit').value);updateTimer()});
 
 function resetImageCardSize(){
   const card=$("g-image-card");
@@ -1308,21 +425,125 @@ function fitImageCard(img){
   card.style.height=Math.round(h)+"px";
 }
 
+const MAP_SVG=`<svg viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
+  <path class="map-grid" d="M0 125H1000M0 250H1000M0 375H1000M250 0V500M500 0V500M750 0V500"/>
+  <path class="map-equator" d="M0 250H1000"/>
+  <path class="map-land" d="M28 83L47 53 87 44 124 60 171 55 191 72 217 62 246 81 285 89 309 110 340 114 359 139 345 158 327 160 312 183 287 195 280 217 260 221 248 202 218 197 199 183 178 177 157 160 140 176 117 162 97 142 73 139 54 119 32 115Z M144 183L166 183 177 194 169 207 151 206Z M271 218L294 216 321 223 345 241 372 251 389 274 385 294 373 315 379 337 368 359 354 381 346 409 332 445 312 462 300 437 297 412 285 389 282 360 269 335 255 302 246 279 252 256Z M407 33L431 22 459 28 467 50 449 73 423 70Z M459 132L480 104 516 92 548 94 580 83 603 66 646 56 690 54 724 43 770 48 804 57 845 54 876 63 913 76 934 92 960 94 979 109 969 129 943 132 923 148 899 151 876 172 856 163 832 178 816 168 794 179 773 173 762 189 738 187 728 173 707 167 690 151 676 166 656 162 640 175 623 169 600 187 583 167 561 171 546 155 527 160 510 146 492 153 472 145Z M490 168L517 160 551 166 580 178 615 180 640 199 651 226 644 256 626 280 617 312 596 342 578 382 561 412 537 405 523 379 508 355 496 328 478 306 468 281 460 255 467 223Z M659 177L690 169 714 179 724 198 716 223 702 239 684 220 673 198Z M723 191L747 188 765 204 769 225 754 243 738 230Z M783 207L817 217 827 238 807 246 785 227Z M843 247L863 250 872 267 855 274Z M828 367L854 349 887 345 911 351 938 372 955 394 950 422 928 438 898 446 872 439 850 418 823 404Z M971 344L983 349 986 363 980 372 970 365Z M983 374L995 379 996 398 989 405 981 394Z"/>
+  <text class="map-label" x="32" y="480">MAPA ESQUEMÁTICO</text>
+</svg>`;
+function mapPoint(item){return {x:(item.lon+180)/360*100,y:(90-item.lat)/180*100};}
+function renderMap(){
+  const card=$("g-map-card");card.innerHTML=MAP_SVG;
+  mapOptions=[current];
+  for(const city of shuffle(MAPA_CAPITAIS.filter(x=>x!==current))){
+    const p=mapPoint(city);
+    if(mapOptions.every(other=>{const q=mapPoint(other);return Math.hypot((p.x-q.x)*1.6,p.y-q.y)>18;}))mapOptions.push(city);
+    if(mapOptions.length===4)break;
+  }
+  mapOptions=shuffle(mapOptions);
+  mapOptions.forEach((city,i)=>{
+    const point=mapPoint(city),pin=document.createElement("button");
+    pin.type="button";pin.className="map-pin";pin.textContent="ABCD"[i];
+    pin.style.left=Math.max(5,Math.min(95,point.x))+"%";pin.style.top=point.y+"%";
+    pin.setAttribute("aria-label","Ponto "+"ABCD"[i]);
+    pin.addEventListener("click",()=>{
+      if(revealed)return;
+      if(city===current){markCorrect();reveal(false);}
+      else{pin.classList.add("wrong");reveal(true,"Resposta errada");}
+    });
+    card.appendChild(pin);
+  });
+}
+function showMapAnswer(){
+  const card=$("g-map-card"),index=mapOptions.indexOf(current),pin=card.querySelectorAll(".map-pin")[index];
+  card.querySelectorAll(".map-pin").forEach(button=>button.disabled=true);
+  if(!pin)return;
+  pin.classList.add("correct");
+  const label=document.createElement("span"),point=mapPoint(current);
+  label.className="map-pin-name";label.textContent=current.name;
+  label.style.left=Math.max(5,Math.min(95,point.x))+"%";label.style.top=point.y+"%";
+  card.appendChild(label);
+}
+function showMediaCredit(){
+  const box=$("g-image-credit");box.replaceChildren();
+  if(AQ.kind==="map"||AQ.kind==="timeline"||AQ.kind==="match"||AQ.getText)return;
+  if(AQ.kind==="audio"){
+    box.append(document.createTextNode('Áudio: '+current.author+' · '));
+    const license=document.createElement('a');license.href=current.licenseUrl;license.target='_blank';license.rel='noopener noreferrer';license.textContent=current.license;box.append(license);
+    box.append(document.createTextNode(' · '));const file=document.createElement('a');file.href=current.fileUrl;file.target='_blank';file.rel='noopener noreferrer';file.textContent='página do arquivo';box.append(file);
+    box.style.display='';return;
+  }
+  if(currentMedia?.fileUrl){
+    box.append(document.createTextNode("Imagem: "+currentMedia.author+" · "));
+    if(currentMedia.licenseUrl){const license=document.createElement("a");license.href=currentMedia.licenseUrl;license.target="_blank";license.rel="noopener noreferrer";license.textContent=currentMedia.license;box.append(license);}else box.append(document.createTextNode(currentMedia.license));
+    box.append(document.createTextNode(" · "));
+    const link=document.createElement("a");link.href=currentMedia.fileUrl;link.target="_blank";link.rel="noopener noreferrer";link.textContent="página do arquivo";box.append(link);
+  }else if(currentMedia?.src){
+    box.append(document.createTextNode("Bandeira: FlagCDN / Flagpedia · "));
+    const link=document.createElement("a");link.href=currentMedia.src;link.target="_blank";link.rel="noopener noreferrer";link.textContent="abrir imagem";box.append(link);
+  }else if(current?.wiki){
+    const link=document.createElement("a");link.href="https://en.wikipedia.org/wiki/"+encodeURIComponent((Array.isArray(current.wiki)?current.wiki[0]:current.wiki).replace(/ /g,"_"));link.target="_blank";link.rel="noopener noreferrer";link.textContent="Ver artigo de referência";box.append(link);
+  }
+  box.style.display=box.childNodes.length?"":"none";
+}
+function showFallbackClue(){
+  const clue=AQ.getFallbackText?.(current)||current.hint||"Letras: "+current.name.split(/\s+/).map(word=>word[0]+"_".repeat(Math.max(0,word.length-1))).join(" ");
+  $("g-image-card").style.display="none";
+  $("g-text-card").style.display="flex";
+  $("g-text-phrase").textContent=clue;
+  $("g-qlabel").textContent="Descubra pela pista";
+}
+function renderTimeline(){
+  const card=$('g-format-card');card.replaceChildren();
+  const instruction=document.createElement('p');instruction.textContent='Selecione os quatro eventos do mais antigo para o mais recente.';card.append(instruction);
+  const chosen=document.createElement('ol');chosen.className='format-chosen';card.append(chosen);
+  const choices=document.createElement('div');choices.className='format-choices';card.append(choices);
+  const selected=[];
+  shuffle(current.events).forEach(event=>{const button=document.createElement('button');button.type='button';button.textContent=event.label;button.addEventListener('click',()=>{
+    if(revealed)return;selected.push(event);button.disabled=true;const item=document.createElement('li');item.textContent=event.label;chosen.append(item);
+    if(selected.length===4){const correct=selected.every((entry,index)=>entry===current.events[index]);if(correct)markCorrect();reveal(!correct,correct?'':'Ordem incorreta')}
+  });choices.append(button)});
+}
+function renderMatching(){
+  const card=$('g-format-card');card.replaceChildren();
+  const instruction=document.createElement('p');instruction.textContent='Escolha um país e sua capital para formar cada par.';card.append(instruction);
+  const columns=document.createElement('div');columns.className='match-columns';card.append(columns);
+  const countries=document.createElement('div'),capitals=document.createElement('div');columns.append(countries,capitals);
+  let active=null,matched=0,mistakes=0;
+  shuffle(current.pairs).forEach(pair=>{const button=document.createElement('button');button.type='button';button.textContent=pair.country;button.addEventListener('click',()=>{if(revealed||button.disabled)return;countries.querySelectorAll('button').forEach(other=>other.classList.remove('selected'));active=pair;button.classList.add('selected')});countries.append(button)});
+  shuffle(current.pairs).forEach(pair=>{const button=document.createElement('button');button.type='button';button.textContent=pair.capital;button.addEventListener('click',()=>{
+    if(revealed||button.disabled||!active)return;
+    const source=[...countries.querySelectorAll('button')].find(candidate=>candidate.textContent===active.country);
+    if(pair===active){source.disabled=true;button.disabled=true;source.classList.add('matched');button.classList.add('matched');matched++;if(matched===4){if(!mistakes)markCorrect();reveal(Boolean(mistakes),mistakes?'Houve '+mistakes+' tentativa(s) incorreta(s)':'')}}
+    else{mistakes++;button.classList.add('mismatch');setTimeout(()=>button.classList.remove('mismatch'),550)}
+    active=null;countries.querySelectorAll('button').forEach(other=>other.classList.remove('selected'));
+  });capitals.append(button)});
+}
+function showFormatAnswer(){
+  const card=$('g-format-card'),answer=document.createElement('p');answer.className='format-answer';
+  answer.textContent=AQ.kind==='timeline'?'Ordem: '+current.events.map(event=>`${event.year}: ${event.label}`).join(' → '):'Pares: '+current.pairs.map(pair=>`${pair.country} — ${pair.capital}`).join(' · ');
+  card.append(answer);card.querySelectorAll('button').forEach(button=>button.disabled=true);
+}
+$('g-audio-play').addEventListener('click',()=>{$('g-audio').currentTime=0;$('g-audio').play().catch(()=>{$('g-feedback').textContent='Não foi possível carregar o áudio. Tente novamente.'})});
+
 async function nextRound(){
+  if(playMode==='solo'&&(!queue.length||soloLength==='quick'&&round>=10)){finishSession();return;}
   if(!queue.length)queue=shuffle([...AQ.getPool(gameMode,gameCont)]);
-  current=queue.pop();round++;revealed=false;
-  const thisRound=round;
-  loadingRound=round;
+  current=queue.pop();round++;revealed=false;roundCorrect=false;roundStartedAt=Date.now();questionSecondsLeft=playMode==='solo'?45:Number($('time-limit').value);updateTimer();
+  const thisRound=++requestToken;
+  loadingRound=thisRound;
 
   // Reset UI
   const img=$("g-img"),ph=$("g-img-ph"),phIcon=$("g-img-ph-icon"),phLabel=$("g-img-ph-label");
-  const imageCard=$("g-image-card"),textCard=$("g-text-card");
+  const imageCard=$("g-image-card"),textCard=$("g-text-card"),mapCard=$("g-map-card"),formatCard=$('g-format-card'),audioCard=$('g-audio-card');
+  formatCard.style.display='none';audioCard.style.display='none';$('g-audio').pause();$('g-audio').removeAttribute('src');
+  currentMedia=null;$("g-image-credit").style.display="none";
   img.style.display="none";ph.style.display="flex";
   resetImageCardSize();
-  phIcon.textContent="⏳";phLabel.textContent="Carregando...";
+  phIcon.textContent="···";phLabel.textContent="Carregando imagem...";
 
   $("g-round").textContent="Rodada "+round;
-  $("g-qlabel").textContent=AQ.question;
+  $("g-qlabel").textContent=AQ.kind==="map"?"Onde fica "+current.name+"?":AQ.question;
   const hints=AQ.getHints(current),hr=$("g-hint-row");
   if(hints.length){hr.style.display="flex";hr.innerHTML=hints.map(h=>`<span class="g-hint">${h}</span>`).join("");}
   else{hr.style.display="none";hr.innerHTML="";}
@@ -1331,6 +552,18 @@ async function nextRound(){
   $("g-next").style.display="none";$("g-skip").style.display="";
   renderAnswerUI();
 
+  if(AQ.kind==="map"){
+    imageCard.style.display="none";textCard.style.display="none";mapCard.style.display="block";
+    renderMap();loadingRound=-1;return;
+  }
+  mapCard.style.display="none";
+  if(AQ.kind==='timeline'||AQ.kind==='match'){
+    imageCard.style.display='none';textCard.style.display='none';formatCard.style.display='block';
+    if(AQ.kind==='timeline')renderTimeline();else renderMatching();loadingRound=-1;return;
+  }
+  if(AQ.kind==='audio'){
+    imageCard.style.display='none';textCard.style.display='none';audioCard.style.display='flex';$('g-audio').src=current.src;loadingRound=-1;return;
+  }
   // Text-based quiz
   if(AQ.getText){
     imageCard.style.display="none";
@@ -1344,27 +577,32 @@ async function nextRound(){
 
   // Load image async
   try{
-    const src=await AQ.loadImage(current);
+    const loaded=await AQ.loadImage(current);
     if(loadingRound!==thisRound)return; // stale round
+    currentMedia=typeof loaded==="string"?{src:loaded}:loaded;
+    const src=currentMedia?.src;
     if(src){
       img.onload=()=>{if(loadingRound===thisRound){fitImageCard(img);img.style.display="block";ph.style.display="none";}};
-      img.onerror=()=>{if(loadingRound===thisRound){phIcon.textContent="❓";phLabel.textContent="Imagem indisponível";}};
+      img.onerror=()=>{if(loadingRound===thisRound)showFallbackClue();};
       img.src=src;
     } else {
-      phIcon.textContent="❓";phLabel.textContent="Imagem indisponível";
+      showFallbackClue();
     }
   }catch{
-    phIcon.textContent="❓";phLabel.textContent="Erro ao carregar";
+    showFallbackClue();
   }
 }
 
 function reveal(skipped,wrongLabel){
+  if(revealed)return;
   revealed=true;loadingRound=-1;
+  roundResults.push({name:current.name,correct:roundCorrect,seconds:Math.max(0,Math.round((Date.now()-roundStartedAt)/1000))});
   const inp=$("g-input");inp.disabled=true;
   $("g-next").style.display="";$("g-skip").style.display="none";
   if(skipped){
-    inp.value=current.name;inp.className="wrong";
-    $("g-feedback").textContent=(wrongLabel||"Ninguém acertou")+" — era: "+current.name;
+    const isFormat=AQ.kind==='timeline'||AQ.kind==='match';
+    inp.value=isFormat?'':current.name;inp.className="wrong";
+    $("g-feedback").textContent=(wrongLabel||"Ninguém acertou")+(isFormat?' — confira a resposta acima.':' — era: '+current.name);
     $("g-feedback").className="danger";
   }
   if(difficulty==="easy"){
@@ -1374,11 +612,15 @@ function reveal(skipped,wrongLabel){
       if(c.textContent===current.name)c.classList.add("correct");
     });
   }
+  if(AQ.kind==="map")showMapAnswer();
+  else if(AQ.kind==='timeline'||AQ.kind==='match')showFormatAnswer();
+  else showMediaCredit();
 }
 
 function markCorrect(){
+  roundCorrect=true;
   hits++;$("g-hits").textContent=hits+" acerto"+(hits!==1?"s":"");
-  $("g-feedback").textContent="✓ Correto! "+current.name;$("g-feedback").className="success";
+  $("g-feedback").textContent="Correto! "+current.name;$("g-feedback").className="success";
 }
 
 function setDifficulty(mode){
@@ -1390,6 +632,10 @@ function setDifficulty(mode){
 function renderAnswerUI(){
   const inp=$("g-input"),opts=$("g-options"),skip=$("g-skip");
   inp.value="";inp.className="";inp.disabled=false;inp.placeholder=AQ.placeholder;
+  if(AQ.kind==="map"||AQ.kind==='timeline'||AQ.kind==='match'){
+    inp.style.display="none";opts.style.display="none";opts.replaceChildren();skip.style.display="";
+    return;
+  }
   if(difficulty==="easy"){
     inp.style.display="none";opts.style.display="grid";skip.style.display="none";
     opts.innerHTML="";
@@ -1449,10 +695,10 @@ function updateDiffToggle(){
   if(!track)return;
   if(difficulty==="easy"){
     track.className="diff-toggle-track is-easy";
-    if(knob)knob.textContent="🎓";
+    if(knob)knob.textContent="";
   } else {
     track.className="diff-toggle-track is-hard";
-    if(knob)knob.textContent="🎯";
+    if(knob)knob.textContent="";
   }
 }
 
@@ -1475,7 +721,8 @@ function renderPlayers(){
   sorted.forEach((p,i)=>{
     const lead=p.score>0&&p.score===max,init=p.name.trim().split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase();
     const row=document.createElement("div");row.className="p-row"+(lead?" leader":"");
-    row.innerHTML=`<div class="p-avatar">${init}</div><div class="p-info"><div class="p-name">${p.name}</div><div class="p-rank">${lead?"👑 Líder":"#"+(i+1)}</div></div><div class="p-sc"><button class="p-sc-btn" data-id="${p.id}" data-d="-1">−</button><span class="p-score">${p.score}</span><button class="p-sc-btn" data-id="${p.id}" data-d="1">+</button></div><button class="p-del" data-del="${p.id}">✕</button>`;
+    row.innerHTML=`<div class="p-avatar"></div><div class="p-info"><div class="p-name"></div><div class="p-rank">${lead?"Líder":"#"+(i+1)}</div></div><div class="p-sc"><button class="p-sc-btn" data-id="${p.id}" data-d="-1" aria-label="Retirar ponto">−</button><span class="p-score">${p.score}</span><button class="p-sc-btn" data-id="${p.id}" data-d="1" aria-label="Adicionar ponto">+</button></div><button class="p-del" data-del="${p.id}" aria-label="Remover jogador">×</button>`;
+    row.querySelector(".p-avatar").textContent=init;row.querySelector(".p-name").textContent=p.name;
     list.appendChild(row);
   });
 }
@@ -1496,7 +743,7 @@ function buildMode(){
     const cnt=m.id==="copa"?COPA.length:m.id==="continente"?"":AQ.getPool("all").length;
     const badge=cnt!==""?`<span class="m-badge" style="background:${m.bg};border-color:${m.bc};color:${m.fc}">${cnt}</span>`:"";
     const c=document.createElement("div");c.className="m-card"+(pendingMode===m.id?" sel":"")+(m.cls?" "+m.cls:"");c.dataset.mode=m.id;
-    c.innerHTML=`<div class="m-icon" style="background:${m.bg}">${m.icon}</div><div class="m-info"><div class="m-name">${m.label}</div><div class="m-desc">${m.desc}</div></div>${badge}`;
+    c.innerHTML=`<div class="m-icon" aria-hidden="true">${m.id==="all"?"A":m.id==="copa"?"F":"C"}</div><div class="m-info"><div class="m-name">${m.label}</div><div class="m-desc">${m.desc}</div></div>${badge}`;
     c.addEventListener("click",()=>{pendingMode=m.id;buildMode();});mc.appendChild(c);
   });
   $("cont-sec").style.display=pendingMode==="continente"?"block":"none";
@@ -1504,7 +751,7 @@ function buildMode(){
   (AQ.continentes||[]).forEach(c=>{
     const cnt=PAISES.filter(p=>p.cont===c.id).length;
     const cd=document.createElement("div");cd.className="c-card"+(pendingCont===c.id?" sel":"");cd.dataset.cont=c.id;
-    cd.innerHTML=`<span class="c-icon">${c.icon}</span><div><div class="c-name">${c.name}</div><div class="c-count">${cnt} países</div></div>`;
+    cd.innerHTML=`<span class="c-icon" aria-hidden="true">${String(cg.children.length+1).padStart(2,"0")}</span><div><div class="c-name">${c.name}</div><div class="c-count">${cnt} países</div></div>`;
     cd.addEventListener("click",()=>{pendingCont=c.id;buildMode();});cg.appendChild(cd);
   });
 }
@@ -1516,7 +763,7 @@ function updateModePill(){
   const pill=$("g-mode-pill"),names={americas:"Américas",europa:"Europa",africa:"África",asia:"Ásia",oceania:"Oceania",oriente:"Oriente Médio"};
   pill.className="g-pill";
   if(gameMode==="all"){pill.classList.add("mode-all");pill.textContent="Todos";}
-  else if(gameMode==="copa"){pill.classList.add("mode-copa");pill.textContent="Copa 2026";}
+  else if(gameMode==="copa"){pill.classList.add("mode-copa");pill.textContent="Futebol";}
   else{pill.classList.add("mode-cont");pill.textContent=names[gameCont]||gameCont;}
 }
 
@@ -1584,11 +831,11 @@ if("serviceWorker" in navigator){
     modal.className="ios-install-modal";
     modal.innerHTML=`
       <div class="ios-install-card">
-        <h3>📲 Instalar QuizArena</h3>
+        <h3>Instalar QuizArena</h3>
         <p>
-          <div class="ios-step">1️⃣ Toque no ícone de compartilhar <strong>⬆️</strong> na barra do Safari</div>
-          <div class="ios-step">2️⃣ Role e toque em <strong>"Adicionar à Tela de Início"</strong></div>
-          <div class="ios-step">3️⃣ Toque em <strong>"Adicionar"</strong> no canto superior</div>
+          <div class="ios-step">1. Toque em Compartilhar na barra do Safari.</div>
+          <div class="ios-step">2. Escolha <strong>Adicionar à Tela de Início</strong>.</div>
+          <div class="ios-step">3. Confirme em <strong>Adicionar</strong>.</div>
         </p>
         <button id="ios-modal-close">Entendi</button>
       </div>`;
@@ -1602,7 +849,7 @@ if("serviceWorker" in navigator){
     modal.className="ios-install-modal";
     modal.innerHTML=`
       <div class="ios-install-card">
-        <h3>📲 Instalar QuizArena</h3>
+        <h3>Instalar QuizArena</h3>
         <p>
           <div class="ios-step">No menu do navegador (geralmente ⋮ ou ≡, no canto superior), procure por <strong>"Instalar app"</strong> ou <strong>"Adicionar à tela inicial"</strong>.</div>
           <div class="ios-step">Se não encontrar, navegue um pouco pelo site e tente de novo em alguns segundos — alguns navegadores liberam essa opção só após um pouco de uso.</div>

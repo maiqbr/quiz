@@ -1,13 +1,13 @@
 {
   "name": "QuizArena",
   "short_name": "QuizArena",
-  "description": "Quiz multiplayer com perguntas de imagens e curiosidades sobre o mundo",
+  "description": "Quiz para jogar em grupo na mesma tela, com imagens e curiosidades sobre o mundo",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#0f0a1a",
-  "theme_color": "#7c3aed",
+  "background_color": "#160f1d",
+  "theme_color": "#160f1d",
   "icons": [
     {
       "src": "icon-192.png",
