@@ -8,7 +8,7 @@ O modo solo oferece **Rápida (até 10)**, **Casual (até 50)** e **Treino (até
 
 O jogo local é estático. Sirva a raiz com `python -m http.server 8765` e abra `http://localhost:8765`. Execute `node scripts/validate-content.mjs` para validar as 17 coleções. `content.js` contém perguntas, respostas e curadoria de mídia; `visual.css` contém a identidade visual. `category-icons/` e `icon-*.png` contêm os ícones raster originais usados na interface e na PWA. `maps/world-land.js` contém a base pública do mapa.
 
-As coleções atuais têm: bandeiras 139, capitais 83, língua do país 62, línguas do mundo 74, animais 89, arte 37, monumentos 52, pratos 37, instrumentos 39, anime e mangá 75, heróis e vilões 75, mapa 35, linha do tempo 30, associação país/capital 20, ciência e natureza 50, história geral 50 e conhecimentos gerais 80. Os quizzes de animais, arte e monumentos só incluem perguntas com imagem selecionada; os temas textuais usam perguntas escritas, explicações e fontes. O mapa mantém proporção 2:1 em telas diferentes. O quiz de áudio foi removido.
+As coleções atuais têm: bandeiras 139, capitais 83, língua do país 62, línguas do mundo 74, animais 89, arte 37, monumentos 52, pratos 37, instrumentos 39, anime e mangá 75, heróis e vilões 75, mapa 35, linha do tempo 30, associação país/capital 20, ciência e natureza 100, história geral 100 e conhecimentos gerais 80. Os quizzes de animais, arte e monumentos só incluem perguntas com imagem selecionada; os temas textuais usam perguntas escritas, explicações e fontes. O mapa mantém proporção 2:1 em telas diferentes. O quiz de áudio foi removido.
 
 ## Ranking online
 

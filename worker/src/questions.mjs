@@ -18733,6 +18733,959 @@ export const QUESTIONS=[
     "source": "https://oceanservice.noaa.gov/facts/oceandepth.html"
   },
   {
+    "id": "v2:93e9d58a4ccc7edc81c6",
+    "quiz": "ciencias",
+    "text": "Qual pequeno corpo do Sistema Solar costuma formar uma cauda ao se aproximar do Sol?",
+    "options": [
+      "Asteroide",
+      "Planeta anão",
+      "Cometa",
+      "Satélite artificial"
+    ],
+    "correct": 2,
+    "aliases": [
+      "cometa"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O calor solar libera gás e poeira dos cometas, formando a coma e as caudas.",
+    "source": "https://science.nasa.gov/solar-system/comets/facts/"
+  },
+  {
+    "id": "v2:342f316d4d856189a92c",
+    "quiz": "ciencias",
+    "text": "De que materiais são compostos principalmente os núcleos dos cometas?",
+    "options": [
+      "Ferro líquido e areia",
+      "Lava e basalto",
+      "Plasma e fumaça",
+      "Gelo e poeira"
+    ],
+    "correct": 3,
+    "aliases": [
+      "gelo e poeira"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Os núcleos cometários contêm gelo, poeira e material rochoso.",
+    "source": "https://science.nasa.gov/solar-system/comets/facts/"
+  },
+  {
+    "id": "v2:b45e7a22cb37b890a7aa",
+    "quiz": "ciencias",
+    "text": "Qual astro fica entre a Terra e o Sol durante um eclipse solar?",
+    "options": [
+      "Lua",
+      "Marte",
+      "Vênus",
+      "Júpiter"
+    ],
+    "correct": 0,
+    "aliases": [
+      "lua"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Lua pode bloquear a luz solar vista de uma faixa da Terra.",
+    "source": "https://science.nasa.gov/moon/eclipses/"
+  },
+  {
+    "id": "v2:bd3d3d9118a273bf5b37",
+    "quiz": "ciencias",
+    "text": "Qual astro fica entre o Sol e a Lua durante um eclipse lunar?",
+    "options": [
+      "Mercúrio",
+      "Terra",
+      "Vênus",
+      "Marte"
+    ],
+    "correct": 1,
+    "aliases": [
+      "terra"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A sombra da Terra atinge a Lua durante o eclipse lunar.",
+    "source": "https://science.nasa.gov/moon/eclipses/"
+  },
+  {
+    "id": "v2:b707c9bba28d2727036b",
+    "quiz": "ciencias",
+    "text": "Como se chama a atmosfera externa do Sol, visível em eclipses solares totais?",
+    "options": [
+      "Núcleo solar",
+      "Fotosfera",
+      "Coroa solar",
+      "Manto solar"
+    ],
+    "correct": 2,
+    "aliases": [
+      "coroa solar"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A coroa é a camada mais externa da atmosfera solar.",
+    "source": "https://science.nasa.gov/sun/facts/"
+  },
+  {
+    "id": "v2:afdb73736c0164497315",
+    "quiz": "ciencias",
+    "text": "Qual planeta tem o eixo de rotação tão inclinado que parece girar de lado?",
+    "options": [
+      "Terra",
+      "Júpiter",
+      "Mercúrio",
+      "Urano"
+    ],
+    "correct": 3,
+    "aliases": [
+      "urano"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Urano possui uma inclinação axial extrema em relação ao plano de sua órbita.",
+    "source": "https://science.nasa.gov/solar-system/planets/"
+  },
+  {
+    "id": "v2:3a7d17aeadb48be2bc3b",
+    "quiz": "ciencias",
+    "text": "Qual grande lua de Saturno tem uma atmosfera densa?",
+    "options": [
+      "Titã",
+      "Europa",
+      "Fobos",
+      "Io"
+    ],
+    "correct": 0,
+    "aliases": [
+      "titã"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Titã é a maior lua de Saturno e possui atmosfera espessa.",
+    "source": "https://science.nasa.gov/solar-system/moons/facts/"
+  },
+  {
+    "id": "v2:eb16ef82f91d02b6c7f6",
+    "quiz": "ciencias",
+    "text": "Qual lua de Júpiter possui um oceano sob sua crosta de gelo?",
+    "options": [
+      "Deimos",
+      "Europa",
+      "Mimas",
+      "Tritão"
+    ],
+    "correct": 1,
+    "aliases": [
+      "europa"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A evidência de um oceano sob o gelo faz de Europa um alvo de estudo.",
+    "source": "https://science.nasa.gov/solar-system/moons/facts/"
+  },
+  {
+    "id": "v2:e27eeef321b83155f352",
+    "quiz": "ciencias",
+    "text": "Como são chamados Mercúrio, Vênus, Terra e Marte por terem superfícies sólidas?",
+    "options": [
+      "Gigantes gasosos",
+      "Planetas anões",
+      "Planetas rochosos",
+      "Cometas"
+    ],
+    "correct": 2,
+    "aliases": [
+      "planetas rochosos"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Os quatro planetas internos são terrestres ou rochosos.",
+    "source": "https://science.nasa.gov/solar-system/solar-system-facts/"
+  },
+  {
+    "id": "v2:589e40bf30cc504b365e",
+    "quiz": "ciencias",
+    "text": "Qual corpo rochoso menor que um planeta orbita o Sol, com muitos exemplos entre Marte e Júpiter?",
+    "options": [
+      "Satélite artificial",
+      "Estrela",
+      "Nebulosa",
+      "Asteroide"
+    ],
+    "correct": 3,
+    "aliases": [
+      "asteroide"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O cinturão principal reúne inúmeros asteroides.",
+    "source": "https://science.nasa.gov/solar-system/solar-system-facts/"
+  },
+  {
+    "id": "v2:4c08c0e098504f60d29f",
+    "quiz": "ciencias",
+    "text": "Em qual camada mais baixa da atmosfera ocorre a maior parte do tempo meteorológico?",
+    "options": [
+      "Troposfera",
+      "Exosfera",
+      "Termosfera",
+      "Mesosfera"
+    ],
+    "correct": 0,
+    "aliases": [
+      "troposfera"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Nuvens e fenômenos meteorológicos se concentram na troposfera.",
+    "source": "https://www.nasa.gov/general/what-is-earths-atmosphere/"
+  },
+  {
+    "id": "v2:07a1ef99b5dcd9363ffb",
+    "quiz": "ciencias",
+    "text": "Em qual camada da atmosfera se encontra a maior parte da camada de ozônio?",
+    "options": [
+      "Troposfera",
+      "Estratosfera",
+      "Exosfera",
+      "Mesosfera"
+    ],
+    "correct": 1,
+    "aliases": [
+      "estratosfera"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A estratosfera contém a região de maior concentração de ozônio.",
+    "source": "https://www.nasa.gov/general/what-is-earths-atmosphere/"
+  },
+  {
+    "id": "v2:9249c7d9e23371e8b803",
+    "quiz": "ciencias",
+    "text": "Qual gás da estratosfera absorve grande parte da radiação ultravioleta solar?",
+    "options": [
+      "Hélio",
+      "Nitrogênio",
+      "Ozônio",
+      "Argônio"
+    ],
+    "correct": 2,
+    "aliases": [
+      "ozônio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O ozônio estratosférico ajuda a proteger a superfície da radiação UV.",
+    "source": "https://www.nasa.gov/general/what-is-earths-atmosphere/"
+  },
+  {
+    "id": "v2:d169b8eb81eb0f1b6ddb",
+    "quiz": "ciencias",
+    "text": "Qual camada atmosférica fica acima da estratosfera e abaixo da termosfera?",
+    "options": [
+      "Troposfera",
+      "Exosfera",
+      "Litosfera",
+      "Mesosfera"
+    ],
+    "correct": 3,
+    "aliases": [
+      "mesosfera"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A mesosfera ocupa a região intermediária entre estratosfera e termosfera.",
+    "source": "https://www.nasa.gov/general/what-is-earths-atmosphere/"
+  },
+  {
+    "id": "v2:da16b917f3cf7a289e02",
+    "quiz": "ciencias",
+    "text": "Qual é a camada mais externa da atmosfera terrestre?",
+    "options": [
+      "Exosfera",
+      "Troposfera",
+      "Estratosfera",
+      "Mesosfera"
+    ],
+    "correct": 0,
+    "aliases": [
+      "exosfera"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A exosfera é a transição gradual da atmosfera para o espaço.",
+    "source": "https://www.nasa.gov/general/what-is-earths-atmosphere/"
+  },
+  {
+    "id": "v2:dd56e96d53251308effd",
+    "quiz": "ciencias",
+    "text": "Como se chama a camada rígida formada pela crosta e pela parte superior do manto?",
+    "options": [
+      "Hidrosfera",
+      "Litosfera",
+      "Atmosfera",
+      "Núcleo externo"
+    ],
+    "correct": 1,
+    "aliases": [
+      "litosfera"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A litosfera está dividida em placas tectônicas.",
+    "source": "https://science.nasa.gov/earth/facts/"
+  },
+  {
+    "id": "v2:cd5fe7285e1e65f3da57",
+    "quiz": "ciencias",
+    "text": "Aproximadamente que parte da superfície terrestre é coberta por oceanos?",
+    "options": [
+      "Cerca de 10%",
+      "Cerca de 35%",
+      "Cerca de 71%",
+      "Cerca de 95%"
+    ],
+    "correct": 2,
+    "aliases": [
+      "cerca de 71%",
+      "71%"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Os oceanos cobrem aproximadamente 71% da superfície da Terra.",
+    "source": "https://science.nasa.gov/earth/facts/"
+  },
+  {
+    "id": "v2:a3d31560c77ac401b36a",
+    "quiz": "ciencias",
+    "text": "Aproximadamente que parte da água da Terra está nos oceanos?",
+    "options": [
+      "Cerca de 3%",
+      "Cerca de 25%",
+      "Cerca de 50%",
+      "Cerca de 97%"
+    ],
+    "correct": 3,
+    "aliases": [
+      "cerca de 97%",
+      "97%"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Os oceanos contêm por volta de 97% da água terrestre.",
+    "source": "https://science.nasa.gov/earth/facts/"
+  },
+  {
+    "id": "v2:34a4ef594931d03f5e3f",
+    "quiz": "ciencias",
+    "text": "Que tipo de rocha se forma pelo resfriamento de material fundido?",
+    "options": [
+      "Rocha ígnea",
+      "Rocha sedimentar",
+      "Rocha metamórfica",
+      "Rocha orgânica"
+    ],
+    "correct": 0,
+    "aliases": [
+      "rocha ígnea"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Rochas ígneas se formam quando magma ou lava esfria e solidifica.",
+    "source": "https://pubs.usgs.gov/bul/2195/b2195.pdf"
+  },
+  {
+    "id": "v2:63aa1da813c70e708bb6",
+    "quiz": "ciencias",
+    "text": "Que tipo de rocha pode se formar pela compactação e cimentação de sedimentos?",
+    "options": [
+      "Rocha ígnea",
+      "Rocha sedimentar",
+      "Rocha metamórfica",
+      "Rocha magmática"
+    ],
+    "correct": 1,
+    "aliases": [
+      "rocha sedimentar"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A deposição e a litificação de sedimentos formam rochas sedimentares.",
+    "source": "https://pubs.usgs.gov/bul/2195/b2195.pdf"
+  },
+  {
+    "id": "v2:2abdc42acfa63875d390",
+    "quiz": "ciencias",
+    "text": "Que tipo de rocha resulta da transformação de outra rocha por calor e pressão?",
+    "options": [
+      "Rocha ígnea",
+      "Rocha sedimentar",
+      "Rocha metamórfica",
+      "Magma"
+    ],
+    "correct": 2,
+    "aliases": [
+      "rocha metamórfica"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Metamorfismo altera a rocha original sem fundi-la completamente.",
+    "source": "https://pubs.usgs.gov/bul/2195/b2195.pdf"
+  },
+  {
+    "id": "v2:1a7b4a78a99c79a7e49f",
+    "quiz": "ciencias",
+    "text": "Como se chama a rocha fundida enquanto ainda está abaixo da superfície terrestre?",
+    "options": [
+      "Lava",
+      "Granito",
+      "Sedimento",
+      "Magma"
+    ],
+    "correct": 3,
+    "aliases": [
+      "magma"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Magma é o material rochoso fundido no interior da Terra.",
+    "source": "https://pubs.usgs.gov/bul/2195/b2195.pdf"
+  },
+  {
+    "id": "v2:ce6af74ecb70bc23937c",
+    "quiz": "ciencias",
+    "text": "Como se chama o material rochoso fundido depois que chega à superfície?",
+    "options": [
+      "Lava",
+      "Magma",
+      "Quartzo",
+      "Calcário"
+    ],
+    "correct": 0,
+    "aliases": [
+      "lava"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Quando o magma alcança a superfície, recebe o nome de lava.",
+    "source": "https://pubs.usgs.gov/bul/2195/b2195.pdf"
+  },
+  {
+    "id": "v2:38ee693dc9c6c9718ad9",
+    "quiz": "ciencias",
+    "text": "Como se chama o ponto da superfície diretamente acima da origem de um terremoto?",
+    "options": [
+      "Hipocentro",
+      "Epicentro",
+      "Manto",
+      "Cratera"
+    ],
+    "correct": 1,
+    "aliases": [
+      "epicentro"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O epicentro fica na superfície, acima do hipocentro.",
+    "source": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+  },
+  {
+    "id": "v2:07ef8eaf50e5cd0b8b77",
+    "quiz": "ciencias",
+    "text": "Como se chama o ponto no interior da Terra onde um terremoto começa?",
+    "options": [
+      "Epicentro",
+      "Equador",
+      "Hipocentro",
+      "Meridiano"
+    ],
+    "correct": 2,
+    "aliases": [
+      "hipocentro"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O hipocentro é a origem subterrânea da ruptura sísmica.",
+    "source": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+  },
+  {
+    "id": "v2:c2b2f509dd68994d5998",
+    "quiz": "ciencias",
+    "text": "Qual grandeza indica a concentração de sais dissolvidos na água do mar?",
+    "options": [
+      "Altitude",
+      "Luminosidade",
+      "Pressão atmosférica",
+      "Salinidade"
+    ],
+    "correct": 3,
+    "aliases": [
+      "salinidade"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A salinidade mede a quantidade de sais dissolvidos na água.",
+    "source": "https://oceanexplorer.noaa.gov/ocean-fact/currents/"
+  },
+  {
+    "id": "v2:bbe4eb516700f4b4a346",
+    "quiz": "ciencias",
+    "text": "Como se chama a região costeira onde água de rio se mistura à do mar?",
+    "options": [
+      "Estuário",
+      "Deserto",
+      "Geleira",
+      "Cânion"
+    ],
+    "correct": 0,
+    "aliases": [
+      "estuário"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Estuários misturam água doce dos rios e água salgada oceânica.",
+    "source": "https://oceanservice.noaa.gov/facts/estuary.html"
+  },
+  {
+    "id": "v2:8266150f2d154181a443",
+    "quiz": "ciencias",
+    "text": "Qual processo leva águas profundas, geralmente ricas em nutrientes, à superfície oceânica?",
+    "options": [
+      "Evaporação",
+      "Ressurgência",
+      "Sedimentação",
+      "Condensação"
+    ],
+    "correct": 1,
+    "aliases": [
+      "ressurgência"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Ventos e circulação oceânica podem trazer águas profundas à superfície.",
+    "source": "https://oceanexplorer.noaa.gov/ocean-fact/currents/"
+  },
+  {
+    "id": "v2:5596226d820c41016ed2",
+    "quiz": "ciencias",
+    "text": "Qual agente impulsiona principalmente as correntes oceânicas de superfície?",
+    "options": [
+      "Luz das estrelas",
+      "Magnetismo lunar",
+      "Vento",
+      "Atividade vulcânica"
+    ],
+    "correct": 2,
+    "aliases": [
+      "vento"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Os ventos globais são uma força importante das correntes superficiais.",
+    "source": "https://oceanexplorer.noaa.gov/ocean-fact/currents/"
+  },
+  {
+    "id": "v2:897a3882c6a84547eb94",
+    "quiz": "ciencias",
+    "text": "Como se chama a perda de algas simbióticas pelos corais sob estresse térmico?",
+    "options": [
+      "Maré vermelha",
+      "Erosão costeira",
+      "Ressurgência",
+      "Branqueamento de corais"
+    ],
+    "correct": 3,
+    "aliases": [
+      "branqueamento de corais"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O calor pode levar corais a expulsar algas simbióticas e perder a cor.",
+    "source": "https://oceanservice.noaa.gov/facts/coral_bleach.html"
+  },
+  {
+    "id": "v2:83fe136d5fa37eea2edf",
+    "quiz": "ciencias",
+    "text": "Como se chama um segmento de DNA que contém instruções para produzir um produto funcional?",
+    "options": [
+      "Gene",
+      "Célula",
+      "Cromossomo inteiro",
+      "Tecido"
+    ],
+    "correct": 0,
+    "aliases": [
+      "gene"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Genes são trechos de DNA com informações para produtos funcionais.",
+    "source": "https://www.genome.gov/genetics-glossary"
+  },
+  {
+    "id": "v2:6cd3f622e7f34c257b75",
+    "quiz": "ciencias",
+    "text": "Como se chama uma das variantes de um mesmo gene?",
+    "options": [
+      "Ribossomo",
+      "Alelo",
+      "Proteína",
+      "Célula"
+    ],
+    "correct": 1,
+    "aliases": [
+      "alelo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Alelos são versões alternativas de um gene.",
+    "source": "https://www.genome.gov/genetics-glossary/Allele"
+  },
+  {
+    "id": "v2:67f5d6a7732c539ca2ec",
+    "quiz": "ciencias",
+    "text": "Qual molécula usa uracila no lugar da timina e participa da expressão gênica?",
+    "options": [
+      "DNA",
+      "ATP",
+      "RNA",
+      "Glicose"
+    ],
+    "correct": 2,
+    "aliases": [
+      "rna"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O RNA utiliza uracila e exerce diferentes funções na célula.",
+    "source": "https://www.genome.gov/genetics-glossary/Ribonucleic-Acid-RNA"
+  },
+  {
+    "id": "v2:73802575aa566f92eb58",
+    "quiz": "ciencias",
+    "text": "Qual tipo de RNA leva a informação para a produção de proteínas?",
+    "options": [
+      "RNA transportador",
+      "DNA mitocondrial",
+      "ATP",
+      "RNA mensageiro"
+    ],
+    "correct": 3,
+    "aliases": [
+      "rna mensageiro",
+      "mRNA"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O RNA mensageiro carrega a sequência que será traduzida pelo ribossomo.",
+    "source": "https://www.genome.gov/genetics-glossary"
+  },
+  {
+    "id": "v2:756cd64741ec6f0c5eb1",
+    "quiz": "ciencias",
+    "text": "Que tipo de molécula é formado por cadeias de aminoácidos?",
+    "options": [
+      "Proteína",
+      "Carboidrato",
+      "Lipídio",
+      "Ácido nucleico"
+    ],
+    "correct": 0,
+    "aliases": [
+      "proteína"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Proteínas são cadeias de aminoácidos dobradas em estruturas funcionais.",
+    "source": "https://www.genome.gov/genetics-glossary"
+  },
+  {
+    "id": "v2:9b90d91c386acb6279b5",
+    "quiz": "ciencias",
+    "text": "Qual é a unidade que se encadeia para formar uma proteína?",
+    "options": [
+      "Nucleotídeo",
+      "Aminoácido",
+      "Ácido graxo",
+      "Glicose"
+    ],
+    "correct": 1,
+    "aliases": [
+      "aminoácido"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A sequência de aminoácidos compõe a cadeia de uma proteína.",
+    "source": "https://www.genome.gov/genetics-glossary"
+  },
+  {
+    "id": "v2:98c6bef1d561cee09149",
+    "quiz": "ciencias",
+    "text": "Como se chama uma alteração na sequência do DNA?",
+    "options": [
+      "Digestão",
+      "Tradução",
+      "Mutação",
+      "Respiração"
+    ],
+    "correct": 2,
+    "aliases": [
+      "mutação"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Uma mutação é uma mudança na sequência genética.",
+    "source": "https://www.genome.gov/genetics-glossary/Mutation"
+  },
+  {
+    "id": "v2:9b5398d8228a83ebd7f6",
+    "quiz": "ciencias",
+    "text": "Como se chama o pareamento entre bases complementares nas duas fitas de DNA?",
+    "options": [
+      "Aminoácido",
+      "Cromossomo",
+      "Organela",
+      "Par de bases"
+    ],
+    "correct": 3,
+    "aliases": [
+      "par de bases"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Adenina se pareia com timina, e citosina com guanina.",
+    "source": "https://www.genome.gov/genetics-glossary/Base-Pair"
+  },
+  {
+    "id": "v2:e49ba28155e9b7f61199",
+    "quiz": "ciencias",
+    "text": "Qual unidade contém açúcar, fosfato e base nitrogenada em uma fita de DNA?",
+    "options": [
+      "Nucleotídeo",
+      "Aminoácido",
+      "Proteína",
+      "Lipídio"
+    ],
+    "correct": 0,
+    "aliases": [
+      "nucleotídeo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Nucleotídeos são as unidades que formam os ácidos nucleicos.",
+    "source": "https://www.genome.gov/genetics-glossary/Base-Pair"
+  },
+  {
+    "id": "v2:8d29ad404728fe195cf3",
+    "quiz": "ciencias",
+    "text": "Qual divisão celular produz gametas com metade do número de cromossomos?",
+    "options": [
+      "Mitose",
+      "Meiose",
+      "Fissão binária",
+      "Brotamento"
+    ],
+    "correct": 1,
+    "aliases": [
+      "meiose"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A meiose reduz o número de cromossomos na formação de gametas.",
+    "source": "https://www.genome.gov/genetics-glossary/Meiosis"
+  },
+  {
+    "id": "v2:d26a2725a12fbf2b735b",
+    "quiz": "ciencias",
+    "text": "Qual é a unidade básica de corrente elétrica no Sistema Internacional?",
+    "options": [
+      "Volt",
+      "Ohm",
+      "Ampere",
+      "Watt"
+    ],
+    "correct": 2,
+    "aliases": [
+      "ampere"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O ampere é a unidade básica de corrente elétrica do SI.",
+    "source": "https://www.nist.gov/si-redefinition/definitions-si-base-units"
+  },
+  {
+    "id": "v2:e9c06e19e927e109cf74",
+    "quiz": "ciencias",
+    "text": "Qual é a unidade básica de temperatura termodinâmica no Sistema Internacional?",
+    "options": [
+      "Celsius",
+      "Fahrenheit",
+      "Joule",
+      "Kelvin"
+    ],
+    "correct": 3,
+    "aliases": [
+      "kelvin"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O kelvin é a unidade básica de temperatura termodinâmica do SI.",
+    "source": "https://www.nist.gov/si-redefinition/definitions-si-base-units"
+  },
+  {
+    "id": "v2:570cf02188ca5d42c572",
+    "quiz": "ciencias",
+    "text": "Qual é a unidade básica de quantidade de matéria no Sistema Internacional?",
+    "options": [
+      "Mol",
+      "Grama",
+      "Litro",
+      "Newton"
+    ],
+    "correct": 0,
+    "aliases": [
+      "mol"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O mol é a unidade usada para contar entidades elementares.",
+    "source": "https://www.nist.gov/si-redefinition/definitions-si-base-units"
+  },
+  {
+    "id": "v2:d10f8f3cddf2d8944cd0",
+    "quiz": "ciencias",
+    "text": "Qual é a unidade básica de intensidade luminosa no Sistema Internacional?",
+    "options": [
+      "Lúmen",
+      "Candela",
+      "Lux",
+      "Watt"
+    ],
+    "correct": 1,
+    "aliases": [
+      "candela"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A candela é a unidade básica de intensidade luminosa do SI.",
+    "source": "https://www.nist.gov/si-redefinition/definitions-si-base-units"
+  },
+  {
+    "id": "v2:35f3da75dfba5cd46da6",
+    "quiz": "ciencias",
+    "text": "Qual unidade mede frequência em ciclos por segundo?",
+    "options": [
+      "Joule",
+      "Pascal",
+      "Hertz",
+      "Tesla"
+    ],
+    "correct": 2,
+    "aliases": [
+      "hertz"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Um hertz corresponde a um ciclo por segundo.",
+    "source": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2"
+  },
+  {
+    "id": "v2:9798c0f844c7efcb0a06",
+    "quiz": "ciencias",
+    "text": "Qual unidade do Sistema Internacional mede energia?",
+    "options": [
+      "Newton",
+      "Ampere",
+      "Kelvin",
+      "Joule"
+    ],
+    "correct": 3,
+    "aliases": [
+      "joule"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O joule é a unidade derivada de energia no SI.",
+    "source": "https://www.nist.gov/pml/special-publication-330/sp-330-section-2"
+  },
+  {
+    "id": "v2:4de4c1bd2f315e703821",
+    "quiz": "ciencias",
+    "text": "Qual elemento químico tem símbolo Na?",
+    "options": [
+      "Sódio",
+      "Nitrogênio",
+      "Enxofre",
+      "Silício"
+    ],
+    "correct": 0,
+    "aliases": [
+      "sódio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Na é o símbolo químico do sódio.",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/periodic-table/pdf/Periodic_Table_of_Elements_w_Atomic_Mass_PubChem.pdf"
+  },
+  {
+    "id": "v2:7727d43521b723981324",
+    "quiz": "ciencias",
+    "text": "Qual elemento químico tem símbolo Fe?",
+    "options": [
+      "Flúor",
+      "Ferro",
+      "Fósforo",
+      "Frâncio"
+    ],
+    "correct": 1,
+    "aliases": [
+      "ferro"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Fe é o símbolo químico do ferro.",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/periodic-table/pdf/Periodic_Table_of_Elements_w_Atomic_Mass_PubChem.pdf"
+  },
+  {
+    "id": "v2:eb9c048dd590ae4fff79",
+    "quiz": "ciencias",
+    "text": "Qual elemento químico tem símbolo Au?",
+    "options": [
+      "Prata",
+      "Alumínio",
+      "Ouro",
+      "Argônio"
+    ],
+    "correct": 2,
+    "aliases": [
+      "ouro"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Au é o símbolo químico do ouro.",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/periodic-table/pdf/Periodic_Table_of_Elements_w_Atomic_Mass_PubChem.pdf"
+  },
+  {
+    "id": "v2:facb88eace25aee97b95",
+    "quiz": "ciencias",
+    "text": "Qual escala expressa a acidez ou basicidade de uma solução aquosa?",
+    "options": [
+      "Escala Richter",
+      "Escala Beaufort",
+      "Escala Celsius",
+      "pH"
+    ],
+    "correct": 3,
+    "aliases": [
+      "ph"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O pH indica o caráter ácido ou básico de uma solução.",
+    "source": "https://www.usgs.gov/special-topics/water-science-school/science/ph-and-water"
+  },
+  {
     "id": "v2:008c83135992895758ee",
     "quiz": "historia-geral",
     "text": "Em qual civilização antiga foram construídas as pirâmides de Gizé?",
@@ -19691,6 +20644,962 @@ export const QUESTIONS=[
     "clue": null,
     "explanation": "A princesa Isabel assinou a Lei Áurea como regente.",
     "source": "https://www.planalto.gov.br/ccivil_03/leis/lim/lim3353.htm"
+  },
+  {
+    "id": "v2:af15d5a21f006b6bc4f1",
+    "quiz": "historia-geral",
+    "text": "Qual cidade fundada por fenícios foi grande rival de Roma nas Guerras Púnicas?",
+    "options": [
+      "Atenas",
+      "Babilônia",
+      "Cartago",
+      "Persépolis"
+    ],
+    "correct": 2,
+    "aliases": [
+      "cartago"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Cartago foi uma potência comercial mediterrânea e rivalizou com Roma.",
+    "source": "https://whc.unesco.org/en/list/37/"
+  },
+  {
+    "id": "v2:3e6aa5e972240b52fb07",
+    "quiz": "historia-geral",
+    "text": "Qual povo fundou Cartago na costa do atual território da Tunísia?",
+    "options": [
+      "Incas",
+      "Romanos",
+      "Persas",
+      "Fenícios"
+    ],
+    "correct": 3,
+    "aliases": [
+      "fenícios"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Fenícios fundaram Cartago, que depois desenvolveu sua própria civilização púnica.",
+    "source": "https://whc.unesco.org/en/list/37/"
+  },
+  {
+    "id": "v2:8ef05805bca11d5e1fb3",
+    "quiz": "historia-geral",
+    "text": "Como são chamados os conflitos entre Roma e Cartago?",
+    "options": [
+      "Guerras Púnicas",
+      "Guerras Médicas",
+      "Cruzadas",
+      "Guerras Napoleônicas"
+    ],
+    "correct": 0,
+    "aliases": [
+      "guerras púnicas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As Guerras Púnicas opuseram Roma e Cartago.",
+    "source": "https://whc.unesco.org/en/list/37/"
+  },
+  {
+    "id": "v2:b926c15d40f8463f9b04",
+    "quiz": "historia-geral",
+    "text": "Em qual país atual ficam as ruínas da antiga Cartago?",
+    "options": [
+      "Egito",
+      "Tunísia",
+      "Marrocos",
+      "Grécia"
+    ],
+    "correct": 1,
+    "aliases": [
+      "tunísia"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O sítio arqueológico de Cartago fica na Tunísia.",
+    "source": "https://whc.unesco.org/en/list/37/"
+  },
+  {
+    "id": "v2:8410972a75c7a51471fc",
+    "quiz": "historia-geral",
+    "text": "Qual grande monumento budista dos séculos VIII e IX fica na ilha de Java?",
+    "options": [
+      "Angkor Wat",
+      "Partenon",
+      "Borobudur",
+      "Coliseu"
+    ],
+    "correct": 2,
+    "aliases": [
+      "borobudur"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Borobudur é um conjunto de templos budistas em Java.",
+    "source": "https://whc.unesco.org/en/list/592"
+  },
+  {
+    "id": "v2:f58841971852c765f318",
+    "quiz": "historia-geral",
+    "text": "Em qual país fica o templo histórico de Borobudur?",
+    "options": [
+      "Camboja",
+      "Tailândia",
+      "Índia",
+      "Indonésia"
+    ],
+    "correct": 3,
+    "aliases": [
+      "indonésia"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Borobudur fica na ilha de Java, na Indonésia.",
+    "source": "https://whc.unesco.org/en/list/592"
+  },
+  {
+    "id": "v2:2f854f70fae370843625",
+    "quiz": "historia-geral",
+    "text": "Qual antiga cidade etíope é conhecida por estelas e tumbas reais?",
+    "options": [
+      "Aksum",
+      "Cartago",
+      "Petra",
+      "Timbuktu"
+    ],
+    "correct": 0,
+    "aliases": [
+      "aksum"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Aksum foi um centro de uma importante civilização do nordeste da África.",
+    "source": "https://whc.unesco.org/en/list/15"
+  },
+  {
+    "id": "v2:ddeac5eee58f4063b973",
+    "quiz": "historia-geral",
+    "text": "Em qual país ficam as ruínas da antiga cidade de Aksum?",
+    "options": [
+      "Quênia",
+      "Etiópia",
+      "Sudão",
+      "Egito"
+    ],
+    "correct": 1,
+    "aliases": [
+      "etiópia"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O sítio de Aksum fica no norte da Etiópia.",
+    "source": "https://whc.unesco.org/en/list/15"
+  },
+  {
+    "id": "v2:4adfb70eeb885639d927",
+    "quiz": "historia-geral",
+    "text": "Qual cidade histórica da África Austral é famosa por grandes construções de pedra?",
+    "options": [
+      "Cartago",
+      "Aksum",
+      "Grande Zimbábue",
+      "Petra"
+    ],
+    "correct": 2,
+    "aliases": [
+      "grande zimbábue"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Grande Zimbábue conserva importantes estruturas de pedra.",
+    "source": "https://whc.unesco.org/en/list/364"
+  },
+  {
+    "id": "v2:8f8869a1cb983c15b998",
+    "quiz": "historia-geral",
+    "text": "Como são chamadas as esculturas monumentais da cultura Rapa Nui?",
+    "options": [
+      "Estelas",
+      "Obeliscos",
+      "Totens",
+      "Moai"
+    ],
+    "correct": 3,
+    "aliases": [
+      "moai"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Os moai são grandes esculturas associadas aos ancestrais Rapa Nui.",
+    "source": "https://whc.unesco.org/en/list/715"
+  },
+  {
+    "id": "v2:fe498654192ecf66755f",
+    "quiz": "historia-geral",
+    "text": "Qual é o nome indígena da Ilha de Páscoa?",
+    "options": [
+      "Rapa Nui",
+      "Java",
+      "Bali",
+      "Madagascar"
+    ],
+    "correct": 0,
+    "aliases": [
+      "rapa nui"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Rapa Nui é o nome indígena da ilha famosa pelos moai.",
+    "source": "https://whc.unesco.org/en/list/715"
+  },
+  {
+    "id": "v2:9ad3b27f4456d0f1db7d",
+    "quiz": "historia-geral",
+    "text": "Qual conjunto de soldados de argila foi colocado junto ao mausoléu do primeiro imperador Qin?",
+    "options": [
+      "Moai",
+      "Exército de terracota",
+      "Esfinges",
+      "Estelas de Aksum"
+    ],
+    "correct": 1,
+    "aliases": [
+      "exército de terracota"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As figuras de terracota integram o complexo funerário de Qin Shi Huang.",
+    "source": "https://whc.unesco.org/en/list/441"
+  },
+  {
+    "id": "v2:d7b9ddbb42f57e0a0f39",
+    "quiz": "historia-geral",
+    "text": "Qual imperador chinês está associado ao exército de terracota?",
+    "options": [
+      "Kublai Khan",
+      "Yongle",
+      "Qin Shi Huang",
+      "Hongwu"
+    ],
+    "correct": 2,
+    "aliases": [
+      "qin shi huang"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O exército de terracota foi criado para o mausoléu do primeiro imperador Qin.",
+    "source": "https://whc.unesco.org/en/list/441"
+  },
+  {
+    "id": "v2:fe651610ebee05a09716",
+    "quiz": "historia-geral",
+    "text": "Qual cidade histórica do Mali foi um importante centro de estudos islâmicos?",
+    "options": [
+      "Aksum",
+      "Cartago",
+      "Alexandria",
+      "Timbuktu"
+    ],
+    "correct": 3,
+    "aliases": [
+      "timbuktu"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Timbuktu preserva mesquitas e uma tradição histórica de estudos.",
+    "source": "https://whc.unesco.org/en/list/119/"
+  },
+  {
+    "id": "v2:8527955b8de7caafc2f4",
+    "quiz": "historia-geral",
+    "text": "Em qual país atual fica a cidade histórica de Timbuktu?",
+    "options": [
+      "Mali",
+      "Níger",
+      "Chade",
+      "Etiópia"
+    ],
+    "correct": 0,
+    "aliases": [
+      "mali"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Timbuktu fica no território do Mali.",
+    "source": "https://whc.unesco.org/en/list/119/"
+  },
+  {
+    "id": "v2:f49baf2f52c94af6f654",
+    "quiz": "historia-geral",
+    "text": "Qual cidade do Egito conserva bairros históricos de arquitetura fatímida?",
+    "options": [
+      "Alexandria",
+      "Cairo",
+      "Luxor",
+      "Aswan"
+    ],
+    "correct": 1,
+    "aliases": [
+      "cairo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Cairo histórico reúne monumentos e traçado urbano de diferentes épocas islâmicas.",
+    "source": "https://whc.unesco.org/en/list/89"
+  },
+  {
+    "id": "v2:549b275991f5a92ddd8d",
+    "quiz": "historia-geral",
+    "text": "Em qual país fica a cidade histórica do Cairo?",
+    "options": [
+      "Tunísia",
+      "Jordânia",
+      "Egito",
+      "Marrocos"
+    ],
+    "correct": 2,
+    "aliases": [
+      "egito"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Cairo é uma cidade histórica e a capital do Egito.",
+    "source": "https://whc.unesco.org/en/list/89"
+  },
+  {
+    "id": "v2:cc252481821c3899004f",
+    "quiz": "historia-geral",
+    "text": "Qual cidade italiana é associada ao florescimento do Renascimento e da família Medici?",
+    "options": [
+      "Veneza",
+      "Nápoles",
+      "Milão",
+      "Florença"
+    ],
+    "correct": 3,
+    "aliases": [
+      "florença"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Florença foi um centro artístico e cultural do Renascimento.",
+    "source": "https://whc.unesco.org/en/list/174/"
+  },
+  {
+    "id": "v2:de7fd45746a1968d4e2e",
+    "quiz": "historia-geral",
+    "text": "Qual movimento cultural europeu floresceu em Florença a partir do século XV?",
+    "options": [
+      "Renascimento",
+      "Romantismo",
+      "Modernismo",
+      "Barroco"
+    ],
+    "correct": 0,
+    "aliases": [
+      "renascimento"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Florença foi um dos principais centros do Renascimento.",
+    "source": "https://whc.unesco.org/en/list/174/"
+  },
+  {
+    "id": "v2:36f7c8a5eac3527d7025",
+    "quiz": "historia-geral",
+    "text": "Qual família esteve ligada ao poder e ao patrocínio artístico em Florença renascentista?",
+    "options": [
+      "Tudor",
+      "Medici",
+      "Habsburgo",
+      "Romanov"
+    ],
+    "correct": 1,
+    "aliases": [
+      "medici"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A família Medici teve papel central na história de Florença.",
+    "source": "https://whc.unesco.org/en/list/174/"
+  },
+  {
+    "id": "v2:3a2570582a3789f8184b",
+    "quiz": "historia-geral",
+    "text": "Qual emenda à Constituição dos EUA garantiu o voto feminino em 1920?",
+    "options": [
+      "1ª Emenda",
+      "13ª Emenda",
+      "19ª Emenda",
+      "21ª Emenda"
+    ],
+    "correct": 2,
+    "aliases": [
+      "19ª emenda",
+      "decima nona emenda",
+      "19 emenda"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A 19ª Emenda proibiu negar o voto por motivo de sexo.",
+    "source": "https://www.archives.gov/milestone-documents/19th-amendment"
+  },
+  {
+    "id": "v2:3a3f29d72b07e8904606",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi ratificada a emenda que garantiu o voto feminino nos EUA?",
+    "options": [
+      "1863",
+      "1901",
+      "1948",
+      "1920"
+    ],
+    "correct": 3,
+    "aliases": [
+      "1920"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A 19ª Emenda foi ratificada em 1920.",
+    "source": "https://www.archives.gov/milestone-documents/19th-amendment"
+  },
+  {
+    "id": "v2:2e71eb4ff2839b141cf2",
+    "quiz": "historia-geral",
+    "text": "Qual presidente dos EUA emitiu a Proclamação de Emancipação?",
+    "options": [
+      "Abraham Lincoln",
+      "George Washington",
+      "Theodore Roosevelt",
+      "Woodrow Wilson"
+    ],
+    "correct": 0,
+    "aliases": [
+      "abraham lincoln"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Lincoln publicou a Proclamação de Emancipação durante a Guerra Civil.",
+    "source": "https://www.archives.gov/milestone-documents/emancipation-proclamation"
+  },
+  {
+    "id": "v2:c884c2e33f91d5c0b510",
+    "quiz": "historia-geral",
+    "text": "Em que ano entrou em vigor a Proclamação de Emancipação nos EUA?",
+    "options": [
+      "1776",
+      "1863",
+      "1815",
+      "1920"
+    ],
+    "correct": 1,
+    "aliases": [
+      "1863"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A proclamação entrou em vigor em 1º de janeiro de 1863.",
+    "source": "https://www.archives.gov/milestone-documents/emancipation-proclamation"
+  },
+  {
+    "id": "v2:438d11edb95ee10c85d0",
+    "quiz": "historia-geral",
+    "text": "Durante qual conflito foi publicada a Proclamação de Emancipação?",
+    "options": [
+      "Guerra da Independência dos EUA",
+      "Primeira Guerra Mundial",
+      "Guerra Civil Americana",
+      "Guerra da Coreia"
+    ],
+    "correct": 2,
+    "aliases": [
+      "guerra civil americana"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A medida foi promulgada em meio à Guerra Civil dos Estados Unidos.",
+    "source": "https://www.archives.gov/milestone-documents/emancipation-proclamation"
+  },
+  {
+    "id": "v2:b47e946c696211a7d385",
+    "quiz": "historia-geral",
+    "text": "Qual país caribenho conquistou a independência após uma revolução iniciada por pessoas escravizadas?",
+    "options": [
+      "Jamaica",
+      "Cuba",
+      "Barbados",
+      "Haiti"
+    ],
+    "correct": 3,
+    "aliases": [
+      "haiti"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Revolução Haitiana levou à independência do Haiti.",
+    "source": "https://www.loc.gov/exhibits/jefferson/jeffworld.html"
+  },
+  {
+    "id": "v2:360d8b11bf01af51d009",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi proclamada a independência do Haiti?",
+    "options": [
+      "1804",
+      "1776",
+      "1822",
+      "1889"
+    ],
+    "correct": 0,
+    "aliases": [
+      "1804"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A independência haitiana foi proclamada em 1804.",
+    "source": "https://www.loc.gov/exhibits/jefferson/jeffworld.html"
+  },
+  {
+    "id": "v2:f9301d3fa57fe1ce5aff",
+    "quiz": "historia-geral",
+    "text": "Qual documento foi proclamado pela Assembleia Geral da ONU em 1948?",
+    "options": [
+      "Carta Magna",
+      "Declaração Universal dos Direitos Humanos",
+      "Tratado de Versalhes",
+      "Convenção de Viena"
+    ],
+    "correct": 1,
+    "aliases": [
+      "declaração universal dos direitos humanos",
+      "DUDH"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A ONU proclamou a declaração como referência mundial para direitos humanos.",
+    "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights/"
+  },
+  {
+    "id": "v2:13246982aecbe145c475",
+    "quiz": "historia-geral",
+    "text": "Em que ano a ONU proclamou a Declaração Universal dos Direitos Humanos?",
+    "options": [
+      "1919",
+      "1939",
+      "1948",
+      "1968"
+    ],
+    "correct": 2,
+    "aliases": [
+      "1948"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A declaração foi proclamada em 10 de dezembro de 1948.",
+    "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights/"
+  },
+  {
+    "id": "v2:19cfa04c8880e97af4d8",
+    "quiz": "historia-geral",
+    "text": "Em qual cidade a Assembleia Geral da ONU proclamou a Declaração Universal de 1948?",
+    "options": [
+      "Genebra",
+      "Nova York",
+      "Londres",
+      "Paris"
+    ],
+    "correct": 3,
+    "aliases": [
+      "paris"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Assembleia Geral estava reunida em Paris quando adotou a declaração.",
+    "source": "https://www.un.org/en/about-us/universal-declaration-of-human-rights/"
+  },
+  {
+    "id": "v2:7cea9778207148e3f990",
+    "quiz": "historia-geral",
+    "text": "Qual foi o primeiro satélite artificial a orbitar a Terra?",
+    "options": [
+      "Sputnik 1",
+      "Explorer 1",
+      "Vanguard 1",
+      "Luna 2"
+    ],
+    "correct": 0,
+    "aliases": [
+      "sputnik 1"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Sputnik 1 foi lançado em 1957.",
+    "source": "https://www.esa.int/About_Us/50_years_of_ESA/4_October"
+  },
+  {
+    "id": "v2:8fc295f4a3f0106ef7a4",
+    "quiz": "historia-geral",
+    "text": "Qual país lançou o Sputnik 1?",
+    "options": [
+      "Estados Unidos",
+      "União Soviética",
+      "França",
+      "Reino Unido"
+    ],
+    "correct": 1,
+    "aliases": [
+      "união soviética",
+      "URSS"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A União Soviética lançou o primeiro satélite artificial.",
+    "source": "https://www.esa.int/About_Us/50_years_of_ESA/4_October"
+  },
+  {
+    "id": "v2:83f1a851b96fd709b29d",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi lançado o Sputnik 1?",
+    "options": [
+      "1945",
+      "1961",
+      "1957",
+      "1969"
+    ],
+    "correct": 2,
+    "aliases": [
+      "1957"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O satélite soviético foi lançado em 4 de outubro de 1957.",
+    "source": "https://www.esa.int/About_Us/50_years_of_ESA/4_October"
+  },
+  {
+    "id": "v2:68cc7b607f5cd252ce79",
+    "quiz": "historia-geral",
+    "text": "Quem foi o primeiro ser humano a viajar ao espaço?",
+    "options": [
+      "Neil Armstrong",
+      "Alan Shepard",
+      "John Glenn",
+      "Yuri Gagarin"
+    ],
+    "correct": 3,
+    "aliases": [
+      "yuri gagarin"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Gagarin orbitou a Terra em abril de 1961.",
+    "source": "https://www.esa.int/esapub/sp/sp1251/sp1251web.pdf"
+  },
+  {
+    "id": "v2:055f0132cc83029dd305",
+    "quiz": "historia-geral",
+    "text": "Em que ano Yuri Gagarin realizou o primeiro voo espacial humano?",
+    "options": [
+      "1961",
+      "1957",
+      "1969",
+      "1975"
+    ],
+    "correct": 0,
+    "aliases": [
+      "1961"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O voo de Gagarin ocorreu em 12 de abril de 1961.",
+    "source": "https://www.esa.int/esapub/sp/sp1251/sp1251web.pdf"
+  },
+  {
+    "id": "v2:c29948f2ad1b0be726ad",
+    "quiz": "historia-geral",
+    "text": "Qual príncipe regente proclamou a Independência do Brasil em 1822?",
+    "options": [
+      "Dom João VI",
+      "Dom Pedro I",
+      "Dom Pedro II",
+      "Marechal Deodoro"
+    ],
+    "correct": 1,
+    "aliases": [
+      "dom pedro i",
+      "pedro i"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Dom Pedro liderou a ruptura política com Portugal em 1822.",
+    "source": "https://bndigital.bn.gov.br/dossies/gramaticas-e-dicionarios-do-portugues/linha-do-tempo/sobre-as-efemerides/1822-independencia-do-brasil/"
+  },
+  {
+    "id": "v2:694206b3e80bf5147b26",
+    "quiz": "historia-geral",
+    "text": "Em qual data se celebra a Independência do Brasil?",
+    "options": [
+      "21 de abril",
+      "13 de maio",
+      "7 de setembro",
+      "15 de novembro"
+    ],
+    "correct": 2,
+    "aliases": [
+      "7 de setembro",
+      "sete de setembro"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O marco da Independência ocorreu em 7 de setembro de 1822.",
+    "source": "https://bndigital.bn.gov.br/dossies/gramaticas-e-dicionarios-do-portugues/linha-do-tempo/sobre-as-efemerides/1822-independencia-do-brasil/"
+  },
+  {
+    "id": "v2:4779d505be3604f1aede",
+    "quiz": "historia-geral",
+    "text": "Qual princesa regente presidiu reunião do Conselho de Estado ligada à ruptura com Portugal?",
+    "options": [
+      "Princesa Isabel",
+      "Maria Quitéria",
+      "Anita Garibaldi",
+      "Maria Leopoldina"
+    ],
+    "correct": 3,
+    "aliases": [
+      "maria leopoldina"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Leopoldina participou das decisões políticas que antecederam a Independência.",
+    "source": "https://bndigital.bn.gov.br/dossies/gramaticas-e-dicionarios-do-portugues/linha-do-tempo/sobre-as-efemerides/1822-independencia-do-brasil/"
+  },
+  {
+    "id": "v2:ab5bed287fb438a4ff7d",
+    "quiz": "historia-geral",
+    "text": "De qual país o Brasil se separou politicamente em 1822?",
+    "options": [
+      "Portugal",
+      "Espanha",
+      "França",
+      "Reino Unido"
+    ],
+    "correct": 0,
+    "aliases": [
+      "portugal"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Independência marcou a separação política do Brasil de Portugal.",
+    "source": "https://bndigital.bn.gov.br/dossies/gramaticas-e-dicionarios-do-portugues/linha-do-tempo/sobre-as-efemerides/1822-independencia-do-brasil/"
+  },
+  {
+    "id": "v2:2c97f3c25c44874672bd",
+    "quiz": "historia-geral",
+    "text": "Qual participante da Inconfidência Mineira se tornou símbolo do movimento?",
+    "options": [
+      "Dom Pedro II",
+      "Tiradentes",
+      "Deodoro da Fonseca",
+      "Santos Dumont"
+    ],
+    "correct": 1,
+    "aliases": [
+      "tiradentes"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Tiradentes é lembrado como figura da Inconfidência Mineira.",
+    "source": "https://bndigital.bn.gov.br/dossies/gramaticas-e-dicionarios-do-portugues/linha-do-tempo/sobre-as-efemerides/1889-proclamacao-da-republica/"
+  },
+  {
+    "id": "v2:a2b9a094269459b75cdb",
+    "quiz": "historia-geral",
+    "text": "Em qual capitania ocorreu a Inconfidência de 1789?",
+    "options": [
+      "Bahia",
+      "Pernambuco",
+      "Minas Gerais",
+      "São Paulo"
+    ],
+    "correct": 2,
+    "aliases": [
+      "minas gerais"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Inconfidência Mineira ocorreu na antiga capitania de Minas Gerais.",
+    "source": "https://bndigital.bn.gov.br/dossies/gramaticas-e-dicionarios-do-portugues/linha-do-tempo/sobre-as-efemerides/1889-proclamacao-da-republica/"
+  },
+  {
+    "id": "v2:326b85c611617c52af39",
+    "quiz": "historia-geral",
+    "text": "Qual lei de 1871 tratou da condição dos filhos de mulheres escravizadas nascidos a partir daquela data?",
+    "options": [
+      "Lei Áurea",
+      "Lei dos Sexagenários",
+      "Lei de Terras",
+      "Lei do Ventre Livre"
+    ],
+    "correct": 3,
+    "aliases": [
+      "lei do ventre livre"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Lei do Ventre Livre integrou o longo processo de abolição.",
+    "source": "https://www.gov.br/arquivonacional/pt-br/canais_atendimento/imprensa/noticias/lei-aurea-faz-parte-do-acervo-do-arquivo-nacional"
+  },
+  {
+    "id": "v2:d2d3a113e4eb316976f4",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi aprovada a Lei do Ventre Livre no Brasil?",
+    "options": [
+      "1871",
+      "1850",
+      "1885",
+      "1888"
+    ],
+    "correct": 0,
+    "aliases": [
+      "1871"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Lei do Ventre Livre data de 1871.",
+    "source": "https://www.gov.br/arquivonacional/pt-br/canais_atendimento/imprensa/noticias/lei-aurea-faz-parte-do-acervo-do-arquivo-nacional"
+  },
+  {
+    "id": "v2:566ad24fe5fe1c1c82d5",
+    "quiz": "historia-geral",
+    "text": "Qual lei de 1885 tratou da libertação de pessoas escravizadas com mais de 60 anos?",
+    "options": [
+      "Lei Áurea",
+      "Lei dos Sexagenários",
+      "Lei do Ventre Livre",
+      "Lei Eusébio de Queirós"
+    ],
+    "correct": 1,
+    "aliases": [
+      "lei dos sexagenários"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Lei dos Sexagenários foi promulgada em 1885.",
+    "source": "https://www.gov.br/arquivonacional/pt-br/canais_atendimento/imprensa/noticias/lei-aurea-faz-parte-do-acervo-do-arquivo-nacional"
+  },
+  {
+    "id": "v2:74b4efb6964280db15e0",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi promulgada a Lei dos Sexagenários?",
+    "options": [
+      "1871",
+      "1888",
+      "1885",
+      "1891"
+    ],
+    "correct": 2,
+    "aliases": [
+      "1885"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A lei referente a pessoas escravizadas com mais de 60 anos é de 1885.",
+    "source": "https://www.gov.br/arquivonacional/pt-br/canais_atendimento/imprensa/noticias/lei-aurea-faz-parte-do-acervo-do-arquivo-nacional"
+  },
+  {
+    "id": "v2:e72272d3193d65704d5f",
+    "quiz": "historia-geral",
+    "text": "Qual militar liderou a Proclamação da República no Brasil?",
+    "options": [
+      "Dom Pedro II",
+      "Floriano Peixoto",
+      "Getúlio Vargas",
+      "Deodoro da Fonseca"
+    ],
+    "correct": 3,
+    "aliases": [
+      "deodoro da fonseca"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Deodoro da Fonseca liderou o movimento de 15 de novembro de 1889.",
+    "source": "https://bndigital.bn.gov.br/dossies/gramaticas-e-dicionarios-do-portugues/linha-do-tempo/sobre-as-efemerides/1889-proclamacao-da-republica/"
+  },
+  {
+    "id": "v2:1f1823db6210e36b73f3",
+    "quiz": "historia-geral",
+    "text": "Em qual edifício ocorreu a Semana de Arte Moderna de 1922?",
+    "options": [
+      "Teatro Municipal de São Paulo",
+      "Theatro Municipal do Rio de Janeiro",
+      "Museu do Ipiranga",
+      "Palácio do Catete"
+    ],
+    "correct": 0,
+    "aliases": [
+      "teatro municipal de são paulo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Teatro Municipal de São Paulo sediou os eventos da Semana.",
+    "source": "https://bndigital.bn.gov.br/a-semana-de-arte-moderna/"
+  },
+  {
+    "id": "v2:6104462ba104b6cd12dd",
+    "quiz": "historia-geral",
+    "text": "Em qual cidade brasileira aconteceu a Semana de Arte Moderna de 1922?",
+    "options": [
+      "Rio de Janeiro",
+      "São Paulo",
+      "Belo Horizonte",
+      "Recife"
+    ],
+    "correct": 1,
+    "aliases": [
+      "são paulo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Semana de Arte Moderna ocorreu na cidade de São Paulo.",
+    "source": "https://bndigital.bn.gov.br/a-semana-de-arte-moderna/"
+  },
+  {
+    "id": "v2:00fb87e45d4260c196ff",
+    "quiz": "historia-geral",
+    "text": "Qual pintora expôs obras na Semana de Arte Moderna de 1922?",
+    "options": [
+      "Tarsila do Amaral",
+      "Frida Kahlo",
+      "Anita Malfatti",
+      "Mary Cassatt"
+    ],
+    "correct": 2,
+    "aliases": [
+      "anita malfatti"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Anita Malfatti foi uma das artistas plásticas presentes na Semana.",
+    "source": "https://brasilianafotografica.bn.gov.br/?p=26620"
+  },
+  {
+    "id": "v2:0005f34a40f068944b28",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi promulgada a atual Constituição brasileira?",
+    "options": [
+      "1946",
+      "1967",
+      "1994",
+      "1988"
+    ],
+    "correct": 3,
+    "aliases": [
+      "1988"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Constituição da redemocratização foi promulgada em 1988.",
+    "source": "https://www.gov.br/pt-br/constituicao-30-anos/textos/democratica-constituicao-federal-de-1988-foi-construida-pela-sociedade"
   },
   {
     "id": "v2:e68549ccaad9cabcb746",
