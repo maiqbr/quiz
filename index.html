@@ -584,6 +584,7 @@ async function nextRound(){
   $("g-qlabel").textContent=AQ.kind==="map"?"Onde fica "+current.name+"?":(AQ.getText||AQ.kind==='timeline'||AQ.kind==='match'?"":AQ.question);
   $('g-image-wrap-el').classList.toggle('is-text',Boolean(AQ.getText));
   $('g-image-wrap-el').classList.toggle('is-format',AQ.kind==='timeline'||AQ.kind==='match');
+  $('g-image-wrap-el').classList.toggle('is-map',AQ.kind==='map');
   $("g-feedback").textContent="";$("g-feedback").className="";
   $("g-next").style.display="none";$("g-skip").style.display="";
   renderAnswerUI();

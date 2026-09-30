@@ -18006,7 +18006,7 @@ export const QUESTIONS=[
     "media": null,
     "clue": null,
     "explanation": "O Sol é uma estrela da Via Láctea.",
-    "source": "https://science.nasa.gov/universe/galaxies/milky-way/"
+    "source": "https://science.nasa.gov/universe/galaxies/"
   },
   {
     "id": "v2:e3828c26f6a04c7ddb22",
@@ -18065,6 +18065,672 @@ export const QUESTIONS=[
     "clue": null,
     "explanation": "O Polo Sul geográfico está na Antártida.",
     "source": "https://www.bas.ac.uk/about/antarctica/"
+  },
+  {
+    "id": "v2:8f7d4f5937c69fce78c9",
+    "quiz": "ciencias",
+    "text": "Que tipo de astro fica no centro do Sistema Solar?",
+    "options": [
+      "Planeta",
+      "Cometa",
+      "Satélite natural",
+      "Sol"
+    ],
+    "correct": 3,
+    "aliases": [
+      "sol"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Sol é a estrela em torno da qual orbitam os planetas.",
+    "source": "https://science.nasa.gov/solar-system/solar-system-facts/"
+  },
+  {
+    "id": "v2:7cfca77f0da4b60f7bd1",
+    "quiz": "ciencias",
+    "text": "Quantos planetas reconhecidos existem no Sistema Solar?",
+    "options": [
+      "Oito",
+      "Sete",
+      "Nove",
+      "Dez"
+    ],
+    "correct": 0,
+    "aliases": [
+      "oito",
+      "8"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A classificação atual reconhece oito planetas.",
+    "source": "https://science.nasa.gov/solar-system/planets/"
+  },
+  {
+    "id": "v2:533c7da2b120cfe089fa",
+    "quiz": "ciencias",
+    "text": "Qual é o planeta mais distante do Sol entre os oito reconhecidos?",
+    "options": [
+      "Urano",
+      "Netuno",
+      "Saturno",
+      "Júpiter"
+    ],
+    "correct": 1,
+    "aliases": [
+      "netuno"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Netuno é o oitavo planeta a partir do Sol.",
+    "source": "https://science.nasa.gov/solar-system/planets/"
+  },
+  {
+    "id": "v2:5196fc337e4fda28c93a",
+    "quiz": "ciencias",
+    "text": "Qual é o planeta mais quente do Sistema Solar?",
+    "options": [
+      "Mercúrio",
+      "Marte",
+      "Vênus",
+      "Júpiter"
+    ],
+    "correct": 2,
+    "aliases": [
+      "vênus"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A atmosfera espessa de Vênus retém calor por efeito estufa.",
+    "source": "https://science.nasa.gov/solar-system/planets/"
+  },
+  {
+    "id": "v2:f4085ffadab6a70c2f97",
+    "quiz": "ciencias",
+    "text": "Qual astro, antes chamado de nono planeta, é classificado como planeta anão?",
+    "options": [
+      "Netuno",
+      "Titã",
+      "Europa",
+      "Plutão"
+    ],
+    "correct": 3,
+    "aliases": [
+      "plutão"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Plutão integra a categoria dos planetas anões.",
+    "source": "https://science.nasa.gov/solar-system/planets/"
+  },
+  {
+    "id": "v2:efae15a442edb735dc08",
+    "quiz": "ciencias",
+    "text": "Qual planeta anão se encontra no cinturão de asteroides?",
+    "options": [
+      "Ceres",
+      "Éris",
+      "Haumea",
+      "Plutão"
+    ],
+    "correct": 0,
+    "aliases": [
+      "ceres"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Ceres é um planeta anão do cinturão entre Marte e Júpiter.",
+    "source": "https://science.nasa.gov/solar-system/planets/"
+  },
+  {
+    "id": "v2:e400a0eeea7894445c66",
+    "quiz": "ciencias",
+    "text": "Como se chama a região com muitos pequenos corpos entre Marte e Júpiter?",
+    "options": [
+      "Cinturão de Kuiper",
+      "Cinturão de asteroides",
+      "Nuvem de Oort",
+      "Heliosfera"
+    ],
+    "correct": 1,
+    "aliases": [
+      "cinturão de asteroides"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O cinturão de asteroides fica entre as órbitas de Marte e Júpiter.",
+    "source": "https://science.nasa.gov/solar-system/solar-system-facts/"
+  },
+  {
+    "id": "v2:7dd254df805651c58867",
+    "quiz": "ciencias",
+    "text": "Qual é o satélite natural da Terra?",
+    "options": [
+      "Europa",
+      "Titã",
+      "Lua",
+      "Fobos"
+    ],
+    "correct": 2,
+    "aliases": [
+      "lua"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Lua orbita a Terra e reflete a luz do Sol.",
+    "source": "https://science.nasa.gov/solar-system/moons/facts/"
+  },
+  {
+    "id": "v2:87a0d4687c8e46743d96",
+    "quiz": "ciencias",
+    "text": "Em qual planeta fica o vulcão Olympus Mons?",
+    "options": [
+      "Terra",
+      "Vênus",
+      "Mercúrio",
+      "Marte"
+    ],
+    "correct": 3,
+    "aliases": [
+      "marte"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Olympus Mons é um enorme vulcão marciano.",
+    "source": "https://science.nasa.gov/mars/"
+  },
+  {
+    "id": "v2:1baf964a648bdc66ecda",
+    "quiz": "ciencias",
+    "text": "Qual elemento alimenta a fusão nuclear no núcleo do Sol?",
+    "options": [
+      "Hidrogênio",
+      "Oxigênio",
+      "Carbono",
+      "Ferro"
+    ],
+    "correct": 0,
+    "aliases": [
+      "hidrogênio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "No Sol, núcleos de hidrogênio se combinam e formam hélio.",
+    "source": "https://science.nasa.gov/sun/facts/"
+  },
+  {
+    "id": "v2:005c3d917fd8095ff060",
+    "quiz": "ciencias",
+    "text": "Qual formato descreve aproximadamente o caminho dos planetas ao redor do Sol?",
+    "options": [
+      "Linha reta",
+      "Órbita elíptica",
+      "Espiral crescente",
+      "Quadrado"
+    ],
+    "correct": 1,
+    "aliases": [
+      "órbita elíptica"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As órbitas planetárias são aproximadamente elipses.",
+    "source": "https://science.nasa.gov/learn/basics-of-space-flight/chapter1-1/"
+  },
+  {
+    "id": "v2:4fe26255517c99a516a3",
+    "quiz": "ciencias",
+    "text": "Em células humanas, qual estrutura guarda a maior parte dos cromossomos?",
+    "options": [
+      "Ribossomo",
+      "Lisossomo",
+      "Núcleo",
+      "Membrana celular"
+    ],
+    "correct": 2,
+    "aliases": [
+      "núcleo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O núcleo abriga os cromossomos das células humanas.",
+    "source": "https://www.genome.gov/genetics-glossary/Nucleus"
+  },
+  {
+    "id": "v2:3707e44cbbddbf8faf90",
+    "quiz": "ciencias",
+    "text": "Qual organela produz grande parte do ATP usado pelas células?",
+    "options": [
+      "Ribossomo",
+      "Lisossomo",
+      "Núcleo",
+      "Mitocôndria"
+    ],
+    "correct": 3,
+    "aliases": [
+      "mitocôndria"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As mitocôndrias transformam energia química em ATP.",
+    "source": "https://www.genome.gov/genetics-glossary/Mitochondria"
+  },
+  {
+    "id": "v2:b0c520ff2d225aae3cb8",
+    "quiz": "ciencias",
+    "text": "Qual estrutura celular monta proteínas a partir das instruções do RNA?",
+    "options": [
+      "Ribossomo",
+      "Mitocôndria",
+      "Núcleo",
+      "Vacúolo"
+    ],
+    "correct": 0,
+    "aliases": [
+      "ribossomo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Ribossomos realizam a síntese de proteínas.",
+    "source": "https://www.genome.gov/genetics-glossary/Organelle"
+  },
+  {
+    "id": "v2:0f9017b5717aa376dced",
+    "quiz": "ciencias",
+    "text": "Como se chama o conjunto completo de instruções de DNA de um organismo?",
+    "options": [
+      "Proteoma",
+      "Genoma",
+      "Citoplasma",
+      "Tecido"
+    ],
+    "correct": 1,
+    "aliases": [
+      "genoma"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Genoma é o conjunto de instruções genéticas de um organismo.",
+    "source": "https://www.genome.gov/genetics-glossary/Genome"
+  },
+  {
+    "id": "v2:82e8f1f33a4efb3ef605",
+    "quiz": "ciencias",
+    "text": "Que estrutura compacta carrega uma longa molécula de DNA?",
+    "options": [
+      "Enzima",
+      "Hormônio",
+      "Cromossomo",
+      "Anticorpo"
+    ],
+    "correct": 2,
+    "aliases": [
+      "cromossomo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O DNA é organizado em cromossomos nas células.",
+    "source": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
+  },
+  {
+    "id": "v2:926dbb3ca9dd7c014571",
+    "quiz": "ciencias",
+    "text": "Qual molécula armazena as instruções hereditárias dos seres vivos?",
+    "options": [
+      "ATP",
+      "Glicose",
+      "Lipídio",
+      "DNA"
+    ],
+    "correct": 3,
+    "aliases": [
+      "dna"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O ácido desoxirribonucleico contém informações hereditárias.",
+    "source": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet"
+  },
+  {
+    "id": "v2:e9285f69c0bdfa9ff3e2",
+    "quiz": "ciencias",
+    "text": "Como se chama o material gelatinoso que preenche o interior da célula?",
+    "options": [
+      "Citoplasma",
+      "Cromossomo",
+      "Parede celular",
+      "Nucléolo"
+    ],
+    "correct": 0,
+    "aliases": [
+      "citoplasma"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O citoplasma envolve as estruturas internas da célula.",
+    "source": "https://www.genome.gov/genetics-glossary/Cytoplasm"
+  },
+  {
+    "id": "v2:d776278b6d15495a625b",
+    "quiz": "ciencias",
+    "text": "Qual molécula funciona como principal reserva imediata de energia química da célula?",
+    "options": [
+      "DNA",
+      "ATP",
+      "RNA",
+      "Celulose"
+    ],
+    "correct": 1,
+    "aliases": [
+      "atp"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O ATP transporta energia para muitas reações celulares.",
+    "source": "https://www.genome.gov/genetics-glossary/Mitochondria"
+  },
+  {
+    "id": "v2:202a63fb55ffc0c6c5de",
+    "quiz": "ciencias",
+    "text": "Qual teoria explica o movimento dos grandes blocos da crosta terrestre?",
+    "options": [
+      "Seleção natural",
+      "Fotossíntese",
+      "Tectônica de placas",
+      "Deriva estelar"
+    ],
+    "correct": 2,
+    "aliases": [
+      "tectônica de placas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As placas tectônicas se deslocam lentamente e interagem em suas bordas.",
+    "source": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+  },
+  {
+    "id": "v2:f708bff25d8b5cd7e5d0",
+    "quiz": "ciencias",
+    "text": "Qual é a camada sólida mais externa da Terra?",
+    "options": [
+      "Manto",
+      "Núcleo externo",
+      "Núcleo interno",
+      "Crosta"
+    ],
+    "correct": 3,
+    "aliases": [
+      "crosta"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A crosta forma a superfície rochosa externa do planeta.",
+    "source": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+  },
+  {
+    "id": "v2:4220cd7d348377f916a4",
+    "quiz": "ciencias",
+    "text": "Qual camada da Terra fica entre a crosta e o núcleo?",
+    "options": [
+      "Manto",
+      "Atmosfera",
+      "Litosfera",
+      "Núcleo externo"
+    ],
+    "correct": 0,
+    "aliases": [
+      "manto"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O manto está abaixo da crosta e acima do núcleo.",
+    "source": "https://pubs.usgs.gov/gip/interior/"
+  },
+  {
+    "id": "v2:ae3c05fb84f8a9365b04",
+    "quiz": "ciencias",
+    "text": "Qual camada do interior da Terra é predominantemente líquida?",
+    "options": [
+      "Crosta",
+      "Núcleo externo",
+      "Manto superior",
+      "Núcleo interno"
+    ],
+    "correct": 1,
+    "aliases": [
+      "núcleo externo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O núcleo externo é líquido, diferentemente do núcleo interno sólido.",
+    "source": "https://pubs.usgs.gov/gip/interior/"
+  },
+  {
+    "id": "v2:252b7aa6128167c8ab02",
+    "quiz": "ciencias",
+    "text": "Como se chama uma fratura da crosta ao longo da qual rochas podem se deslocar?",
+    "options": [
+      "Duna",
+      "Glaciar",
+      "Falha geológica",
+      "Delta"
+    ],
+    "correct": 2,
+    "aliases": [
+      "falha geológica"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O deslocamento em falhas libera energia e pode causar terremotos.",
+    "source": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+  },
+  {
+    "id": "v2:119e817bd9cb9e5b42d2",
+    "quiz": "ciencias",
+    "text": "Que ondas transportam a energia liberada em um terremoto?",
+    "options": [
+      "Ondas de rádio",
+      "Ondas de maré",
+      "Ondas sonoras no ar",
+      "Ondas sísmicas"
+    ],
+    "correct": 3,
+    "aliases": [
+      "ondas sísmicas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Ondas sísmicas propagam a energia do abalo pela Terra.",
+    "source": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+  },
+  {
+    "id": "v2:1351541dd7e8c395d839",
+    "quiz": "ciencias",
+    "text": "Qual processo transforma vapor de água em gotículas líquidas?",
+    "options": [
+      "Condensação",
+      "Evaporação",
+      "Fusão",
+      "Sublimação"
+    ],
+    "correct": 0,
+    "aliases": [
+      "condensação"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A condensação contribui para a formação de nuvens.",
+    "source": "https://www.usgs.gov/water-science-school/learn-about-water"
+  },
+  {
+    "id": "v2:a5011bb7495b495fb859",
+    "quiz": "ciencias",
+    "text": "Como se chama a queda de chuva, neve ou granizo da atmosfera?",
+    "options": [
+      "Infiltração",
+      "Precipitação",
+      "Evaporação",
+      "Transpiração"
+    ],
+    "correct": 1,
+    "aliases": [
+      "precipitação"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Precipitação devolve água da atmosfera à superfície.",
+    "source": "https://www.usgs.gov/water-science-school/learn-about-water"
+  },
+  {
+    "id": "v2:dd6c98047b67b0e840b4",
+    "quiz": "ciencias",
+    "text": "Qual processo leva água da superfície para dentro do solo?",
+    "options": [
+      "Condensação",
+      "Ebulição",
+      "Infiltração",
+      "Fotossíntese"
+    ],
+    "correct": 2,
+    "aliases": [
+      "infiltração"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A infiltração alimenta a água presente no solo e no subsolo.",
+    "source": "https://www.usgs.gov/water-science-school/learn-about-water"
+  },
+  {
+    "id": "v2:4e1a9555a9c85d57060e",
+    "quiz": "ciencias",
+    "text": "Como se chama a liberação de vapor de água pelas plantas?",
+    "options": [
+      "Sedimentação",
+      "Combustão",
+      "Congelamento",
+      "Transpiração"
+    ],
+    "correct": 3,
+    "aliases": [
+      "transpiração"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A transpiração das plantas participa do ciclo da água.",
+    "source": "https://www.usgs.gov/water-science-school/learn-about-water"
+  },
+  {
+    "id": "v2:49d933ea08dabc4f4250",
+    "quiz": "ciencias",
+    "text": "Qual grupo de organismos microscópicos faz fotossíntese enquanto deriva nos oceanos?",
+    "options": [
+      "Fitoplâncton",
+      "Zooplâncton",
+      "Corais",
+      "Krill"
+    ],
+    "correct": 0,
+    "aliases": [
+      "fitoplâncton"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O fitoplâncton usa luz para produzir matéria orgânica.",
+    "source": "https://oceanservice.noaa.gov/facts/plankton.html"
+  },
+  {
+    "id": "v2:e899fb970be5f1f0774b",
+    "quiz": "ciencias",
+    "text": "Como se chama o plâncton formado por organismos animais?",
+    "options": [
+      "Fitoplâncton",
+      "Zooplâncton",
+      "Algas pardas",
+      "Manguezais"
+    ],
+    "correct": 1,
+    "aliases": [
+      "zooplâncton"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Zooplâncton inclui pequenos animais que derivam na água.",
+    "source": "https://oceanservice.noaa.gov/facts/plankton.html"
+  },
+  {
+    "id": "v2:98accc488ea52215dee0",
+    "quiz": "ciencias",
+    "text": "Como se chama o conjunto de organismos que deriva com correntes e marés?",
+    "options": [
+      "Nécton",
+      "Bentos",
+      "Plâncton",
+      "Coral"
+    ],
+    "correct": 2,
+    "aliases": [
+      "plâncton"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Plâncton reúne organismos com pouca capacidade de nadar contra as correntes.",
+    "source": "https://oceanservice.noaa.gov/facts/plankton.html"
+  },
+  {
+    "id": "v2:4ccc1fcdc274cc1b0f95",
+    "quiz": "ciencias",
+    "text": "Como se chama a subida e descida periódica do nível do mar?",
+    "options": [
+      "Correnteza",
+      "Ressaca",
+      "Monção",
+      "Marés"
+    ],
+    "correct": 3,
+    "aliases": [
+      "marés"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As marés resultam principalmente da atração gravitacional da Lua.",
+    "source": "https://oceanservice.noaa.gov/facts/tides.html"
+  },
+  {
+    "id": "v2:47c483ebb5ad662177d6",
+    "quiz": "ciencias",
+    "text": "Qual é o menor dos cinco oceanos?",
+    "options": [
+      "Oceano Ártico",
+      "Oceano Índico",
+      "Oceano Atlântico",
+      "Oceano Austral"
+    ],
+    "correct": 0,
+    "aliases": [
+      "oceano ártico"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Ártico é o oceano de menor área.",
+    "source": "https://oceanservice.noaa.gov/facts/5oceans.html"
+  },
+  {
+    "id": "v2:2610fd5161194d2e172b",
+    "quiz": "ciencias",
+    "text": "Qual região abriga o ponto mais profundo conhecido dos oceanos?",
+    "options": [
+      "Dorsal Mesoatlântica",
+      "Fossa das Marianas",
+      "Mar do Caribe",
+      "Golfo do México"
+    ],
+    "correct": 1,
+    "aliases": [
+      "fossa das marianas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Challenger Deep fica na Fossa das Marianas.",
+    "source": "https://oceanservice.noaa.gov/facts/oceandepth.html"
   },
   {
     "id": "v2:008c83135992895758ee",
@@ -18358,5 +19024,2237 @@ export const QUESTIONS=[
     "clue": null,
     "explanation": "Amelia Earhart realizou o voo solo transatlântico em 1932.",
     "source": "https://www.britannica.com/biography/Amelia-Earhart"
+  },
+  {
+    "id": "v2:699630629a81d2fa94ea",
+    "quiz": "historia-geral",
+    "text": "Qual vulcão soterrou Pompeia na Antiguidade?",
+    "options": [
+      "Etna",
+      "Fuji",
+      "Krakatoa",
+      "Vesúvio"
+    ],
+    "correct": 3,
+    "aliases": [
+      "vesúvio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Vesúvio entrou em erupção em 79 d.C. e atingiu Pompeia.",
+    "source": "https://whc.unesco.org/en/list/829/"
+  },
+  {
+    "id": "v2:e54c1adbbeddd25c08b6",
+    "quiz": "historia-geral",
+    "text": "Qual cidade romana foi preservada sob cinzas após a erupção de 79 d.C.?",
+    "options": [
+      "Pompeia",
+      "Cartago",
+      "Atenas",
+      "Alexandria"
+    ],
+    "correct": 0,
+    "aliases": [
+      "pompeia"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Pompeia foi soterrada pela erupção do Vesúvio.",
+    "source": "https://whc.unesco.org/en/list/829/"
+  },
+  {
+    "id": "v2:b1a8d1ee6db60bc0f905",
+    "quiz": "historia-geral",
+    "text": "Qual imperador mogol mandou construir o Taj Mahal?",
+    "options": [
+      "Akbar",
+      "Shah Jahan",
+      "Aurangzeb",
+      "Babur"
+    ],
+    "correct": 1,
+    "aliases": [
+      "shah jahan"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Shah Jahan ordenou a construção em memória de Mumtaz Mahal.",
+    "source": "https://whc.unesco.org/en/list/252/"
+  },
+  {
+    "id": "v2:ac9dfe7ed0669326b3d2",
+    "quiz": "historia-geral",
+    "text": "Em qual cidade da Índia fica o Taj Mahal?",
+    "options": [
+      "Jaipur",
+      "Délhi",
+      "Agra",
+      "Mumbai"
+    ],
+    "correct": 2,
+    "aliases": [
+      "agra"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Taj Mahal foi construído em Agra.",
+    "source": "https://whc.unesco.org/en/list/252/"
+  },
+  {
+    "id": "v2:594eceab3066e37182a6",
+    "quiz": "historia-geral",
+    "text": "Qual povo fez de Petra sua capital esculpida na rocha?",
+    "options": [
+      "Incas",
+      "Fenícios",
+      "Hititas",
+      "Nabateus"
+    ],
+    "correct": 3,
+    "aliases": [
+      "nabateus"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Petra foi a capital dos nabateus.",
+    "source": "https://whc.unesco.org/en/list/326"
+  },
+  {
+    "id": "v2:97ea511c00943ad6ff76",
+    "quiz": "historia-geral",
+    "text": "Qual antiga cidade nabateia fica na atual Jordânia?",
+    "options": [
+      "Petra",
+      "Palmira",
+      "Cartago",
+      "Persépolis"
+    ],
+    "correct": 0,
+    "aliases": [
+      "petra"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Petra se destaca por suas fachadas talhadas em rocha.",
+    "source": "https://whc.unesco.org/en/list/326"
+  },
+  {
+    "id": "v2:fe47599047de3c0df9b6",
+    "quiz": "historia-geral",
+    "text": "Qual rei iniciou a grande construção de Persépolis por volta de 518 a.C.?",
+    "options": [
+      "Ciro II",
+      "Dario I",
+      "Xerxes II",
+      "Alexandre Magno"
+    ],
+    "correct": 1,
+    "aliases": [
+      "dario i",
+      "dario"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Dario I iniciou o complexo monumental de Persépolis.",
+    "source": "https://whc.unesco.org/en/list/114"
+  },
+  {
+    "id": "v2:d6abfee3ee7c96ed52a4",
+    "quiz": "historia-geral",
+    "text": "A qual império antigo pertencia Persépolis?",
+    "options": [
+      "Império Romano",
+      "Império Inca",
+      "Império Aquemênida",
+      "Império Bizantino"
+    ],
+    "correct": 2,
+    "aliases": [
+      "império aquemênida",
+      "imperio persa"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Persépolis foi uma cidade real do Império Aquemênida.",
+    "source": "https://whc.unesco.org/en/list/114"
+  },
+  {
+    "id": "v2:910374e4dd3868c118ca",
+    "quiz": "historia-geral",
+    "text": "Qual templo célebre integra a Acrópole de Atenas?",
+    "options": [
+      "Panteão",
+      "Coliseu",
+      "Templo de Karnak",
+      "Partenon"
+    ],
+    "correct": 3,
+    "aliases": [
+      "partenon"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Partenon foi construído na Acrópole ateniense.",
+    "source": "https://whc.unesco.org/en/list/404"
+  },
+  {
+    "id": "v2:1cfcc519a3450e6d091a",
+    "quiz": "historia-geral",
+    "text": "Em qual cidade grega fica a Acrópole com o Partenon?",
+    "options": [
+      "Atenas",
+      "Esparta",
+      "Corinto",
+      "Tebas"
+    ],
+    "correct": 0,
+    "aliases": [
+      "atenas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Acrópole de Atenas reúne monumentos da Grécia clássica.",
+    "source": "https://whc.unesco.org/en/list/404"
+  },
+  {
+    "id": "v2:4a4052bca0171abf5f42",
+    "quiz": "historia-geral",
+    "text": "Qual monumento pré-histórico inglês é formado por círculos de grandes pedras?",
+    "options": [
+      "Coliseu",
+      "Stonehenge",
+      "Partenon",
+      "Alhambra"
+    ],
+    "correct": 1,
+    "aliases": [
+      "stonehenge"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Stonehenge é um conjunto megalítico na Inglaterra.",
+    "source": "https://whc.unesco.org/en/list/373"
+  },
+  {
+    "id": "v2:c2557823c74e2252e322",
+    "quiz": "historia-geral",
+    "text": "Em qual país fica o sítio pré-histórico de Stonehenge?",
+    "options": [
+      "França",
+      "Alemanha",
+      "Reino Unido",
+      "Irlanda"
+    ],
+    "correct": 2,
+    "aliases": [
+      "reino unido"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Stonehenge fica na Inglaterra, parte do Reino Unido.",
+    "source": "https://whc.unesco.org/en/list/373"
+  },
+  {
+    "id": "v2:ca3830ea09d5f1e1cc9c",
+    "quiz": "historia-geral",
+    "text": "Qual civilização mesoamericana está associada a Chichén Itzá?",
+    "options": [
+      "Incas",
+      "Astecas",
+      "Olmecas",
+      "Maias"
+    ],
+    "correct": 3,
+    "aliases": [
+      "maias"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Chichén Itzá foi um importante centro maia, com influências toltecas.",
+    "source": "https://whc.unesco.org/en/list/483"
+  },
+  {
+    "id": "v2:5baad15d82800140fe08",
+    "quiz": "historia-geral",
+    "text": "Qual cidade pré-hispânica de Yucatán abriga a pirâmide El Castillo?",
+    "options": [
+      "Chichén Itzá",
+      "Tikal",
+      "Copán",
+      "Teotihuacán"
+    ],
+    "correct": 0,
+    "aliases": [
+      "chichén itzá"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "El Castillo é uma construção de Chichén Itzá.",
+    "source": "https://whc.unesco.org/en/list/483"
+  },
+  {
+    "id": "v2:4d993c1970bb006ad103",
+    "quiz": "historia-geral",
+    "text": "Qual complexo histórico do Camboja inclui o templo Angkor Wat?",
+    "options": [
+      "Borobudur",
+      "Angkor",
+      "Bagan",
+      "Petra"
+    ],
+    "correct": 1,
+    "aliases": [
+      "angkor"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Angkor foi o centro do antigo Império Khmer.",
+    "source": "https://whc.unesco.org/en/list/668/"
+  },
+  {
+    "id": "v2:f681b7f3245da4759692",
+    "quiz": "historia-geral",
+    "text": "Em qual país fica o conjunto histórico de Angkor?",
+    "options": [
+      "Tailândia",
+      "Laos",
+      "Camboja",
+      "Vietnã"
+    ],
+    "correct": 2,
+    "aliases": [
+      "camboja"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Angkor fica no território do atual Camboja.",
+    "source": "https://whc.unesco.org/en/list/668/"
+  },
+  {
+    "id": "v2:3bdc0edce1f78da4128d",
+    "quiz": "historia-geral",
+    "text": "Em qual país foi erguida a Grande Muralha?",
+    "options": [
+      "Japão",
+      "Mongólia",
+      "Coreia do Sul",
+      "China"
+    ],
+    "correct": 3,
+    "aliases": [
+      "china"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Grande Muralha percorre partes da China.",
+    "source": "https://whc.unesco.org/en/list/438"
+  },
+  {
+    "id": "v2:92f1346f8407fa8dd99e",
+    "quiz": "historia-geral",
+    "text": "Como é conhecida a antiga rede de caminhos comerciais que ligava regiões da Ásia e da Europa?",
+    "options": [
+      "Rotas da Seda",
+      "Rota do Âmbar",
+      "Caminho Inca",
+      "Rota do Cabo"
+    ],
+    "correct": 0,
+    "aliases": [
+      "rotas da seda"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As Rotas da Seda favoreceram trocas comerciais e culturais pela Eurásia.",
+    "source": "https://whc.unesco.org/en/list/1442"
+  },
+  {
+    "id": "v2:60f9b0a3c0cecf6c77c2",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi adotada a Declaração de Independência dos Estados Unidos?",
+    "options": [
+      "1789",
+      "1776",
+      "1812",
+      "1492"
+    ],
+    "correct": 1,
+    "aliases": [
+      "1776"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Congresso Continental adotou a declaração em 4 de julho de 1776.",
+    "source": "https://www.loc.gov/classroom-materials/american-revolution/"
+  },
+  {
+    "id": "v2:521d54433abf02fc52ed",
+    "quiz": "historia-geral",
+    "text": "Quem escreveu o primeiro rascunho da Declaração de Independência dos Estados Unidos?",
+    "options": [
+      "George Washington",
+      "Benjamin Franklin",
+      "Thomas Jefferson",
+      "John Adams"
+    ],
+    "correct": 2,
+    "aliases": [
+      "thomas jefferson"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Thomas Jefferson redigiu o rascunho inicial.",
+    "source": "https://www.archives.gov/founding-docs/declaration-history"
+  },
+  {
+    "id": "v2:ecaf2d520e0ecef147b5",
+    "quiz": "historia-geral",
+    "text": "Quem comandou o Exército Continental na Guerra de Independência dos EUA?",
+    "options": [
+      "Thomas Jefferson",
+      "Abraham Lincoln",
+      "John Adams",
+      "George Washington"
+    ],
+    "correct": 3,
+    "aliases": [
+      "george washington"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "George Washington foi nomeado comandante em chefe em 1775.",
+    "source": "https://www.loc.gov/classroom-materials/american-revolution/"
+  },
+  {
+    "id": "v2:6d42da49a0f67db916dc",
+    "quiz": "historia-geral",
+    "text": "Em qual cidade ocorreu a rendição britânica decisiva de 1781?",
+    "options": [
+      "Yorktown",
+      "Boston",
+      "Filadélfia",
+      "Nova York"
+    ],
+    "correct": 0,
+    "aliases": [
+      "yorktown"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A rendição em Yorktown praticamente encerrou os combates da guerra.",
+    "source": "https://www.loc.gov/classroom-materials/american-revolution/"
+  },
+  {
+    "id": "v2:08dd1a1648d42b8a2625",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi assinada a Constituição dos Estados Unidos?",
+    "options": [
+      "1776",
+      "1787",
+      "1791",
+      "1815"
+    ],
+    "correct": 1,
+    "aliases": [
+      "1787"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O texto constitucional foi assinado em 1787.",
+    "source": "https://www.loc.gov/classroom-materials/american-revolution/"
+  },
+  {
+    "id": "v2:7eebf831b85a8c521cb6",
+    "quiz": "historia-geral",
+    "text": "Como são conhecidas as dez primeiras emendas à Constituição dos EUA?",
+    "options": [
+      "Magna Carta",
+      "Código Napoleônico",
+      "Bill of Rights",
+      "Tratado de Paris"
+    ],
+    "correct": 2,
+    "aliases": [
+      "bill of rights"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Bill of Rights reúne as dez primeiras emendas constitucionais.",
+    "source": "https://www.archives.gov/founding-docs"
+  },
+  {
+    "id": "v2:5ab413b936e3f7808e67",
+    "quiz": "historia-geral",
+    "text": "Em que ano a Organização das Nações Unidas entrou oficialmente em vigor?",
+    "options": [
+      "1919",
+      "1939",
+      "1960",
+      "1945"
+    ],
+    "correct": 3,
+    "aliases": [
+      "1945"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A ONU passou a existir oficialmente em 24 de outubro de 1945.",
+    "source": "https://www.un.org/en/about-us/history-of-the-un"
+  },
+  {
+    "id": "v2:f01f50744fa62b5c31ad",
+    "quiz": "historia-geral",
+    "text": "Em qual cidade dos EUA ocorreu a conferência que redigiu a Carta da ONU em 1945?",
+    "options": [
+      "São Francisco",
+      "Nova York",
+      "Washington",
+      "Genebra"
+    ],
+    "correct": 0,
+    "aliases": [
+      "são francisco"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A conferência de fundação da ONU ocorreu em São Francisco.",
+    "source": "https://www.un.org/en/about-us/history-of-the-un"
+  },
+  {
+    "id": "v2:612573592e77bc4cc659",
+    "quiz": "historia-geral",
+    "text": "Qual missão levou os primeiros seres humanos à superfície da Lua?",
+    "options": [
+      "Apollo 8",
+      "Apollo 11",
+      "Apollo 13",
+      "Gemini 4"
+    ],
+    "correct": 1,
+    "aliases": [
+      "apollo 11"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Apollo 11 pousou na Lua em 1969.",
+    "source": "https://www.nasa.gov/mission/apollo-11/"
+  },
+  {
+    "id": "v2:97619e611f15a649e50f",
+    "quiz": "historia-geral",
+    "text": "Em qual cidade foi construído o muro que virou símbolo da Guerra Fria na Europa?",
+    "options": [
+      "Viena",
+      "Praga",
+      "Berlim",
+      "Varsóvia"
+    ],
+    "correct": 2,
+    "aliases": [
+      "berlim"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Muro de Berlim dividiu a cidade durante a Guerra Fria.",
+    "source": "https://history.state.gov/milestones/1953-1960/berlin-crises"
+  },
+  {
+    "id": "v2:2bf9eb05b8060fcc5c77",
+    "quiz": "historia-geral",
+    "text": "Qual período de rivalidade internacional teve o Muro de Berlim como símbolo?",
+    "options": [
+      "Renascimento",
+      "Era Napoleônica",
+      "Belle Époque",
+      "Guerra Fria"
+    ],
+    "correct": 3,
+    "aliases": [
+      "guerra fria"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O muro simbolizou a divisão da Europa na Guerra Fria.",
+    "source": "https://history.state.gov/milestones/1953-1960/berlin-crises"
+  },
+  {
+    "id": "v2:9bba3c8cde78777123f3",
+    "quiz": "historia-geral",
+    "text": "Qual cientista recebeu Nobel de Física em 1903 e de Química em 1911?",
+    "options": [
+      "Marie Curie",
+      "Ada Lovelace",
+      "Rosalind Franklin",
+      "Lise Meitner"
+    ],
+    "correct": 0,
+    "aliases": [
+      "marie curie"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Marie Curie recebeu prêmios Nobel em duas áreas científicas.",
+    "source": "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+  },
+  {
+    "id": "v2:72fe1680588036f2d523",
+    "quiz": "historia-geral",
+    "text": "Qual elemento descoberto por Marie Curie recebeu nome ligado à sua terra natal?",
+    "options": [
+      "Rádio",
+      "Polônio",
+      "Urânio",
+      "Hélio"
+    ],
+    "correct": 1,
+    "aliases": [
+      "polônio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O polônio foi batizado em referência à Polônia.",
+    "source": "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+  },
+  {
+    "id": "v2:94958335404ad7598b5c",
+    "quiz": "historia-geral",
+    "text": "Qual elemento radioativo foi isolado por Marie e Pierre Curie?",
+    "options": [
+      "Neônio",
+      "Argônio",
+      "Rádio",
+      "Silício"
+    ],
+    "correct": 2,
+    "aliases": [
+      "rádio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Os Curies isolaram compostos de rádio em suas pesquisas.",
+    "source": "https://www.nobelprize.org/prizes/lists/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/"
+  },
+  {
+    "id": "v2:4b0e20cf3f7718649d0b",
+    "quiz": "historia-geral",
+    "text": "Em que ano foi proclamada a República no Brasil?",
+    "options": [
+      "1822",
+      "1888",
+      "1930",
+      "1889"
+    ],
+    "correct": 3,
+    "aliases": [
+      "1889"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Proclamação da República ocorreu em 15 de novembro de 1889.",
+    "source": "https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv42899.pdf"
+  },
+  {
+    "id": "v2:69a202dcc5813a50c2d6",
+    "quiz": "historia-geral",
+    "text": "Qual lei brasileira de 1888 declarou extinta a escravidão?",
+    "options": [
+      "Lei Áurea",
+      "Lei do Ventre Livre",
+      "Lei Eusébio de Queirós",
+      "Lei de Terras"
+    ],
+    "correct": 0,
+    "aliases": [
+      "lei áurea"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Lei Áurea declarou extinta a escravidão no Brasil.",
+    "source": "https://www.planalto.gov.br/ccivil_03/leis/lim/lim3353.htm"
+  },
+  {
+    "id": "v2:f912a97cd324b88b1be9",
+    "quiz": "historia-geral",
+    "text": "Quem sancionou a Lei Áurea em 1888?",
+    "options": [
+      "Maria Leopoldina",
+      "Princesa Isabel",
+      "Anita Garibaldi",
+      "Maria Quitéria"
+    ],
+    "correct": 1,
+    "aliases": [
+      "princesa isabel"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A princesa Isabel assinou a Lei Áurea como regente.",
+    "source": "https://www.planalto.gov.br/ccivil_03/leis/lim/lim3353.htm"
+  },
+  {
+    "id": "v2:e68549ccaad9cabcb746",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual música e dança surgiu na região do Rio da Prata e é patrimônio cultural de Argentina e Uruguai?",
+    "options": [
+      "Tango",
+      "Flamenco",
+      "Fado",
+      "Samba"
+    ],
+    "correct": 0,
+    "aliases": [
+      "tango"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O tango se desenvolveu em Buenos Aires e Montevidéu.",
+    "source": "https://ich.unesco.org/en/rl/tango-00258"
+  },
+  {
+    "id": "v2:1c5b50f939b2605588b5",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual expressão artística reúne canto, dança e música na tradição andaluza?",
+    "options": [
+      "Tango",
+      "Flamenco",
+      "Fado",
+      "Capoeira"
+    ],
+    "correct": 1,
+    "aliases": [
+      "flamenco"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O flamenco tem raízes especialmente na Andaluzia, Espanha.",
+    "source": "https://ich.unesco.org/en/RL/flamenco-00363"
+  },
+  {
+    "id": "v2:01dbba047e0ecc308cf0",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual alimento fermentado é parte central da tradição culinária coreana?",
+    "options": [
+      "Missô",
+      "Tempeh",
+      "Kimchi",
+      "Chucrute"
+    ],
+    "correct": 2,
+    "aliases": [
+      "kimchi"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O kimchi é um preparo coreano de vegetais conservados.",
+    "source": "https://ich.unesco.org/en/RL/kimjang-making-and-sharing-kimchi-in-the-republic-of-korea-00881"
+  },
+  {
+    "id": "v2:33efbca3364dab3e447b",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual prática de origem indiana combina posturas, respiração e meditação?",
+    "options": [
+      "Tai chi",
+      "Pilates",
+      "Capoeira",
+      "Yoga"
+    ],
+    "correct": 3,
+    "aliases": [
+      "yoga"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O yoga é uma prática tradicional da Índia.",
+    "source": "https://ich.unesco.org/en/RL/yoga-01163"
+  },
+  {
+    "id": "v2:7cfd26db59f2853e5107",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual prática afro-brasileira reúne jogo corporal, música e dança em roda?",
+    "options": [
+      "Capoeira",
+      "Judô",
+      "Samba",
+      "Karatê"
+    ],
+    "correct": 0,
+    "aliases": [
+      "capoeira"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A capoeira é uma expressão cultural afro-brasileira.",
+    "source": "https://ich.unesco.org/en/RL/roda-of-capoeira-00892"
+  },
+  {
+    "id": "v2:cfad4c74263e83c0a973",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual manifestação baiana combina música, dança e poesia em círculo?",
+    "options": [
+      "Frevo",
+      "Samba de roda",
+      "Maracatu",
+      "Jongo"
+    ],
+    "correct": 1,
+    "aliases": [
+      "samba de roda"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O samba de roda se desenvolveu no Recôncavo Baiano.",
+    "source": "https://ich.unesco.org/en/RL/Samba%20de%20Roda-of-the-reconcavo-of-bahia-00101"
+  },
+  {
+    "id": "v2:068b05aa2d7fe9fd88ab",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual forma de teatro tradicional japonês surgiu no período Edo?",
+    "options": [
+      "Nô",
+      "Ópera de Pequim",
+      "Kabuki",
+      "Commedia dell’arte"
+    ],
+    "correct": 2,
+    "aliases": [
+      "kabuki"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O kabuki é um gênero teatral do Japão.",
+    "source": "https://ich.unesco.org/en/RL/kabuki-theatre-00163"
+  },
+  {
+    "id": "v2:d287bd6e7d3193f8b990",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual região espanhola é especialmente associada ao flamenco?",
+    "options": [
+      "Catalunha",
+      "Galícia",
+      "País Basco",
+      "Andaluzia"
+    ],
+    "correct": 3,
+    "aliases": [
+      "andaluzia"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Andaluzia é o principal berço do flamenco.",
+    "source": "https://ich.unesco.org/en/RL/flamenco-00363"
+  },
+  {
+    "id": "v2:3009b6fe3ae02f897b68",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em quais duas cidades o tango se desenvolveu historicamente?",
+    "options": [
+      "Buenos Aires e Montevidéu",
+      "Madri e Lisboa",
+      "Roma e Nápoles",
+      "Paris e Lyon"
+    ],
+    "correct": 0,
+    "aliases": [
+      "buenos aires e montevidéu"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Buenos Aires e Montevidéu foram centros da tradição do tango.",
+    "source": "https://ich.unesco.org/en/rl/tango-00258"
+  },
+  {
+    "id": "v2:04bfd03b26269a7ac39b",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em qual região do Brasil se desenvolveu o samba de roda?",
+    "options": [
+      "Sertão pernambucano",
+      "Recôncavo Baiano",
+      "Vale do Paraíba",
+      "Pantanal"
+    ],
+    "correct": 1,
+    "aliases": [
+      "recôncavo baiano"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O samba de roda é ligado ao Recôncavo da Bahia.",
+    "source": "https://ich.unesco.org/en/RL/Samba%20de%20Roda-of-the-reconcavo-of-bahia-00101"
+  },
+  {
+    "id": "v2:06de5a85c695c6051725",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem pintou a Mona Lisa?",
+    "options": [
+      "Michelangelo",
+      "Rafael",
+      "Leonardo da Vinci",
+      "Sandro Botticelli"
+    ],
+    "correct": 2,
+    "aliases": [
+      "leonardo da vinci"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Mona Lisa é uma pintura de Leonardo da Vinci.",
+    "source": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
+  },
+  {
+    "id": "v2:4e5c1ce3bd1f1da4db75",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em qual museu está exposta a Mona Lisa?",
+    "options": [
+      "Museu do Prado",
+      "MoMA",
+      "Museu Reina Sofía",
+      "Museu do Louvre"
+    ],
+    "correct": 3,
+    "aliases": [
+      "museu do louvre"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A obra integra a coleção do Louvre, em Paris.",
+    "source": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
+  },
+  {
+    "id": "v2:99c3b31659d1343d8db9",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem pintou A Noite Estrelada?",
+    "options": [
+      "Vincent van Gogh",
+      "Claude Monet",
+      "Paul Cézanne",
+      "Pablo Picasso"
+    ],
+    "correct": 0,
+    "aliases": [
+      "vincent van gogh"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Noite Estrelada é uma obra de Vincent van Gogh.",
+    "source": "https://www.moma.org/collection/works/79802"
+  },
+  {
+    "id": "v2:431300e39e460b310bbe",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual museu de Nova York conserva A Noite Estrelada?",
+    "options": [
+      "Louvre",
+      "MoMA",
+      "Prado",
+      "Uffizi"
+    ],
+    "correct": 1,
+    "aliases": [
+      "moma"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A obra faz parte da coleção do Museum of Modern Art.",
+    "source": "https://www.moma.org/collection/works/79802"
+  },
+  {
+    "id": "v2:7656767b13dceeb19add",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual artista pintou Guernica?",
+    "options": [
+      "Salvador Dalí",
+      "Joan Miró",
+      "Pablo Picasso",
+      "Henri Matisse"
+    ],
+    "correct": 2,
+    "aliases": [
+      "pablo picasso"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Picasso criou Guernica durante a Guerra Civil Espanhola.",
+    "source": "https://guernica.museoreinasofia.es/en"
+  },
+  {
+    "id": "v2:78f1feaf719ce98d4bd1",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual conflito inspirou a pintura Guernica?",
+    "options": [
+      "Primeira Guerra Mundial",
+      "Guerra da Crimeia",
+      "Revolução Francesa",
+      "Guerra Civil Espanhola"
+    ],
+    "correct": 3,
+    "aliases": [
+      "guerra civil espanhola"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A obra foi feita em meio à Guerra Civil Espanhola.",
+    "source": "https://guernica.museoreinasofia.es/en"
+  },
+  {
+    "id": "v2:bf140ea25d3e17cd4ef3",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é o nome da mulher retratada na Mona Lisa?",
+    "options": [
+      "Lisa Gherardini",
+      "Mumtaz Mahal",
+      "Maria Antonieta",
+      "Isabella d’Este"
+    ],
+    "correct": 0,
+    "aliases": [
+      "lisa gherardini"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O retrato é identificado como o de Lisa Gherardini.",
+    "source": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
+  },
+  {
+    "id": "v2:eecded1c7a20e2dc4da2",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em que ano Vincent van Gogh pintou A Noite Estrelada?",
+    "options": [
+      "1789",
+      "1889",
+      "1920",
+      "1905"
+    ],
+    "correct": 1,
+    "aliases": [
+      "1889"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O MoMA data A Noite Estrelada de junho de 1889.",
+    "source": "https://www.moma.org/collection/works/79802"
+  },
+  {
+    "id": "v2:ec015a443abb8b8228ac",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em qual cidade está o Museu Reina Sofía, que conserva Guernica?",
+    "options": [
+      "Barcelona",
+      "Sevilha",
+      "Madri",
+      "Bilbao"
+    ],
+    "correct": 2,
+    "aliases": [
+      "madri"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Museu Reina Sofía fica em Madri.",
+    "source": "https://guernica.museoreinasofia.es/en"
+  },
+  {
+    "id": "v2:98507e764e86dcf4e092",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em qual cidade fica o Museu do Louvre?",
+    "options": [
+      "Londres",
+      "Roma",
+      "Berlim",
+      "Paris"
+    ],
+    "correct": 3,
+    "aliases": [
+      "paris"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Louvre fica na capital francesa.",
+    "source": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
+  },
+  {
+    "id": "v2:a07ca3b3ef2656affd12",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem propôs a World Wide Web enquanto trabalhava no CERN?",
+    "options": [
+      "Tim Berners-Lee",
+      "Bill Gates",
+      "Steve Jobs",
+      "Alan Turing"
+    ],
+    "correct": 0,
+    "aliases": [
+      "tim berners-lee"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Tim Berners-Lee apresentou a proposta da Web em 1989.",
+    "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
+  },
+  {
+    "id": "v2:fc0a0f595f7b9c68c360",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em qual laboratório nasceu a World Wide Web?",
+    "options": [
+      "NASA",
+      "CERN",
+      "MIT",
+      "Bell Labs"
+    ],
+    "correct": 1,
+    "aliases": [
+      "cern"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Web foi proposta no CERN, centro europeu de pesquisa.",
+    "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
+  },
+  {
+    "id": "v2:c6f3cac90b09afb23575",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em que ano surgiu a primeira proposta da World Wide Web?",
+    "options": [
+      "1975",
+      "1995",
+      "1989",
+      "2005"
+    ],
+    "correct": 2,
+    "aliases": [
+      "1989"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Tim Berners-Lee apresentou a proposta em março de 1989.",
+    "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
+  },
+  {
+    "id": "v2:8d49398e5f06fcbe930e",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual marca de computador hospedou o primeiro servidor da Web no CERN?",
+    "options": [
+      "Commodore",
+      "Atari",
+      "IBM PC",
+      "NeXT"
+    ],
+    "correct": 3,
+    "aliases": [
+      "next"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O primeiro servidor da Web rodava em um computador NeXT.",
+    "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
+  },
+  {
+    "id": "v2:a447d96fc97c1bd788e8",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual conceito de documentos conectados por links foi essencial para a Web?",
+    "options": [
+      "Hipertexto",
+      "Planilha",
+      "Criptografia",
+      "Compressão"
+    ],
+    "correct": 0,
+    "aliases": [
+      "hipertexto"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A proposta da Web reunia computadores, redes e hipertexto.",
+    "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
+  },
+  {
+    "id": "v2:6b6c381f17d8bd3d2828",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual sistema de satélites fornece posicionamento, navegação e tempo?",
+    "options": [
+      "Bluetooth",
+      "GPS",
+      "Wi-Fi",
+      "NFC"
+    ],
+    "correct": 1,
+    "aliases": [
+      "gps"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O GPS usa sinais de satélites para calcular posição e horário.",
+    "source": "https://www.gps.gov/gps"
+  },
+  {
+    "id": "v2:635127b7a3b3fb1f6a9b",
+    "quiz": "conhecimentos-gerais",
+    "text": "Que equipamentos em órbita transmitem os sinais usados pelo GPS?",
+    "options": [
+      "Cabos submarinos",
+      "Antenas de rádio AM",
+      "Satélites",
+      "Faróis marítimos"
+    ],
+    "correct": 2,
+    "aliases": [
+      "satélites"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Satélites da constelação GPS transmitem sinais aos receptores.",
+    "source": "https://www.gps.gov/gps"
+  },
+  {
+    "id": "v2:4fa7ef3ebcbfa4242f6c",
+    "quiz": "conhecimentos-gerais",
+    "text": "Além de posição e navegação, qual medida precisa o GPS também fornece?",
+    "options": [
+      "Temperatura",
+      "Umidade",
+      "Pressão",
+      "Tempo"
+    ],
+    "correct": 3,
+    "aliases": [
+      "tempo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O GPS também fornece sinais de tempo de alta precisão.",
+    "source": "https://www.gps.gov/gps"
+  },
+  {
+    "id": "v2:1aad9112b5be87501b0a",
+    "quiz": "conhecimentos-gerais",
+    "text": "Que equipamento capta sinais do GPS para calcular a localização do usuário?",
+    "options": [
+      "Receptor",
+      "Impressora",
+      "Projetor",
+      "Roteador"
+    ],
+    "correct": 0,
+    "aliases": [
+      "receptor"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O receptor GPS utiliza sinais enviados pelos satélites.",
+    "source": "https://www.gps.gov/gps"
+  },
+  {
+    "id": "v2:fc18354f4347c8c4bf7a",
+    "quiz": "conhecimentos-gerais",
+    "text": "Que infraestrutura conecta máquinas para trocar dados na Web?",
+    "options": [
+      "Rede elétrica",
+      "Rede de computadores",
+      "Rede de água",
+      "Rede ferroviária"
+    ],
+    "correct": 1,
+    "aliases": [
+      "rede de computadores"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Web depende de redes de computadores para distribuir documentos.",
+    "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
+  },
+  {
+    "id": "v2:f986426c1ef87110037f",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quantos jogadores cada time pode ter em campo no início de uma partida de futebol?",
+    "options": [
+      "Nove",
+      "Dez",
+      "Onze",
+      "Doze"
+    ],
+    "correct": 2,
+    "aliases": [
+      "onze",
+      "11"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As regras do futebol permitem até onze jogadores por equipe.",
+    "source": "https://www.theifab.com/laws/latest/the-players/"
+  },
+  {
+    "id": "v2:10d9671b819c7b156f27",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quantos jogadores de cada equipe ficam em quadra no basquete tradicional?",
+    "options": [
+      "Três",
+      "Seis",
+      "Sete",
+      "Cinco"
+    ],
+    "correct": 3,
+    "aliases": [
+      "cinco",
+      "5"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O basquete é disputado por cinco jogadores de cada lado.",
+    "source": "https://about.fiba.basketball/en/our-sport/basketball"
+  },
+  {
+    "id": "v2:0329e7441f7e61bc8b3e",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quantos atletas de cada equipe ficam em quadra no voleibol tradicional?",
+    "options": [
+      "Seis",
+      "Cinco",
+      "Sete",
+      "Oito"
+    ],
+    "correct": 0,
+    "aliases": [
+      "seis",
+      "6"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O voleibol de quadra utiliza seis jogadores por equipe.",
+    "source": "https://www.fivb.com/volleyball/the-game/basic-rules/"
+  },
+  {
+    "id": "v2:682eaa3941dae34560b3",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quantos jogadores de cada lado disputam o basquete 3x3 em quadra?",
+    "options": [
+      "Dois",
+      "Três",
+      "Quatro",
+      "Cinco"
+    ],
+    "correct": 1,
+    "aliases": [
+      "três",
+      "3"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O basquete 3x3 usa três jogadores por equipe em quadra.",
+    "source": "https://about.fiba.basketball/en/our-sport/3x3-basketball"
+  },
+  {
+    "id": "v2:b6610d79282644a66863",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a distância oficial de uma maratona?",
+    "options": [
+      "40 km",
+      "50 km",
+      "42,195 km",
+      "21,097 km"
+    ],
+    "correct": 2,
+    "aliases": [
+      "42,195 km",
+      "42.195 km",
+      "42195 metros"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A distância padrão da maratona é 42,195 quilômetros.",
+    "source": "https://oscnewsletter.olympics.com/article/34/hidden-treasures_lang%3Den.html"
+  },
+  {
+    "id": "v2:76e1c8554854edcec62c",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual cidade sediou os primeiros Jogos Olímpicos da era moderna, em 1896?",
+    "options": [
+      "Paris",
+      "Londres",
+      "Roma",
+      "Atenas"
+    ],
+    "correct": 3,
+    "aliases": [
+      "atenas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Os Jogos de 1896 aconteceram em Atenas.",
+    "source": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=172430&parentDocumentId=172429&skipCopyright=true&skipWatermark=true"
+  },
+  {
+    "id": "v2:45eb23397e8132e6dceb",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual jogador pode usar as mãos dentro da própria área no futebol?",
+    "options": [
+      "Goleiro",
+      "Zagueiro",
+      "Volante",
+      "Atacante"
+    ],
+    "correct": 0,
+    "aliases": [
+      "goleiro"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O goleiro tem regras especiais para o uso das mãos em sua área.",
+    "source": "https://www.theifab.com/laws/latest/the-players/"
+  },
+  {
+    "id": "v2:089baa731ba6a4c14029",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual posição do voleibol é especializada na defesa e usa uniforme diferente?",
+    "options": [
+      "Levantador",
+      "Líbero",
+      "Ponteiro",
+      "Central"
+    ],
+    "correct": 1,
+    "aliases": [
+      "líbero"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O líbero atua principalmente nas ações defensivas.",
+    "source": "https://www.fivb.com/volleyball/the-game/basic-rules/"
+  },
+  {
+    "id": "v2:94eeda9a41972cf54cb8",
+    "quiz": "conhecimentos-gerais",
+    "text": "No basquete 3x3, qual pontuação encerra a partida antes do limite de tempo?",
+    "options": [
+      "15 pontos",
+      "25 pontos",
+      "21 pontos",
+      "30 pontos"
+    ],
+    "correct": 2,
+    "aliases": [
+      "21 pontos",
+      "21"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Uma equipe vence ao alcançar 21 pontos antes do fim do tempo regulamentar.",
+    "source": "https://about.fiba.basketball/en/our-sport/3x3-basketball"
+  },
+  {
+    "id": "v2:17d0957899ee7d78938b",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é o tempo do relógio de arremesso no basquete 3x3?",
+    "options": [
+      "8 segundos",
+      "24 segundos",
+      "30 segundos",
+      "12 segundos"
+    ],
+    "correct": 3,
+    "aliases": [
+      "12 segundos"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O basquete 3x3 usa relógio de arremesso de 12 segundos.",
+    "source": "https://about.fiba.basketball/en/our-sport/3x3-basketball"
+  },
+  {
+    "id": "v2:384307a92afcd0f312ce",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é o menor número primo?",
+    "options": [
+      "Dois",
+      "Um",
+      "Três",
+      "Quatro"
+    ],
+    "correct": 0,
+    "aliases": [
+      "dois",
+      "2"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Dois é primo porque tem exatamente dois divisores positivos.",
+    "source": "https://mathworld.wolfram.com/PrimeNumber.html"
+  },
+  {
+    "id": "v2:aae8764531a886205c2d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quanto somam os ângulos internos de um triângulo plano?",
+    "options": [
+      "90 graus",
+      "180 graus",
+      "270 graus",
+      "360 graus"
+    ],
+    "correct": 1,
+    "aliases": [
+      "180 graus",
+      "180"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Na geometria euclidiana, a soma é 180 graus.",
+    "source": "https://mathworld.wolfram.com/Triangle.html"
+  },
+  {
+    "id": "v2:77e3b0d20030739e75af",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual polígono tem seis lados?",
+    "options": [
+      "Pentágono",
+      "Heptágono",
+      "Hexágono",
+      "Octógono"
+    ],
+    "correct": 2,
+    "aliases": [
+      "hexágono"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Um hexágono é um polígono de seis lados.",
+    "source": "https://mathworld.wolfram.com/Hexagon.html"
+  },
+  {
+    "id": "v2:9fe0e264f3fcf2054c66",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual constante relaciona a circunferência ao diâmetro de um círculo?",
+    "options": [
+      "Número de Euler",
+      "Razão áurea",
+      "Raiz de dois",
+      "Pi"
+    ],
+    "correct": 3,
+    "aliases": [
+      "pi",
+      "π"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Pi é a razão entre o comprimento da circunferência e seu diâmetro.",
+    "source": "https://mathworld.wolfram.com/Pi.html"
+  },
+  {
+    "id": "v2:c2d40ecaaff67e4ebb00",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quantos metros há em um quilômetro?",
+    "options": [
+      "Mil",
+      "Cem",
+      "Dez mil",
+      "Um milhão"
+    ],
+    "correct": 0,
+    "aliases": [
+      "mil",
+      "1000"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O prefixo quilo representa mil unidades.",
+    "source": "https://www.bipm.org/en/measurement-units/si-prefixes"
+  },
+  {
+    "id": "v2:adcd67f1a3e5318d59d7",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a unidade básica de comprimento no Sistema Internacional?",
+    "options": [
+      "Polegada",
+      "Metro",
+      "Jarda",
+      "Milha"
+    ],
+    "correct": 1,
+    "aliases": [
+      "metro"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O metro é a unidade de comprimento do SI.",
+    "source": "https://www.bipm.org/en/measurement-units/si-base-units"
+  },
+  {
+    "id": "v2:fd75a7187d8471312e2b",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a unidade básica de tempo no Sistema Internacional?",
+    "options": [
+      "Minuto",
+      "Hora",
+      "Segundo",
+      "Dia"
+    ],
+    "correct": 2,
+    "aliases": [
+      "segundo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O segundo é a unidade básica de tempo do SI.",
+    "source": "https://www.bipm.org/en/measurement-units/si-base-units"
+  },
+  {
+    "id": "v2:f2e9ce4deaea0bb5b387",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a raiz quadrada positiva de 81?",
+    "options": [
+      "Sete",
+      "Oito",
+      "Dez",
+      "Nove"
+    ],
+    "correct": 3,
+    "aliases": [
+      "nove",
+      "9"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Nove vezes nove é igual a 81.",
+    "source": "https://mathworld.wolfram.com/SquareRoot.html"
+  },
+  {
+    "id": "v2:70489e1dd1fc8d10ab3d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quantas unidades formam uma dúzia?",
+    "options": [
+      "Doze",
+      "Dez",
+      "Onze",
+      "Vinte"
+    ],
+    "correct": 0,
+    "aliases": [
+      "doze",
+      "12"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Dúzia é um conjunto de doze elementos.",
+    "source": "https://www.merriam-webster.com/dictionary/dozen"
+  },
+  {
+    "id": "v2:bd2494242879f8ad44eb",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quanto vale o algarismo romano X?",
+    "options": [
+      "Cinco",
+      "Dez",
+      "Cinquenta",
+      "Cem"
+    ],
+    "correct": 1,
+    "aliases": [
+      "dez",
+      "10"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "X representa dez no sistema de algarismos romanos.",
+    "source": "https://www.britannica.com/topic/Roman-numeral"
+  },
+  {
+    "id": "v2:7681759c5b75b9f7f78d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em qual galáxia fica o Sistema Solar?",
+    "options": [
+      "Andrômeda",
+      "Triângulo",
+      "Via Láctea",
+      "Grande Nuvem de Magalhães"
+    ],
+    "correct": 2,
+    "aliases": [
+      "via láctea"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Sistema Solar integra a Via Láctea.",
+    "source": "https://science.nasa.gov/universe/galaxies/"
+  },
+  {
+    "id": "v2:efeac9a728435ca735cd",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual movimento da Terra em torno do próprio eixo produz a alternância de dias e noites?",
+    "options": [
+      "Translação",
+      "Precessão",
+      "Nutação",
+      "Rotação"
+    ],
+    "correct": 3,
+    "aliases": [
+      "rotação"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A rotação da Terra provoca a sucessão de dia e noite.",
+    "source": "https://science.nasa.gov/earth/facts/"
+  },
+  {
+    "id": "v2:9da67a7cc4c5bf639591",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual movimento da Terra ao redor do Sol dura aproximadamente um ano?",
+    "options": [
+      "Translação",
+      "Rotação",
+      "Precessão",
+      "Maré"
+    ],
+    "correct": 0,
+    "aliases": [
+      "translação"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Terra completa uma órbita em torno do Sol em cerca de um ano.",
+    "source": "https://science.nasa.gov/earth/facts/"
+  },
+  {
+    "id": "v2:c8510b416bae3797e1d0",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quais seres vivos formam os recifes coralinos?",
+    "options": [
+      "Plantas terrestres",
+      "Corais",
+      "Bactérias apenas",
+      "Rochas sem vida"
+    ],
+    "correct": 1,
+    "aliases": [
+      "corais"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Recifes são construídos por animais chamados pólipos de coral.",
+    "source": "https://oceanservice.noaa.gov/facts/coral.html"
+  },
+  {
+    "id": "v2:aa890c1a739aa9d50082",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual fonte de energia permite que plantas realizem fotossíntese?",
+    "options": [
+      "Som",
+      "Vento",
+      "Luz solar",
+      "Gravidade"
+    ],
+    "correct": 2,
+    "aliases": [
+      "luz solar"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A fotossíntese usa a energia da luz.",
+    "source": "https://www.britannica.com/science/photosynthesis"
+  },
+  {
+    "id": "v2:fda245c0e2239b210a8b",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual influência é a principal responsável pelas marés oceânicas?",
+    "options": [
+      "Vento solar",
+      "Campo magnético",
+      "Rotação de Marte",
+      "Gravidade da Lua"
+    ],
+    "correct": 3,
+    "aliases": [
+      "gravidade da lua"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A atração gravitacional da Lua é a principal causa das marés.",
+    "source": "https://oceanservice.noaa.gov/facts/tides.html"
+  },
+  {
+    "id": "v2:533c5615598dce8e1bd8",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual oceano separa a costa oeste das Américas da costa leste da Ásia?",
+    "options": [
+      "Oceano Pacífico",
+      "Oceano Atlântico",
+      "Oceano Índico",
+      "Oceano Ártico"
+    ],
+    "correct": 0,
+    "aliases": [
+      "oceano pacífico"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Pacífico se estende entre as Américas, a Ásia e a Oceania.",
+    "source": "https://oceanservice.noaa.gov/facts/5oceans.html"
+  },
+  {
+    "id": "v2:491408e2db9a7362f852",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual continente contém o Polo Sul geográfico?",
+    "options": [
+      "Ásia",
+      "Antártida",
+      "África",
+      "Oceania"
+    ],
+    "correct": 1,
+    "aliases": [
+      "antártida"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Polo Sul está no interior da Antártida.",
+    "source": "https://www.bas.ac.uk/about/antarctica/"
+  },
+  {
+    "id": "v2:931f77113942225f17ff",
+    "quiz": "conhecimentos-gerais",
+    "text": "Que blocos móveis da litosfera se encontram nas zonas onde ocorrem muitos terremotos?",
+    "options": [
+      "Nuvens",
+      "Glaciares",
+      "Placas tectônicas",
+      "Correntes marinhas"
+    ],
+    "correct": 2,
+    "aliases": [
+      "placas tectônicas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Muitos terremotos acontecem nas bordas das placas tectônicas.",
+    "source": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+  },
+  {
+    "id": "v2:22e3b2130c3343447903",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual gás predomina na atmosfera seca da Terra?",
+    "options": [
+      "Oxigênio",
+      "Argônio",
+      "Hélio",
+      "Nitrogênio"
+    ],
+    "correct": 3,
+    "aliases": [
+      "nitrogênio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O nitrogênio constitui a maior parte do ar seco.",
+    "source": "https://www.nasa.gov/general/what-is-earths-atmosphere/"
+  },
+  {
+    "id": "v2:3dfdfbab3881de06c680",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Brasil?",
+    "options": [
+      "Brasília",
+      "Buenos Aires",
+      "Montevidéu",
+      "Cairo"
+    ],
+    "correct": 0,
+    "aliases": [
+      "brasília",
+      "brasilia"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Brasília é a capital de Brasil.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Brasil%20capital"
+  },
+  {
+    "id": "v2:3c69febbc73def10212f",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Argentina?",
+    "options": [
+      "Santiago",
+      "Buenos Aires",
+      "Bangkok",
+      "Nairóbi"
+    ],
+    "correct": 1,
+    "aliases": [
+      "buenos aires",
+      "buenos aires"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Buenos Aires é a capital de Argentina.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Argentina%20capital"
+  },
+  {
+    "id": "v2:458f6085a1fb689ef04e",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Chile?",
+    "options": [
+      "Lima",
+      "Berlim",
+      "Santiago",
+      "Nova Déli"
+    ],
+    "correct": 2,
+    "aliases": [
+      "santiago",
+      "santiago"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Santiago é a capital de Chile.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Chile%20capital"
+  },
+  {
+    "id": "v2:8b700aa84a18edd813c4",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Peru?",
+    "options": [
+      "Cidade do México",
+      "Roma",
+      "Tóquio",
+      "Lima"
+    ],
+    "correct": 3,
+    "aliases": [
+      "lima",
+      "lima"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Lima é a capital de Peru.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Peru%20capital"
+  },
+  {
+    "id": "v2:6a8e403482fe61d79a12",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de México?",
+    "options": [
+      "Cidade do México",
+      "Ottawa",
+      "Londres",
+      "Pequim"
+    ],
+    "correct": 0,
+    "aliases": [
+      "cidade do méxico",
+      "cidade do mexico",
+      "mexico city",
+      "mexico"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Cidade do México é a capital de México.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=M%C3%A9xico%20capital"
+  },
+  {
+    "id": "v2:9cb72be6fbcbb3cbae8d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Canadá?",
+    "options": [
+      "Lisboa",
+      "Ottawa",
+      "Seul",
+      "Canberra"
+    ],
+    "correct": 1,
+    "aliases": [
+      "ottawa",
+      "ottawa"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Ottawa é a capital de Canadá.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Canad%C3%A1%20capital"
+  },
+  {
+    "id": "v2:a861abfaf2a028e7655d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Portugal?",
+    "options": [
+      "Montevidéu",
+      "Cairo",
+      "Lisboa",
+      "Wellington"
+    ],
+    "correct": 2,
+    "aliases": [
+      "lisboa",
+      "lisboa",
+      "lisbon"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Lisboa é a capital de Portugal.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Portugal%20capital"
+  },
+  {
+    "id": "v2:0c06d20575fb698af908",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Uruguai?",
+    "options": [
+      "Bangkok",
+      "Nairóbi",
+      "Brasília",
+      "Montevidéu"
+    ],
+    "correct": 3,
+    "aliases": [
+      "montevidéu",
+      "montevideu",
+      "montevideo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Montevidéu é a capital de Uruguai.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Uruguai%20capital"
+  },
+  {
+    "id": "v2:8e0a7d5dcae945aa1cb7",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Tailândia?",
+    "options": [
+      "Bangkok",
+      "Berlim",
+      "Nova Déli",
+      "Buenos Aires"
+    ],
+    "correct": 0,
+    "aliases": [
+      "bangkok",
+      "bangkok"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Bangkok é a capital de Tailândia.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Tail%C3%A2ndia%20capital"
+  },
+  {
+    "id": "v2:1143f3afa40a7ee054f4",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Alemanha?",
+    "options": [
+      "Roma",
+      "Berlim",
+      "Tóquio",
+      "Santiago"
+    ],
+    "correct": 1,
+    "aliases": [
+      "berlim",
+      "berlim",
+      "berlin"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Berlim é a capital de Alemanha.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Alemanha%20capital"
+  },
+  {
+    "id": "v2:00958e6d0f9df3f8e738",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Itália?",
+    "options": [
+      "Londres",
+      "Pequim",
+      "Roma",
+      "Lima"
+    ],
+    "correct": 2,
+    "aliases": [
+      "roma",
+      "roma",
+      "rome"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Roma é a capital de Itália.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=It%C3%A1lia%20capital"
+  },
+  {
+    "id": "v2:9ec96220647d4ee81614",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Reino Unido?",
+    "options": [
+      "Seul",
+      "Canberra",
+      "Cidade do México",
+      "Londres"
+    ],
+    "correct": 3,
+    "aliases": [
+      "londres",
+      "londres",
+      "london"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Londres é a capital de Reino Unido.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Reino%20Unido%20capital"
+  },
+  {
+    "id": "v2:b2b244964f649ec7db27",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Coreia do Sul?",
+    "options": [
+      "Seul",
+      "Cairo",
+      "Wellington",
+      "Ottawa"
+    ],
+    "correct": 0,
+    "aliases": [
+      "seul",
+      "seul",
+      "seoul"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Seul é a capital de Coreia do Sul.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Coreia%20do%20Sul%20capital"
+  },
+  {
+    "id": "v2:8ae77eb812f5d2f407ae",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Egito?",
+    "options": [
+      "Nairóbi",
+      "Cairo",
+      "Brasília",
+      "Lisboa"
+    ],
+    "correct": 1,
+    "aliases": [
+      "cairo",
+      "cairo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Cairo é a capital de Egito.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Egito%20capital"
+  },
+  {
+    "id": "v2:c8ee953dcc7dc17afac0",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Quênia?",
+    "options": [
+      "Nova Déli",
+      "Buenos Aires",
+      "Nairóbi",
+      "Montevidéu"
+    ],
+    "correct": 2,
+    "aliases": [
+      "nairóbi",
+      "nairobi"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Nairóbi é a capital de Quênia.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Qu%C3%AAnia%20capital"
+  },
+  {
+    "id": "v2:a3890acc565048d4f0e3",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Índia?",
+    "options": [
+      "Tóquio",
+      "Santiago",
+      "Bangkok",
+      "Nova Déli"
+    ],
+    "correct": 3,
+    "aliases": [
+      "nova déli",
+      "nova deli",
+      "new delhi"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Nova Déli é a capital de Índia.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=%C3%8Dndia%20capital"
+  },
+  {
+    "id": "v2:405ee07e3b7e00a46006",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Japão?",
+    "options": [
+      "Tóquio",
+      "Pequim",
+      "Lima",
+      "Berlim"
+    ],
+    "correct": 0,
+    "aliases": [
+      "tóquio",
+      "toquio",
+      "tokyo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Tóquio é a capital de Japão.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Jap%C3%A3o%20capital"
+  },
+  {
+    "id": "v2:89f7cb0725629d2ea4ae",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de China?",
+    "options": [
+      "Canberra",
+      "Pequim",
+      "Cidade do México",
+      "Roma"
+    ],
+    "correct": 1,
+    "aliases": [
+      "pequim",
+      "pequim",
+      "beijing"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Pequim é a capital de China.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=China%20capital"
+  },
+  {
+    "id": "v2:ccd473b1a2d9ad24a364",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Austrália?",
+    "options": [
+      "Wellington",
+      "Ottawa",
+      "Canberra",
+      "Londres"
+    ],
+    "correct": 2,
+    "aliases": [
+      "canberra",
+      "canberra"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Canberra é a capital de Austrália.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Austr%C3%A1lia%20capital"
+  },
+  {
+    "id": "v2:9593c5bc20636a890a4a",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a capital de Nova Zelândia?",
+    "options": [
+      "Brasília",
+      "Lisboa",
+      "Seul",
+      "Wellington"
+    ],
+    "correct": 3,
+    "aliases": [
+      "wellington",
+      "wellington"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Wellington é a capital de Nova Zelândia.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Nova%20Zel%C3%A2ndia%20capital"
   }
 ];

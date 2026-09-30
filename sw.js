@@ -1,5 +1,5 @@
 // QuizArena Service Worker
-const CACHE_NAME = "quizarena-v20";
+const CACHE_NAME = "quizarena-v21";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -14,7 +14,7 @@ const CORE_ASSETS = [
   "./icon-192.png",
   "./icon-512.png",
   "./icon-maskable-512.png",
-  ...["bandeiras","capitais","lingua-paises","linguas-frases","animais","arte","monumentos","comidas","instrumentos","anime","super-herois","mapa","linha-do-tempo","associacoes","ciencias","historia-geral"].map(id=>`./category-icons/${id}.png`)
+  ...["bandeiras","capitais","lingua-paises","linguas-frases","animais","arte","monumentos","comidas","instrumentos","anime","super-herois","mapa","linha-do-tempo","associacoes","ciencias","historia-geral","conhecimentos-gerais"].map(id=>`./category-icons/${id}.png`)
 ];
 
 // Install: pre-cache the core app shell

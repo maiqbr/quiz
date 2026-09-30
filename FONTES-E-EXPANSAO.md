@@ -18,8 +18,8 @@ O jogo usa um **catálogo local revisado** para que solo, apresentação e ranki
 | Conteúdo | Origem e tratamento | Limite conhecido |
 | --- | --- | --- |
 | Bandeiras e capitais | [FlagCDN](https://flagcdn.com/) por código de país; a imagem é a única pista visual antes da resposta | Dependem da disponibilidade da FlagCDN. |
-| Animais, arte e monumentos | Arquivo fixo da Wikimedia Commons por pergunta, com autor, licença, página e revisão em `content.js` | Só entram itens com imagem selecionada: 89 animais, 38 obras e 52 monumentos. A seleção visual ainda precisa de conferência editorial contínua. |
-| Mapa | Dados públicos [Natural Earth 1:110m](https://www.naturalearthdata.com/about/terms-of-use/) em `maps/world-land.js`, desenhados localmente; pontos vêm das coordenadas em `content.js` | Precisão visual é adequada ao jogo, não a navegação ou georreferenciamento profissional. |
+| Animais, arte e monumentos | Arquivo fixo da Wikimedia Commons por pergunta, com autor, licença, página e revisão em `content.js` | Só entram itens com imagem selecionada: 89 animais, 37 obras e 52 monumentos. A seleção visual ainda precisa de conferência editorial contínua. |
+| Mapa | Dados públicos [Natural Earth 1:110m](https://www.naturalearthdata.com/about/terms-of-use/) em `maps/world-land.js`, desenhados localmente em proporção 2:1; pontos vêm das coordenadas em `content.js` | Precisão visual é adequada ao jogo, não a navegação ou georreferenciamento profissional. |
 | Perguntas textuais | Conteúdo local em português, com explicação e URL de referência por item novo ou convertido | Fontes podem mudar; revisar periodicamente. |
 | Ranking | Cloudflare Worker + D1 + Discord OAuth | O banco de respostas público permite automação; o placar é casual. |
 
@@ -27,9 +27,9 @@ O jogo usa um **catálogo local revisado** para que solo, apresentação e ranki
 
 ## Próximas expansões
 
-1. Ampliar Ciência e Natureza e História Geral com perguntas revisadas, fontes por item e explicações úteis após a resposta; criar outros temas de conhecimento geral com o mesmo modelo.
+1. Expandir Ciência e Natureza, História Geral e Conhecimentos Gerais além das atuais 50, 50 e 80 perguntas, mantendo fontes por item e explicações úteis após a resposta.
 2. Adicionar um importador editorial que produza rascunhos a partir de Wikidata ou de um banco de trivia, sem publicar automaticamente nem depender de API durante as partidas.
-3. Revisar as 179 fotografias selecionadas no navegador e substituir arquivos que deixarem de carregar; novas perguntas visuais só entram com imagem e crédito válidos.
+3. Revisar as 178 fotografias selecionadas no navegador e substituir arquivos que deixarem de carregar; novas perguntas visuais só entram com imagem e crédito válidos.
 4. Refinar os formatos de mapa, cronologia e associação também no ranking sem abrir espaço para pontuação enviada pelo cliente.
 
 Solo e apresentação mantêm histórico local. O modo de apresentação permite pontuação manual durante transmissão de tela; aparelhos separados exigiriam salas e sincronização em um backend.

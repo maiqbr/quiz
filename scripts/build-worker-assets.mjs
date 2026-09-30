@@ -15,5 +15,5 @@ for(const name of ['index.html','ranking.html','ranking.js','visual.css','conten
 copyFileSync(join(root,'creditos.html'),join(target,'creditos-data.txt'));
 mkdirSync(join(target,'maps'),{recursive:true});copyFileSync(join(root,'maps','world-land.js'),join(target,'maps','world-land.js'));
 mkdirSync(join(target,'category-icons'),{recursive:true});
-for(const name of ['bandeiras','capitais','lingua-paises','linguas-frases','animais','arte','monumentos','comidas','instrumentos','anime','super-herois','mapa','linha-do-tempo','associacoes','ciencias','historia-geral'])copyFileSync(join(root,'category-icons',name+'.png'),join(target,'category-icons',name+'.png'));
+for(const name of ['bandeiras','capitais','lingua-paises','linguas-frases','animais','arte','monumentos','comidas','instrumentos','anime','super-herois','mapa','linha-do-tempo','associacoes','ciencias','historia-geral','conhecimentos-gerais'])copyFileSync(join(root,'category-icons',name+'.png'),join(target,'category-icons',name+'.png'));
 console.log('Arquivos públicos preparados em worker/public.');

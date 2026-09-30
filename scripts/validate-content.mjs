@@ -27,7 +27,7 @@ for(const quiz of QUIZZES){
       if(!item.media.file?.startsWith('File:')||!item.media.author||!item.media.license||!item.media.fileUrl?.startsWith('https://')||!item.media.src?.startsWith('https://'))errors.push(`${label}: imagem sem arquivo ou crédito completo`);
     }
     if(quiz.id==='linguas-frases'&&!item.phrase?.trim())errors.push(`${label}: frase ausente`);
-    if(['lingua-paises','comidas','instrumentos','anime','super-herois','ciencias','historia-geral'].includes(quiz.id)&&(!item.question?.trim()||!item.explanation?.trim()||!item.source?.startsWith('https://')))errors.push(`${label}: pergunta sem texto, explicação ou fonte`);
+    if(['lingua-paises','comidas','instrumentos','anime','super-herois','ciencias','historia-geral','conhecimentos-gerais'].includes(quiz.id)&&(!item.question?.trim()||!item.explanation?.trim()||!item.source?.startsWith('https://')))errors.push(`${label}: pergunta sem texto, explicação ou fonte`);
     if(item.distractors&&(item.distractors.length!==3||new Set([item.name,...item.distractors]).size!==4))errors.push(`${label}: alternativas inválidas`);
     if(quiz.kind==='timeline'&&(item.events.length!==4||item.events.some((event,i)=>i>0&&item.events[i-1].year>=event.year)))errors.push(`${label}: sequência histórica inválida`);
     if(quiz.kind==='match'&&(item.pairs.length!==4||new Set(item.pairs.map(pair=>pair.country)).size!==4||new Set(item.pairs.map(pair=>pair.capital)).size!==4))errors.push(`${label}: pares inválidos`);
