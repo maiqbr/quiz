@@ -3,7 +3,7 @@
   const title=Object.fromEntries(QUIZZES.map(quiz=>[quiz.id,quiz.title]));title.misto='Misto';title.idiomas='Línguas do Mundo';title['audio-instrumentos']='Som dos Instrumentos (antigo)';
   const difficulty={easy:'Fácil',hard:'Difícil'};
   const lengths={quick:{label:'Rápida',limit:10},casual:{label:'Casual',limit:50},training:{label:'Treino',limit:100},legacy:{label:'Completa antiga'}};
-  let user=null,runId=null,current=null,hits=0,deadline=0,tick=null,busy=false,profileOffset=0,boardDifficulty='easy',rankLength='quick',boardLength='quick',runLength='quick',boardRequest=0;
+  let user=null,runId=null,current=null,hits=0,deadline=0,tick=null,busy=false,profileOffset=0,boardDifficulty='easy',rankLength='quick',boardLength='quick',runLength='quick',runQuiz='misto',boardRequest=0;
   const categories=[{id:'misto',title:'Misto',count:QUIZZES.reduce((sum,quiz)=>sum+quiz.getPool('all').length,0)},...QUIZZES.map(quiz=>({id:quiz.id,title:quiz.title,count:quiz.getPool('all').length}))];
   for(const [id,includeCount] of [['rank-category',true],['board-category',false]]){
     const select=el(id);select.replaceChildren();
@@ -36,9 +36,9 @@
       if(request!==boardRequest)return;
       el('rank-board-count').textContent=`${data.rows.length} jogadores`;
       el('board-length-note').textContent=`${data.total} perguntas por partida${data.total<lengths[boardLength].limit?' · todas as disponíveis neste tema':''}.`;
-      if(!data.rows.length){const row=document.createElement('tr');const cell=document.createElement('td');cell.colSpan=4;cell.textContent='Seja o primeiro neste ranking.';row.append(cell);rows.append(row)}
+      if(!data.rows.length){const row=document.createElement('tr');const cell=document.createElement('td');cell.colSpan=4;cell.className='rank-table-empty-cell';const empty=document.createElement('div');empty.className='rank-table-empty';empty.append(profileText('strong','','Ranking aberto'),profileText('span','','Conclua uma partida nesta categoria para registrar a primeira marca.'));cell.append(empty);row.append(cell);rows.append(row)}
       data.rows.forEach((item,index)=>{const row=document.createElement('tr');[index+1,item.name,`${item.hits}/${item.total}`,duration(item.elapsed_ms)].forEach(value=>{const cell=document.createElement('td');cell.textContent=value;row.append(cell)});rows.append(row)})
-    }catch(error){if(request!==boardRequest)return;const row=document.createElement('tr');const cell=document.createElement('td');cell.colSpan=4;cell.textContent=error.message;row.append(cell);rows.append(row)}
+    }catch(error){if(request!==boardRequest)return;const row=document.createElement('tr');const cell=document.createElement('td');cell.colSpan=4;cell.className='rank-table-empty-cell';const empty=document.createElement('div');empty.className='rank-table-empty';empty.textContent=error.message;cell.append(empty);row.append(cell);rows.append(row)}
   }
   function renderQuestion(question){
     current=question;deadline=Date.now()+question.secondsLeft*1000;show('ranked');
@@ -58,15 +58,15 @@
   async function answer(choice){
     if(busy||!current)return;busy=true;clearInterval(tick);el('rank-options').querySelectorAll('button').forEach(button=>button.disabled=true);el('rank-input').disabled=true;
     try{const result=await api('/api/run/answer',{method:'POST',body:JSON.stringify({runId,choice})});hits=result.hits;gameStatus((result.correct?'Resposta correta.':`Resposta: ${result.answer}.`)+(result.explanation?' '+result.explanation:''),result.correct?'success':'danger');
-      if(result.finished){current=null;runId=null;el('rank-game').hidden=true;el('rank-finish').hidden=false;el('rank-result').textContent=`${hits} de ${result.total} acertos em ${duration(result.elapsedMs)}.`;await board()}
+      if(result.finished){current=null;runId=null;el('rank-game').hidden=true;el('rank-finish').hidden=false;el('rank-result').textContent=`${title[runQuiz]||'Quiz Misto'} · ${lengths[runLength]?.label||'Partida'}`;el('rank-result-score').textContent=`${hits} / ${result.total}`;el('rank-result-time').textContent=duration(result.elapsedMs);const rate=result.total?Math.round(hits/result.total*100):0;el('rank-result-rate').textContent=`${rate}%`;el('rank-result-gauge').style.setProperty('--result-rate',`${rate}%`);el('rank-restart').focus();await board()}
       else{await new Promise(resolve=>setTimeout(resolve,900));renderQuestion(result.question)}
     }catch(error){gameStatus(error.message);el('rank-input').disabled=false;el('rank-options').querySelectorAll('button').forEach(button=>button.disabled=false);if(/registrada|encerrada/.test(error.message))await resume().catch(()=>{})}
     finally{busy=false}
   }
-  async function resume(){const data=await api('/api/run/current');if(data.run){runId=data.run.runId;runLength=data.run.length;hits=data.run.hits;renderQuestion(data.run.question);return true}return false}
+  async function resume(){const data=await api('/api/run/current');if(data.run){runId=data.run.runId;runLength=data.run.length;runQuiz=data.run.quiz;hits=data.run.hits;renderQuestion(data.run.question);return true}return false}
   async function start(){
     if(!user){location.href='/auth/discord/start';return}if(busy)return;busy=true;status('Preparando desafio...');
-    try{const data=await api('/api/run/start',{method:'POST',body:JSON.stringify({quiz:el('rank-category').value,difficulty:el('rank-difficulty').value,length:rankLength})});runId=data.runId;runLength=data.length;hits=data.hits;renderQuestion(data.question);status(data.resumed?'Partida em andamento retomada.':'')}
+    try{const data=await api('/api/run/start',{method:'POST',body:JSON.stringify({quiz:el('rank-category').value,difficulty:el('rank-difficulty').value,length:rankLength})});runId=data.runId;runLength=data.length;runQuiz=data.quiz;hits=data.hits;renderQuestion(data.question);status(data.resumed?'Partida em andamento retomada.':'')}
     catch(error){status(error.message)}finally{busy=false}
   }
   const profileText=(tag,className,value)=>{const element=document.createElement(tag);element.className=className;element.textContent=value;return element};

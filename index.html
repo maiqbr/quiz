@@ -204,7 +204,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
   <section class="home-history" id="home-history"></section>
   <footer class="home-footer"><span>QUIZARENA · FEITO PARA JOGAR JUNTO</span><span>Escolha um tema e comece.</span></footer>
 </div>
-<div id="ranked" class="screen"><header class="flow-header"><button id="rank-back" type="button">Voltar</button><span>QUIZARENA / RANQUEADO</span><strong id="rank-flow-title">Desafio</strong></header><main class="ranked-main"><div id="rank-game" class="ranked-card" hidden><div class="ranked-progress"><span>Pergunta <strong id="rank-position"></strong></span><span><strong id="rank-hits">0</strong> acertos</span><span id="rank-time">45s</span></div><div class="ranked-progress-track"><span id="rank-progress-bar"></span></div><div class="ranked-question-label"><span class="ranked-question-icon"><img id="rank-question-icon" src="category-icons/capitais.png" alt=""></span><span><small>DESAFIO RANQUEADO</small><strong id="rank-question-category">Categoria</strong></span></div><h1 id="rank-prompt"></h1><div id="rank-media" class="rank-media" hidden></div><div id="rank-options" class="rank-options"></div><form id="rank-answer" class="rank-answer" hidden><input id="rank-input" aria-label="Sua resposta" autocomplete="off" maxlength="120"><button type="submit">Responder</button></form><p id="rank-game-status" role="status"></p></div><div id="rank-finish" class="ranked-card" hidden><span class="eyebrow">PARTIDA CONCLUÍDA</span><h1>Seu resultado</h1><p id="rank-result"></p><button id="rank-restart" class="rank-action" type="button">Voltar aos quizzes</button></div></main></div>
+<div id="ranked" class="screen"><header class="flow-header"><button id="rank-back" type="button">Voltar</button><span>QUIZARENA / RANQUEADO</span><strong id="rank-flow-title">Desafio</strong></header><main class="ranked-main"><div id="rank-game" class="ranked-card" hidden><div class="ranked-progress"><span>Pergunta <strong id="rank-position"></strong></span><span><strong id="rank-hits">0</strong> acertos</span><span id="rank-time">45s</span></div><div class="ranked-progress-track"><span id="rank-progress-bar"></span></div><div class="ranked-question-label"><span class="ranked-question-icon"><img id="rank-question-icon" src="category-icons/capitais.png" alt=""></span><span><small>DESAFIO RANQUEADO</small><strong id="rank-question-category">Categoria</strong></span></div><h1 id="rank-prompt"></h1><div id="rank-media" class="rank-media" hidden></div><div id="rank-options" class="rank-options"></div><form id="rank-answer" class="rank-answer" hidden><input id="rank-input" aria-label="Sua resposta" autocomplete="off" maxlength="120"><button type="submit">Responder</button></form><p id="rank-game-status" role="status"></p></div><div id="rank-finish" class="ranked-card rank-finish-card" hidden><div class="result-heading"><span class="eyebrow">DESAFIO RANQUEADO</span><h1>Partida concluída</h1><p id="rank-result">Resultado salvo no seu perfil.</p></div><div class="result-overview"><div class="result-gauge" id="rank-result-gauge"><span id="rank-result-rate">0%</span><small>DE ACERTOS</small></div><div class="result-metrics"><div><span>RESPOSTAS CERTAS</span><strong id="rank-result-score">0 / 0</strong></div><div><span>TEMPO TOTAL</span><strong id="rank-result-time">0m 00s</strong></div></div></div><p class="result-footnote">Resultado salvo no seu perfil. Compare sua marca no ranking da categoria.</p><button id="rank-restart" class="rank-action" type="button">Ver rankings e jogar de novo</button></div></main></div>
 <div id="host-info" class="host-info-modal" role="dialog" aria-modal="true" aria-labelledby="host-info-title" hidden><div class="host-info-card"><span class="eyebrow">PARA JOGAR EM GRUPO</span><h2 id="host-info-title">Apresentar com placar</h2><p>Compartilhe sua tela com a turma. Leia a pergunta, escolha quem respondeu e marque os pontos no painel lateral.</p><p>Você pode adicionar pessoas ou equipes, ajustar o tempo por pergunta e ver o resumo no fim. A pontuação fica neste navegador.</p><button id="host-info-close" type="button">Entendi, vamos jogar</button></div></div>
 <div id="profile" class="screen"><header class="flow-header profile-flow"><button id="profile-back" type="button">Voltar aos quizzes</button><span>QUIZARENA / JOGADOR</span><button id="profile-logout" type="button">Sair do Discord</button></header><main class="profile-main"><div class="profile-hero"><div class="profile-hero-top"><span class="eyebrow">PERFIL DO JOGADOR</span><span class="profile-online"><span></span> Conectado com Discord</span></div><div class="profile-title"><span id="profile-avatar" class="profile-avatar" aria-hidden="true"></span><div><h1 id="profile-name">Perfil</h1><p>Seus resultados, recordes e posições em um só lugar.</p></div></div><div id="profile-stats" class="profile-stats"></div></div><section class="profile-section profile-records-section"><div class="profile-section-head"><div><span class="eyebrow">MELHORES MARCAS</span><h2>Seus recordes</h2></div><p>Um resultado por tema e dificuldade.</p></div><div id="profile-records" class="profile-records"></div></section><div class="profile-activity"><section class="profile-section"><div class="profile-section-head"><div><span class="eyebrow">PARTIDAS RANQUEADAS</span><h2>Histórico online</h2></div></div><div id="profile-history" class="profile-history"></div><button id="profile-more" type="button" hidden>Carregar mais</button></section><section class="profile-section"><div class="profile-section-head"><div><span class="eyebrow">NESTE DISPOSITIVO</span><h2>Partidas locais</h2></div></div><div id="profile-local" class="profile-history"></div></section></div></main></div>
 <div id="game" class="screen">
@@ -273,19 +273,19 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
         <div id="g-players-list"></div>
         <div class="g-add">
           <input id="g-new-player" type="text" placeholder="Nome do jogador..."/>
-          <button id="g-add-btn">+ Add</button>
+          <button id="g-add-btn">Adicionar</button>
         </div>
       </div>
     </div>
     <div class="g-sidebar-mob-toggle" id="g-sidebar-mob-toggle" style="display:none">
-      <button class="hbtn hbtn-sidebar" id="g-btn-sidebar-mobile">▲ Placar</button>
+      <button class="hbtn hbtn-sidebar" id="g-btn-sidebar-mobile">Ocultar placar</button>
     </div>
   </div>
 </div>
-<div class="overlay hidden" id="ov-summary"><div class="modal summary-modal"><div class="modal-title">Partida encerrada</div><p id="summary-main" class="modal-sub"></p><div id="summary-details"></div><div class="modal-actions"><button class="mbtn mbtn-cancel" id="summary-home">Voltar ao início</button><button class="mbtn mbtn-ok" id="summary-again">Jogar de novo</button></div></div></div>
+<div class="overlay hidden" id="ov-summary"><div class="modal summary-modal" role="dialog" aria-modal="true" aria-labelledby="summary-title" aria-describedby="summary-main"><div class="result-heading"><span class="eyebrow" id="summary-mode">QUIZARENA / RESULTADO</span><h2 id="summary-title">Partida encerrada</h2><p id="summary-main"></p></div><div class="result-overview"><div class="result-gauge" id="summary-gauge"><span id="summary-rate">0%</span><small>DE ACERTOS</small></div><div class="result-metrics"><div><span>RESPOSTAS CERTAS</span><strong id="summary-score">0 / 0</strong></div><div><span>TEMPO TOTAL</span><strong id="summary-time">0m 00s</strong></div></div></div><details id="summary-breakdown" class="result-breakdown"><summary id="summary-breakdown-label">Ver respostas</summary><div id="summary-details" class="result-list"></div></details><div class="modal-actions"><button class="mbtn mbtn-cancel" id="summary-home">Voltar ao início</button><button class="mbtn mbtn-ok" id="summary-again">Jogar de novo</button></div></div></div>
 <div class="overlay hidden" id="ov-mode">
-  <div class="modal">
-    <div class="modal-title">Modo de jogo</div>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mode-title">
+    <span class="eyebrow">AJUSTES DA PARTIDA</span><div class="modal-title" id="mode-title">Modo de jogo</div>
     <div class="modal-sub">Escolha o conjunto de itens. A fila será reiniciada.</div>
     <div class="msec">Categoria</div><div class="m-cards" id="m-cards"></div>
     <div id="cont-sec" style="display:none"><div class="msec">Continente</div><div class="c-grid" id="c-grid"></div></div>
@@ -293,8 +293,8 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
   </div>
 </div>
 <div class="overlay hidden" id="ov-reset">
-  <div class="modal" style="width:340px;text-align:center">
-    <div class="conf-icon">↺</div><div class="conf-title">Reiniciar o quiz?</div>
+  <div class="modal reset-modal" role="dialog" aria-modal="true" aria-labelledby="reset-title">
+    <span class="eyebrow">NOVA TENTATIVA</span><div class="conf-title" id="reset-title">Reiniciar o quiz?</div>
     <div class="conf-text">Volta para a Rodada 1 com fila nova.<br>O placar <strong style="color:var(--text)">não</strong> será apagado.</div>
     <div class="modal-actions" style="justify-content:center"><button class="mbtn mbtn-cancel" id="reset-cancel">Cancelar</button><button class="mbtn mbtn-danger" id="reset-ok">Sim, reiniciar</button></div>
   </div>
@@ -418,11 +418,21 @@ function finishSession(){
   const completed=roundResults.length;
   const record={mode:playMode,length:playMode==='solo'?soloLength:'full',quiz:isMixed?'Quiz Misto':AQ.title,quizId:isMixed?'misto':AQ.id,hits,rounds:completed,seconds:timerSec,at:new Date().toISOString(),players:playMode==='host'?players.map(p=>({name:p.name,score:p.score})):[]};
   if(completed){try{localStorage.setItem('quizHistory',JSON.stringify([record,...savedHistory()].slice(0,20)))}catch{}}
-  $('summary-main').textContent=`${hits} de ${completed} acertos em ${Math.floor(timerSec/60)}m ${String(timerSec%60).padStart(2,'0')}s.`;
-  const details=$('summary-details');details.replaceChildren();
-  if(playMode==='host'&&players.length){const title=document.createElement('h3');title.textContent='Placar da turma';details.append(title);[...players].sort((a,b)=>b.score-a.score).forEach(p=>{const row=document.createElement('p');row.textContent=`${p.name}: ${p.score}`;details.append(row)})}
-  else{const title=document.createElement('h3');title.textContent='Por pergunta';details.append(title);roundResults.forEach((result,i)=>{const row=document.createElement('p');row.textContent=`${i+1}. ${result.name} · ${result.correct?'Acertou':'Não acertou'} · ${result.seconds}s`;details.append(row)})}
-  $('ov-summary').classList.remove('hidden');renderHistory();
+  const rate=completed?Math.round(hits/completed*100):0;
+  $('summary-mode').textContent=playMode==='host'?'APRESENTAÇÃO COM PLACAR':'PARTIDA SOLO';
+  $('summary-main').textContent=isMixed?'Quiz Misto':AQ.title;
+  $('summary-score').textContent=`${hits} / ${completed}`;
+  $('summary-time').textContent=`${Math.floor(timerSec/60)}m ${String(timerSec%60).padStart(2,'0')}s`;
+  $('summary-rate').textContent=`${rate}%`;
+  $('summary-gauge').style.setProperty('--result-rate',`${rate}%`);
+  const breakdown=$('summary-breakdown'),details=$('summary-details');details.replaceChildren();
+  const addRow=(number,name,value,kind='')=>{const row=document.createElement('div');row.className='result-list-row';const badge=document.createElement('span');badge.className='result-list-number';badge.textContent=number;const label=document.createElement('strong');label.textContent=name;const status=document.createElement('span');status.className=`result-list-status ${kind}`;status.textContent=value;row.append(badge,label,status);details.append(row)};
+  if(playMode==='host'&&players.length){[...players].sort((a,b)=>b.score-a.score).forEach((player,i)=>addRow(i+1,player.name,`${player.score} pontos`,i===0?'leader':''))}
+  else roundResults.forEach((result,i)=>addRow(i+1,result.name,`${result.correct?'Acertou':'Errou'} · ${result.seconds}s`,result.correct?'correct':'wrong'));
+  breakdown.hidden=!details.childElementCount;
+  breakdown.open=playMode==='host'&&players.length>0;
+  $('summary-breakdown-label').textContent=playMode==='host'?'Placar da turma':`Ver respostas (${roundResults.length})`;
+  $('ov-summary').classList.remove('hidden');$('summary-again').focus();renderHistory();
 }
 $('g-btn-end').addEventListener('click',finishSession);
 $('summary-home').addEventListener('click',()=>{$('ov-summary').classList.add('hidden');goHome()});
@@ -750,7 +760,7 @@ function updateDiffToggle(){
 function applySidebar(){
   $("g-right").classList.toggle("collapsed",!sidebarOpen);
   const desktopTxt=sidebarOpen?"◀ Placar":"▶ Placar";
-  const mobileTxt=sidebarOpen?"▲ Placar":"▼ Placar";
+  const mobileTxt=sidebarOpen?"Ocultar placar":"Mostrar placar";
   $("g-btn-sidebar").textContent=desktopTxt;
   $("g-btn-sidebar-mobile").textContent=mobileTxt;
 }
@@ -786,7 +796,7 @@ function buildMode(){
   AQ.modes.forEach(m=>{
     const cnt=m.id==="copa"?COPA.length:m.id==="continente"?"":AQ.getPool("all").length;
     const badge=cnt!==""?`<span class="m-badge" style="background:${m.bg};border-color:${m.bc};color:${m.fc}">${cnt}</span>`:"";
-    const c=document.createElement("div");c.className="m-card"+(pendingMode===m.id?" sel":"")+(m.cls?" "+m.cls:"");c.dataset.mode=m.id;
+    const c=document.createElement("button");c.type="button";c.className="m-card"+(pendingMode===m.id?" sel":"")+(m.cls?" "+m.cls:"");c.dataset.mode=m.id;c.setAttribute('aria-pressed',String(pendingMode===m.id));
     c.innerHTML=`<div class="m-icon" aria-hidden="true">${m.id==="all"?"A":m.id==="copa"?"F":"C"}</div><div class="m-info"><div class="m-name">${m.label}</div><div class="m-desc">${m.desc}</div></div>${badge}`;
     c.addEventListener("click",()=>{pendingMode=m.id;buildMode();});mc.appendChild(c);
   });
@@ -794,7 +804,7 @@ function buildMode(){
   const cg=$("c-grid");cg.innerHTML="";
   (AQ.continentes||[]).forEach(c=>{
     const cnt=PAISES.filter(p=>p.cont===c.id).length;
-    const cd=document.createElement("div");cd.className="c-card"+(pendingCont===c.id?" sel":"");cd.dataset.cont=c.id;
+    const cd=document.createElement("button");cd.type="button";cd.className="c-card"+(pendingCont===c.id?" sel":"");cd.dataset.cont=c.id;cd.setAttribute('aria-pressed',String(pendingCont===c.id));
     cd.innerHTML=`<span class="c-icon" aria-hidden="true">${String(cg.children.length+1).padStart(2,"0")}</span><div><div class="c-name">${c.name}</div><div class="c-count">${cnt} países</div></div>`;
     cd.addEventListener("click",()=>{pendingCont=c.id;buildMode();});cg.appendChild(cd);
   });
