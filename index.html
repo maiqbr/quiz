@@ -199,8 +199,8 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 <div id="home" class="screen active">
   <header class="home-topbar"><div class="home-logo"><div class="home-logo-icon" aria-hidden="true"><img src="icon-192.png" alt=""></div><div class="home-logo-name">Quiz<span>Arena</span></div></div><div class="home-actions"><a id="header-discord-login" class="discord-header" href="/auth/discord/start">Entrar com Discord</a><button id="header-profile" class="profile-header" type="button" hidden><span id="header-avatar" class="profile-avatar" aria-hidden="true"></span><span id="header-name">Perfil</span></button><button class="theme-switch" type="button" role="switch" aria-checked="true" aria-label="Modo escuro ativo; alternar para modo claro"><span class="theme-switch-track" aria-hidden="true"><span></span></span><span class="theme-switch-label">Escuro</span></button><button id="install-btn" class="install-btn" style="display:none">Instalar aplicativo</button></div></header>
   <div class="home-intro"><div><span class="eyebrow">QUIZARENA / 16 TEMAS</span><h1>Escolha um quiz.</h1><p>Clique em um tema para começar. Você pode jogar sozinho ou apresentar para a turma.</p></div></div>
-  <div class="home-layout"><section class="catalog-pane" aria-label="Quizzes disponíveis"><div class="play-mode" aria-label="Como você vai jogar"><div class="play-mode-main"><div class="play-mode-buttons" role="group" aria-label="Tipo de partida"><button type="button" data-play-mode="solo">Jogar sozinho</button><button type="button" data-play-mode="host">Apresentar com placar</button></div><div class="solo-length" id="solo-length"><span>PARTIDA</span><div class="length-switch" role="group" aria-label="Duração da partida"><button type="button" data-solo-length="full">Completa</button><button type="button" data-solo-length="quick">Rápida · 10</button></div></div><p id="play-mode-description">Todas as perguntas do tema, com resultado ao final.</p></div><button id="mixed-start" class="mixed-start" type="button"><strong>Jogar misto</strong><small>Todas as categorias</small></button></div><div class="home-grid" id="quiz-grid"></div></section>
-  <aside class="rank-hub" id="ranking" aria-label="Ranking online"><div class="rank-hub-head"><span class="eyebrow">DESAFIO ONLINE</span><h2>Ranking</h2><p>Responda todas as perguntas do tema. Acertos primeiro; tempo para desempatar.</p></div><div id="rank-connect" class="rank-connect"><strong>Conecte seu Discord</strong><p>Seu perfil, resultados e posições ficam salvos online.</p><a href="/auth/discord/start" class="rank-connect-button">Entrar com Discord</a></div><div id="rank-signed" class="rank-signed" hidden><span class="rank-signed-dot"></span><span>Conectado como <strong id="rank-user">Jogador</strong></span><button id="rank-logout" type="button">Sair</button></div><div class="rank-config"><h3>Nova partida ranqueada</h3><div class="rank-config-fields"><label for="rank-category">Tema<select id="rank-category"></select></label><label for="rank-difficulty">Dificuldade<select id="rank-difficulty"><option value="easy">Fácil · alternativas</option><option value="hard">Difícil · digitar</option></select></label></div><button id="rank-begin" class="rank-action" type="button">Jogar ranqueado</button><p id="rank-status" role="status"></p></div><div class="rank-board"><div class="rank-board-title"><h3>Melhores resultados</h3><span id="rank-board-count">Top 50</span></div><div class="rank-board-filters"><select id="board-category" aria-label="Tema do ranking"></select><div class="board-difficulty" role="group" aria-label="Dificuldade do ranking"><button type="button" data-board-difficulty="easy">Fácil</button><button type="button" data-board-difficulty="hard">Difícil</button></div></div><table class="rank-table"><thead><tr><th>#</th><th>Jogador</th><th>Acertos</th><th>Tempo</th></tr></thead><tbody id="rank-rows"></tbody></table></div></aside></div>
+  <div class="home-layout"><section class="catalog-pane" aria-label="Quizzes disponíveis"><div class="play-mode" aria-label="Como você vai jogar"><div class="play-mode-main"><div class="play-mode-buttons" role="group" aria-label="Tipo de partida"><button type="button" data-play-mode="solo">Jogar sozinho</button><button type="button" data-play-mode="host">Apresentar com placar</button></div><div class="solo-length" id="solo-length"><span>PARTIDA</span><div class="length-switch" role="group" aria-label="Duração da partida"><button type="button" data-solo-length="quick">Rápida · 10</button><button type="button" data-solo-length="casual">Casual · 50</button><button type="button" data-solo-length="training">Treino · 100</button></div></div><p id="play-mode-description">Escolha até 10, 50 ou 100 perguntas, com resultado ao final.</p></div><button id="mixed-start" class="mixed-start" type="button"><strong>Jogar misto</strong><small>Todas as categorias</small></button></div><div class="home-grid" id="quiz-grid"></div></section>
+  <aside class="rank-hub" id="ranking" aria-label="Ranking online"><div class="rank-hub-head"><span class="eyebrow">DESAFIO ONLINE</span><h2>Ranking</h2><p>Escolha até 10, 50 ou 100 perguntas. Acertos primeiro; tempo para desempatar.</p></div><div id="rank-connect" class="rank-connect"><strong>Conecte seu Discord</strong><p>Seu perfil, resultados e posições ficam salvos online.</p><a href="/auth/discord/start" class="rank-connect-button">Entrar com Discord</a></div><div id="rank-signed" class="rank-signed" hidden><span class="rank-signed-dot"></span><span>Conectado como <strong id="rank-user">Jogador</strong></span><button id="rank-logout" type="button">Sair</button></div><div class="rank-config"><h3>Nova partida ranqueada</h3><div class="rank-config-fields"><label for="rank-category">Tema<select id="rank-category"></select></label><label for="rank-difficulty">Dificuldade<select id="rank-difficulty"><option value="easy">Fácil · alternativas</option><option value="hard">Difícil · digitar</option></select></label></div><div class="rank-length-group"><span class="rank-length-label">PARTIDA</span><div class="rank-length-switch" role="group" aria-label="Duração da partida ranqueada"><button type="button" data-rank-length="quick">Rápida · 10</button><button type="button" data-rank-length="casual">Casual · 50</button><button type="button" data-rank-length="training">Treino · 100</button></div><small id="rank-length-note"></small></div><button id="rank-begin" class="rank-action" type="button">Jogar ranqueado</button><p id="rank-status" role="status"></p></div><div class="rank-board"><div class="rank-board-title"><h3>Melhores resultados</h3><span id="rank-board-count">Top 50</span></div><div class="rank-board-filters"><select id="board-category" aria-label="Tema do ranking"></select><div class="board-difficulty" role="group" aria-label="Dificuldade do ranking"><button type="button" data-board-difficulty="easy">Fácil</button><button type="button" data-board-difficulty="hard">Difícil</button></div></div><div class="board-length-switch" role="group" aria-label="Duração do ranking"><button type="button" data-board-length="quick">10</button><button type="button" data-board-length="casual">50</button><button type="button" data-board-length="training">100</button></div><small id="board-length-note"></small><table class="rank-table"><thead><tr><th>#</th><th>Jogador</th><th>Acertos</th><th>Tempo</th></tr></thead><tbody id="rank-rows"></tbody></table></div></aside></div>
   <section class="home-history" id="home-history"></section>
   <footer class="home-footer"><span>QUIZARENA · FEITO PARA JOGAR JUNTO</span><span>Escolha um tema e comece.</span></footer>
 </div>
@@ -329,7 +329,7 @@ function $(id){return document.getElementById(id);}
 /* ══════════════════════════════════════════════════════════════════
    STATE
 ══════════════════════════════════════════════════════════════════ */
-let AQ=null,queue=[],current=null,round=0,hits=0,revealed=false,currentMedia=null,mapOptions=[],isMixed=false,failedImages=new Set();
+let AQ=null,queue=[],reserveQueue=[],sessionTotal=0,current=null,round=0,hits=0,revealed=false,currentMedia=null,mapOptions=[],isMixed=false,failedImages=new Set();
 let players=[],pid=1,sidebarOpen=true;
 let gameMode="all",gameCont="americas",pendingMode="all",pendingCont="americas";
 let timerSec=0,timerInt=null;
@@ -337,14 +337,15 @@ let loadingRound=0,requestToken=0; // track async loads across quiz changes
 let difficulty=localStorage.getItem("quizDifficulty")||"hard"; // "hard" = digitar | "easy" = múltipla escolha
 let playMode=localStorage.getItem("quizPlayMode")==="host"?"host":"solo";
 let questionSecondsLeft=0,roundStartedAt=0,roundResults=[],roundCorrect=false,sessionClosed=false;
-let soloLength=localStorage.getItem('quizSoloLength')==='quick'?'quick':'full';
-function setSoloLength(length){soloLength=length;document.querySelectorAll('[data-solo-length]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.soloLength===length)));try{localStorage.setItem('quizSoloLength',length)}catch{}}
+const LENGTH_LIMITS={quick:10,casual:50,training:100};
+let soloLength=Object.hasOwn(LENGTH_LIMITS,localStorage.getItem('quizSoloLength'))?localStorage.getItem('quizSoloLength'):'quick';
+function setSoloLength(length){if(!Object.hasOwn(LENGTH_LIMITS,length))return;soloLength=length;document.querySelectorAll('[data-solo-length]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.soloLength===length)));try{localStorage.setItem('quizSoloLength',length)}catch{}}
 document.querySelectorAll('[data-solo-length]').forEach(button=>button.addEventListener('click',()=>setSoloLength(button.dataset.soloLength)));
 setSoloLength(soloLength);
 function setPlayMode(mode){
   playMode=mode;document.body.dataset.playMode=mode;
   document.querySelectorAll('[data-play-mode]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.playMode===mode)));
-  $('play-mode-description').textContent=mode==='host'?'Placar manual para pessoas ou equipes, ideal para transmitir a tela.':'Todas as perguntas do tema, com resultado ao final.';
+  $('play-mode-description').textContent=mode==='host'?'Placar manual para pessoas ou equipes, ideal para transmitir a tela.':'Escolha até 10, 50 ou 100 perguntas, com resultado ao final.';
   $('solo-length').hidden=mode!=='solo';
   try{localStorage.setItem('quizPlayMode',mode)}catch{}
   renderHistory();
@@ -405,7 +406,9 @@ function updateTimer(){const m=String(Math.floor(timerSec/60)).padStart(2,"0"),s
 
 function freshStart(){
   failedImages=new Set();
-  queue=shuffle(isMixed?QUIZZES.flatMap(quiz=>quiz.getPool('all').map(item=>({quizId:quiz.id,item}))):[...AQ.getPool(gameMode,gameCont)]);
+  const shuffled=shuffle(isMixed?QUIZZES.flatMap(quiz=>quiz.getPool('all').map(item=>({quizId:quiz.id,item}))):[...AQ.getPool(gameMode,gameCont)]);
+  sessionTotal=playMode==='solo'?Math.min(LENGTH_LIMITS[soloLength],shuffled.length):shuffled.length;
+  queue=shuffled.slice(0,sessionTotal);reserveQueue=playMode==='solo'?shuffled.slice(sessionTotal):[];
   round=0;hits=0;roundResults=[];sessionClosed=false;$("g-hits").textContent="0 acertos";$("g-timer").textContent="00:00";
   startTimer();nextRound();
 }
@@ -509,6 +512,8 @@ function showMediaCredit(){
 }
 function skipUnavailableImage(){
   failedImages.add(current);round=Math.max(0,round-1);loadingRound=-1;
+  if(playMode==='solo'&&reserveQueue.length)queue.push(reserveQueue.pop());
+  else if(playMode==='solo')sessionTotal=Math.max(0,sessionTotal-1);
   if(playMode==='host'&&!isMixed&&!queue.length)queue=shuffle(AQ.getPool(gameMode,gameCont).filter(item=>!failedImages.has(item)));
   if(!queue.length&&playMode==='host'){finishSession();return}
   nextRound();
@@ -550,8 +555,7 @@ function showFormatAnswer(){
   card.append(answer);card.querySelectorAll('button').forEach(button=>button.disabled=true);
 }
 function updateStageProgress(completed=false){
-  const total=(isMixed?QUIZZES.reduce((sum,quiz)=>sum+quiz.getPool('all').length,0):AQ.getPool(gameMode,gameCont).length)-failedImages.size;
-  const visibleTotal=playMode==='solo'&&soloLength==='quick'?Math.min(10,total):total;
+  const visibleTotal=sessionTotal;
   const track=$('g-stage-track');track.hidden=playMode==='host';
   $('g-stage-count').textContent=playMode==='host'?`RODADA ${String(round).padStart(2,'0')}`:`${String(round).padStart(2,'0')} / ${visibleTotal}`;
   $('g-stage-progress').style.width=playMode==='host'?'0%':`${Math.min(100,(round-(completed?0:1))/Math.max(1,visibleTotal)*100)}%`;
@@ -561,7 +565,7 @@ function updateStageProgress(completed=false){
   $('g-stage-kicker').textContent=AQ.kind==='map'?'DESAFIO NO MAPA':AQ.kind==='timeline'?'ORDEM CRONOLÓGICA':AQ.kind==='match'?'ENCONTRE OS PARES':AQ.getText?'PERGUNTA DO TEMA':'DESAFIO VISUAL';
 }
 async function nextRound(){
-  if((playMode==='solo'||isMixed)&&(!queue.length||playMode==='solo'&&soloLength==='quick'&&round>=10)){finishSession();return;}
+  if((playMode==='solo'||isMixed)&&!queue.length){finishSession();return;}
   if(!queue.length)queue=shuffle(AQ.getPool(gameMode,gameCont).filter(item=>!failedImages.has(item)));
   if(!queue.length){finishSession();return}
   const selected=queue.pop();

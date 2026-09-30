@@ -2,7 +2,7 @@
 
 Quiz de 16 temas para jogar sozinho ou apresentar em uma tela compartilhada. [Site publicado](https://quiz.maiq.dev.br), servido por Cloudflare Workers com D1 para o ranking.
 
-O modo solo percorre **todas** as perguntas do tema. O switch **Rápida** limita a partida a até 10 perguntas. Há também uma partida mista com todas as categorias; no modo completo, ela percorre todo o catálogo. O modo de apresentação mantém um placar manual para pessoas ou equipes, tempo opcional por pergunta, resumo e histórico no navegador. Os dois modos funcionam sem conta. O tema escuro é o padrão; há um switch para o modo claro.
+O modo solo oferece **Rápida (até 10)**, **Casual (até 50)** e **Treino (até 100)**, inclusive no quiz misto. As perguntas não se repetem na mesma partida; temas menores usam todas as perguntas disponíveis. O modo de apresentação mantém um placar manual para pessoas ou equipes, tempo opcional por pergunta, resumo e histórico no navegador. Os dois modos funcionam sem conta. O tema escuro é o padrão; há um switch para o modo claro.
 
 ## Rodar e verificar
 
@@ -12,7 +12,7 @@ As coleções atuais têm: bandeiras 139, capitais 83, língua do país 62, lín
 
 ## Ranking online
 
-O ranking **casual** aparece na página inicial, junto dos quizzes. O login Discord fica no topo; depois de entrar, o botão de perfil mostra histórico online paginado, recordes e posição em cada placar. Há ranking para as **16 categorias** e para **Misto (878)**. Cada partida ranqueada percorre o conjunto inteiro da categoria; Misto percorre todas as 878 perguntas. Fácil usa quatro opções; difícil exige digitar. Os formatos de mapa, linha do tempo e associação são adaptados para perguntas de resposta única no ranking. Os placares são independentes por tema e dificuldade, ordenados por acertos e depois por tempo. Resultados anteriores à revisão continuam no histórico, mas só partidas com o total atual entram nos placares; partidas antigas ainda abertas são encerradas para evitar perguntas trocadas. O endereço antigo `ranking.html` redireciona para a página inicial.
+O ranking online aparece na página inicial, junto dos quizzes. O login Discord fica no topo; depois de entrar, o botão de perfil mostra histórico online paginado, recordes e posição em cada placar. Há ranking para as **16 categorias** e para **Misto**. Partidas ranqueadas usam **Rápida (até 10)**, **Casual (até 50)** ou **Treino (até 100)**, sem perguntas repetidas; o total efetivo do tema aparece antes de jogar. Fácil usa quatro opções; difícil exige digitar. Os formatos de mapa, linha do tempo e associação são adaptados para perguntas de resposta única no ranking. Os placares são independentes por tema, duração e dificuldade, ordenados por acertos e depois por tempo. Partidas anteriores a esta revisão continuam no histórico, mas não concorrem nos novos placares; partidas antigas ainda abertas são encerradas. O endereço antigo `ranking.html` redireciona para a página inicial.
 
 O Worker cria a sequência e calcula os acertos e o tempo. Ele não aceita pontuação enviada pelo cliente, confere respostas uma vez por posição, limita partidas por conta e guarda a sessão em cookie HttpOnly. **Isso impede alterar o resultado por um simples `fetch` no console, mas não torna o ranking imune a automação**: perguntas e respostas do quiz estão no repositório público e podem ser consultadas. O ranking não deve ser usado como competição com prêmio. Para resistência maior seriam necessários um banco privado de questões inéditas, detecção de abuso e moderação.
 
