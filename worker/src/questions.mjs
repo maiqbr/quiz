@@ -21602,386 +21602,6 @@ export const QUESTIONS=[
     "source": "https://www.gov.br/pt-br/constituicao-30-anos/textos/democratica-constituicao-federal-de-1988-foi-construida-pela-sociedade"
   },
   {
-    "id": "v2:e68549ccaad9cabcb746",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual música e dança surgiu na região do Rio da Prata e é patrimônio cultural de Argentina e Uruguai?",
-    "options": [
-      "Tango",
-      "Flamenco",
-      "Fado",
-      "Samba"
-    ],
-    "correct": 0,
-    "aliases": [
-      "tango"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O tango se desenvolveu em Buenos Aires e Montevidéu.",
-    "source": "https://ich.unesco.org/en/rl/tango-00258"
-  },
-  {
-    "id": "v2:1c5b50f939b2605588b5",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual expressão artística reúne canto, dança e música na tradição andaluza?",
-    "options": [
-      "Tango",
-      "Flamenco",
-      "Fado",
-      "Capoeira"
-    ],
-    "correct": 1,
-    "aliases": [
-      "flamenco"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O flamenco tem raízes especialmente na Andaluzia, Espanha.",
-    "source": "https://ich.unesco.org/en/RL/flamenco-00363"
-  },
-  {
-    "id": "v2:01dbba047e0ecc308cf0",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual alimento fermentado é parte central da tradição culinária coreana?",
-    "options": [
-      "Missô",
-      "Tempeh",
-      "Kimchi",
-      "Chucrute"
-    ],
-    "correct": 2,
-    "aliases": [
-      "kimchi"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O kimchi é um preparo coreano de vegetais conservados.",
-    "source": "https://ich.unesco.org/en/RL/kimjang-making-and-sharing-kimchi-in-the-republic-of-korea-00881"
-  },
-  {
-    "id": "v2:33efbca3364dab3e447b",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual prática de origem indiana combina posturas, respiração e meditação?",
-    "options": [
-      "Tai chi",
-      "Pilates",
-      "Capoeira",
-      "Yoga"
-    ],
-    "correct": 3,
-    "aliases": [
-      "yoga"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O yoga é uma prática tradicional da Índia.",
-    "source": "https://ich.unesco.org/en/RL/yoga-01163"
-  },
-  {
-    "id": "v2:7cfd26db59f2853e5107",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual prática afro-brasileira reúne jogo corporal, música e dança em roda?",
-    "options": [
-      "Capoeira",
-      "Judô",
-      "Samba",
-      "Karatê"
-    ],
-    "correct": 0,
-    "aliases": [
-      "capoeira"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "A capoeira é uma expressão cultural afro-brasileira.",
-    "source": "https://ich.unesco.org/en/RL/roda-of-capoeira-00892"
-  },
-  {
-    "id": "v2:cfad4c74263e83c0a973",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual manifestação baiana combina música, dança e poesia em círculo?",
-    "options": [
-      "Frevo",
-      "Samba de roda",
-      "Maracatu",
-      "Jongo"
-    ],
-    "correct": 1,
-    "aliases": [
-      "samba de roda"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O samba de roda se desenvolveu no Recôncavo Baiano.",
-    "source": "https://ich.unesco.org/en/RL/Samba%20de%20Roda-of-the-reconcavo-of-bahia-00101"
-  },
-  {
-    "id": "v2:068b05aa2d7fe9fd88ab",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual forma de teatro tradicional japonês surgiu no período Edo?",
-    "options": [
-      "Nô",
-      "Ópera de Pequim",
-      "Kabuki",
-      "Commedia dell’arte"
-    ],
-    "correct": 2,
-    "aliases": [
-      "kabuki"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O kabuki é um gênero teatral do Japão.",
-    "source": "https://ich.unesco.org/en/RL/kabuki-theatre-00163"
-  },
-  {
-    "id": "v2:d287bd6e7d3193f8b990",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual região espanhola é especialmente associada ao flamenco?",
-    "options": [
-      "Catalunha",
-      "Galícia",
-      "País Basco",
-      "Andaluzia"
-    ],
-    "correct": 3,
-    "aliases": [
-      "andaluzia"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "A Andaluzia é o principal berço do flamenco.",
-    "source": "https://ich.unesco.org/en/RL/flamenco-00363"
-  },
-  {
-    "id": "v2:3009b6fe3ae02f897b68",
-    "quiz": "conhecimentos-gerais",
-    "text": "Em quais duas cidades o tango se desenvolveu historicamente?",
-    "options": [
-      "Buenos Aires e Montevidéu",
-      "Madri e Lisboa",
-      "Roma e Nápoles",
-      "Paris e Lyon"
-    ],
-    "correct": 0,
-    "aliases": [
-      "buenos aires e montevidéu"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Buenos Aires e Montevidéu foram centros da tradição do tango.",
-    "source": "https://ich.unesco.org/en/rl/tango-00258"
-  },
-  {
-    "id": "v2:04bfd03b26269a7ac39b",
-    "quiz": "conhecimentos-gerais",
-    "text": "Em qual região do Brasil se desenvolveu o samba de roda?",
-    "options": [
-      "Sertão pernambucano",
-      "Recôncavo Baiano",
-      "Vale do Paraíba",
-      "Pantanal"
-    ],
-    "correct": 1,
-    "aliases": [
-      "recôncavo baiano"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O samba de roda é ligado ao Recôncavo da Bahia.",
-    "source": "https://ich.unesco.org/en/RL/Samba%20de%20Roda-of-the-reconcavo-of-bahia-00101"
-  },
-  {
-    "id": "v2:06de5a85c695c6051725",
-    "quiz": "conhecimentos-gerais",
-    "text": "Quem pintou a Mona Lisa?",
-    "options": [
-      "Michelangelo",
-      "Rafael",
-      "Leonardo da Vinci",
-      "Sandro Botticelli"
-    ],
-    "correct": 2,
-    "aliases": [
-      "leonardo da vinci"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "A Mona Lisa é uma pintura de Leonardo da Vinci.",
-    "source": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
-  },
-  {
-    "id": "v2:4e5c1ce3bd1f1da4db75",
-    "quiz": "conhecimentos-gerais",
-    "text": "Em qual museu está exposta a Mona Lisa?",
-    "options": [
-      "Museu do Prado",
-      "MoMA",
-      "Museu Reina Sofía",
-      "Museu do Louvre"
-    ],
-    "correct": 3,
-    "aliases": [
-      "museu do louvre"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "A obra integra a coleção do Louvre, em Paris.",
-    "source": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
-  },
-  {
-    "id": "v2:99c3b31659d1343d8db9",
-    "quiz": "conhecimentos-gerais",
-    "text": "Quem pintou A Noite Estrelada?",
-    "options": [
-      "Vincent van Gogh",
-      "Claude Monet",
-      "Paul Cézanne",
-      "Pablo Picasso"
-    ],
-    "correct": 0,
-    "aliases": [
-      "vincent van gogh"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "A Noite Estrelada é uma obra de Vincent van Gogh.",
-    "source": "https://www.moma.org/collection/works/79802"
-  },
-  {
-    "id": "v2:431300e39e460b310bbe",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual museu de Nova York conserva A Noite Estrelada?",
-    "options": [
-      "Louvre",
-      "MoMA",
-      "Prado",
-      "Uffizi"
-    ],
-    "correct": 1,
-    "aliases": [
-      "moma"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "A obra faz parte da coleção do Museum of Modern Art.",
-    "source": "https://www.moma.org/collection/works/79802"
-  },
-  {
-    "id": "v2:7656767b13dceeb19add",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual artista pintou Guernica?",
-    "options": [
-      "Salvador Dalí",
-      "Joan Miró",
-      "Pablo Picasso",
-      "Henri Matisse"
-    ],
-    "correct": 2,
-    "aliases": [
-      "pablo picasso"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Picasso criou Guernica durante a Guerra Civil Espanhola.",
-    "source": "https://guernica.museoreinasofia.es/en"
-  },
-  {
-    "id": "v2:78f1feaf719ce98d4bd1",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual conflito inspirou a pintura Guernica?",
-    "options": [
-      "Primeira Guerra Mundial",
-      "Guerra da Crimeia",
-      "Revolução Francesa",
-      "Guerra Civil Espanhola"
-    ],
-    "correct": 3,
-    "aliases": [
-      "guerra civil espanhola"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "A obra foi feita em meio à Guerra Civil Espanhola.",
-    "source": "https://guernica.museoreinasofia.es/en"
-  },
-  {
-    "id": "v2:bf140ea25d3e17cd4ef3",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é o nome da mulher retratada na Mona Lisa?",
-    "options": [
-      "Lisa Gherardini",
-      "Mumtaz Mahal",
-      "Maria Antonieta",
-      "Isabella d’Este"
-    ],
-    "correct": 0,
-    "aliases": [
-      "lisa gherardini"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O retrato é identificado como o de Lisa Gherardini.",
-    "source": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
-  },
-  {
-    "id": "v2:eecded1c7a20e2dc4da2",
-    "quiz": "conhecimentos-gerais",
-    "text": "Em que ano Vincent van Gogh pintou A Noite Estrelada?",
-    "options": [
-      "1789",
-      "1889",
-      "1920",
-      "1905"
-    ],
-    "correct": 1,
-    "aliases": [
-      "1889"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O MoMA data A Noite Estrelada de junho de 1889.",
-    "source": "https://www.moma.org/collection/works/79802"
-  },
-  {
-    "id": "v2:ec015a443abb8b8228ac",
-    "quiz": "conhecimentos-gerais",
-    "text": "Em qual cidade está o Museu Reina Sofía, que conserva Guernica?",
-    "options": [
-      "Barcelona",
-      "Sevilha",
-      "Madri",
-      "Bilbao"
-    ],
-    "correct": 2,
-    "aliases": [
-      "madri"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O Museu Reina Sofía fica em Madri.",
-    "source": "https://guernica.museoreinasofia.es/en"
-  },
-  {
-    "id": "v2:98507e764e86dcf4e092",
-    "quiz": "conhecimentos-gerais",
-    "text": "Em qual cidade fica o Museu do Louvre?",
-    "options": [
-      "Londres",
-      "Roma",
-      "Berlim",
-      "Paris"
-    ],
-    "correct": 3,
-    "aliases": [
-      "paris"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O Louvre fica na capital francesa.",
-    "source": "https://www.louvre.fr/en/explore/the-palace/from-the-mona-lisa-to-the-wedding-feast-at-cana"
-  },
-  {
     "id": "v2:a07ca3b3ef2656affd12",
     "quiz": "conhecimentos-gerais",
     "text": "Quem propôs a World Wide Web enquanto trabalhava no CERN?",
@@ -22075,82 +21695,6 @@ export const QUESTIONS=[
     "clue": null,
     "explanation": "A proposta da Web reunia computadores, redes e hipertexto.",
     "source": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/"
-  },
-  {
-    "id": "v2:6b6c381f17d8bd3d2828",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual sistema de satélites fornece posicionamento, navegação e tempo?",
-    "options": [
-      "Bluetooth",
-      "GPS",
-      "Wi-Fi",
-      "NFC"
-    ],
-    "correct": 1,
-    "aliases": [
-      "gps"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O GPS usa sinais de satélites para calcular posição e horário.",
-    "source": "https://www.gps.gov/gps"
-  },
-  {
-    "id": "v2:635127b7a3b3fb1f6a9b",
-    "quiz": "conhecimentos-gerais",
-    "text": "Que equipamentos em órbita transmitem os sinais usados pelo GPS?",
-    "options": [
-      "Cabos submarinos",
-      "Antenas de rádio AM",
-      "Satélites",
-      "Faróis marítimos"
-    ],
-    "correct": 2,
-    "aliases": [
-      "satélites"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Satélites da constelação GPS transmitem sinais aos receptores.",
-    "source": "https://www.gps.gov/gps"
-  },
-  {
-    "id": "v2:4fa7ef3ebcbfa4242f6c",
-    "quiz": "conhecimentos-gerais",
-    "text": "Além de posição e navegação, qual medida precisa o GPS também fornece?",
-    "options": [
-      "Temperatura",
-      "Umidade",
-      "Pressão",
-      "Tempo"
-    ],
-    "correct": 3,
-    "aliases": [
-      "tempo"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O GPS também fornece sinais de tempo de alta precisão.",
-    "source": "https://www.gps.gov/gps"
-  },
-  {
-    "id": "v2:1aad9112b5be87501b0a",
-    "quiz": "conhecimentos-gerais",
-    "text": "Que equipamento capta sinais do GPS para calcular a localização do usuário?",
-    "options": [
-      "Receptor",
-      "Impressora",
-      "Projetor",
-      "Roteador"
-    ],
-    "correct": 0,
-    "aliases": [
-      "receptor"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O receptor GPS utiliza sinais enviados pelos satélites.",
-    "source": "https://www.gps.gov/gps"
   },
   {
     "id": "v2:fc18354f4347c8c4bf7a",
@@ -22270,38 +21814,19 @@ export const QUESTIONS=[
     "media": null,
     "clue": null,
     "explanation": "A distância padrão da maratona é 42,195 quilômetros.",
-    "source": "https://oscnewsletter.olympics.com/article/34/hidden-treasures_lang%3Den.html"
-  },
-  {
-    "id": "v2:76e1c8554854edcec62c",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual cidade sediou os primeiros Jogos Olímpicos da era moderna, em 1896?",
-    "options": [
-      "Paris",
-      "Londres",
-      "Roma",
-      "Atenas"
-    ],
-    "correct": 3,
-    "aliases": [
-      "atenas"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Os Jogos de 1896 aconteceram em Atenas.",
-    "source": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=172430&parentDocumentId=172429&skipCopyright=true&skipWatermark=true"
+    "source": "https://worldathletics.org/disciplines/roadrunning/marathon"
   },
   {
     "id": "v2:45eb23397e8132e6dceb",
     "quiz": "conhecimentos-gerais",
     "text": "Qual jogador pode usar as mãos dentro da própria área no futebol?",
     "options": [
-      "Goleiro",
       "Zagueiro",
       "Volante",
-      "Atacante"
+      "Atacante",
+      "Goleiro"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "goleiro"
     ],
@@ -22315,12 +21840,12 @@ export const QUESTIONS=[
     "quiz": "conhecimentos-gerais",
     "text": "Qual posição do voleibol é especializada na defesa e usa uniforme diferente?",
     "options": [
-      "Levantador",
       "Líbero",
+      "Levantador",
       "Ponteiro",
       "Central"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "líbero"
     ],
@@ -22335,11 +21860,11 @@ export const QUESTIONS=[
     "text": "No basquete 3x3, qual pontuação encerra a partida antes do limite de tempo?",
     "options": [
       "15 pontos",
-      "25 pontos",
       "21 pontos",
+      "25 pontos",
       "30 pontos"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "21 pontos",
       "21"
@@ -22356,10 +21881,10 @@ export const QUESTIONS=[
     "options": [
       "8 segundos",
       "24 segundos",
-      "30 segundos",
-      "12 segundos"
+      "12 segundos",
+      "30 segundos"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "12 segundos"
     ],
@@ -22373,12 +21898,12 @@ export const QUESTIONS=[
     "quiz": "conhecimentos-gerais",
     "text": "Qual é o menor número primo?",
     "options": [
-      "Dois",
       "Um",
       "Três",
-      "Quatro"
+      "Quatro",
+      "Dois"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "dois",
       "2"
@@ -22393,12 +21918,12 @@ export const QUESTIONS=[
     "quiz": "conhecimentos-gerais",
     "text": "Quanto somam os ângulos internos de um triângulo plano?",
     "options": [
-      "90 graus",
       "180 graus",
+      "90 graus",
       "270 graus",
       "360 graus"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "180 graus",
       "180"
@@ -22414,11 +21939,11 @@ export const QUESTIONS=[
     "text": "Qual polígono tem seis lados?",
     "options": [
       "Pentágono",
-      "Heptágono",
       "Hexágono",
+      "Heptágono",
       "Octógono"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "hexágono"
     ],
@@ -22434,10 +21959,10 @@ export const QUESTIONS=[
     "options": [
       "Número de Euler",
       "Razão áurea",
-      "Raiz de dois",
-      "Pi"
+      "Pi",
+      "Raiz de dois"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "pi",
       "π"
@@ -22446,64 +21971,6 @@ export const QUESTIONS=[
     "clue": null,
     "explanation": "Pi é a razão entre o comprimento da circunferência e seu diâmetro.",
     "source": "https://mathworld.wolfram.com/Pi.html"
-  },
-  {
-    "id": "v2:c2d40ecaaff67e4ebb00",
-    "quiz": "conhecimentos-gerais",
-    "text": "Quantos metros há em um quilômetro?",
-    "options": [
-      "Mil",
-      "Cem",
-      "Dez mil",
-      "Um milhão"
-    ],
-    "correct": 0,
-    "aliases": [
-      "mil",
-      "1000"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O prefixo quilo representa mil unidades.",
-    "source": "https://www.bipm.org/en/measurement-units/si-prefixes"
-  },
-  {
-    "id": "v2:adcd67f1a3e5318d59d7",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a unidade básica de comprimento no Sistema Internacional?",
-    "options": [
-      "Polegada",
-      "Metro",
-      "Jarda",
-      "Milha"
-    ],
-    "correct": 1,
-    "aliases": [
-      "metro"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O metro é a unidade de comprimento do SI.",
-    "source": "https://www.bipm.org/en/measurement-units/si-base-units"
-  },
-  {
-    "id": "v2:fd75a7187d8471312e2b",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a unidade básica de tempo no Sistema Internacional?",
-    "options": [
-      "Minuto",
-      "Hora",
-      "Segundo",
-      "Dia"
-    ],
-    "correct": 2,
-    "aliases": [
-      "segundo"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O segundo é a unidade básica de tempo do SI.",
-    "source": "https://www.bipm.org/en/measurement-units/si-base-units"
   },
   {
     "id": "v2:f2e9ce4deaea0bb5b387",
@@ -22566,604 +22033,1505 @@ export const QUESTIONS=[
     "source": "https://www.britannica.com/topic/Roman-numeral"
   },
   {
-    "id": "v2:7681759c5b75b9f7f78d",
+    "id": "v2:fa7448b1fa4503d45e20",
     "quiz": "conhecimentos-gerais",
-    "text": "Em qual galáxia fica o Sistema Solar?",
+    "text": "Qual filme sul-coreano ganhou o Oscar de melhor filme na cerimônia de 2020?",
     "options": [
-      "Andrômeda",
+      "1917",
+      "Coringa",
+      "Parasita",
+      "Era Uma Vez em... Hollywood"
+    ],
+    "correct": 2,
+    "aliases": [
+      "parasita",
+      "Parasite"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Parasita venceu a categoria de melhor filme em 2020.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2020"
+  },
+  {
+    "id": "v2:ef801a714957aa279464",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem recebeu o Oscar de direção por Parasita na cerimônia de 2020?",
+    "options": [
+      "Sam Mendes",
+      "Martin Scorsese",
+      "Todd Phillips",
+      "Bong Joon-ho"
+    ],
+    "correct": 3,
+    "aliases": [
+      "bong joon-ho"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Bong Joon-ho dirigiu Parasita.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2020"
+  },
+  {
+    "id": "v2:a1dfa8ea7442d1e9cf8c",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual filme sobre uma família surda venceu o Oscar de melhor filme em 2022?",
+    "options": [
+      "CODA",
+      "Duna",
+      "Belfast",
+      "O Poder do Cão"
+    ],
+    "correct": 0,
+    "aliases": [
+      "coda"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "CODA venceu o prêmio de melhor filme na cerimônia de 2022.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2022"
+  },
+  {
+    "id": "v2:630dad66689eef420b94",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual filme venceu o Oscar de melhor filme na cerimônia de 2023?",
+    "options": [
+      "Os Fabelmans",
+      "Tudo em Todo o Lugar ao Mesmo Tempo",
+      "Top Gun: Maverick",
+      "Tár"
+    ],
+    "correct": 1,
+    "aliases": [
+      "tudo em todo o lugar ao mesmo tempo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O filme venceu a categoria principal em 2023.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2023"
+  },
+  {
+    "id": "v2:f55680d82f2a17f7b959",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual filme venceu o Oscar de melhor filme na cerimônia de 2024?",
+    "options": [
+      "Barbie",
+      "Pobres Criaturas",
+      "Oppenheimer",
+      "Anatomia de uma Queda"
+    ],
+    "correct": 2,
+    "aliases": [
+      "oppenheimer"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Oppenheimer foi o vencedor de melhor filme em 2024.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2024"
+  },
+  {
+    "id": "v2:de361e30df77f0099d90",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual ator ganhou o Oscar de protagonista por Oppenheimer?",
+    "options": [
+      "Bradley Cooper",
+      "Paul Giamatti",
+      "Jeffrey Wright",
+      "Cillian Murphy"
+    ],
+    "correct": 3,
+    "aliases": [
+      "cillian murphy"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Cillian Murphy recebeu o prêmio de ator principal em 2024.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2024"
+  },
+  {
+    "id": "v2:25fdfa37262129deff70",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual filme venceu o Oscar de melhor filme na cerimônia de 2025?",
+    "options": [
+      "Anora",
+      "O Brutalista",
+      "Conclave",
+      "Wicked"
+    ],
+    "correct": 0,
+    "aliases": [
+      "anora"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Anora venceu a categoria de melhor filme em 2025.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2025"
+  },
+  {
+    "id": "v2:cd3446eb83554c6fc619",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual atriz ganhou o Oscar de protagonista por Anora?",
+    "options": [
+      "Demi Moore",
+      "Mikey Madison",
+      "Fernanda Torres",
+      "Cynthia Erivo"
+    ],
+    "correct": 1,
+    "aliases": [
+      "mikey madison"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Mikey Madison recebeu o Oscar de atriz principal em 2025.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2025"
+  },
+  {
+    "id": "v2:039ba2d389f7a10e47c8",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual longa de animação venceu o Oscar em 2025?",
+    "options": [
+      "Divertida Mente 2",
+      "Robô Selvagem",
+      "Flow",
+      "Wallace & Gromit: Avengança"
+    ],
+    "correct": 2,
+    "aliases": [
+      "flow"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Flow venceu o prêmio de longa-metragem de animação em 2025.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2025"
+  },
+  {
+    "id": "v2:bfd6776371d809d47e92",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual filme brasileiro venceu o Oscar de filme internacional em 2025?",
+    "options": [
+      "O Agente Secreto",
+      "Central do Brasil",
+      "Cidade de Deus",
+      "Ainda Estou Aqui"
+    ],
+    "correct": 3,
+    "aliases": [
+      "ainda estou aqui"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Ainda Estou Aqui venceu a categoria de filme internacional em 2025.",
+    "source": "https://www.oscars.org/oscars/ceremonies/2025"
+  },
+  {
+    "id": "v2:40dcb13927f788750f1e",
+    "quiz": "conhecimentos-gerais",
+    "text": "Como se chama o pai que procura o filho em Procurando Nemo?",
+    "options": [
+      "Marlin",
+      "Bruce",
+      "Gill",
+      "Crush"
+    ],
+    "correct": 0,
+    "aliases": [
+      "marlin"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Marlin atravessa o oceano para encontrar Nemo.",
+    "source": "https://www.pixar.com/finding-nemo"
+  },
+  {
+    "id": "v2:4d4edee3f6630e950617",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual personagem de Procurando Nemo acompanha Marlin na busca?",
+    "options": [
+      "Peach",
+      "Dory",
+      "Darla",
+      "Deb"
+    ],
+    "correct": 1,
+    "aliases": [
+      "dory"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Dory ajuda Marlin em sua jornada.",
+    "source": "https://www.pixar.com/finding-nemo"
+  },
+  {
+    "id": "v2:c9655e1fb426080b50d1",
+    "quiz": "conhecimentos-gerais",
+    "text": "De quem é a mente retratada no filme Divertida Mente?",
+    "options": [
+      "Bonnie",
+      "Mirabel",
+      "Riley",
+      "Moana"
+    ],
+    "correct": 2,
+    "aliases": [
+      "riley"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As emoções da história vivem na mente de Riley.",
+    "source": "https://www.pixar.com/inside-out"
+  },
+  {
+    "id": "v2:5456aefb0cced9b654cf",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual emoção de Divertida Mente tenta manter Riley otimista?",
+    "options": [
+      "Tristeza",
+      "Medo",
+      "Raiva",
+      "Alegria"
+    ],
+    "correct": 3,
+    "aliases": [
+      "alegria"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Alegria é uma das emoções centrais do filme.",
+    "source": "https://www.pixar.com/inside-out"
+  },
+  {
+    "id": "v2:13920a3fde7253883f70",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é o nome do protagonista de Viva: A Vida É uma Festa?",
+    "options": [
+      "Miguel",
+      "Héctor",
+      "Ernesto",
+      "Dante"
+    ],
+    "correct": 0,
+    "aliases": [
+      "miguel"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Miguel sonha em tocar música no filme Coco.",
+    "source": "https://www.pixar.com/coco"
+  },
+  {
+    "id": "v2:2c91e26a41e9e1bf4752",
+    "quiz": "conhecimentos-gerais",
+    "text": "Para qual mundo Miguel viaja em Viva: A Vida É uma Festa?",
+    "options": [
+      "País das Maravilhas",
+      "Terra dos Mortos",
+      "Nárnia",
+      "Terra Média"
+    ],
+    "correct": 1,
+    "aliases": [
+      "terra dos mortos"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Miguel atravessa para a Terra dos Mortos.",
+    "source": "https://www.pixar.com/coco"
+  },
+  {
+    "id": "v2:cb6da8d8f2ae51334c7f",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual integrante da família Madrigal não recebe um dom mágico em Encanto?",
+    "options": [
+      "Isabela",
+      "Luisa",
+      "Mirabel",
+      "Dolores"
+    ],
+    "correct": 2,
+    "aliases": [
+      "mirabel"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Mirabel é a única Madrigal sem um dom especial.",
+    "source": "https://movies.disney.com/encanto"
+  },
+  {
+    "id": "v2:19c545d5800fb85fd371",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é o sobrenome da família protagonista de Encanto?",
+    "options": [
+      "Rivera",
+      "Parr",
+      "Andersen",
+      "Madrigal"
+    ],
+    "correct": 3,
+    "aliases": [
+      "madrigal"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Encanto acompanha a família Madrigal.",
+    "source": "https://movies.disney.com/encanto"
+  },
+  {
+    "id": "v2:93364b51d99f3d0c3959",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual brinquedo caubói lidera o grupo de Andy em Toy Story?",
+    "options": [
+      "Woody",
+      "Buzz Lightyear",
+      "Rex",
+      "Hamm"
+    ],
+    "correct": 0,
+    "aliases": [
+      "woody"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Woody é o caubói favorito de Andy no início da história.",
+    "source": "https://www.pixar.com/toy-story"
+  },
+  {
+    "id": "v2:7ff7845a451a284199db",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual brinquedo de Toy Story acredita ser um patrulheiro espacial?",
+    "options": [
+      "Woody",
+      "Buzz Lightyear",
+      "Slinky",
+      "Sr. Cabeça de Batata"
+    ],
+    "correct": 1,
+    "aliases": [
+      "buzz lightyear"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Buzz chega como novo brinquedo de Andy.",
+    "source": "https://www.pixar.com/toy-story"
+  },
+  {
+    "id": "v2:c763013a631f3d4e1b51",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem escreveu Orgulho e Preconceito?",
+    "options": [
+      "Mary Shelley",
+      "Emily Brontë",
+      "Jane Austen",
+      "George Eliot"
+    ],
+    "correct": 2,
+    "aliases": [
+      "jane austen"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Jane Austen é a autora do romance.",
+    "source": "https://www.penguinrandomhouse.com/books/836710/pride-and-prejudice-by-jane-austen/"
+  },
+  {
+    "id": "v2:4e2a16cd45b50da8e8ec",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é a protagonista de Orgulho e Preconceito?",
+    "options": [
+      "Emma Woodhouse",
+      "Jane Eyre",
+      "Jo March",
+      "Elizabeth Bennet"
+    ],
+    "correct": 3,
+    "aliases": [
+      "elizabeth bennet"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Elizabeth Bennet é a personagem central do romance.",
+    "source": "https://www.penguinrandomhouse.com/books/836710/pride-and-prejudice-by-jane-austen/"
+  },
+  {
+    "id": "v2:f3dd18b430767298bb55",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual personagem de Orgulho e Preconceito é conhecido como Sr. Darcy?",
+    "options": [
+      "Fitzwilliam Darcy",
+      "Charles Bingley",
+      "George Wickham",
+      "William Collins"
+    ],
+    "correct": 0,
+    "aliases": [
+      "fitzwilliam darcy"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Fitzwilliam Darcy é o nome completo do Sr. Darcy.",
+    "source": "https://www.penguinrandomhouse.com/books/836710/pride-and-prejudice-by-jane-austen/"
+  },
+  {
+    "id": "v2:828b493dfb82d2a62756",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem escreveu Frankenstein?",
+    "options": [
+      "Jane Austen",
+      "Mary Shelley",
+      "Virginia Woolf",
+      "Agatha Christie"
+    ],
+    "correct": 1,
+    "aliases": [
+      "mary shelley"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Mary Shelley publicou Frankenstein no século XIX.",
+    "source": "https://www.penguinrandomhouse.com/books/286385/frankenstein-by-mary-shelley-edited-with-an-introduction-and-notes-by-maurice-hindle-cover-illustration-by-coralie-bickford-smith/"
+  },
+  {
+    "id": "v2:176d72fb183aede0140d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é o nome do criador da criatura no romance Frankenstein?",
+    "options": [
+      "Conde Drácula",
+      "Dr. Jekyll",
+      "Victor Frankenstein",
+      "Capitão Nemo"
+    ],
+    "correct": 2,
+    "aliases": [
+      "victor frankenstein"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Victor Frankenstein é o cientista do romance.",
+    "source": "https://www.penguinrandomhouse.com/books/286385/frankenstein-by-mary-shelley-edited-with-an-introduction-and-notes-by-maurice-hindle-cover-illustration-by-coralie-bickford-smith/"
+  },
+  {
+    "id": "v2:1de0a0b0e18271f7f2ef",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem escreveu O Hobbit?",
+    "options": [
+      "C. S. Lewis",
+      "George R. R. Martin",
+      "Terry Pratchett",
+      "J. R. R. Tolkien"
+    ],
+    "correct": 3,
+    "aliases": [
+      "j. r. r. tolkien",
+      "Tolkien"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Tolkien escreveu O Hobbit e O Senhor dos Anéis.",
+    "source": "https://www.penguinrandomhouse.com/authors/31223/jrr-tolkien/"
+  },
+  {
+    "id": "v2:31bd827779b7c9996124",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual hobbit é o protagonista de O Hobbit?",
+    "options": [
+      "Bilbo Bolseiro",
+      "Frodo Bolseiro",
+      "Samwise Gamgi",
+      "Peregrin Tûk"
+    ],
+    "correct": 0,
+    "aliases": [
+      "bilbo bolseiro",
+      "Bilbo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Bilbo é o personagem principal de O Hobbit.",
+    "source": "https://www.penguinrandomhouse.com/authors/31223/jrr-tolkien/"
+  },
+  {
+    "id": "v2:e33ebb45eb380680e4b3",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem escreveu o romance distópico 1984?",
+    "options": [
+      "Aldous Huxley",
+      "George Orwell",
+      "Ray Bradbury",
+      "H. G. Wells"
+    ],
+    "correct": 1,
+    "aliases": [
+      "george orwell"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "George Orwell é o autor de 1984.",
+    "source": "https://www.penguinrandomhouse.com/books/326569/1984-by-george-orwell-with-a-foreword-by-thomas-pynchon/readers-guide/"
+  },
+  {
+    "id": "v2:50922ef30b6e957fbc2d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual figura simboliza a vigilância do Partido no romance 1984?",
+    "options": [
+      "Capitão Ahab",
+      "Sr. Darcy",
+      "Grande Irmão",
+      "Chapeleiro Maluco"
+    ],
+    "correct": 2,
+    "aliases": [
+      "grande irmão",
+      "Big Brother"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Grande Irmão é a figura de vigilância no mundo de 1984.",
+    "source": "https://www.penguinrandomhouse.com/books/326569/1984-by-george-orwell-with-a-foreword-by-thomas-pynchon/readers-guide/"
+  },
+  {
+    "id": "v2:6e0ef9db3c1d619403fa",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual livro de George Orwell retrata uma revolta numa fazenda?",
+    "options": [
+      "1984",
+      "Admirável Mundo Novo",
+      "Fahrenheit 451",
+      "A Revolução dos Bichos"
+    ],
+    "correct": 3,
+    "aliases": [
+      "a revolução dos bichos",
+      "Animal Farm"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Revolução dos Bichos é uma fábula política de Orwell.",
+    "source": "https://www.penguinrandomhouse.com/books/124976/animal-farm-by-george-orwell-introduction-by-julian-symons/"
+  },
+  {
+    "id": "v2:7a08d3288649d0884866",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem escreveu O Pequeno Príncipe?",
+    "options": [
+      "Antoine de Saint-Exupéry",
+      "Jules Verne",
+      "Victor Hugo",
+      "Marcel Proust"
+    ],
+    "correct": 0,
+    "aliases": [
+      "antoine de saint-exupéry"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Saint-Exupéry é o autor de O Pequeno Príncipe.",
+    "source": "https://www.penguinrandomhouse.com/authors/2302781/antoine-de-saint-exupery/"
+  },
+  {
+    "id": "v2:0e663f917a1bd848a8fa",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual livro de Saint-Exupéry tem um jovem viajante de outros planetas?",
+    "options": [
+      "O Hobbit",
+      "O Pequeno Príncipe",
+      "Peter Pan",
+      "Alice no País das Maravilhas"
+    ],
+    "correct": 1,
+    "aliases": [
+      "o pequeno príncipe"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Pequeno Príncipe é a obra mais conhecida do autor.",
+    "source": "https://www.penguinrandomhouse.com/authors/2302781/antoine-de-saint-exupery/"
+  },
+  {
+    "id": "v2:57d7a50c4292615144e7",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem escreveu Alice no País das Maravilhas?",
+    "options": [
+      "Roald Dahl",
+      "J. M. Barrie",
+      "Lewis Carroll",
+      "L. Frank Baum"
+    ],
+    "correct": 2,
+    "aliases": [
+      "lewis carroll"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Lewis Carroll escreveu as aventuras de Alice.",
+    "source": "https://www.penguinrandomhouse.com/books/315064/alices-adventures-in-wonderland-by-lewis-carroll/"
+  },
+  {
+    "id": "v2:f43f649261cb77c4211b",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual personagem Alice segue antes de cair na toca?",
+    "options": [
+      "Gato de Cheshire",
+      "Chapeleiro Maluco",
+      "Rainha de Copas",
+      "Coelho Branco"
+    ],
+    "correct": 3,
+    "aliases": [
+      "coelho branco"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Alice segue o Coelho Branco até o País das Maravilhas.",
+    "source": "https://www.penguinrandomhouse.com/books/315064/alices-adventures-in-wonderland-by-lewis-carroll/"
+  },
+  {
+    "id": "v2:7ed9cb566b979b5e9157",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quem escreveu Moby Dick?",
+    "options": [
+      "Herman Melville",
+      "Mark Twain",
+      "Jack London",
+      "Ernest Hemingway"
+    ],
+    "correct": 0,
+    "aliases": [
+      "herman melville"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Herman Melville é o autor do romance.",
+    "source": "https://www.penguinrandomhouse.com/books/323502/moby-dick-by-herman-melville/"
+  },
+  {
+    "id": "v2:b70e7417d1f9498602b1",
+    "quiz": "conhecimentos-gerais",
+    "text": "Como se chama a posição em que o rei atacado não tem lance legal para escapar?",
+    "options": [
+      "Roque",
+      "Xeque-mate",
+      "Empate",
+      "Promoção"
+    ],
+    "correct": 1,
+    "aliases": [
+      "xeque-mate"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O xeque-mate encerra a partida de xadrez com vitória de quem o aplicou.",
+    "source": "https://handbook.fide.com/chapter/e012023"
+  },
+  {
+    "id": "v2:3af3671af5264d0d9da5",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quantas casas há em um tabuleiro de xadrez?",
+    "options": [
+      "32",
+      "48",
+      "64",
+      "81"
+    ],
+    "correct": 2,
+    "aliases": [
+      "64",
+      "sessenta e quatro"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O tabuleiro de xadrez tem oito linhas por oito colunas.",
+    "source": "https://handbook.fide.com/chapter/e012023"
+  },
+  {
+    "id": "v2:4f7c27217baf2fd80567",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual peça de xadrez se move em forma de L?",
+    "options": [
+      "Bispo",
+      "Torre",
+      "Rainha",
+      "Cavalo"
+    ],
+    "correct": 3,
+    "aliases": [
+      "cavalo"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O cavalo salta em um movimento equivalente a duas casas numa direção e uma perpendicular.",
+    "source": "https://handbook.fide.com/chapter/e012023"
+  },
+  {
+    "id": "v2:ff9c003d155115456e22",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual lance de xadrez move o rei e uma torre na mesma jogada?",
+    "options": [
+      "Roque",
+      "Promoção",
+      "En passant",
+      "Xeque"
+    ],
+    "correct": 0,
+    "aliases": [
+      "roque"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O roque é um lance especial envolvendo rei e torre.",
+    "source": "https://handbook.fide.com/chapter/e012023"
+  },
+  {
+    "id": "v2:00f499d1943e58551452",
+    "quiz": "conhecimentos-gerais",
+    "text": "No tênis, como se chama um saque válido que o adversário não toca?",
+    "options": [
+      "Dupla falta",
+      "Ace",
+      "Deuce",
+      "Break point"
+    ],
+    "correct": 1,
+    "aliases": [
+      "ace"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Ace é um saque vencedor sem toque do recebedor.",
+    "source": "https://www.itftennis.com/en/about-us/organisation/tennis-glossary/"
+  },
+  {
+    "id": "v2:31232010890e55c634e8",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual termo do tênis indica igualdade em 40 a 40?",
+    "options": [
+      "Ace",
+      "Match point",
+      "Deuce",
+      "Tie-break"
+    ],
+    "correct": 2,
+    "aliases": [
+      "deuce"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Deuce é a igualdade que exige dois pontos consecutivos para fechar o game.",
+    "source": "https://www.itftennis.com/en/about-us/organisation/tennis-glossary/"
+  },
+  {
+    "id": "v2:7a78224dfd9338e82610",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual game especial costuma decidir um set de tênis empatado em seis games?",
+    "options": [
+      "Ace",
+      "Voleio",
+      "Break point",
+      "Tie-break"
+    ],
+    "correct": 3,
+    "aliases": [
+      "tie-break"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O tie-break desempata o set em determinadas condições.",
+    "source": "https://www.itftennis.com/en/about-us/organisation/tennis-glossary/"
+  },
+  {
+    "id": "v2:503fa046a60b4b6e33a3",
+    "quiz": "conhecimentos-gerais",
+    "text": "O que ocorre quando o sacador erra as duas tentativas de saque no mesmo ponto?",
+    "options": [
+      "Dupla falta",
+      "Ace",
+      "Let",
+      "Vantagem"
+    ],
+    "correct": 0,
+    "aliases": [
+      "dupla falta"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A dupla falta dá o ponto ao recebedor.",
+    "source": "https://www.itftennis.com/en/about-us/organisation/tennis-glossary/"
+  },
+  {
+    "id": "v2:9960734893cb989143b0",
+    "quiz": "conhecimentos-gerais",
+    "text": "Quanto dura cada tempo regulamentar de futebol, sem acréscimos?",
+    "options": [
+      "30 minutos",
+      "45 minutos",
+      "40 minutos",
+      "60 minutos"
+    ],
+    "correct": 1,
+    "aliases": [
+      "45 minutos",
+      "45"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Uma partida padrão tem dois tempos de 45 minutos.",
+    "source": "https://www.theifab.com/laws/latest/the-duration-of-the-match/"
+  },
+  {
+    "id": "v2:205900c798e21b6c485f",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual é o tempo máximo usual do intervalo entre os dois tempos no futebol?",
+    "options": [
+      "5 minutos",
+      "25 minutos",
+      "15 minutos",
+      "30 minutos"
+    ],
+    "correct": 2,
+    "aliases": [
+      "15 minutos",
+      "15"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As regras permitem intervalo de até 15 minutos.",
+    "source": "https://www.theifab.com/laws/latest/the-duration-of-the-match/"
+  },
+  {
+    "id": "v2:57721e91143088b23a6f",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual linguagem de marcação organiza títulos, parágrafos e links de uma página?",
+    "options": [
+      "CSS",
+      "JavaScript",
+      "SQL",
+      "HTML"
+    ],
+    "correct": 3,
+    "aliases": [
+      "html"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "HTML estrutura o conteúdo de páginas da Web.",
+    "source": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/The_web_standards_model"
+  },
+  {
+    "id": "v2:bf09b546fc57af43a380",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual linguagem define cores, fontes e disposição visual de uma página Web?",
+    "options": [
+      "CSS",
+      "HTML",
+      "SQL",
+      "JSON"
+    ],
+    "correct": 0,
+    "aliases": [
+      "css"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "CSS descreve a apresentação visual do conteúdo.",
+    "source": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/The_web_standards_model"
+  },
+  {
+    "id": "v2:9f5cdb9ead0be1804933",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual linguagem costuma adicionar interatividade a páginas Web?",
+    "options": [
+      "HTML",
+      "JavaScript",
+      "CSS",
+      "PDF"
+    ],
+    "correct": 1,
+    "aliases": [
+      "javascript"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "JavaScript permite comportamento dinâmico no navegador.",
+    "source": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/The_web_standards_model"
+  },
+  {
+    "id": "v2:1b83b659858e13946b4b",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual sistema associa nomes de domínio a endereços usados na Internet?",
+    "options": [
+      "GPS",
+      "USB",
+      "DNS",
+      "PDF"
+    ],
+    "correct": 2,
+    "aliases": [
+      "dns"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O DNS facilita encontrar serviços pelo nome de domínio.",
+    "source": "https://www.icann.org/resources/pages/dns-2022-09-13-en"
+  },
+  {
+    "id": "v2:c3ef358f50b06c3c684d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual identificador numérico ajuda a localizar um dispositivo ou serviço numa rede?",
+    "options": [
+      "Nome de arquivo",
+      "Código postal",
+      "ISBN",
+      "Endereço IP"
+    ],
+    "correct": 3,
+    "aliases": [
+      "endereço ip",
+      "IP"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Endereços IP são usados para identificar destinos na Internet.",
+    "source": "https://www.icann.org/resources/pages/dns-2022-09-13-en"
+  },
+  {
+    "id": "v2:5f5cd50bae499c9ae488",
+    "quiz": "conhecimentos-gerais",
+    "text": "Como se chama o endereço textual como exemplo.com usado para localizar um site?",
+    "options": [
+      "Nome de domínio",
+      "Senha",
+      "Extensão de arquivo",
+      "Número de série"
+    ],
+    "correct": 0,
+    "aliases": [
+      "nome de domínio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Nomes de domínio são mais fáceis de lembrar que endereços IP.",
+    "source": "https://www.icann.org/resources/pages/dns-2022-09-13-en"
+  },
+  {
+    "id": "v2:335358cf5a2f1eae044c",
+    "quiz": "conhecimentos-gerais",
+    "text": "Que programa abre e exibe páginas da Web?",
+    "options": [
+      "Planilha",
+      "Navegador",
+      "Antivírus",
+      "Compactador"
+    ],
+    "correct": 1,
+    "aliases": [
+      "navegador",
+      "browser"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Um navegador recupera e mostra páginas Web.",
+    "source": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Browsing_the_web"
+  },
+  {
+    "id": "v2:a7e795056fb84352a3ab",
+    "quiz": "conhecimentos-gerais",
+    "text": "Que serviço ajuda a encontrar páginas na Web por palavras-chave?",
+    "options": [
+      "Editor de texto",
+      "Leitor de PDF",
+      "Buscador",
+      "Gerenciador de arquivos"
+    ],
+    "correct": 2,
+    "aliases": [
+      "buscador",
+      "mecanismo de busca"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Um buscador indexa conteúdo para ajudar nas pesquisas.",
+    "source": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Browsing_the_web"
+  },
+  {
+    "id": "v2:e571b69907be7076911d",
+    "quiz": "conhecimentos-gerais",
+    "text": "Como se chama o endereço de um recurso na Web, como uma página ou imagem?",
+    "options": [
+      "CPU",
+      "RAM",
+      "USB",
+      "URL"
+    ],
+    "correct": 3,
+    "aliases": [
+      "url"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A URL indica onde um recurso pode ser encontrado.",
+    "source": "https://developer.mozilla.org/en-US/docs/Glossary/URL"
+  },
+  {
+    "id": "v2:749033251cb6fd51afae",
+    "quiz": "conhecimentos-gerais",
+    "text": "Em exemplo.org, o que representa a parte final “.org”?",
+    "options": [
+      "Domínio de topo",
+      "Nome do arquivo",
+      "Senha do site",
+      "Endereço IP"
+    ],
+    "correct": 0,
+    "aliases": [
+      "domínio de topo",
+      "TLD"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A parte final do domínio é seu domínio de topo.",
+    "source": "https://developer.mozilla.org/en-US/docs/Glossary/TLD"
+  },
+  {
+    "id": "v2:06a7e37743d6eed388b2",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual formato criado para compartilhar documentos preservando a apresentação entre sistemas?",
+    "options": [
+      "MP3",
+      "PDF",
+      "JPEG",
+      "CSV"
+    ],
+    "correct": 1,
+    "aliases": [
+      "pdf"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "PDF significa Portable Document Format.",
+    "source": "https://www.adobe.com/acrobat/about-adobe-pdf.html"
+  },
+  {
+    "id": "v2:793364ee5802847b1c43",
+    "quiz": "conhecimentos-gerais",
+    "text": "O que descreve uma imagem para quem usa leitor de tela?",
+    "options": [
+      "Legenda automática",
+      "Rodapé",
+      "Texto alternativo",
+      "Marca-dágua"
+    ],
+    "correct": 2,
+    "aliases": [
+      "texto alternativo",
+      "alt text"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O texto alternativo comunica o conteúdo relevante da imagem.",
+    "source": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+  },
+  {
+    "id": "v2:9788aeb0084ac052e44a",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual meio de entrada deve permitir operar um site acessível sem mouse?",
+    "options": [
+      "Microfone obrigatório",
+      "Câmera obrigatória",
+      "Impressora",
+      "Teclado"
+    ],
+    "correct": 3,
+    "aliases": [
+      "teclado"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A navegação por teclado é essencial para muitos usuários.",
+    "source": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+  },
+  {
+    "id": "v2:d798b473894d5ca968f2",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual proteção exige uma verificação adicional além da senha?",
+    "options": [
+      "Autenticação multifator",
+      "Modo anônimo",
+      "Histórico de navegação",
+      "Favorito"
+    ],
+    "correct": 0,
+    "aliases": [
+      "autenticação multifator",
+      "MFA",
+      "autenticação em duas etapas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A autenticação multifator adiciona outra etapa para entrar na conta.",
+    "source": "https://www.cisa.gov/secure-our-world/turn-mfa"
+  },
+  {
+    "id": "v2:8b3ba27bc3d2b7525bc6",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual ferramenta cria e guarda senhas únicas para várias contas?",
+    "options": [
+      "Navegador de imagens",
+      "Gerenciador de senhas",
+      "Editor de vídeo",
+      "Desfragmentador"
+    ],
+    "correct": 1,
+    "aliases": [
+      "gerenciador de senhas"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Gerenciadores ajudam a usar senhas fortes e diferentes.",
+    "source": "https://www.cisa.gov/resources-tools/training/cyb3rsmrt-use-password-manager-create-and-remember-strong-passwords"
+  },
+  {
+    "id": "v2:73ee4ef2a1f50d849b7f",
+    "quiz": "conhecimentos-gerais",
+    "text": "Como se chama uma cópia de segurança feita para recuperar dados perdidos?",
+    "options": [
+      "Cache",
+      "Atalho",
+      "Backup",
+      "Cookie"
+    ],
+    "correct": 2,
+    "aliases": [
+      "backup",
+      "cópia de segurança"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Backups permitem restaurar arquivos após perda ou falha.",
+    "source": "https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf"
+  },
+  {
+    "id": "v2:084923e996987004f405",
+    "quiz": "conhecimentos-gerais",
+    "text": "Qual figura plana tem quatro lados iguais e quatro ângulos retos?",
+    "options": [
+      "Losango qualquer",
+      "Trapézio",
       "Triângulo",
-      "Via Láctea",
-      "Grande Nuvem de Magalhães"
-    ],
-    "correct": 2,
-    "aliases": [
-      "via láctea"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "O Sistema Solar integra a Via Láctea.",
-    "source": "https://science.nasa.gov/universe/galaxies/"
-  },
-  {
-    "id": "v2:efeac9a728435ca735cd",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual movimento da Terra em torno do próprio eixo produz a alternância de dias e noites?",
-    "options": [
-      "Translação",
-      "Precessão",
-      "Nutação",
-      "Rotação"
+      "Quadrado"
     ],
     "correct": 3,
     "aliases": [
-      "rotação"
+      "quadrado"
     ],
     "media": null,
     "clue": null,
-    "explanation": "A rotação da Terra provoca a sucessão de dia e noite.",
-    "source": "https://science.nasa.gov/earth/facts/"
+    "explanation": "O quadrado combina lados iguais e ângulos de 90 graus.",
+    "source": "https://mathworld.wolfram.com/Square.html"
   },
   {
-    "id": "v2:9da67a7cc4c5bf639591",
+    "id": "v2:7b5d805f46bc14efe35a",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual movimento da Terra ao redor do Sol dura aproximadamente um ano?",
+    "text": "Qual polígono possui cinco lados?",
     "options": [
-      "Translação",
-      "Rotação",
-      "Precessão",
-      "Maré"
+      "Pentágono",
+      "Hexágono",
+      "Octógono",
+      "Triângulo"
     ],
     "correct": 0,
     "aliases": [
-      "translação"
+      "pentágono"
     ],
     "media": null,
     "clue": null,
-    "explanation": "A Terra completa uma órbita em torno do Sol em cerca de um ano.",
-    "source": "https://science.nasa.gov/earth/facts/"
+    "explanation": "Um pentágono tem cinco lados.",
+    "source": "https://mathworld.wolfram.com/RegularPolygon.html"
   },
   {
-    "id": "v2:c8510b416bae3797e1d0",
+    "id": "v2:6a955756579ecd859aa4",
     "quiz": "conhecimentos-gerais",
-    "text": "Quais seres vivos formam os recifes coralinos?",
+    "text": "Qual polígono possui oito lados?",
     "options": [
-      "Plantas terrestres",
-      "Corais",
-      "Bactérias apenas",
-      "Rochas sem vida"
+      "Heptágono",
+      "Octógono",
+      "Hexágono",
+      "Decágono"
     ],
     "correct": 1,
     "aliases": [
-      "corais"
+      "octógono"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Recifes são construídos por animais chamados pólipos de coral.",
-    "source": "https://oceanservice.noaa.gov/facts/coral.html"
+    "explanation": "Um octógono tem oito lados.",
+    "source": "https://mathworld.wolfram.com/RegularOctagon.html"
   },
   {
-    "id": "v2:aa890c1a739aa9d50082",
+    "id": "v2:0d748c696bf23da1daff",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual fonte de energia permite que plantas realizem fotossíntese?",
+    "text": "Como se chama um ângulo de 90 graus?",
     "options": [
-      "Som",
-      "Vento",
-      "Luz solar",
-      "Gravidade"
+      "Ângulo agudo",
+      "Ângulo obtuso",
+      "Ângulo reto",
+      "Ângulo raso"
     ],
     "correct": 2,
     "aliases": [
-      "luz solar"
+      "ângulo reto"
     ],
     "media": null,
     "clue": null,
-    "explanation": "A fotossíntese usa a energia da luz.",
-    "source": "https://www.britannica.com/science/photosynthesis"
+    "explanation": "O ângulo reto mede 90 graus.",
+    "source": "https://mathworld.wolfram.com/Square.html"
   },
   {
-    "id": "v2:fda245c0e2239b210a8b",
+    "id": "v2:21b2c5b7973533550326",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual influência é a principal responsável pelas marés oceânicas?",
+    "text": "Como se chama a medida do contorno de uma figura plana?",
     "options": [
-      "Vento solar",
-      "Campo magnético",
-      "Rotação de Marte",
-      "Gravidade da Lua"
+      "Área",
+      "Volume",
+      "Diagonal",
+      "Perímetro"
     ],
     "correct": 3,
     "aliases": [
-      "gravidade da lua"
+      "perímetro"
     ],
     "media": null,
     "clue": null,
-    "explanation": "A atração gravitacional da Lua é a principal causa das marés.",
-    "source": "https://oceanservice.noaa.gov/facts/tides.html"
+    "explanation": "O perímetro soma os comprimentos dos lados do contorno.",
+    "source": "https://mathworld.wolfram.com/Square.html"
   },
   {
-    "id": "v2:533c5615598dce8e1bd8",
+    "id": "v2:ffe832761286d600ceac",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual oceano separa a costa oeste das Américas da costa leste da Ásia?",
+    "text": "Qual medida representa a superfície ocupada por uma figura plana?",
     "options": [
-      "Oceano Pacífico",
-      "Oceano Atlântico",
-      "Oceano Índico",
-      "Oceano Ártico"
+      "Área",
+      "Perímetro",
+      "Massa",
+      "Velocidade"
     ],
     "correct": 0,
     "aliases": [
-      "oceano pacífico"
+      "área"
     ],
     "media": null,
     "clue": null,
-    "explanation": "O Pacífico se estende entre as Américas, a Ásia e a Oceania.",
-    "source": "https://oceanservice.noaa.gov/facts/5oceans.html"
+    "explanation": "A área mede a extensão de uma região plana.",
+    "source": "https://mathworld.wolfram.com/Square.html"
   },
   {
-    "id": "v2:491408e2db9a7362f852",
+    "id": "v2:1e5ac288a6a1db98041d",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual continente contém o Polo Sul geográfico?",
+    "text": "Qual segmento atravessa o centro do círculo ligando dois pontos da borda?",
     "options": [
-      "Ásia",
-      "Antártida",
-      "África",
-      "Oceania"
+      "Raio",
+      "Diâmetro",
+      "Corda qualquer",
+      "Arco"
     ],
     "correct": 1,
     "aliases": [
-      "antártida"
+      "diâmetro"
     ],
     "media": null,
     "clue": null,
-    "explanation": "O Polo Sul está no interior da Antártida.",
-    "source": "https://www.bas.ac.uk/about/antarctica/"
+    "explanation": "O diâmetro mede o dobro do raio.",
+    "source": "https://mathworld.wolfram.com/Diameter.html"
   },
   {
-    "id": "v2:931f77113942225f17ff",
+    "id": "v2:e8d91b635fa2de2f3d31",
     "quiz": "conhecimentos-gerais",
-    "text": "Que blocos móveis da litosfera se encontram nas zonas onde ocorrem muitos terremotos?",
+    "text": "Qual segmento liga o centro de um círculo a um ponto de sua borda?",
     "options": [
-      "Nuvens",
-      "Glaciares",
-      "Placas tectônicas",
-      "Correntes marinhas"
+      "Diâmetro",
+      "Tangente",
+      "Raio",
+      "Secante"
     ],
     "correct": 2,
     "aliases": [
-      "placas tectônicas"
+      "raio"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Muitos terremotos acontecem nas bordas das placas tectônicas.",
-    "source": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes"
+    "explanation": "O raio vai do centro à circunferência.",
+    "source": "https://mathworld.wolfram.com/Radius.html"
   },
   {
-    "id": "v2:22e3b2130c3343447903",
+    "id": "v2:bad089a7daaa347a1a69",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual gás predomina na atmosfera seca da Terra?",
+    "text": "Como se chama um inteiro divisível por dois sem resto?",
     "options": [
-      "Oxigênio",
-      "Argônio",
-      "Hélio",
-      "Nitrogênio"
+      "Número primo",
+      "Número ímpar",
+      "Número irracional",
+      "Número par"
     ],
     "correct": 3,
     "aliases": [
-      "nitrogênio"
+      "número par"
     ],
     "media": null,
     "clue": null,
-    "explanation": "O nitrogênio constitui a maior parte do ar seco.",
-    "source": "https://www.nasa.gov/general/what-is-earths-atmosphere/"
+    "explanation": "Números pares são múltiplos inteiros de dois.",
+    "source": "https://mathworld.wolfram.com/EvenNumber.html"
   },
   {
-    "id": "v2:3dfdfbab3881de06c680",
+    "id": "v2:06eadae1393e287298d5",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Brasil?",
+    "text": "Quanto é um quarto de um total em porcentagem?",
     "options": [
-      "Brasília",
-      "Buenos Aires",
-      "Montevidéu",
-      "Cairo"
+      "25%",
+      "10%",
+      "50%",
+      "75%"
     ],
     "correct": 0,
     "aliases": [
-      "brasília",
-      "brasilia"
+      "25%",
+      "vinte e cinco por cento"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Brasília é a capital de Brasil.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Brasil%20capital"
+    "explanation": "Um quarto equivale a 25 de cada 100 partes.",
+    "source": "https://mathworld.wolfram.com/Percent.html"
   },
   {
-    "id": "v2:3c69febbc73def10212f",
+    "id": "v2:45820c50031ff5edef6f",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Argentina?",
+    "text": "Quanto vale o algarismo romano V?",
     "options": [
-      "Santiago",
-      "Buenos Aires",
-      "Bangkok",
-      "Nairóbi"
+      "Dez",
+      "Cinco",
+      "Cinquenta",
+      "Cem"
     ],
     "correct": 1,
     "aliases": [
-      "buenos aires",
-      "buenos aires"
+      "cinco",
+      "5"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Buenos Aires é a capital de Argentina.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Argentina%20capital"
+    "explanation": "V representa cinco em algarismos romanos.",
+    "source": "https://www.britannica.com/topic/Roman-numeral"
   },
   {
-    "id": "v2:458f6085a1fb689ef04e",
+    "id": "v2:0dcdd6293bd00b346408",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Chile?",
+    "text": "Quanto vale o algarismo romano L?",
     "options": [
-      "Lima",
-      "Berlim",
-      "Santiago",
-      "Nova Déli"
+      "Cinco",
+      "Dez",
+      "Cinquenta",
+      "Cem"
     ],
     "correct": 2,
     "aliases": [
-      "santiago",
-      "santiago"
+      "cinquenta",
+      "50"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Santiago é a capital de Chile.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Chile%20capital"
+    "explanation": "L representa cinquenta em algarismos romanos.",
+    "source": "https://www.britannica.com/topic/Roman-numeral"
   },
   {
-    "id": "v2:8b700aa84a18edd813c4",
+    "id": "v2:3e8a2a0b4a5707d1bbc9",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Peru?",
+    "text": "Qual versão do protocolo de páginas Web protege a conexão com criptografia?",
     "options": [
-      "Cidade do México",
-      "Roma",
-      "Tóquio",
-      "Lima"
+      "FTP",
+      "SMTP",
+      "DNS",
+      "HTTPS"
     ],
     "correct": 3,
     "aliases": [
-      "lima",
-      "lima"
+      "https"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Lima é a capital de Peru.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Peru%20capital"
+    "explanation": "HTTPS usa criptografia para proteger a troca de dados na Web.",
+    "source": "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS"
   },
   {
-    "id": "v2:6a8e403482fe61d79a12",
+    "id": "v2:4d15e9213322c255aa08",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de México?",
+    "text": "Qual código bidimensional pode ser lido pela câmera para abrir um link ou acessar informações?",
     "options": [
-      "Cidade do México",
-      "Ottawa",
-      "Londres",
-      "Pequim"
+      "Código QR",
+      "Código de barras linear",
+      "ISBN",
+      "Captcha"
     ],
     "correct": 0,
     "aliases": [
-      "cidade do méxico",
-      "cidade do mexico",
-      "mexico city",
-      "mexico"
+      "código qr",
+      "QR code"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Cidade do México é a capital de México.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=M%C3%A9xico%20capital"
+    "explanation": "O código QR armazena dados em um padrão bidimensional.",
+    "source": "https://www.qrcode.com/en/codes/"
   },
   {
-    "id": "v2:9cb72be6fbcbb3cbae8d",
+    "id": "v2:42613a07efc7e569fc5a",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Canadá?",
+    "text": "Qual tecnologia sem fio costuma conectar fones e caixas de som a celulares?",
     "options": [
-      "Lisboa",
-      "Ottawa",
-      "Seul",
-      "Canberra"
+      "HDMI",
+      "Bluetooth",
+      "Ethernet",
+      "VGA"
     ],
     "correct": 1,
     "aliases": [
-      "ottawa",
-      "ottawa"
+      "bluetooth"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Ottawa é a capital de Canadá.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Canad%C3%A1%20capital"
+    "explanation": "Bluetooth permite a comunicação sem fio entre dispositivos próximos.",
+    "source": "https://www.bluetooth.com/learn-about-bluetooth/tech-overview/"
   },
   {
-    "id": "v2:a861abfaf2a028e7655d",
+    "id": "v2:276d5953a64f5e8efc48",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Portugal?",
+    "text": "Qual padrão é usado para conectar muitos periféricos e transferir dados por cabo?",
     "options": [
-      "Montevidéu",
-      "Cairo",
-      "Lisboa",
-      "Wellington"
+      "GPS",
+      "NFC",
+      "USB",
+      "Wi-Fi"
     ],
     "correct": 2,
     "aliases": [
-      "lisboa",
-      "lisboa",
-      "lisbon"
+      "usb"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Lisboa é a capital de Portugal.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Portugal%20capital"
+    "explanation": "USB significa Universal Serial Bus.",
+    "source": "https://www.usb.org/sites/default/files/hid1_12.pdf"
   },
   {
-    "id": "v2:0c06d20575fb698af908",
+    "id": "v2:9086d41e2004d1f94f04",
     "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Uruguai?",
+    "text": "Como se chama um pequeno dado que um site pode guardar no navegador para lembrar uma sessão?",
     "options": [
-      "Bangkok",
-      "Nairóbi",
-      "Brasília",
-      "Montevidéu"
+      "Pixel",
+      "Firewall",
+      "Captcha",
+      "Cookie"
     ],
     "correct": 3,
     "aliases": [
-      "montevidéu",
-      "montevideu",
-      "montevideo"
+      "cookie"
     ],
     "media": null,
     "clue": null,
-    "explanation": "Montevidéu é a capital de Uruguai.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Uruguai%20capital"
-  },
-  {
-    "id": "v2:8e0a7d5dcae945aa1cb7",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Tailândia?",
-    "options": [
-      "Bangkok",
-      "Berlim",
-      "Nova Déli",
-      "Buenos Aires"
-    ],
-    "correct": 0,
-    "aliases": [
-      "bangkok",
-      "bangkok"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Bangkok é a capital de Tailândia.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Tail%C3%A2ndia%20capital"
-  },
-  {
-    "id": "v2:1143f3afa40a7ee054f4",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Alemanha?",
-    "options": [
-      "Roma",
-      "Berlim",
-      "Tóquio",
-      "Santiago"
-    ],
-    "correct": 1,
-    "aliases": [
-      "berlim",
-      "berlim",
-      "berlin"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Berlim é a capital de Alemanha.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Alemanha%20capital"
-  },
-  {
-    "id": "v2:00958e6d0f9df3f8e738",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Itália?",
-    "options": [
-      "Londres",
-      "Pequim",
-      "Roma",
-      "Lima"
-    ],
-    "correct": 2,
-    "aliases": [
-      "roma",
-      "roma",
-      "rome"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Roma é a capital de Itália.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=It%C3%A1lia%20capital"
-  },
-  {
-    "id": "v2:9ec96220647d4ee81614",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Reino Unido?",
-    "options": [
-      "Seul",
-      "Canberra",
-      "Cidade do México",
-      "Londres"
-    ],
-    "correct": 3,
-    "aliases": [
-      "londres",
-      "londres",
-      "london"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Londres é a capital de Reino Unido.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Reino%20Unido%20capital"
-  },
-  {
-    "id": "v2:b2b244964f649ec7db27",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Coreia do Sul?",
-    "options": [
-      "Seul",
-      "Cairo",
-      "Wellington",
-      "Ottawa"
-    ],
-    "correct": 0,
-    "aliases": [
-      "seul",
-      "seul",
-      "seoul"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Seul é a capital de Coreia do Sul.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Coreia%20do%20Sul%20capital"
-  },
-  {
-    "id": "v2:8ae77eb812f5d2f407ae",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Egito?",
-    "options": [
-      "Nairóbi",
-      "Cairo",
-      "Brasília",
-      "Lisboa"
-    ],
-    "correct": 1,
-    "aliases": [
-      "cairo",
-      "cairo"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Cairo é a capital de Egito.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Egito%20capital"
-  },
-  {
-    "id": "v2:c8ee953dcc7dc17afac0",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Quênia?",
-    "options": [
-      "Nova Déli",
-      "Buenos Aires",
-      "Nairóbi",
-      "Montevidéu"
-    ],
-    "correct": 2,
-    "aliases": [
-      "nairóbi",
-      "nairobi"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Nairóbi é a capital de Quênia.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Qu%C3%AAnia%20capital"
-  },
-  {
-    "id": "v2:a3890acc565048d4f0e3",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Índia?",
-    "options": [
-      "Tóquio",
-      "Santiago",
-      "Bangkok",
-      "Nova Déli"
-    ],
-    "correct": 3,
-    "aliases": [
-      "nova déli",
-      "nova deli",
-      "new delhi"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Nova Déli é a capital de Índia.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=%C3%8Dndia%20capital"
-  },
-  {
-    "id": "v2:405ee07e3b7e00a46006",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Japão?",
-    "options": [
-      "Tóquio",
-      "Pequim",
-      "Lima",
-      "Berlim"
-    ],
-    "correct": 0,
-    "aliases": [
-      "tóquio",
-      "toquio",
-      "tokyo"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Tóquio é a capital de Japão.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Jap%C3%A3o%20capital"
-  },
-  {
-    "id": "v2:89f7cb0725629d2ea4ae",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de China?",
-    "options": [
-      "Canberra",
-      "Pequim",
-      "Cidade do México",
-      "Roma"
-    ],
-    "correct": 1,
-    "aliases": [
-      "pequim",
-      "pequim",
-      "beijing"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Pequim é a capital de China.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=China%20capital"
-  },
-  {
-    "id": "v2:ccd473b1a2d9ad24a364",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Austrália?",
-    "options": [
-      "Wellington",
-      "Ottawa",
-      "Canberra",
-      "Londres"
-    ],
-    "correct": 2,
-    "aliases": [
-      "canberra",
-      "canberra"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Canberra é a capital de Austrália.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Austr%C3%A1lia%20capital"
-  },
-  {
-    "id": "v2:9593c5bc20636a890a4a",
-    "quiz": "conhecimentos-gerais",
-    "text": "Qual é a capital de Nova Zelândia?",
-    "options": [
-      "Brasília",
-      "Lisboa",
-      "Seul",
-      "Wellington"
-    ],
-    "correct": 3,
-    "aliases": [
-      "wellington",
-      "wellington"
-    ],
-    "media": null,
-    "clue": null,
-    "explanation": "Wellington é a capital de Nova Zelândia.",
-    "source": "https://www.wikidata.org/wiki/Special:Search?search=Nova%20Zel%C3%A2ndia%20capital"
+    "explanation": "Cookies ajudam sites a manter sessões e preferências.",
+    "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies"
   }
 ];

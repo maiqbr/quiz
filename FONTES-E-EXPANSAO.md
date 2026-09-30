@@ -27,7 +27,7 @@ O jogo usa um **catálogo local revisado** para que solo, apresentação e ranki
 
 ## Próximas expansões
 
-1. Expandir Ciência e Natureza, História Geral e Conhecimentos Gerais além das atuais 100, 100 e 80 perguntas, mantendo fontes por item e explicações úteis após a resposta.
+1. Expandir Ciência e Natureza, História Geral e Conhecimentos Gerais além das atuais 100 perguntas cada, mantendo fontes por item e explicações úteis após a resposta. Conhecimentos Gerais deve evitar os assuntos já cobertos por categorias próprias.
 2. Adicionar um importador editorial que produza rascunhos a partir de Wikidata ou de um banco de trivia, sem publicar automaticamente nem depender de API durante as partidas.
 3. Revisar as 178 fotografias selecionadas no navegador e substituir arquivos que deixarem de carregar; novas perguntas visuais só entram com imagem e crédito válidos.
 4. Refinar os formatos de mapa, cronologia e associação também no ranking sem abrir espaço para pontuação enviada pelo cliente.
