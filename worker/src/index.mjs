@@ -5,6 +5,7 @@ const CATEGORY_COUNTS=Object.fromEntries([...new Set(QUESTIONS.map(question=>que
 CATEGORY_COUNTS.misto=QUESTIONS.length;
 const CATEGORY_IDS=Object.keys(CATEGORY_COUNTS);
 const LENGTH_LIMITS={quick:10,casual:50,training:100};
+const PAGE_SIZE=10;
 const expectedTotal=(quiz,length)=>Math.min(CATEGORY_COUNTS[quiz]||0,Object.hasOwn(LENGTH_LIMITS,length)?LENGTH_LIMITS[length]:0);
 const VALID_RUNS_SQL=Object.entries(CATEGORY_COUNTS).flatMap(([id,count])=>{if(!/^[a-z-]+$/.test(id))throw new Error('ID de categoria inválido');return Object.entries(LENGTH_LIMITS).map(([length,limit])=>`(quiz_id='${id}' AND length='${length}' AND total=${Math.min(count,limit)})`)}).join(' OR ');
 const SESSION_MS=7*24*60*60*1000;
@@ -67,8 +68,10 @@ export default {async fetch(request,env){
     }
     if(path==='/api/rankings'&&request.method==='GET'){
       const quiz=CATEGORY_IDS.includes(url.searchParams.get('quiz'))?url.searchParams.get('quiz'):'misto',difficulty=url.searchParams.get('difficulty')==='hard'?'hard':'easy',length=Object.hasOwn(LENGTH_LIMITS,url.searchParams.get('length'))?url.searchParams.get('length'):'quick',total=expectedTotal(quiz,length);
-      const {results}=await env.DB.prepare("WITH best AS (SELECT runs.*,ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY hits DESC,elapsed_ms ASC) AS row_num FROM runs WHERE quiz_id=? AND length=? AND difficulty=? AND total=? AND finished_at IS NOT NULL) SELECT users.name,best.hits,best.total,best.elapsed_ms,best.finished_at FROM best JOIN users ON users.id=best.user_id WHERE row_num=1 ORDER BY best.hits DESC,best.elapsed_ms ASC LIMIT 50").bind(quiz,length,difficulty,total).all();
-      return json({quiz,length,difficulty,total,rows:results});
+      const page=Math.min(100_000,Math.max(0,Number.parseInt(url.searchParams.get('page')||'0',10)||0));
+      const count=await env.DB.prepare('SELECT COUNT(DISTINCT user_id) AS players FROM runs WHERE quiz_id=? AND length=? AND difficulty=? AND total=? AND finished_at IS NOT NULL').bind(quiz,length,difficulty,total).first();
+      const {results}=await env.DB.prepare('WITH best AS (SELECT runs.*,ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC,id ASC) AS row_num FROM runs WHERE quiz_id=? AND length=? AND difficulty=? AND total=? AND finished_at IS NOT NULL) SELECT users.name,best.hits,best.total,best.elapsed_ms,best.finished_at FROM best JOIN users ON users.id=best.user_id WHERE row_num=1 ORDER BY best.hits DESC,best.elapsed_ms ASC,best.finished_at ASC,best.user_id ASC LIMIT ? OFFSET ?').bind(quiz,length,difficulty,total,PAGE_SIZE,page*PAGE_SIZE).all();
+      return json({quiz,length,difficulty,total,page,pageSize:PAGE_SIZE,players:count.players,rows:results});
     }
     if(path.startsWith('/api/')&&request.method==='POST'&&invalidOrigin(request))return json({error:'Origem inválida'},403);
     if(path==='/api/logout'&&request.method==='POST'){
@@ -113,9 +116,9 @@ export default {async fetch(request,env){
       const user=await userFor(request,env);if(!user)return json({error:'Entre com Discord'},401);
       const offset=Math.min(1_000_000,Math.max(0,Number.parseInt(url.searchParams.get('offset')||'0',10)||0));
       const summary=await env.DB.prepare('SELECT COUNT(*) AS completed,COALESCE(SUM(hits),0) AS hits,COALESCE(SUM(total),0) AS questions FROM runs WHERE user_id=? AND finished_at IS NOT NULL').bind(user.id).first();
-      const {results:records}=await env.DB.prepare(`WITH eligible AS (SELECT user_id,quiz_id,length,difficulty,hits,total,elapsed_ms,finished_at FROM runs WHERE finished_at IS NOT NULL AND (${VALID_RUNS_SQL})), best AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY user_id,quiz_id,length,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC) AS own_order FROM eligible), ranked AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY quiz_id,length,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC) AS position FROM best WHERE own_order=1) SELECT quiz_id,length,difficulty,hits,total,elapsed_ms,finished_at,position FROM ranked WHERE user_id=? ORDER BY quiz_id,length,difficulty`).bind(user.id).all();
-      const {results:history}=await env.DB.prepare('SELECT quiz_id,length,difficulty,hits,total,elapsed_ms,finished_at FROM runs WHERE user_id=? AND finished_at IS NOT NULL ORDER BY finished_at DESC LIMIT 21 OFFSET ?').bind(user.id,offset).all();
-      return json({user,summary,records,history:history.slice(0,20),nextOffset:history.length>20?offset+20:null});
+      const {results:records}=await env.DB.prepare(`WITH eligible AS (SELECT id,user_id,quiz_id,length,difficulty,hits,total,elapsed_ms,finished_at FROM runs WHERE finished_at IS NOT NULL AND (${VALID_RUNS_SQL})), best AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY user_id,quiz_id,length,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC,id ASC) AS own_order FROM eligible), ranked AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY quiz_id,length,difficulty ORDER BY hits DESC,elapsed_ms ASC,finished_at ASC,user_id ASC) AS position FROM best WHERE own_order=1) SELECT quiz_id,length,difficulty,hits,total,elapsed_ms,finished_at,position FROM ranked WHERE user_id=? ORDER BY quiz_id,length,difficulty`).bind(user.id).all();
+      const {results:history}=await env.DB.prepare('SELECT quiz_id,length,difficulty,hits,total,elapsed_ms,finished_at FROM runs WHERE user_id=? AND finished_at IS NOT NULL ORDER BY finished_at DESC,id DESC LIMIT ? OFFSET ?').bind(user.id,PAGE_SIZE,offset).all();
+      return json({user,summary,records,history,pageSize:PAGE_SIZE});
     }
     if(path.startsWith('/api/')||path.startsWith('/auth/'))return json({error:'Rota não encontrada'},404);
     return env.ASSETS.fetch(request);

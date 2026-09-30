@@ -3,7 +3,8 @@
   const title=Object.fromEntries(QUIZZES.map(quiz=>[quiz.id,quiz.title]));title.misto='Misto';title.idiomas='Línguas do Mundo';title['audio-instrumentos']='Som dos Instrumentos (antigo)';
   const difficulty={easy:'Fácil',hard:'Difícil'};
   const lengths={quick:{label:'Rápida',limit:10},casual:{label:'Casual',limit:50},training:{label:'Treino',limit:100},legacy:{label:'Completa antiga'}};
-  let user=null,runId=null,current=null,hits=0,deadline=0,tick=null,busy=false,profileOffset=0,boardDifficulty='easy',rankLength='quick',boardLength='quick',runLength='quick',runQuiz='misto',boardRequest=0;
+  const PAGE_SIZE=10;
+  let user=null,runId=null,current=null,hits=0,deadline=0,tick=null,busy=false,profilePage=0,localPage=0,localHistory=[],profileRequest=0,boardPage=0,boardDifficulty='easy',rankLength='quick',boardLength='quick',runLength='quick',runQuiz='misto',boardRequest=0;
   const categories=[{id:'misto',title:'Misto',count:QUIZZES.reduce((sum,quiz)=>sum+quiz.getPool('all').length,0)},...QUIZZES.map(quiz=>({id:quiz.id,title:quiz.title,count:quiz.getPool('all').length}))];
   for(const [id,includeCount] of [['rank-category',true],['board-category',false]]){
     const select=el(id);select.replaceChildren();
@@ -14,11 +15,11 @@
   function countFor(categoryId,length){return Math.min(categories.find(category=>category.id===categoryId)?.count||0,lengths[length].limit)}
   function rankLengthNote(){const count=countFor(el('rank-category').value,rankLength);el('rank-length-note').textContent=`${count} perguntas neste tema${count<lengths[rankLength].limit?' · todas as disponíveis':''}.`}
   function setRankLength(value){if(!lengths[value]?.limit)return;rankLength=value;document.querySelectorAll('[data-rank-length]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.rankLength===value)));rankLengthNote()}
-  function setBoardLength(value,refresh=true){if(!lengths[value]?.limit)return;boardLength=value;document.querySelectorAll('[data-board-length]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.boardLength===value)));if(refresh)board()}
+  function setBoardLength(value,refresh=true){if(!lengths[value]?.limit)return;boardLength=value;document.querySelectorAll('[data-board-length]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.boardLength===value)));if(refresh)board(true)}
   document.querySelectorAll('[data-rank-length]').forEach(button=>button.addEventListener('click',()=>setRankLength(button.dataset.rankLength)));
   document.querySelectorAll('[data-board-length]').forEach(button=>button.addEventListener('click',()=>setBoardLength(button.dataset.boardLength)));
   el('rank-category').addEventListener('change',rankLengthNote);setRankLength('quick');
-  function setBoardDifficulty(value,refresh=true){boardDifficulty=value;document.querySelectorAll('[data-board-difficulty]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.boardDifficulty===value)));if(refresh)board()}
+  function setBoardDifficulty(value,refresh=true){boardDifficulty=value;document.querySelectorAll('[data-board-difficulty]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.boardDifficulty===value)));if(refresh)board(true)}
   const duration=ms=>`${Math.floor(ms/60000)}m ${String(Math.floor(ms/1000)%60).padStart(2,'0')}s`;
   const date=stamp=>new Date(stamp).toLocaleDateString('pt-BR');
   async function api(path,options={}){
@@ -30,16 +31,19 @@
   function status(message){el('rank-status').textContent=message}
   function gameStatus(message,kind=''){const box=el('rank-game-status');box.textContent=message;box.className=kind}
   function avatar(target,account){target.replaceChildren();if(account.avatar){const img=document.createElement('img');img.src=account.avatar;img.alt='';img.referrerPolicy='no-referrer';target.append(img)}else target.textContent=(account.name||'?').slice(0,1).toUpperCase()}
-  async function board(){
+  async function board(reset=false){
+    if(reset)boardPage=0;
     const request=++boardRequest;
     const rows=el('rank-rows');rows.replaceChildren();
-    try{const data=await api(`/api/rankings?quiz=${el('board-category').value}&difficulty=${boardDifficulty}&length=${boardLength}`);
+    el('board-prev').disabled=true;el('board-next').disabled=true;
+    try{const data=await api(`/api/rankings?quiz=${el('board-category').value}&difficulty=${boardDifficulty}&length=${boardLength}&page=${boardPage}`);
       if(request!==boardRequest)return;
-      el('rank-board-count').textContent=`${data.rows.length} jogadores`;
+      el('rank-board-count').textContent=`${data.players} jogador${data.players===1?'':'es'}`;
       el('board-length-note').textContent=`${data.total} perguntas por partida${data.total<lengths[boardLength].limit?' · todas as disponíveis neste tema':''}.`;
       if(!data.rows.length){const row=document.createElement('tr');const cell=document.createElement('td');cell.colSpan=4;cell.className='rank-table-empty-cell';const empty=document.createElement('div');empty.className='rank-table-empty';empty.append(profileText('strong','','Ranking aberto'),profileText('span','','Conclua uma partida nesta categoria para registrar a primeira marca.'));cell.append(empty);row.append(cell);rows.append(row)}
-      data.rows.forEach((item,index)=>{const row=document.createElement('tr');[index+1,item.name,`${item.hits}/${item.total}`,duration(item.elapsed_ms)].forEach(value=>{const cell=document.createElement('td');cell.textContent=value;row.append(cell)});rows.append(row)})
-    }catch(error){if(request!==boardRequest)return;const row=document.createElement('tr');const cell=document.createElement('td');cell.colSpan=4;cell.className='rank-table-empty-cell';const empty=document.createElement('div');empty.className='rank-table-empty';empty.textContent=error.message;cell.append(empty);row.append(cell);rows.append(row)}
+      data.rows.forEach((item,index)=>{const row=document.createElement('tr');[boardPage*PAGE_SIZE+index+1,item.name,`${item.hits}/${item.total}`,duration(item.elapsed_ms)].forEach(value=>{const cell=document.createElement('td');cell.textContent=value;row.append(cell)});rows.append(row)});
+      const pages=Math.ceil(data.players/PAGE_SIZE);el('board-pagination').hidden=pages<=1;el('board-page').textContent=`Página ${boardPage+1} de ${pages}`;el('board-prev').disabled=boardPage===0;el('board-next').disabled=boardPage+1>=pages;
+    }catch(error){if(request!==boardRequest)return;el('board-pagination').hidden=true;const row=document.createElement('tr');const cell=document.createElement('td');cell.colSpan=4;cell.className='rank-table-empty-cell';const empty=document.createElement('div');empty.className='rank-table-empty';empty.textContent=error.message;cell.append(empty);row.append(cell);rows.append(row)}
   }
   function renderQuestion(question){
     current=question;deadline=Date.now()+question.secondsLeft*1000;show('ranked');
@@ -95,22 +99,34 @@
     row.append(main,result);target.append(row);
   }
   function emptyProfile(target,message){target.append(profileText('p','profile-empty',message))}
+  function renderLocalHistory(){
+    const target=el('profile-local');target.replaceChildren();
+    const pages=Math.ceil(localHistory.length/PAGE_SIZE);
+    el('local-pagination').hidden=pages<=1;el('local-page').textContent=`Página ${localPage+1} de ${pages}`;el('local-prev').disabled=localPage===0;el('local-next').disabled=localPage+1>=pages;
+    if(!localHistory.length){emptyProfile(target,'Suas partidas solo e apresentações neste navegador aparecerão aqui.');return}
+    localHistory.slice(localPage*PAGE_SIZE,(localPage+1)*PAGE_SIZE).forEach(item=>historyRow(target,{id:item.quizId,name:item.quiz,mode:item.mode==='host'?'Apresentação com placar':`Solo · ${lengths[item.length]?.label||'Completa antiga'}`,hits:item.hits,total:item.rounds,elapsed:item.seconds*1000,at:item.at}));
+  }
   async function profile(reset=true){
-    if(!user){location.href='/auth/discord/start';return}show('profile');
-    try{const data=await api(`/api/profile?offset=${reset?0:profileOffset}`);if(reset){el('profile-name').textContent=data.user.name;avatar(el('profile-avatar'),data.user);el('profile-stats').replaceChildren();
+    if(!user){location.href='/auth/discord/start';return}if(reset){profilePage=0;localPage=0;show('profile')}
+    const request=++profileRequest;
+    el('profile-prev').disabled=true;el('profile-next').disabled=true;
+    try{const data=await api(`/api/profile?offset=${profilePage*PAGE_SIZE}`);if(request!==profileRequest)return;if(reset){el('profile-name').textContent=data.user.name;avatar(el('profile-avatar'),data.user);el('profile-stats').replaceChildren();
         for(const [label,value] of [['Partidas completas',data.summary.completed],['Acertos acumulados',data.summary.hits],['Perguntas respondidas',data.summary.questions]]){const card=profileText('div','profile-stat','');card.append(profileText('strong','',Number(value).toLocaleString('pt-BR')),profileText('span','',label));el('profile-stats').append(card)}
         const records=el('profile-records');records.replaceChildren();if(!data.records.length)emptyProfile(records,'Conclua uma partida ranqueada para começar sua coleção de recordes.');else data.records.forEach(item=>recordCard(records,item));
-        el('profile-history').replaceChildren();const local=el('profile-local');local.replaceChildren();let saved=[];try{saved=JSON.parse(localStorage.getItem('quizHistory')||'[]')}catch{}if(!Array.isArray(saved))saved=[];if(!saved.length)emptyProfile(local,'Suas partidas solo e apresentações neste navegador aparecerão aqui.');else saved.forEach(item=>historyRow(local,{id:item.quizId,name:item.quiz,mode:item.mode==='host'?'Apresentação com placar':`Solo · ${lengths[item.length]?.label||'Completa antiga'}`,hits:item.hits,total:item.rounds,elapsed:item.seconds*1000,at:item.at}))}
-      if(!data.history.length&&reset)emptyProfile(el('profile-history'),'Sua primeira partida ranqueada aparecerá aqui.');else data.history.forEach(item=>historyRow(el('profile-history'),{id:item.quiz_id,name:title[item.quiz_id]||item.quiz_id,mode:`Ranqueada · ${lengths[item.length]?.label||'Completa antiga'} · ${difficulty[item.difficulty]||item.difficulty}`,hits:item.hits,total:item.total,elapsed:item.elapsed_ms,at:item.finished_at}));
-      profileOffset=data.nextOffset;el('profile-more').hidden=data.nextOffset===null;
-    }catch(error){el('profile-history').textContent=error.message}
+        let saved=[];try{saved=JSON.parse(localStorage.getItem('quizHistory')||'[]')}catch{}localHistory=Array.isArray(saved)?saved:[];renderLocalHistory()}
+      const target=el('profile-history');target.replaceChildren();
+      if(!data.history.length)emptyProfile(target,profilePage?'Não há partidas nesta página.':'Sua primeira partida ranqueada aparecerá aqui.');else data.history.forEach(item=>historyRow(target,{id:item.quiz_id,name:title[item.quiz_id]||item.quiz_id,mode:`Ranqueada · ${lengths[item.length]?.label||'Completa antiga'} · ${difficulty[item.difficulty]||item.difficulty}`,hits:item.hits,total:item.total,elapsed:item.elapsed_ms,at:item.finished_at}));
+      const pages=Math.ceil(data.summary.completed/PAGE_SIZE);el('profile-pagination').hidden=pages<=1;el('profile-page').textContent=`Página ${profilePage+1} de ${pages}`;el('profile-prev').disabled=profilePage===0;el('profile-next').disabled=profilePage+1>=pages;
+    }catch(error){if(request!==profileRequest)return;el('profile-history').textContent=error.message}
   }
   async function logout(){try{await api('/api/logout',{method:'POST',body:'{}'});location.href='/'}catch(error){status(error.message)}}
   el('rank-begin').addEventListener('click',start);el('rank-answer').addEventListener('submit',event=>{event.preventDefault();answer(el('rank-input').value)});
   el('rank-back').addEventListener('click',()=>{clearInterval(tick);current=null;show('home')});el('rank-restart').addEventListener('click',()=>{show('home');requestAnimationFrame(()=>el('ranking').scrollIntoView({behavior:'smooth',block:'start'}))});
-  el('board-category').addEventListener('change',board);document.querySelectorAll('[data-board-difficulty]').forEach(button=>button.addEventListener('click',()=>setBoardDifficulty(button.dataset.boardDifficulty)));setBoardLength(boardLength,false);setBoardDifficulty(boardDifficulty,false);
+  el('board-category').addEventListener('change',()=>board(true));el('board-prev').addEventListener('click',()=>{if(boardPage>0){boardPage--;board()}});el('board-next').addEventListener('click',()=>{boardPage++;board()});document.querySelectorAll('[data-board-difficulty]').forEach(button=>button.addEventListener('click',()=>setBoardDifficulty(button.dataset.boardDifficulty)));setBoardLength(boardLength,false);setBoardDifficulty(boardDifficulty,false);
   el('header-profile').addEventListener('click',()=>profile());el('profile-back').addEventListener('click',()=>show('home'));
-  el('profile-more').addEventListener('click',()=>profile(false));el('rank-logout').addEventListener('click',logout);el('profile-logout').addEventListener('click',logout);
+  el('profile-prev').addEventListener('click',()=>{if(profilePage>0){profilePage--;profile(false)}});el('profile-next').addEventListener('click',()=>{profilePage++;profile(false)});
+  el('local-prev').addEventListener('click',()=>{if(localPage>0){localPage--;renderLocalHistory()}});el('local-next').addEventListener('click',()=>{localPage++;renderLocalHistory()});
+  el('rank-logout').addEventListener('click',logout);el('profile-logout').addEventListener('click',logout);
   const openRanking=location.hash==='#ranking';if(location.hash)history.replaceState(null,'',location.pathname+location.search);if(openRanking)requestAnimationFrame(()=>el('ranking').scrollIntoView({block:'start'}));
   (async()=>{try{const data=await api('/api/me');user=data.user;if(user){el('header-discord-login').hidden=true;el('header-profile').hidden=false;el('header-name').textContent=user.name;avatar(el('header-avatar'),user);el('rank-connect').hidden=true;el('rank-signed').hidden=false;el('rank-user').textContent=user.name;if(await resume())status('Partida em andamento retomada.')}await board()}catch(error){status(error.message);await board()}})();
 })();
