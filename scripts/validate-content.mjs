@@ -1,8 +1,8 @@
-import {readFileSync,existsSync} from 'node:fs';
+import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
 
 const source=readFileSync(new URL('../content.js',import.meta.url),'utf8');
-const {QUIZZES,MAPA_CAPITAIS,HERO_CLUES,TIMELINE_ROUNDS,MATCH_ROUNDS,AUDIO_INSTRUMENTS}=runInNewContext(source+'\n({QUIZZES,MAPA_CAPITAIS,HERO_CLUES,TIMELINE_ROUNDS,MATCH_ROUNDS,AUDIO_INSTRUMENTS})');
+const {QUIZZES,MAPA_CAPITAIS,TIMELINE_ROUNDS,MATCH_ROUNDS}=runInNewContext(source+'\n({QUIZZES,MAPA_CAPITAIS,TIMELINE_ROUNDS,MATCH_ROUNDS})');
 const errors=[];
 const ids=new Set();
 for(const quiz of QUIZZES){
@@ -20,20 +20,17 @@ for(const quiz of QUIZZES){
       if(!Number.isFinite(item.lat)||!Number.isFinite(item.lon)||Math.abs(item.lat)>90||Math.abs(item.lon)>180)errors.push(`${label}: coordenada inválida`);
     }else if(!Array.isArray(item.a)||!item.a.length)errors.push(`${label}: sem respostas alternativas`);
     if(['bandeiras','capitais','lingua-paises'].includes(quiz.id)&&!/^[a-z]{2}$/.test(item.code||''))errors.push(`${label}: código de país inválido`);
-    if(['animais','arte','monumentos','comidas','instrumentos','anime','super-herois'].includes(quiz.id)){
+    if(['animais','arte','monumentos'].includes(quiz.id)){
       const titles=Array.isArray(item.wiki)?item.wiki:[item.wiki];
       if(titles.some(title=>!title||/%[0-9a-f]{2}/i.test(title)))errors.push(`${label}: título wiki ausente ou já codificado`);
-      if(!item.media||!/^\d{4}-\d\d-\d\d$/.test(item.media.reviewed||''))errors.push(`${label}: curadoria sem data`);
-      if(item.media?.status==='selected'){
-        if(!item.media.file?.startsWith('File:')||!item.media.author||!item.media.license||!item.media.fileUrl?.startsWith('https://')||!item.media.src?.startsWith('https://'))errors.push(`${label}: imagem sem arquivo ou crédito completo`);
-      }else if(item.media?.status!=='no-free-image')errors.push(`${label}: situação de mídia desconhecida`);
+      if(item.media?.status!=='selected'||!/^\d{4}-\d\d-\d\d$/.test(item.media.reviewed||''))errors.push(`${label}: imagem ausente da curadoria`);
+      if(!item.media.file?.startsWith('File:')||!item.media.author||!item.media.license||!item.media.fileUrl?.startsWith('https://')||!item.media.src?.startsWith('https://'))errors.push(`${label}: imagem sem arquivo ou crédito completo`);
     }
     if(quiz.id==='linguas-frases'&&!item.phrase?.trim())errors.push(`${label}: frase ausente`);
-    if(quiz.kind==='audio'&&(!item.fileUrl?.startsWith('https://commons.wikimedia.org/wiki/File:')||!/^audio\/[a-z0-9-]+\.ogg$/.test(item.src||'')||!item.author||!item.license||!item.licenseUrl||!item.reviewed))errors.push(`${label}: áudio sem fonte ou licença`);
-    if(quiz.kind==='audio'&&!existsSync(new URL('../'+item.src,import.meta.url)))errors.push(`${label}: arquivo de áudio ausente`);
+    if(['lingua-paises','comidas','instrumentos','anime','super-herois','ciencias','historia-geral'].includes(quiz.id)&&(!item.question?.trim()||!item.explanation?.trim()||!item.source?.startsWith('https://')))errors.push(`${label}: pergunta sem texto, explicação ou fonte`);
+    if(item.distractors&&(item.distractors.length!==3||new Set([item.name,...item.distractors]).size!==4))errors.push(`${label}: alternativas inválidas`);
     if(quiz.kind==='timeline'&&(item.events.length!==4||item.events.some((event,i)=>i>0&&item.events[i-1].year>=event.year)))errors.push(`${label}: sequência histórica inválida`);
     if(quiz.kind==='match'&&(item.pairs.length!==4||new Set(item.pairs.map(pair=>pair.country)).size!==4||new Set(item.pairs.map(pair=>pair.capital)).size!==4))errors.push(`${label}: pares inválidos`);
-    if(quiz.id==='super-herois'&&!HERO_CLUES[item.name])errors.push(`${label}: pista textual ausente`);
     for(const answer of [item.name,...item.a||[]]){
       const key=answer.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
       if(answers.has(key)&&answers.get(key)!==item.name)errors.push(`${quiz.id}: resposta ambígua "${answer}" para ${answers.get(key)} e ${item.name}`);
@@ -44,6 +41,5 @@ for(const quiz of QUIZZES){
 }
 if(MAPA_CAPITAIS.length!==new Set(MAPA_CAPITAIS.map(item=>item.name)).size)errors.push('Mapa: capital repetida');
 if(TIMELINE_ROUNDS.length!==new Set(TIMELINE_ROUNDS.map(item=>item.events.map(event=>event.year).join(','))).size)errors.push('Linha do tempo: rodada repetida');
-if(AUDIO_INSTRUMENTS.length!==new Set(AUDIO_INSTRUMENTS.map(item=>item.file)).size)errors.push('Áudio: arquivo repetido');
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
 else console.log('Catálogo válido.');

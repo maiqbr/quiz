@@ -58,6 +58,7 @@ export default {async fetch(request,env){
       const run=await env.DB.prepare('SELECT * FROM runs WHERE user_id=? AND finished_at IS NULL AND abandoned_at IS NULL AND started_at>? ORDER BY started_at DESC LIMIT 1').bind(user.id,Date.now()-RUN_MS).first();
       if(!run)return json({run:null});
       const ids=JSON.parse(run.question_ids),question=BY_ID.get(ids[run.position]);
+      if(!question||ids.some(id=>!BY_ID.has(id))){await env.DB.prepare('UPDATE runs SET abandoned_at=? WHERE id=?').bind(Date.now(),run.id).run();return json({run:null})}
       return json({run:{runId:run.id,quiz:run.quiz_id,difficulty:run.difficulty,hits:run.hits,question:questionView(question,run.position,ids.length,run.question_started_at,run.difficulty)}});
     }
     if(path==='/api/rankings'&&request.method==='GET'){
@@ -76,7 +77,7 @@ export default {async fetch(request,env){
       if(!CATEGORY_IDS.includes(quiz)||!['easy','hard'].includes(difficulty))return json({error:'Categoria ou dificuldade inválida'},400);
       await env.DB.prepare('UPDATE runs SET abandoned_at=? WHERE user_id=? AND finished_at IS NULL AND abandoned_at IS NULL AND started_at<?').bind(Date.now(),user.id,Date.now()-RUN_MS).run();
       const active=await env.DB.prepare('SELECT * FROM runs WHERE user_id=? AND finished_at IS NULL AND abandoned_at IS NULL ORDER BY started_at DESC LIMIT 1').bind(user.id).first();
-      if(active){const ids=JSON.parse(active.question_ids),question=BY_ID.get(ids[active.position]);return json({runId:active.id,question:questionView(question,active.position,ids.length,active.question_started_at,active.difficulty),hits:active.hits,resumed:true})}
+      if(active){const ids=JSON.parse(active.question_ids),question=BY_ID.get(ids[active.position]);if(question&&ids.every(id=>BY_ID.has(id)))return json({runId:active.id,question:questionView(question,active.position,ids.length,active.question_started_at,active.difficulty),hits:active.hits,resumed:true});await env.DB.prepare('UPDATE runs SET abandoned_at=? WHERE id=?').bind(Date.now(),active.id).run()}
       const recent=await env.DB.prepare('SELECT COUNT(*) AS count,MAX(started_at) AS latest FROM runs WHERE user_id=? AND started_at>?').bind(user.id,Date.now()-86_400_000).first();
       if(recent.count>=20||recent.latest>Date.now()-60_000)return json({error:'Aguarde antes de iniciar outra partida'},429);
       const pool=QUESTIONS.filter(question=>quiz==='misto'||question.quiz===quiz),selected=shuffle(pool),id=crypto.randomUUID(),now=Date.now();
@@ -91,13 +92,13 @@ export default {async fetch(request,env){
       const run=await env.DB.prepare('SELECT * FROM runs WHERE id=? AND user_id=?').bind(body.runId,user.id).first();
       if(!run||run.finished_at!==null||run.abandoned_at!==null||run.started_at<Date.now()-RUN_MS)return json({error:'Partida encerrada ou inexistente'},404);
       const ids=JSON.parse(run.question_ids);if(run.position>=ids.length)return json({error:'Partida encerrada'},404);
-      const question=BY_ID.get(ids[run.position]);if(!question)return json({error:'Pergunta indisponível'},500);
+      const question=BY_ID.get(ids[run.position]);if(!question||ids.some(id=>!BY_ID.has(id))){await env.DB.prepare('UPDATE runs SET abandoned_at=? WHERE id=?').bind(Date.now(),run.id).run();return json({error:'O catálogo mudou. Comece uma nova partida.'},410)}
       if(run.difficulty==='easy'&&(!Number.isInteger(body.choice)||body.choice< -1||body.choice>3)||run.difficulty==='hard'&&(typeof body.choice!=='string'||body.choice.length>120))return json({error:'Resposta inválida'},400);
       const now=Date.now(),elapsed=Math.max(0,now-run.question_started_at),correct=elapsed<=QUESTION_MS&&(run.difficulty==='easy'?body.choice===question.correct:[question.options[question.correct],...(question.aliases||[])].some(answer=>normalize(answer)===normalize(body.choice)))?1:0,nextPosition=run.position+1,finished=nextPosition===ids.length;
       const update=await env.DB.prepare('UPDATE runs SET position=?,hits=hits+?,question_started_at=?,finished_at=?,elapsed_ms=? WHERE id=? AND position=? AND finished_at IS NULL').bind(nextPosition,correct,now,finished?now:null,finished?now-run.started_at:null,run.id,run.position).run();
       if(update.meta.changes!==1)return json({error:'Resposta já registrada'},409);
       await env.DB.prepare('INSERT INTO run_answers(run_id,position,question_id,chosen,correct,elapsed_ms) VALUES(?,?,?,?,?,?)').bind(run.id,run.position,question.id,String(run.difficulty==='easy'?(question.options[body.choice]||''):body.choice).slice(0,120),correct,elapsed).run();
-      return json({correct:Boolean(correct),answer:question.options[question.correct],hits:run.hits+correct,finished,total:ids.length,elapsedMs:finished?now-run.started_at:null,question:finished?null:questionView(BY_ID.get(ids[nextPosition]),nextPosition,ids.length,now,run.difficulty)});
+      return json({correct:Boolean(correct),answer:question.options[question.correct],explanation:question.explanation,source:question.source,hits:run.hits+correct,finished,total:ids.length,elapsedMs:finished?now-run.started_at:null,question:finished?null:questionView(BY_ID.get(ids[nextPosition]),nextPosition,ids.length,now,run.difficulty)});
     }
     if(path==='/api/history'&&request.method==='GET'){
       const user=await userFor(request,env);if(!user)return json({error:'Entre com Discord'},401);

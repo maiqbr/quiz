@@ -3,7 +3,7 @@ import {runInNewContext} from 'node:vm';
 
 const path=new URL('../content.js',import.meta.url);
 let source=readFileSync(path,'utf8');
-const names=['ANIMAIS','ARTE','MONUMENTOS','COMIDAS','INSTRUMENTOS','ANIME_TITULOS','SUPER_HEROIS'];
+const names=['ANIMAIS','ARTE','MONUMENTOS'];
 const pools=runInNewContext(source+'\n({'+names.join(',')+'})');
 const entries=Object.values(pools).flat();
 const candidates=[...new Set(entries.flatMap(item=>Array.isArray(item.wiki)?item.wiki:[item.wiki]))];
@@ -36,7 +36,16 @@ function batches(list,size){const result=[];for(let i=0;i<list.length;i+=size)re
 function plain(value){
   return String(value?.value||'').replace(/<[^>]*>/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;|&#039;/g,"'").replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim().slice(0,180);
 }
-function validUrl(value){try{const url=new URL(value);return url.protocol==='https:'?url.href:null}catch{return null}}
+function validUrl(value,stripQuery=false){try{const url=new URL(value);if(stripQuery)url.search='';return url.protocol==='https:'?url.href:null}catch{return null}}
+function stableImageUrl(value){
+  const src=validUrl(value,true);
+  if(!src)return null;
+  const url=new URL(src);
+  if(url.hostname!=='upload.wikimedia.org')return src;
+  const path=url.pathname.split('/wikipedia/commons/')[1];
+  if(!path)return src;
+  return 'https://thumb.wikimedia.org/wikipedia/commons/thumb/'+(path.startsWith('thumb/')?path.slice(6):path+'/960px-'+path.split('/').at(-1));
+}
 function licenseOkay(value){return /^(CC\s*BY(?:-SA)?(?:\s|$)|CC0\b|Public domain\b|PD(?:[-\s]|$))/i.test(value)}
 
 const pageByTitle=new Map();
@@ -64,7 +73,7 @@ function select(item){
     const page=pageByTitle.get(title),info=fileByTitle.get('File:'+page?.pageimage);
     if(!page?.thumbnail?.source||!info)continue;
     const ext=info.extmetadata||{},license=plain(ext.LicenseShortName),author=plain(ext.Artist)||plain(ext.Credit);
-    const src=validUrl(page.thumbnail.source),fileUrl=validUrl(info.descriptionurl),licenseUrl=validUrl(ext.LicenseUrl?.value);
+    const src=stableImageUrl(page.thumbnail.source),fileUrl=validUrl(info.descriptionurl),licenseUrl=validUrl(ext.LicenseUrl?.value);
     if(!licenseOkay(license)||!src||!new URL(src).hostname.endsWith('wikimedia.org')||!fileUrl||(!author&&!/^(CC0|Public domain|PD)/i.test(license)))continue;
     return {file:'File:'+page.pageimage,src,author:author||'Domínio público',license,licenseUrl,fileUrl,reviewed,fileVersion:info.timestamp||null,sha1:info.sha1||null,status:'selected'};
   }
@@ -78,7 +87,7 @@ for(const item of entries){
 const start='// BEGIN CURATED MEDIA — gerado por scripts/curate-media.mjs';
 const end='// END CURATED MEDIA';
 const block=start+'\nconst CURATED_MEDIA='+JSON.stringify(catalog,null,2)+';\n'+
-  'for(const item of [ANIMAIS,ARTE,MONUMENTOS,COMIDAS,INSTRUMENTOS,ANIME_TITULOS,SUPER_HEROIS].flat())item.media=CURATED_MEDIA[(Array.isArray(item.wiki)?item.wiki:[item.wiki]).join("|")];\n'+end;
+  'for(const item of [ANIMAIS,ARTE,MONUMENTOS].flat())item.media=CURATED_MEDIA[(Array.isArray(item.wiki)?item.wiki:[item.wiki]).join("|")];\n'+end;
 const startIndex=source.indexOf(start),endIndex=source.indexOf(end);
 if(startIndex>=0&&endIndex>startIndex)source=source.slice(0,startIndex)+source.slice(endIndex+end.length);
 const marker=/\/\* ═+\r?\n   QUIZ DEFINITIONS/;

@@ -1,5 +1,5 @@
 // QuizArena Service Worker
-const CACHE_NAME = "quizarena-v13";
+const CACHE_NAME = "quizarena-v14";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -7,12 +7,13 @@ const CORE_ASSETS = [
   "./ranking.js",
   "./visual.css",
   "./content.js",
+  "./maps/world-land.js",
   "./favicon.png",
   "./manifest.json",
   "./icon-192.png",
   "./icon-512.png",
   "./icon-maskable-512.png",
-  ...["bandeiras","capitais","lingua-paises","linguas-frases","animais","arte","monumentos","comidas","instrumentos","anime","super-herois","mapa","linha-do-tempo","associacoes","audio-instrumentos"].map(id=>`./category-icons/${id}.png`)
+  ...["bandeiras","capitais","lingua-paises","linguas-frases","animais","arte","monumentos","comidas","instrumentos","anime","super-herois","mapa","linha-do-tempo","associacoes","ciencias","historia-geral"].map(id=>`./category-icons/${id}.png`)
 ];
 
 // Install: pre-cache the core app shell
@@ -45,9 +46,6 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(req.url);
   const isSameOrigin = url.origin === self.location.origin;
-
-  // Let the browser request audio byte ranges directly from the Worker assets.
-  if (isSameOrigin && url.pathname.startsWith('/audio/')) return;
 
   if (isSameOrigin && req.mode === 'navigate') {
     event.respondWith(fetch(req).catch(() => caches.match(req, { ignoreSearch: true })));

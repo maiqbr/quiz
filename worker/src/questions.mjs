@@ -1,7 +1,7 @@
 // Gerado por scripts/build-ranked-questions.mjs; não editar manualmente.
 export const QUESTIONS=[
   {
-    "id": "bandeiras:0",
+    "id": "v2:21fae3c434988568495d",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -19,10 +19,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/br.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:1",
+    "id": "v2:3d2f562a9a68751110f6",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -39,10 +41,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ar.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:2",
+    "id": "v2:851bae4d63a37aed71bc",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -59,10 +63,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cl.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:3",
+    "id": "v2:43b3c273d96c7cbb3c08",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -79,10 +85,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/co.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:4",
+    "id": "v2:75491a5a85c405e2b580",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -99,10 +107,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pe.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:5",
+    "id": "v2:ecfd545bb981a4451c26",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -119,10 +129,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ve.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:6",
+    "id": "v2:cb319cf17b9652f57104",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -139,10 +151,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bo.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:7",
+    "id": "v2:36fb4b6427a4332a5ded",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -160,10 +174,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ec.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:8",
+    "id": "v2:10c80fdacf49f68ffeaf",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -181,10 +197,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/py.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:9",
+    "id": "v2:769fee667107e581d5e3",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -202,10 +220,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/uy.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:10",
+    "id": "v2:702fa7ac3c234a0ed7cb",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -223,10 +243,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gy.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:11",
+    "id": "v2:d7c9fd954ce2de475d36",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -243,10 +265,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:12",
+    "id": "v2:ab0a00d01c88ee8cc530",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -263,10 +287,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mx.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:13",
+    "id": "v2:8959382221858011f7b6",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -283,10 +309,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cu.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:14",
+    "id": "v2:75fd9fef152c1148d31c",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -303,10 +331,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pa.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:15",
+    "id": "v2:4156a69fe42536076c6c",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -323,10 +353,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:16",
+    "id": "v2:7f6c5425f898bc6e24a6",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -343,10 +375,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:17",
+    "id": "v2:accecd3b1d97285b7f1d",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -363,10 +397,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/hn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:18",
+    "id": "v2:7bdc3019fbe59d6029c8",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -384,10 +420,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sv.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:19",
+    "id": "v2:1dbba80fbbfda95e498a",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -404,10 +442,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ni.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:20",
+    "id": "v2:33fc46533672183a561b",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -425,10 +465,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/do.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:21",
+    "id": "v2:5e0b31de3613f0cb2a15",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -445,10 +487,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ht.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:22",
+    "id": "v2:7f549efa1bcd19c63cad",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -465,10 +509,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/jm.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:23",
+    "id": "v2:5a79d0f2188a366805ba",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -486,10 +532,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/tt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:24",
+    "id": "v2:0f110e476612b1a8986e",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -510,10 +558,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/us.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:25",
+    "id": "v2:412e34596c7924ecfdb2",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -530,10 +580,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ca.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:26",
+    "id": "v2:40294354aa423745683c",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -550,10 +602,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:27",
+    "id": "v2:f07884af125a75e4bd8b",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -571,10 +625,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/es.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:28",
+    "id": "v2:34d7fc7accbc04a829d3",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -592,10 +648,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/fr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:29",
+    "id": "v2:7d73a9fd14aa48dafa24",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -613,10 +671,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/de.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:30",
+    "id": "v2:e92aef2897db9dcc713b",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -634,10 +694,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/it.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:31",
+    "id": "v2:aeab17f77f753d4197ee",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -658,10 +720,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gb.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:32",
+    "id": "v2:156a735d6eccf9e07f67",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -680,10 +744,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/nl.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:33",
+    "id": "v2:51781330a32d757ec82a",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -701,10 +767,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/be.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:34",
+    "id": "v2:cc9ee22cb3db9472497e",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -722,10 +790,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ch.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:35",
+    "id": "v2:9519f5536a7c7be00812",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -742,10 +812,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/at.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:36",
+    "id": "v2:d371a347fe6ead55c812",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -763,10 +835,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/se.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:37",
+    "id": "v2:bd7881a5cce9d4d40fa6",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -784,10 +858,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/no.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:38",
+    "id": "v2:56ccde8f8204b23f9bbe",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -805,10 +881,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/dk.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:39",
+    "id": "v2:00fc2c00061de9b1a5f7",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -826,10 +904,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/fi.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:40",
+    "id": "v2:8e340a572fe8e8bb13ee",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -847,10 +927,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pl.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:41",
+    "id": "v2:6c0dc4850d1a8dfdbf76",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -868,10 +950,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:42",
+    "id": "v2:4bb0f9a55873949ec808",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -890,10 +974,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:43",
+    "id": "v2:e5fd5258d4748ab69357",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -911,10 +997,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sk.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:44",
+    "id": "v2:26b77e2356bebfec04eb",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -932,10 +1020,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/hu.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:45",
+    "id": "v2:2bb2dc38a2eb58cacc06",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -953,10 +1043,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ro.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:46",
+    "id": "v2:e2d2e43b6e303ea97e06",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -973,10 +1065,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bg.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:47",
+    "id": "v2:14ef27b0601756734f6c",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -994,10 +1088,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/hr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:48",
+    "id": "v2:876078d173030f856ae0",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1015,10 +1111,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/rs.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:49",
+    "id": "v2:bcff5196c82d44662b52",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1036,10 +1134,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ua.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:50",
+    "id": "v2:4fcdb9f5f962533883d4",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1057,10 +1157,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ie.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:51",
+    "id": "v2:a0305722ca00b7173fd1",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1078,10 +1180,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/is.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:52",
+    "id": "v2:68062a9686df6aa336c8",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1099,10 +1203,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/lu.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:53",
+    "id": "v2:561d56c167b9b3e5a3f8",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1119,10 +1225,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:54",
+    "id": "v2:9043727f4bc78a7fee1f",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1140,10 +1248,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cy.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:55",
+    "id": "v2:83ddf281f0d290d348b9",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1160,10 +1270,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/al.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:56",
+    "id": "v2:e6d134c2d777ae970373",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1180,10 +1292,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ba.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:57",
+    "id": "v2:43e39a517da8bc213b41",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1202,10 +1316,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mk.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:58",
+    "id": "v2:7491605bf013f783c18b",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1222,10 +1338,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/me.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:59",
+    "id": "v2:941f0b28e6e9e8e70472",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1243,10 +1361,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/si.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:60",
+    "id": "v2:a39f3043a5ea0fb65d85",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1264,10 +1384,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/lv.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:61",
+    "id": "v2:9c9990b718c0e44749b1",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1285,10 +1407,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/lt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:62",
+    "id": "v2:768b0d380cada1143576",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1305,10 +1429,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ee.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:63",
+    "id": "v2:fe076ad4a4a33ad7fabe",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1326,10 +1452,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/by.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:64",
+    "id": "v2:c2703aaf5444e7756f9a",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1347,10 +1475,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/md.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:65",
+    "id": "v2:f34b0887b84bf4e29dac",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1368,10 +1498,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/jp.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:66",
+    "id": "v2:fd33aac289076556bd1e",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1388,10 +1520,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:67",
+    "id": "v2:2687fb68918490395c41",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1410,10 +1544,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/kr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:68",
+    "id": "v2:c97cbb96253b24fb6664",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1431,10 +1567,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/kp.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:69",
+    "id": "v2:2e438a0a4c8222c31831",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1451,10 +1589,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/in.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:70",
+    "id": "v2:0bd0b938ffd389311b05",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1472,10 +1612,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pk.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:71",
+    "id": "v2:0bf8bb58f45fb5a1f288",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1492,10 +1634,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bd.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:72",
+    "id": "v2:fbecd291ba00c9d3bee1",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1512,10 +1656,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/id.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:73",
+    "id": "v2:835ac5c9ad7b5ad1f096",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1533,10 +1679,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/my.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:74",
+    "id": "v2:0af4e0b506590c9bf884",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1554,10 +1702,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/th.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:75",
+    "id": "v2:090c463fbcda10d797a5",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1575,10 +1725,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/vn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:76",
+    "id": "v2:310347e74c050be6261f",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1596,10 +1748,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ph.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:77",
+    "id": "v2:26ce8952162024f5aeb9",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1617,10 +1771,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sg.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:78",
+    "id": "v2:1296883aec26bee09ffe",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1638,10 +1794,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mm.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:79",
+    "id": "v2:155b96399e0d6f35fcb0",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1659,10 +1817,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/kh.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:80",
+    "id": "v2:cade6acc7a59c3870016",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1679,10 +1839,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/np.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:81",
+    "id": "v2:47885455a401ba571fe1",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1699,10 +1861,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/lk.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:82",
+    "id": "v2:9e1e81a56529d2f7b5e2",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1719,10 +1883,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:83",
+    "id": "v2:c130eb9a13c3b1923fc4",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1740,10 +1906,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/kz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:84",
+    "id": "v2:94f82a48a8a7ba684030",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1761,10 +1929,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/uz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:85",
+    "id": "v2:7a5bed4a3d2a1d31ca44",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1781,10 +1951,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ge.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:86",
+    "id": "v2:1ca43834ad8b6b67b96c",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1801,10 +1973,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/am.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:87",
+    "id": "v2:0a293f701972f0c1f08b",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1822,10 +1996,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/az.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:88",
+    "id": "v2:f36c36c455b862b753f7",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1842,10 +2018,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ru.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:89",
+    "id": "v2:e4bebcf3b1024e3808fa",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1863,10 +2041,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/tr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:90",
+    "id": "v2:35db802c72ba5bdaa2aa",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1883,10 +2063,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/il.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:91",
+    "id": "v2:fff294404fcc93313db0",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1904,10 +2086,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sa.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:92",
+    "id": "v2:65193edb39720c54b254",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1925,10 +2109,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ir.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:93",
+    "id": "v2:d0c03c57f6ba3a2912eb",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1946,10 +2132,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/iq.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:94",
+    "id": "v2:42a68e950fe948ace121",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1968,10 +2156,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ae.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:95",
+    "id": "v2:89288d6eb4f3bf8b4aae",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -1988,10 +2178,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/kw.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:96",
+    "id": "v2:d0ad0186ababb4b86b08",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2009,10 +2201,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/om.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:97",
+    "id": "v2:1f34c291961c2d1eb5ac",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2030,10 +2224,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ye.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:98",
+    "id": "v2:666befa483a96ca240c5",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2051,10 +2247,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/jo.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:99",
+    "id": "v2:1c1ea2cfa56792718d11",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2072,10 +2270,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/lb.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:100",
+    "id": "v2:98f2dd4f460123286f6d",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2093,10 +2293,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/qa.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:101",
+    "id": "v2:7f67b6177679fc7b4256",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2114,10 +2316,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/za.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:102",
+    "id": "v2:66e77c298c164c1969b6",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2134,10 +2338,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ng.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:103",
+    "id": "v2:b5c935e0fca4c1a1221c",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2155,10 +2361,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/eg.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:104",
+    "id": "v2:0dafdcc3069990638b51",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2176,10 +2384,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ke.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:105",
+    "id": "v2:60217be5a09761634009",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2197,10 +2407,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gh.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:106",
+    "id": "v2:fa5a89f9493369c6f321",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2218,10 +2430,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ma.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:107",
+    "id": "v2:f1fc05a3bccda8f88aad",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2238,10 +2452,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/tz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:108",
+    "id": "v2:3287fb0734e6b5029ce9",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2259,10 +2475,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/et.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:109",
+    "id": "v2:c11736eed5929236816d",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2279,10 +2497,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ao.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:110",
+    "id": "v2:71a116eb683718928f1e",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2300,10 +2520,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:111",
+    "id": "v2:345d732cc497114823c3",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2320,10 +2542,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cv.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:112",
+    "id": "v2:84340b98455136cfc57d",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2340,10 +2564,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:113",
+    "id": "v2:c690ae10e6d29d394c7f",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2361,10 +2587,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ci.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:114",
+    "id": "v2:370f091fa9f724e1e940",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2382,10 +2610,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cm.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:115",
+    "id": "v2:34074f217040441229b4",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2403,10 +2633,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/rw.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:116",
+    "id": "v2:5e4151c1365a66276b07",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2423,10 +2655,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ug.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:117",
+    "id": "v2:b2d64725847f53aa7a57",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2444,10 +2678,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cd.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:118",
+    "id": "v2:f32f917ba9e73608ab19",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2465,10 +2701,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/dz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:119",
+    "id": "v2:feb1d0855feb5d3c4839",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2485,10 +2723,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/tn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:120",
+    "id": "v2:d39649c6f11dcb483064",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2506,10 +2746,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ly.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:121",
+    "id": "v2:290c92a94ee9a39cd786",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2526,10 +2768,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/au.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:122",
+    "id": "v2:fc2727ef79c95609fac6",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2547,10 +2791,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/nz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:123",
+    "id": "v2:05ad0e9efa0868e2ddbd",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2567,10 +2813,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/fj.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:124",
+    "id": "v2:bccb2aad99a4cb1c22b2",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2588,10 +2836,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pg.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:125",
+    "id": "v2:802617c481bf0de5285f",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2608,10 +2858,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bs.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:126",
+    "id": "v2:538b1c67cde54d3f7a13",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2628,10 +2880,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bb.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:127",
+    "id": "v2:78df230ead2521e0c767",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2648,10 +2902,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:128",
+    "id": "v2:62c50f3e431bdb0bbafa",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2669,10 +2925,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ag.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:129",
+    "id": "v2:0c13e8d88686e0ba9652",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2689,10 +2947,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/li.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:130",
+    "id": "v2:f369fa43462b2d7d5e5c",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2709,10 +2969,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mc.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:131",
+    "id": "v2:27a3b7b1b014de3438fd",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2729,10 +2991,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sm.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:132",
+    "id": "v2:5b69544a852c19da7b89",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2750,10 +3014,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:133",
+    "id": "v2:d80675cd07a6e26433f1",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2770,10 +3036,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/la.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:134",
+    "id": "v2:f24cc5651ee4c478936c",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2790,10 +3058,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:135",
+    "id": "v2:a24709c89d63a1dde689",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2811,10 +3081,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bw.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:136",
+    "id": "v2:0a91c4178111af042b11",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2831,10 +3103,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/na.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:137",
+    "id": "v2:16cff67ee36f2b5b4b8a",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2851,10 +3125,12 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ws.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "bandeiras:138",
+    "id": "v2:54c8a318fe947c5dfac1",
     "quiz": "bandeiras",
     "text": "De qual país é esta bandeira?",
     "options": [
@@ -2871,12 +3147,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/to.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:br",
+    "id": "v2:5b19b89f1fcfdcb11ab7",
     "quiz": "capitais",
-    "text": "Qual é a capital de Brasil?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Brasília",
       "Buenos Aires",
@@ -2891,12 +3169,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/br.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ar",
+    "id": "v2:1c96c7e33e4512bc7204",
     "quiz": "capitais",
-    "text": "Qual é a capital de Argentina?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Lima",
       "Buenos Aires",
@@ -2911,12 +3191,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ar.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:cl",
+    "id": "v2:aefc346b6baf2effa0a9",
     "quiz": "capitais",
-    "text": "Qual é a capital de Chile?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Assunção",
       "Cidade da Guatemala",
@@ -2931,12 +3213,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cl.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:co",
+    "id": "v2:f1d0b1277816400802fe",
     "quiz": "capitais",
-    "text": "Qual é a capital de Colômbia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Cidade do México",
       "San José",
@@ -2951,12 +3235,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/co.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:pe",
+    "id": "v2:d6743abea08744b05085",
     "quiz": "capitais",
-    "text": "Qual é a capital de Peru?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Lima",
       "Havana",
@@ -2971,12 +3257,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pe.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ve",
+    "id": "v2:4d5a4823c8970004d543",
     "quiz": "capitais",
-    "text": "Qual é a capital de Venezuela?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Cidade do Panamá",
       "Caracas",
@@ -2991,12 +3279,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ve.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:uy",
+    "id": "v2:05d7b90919fb68762f95",
     "quiz": "capitais",
-    "text": "Qual é a capital de Uruguai?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Porto Príncipe",
       "Londres",
@@ -3012,12 +3302,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/uy.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:py",
+    "id": "v2:5ec8d6eed9e1ad79d1f9",
     "quiz": "capitais",
-    "text": "Qual é a capital de Paraguai?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Madri",
       "Berna",
@@ -3033,12 +3325,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/py.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:bo",
+    "id": "v2:0b6e28f7a9576000538e",
     "quiz": "capitais",
-    "text": "Qual é a capital de Bolívia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Sucre",
       "Roma",
@@ -3053,12 +3347,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bo.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ec",
+    "id": "v2:9fea9cc01d508d83c006",
     "quiz": "capitais",
-    "text": "Qual é a capital de Equador?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Bruxelas",
       "Quito",
@@ -3073,12 +3369,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ec.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:mx",
+    "id": "v2:f0f91ec30ee92e4dd2d8",
     "quiz": "capitais",
-    "text": "Qual é a capital de México?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Estocolmo",
       "Budapeste",
@@ -3095,12 +3393,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mx.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:us",
+    "id": "v2:6ea2888271fe2f0658e0",
     "quiz": "capitais",
-    "text": "Qual é a capital de EUA?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Helsinque",
       "Dublim",
@@ -3116,12 +3416,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/us.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ca",
+    "id": "v2:ac042c6c5324c3ee4b17",
     "quiz": "capitais",
-    "text": "Qual é a capital de Canadá?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Ottawa",
       "Praga",
@@ -3136,12 +3438,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ca.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:cu",
+    "id": "v2:13f313a771ca78e9fb5f",
     "quiz": "capitais",
-    "text": "Qual é a capital de Cuba?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Kyiv",
       "Havana",
@@ -3156,12 +3460,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cu.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:gt",
+    "id": "v2:86f673168941abd51c89",
     "quiz": "capitais",
-    "text": "Qual é a capital de Guatemala?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Ancara",
       "Bangkok",
@@ -3178,12 +3484,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:hn",
+    "id": "v2:38404ff9db1604ba5543",
     "quiz": "capitais",
-    "text": "Qual é a capital de Honduras?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Seul",
       "Singapura",
@@ -3198,12 +3506,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/hn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:pa",
+    "id": "v2:2c196776f57751de0970",
     "quiz": "capitais",
-    "text": "Qual é a capital de Panamá?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Cidade do Panamá",
       "Kuala Lumpur",
@@ -3220,12 +3530,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pa.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:cr",
+    "id": "v2:9ebf78338736b1a67bdc",
     "quiz": "capitais",
-    "text": "Qual é a capital de Costa Rica?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Manila",
       "San José",
@@ -3240,12 +3552,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:do",
+    "id": "v2:fae5827482397e5adfbd",
     "quiz": "capitais",
-    "text": "Qual é a capital de Rep. Dominicana?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Riade",
       "Acra",
@@ -3260,12 +3574,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/do.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ht",
+    "id": "v2:e4a412b712a3ed899bac",
     "quiz": "capitais",
-    "text": "Qual é a capital de Haiti?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Doha",
       "Adis Abeba",
@@ -3281,12 +3597,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ht.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:jm",
+    "id": "v2:b4d740dbcd2ab8c3b0e5",
     "quiz": "capitais",
-    "text": "Qual é a capital de Jamaica?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Kingston",
       "Nairóbi",
@@ -3301,12 +3619,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/jm.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:pt",
+    "id": "v2:bd242bb1d76cc5a871b3",
     "quiz": "capitais",
-    "text": "Qual é a capital de Portugal?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Cairo",
       "Lisboa",
@@ -3322,12 +3642,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:es",
+    "id": "v2:c1af9e12a4fcfce6cc00",
     "quiz": "capitais",
-    "text": "Qual é a capital de Espanha?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Dacar",
       "Belgrado",
@@ -3343,12 +3665,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/es.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:fr",
+    "id": "v2:ca15a7e0d253b55f230e",
     "quiz": "capitais",
-    "text": "Qual é a capital de França?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Wellington",
       "Tallinn",
@@ -3363,12 +3687,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/fr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:de",
+    "id": "v2:0dfe92e4145af6dada21",
     "quiz": "capitais",
-    "text": "Qual é a capital de Alemanha?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Berlim",
       "Sófia",
@@ -3384,12 +3710,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/de.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:it",
+    "id": "v2:872af391589d20411e92",
     "quiz": "capitais",
-    "text": "Qual é a capital de Itália?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Vilnius",
       "Roma",
@@ -3405,12 +3733,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/it.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:gb",
+    "id": "v2:378a088902ebcae9793c",
     "quiz": "capitais",
-    "text": "Qual é a capital de Reino Unido?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Daca",
       "Bogotá",
@@ -3426,12 +3756,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gb.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:nl",
+    "id": "v2:afb7a0afb9f56605aad0",
     "quiz": "capitais",
-    "text": "Qual é a capital de Países Baixos?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Maputo",
       "Montevidéu",
@@ -3447,12 +3779,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/nl.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:be",
+    "id": "v2:08fd00f5e602e395aa63",
     "quiz": "capitais",
-    "text": "Qual é a capital de Bélgica?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Bruxelas",
       "Santiago",
@@ -3468,12 +3802,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/be.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ch",
+    "id": "v2:bc7a25e24591404de6be",
     "quiz": "capitais",
-    "text": "Qual é a capital de Suíça?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Caracas",
       "Berna",
@@ -3489,12 +3825,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ch.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:at",
+    "id": "v2:1759c20e3d461028d44f",
     "quiz": "capitais",
-    "text": "Qual é a capital de Áustria?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Sucre",
       "Tegucigalpa",
@@ -3510,12 +3848,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/at.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:se",
+    "id": "v2:226201410cd89de17afa",
     "quiz": "capitais",
-    "text": "Qual é a capital de Suécia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Washington D.C.",
       "Santo Domingo",
@@ -3531,12 +3871,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/se.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:no",
+    "id": "v2:c0837eda30c6611eefb7",
     "quiz": "capitais",
-    "text": "Qual é a capital de Noruega?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Oslo",
       "Cidade da Guatemala",
@@ -3551,12 +3893,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/no.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:dk",
+    "id": "v2:5b3955696fd36efab3df",
     "quiz": "capitais",
-    "text": "Qual é a capital de Dinamarca?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "San José",
       "Copenhague",
@@ -3572,12 +3916,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/dk.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:fi",
+    "id": "v2:4035591f2928a2fccdb8",
     "quiz": "capitais",
-    "text": "Qual é a capital de Finlândia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Kingston",
       "Amsterdã",
@@ -3593,12 +3939,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/fi.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:pl",
+    "id": "v2:0ee8e0e18c334b0aa61b",
     "quiz": "capitais",
-    "text": "Qual é a capital de Polônia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Paris",
       "Viena",
@@ -3614,12 +3962,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pl.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:gr",
+    "id": "v2:6a66d22fa5ebc918c60d",
     "quiz": "capitais",
-    "text": "Qual é a capital de Grécia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Atenas",
       "Londres",
@@ -3635,12 +3985,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:cz",
+    "id": "v2:76079c43e94e1922b223",
     "quiz": "capitais",
-    "text": "Qual é a capital de Rep. Tcheca?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Berna",
       "Praga",
@@ -3656,12 +4008,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:hu",
+    "id": "v2:8002bba85d190d844ded",
     "quiz": "capitais",
-    "text": "Qual é a capital de Hungria?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Oslo",
       "Kyiv",
@@ -3677,12 +4031,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/hu.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ro",
+    "id": "v2:ce1074fef50cc8014a86",
     "quiz": "capitais",
-    "text": "Qual é a capital de Romênia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Varsóvia",
       "Ancara",
@@ -3698,12 +4054,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ro.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ua",
+    "id": "v2:767a5f7dd06da4a207e8",
     "quiz": "capitais",
-    "text": "Qual é a capital de Ucrânia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Kyiv",
       "Budapeste",
@@ -3720,12 +4078,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ua.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ie",
+    "id": "v2:175d20335c8ec25b3f91",
     "quiz": "capitais",
-    "text": "Qual é a capital de Irlanda?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Moscou",
       "Dublim",
@@ -3741,12 +4101,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ie.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ru",
+    "id": "v2:51da5359304a5c5b109d",
     "quiz": "capitais",
-    "text": "Qual é a capital de Rússia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Pequim",
       "Manila",
@@ -3762,12 +4124,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ru.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:tr",
+    "id": "v2:64e25a51a010dde27d72",
     "quiz": "capitais",
-    "text": "Qual é a capital de Turquia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Islamabade",
       "Riade",
@@ -3783,12 +4147,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/tr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:jp",
+    "id": "v2:071f5dfeaef75d53481f",
     "quiz": "capitais",
-    "text": "Qual é a capital de Japão?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Tóquio",
       "Hanói",
@@ -3804,12 +4170,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/jp.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:cn",
+    "id": "v2:bec1bbdb56fc7fa6c9a6",
     "quiz": "capitais",
-    "text": "Qual é a capital de China?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Catmandu",
       "Pequim",
@@ -3825,12 +4193,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/cn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:kr",
+    "id": "v2:a279fa5443d908fb12c8",
     "quiz": "capitais",
-    "text": "Qual é a capital de Coreia do Sul?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Bagdá",
       "Cairo",
@@ -3846,12 +4216,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/kr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:in",
+    "id": "v2:f0af28c2f97b4792bb06",
     "quiz": "capitais",
-    "text": "Qual é a capital de Índia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Amã",
       "Dacar",
@@ -3867,12 +4239,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/in.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:pk",
+    "id": "v2:5a14fb1987ad99e4d4d9",
     "quiz": "capitais",
-    "text": "Qual é a capital de Paquistão?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Islamabade",
       "Rabat",
@@ -3888,12 +4262,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/pk.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:my",
+    "id": "v2:9fb805de05bbebd2f2d0",
     "quiz": "capitais",
-    "text": "Qual é a capital de Malásia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Luanda",
       "Kuala Lumpur",
@@ -3908,12 +4284,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/my.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:th",
+    "id": "v2:ed1c3920b9e1de57d711",
     "quiz": "capitais",
-    "text": "Qual é a capital de Tailândia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Canberra",
       "Vilnius",
@@ -3928,12 +4306,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/th.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:vn",
+    "id": "v2:492cd892f1924730c974",
     "quiz": "capitais",
-    "text": "Qual é a capital de Vietnã?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Zagreb",
       "Daca",
@@ -3948,12 +4328,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/vn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ph",
+    "id": "v2:df6362893f73bb8e9b34",
     "quiz": "capitais",
-    "text": "Qual é a capital de Filipinas?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Manila",
       "Riga",
@@ -3968,12 +4350,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ph.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:sg",
+    "id": "v2:c3a3335cc9504d6dd966",
     "quiz": "capitais",
-    "text": "Qual é a capital de Singapura?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Jacarta",
       "Singapura",
@@ -3989,12 +4373,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sg.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:np",
+    "id": "v2:dcb3745c23f3b8263595",
     "quiz": "capitais",
-    "text": "Qual é a capital de Nepal?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Dodoma",
       "Caracas",
@@ -4010,12 +4396,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/np.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:sa",
+    "id": "v2:eac32a1096276e9c8b77",
     "quiz": "capitais",
-    "text": "Qual é a capital de Arábia Saudita?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Buenos Aires",
       "Sucre",
@@ -4031,12 +4419,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sa.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ir",
+    "id": "v2:c22cc1432b9b7a321f82",
     "quiz": "capitais",
-    "text": "Qual é a capital de Irã?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Teerã",
       "Lima",
@@ -4052,12 +4442,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ir.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:iq",
+    "id": "v2:e2433f2815c2d6300c4b",
     "quiz": "capitais",
-    "text": "Qual é a capital de Iraque?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Assunção",
       "Bagdá",
@@ -4073,12 +4465,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/iq.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:qa",
+    "id": "v2:d858f0286d0b18fc243a",
     "quiz": "capitais",
-    "text": "Qual é a capital de Catar?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Cidade do México",
       "San José",
@@ -4093,12 +4487,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/qa.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ae",
+    "id": "v2:c096b065a4b617759698",
     "quiz": "capitais",
-    "text": "Qual é a capital de Emirados Árabes?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Havana",
       "Kingston",
@@ -4113,12 +4509,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ae.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:jo",
+    "id": "v2:7b5f62708aa862d2719d",
     "quiz": "capitais",
-    "text": "Qual é a capital de Jordânia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Amã",
       "Cidade do Panamá",
@@ -4134,12 +4532,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/jo.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ke",
+    "id": "v2:bfc28af200c042e17361",
     "quiz": "capitais",
-    "text": "Qual é a capital de Quênia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Porto Príncipe",
       "Nairóbi",
@@ -4154,12 +4554,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ke.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:gh",
+    "id": "v2:b26df349fc549afd92b7",
     "quiz": "capitais",
-    "text": "Qual é a capital de Gana?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Madri",
       "Berna",
@@ -4175,12 +4577,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/gh.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ma",
+    "id": "v2:2ba8d5ff20db3c386fcb",
     "quiz": "capitais",
-    "text": "Qual é a capital de Marrocos?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Roma",
       "Oslo",
@@ -4195,12 +4599,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ma.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:eg",
+    "id": "v2:760aeea89191c60d7d2c",
     "quiz": "capitais",
-    "text": "Qual é a capital de Egito?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Cairo",
       "Bruxelas",
@@ -4215,12 +4621,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/eg.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:et",
+    "id": "v2:9aaebcb5454ca5044a10",
     "quiz": "capitais",
-    "text": "Qual é a capital de Etiópia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Estocolmo",
       "Adis Abeba",
@@ -4236,12 +4644,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/et.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ao",
+    "id": "v2:9034755381da33006601",
     "quiz": "capitais",
-    "text": "Qual é a capital de Angola?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Helsinque",
       "Dublim",
@@ -4256,12 +4666,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ao.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:sn",
+    "id": "v2:0dcb2f07ebfb8ab9caec",
     "quiz": "capitais",
-    "text": "Qual é a capital de Senegal?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Praga",
       "Tóquio",
@@ -4277,12 +4689,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/sn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ng",
+    "id": "v2:a24d44a1f8ea34f74354",
     "quiz": "capitais",
-    "text": "Qual é a capital de Nigéria?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Abuja",
       "Kyiv",
@@ -4297,12 +4711,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ng.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:au",
+    "id": "v2:3aeeb078ebdba0083a18",
     "quiz": "capitais",
-    "text": "Qual é a capital de Austrália?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Ancara",
       "Canberra",
@@ -4317,12 +4733,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/au.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:nz",
+    "id": "v2:09d38c04fe096d8b0cdc",
     "quiz": "capitais",
-    "text": "Qual é a capital de Nova Zelândia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Seul",
       "Singapura",
@@ -4337,12 +4755,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/nz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:is",
+    "id": "v2:50aaed246c178f93dc25",
     "quiz": "capitais",
-    "text": "Qual é a capital de Islândia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Kuala Lumpur",
       "Teerã",
@@ -4357,12 +4777,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/is.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:hr",
+    "id": "v2:1dc185da3c132c38f8e7",
     "quiz": "capitais",
-    "text": "Qual é a capital de Croácia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Zagreb",
       "Manila",
@@ -4377,12 +4799,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/hr.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:bg",
+    "id": "v2:7f348d037893d6b715a6",
     "quiz": "capitais",
-    "text": "Qual é a capital de Bulgária?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Riade",
       "Sófia",
@@ -4397,12 +4821,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bg.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:rs",
+    "id": "v2:8f5a35d6f71077d8f228",
     "quiz": "capitais",
-    "text": "Qual é a capital de Sérvia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Doha",
       "Adis Abeba",
@@ -4418,12 +4844,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/rs.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:lv",
+    "id": "v2:80a05b0875e75f29ef0a",
     "quiz": "capitais",
-    "text": "Qual é a capital de Letônia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Nairóbi",
       "Abuja",
@@ -4438,12 +4866,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/lv.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:lt",
+    "id": "v2:fa5a02c881410c283751",
     "quiz": "capitais",
-    "text": "Qual é a capital de Lituânia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Vilnius",
       "Cairo",
@@ -4458,12 +4888,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/lt.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:ee",
+    "id": "v2:ee7d59ac9ad084b634fb",
     "quiz": "capitais",
-    "text": "Qual é a capital de Estônia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Dacar",
       "Tallinn",
@@ -4478,12 +4910,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/ee.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:id",
+    "id": "v2:3fb8a0ec0dc9584bc93d",
     "quiz": "capitais",
-    "text": "Qual é a capital de Indonésia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Wellington",
       "Tallinn",
@@ -4499,12 +4933,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/id.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:bd",
+    "id": "v2:68a174235e4efd6ed9b5",
     "quiz": "capitais",
-    "text": "Qual é a capital de Bangladesh?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Sófia",
       "Dodoma",
@@ -4520,12 +4956,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/bd.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:mn",
+    "id": "v2:ce19d6af50f11bd7f19b",
     "quiz": "capitais",
-    "text": "Qual é a capital de Mongólia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Ulan Bator",
       "Vilnius",
@@ -4541,12 +4979,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mn.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:tz",
+    "id": "v2:8531f551dcd1edce91a3",
     "quiz": "capitais",
-    "text": "Qual é a capital de Tanzânia?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Daca",
       "Dodoma",
@@ -4561,12 +5001,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/tz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "c:mz",
+    "id": "v2:4bc96d453a8e96a0ed2f",
     "quiz": "capitais",
-    "text": "Qual é a capital de Moçambique?",
+    "text": "Qual é a capital deste país?",
     "options": [
       "Brasília",
       "Assunção",
@@ -4581,12 +5023,14 @@ export const QUESTIONS=[
       "type": "image",
       "src": "https://flagcdn.com/w320/mz.png"
     },
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "lingua-paises:0",
+    "id": "v2:c3c6cc25fc96e423d923",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Brasil?",
+    "text": "Qual idioma é predominante ou amplamente falado em Brasil?",
     "options": [
       "Português",
       "Espanhol",
@@ -4598,16 +5042,15 @@ export const QUESTIONS=[
       "portugues",
       "português"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/br.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Português é um dos idiomas associados a Brasil neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Brasil"
   },
   {
-    "id": "lingua-paises:1",
+    "id": "v2:6597c2f5fabb92cbd085",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Portugal?",
+    "text": "Qual idioma é predominante ou amplamente falado em Portugal?",
     "options": [
       "Italiano",
       "Português",
@@ -4619,16 +5062,15 @@ export const QUESTIONS=[
       "portugues",
       "português"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/pt.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Português é um dos idiomas associados a Portugal neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Portugal"
   },
   {
-    "id": "lingua-paises:2",
+    "id": "v2:89a4d5ede2b889ab2d0e",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Angola?",
+    "text": "Qual idioma é predominante ou amplamente falado em Angola?",
     "options": [
       "Russo",
       "Grego",
@@ -4640,16 +5082,15 @@ export const QUESTIONS=[
       "portugues",
       "português"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ao.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Português é um dos idiomas associados a Angola neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Angola"
   },
   {
-    "id": "lingua-paises:3",
+    "id": "v2:d862487e39081456fb10",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Espanha?",
+    "text": "Qual idioma é predominante ou amplamente falado em Espanha?",
     "options": [
       "Coreano",
       "Norueguês",
@@ -4662,16 +5103,15 @@ export const QUESTIONS=[
       "castelhano",
       "espanol"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/es.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Espanhol é um dos idiomas associados a Espanha neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Espanha"
   },
   {
-    "id": "lingua-paises:4",
+    "id": "v2:f5713647ed764858fae5",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em México?",
+    "text": "Qual idioma é predominante ou amplamente falado em México?",
     "options": [
       "Espanhol",
       "Turco",
@@ -4684,16 +5124,15 @@ export const QUESTIONS=[
       "castelhano",
       "espanol"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/mx.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Espanhol é um dos idiomas associados a México neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=M%C3%A9xico"
   },
   {
-    "id": "lingua-paises:5",
+    "id": "v2:f56bd0c39c115b8530e7",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Argentina?",
+    "text": "Qual idioma é predominante ou amplamente falado em Argentina?",
     "options": [
       "Sueco",
       "Espanhol",
@@ -4706,16 +5145,15 @@ export const QUESTIONS=[
       "castelhano",
       "espanol"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ar.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Espanhol é um dos idiomas associados a Argentina neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Argentina"
   },
   {
-    "id": "lingua-paises:6",
+    "id": "v2:6bf884843d9598efb4c7",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Colômbia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Colômbia?",
     "options": [
       "Finlandês",
       "Tcheco",
@@ -4728,16 +5166,15 @@ export const QUESTIONS=[
       "castelhano",
       "espanol"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/co.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Espanhol é um dos idiomas associados a Colômbia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Col%C3%B4mbia"
   },
   {
-    "id": "lingua-paises:7",
+    "id": "v2:f6ba1909830b8461f1e0",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em França?",
+    "text": "Qual idioma é predominante ou amplamente falado em França?",
     "options": [
       "Indonésio",
       "Bengali",
@@ -4749,16 +5186,15 @@ export const QUESTIONS=[
       "frances",
       "francês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/fr.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Francês é um dos idiomas associados a França neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Fran%C3%A7a"
   },
   {
-    "id": "lingua-paises:8",
+    "id": "v2:5c5f9c1d46a23f925aa6",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Alemanha?",
+    "text": "Qual idioma é predominante ou amplamente falado em Alemanha?",
     "options": [
       "Alemão",
       "Húngaro",
@@ -4770,16 +5206,15 @@ export const QUESTIONS=[
       "alemao",
       "alemão"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/de.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Alemão é um dos idiomas associados a Alemanha neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Alemanha"
   },
   {
-    "id": "lingua-paises:9",
+    "id": "v2:07013b6b901167dffb77",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Áustria?",
+    "text": "Qual idioma é predominante ou amplamente falado em Áustria?",
     "options": [
       "Filipino",
       "Alemão",
@@ -4791,16 +5226,15 @@ export const QUESTIONS=[
       "alemao",
       "alemão"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/at.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Alemão é um dos idiomas associados a Áustria neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=%C3%81ustria"
   },
   {
-    "id": "lingua-paises:10",
+    "id": "v2:658b3d0912eaf7ffd82f",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Itália?",
+    "text": "Qual idioma é predominante ou amplamente falado em Itália?",
     "options": [
       "Nepalês",
       "Albanês",
@@ -4811,16 +5245,15 @@ export const QUESTIONS=[
     "aliases": [
       "italiano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/it.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Italiano é um dos idiomas associados a Itália neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=It%C3%A1lia"
   },
   {
-    "id": "lingua-paises:11",
+    "id": "v2:d886826b965d61802c25",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Japão?",
+    "text": "Qual idioma é predominante ou amplamente falado em Japão?",
     "options": [
       "Mongol",
       "Búlgaro",
@@ -4832,16 +5265,15 @@ export const QUESTIONS=[
       "japones",
       "japonês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/jp.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Japonês é um dos idiomas associados a Japão neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Jap%C3%A3o"
   },
   {
-    "id": "lingua-paises:12",
+    "id": "v2:8db37054d4a195331a61",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em China?",
+    "text": "Qual idioma é predominante ou amplamente falado em China?",
     "options": [
       "Mandarim",
       "Islandês",
@@ -4854,16 +5286,15 @@ export const QUESTIONS=[
       "chines",
       "chinês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/cn.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Mandarim é um dos idiomas associados a China neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=China"
   },
   {
-    "id": "lingua-paises:13",
+    "id": "v2:50c3e34c13e2b1388a28",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Rússia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Rússia?",
     "options": [
       "Sérvio",
       "Russo",
@@ -4874,16 +5305,15 @@ export const QUESTIONS=[
     "aliases": [
       "russo"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ru.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Russo é um dos idiomas associados a Rússia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=R%C3%BAssia"
   },
   {
-    "id": "lingua-paises:14",
+    "id": "v2:3b19ed47e5494794b5d5",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Ucrânia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Ucrânia?",
     "options": [
       "Letão",
       "Birmanês",
@@ -4894,16 +5324,15 @@ export const QUESTIONS=[
     "aliases": [
       "ucraniano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ua.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Ucraniano é um dos idiomas associados a Ucrânia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Ucr%C3%A2nia"
   },
   {
-    "id": "lingua-paises:15",
+    "id": "v2:15a8e55e8de08beed4c4",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Reino Unido?",
+    "text": "Qual idioma é predominante ou amplamente falado em Reino Unido?",
     "options": [
       "Esloveno",
       "Espanhol",
@@ -4915,16 +5344,15 @@ export const QUESTIONS=[
       "ingles",
       "inglês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/gb.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Inglês é um dos idiomas associados a Reino Unido neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Reino%20Unido"
   },
   {
-    "id": "lingua-paises:16",
+    "id": "v2:1d6c411f7c3a2c517dab",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em EUA?",
+    "text": "Qual idioma é predominante ou amplamente falado em EUA?",
     "options": [
       "Inglês",
       "Uzbeque",
@@ -4936,16 +5364,15 @@ export const QUESTIONS=[
       "ingles",
       "inglês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/us.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Inglês é um dos idiomas associados a EUA neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=EUA"
   },
   {
-    "id": "lingua-paises:17",
+    "id": "v2:dc4c89e8a2b9326dd0dc",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Austrália?",
+    "text": "Qual idioma é predominante ou amplamente falado em Austrália?",
     "options": [
       "Português",
       "Inglês",
@@ -4957,16 +5384,15 @@ export const QUESTIONS=[
       "ingles",
       "inglês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/au.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Inglês é um dos idiomas associados a Austrália neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Austr%C3%A1lia"
   },
   {
-    "id": "lingua-paises:18",
+    "id": "v2:24da1935088ce19345c2",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Coreia do Sul?",
+    "text": "Qual idioma é predominante ou amplamente falado em Coreia do Sul?",
     "options": [
       "Alemão",
       "Neerlandês",
@@ -4977,16 +5403,15 @@ export const QUESTIONS=[
     "aliases": [
       "coreano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/kr.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Coreano é um dos idiomas associados a Coreia do Sul neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Coreia%20do%20Sul"
   },
   {
-    "id": "lingua-paises:19",
+    "id": "v2:bc55c8e14c8bf1f9c178",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Países Baixos?",
+    "text": "Qual idioma é predominante ou amplamente falado em Países Baixos?",
     "options": [
       "Mandarim",
       "Grego",
@@ -5000,16 +5425,15 @@ export const QUESTIONS=[
       "holandes",
       "holandês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/nl.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Neerlandês é um dos idiomas associados a Países Baixos neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Pa%C3%ADses%20Baixos"
   },
   {
-    "id": "lingua-paises:20",
+    "id": "v2:fb37c8fdfeaa379d93d8",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Polônia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Polônia?",
     "options": [
       "Polonês",
       "Inglês",
@@ -5021,16 +5445,15 @@ export const QUESTIONS=[
       "polones",
       "polonês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/pl.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Polonês é um dos idiomas associados a Polônia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Pol%C3%B4nia"
   },
   {
-    "id": "lingua-paises:21",
+    "id": "v2:d261f13096a8d0f0b3a1",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Turquia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Turquia?",
     "options": [
       "Polonês",
       "Turco",
@@ -5041,16 +5464,15 @@ export const QUESTIONS=[
     "aliases": [
       "turco"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/tr.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Turco é um dos idiomas associados a Turquia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Turquia"
   },
   {
-    "id": "lingua-paises:22",
+    "id": "v2:d0ec1ecc307cd1e2559a",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Grécia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Grécia?",
     "options": [
       "Sueco",
       "Hindi",
@@ -5061,16 +5483,15 @@ export const QUESTIONS=[
     "aliases": [
       "grego"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/gr.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Grego é um dos idiomas associados a Grécia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Gr%C3%A9cia"
   },
   {
-    "id": "lingua-paises:23",
+    "id": "v2:ddf900ab25f9e90df763",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Arábia Saudita?",
+    "text": "Qual idioma é predominante ou amplamente falado em Arábia Saudita?",
     "options": [
       "Finlandês",
       "Tcheco",
@@ -5082,16 +5503,15 @@ export const QUESTIONS=[
       "arabe",
       "árabe"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/sa.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Árabe é um dos idiomas associados a Arábia Saudita neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Ar%C3%A1bia%20Saudita"
   },
   {
-    "id": "lingua-paises:24",
+    "id": "v2:42dc4afa22c19d49f783",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Egito?",
+    "text": "Qual idioma é predominante ou amplamente falado em Egito?",
     "options": [
       "Árabe",
       "Indonésio",
@@ -5103,16 +5523,15 @@ export const QUESTIONS=[
       "arabe",
       "árabe"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/eg.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Árabe é um dos idiomas associados a Egito neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Egito"
   },
   {
-    "id": "lingua-paises:25",
+    "id": "v2:57b40d6cb1c0c2109c3a",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Marrocos?",
+    "text": "Qual idioma é predominante ou amplamente falado em Marrocos?",
     "options": [
       "Húngaro",
       "Árabe",
@@ -5124,16 +5543,15 @@ export const QUESTIONS=[
       "arabe",
       "árabe"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ma.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Árabe é um dos idiomas associados a Marrocos neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Marrocos"
   },
   {
-    "id": "lingua-paises:26",
+    "id": "v2:52acfb61448b83bb4cec",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Suécia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Suécia?",
     "options": [
       "Filipino",
       "Georgiano",
@@ -5144,16 +5562,15 @@ export const QUESTIONS=[
     "aliases": [
       "sueco"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/se.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Sueco é um dos idiomas associados a Suécia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Su%C3%A9cia"
   },
   {
-    "id": "lingua-paises:27",
+    "id": "v2:e680d59b18689934271e",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Noruega?",
+    "text": "Qual idioma é predominante ou amplamente falado em Noruega?",
     "options": [
       "Nepalês",
       "Albanês",
@@ -5165,16 +5582,15 @@ export const QUESTIONS=[
       "noruegues",
       "norueguês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/no.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Norueguês é um dos idiomas associados a Noruega neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Noruega"
   },
   {
-    "id": "lingua-paises:28",
+    "id": "v2:e60f8aa8d9eb486fb00b",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Dinamarca?",
+    "text": "Qual idioma é predominante ou amplamente falado em Dinamarca?",
     "options": [
       "Dinamarquês",
       "Mongol",
@@ -5186,16 +5602,15 @@ export const QUESTIONS=[
       "dinamarques",
       "dinamarquês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/dk.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Dinamarquês é um dos idiomas associados a Dinamarca neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Dinamarca"
   },
   {
-    "id": "lingua-paises:29",
+    "id": "v2:2b8658a678f4950113b8",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Finlândia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Finlândia?",
     "options": [
       "Islandês",
       "Finlandês",
@@ -5207,16 +5622,15 @@ export const QUESTIONS=[
       "finlandes",
       "finlandês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/fi.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Finlandês é um dos idiomas associados a Finlândia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Finl%C3%A2ndia"
   },
   {
-    "id": "lingua-paises:30",
+    "id": "v2:96208d65469043f3a58a",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Tailândia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Tailândia?",
     "options": [
       "Sérvio",
       "Azerbaijano",
@@ -5228,16 +5642,15 @@ export const QUESTIONS=[
       "tailandes",
       "tailandês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/th.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Tailandês é um dos idiomas associados a Tailândia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Tail%C3%A2ndia"
   },
   {
-    "id": "lingua-paises:31",
+    "id": "v2:22df01afb442e3044ea8",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Vietnã?",
+    "text": "Qual idioma é predominante ou amplamente falado em Vietnã?",
     "options": [
       "Letão",
       "Birmanês",
@@ -5248,16 +5661,15 @@ export const QUESTIONS=[
     "aliases": [
       "vietnamita"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/vn.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Vietnamita é um dos idiomas associados a Vietnã neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Vietn%C3%A3"
   },
   {
-    "id": "lingua-paises:32",
+    "id": "v2:a5dfc50d3ebe61411852",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Indonésia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Indonésia?",
     "options": [
       "Indonésio",
       "Esloveno",
@@ -5269,16 +5681,15 @@ export const QUESTIONS=[
       "indonesio",
       "indonésio"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/id.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Indonésio é um dos idiomas associados a Indonésia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Indon%C3%A9sia"
   },
   {
-    "id": "lingua-paises:33",
+    "id": "v2:3e2923f1c1bb594d730f",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Índia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Índia?",
     "options": [
       "Uzbeque",
       "Hindi",
@@ -5289,16 +5700,15 @@ export const QUESTIONS=[
     "aliases": [
       "hindi"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/in.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Hindi é um dos idiomas associados a Índia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=%C3%8Dndia"
   },
   {
-    "id": "lingua-paises:34",
+    "id": "v2:2a70d05eb8845cfdbacc",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Israel?",
+    "text": "Qual idioma é predominante ou amplamente falado em Israel?",
     "options": [
       "Português",
       "Russo",
@@ -5309,16 +5719,15 @@ export const QUESTIONS=[
     "aliases": [
       "hebraico"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/il.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Hebraico é um dos idiomas associados a Israel neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Israel"
   },
   {
-    "id": "lingua-paises:35",
+    "id": "v2:b9c4ff22cf545312ff1b",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Hungria?",
+    "text": "Qual idioma é predominante ou amplamente falado em Hungria?",
     "options": [
       "Alemão",
       "Coreano",
@@ -5330,16 +5739,15 @@ export const QUESTIONS=[
       "hungaro",
       "húngaro"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/hu.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Húngaro é um dos idiomas associados a Hungria neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Hungria"
   },
   {
-    "id": "lingua-paises:36",
+    "id": "v2:704a36fb9ab00482ac24",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Rep. Tcheca?",
+    "text": "Qual idioma é predominante ou amplamente falado em Rep. Tcheca?",
     "options": [
       "Tcheco",
       "Mandarim",
@@ -5350,16 +5758,15 @@ export const QUESTIONS=[
     "aliases": [
       "tcheco"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/cz.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Tcheco é um dos idiomas associados a Rep. Tcheca neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Rep.%20Tcheca"
   },
   {
-    "id": "lingua-paises:37",
+    "id": "v2:676a5f2455e61678057a",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Romênia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Romênia?",
     "options": [
       "Inglês",
       "Romeno",
@@ -5370,16 +5777,15 @@ export const QUESTIONS=[
     "aliases": [
       "romeno"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ro.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Romeno é um dos idiomas associados a Romênia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Rom%C3%AAnia"
   },
   {
-    "id": "lingua-paises:38",
+    "id": "v2:cd7f3601c26e347f8ba2",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Filipinas?",
+    "text": "Qual idioma é predominante ou amplamente falado em Filipinas?",
     "options": [
       "Polonês",
       "Finlandês",
@@ -5392,16 +5798,15 @@ export const QUESTIONS=[
       "tagalog",
       "filipinos"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ph.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Filipino é um dos idiomas associados a Filipinas neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Filipinas"
   },
   {
-    "id": "lingua-paises:39",
+    "id": "v2:88e99cef548c505c4a74",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Bangladesh?",
+    "text": "Qual idioma é predominante ou amplamente falado em Bangladesh?",
     "options": [
       "Árabe",
       "Indonésio",
@@ -5413,16 +5818,15 @@ export const QUESTIONS=[
       "bengali",
       "bangla"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/bd.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Bengali é um dos idiomas associados a Bangladesh neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Bangladesh"
   },
   {
-    "id": "lingua-paises:40",
+    "id": "v2:ee7efc38e2e7268f4704",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Irã?",
+    "text": "Qual idioma é predominante ou amplamente falado em Irã?",
     "options": [
       "Persa",
       "Dinamarquês",
@@ -5434,16 +5838,15 @@ export const QUESTIONS=[
       "persa",
       "farsi"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ir.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Persa é um dos idiomas associados a Irã neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Ir%C3%A3"
   },
   {
-    "id": "lingua-paises:41",
+    "id": "v2:c2a9f49d5127f60d6198",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Nepal?",
+    "text": "Qual idioma é predominante ou amplamente falado em Nepal?",
     "options": [
       "Vietnamita",
       "Nepalês",
@@ -5455,16 +5858,15 @@ export const QUESTIONS=[
       "nepales",
       "nepalês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/np.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Nepalês é um dos idiomas associados a Nepal neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Nepal"
   },
   {
-    "id": "lingua-paises:42",
+    "id": "v2:77b03f50e3a7c8200627",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Camboja?",
+    "text": "Qual idioma é predominante ou amplamente falado em Camboja?",
     "options": [
       "Hebraico",
       "Nepalês",
@@ -5476,16 +5878,15 @@ export const QUESTIONS=[
       "khmer",
       "cambojano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/kh.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Khmer é um dos idiomas associados a Camboja neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Camboja"
   },
   {
-    "id": "lingua-paises:43",
+    "id": "v2:2c06da33e097c2928c44",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Laos?",
+    "text": "Qual idioma é predominante ou amplamente falado em Laos?",
     "options": [
       "Romeno",
       "Georgiano",
@@ -5497,16 +5898,15 @@ export const QUESTIONS=[
       "lao",
       "laosiano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/la.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Lao é um dos idiomas associados a Laos neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Laos"
   },
   {
-    "id": "lingua-paises:44",
+    "id": "v2:29e2a6c2f0c60a6b4b2b",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Mongólia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Mongólia?",
     "options": [
       "Mongol",
       "Persa",
@@ -5518,16 +5918,15 @@ export const QUESTIONS=[
       "mongol",
       "mongolico"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/mn.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Mongol é um dos idiomas associados a Mongólia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Mong%C3%B3lia"
   },
   {
-    "id": "lingua-paises:45",
+    "id": "v2:01485c238f5a331f57d0",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Geórgia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Geórgia?",
     "options": [
       "Lao",
       "Georgiano",
@@ -5538,16 +5937,15 @@ export const QUESTIONS=[
     "aliases": [
       "georgiano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ge.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Georgiano é um dos idiomas associados a Geórgia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Ge%C3%B3rgia"
   },
   {
-    "id": "lingua-paises:46",
+    "id": "v2:7ebb92eb144af515566e",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Armênia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Armênia?",
     "options": [
       "Islandês",
       "Lituano",
@@ -5559,16 +5957,15 @@ export const QUESTIONS=[
       "armenio",
       "armênio"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/am.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Armênio é um dos idiomas associados a Armênia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Arm%C3%AAnia"
   },
   {
-    "id": "lingua-paises:47",
+    "id": "v2:6d524058139059e7def3",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Islândia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Islândia?",
     "options": [
       "Sérvio",
       "Azerbaijano",
@@ -5580,16 +5977,15 @@ export const QUESTIONS=[
       "islandes",
       "islandês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/is.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Islandês é um dos idiomas associados a Islândia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Isl%C3%A2ndia"
   },
   {
-    "id": "lingua-paises:48",
+    "id": "v2:4f84d91adddd66c9dfeb",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Albânia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Albânia?",
     "options": [
       "Albanês",
       "Letão",
@@ -5601,16 +5997,15 @@ export const QUESTIONS=[
       "albanes",
       "albanês"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/al.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Albanês é um dos idiomas associados a Albânia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Alb%C3%A2nia"
   },
   {
-    "id": "lingua-paises:49",
+    "id": "v2:9a26f84e494e3ceefea0",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Croácia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Croácia?",
     "options": [
       "Esloveno",
       "Croata",
@@ -5621,16 +6016,15 @@ export const QUESTIONS=[
     "aliases": [
       "croata"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/hr.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Croata é um dos idiomas associados a Croácia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Cro%C3%A1cia"
   },
   {
-    "id": "lingua-paises:50",
+    "id": "v2:df6d4f3ec8063d28dbb5",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Sérvia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Sérvia?",
     "options": [
       "Uzbeque",
       "Italiano",
@@ -5642,16 +6036,15 @@ export const QUESTIONS=[
       "servio",
       "sérvio"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/rs.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Sérvio é um dos idiomas associados a Sérvia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=S%C3%A9rvia"
   },
   {
-    "id": "lingua-paises:51",
+    "id": "v2:75bc02a14132c46f3c28",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Bulgária?",
+    "text": "Qual idioma é predominante ou amplamente falado em Bulgária?",
     "options": [
       "Português",
       "Russo",
@@ -5663,16 +6056,15 @@ export const QUESTIONS=[
       "bulgaro",
       "búlgaro"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/bg.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Búlgaro é um dos idiomas associados a Bulgária neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Bulg%C3%A1ria"
   },
   {
-    "id": "lingua-paises:52",
+    "id": "v2:1a882669ae01a7b70c14",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Estônia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Estônia?",
     "options": [
       "Estoniano",
       "Alemão",
@@ -5684,16 +6076,15 @@ export const QUESTIONS=[
       "estoniano",
       "estónio"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/ee.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Estoniano é um dos idiomas associados a Estônia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Est%C3%B4nia"
   },
   {
-    "id": "lingua-paises:53",
+    "id": "v2:0f8ccd0572f48af0dc6e",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Letônia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Letônia?",
     "options": [
       "Mandarim",
       "Letão",
@@ -5705,16 +6096,15 @@ export const QUESTIONS=[
       "letao",
       "letão"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/lv.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Letão é um dos idiomas associados a Letônia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Let%C3%B4nia"
   },
   {
-    "id": "lingua-paises:54",
+    "id": "v2:06bf8e191f0c396e234e",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Lituânia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Lituânia?",
     "options": [
       "Inglês",
       "Sueco",
@@ -5725,16 +6115,15 @@ export const QUESTIONS=[
     "aliases": [
       "lituano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/lt.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Lituano é um dos idiomas associados a Lituânia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Litu%C3%A2nia"
   },
   {
-    "id": "lingua-paises:55",
+    "id": "v2:b752853202a82b020519",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Eslováquia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Eslováquia?",
     "options": [
       "Polonês",
       "Finlandês",
@@ -5745,16 +6134,15 @@ export const QUESTIONS=[
     "aliases": [
       "eslovaco"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/sk.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Eslovaco é um dos idiomas associados a Eslováquia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Eslov%C3%A1quia"
   },
   {
-    "id": "lingua-paises:56",
+    "id": "v2:8b8e94bee12806d0930a",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Eslovênia?",
+    "text": "Qual idioma é predominante ou amplamente falado em Eslovênia?",
     "options": [
       "Esloveno",
       "Árabe",
@@ -5765,16 +6153,15 @@ export const QUESTIONS=[
     "aliases": [
       "esloveno"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/si.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Esloveno é um dos idiomas associados a Eslovênia neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Eslov%C3%AAnia"
   },
   {
-    "id": "lingua-paises:57",
+    "id": "v2:ff13602555963fd890ab",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Azerbaijão?",
+    "text": "Qual idioma é predominante ou amplamente falado em Azerbaijão?",
     "options": [
       "Dinamarquês",
       "Azerbaijano",
@@ -5786,16 +6173,15 @@ export const QUESTIONS=[
       "azerbaijano",
       "azeri"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/az.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Azerbaijano é um dos idiomas associados a Azerbaijão neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Azerbaij%C3%A3o"
   },
   {
-    "id": "lingua-paises:58",
+    "id": "v2:a11b13965d4a23749191",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Cazaquistão?",
+    "text": "Qual idioma é predominante ou amplamente falado em Cazaquistão?",
     "options": [
       "Vietnamita",
       "Filipino",
@@ -5807,16 +6193,15 @@ export const QUESTIONS=[
       "cazaque",
       "kazakh"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/kz.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Cazaque é um dos idiomas associados a Cazaquistão neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Cazaquist%C3%A3o"
   },
   {
-    "id": "lingua-paises:59",
+    "id": "v2:0050072600b00195b253",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Uzbequistão?",
+    "text": "Qual idioma é predominante ou amplamente falado em Uzbequistão?",
     "options": [
       "Hebraico",
       "Nepalês",
@@ -5828,16 +6213,15 @@ export const QUESTIONS=[
       "uzbeque",
       "uzbek"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/uz.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Uzbeque é um dos idiomas associados a Uzbequistão neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Uzbequist%C3%A3o"
   },
   {
-    "id": "lingua-paises:60",
+    "id": "v2:6991d9b5fcfd9c05c99f",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Mianmar?",
+    "text": "Qual idioma é predominante ou amplamente falado em Mianmar?",
     "options": [
       "Birmanês",
       "Romeno",
@@ -5850,16 +6234,15 @@ export const QUESTIONS=[
       "birmanês",
       "burmes"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/mm.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Birmanês é um dos idiomas associados a Mianmar neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Mianmar"
   },
   {
-    "id": "lingua-paises:61",
+    "id": "v2:1f5795e498e2fa5a9c0d",
     "quiz": "lingua-paises",
-    "text": "Qual idioma predomina em Sri Lanka?",
+    "text": "Qual idioma é predominante ou amplamente falado em Sri Lanka?",
     "options": [
       "Persa",
       "Cingalês",
@@ -5872,14 +6255,13 @@ export const QUESTIONS=[
       "cingalês",
       "sinhala"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://flagcdn.com/w320/lk.png"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Cingalês é um dos idiomas associados a Sri Lanka neste quiz.",
+    "source": "https://www.wikidata.org/wiki/Special:Search?search=Sri%20Lanka"
   },
   {
-    "id": "l:0",
+    "id": "v2:507342d591427bba431d",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Olá, como vai você?",
     "options": [
@@ -5894,10 +6276,12 @@ export const QUESTIONS=[
       "português"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:1",
+    "id": "v2:18704308d4bea52b81d7",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Buenos días, ¿cómo estás?",
     "options": [
@@ -5913,10 +6297,12 @@ export const QUESTIONS=[
       "espanol"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:2",
+    "id": "v2:df3a1dd45ad356eb4e9c",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Bonjour, comment allez-vous?",
     "options": [
@@ -5931,10 +6317,12 @@ export const QUESTIONS=[
       "francês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:3",
+    "id": "v2:2556bf3be06d5554ecc0",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Guten Morgen, wie geht es Ihnen?",
     "options": [
@@ -5949,10 +6337,12 @@ export const QUESTIONS=[
       "alemão"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:4",
+    "id": "v2:e581abbca147643c524f",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Buongiorno, come stai?",
     "options": [
@@ -5966,10 +6356,12 @@ export const QUESTIONS=[
       "italiano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:5",
+    "id": "v2:032603b56afc84639e0e",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Good morning, how are you?",
     "options": [
@@ -5984,10 +6376,12 @@ export const QUESTIONS=[
       "inglês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:6",
+    "id": "v2:156cd495e6ee8eafa3e4",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? おはようございます。お元気ですか？",
     "options": [
@@ -6002,10 +6396,12 @@ export const QUESTIONS=[
       "japonês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:7",
+    "id": "v2:acea107ffa022765cec8",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? 你好，你怎么样？",
     "options": [
@@ -6021,10 +6417,12 @@ export const QUESTIONS=[
       "chinês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:8",
+    "id": "v2:5bebfcdc2f7508a8cef8",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? 안녕하세요, 어떻게 지내세요?",
     "options": [
@@ -6038,10 +6436,12 @@ export const QUESTIONS=[
       "coreano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:9",
+    "id": "v2:10d07fe192f856e60200",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Доброе утро, как дела?",
     "options": [
@@ -6055,10 +6455,12 @@ export const QUESTIONS=[
       "russo"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:10",
+    "id": "v2:fb1af438f7d1df1424f1",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Bom dia, tudo bem com você?",
     "options": [
@@ -6073,10 +6475,12 @@ export const QUESTIONS=[
       "português"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:11",
+    "id": "v2:2f2bbb0bd11db5c6c399",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? مرحبا، كيف حالك؟",
     "options": [
@@ -6091,10 +6495,12 @@ export const QUESTIONS=[
       "árabe"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:12",
+    "id": "v2:cb3ee2e782c41a2145a9",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Hola, ¿qué tal?",
     "options": [
@@ -6110,10 +6516,12 @@ export const QUESTIONS=[
       "espanol"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:13",
+    "id": "v2:9e05c5eaee26fbb46169",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Bonjour, ça va bien?",
     "options": [
@@ -6128,10 +6536,12 @@ export const QUESTIONS=[
       "francês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:14",
+    "id": "v2:384df5c74f99ad3cfe0d",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? こんにちは、元気ですか？",
     "options": [
@@ -6146,10 +6556,12 @@ export const QUESTIONS=[
       "japonês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:15",
+    "id": "v2:98a93573d0976cc2ced1",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Goddag, hvordan har du det?",
     "options": [
@@ -6164,10 +6576,12 @@ export const QUESTIONS=[
       "dinamarquês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:16",
+    "id": "v2:20ffbae797d64efcca05",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Hej, hur mår du?",
     "options": [
@@ -6181,10 +6595,12 @@ export const QUESTIONS=[
       "sueco"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:17",
+    "id": "v2:bf7abe1b3b8006bd7f38",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Hei, hvordan går det?",
     "options": [
@@ -6199,10 +6615,12 @@ export const QUESTIONS=[
       "norueguês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:18",
+    "id": "v2:5ee006db52cf7a1644f4",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Hyvää huomenta, kuinka voit?",
     "options": [
@@ -6217,10 +6635,12 @@ export const QUESTIONS=[
       "finlandês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:19",
+    "id": "v2:f4daac1378567f230e6b",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Dzień dobry, jak się masz?",
     "options": [
@@ -6235,10 +6655,12 @@ export const QUESTIONS=[
       "polonês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:20",
+    "id": "v2:28050c6878ce1ef64001",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Günaydın, nasılsın?",
     "options": [
@@ -6252,10 +6674,12 @@ export const QUESTIONS=[
       "turco"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:21",
+    "id": "v2:f062400067ebc086d575",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Καλημέρα, τι κάνεις;",
     "options": [
@@ -6269,10 +6693,12 @@ export const QUESTIONS=[
       "grego"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:22",
+    "id": "v2:922df3a6b9bc4f1209fd",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Jó reggelt, hogy vagy?",
     "options": [
@@ -6287,10 +6713,12 @@ export const QUESTIONS=[
       "húngaro"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:23",
+    "id": "v2:571bfcb3522e34e208f1",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Dobré ráno, jak se máš?",
     "options": [
@@ -6304,10 +6732,12 @@ export const QUESTIONS=[
       "tcheco"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:24",
+    "id": "v2:bb0e492c0d9931eef322",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Bună ziua, ce mai faci?",
     "options": [
@@ -6321,10 +6751,12 @@ export const QUESTIONS=[
       "romeno"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:25",
+    "id": "v2:55f26eb6c8cfaba0893d",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Доброго ранку, як справи?",
     "options": [
@@ -6338,10 +6770,12 @@ export const QUESTIONS=[
       "ucraniano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:26",
+    "id": "v2:8e9c7fd1a67246918fcd",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Xin chào, bạn khỏe không?",
     "options": [
@@ -6355,10 +6789,12 @@ export const QUESTIONS=[
       "vietnamita"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:27",
+    "id": "v2:26053e26c491be0ee256",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? नमस्ते, आप कैसे हैं?",
     "options": [
@@ -6372,10 +6808,12 @@ export const QUESTIONS=[
       "hindi"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:28",
+    "id": "v2:0571fd5532d3cd660e3f",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? שלום, מה שלומך?",
     "options": [
@@ -6389,10 +6827,12 @@ export const QUESTIONS=[
       "hebraico"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:29",
+    "id": "v2:34d265efd52a55738523",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Hoe gaat het met jou?",
     "options": [
@@ -6409,10 +6849,12 @@ export const QUESTIONS=[
       "holandês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:30",
+    "id": "v2:6fb606ffcec6c4ee8987",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Selamat pagi, apa kabar?",
     "options": [
@@ -6427,10 +6869,12 @@ export const QUESTIONS=[
       "indonésio"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:31",
+    "id": "v2:db4790dd45cb4af26993",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? สวัสดี คุณเป็นยังไงบ้าง?",
     "options": [
@@ -6445,10 +6889,12 @@ export const QUESTIONS=[
       "tailandês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:32",
+    "id": "v2:f0c8967ab5661c8b08d5",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Kumusta ka?",
     "options": [
@@ -6463,10 +6909,12 @@ export const QUESTIONS=[
       "tagalog"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:33",
+    "id": "v2:f04fcf5c0925c0835726",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Olá, tudo bem?",
     "options": [
@@ -6481,10 +6929,12 @@ export const QUESTIONS=[
       "português"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:34",
+    "id": "v2:627fe89748fbea2516a7",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? ¿Cómo te llamas?",
     "options": [
@@ -6500,10 +6950,12 @@ export const QUESTIONS=[
       "espanol"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:35",
+    "id": "v2:6690e7bea08f89c4ac34",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Comment vous appelez-vous?",
     "options": [
@@ -6518,10 +6970,12 @@ export const QUESTIONS=[
       "francês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:36",
+    "id": "v2:cf9726ac880744f0e9bc",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Wie heißen Sie?",
     "options": [
@@ -6536,10 +6990,12 @@ export const QUESTIONS=[
       "alemão"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:37",
+    "id": "v2:d5975dd4a2ed981af431",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Come si chiama?",
     "options": [
@@ -6553,10 +7009,12 @@ export const QUESTIONS=[
       "italiano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:38",
+    "id": "v2:32bb613c9fcc8389d844",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? What is your name?",
     "options": [
@@ -6571,10 +7029,12 @@ export const QUESTIONS=[
       "inglês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:39",
+    "id": "v2:b58538eede716f8a3bc2",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Où est la bibliothèque?",
     "options": [
@@ -6589,10 +7049,12 @@ export const QUESTIONS=[
       "francês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:40",
+    "id": "v2:8de7040adb2f3d945d24",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? ¿Dónde está el baño?",
     "options": [
@@ -6608,10 +7070,12 @@ export const QUESTIONS=[
       "espanol"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:41",
+    "id": "v2:4024b58e35c00ddc3ef7",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Ich spreche ein bisschen Deutsch.",
     "options": [
@@ -6626,10 +7090,12 @@ export const QUESTIONS=[
       "alemão"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:42",
+    "id": "v2:1a5a2d2ff221ad6e4bce",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Parlo un po' di italiano.",
     "options": [
@@ -6643,10 +7109,12 @@ export const QUESTIONS=[
       "italiano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:43",
+    "id": "v2:fd97785814fc33b4bcb9",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? I love you very much.",
     "options": [
@@ -6661,10 +7129,12 @@ export const QUESTIONS=[
       "inglês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:44",
+    "id": "v2:69e7247f8bfda22154f8",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Eu te amo muito.",
     "options": [
@@ -6679,10 +7149,12 @@ export const QUESTIONS=[
       "português"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:45",
+    "id": "v2:de969963558cf232dcdb",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? 私はあなたを愛しています。",
     "options": [
@@ -6697,10 +7169,12 @@ export const QUESTIONS=[
       "japonês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:46",
+    "id": "v2:00c263c13576800dc6e0",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? 我爱你。",
     "options": [
@@ -6716,10 +7190,12 @@ export const QUESTIONS=[
       "chinês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:47",
+    "id": "v2:1b445c6fea969c4bb9cd",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? 나는 당신을 사랑합니다.",
     "options": [
@@ -6733,10 +7209,12 @@ export const QUESTIONS=[
       "coreano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:48",
+    "id": "v2:894ae6a50b698b250656",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Я тебя люблю.",
     "options": [
@@ -6750,10 +7228,12 @@ export const QUESTIONS=[
       "russo"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:49",
+    "id": "v2:129f91fa7b474547aa76",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? أنا أحبك.",
     "options": [
@@ -6768,10 +7248,12 @@ export const QUESTIONS=[
       "árabe"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:50",
+    "id": "v2:c9e4a0c6412e1411808e",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? سلام، حال شما چطور است؟",
     "options": [
@@ -6786,10 +7268,12 @@ export const QUESTIONS=[
       "farsi"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:51",
+    "id": "v2:4f2a07455677f95e9902",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? नमस्कार, तपाईंलाई कस्तो छ?",
     "options": [
@@ -6804,10 +7288,12 @@ export const QUESTIONS=[
       "nepalês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:52",
+    "id": "v2:a6cf8f17da827eeaa9bc",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? হ্যালো, আপনি কেমন আছেন?",
     "options": [
@@ -6822,10 +7308,12 @@ export const QUESTIONS=[
       "bangla"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:53",
+    "id": "v2:b396cdf919306f79e604",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? ሰላም፣ እንዴት ነዎት?",
     "options": [
@@ -6840,10 +7328,12 @@ export const QUESTIONS=[
       "amárico"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:54",
+    "id": "v2:f04c1370f1346dc69086",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? გამარჯობა, როგორ ხართ?",
     "options": [
@@ -6857,10 +7347,12 @@ export const QUESTIONS=[
       "georgiano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:55",
+    "id": "v2:2ed11cbaae0b5ac5b030",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Բարև, ինչպե՞ս եք։",
     "options": [
@@ -6875,10 +7367,12 @@ export const QUESTIONS=[
       "armênio"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:56",
+    "id": "v2:5599cb6c80f8404a33a2",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Habari za asubuhi?",
     "options": [
@@ -6894,10 +7388,12 @@ export const QUESTIONS=[
       "swahili"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:57",
+    "id": "v2:ab54c34612addef3c8e4",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Mirëmëngjes, si jeni?",
     "options": [
@@ -6912,10 +7408,12 @@ export const QUESTIONS=[
       "albanês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:58",
+    "id": "v2:677f64acfae4dd5e5722",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Góðan daginn, hvernig hefurðu það?",
     "options": [
@@ -6930,10 +7428,12 @@ export const QUESTIONS=[
       "islandês"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:59",
+    "id": "v2:8afbc976558a302c4fc6",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Dobar dan, kako ste?",
     "options": [
@@ -6947,10 +7447,12 @@ export const QUESTIONS=[
       "croata"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:60",
+    "id": "v2:0c28a66b6280c59e8d53",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Добар дан, како сте?",
     "options": [
@@ -6965,10 +7467,12 @@ export const QUESTIONS=[
       "sérvio"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:61",
+    "id": "v2:55b91ca0832be8caf91a",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Здравейте, как сте?",
     "options": [
@@ -6983,10 +7487,12 @@ export const QUESTIONS=[
       "búlgaro"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:62",
+    "id": "v2:8a5933de7739852db38b",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Tere hommikust, kuidas läheb?",
     "options": [
@@ -7001,10 +7507,12 @@ export const QUESTIONS=[
       "estónio"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:63",
+    "id": "v2:940955a6ab29ec690d2c",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Labdien, kā jums klājas?",
     "options": [
@@ -7019,10 +7527,12 @@ export const QUESTIONS=[
       "letão"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:64",
+    "id": "v2:0e4beddf8ffe78f884f5",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Laba diena, kaip sekasi?",
     "options": [
@@ -7036,10 +7546,12 @@ export const QUESTIONS=[
       "lituano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:65",
+    "id": "v2:33b9f1eb71e6e1ff961f",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Dobrý deň, ako sa máte?",
     "options": [
@@ -7053,10 +7565,12 @@ export const QUESTIONS=[
       "eslovaco"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:66",
+    "id": "v2:9522a6c1e3f40806681e",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Dober dan, kako ste?",
     "options": [
@@ -7070,10 +7584,12 @@ export const QUESTIONS=[
       "esloveno"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:67",
+    "id": "v2:82ff1065d9b5539891ac",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Сайн байна уу?",
     "options": [
@@ -7088,10 +7604,12 @@ export const QUESTIONS=[
       "mongolico"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:68",
+    "id": "v2:feaaa66d20d895c60cc9",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? សួស្តី តើអ្នកសុខសប្បាយទេ?",
     "options": [
@@ -7106,10 +7624,12 @@ export const QUESTIONS=[
       "cambojano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:69",
+    "id": "v2:85f2c62ef411779ee56d",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? ສະບາຍດີ, ເຈົ້າສະບາຍດີບໍ?",
     "options": [
@@ -7124,10 +7644,12 @@ export const QUESTIONS=[
       "laosiano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:70",
+    "id": "v2:e2fc323aef52cb05beac",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? السلام علیکم، آپ کیسے ہیں؟",
     "options": [
@@ -7141,10 +7663,12 @@ export const QUESTIONS=[
       "urdu"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:71",
+    "id": "v2:b9c50041de3adc534c93",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Shikamoo, habari gani?",
     "options": [
@@ -7160,10 +7684,12 @@ export const QUESTIONS=[
       "swahili"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:72",
+    "id": "v2:bc81f2d241eed9480b59",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? გამარჯობა!",
     "options": [
@@ -7177,10 +7703,12 @@ export const QUESTIONS=[
       "georgiano"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "l:73",
+    "id": "v2:75b9b1f16ac2576c15b9",
     "quiz": "linguas-frases",
     "text": "Qual é o idioma desta frase? Сайн уу?",
     "options": [
@@ -7195,17 +7723,19 @@ export const QUESTIONS=[
       "mongolico"
     ],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:0",
+    "id": "v2:5a004f1f9b559ee30fb7",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Leão",
       "Tigre",
-      "Golfinho",
-      "Canguru"
+      "Panda",
+      "Zebra"
     ],
     "correct": 0,
     "aliases": [
@@ -7215,21 +7745,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
       "attribution": "Giles Laurent · CC BY-SA 4.0"
     },
-    "clue": "Letras: L___"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:1",
+    "id": "v2:5571ef5efb3d8a6ec09f",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Onça-pintada",
+      "Lobo",
       "Tigre",
-      "Coala",
-      "Guepardo"
+      "Lhama",
+      "Orangotango"
     ],
     "correct": 1,
     "aliases": [
@@ -7238,21 +7770,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: T____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:2",
+    "id": "v2:7e3a71895119002ee47e",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Gorila",
-      "Crocodilo",
+      "Golfinho",
+      "Flamingo",
       "Elefante",
-      "Tartaruga-marinha"
+      "Orca"
     ],
     "correct": 2,
     "aliases": [
@@ -7261,41 +7795,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/960px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/960px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
       "attribution": "Giles Laurent · CC BY-SA 4.0"
     },
-    "clue": "Letras: E_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:3",
+    "id": "v2:c8a188eb49ef25de5f83",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Alce",
-      "Zebra",
-      "Arara",
-      "Girafa"
+      "Coala",
+      "Rinoceronte",
+      "Águia-americana",
+      "Onça-pintada"
     ],
     "correct": 3,
-    "aliases": [
-      "girafa",
-      "giraffe"
-    ],
-    "media": null,
-    "clue": "Letras: G_____"
-  },
-  {
-    "id": "animais:4",
-    "quiz": "animais",
-    "text": "Que animal é este?",
-    "options": [
-      "Onça-pintada",
-      "Pavão",
-      "Orangotango",
-      "Polvo"
-    ],
-    "correct": 0,
     "aliases": [
       "onca",
       "jaguar",
@@ -7304,46 +7822,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/960px-Standing_jaguar.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Standing_jaguar.jpg",
       "attribution": "USFWS · Public domain"
     },
-    "clue": "Letras: O___________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:5",
+    "id": "v2:90295bd06ce163965bdd",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Flamingo",
       "Lobo",
-      "Orca",
-      "Baleia-jubarte"
+      "Crocodilo",
+      "Tubarão",
+      "Pinguim"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "lobo",
       "wolf"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/960px-Eurasian_wolf_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/960px-Eurasian_wolf_2.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg",
       "attribution": "User:Mas3cf · CC BY-SA 4.0"
     },
-    "clue": "Letras: L___"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:6",
+    "id": "v2:25e8f09c7480dabb1746",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Rinoceronte",
-      "Águia-americana",
+      "Guepardo",
       "Urso-pardo",
-      "Castor"
+      "Cobra",
+      "Hipopótamo"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "urso",
       "bear",
@@ -7351,92 +7873,100 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/960px-2010-kodiak-bear-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/960px-2010-kodiak-bear-1.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:2010-kodiak-bear-1.jpg",
       "attribution": "Yathin S Krishnappa · CC BY-SA 3.0"
     },
-    "clue": "Letras: U_________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:7",
+    "id": "v2:0dc4bc8d645e30c932f6",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Tubarão",
-      "Pinguim",
-      "Leopardo",
-      "Gorila"
+      "Tartaruga-marinha",
+      "Leão-marinho",
+      "Gorila",
+      "Leopardo-das-neves"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "gorila",
       "gorilla"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/960px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/960px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg",
       "attribution": "Thurundir · CC BY-SA 4.0"
     },
-    "clue": "Letras: G_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:8",
+    "id": "v2:02ecb73d7ae9e14b015c",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Golfinho",
-      "Cobra",
-      "Hipopótamo",
-      "Chimpanzé"
+      "Arara",
+      "Tamanduá-bandeira",
+      "Avestruz",
+      "Golfinho"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "golfinho",
       "dolphin"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/960px-Tursiops_truncatus_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/960px-Tursiops_truncatus_01.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Tursiops_truncatus_01.jpg",
       "attribution": "NASA · Public domain"
     },
-    "clue": "Letras: G_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:9",
+    "id": "v2:0eba18c0d3ceaf5413c4",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Leão-marinho",
       "Panda",
-      "Leopardo-das-neves",
-      "Bicho-preguiça"
+      "Polvo",
+      "Lontra",
+      "Pangolim"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "panda",
       "panda gigante"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/960px-Grosser_Panda.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/960px-Grosser_Panda.JPG",
       "source": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG",
       "attribution": "J. Patrick Fischer · CC BY-SA 3.0"
     },
-    "clue": "Letras: P____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:10",
+    "id": "v2:8a0b18b98d4bdd7c412a",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Tamanduá-bandeira",
-      "Avestruz",
+      "Baleia-jubarte",
       "Alce",
-      "Panda-vermelho"
+      "Dragão de Komodo",
+      "Tucano"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "alce",
       "moose",
@@ -7444,69 +7974,75 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/960px-Alaska_moose.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/960px-Alaska_moose.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Alaska_moose.jpg",
       "attribution": "Paxson Woelber · CC BY-SA 4.0"
     },
-    "clue": "Letras: A___"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:11",
+    "id": "v2:26b1540e70e85c937399",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Lontra",
-      "Pangolim",
-      "Bisão",
-      "Coala"
+      "Castor",
+      "Hiena",
+      "Coala",
+      "Urso-polar"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "coala",
       "koala"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/960px-Koala_climbing_tree.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/960px-Koala_climbing_tree.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg",
       "attribution": "Diliff · CC BY-SA 3.0"
     },
-    "clue": "Letras: C____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:12",
+    "id": "v2:9ec7187a71a5663182a9",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Lhama",
-      "Dragão de Komodo",
-      "Tucano",
-      "Camaleão"
+      "Leopardo",
+      "Capivara",
+      "Camaleão",
+      "Lhama"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "lhama",
       "llama"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/960px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/960px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Llamas,_Vernagt-Stausee,_Italy.jpg",
       "attribution": "Andrija12345678 · CC BY-SA 4.0"
     },
-    "clue": "Letras: L____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:13",
+    "id": "v2:fb2f16ee1b5cb734e04c",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Hiena",
       "Pavão",
-      "Urso-polar",
+      "Chimpanzé",
+      "Raposa-do-ártico",
       "Papagaio-do-mar"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "pavao",
       "peacock",
@@ -7514,108 +8050,98 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Peacock_on_tree_%2852077240794%29.jpg/960px-Peacock_on_tree_%2852077240794%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Peacock_on_tree_%2852077240794%29.jpg/960px-Peacock_on_tree_%2852077240794%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Peacock_on_tree_(52077240794).jpg",
       "attribution": "Kandukuru Nagarjun from Bangalore, India · CC BY 2.0"
     },
-    "clue": "Letras: P____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:14",
+    "id": "v2:741a2291679138253a7e",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Capivara",
-      "Porco-espinho",
+      "Bicho-preguiça",
       "Crocodilo",
+      "Porco-espinho",
       "Ornitorrinco"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "crocodilo",
       "crocodile"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg/960px-Crocodylus_acutus_mexico_02-edit1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg/960px-Crocodylus_acutus_mexico_02-edit1.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Crocodylus_acutus_mexico_02-edit1.jpg",
       "attribution": "Tomás Castelazo · CC BY-SA 2.5"
     },
-    "clue": "Letras: C________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:15",
+    "id": "v2:03d1b7d92515fbd58b1b",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Raposa-do-ártico",
+      "Panda-vermelho",
       "Cavalo-marinho",
-      "Emu",
-      "Canguru"
-    ],
-    "correct": 3,
-    "aliases": [
-      "canguru",
-      "kangaroo"
-    ],
-    "media": null,
-    "clue": "Letras: C______"
-  },
-  {
-    "id": "animais:16",
-    "quiz": "animais",
-    "text": "Que animal é este?",
-    "options": [
       "Flamingo",
-      "Nhu",
-      "Narval",
-      "Coruja"
+      "Emu"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "flamingo"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg/960px-010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg/960px-010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
       "attribution": "Giles Laurent · CC BY-SA 4.0"
     },
-    "clue": "Letras: F_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:17",
+    "id": "v2:97fd34bae3390a331f07",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Iguana",
-      "Zebra",
-      "Vombate",
-      "Lêmure"
+      "Bisão",
+      "Narval",
+      "Coruja",
+      "Zebra"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "zebra"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/960px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/960px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Equus_quagga_burchellii_-_Etosha,_2014.jpg",
       "attribution": "Yathin S Krishnappa · CC BY-SA 3.0"
     },
-    "clue": "Letras: Z____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:18",
+    "id": "v2:2c27b944369154ad34b7",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Morsa",
-      "Abutre",
       "Guepardo",
-      "Lince"
+      "Iguana",
+      "Vombate",
+      "Lêmure"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "guepardo",
       "cheetah",
@@ -7623,23 +8149,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/960px-Male_cheetah_facing_left_in_South_Africa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/960px-Male_cheetah_facing_left_in_South_Africa.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Male_cheetah_facing_left_in_South_Africa.jpg",
       "attribution": "AfricanConservation · CC BY-SA 4.0"
     },
-    "clue": "Letras: G_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:19",
+    "id": "v2:99288eed272934509504",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Diabo-da-tasmânia",
-      "Mandril",
-      "Tatu",
-      "Rinoceronte"
+      "Morsa",
+      "Rinoceronte",
+      "Abutre",
+      "Lince"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "rinoceronte",
       "rhinoceros",
@@ -7647,46 +8175,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
       "attribution": "Giles Laurent · CC BY-SA 4.0"
     },
-    "clue": "Letras: R__________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:20",
+    "id": "v2:b7a5a34f8cea9f3c1cc0",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Diabo-da-tasmânia",
+      "Mandril",
       "Orangotango",
-      "Kiwi",
-      "Coiote",
-      "Rã"
+      "Tatu"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "orangotango",
       "orangutan"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tanjung_Puting30477.jpg/960px-Tanjung_Puting30477.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tanjung_Puting30477.jpg/960px-Tanjung_Puting30477.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Tanjung_Puting30477.jpg",
       "attribution": "Nanosanchez · CC BY-SA 4.0"
     },
-    "clue": "Letras: O__________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:21",
+    "id": "v2:ec40baeec25d21f6911d",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Falcão-peregrino",
-      "Tartaruga-marinha",
-      "Raposa-do-deserto",
-      "Corvo"
+      "Kiwi",
+      "Coiote",
+      "Morcego",
+      "Tartaruga-marinha"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "tartaruga marinha",
       "tartaruga",
@@ -7695,23 +8227,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: T________________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:22",
+    "id": "v2:0722fa087e798188e709",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Guaxinim",
-      "Sapo",
       "Tubarão",
-      "Hamster"
+      "Falcão-peregrino",
+      "Raposa-do-deserto",
+      "Esquilo"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "tubarao",
       "shark",
@@ -7719,69 +8253,75 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/960px-White_shark.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/960px-White_shark.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:White_shark.jpg",
       "attribution": "Pterantula (Terry Goss) at en.wikipedia · CC BY 2.5"
     },
-    "clue": "Letras: T______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:23",
+    "id": "v2:e7c5bd48b5d14146f728",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Puma",
-      "Pombo",
-      "Lebre",
-      "Orca"
+      "Guaxinim",
+      "Orca",
+      "Rã",
+      "Camundongo"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "orca",
       "killer whale"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/960px-Killerwhales_jumping.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/960px-Killerwhales_jumping.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg",
       "attribution": "Robert Pittman · Public domain"
     },
-    "clue": "Letras: O___"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:24",
+    "id": "v2:636f2592fd6ccd0628ae",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Puma",
+      "Corvo",
       "Arara",
-      "Beija-flor",
-      "Coelho",
-      "Texugo"
+      "Gambá"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "arara",
       "macaw"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/960px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/960px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: A____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:25",
+    "id": "v2:33cca8c32d93dc7b3f6b",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Morcego",
-      "Cobra",
-      "Camundongo",
-      "Perereca-de-olhos-vermelhos"
+      "Beija-flor",
+      "Hamster",
+      "Anta",
+      "Cobra"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "cobra",
       "snake",
@@ -7789,23 +8329,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg/960px-12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg/960px-12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg",
       "attribution": "Michael Allen Smith from Seattle, USA · CC BY-SA 2.0"
     },
-    "clue": "Letras: C____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:26",
+    "id": "v2:533021f3a03520860a7c",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Esquilo",
-      "Gambá",
       "Águia-americana",
+      "Pombo",
+      "Toupeira",
       "Coruja-das-neves"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "aguia",
       "eagle",
@@ -7814,46 +8356,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/960px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/960px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Bald_eagle_about_to_fly_in_Alaska_(2016).jpg",
       "attribution": "Andy Morffew from Itchen Abbas, Hampshire, UK · CC BY 2.0"
     },
-    "clue": "Letras: Á______________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:27",
+    "id": "v2:dfadb07a2b804ceafc38",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Porquinho-da-índia",
-      "Anta",
-      "Tigre",
-      "Polvo"
+      "Coelho",
+      "Polvo",
+      "Ocapi",
+      "Tigre"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "polvo",
       "octopus"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/960px-Octopus2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/960px-Octopus2.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Octopus2.jpg",
       "attribution": "albert kok · CC BY-SA 3.0"
     },
-    "clue": "Letras: P____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:28",
+    "id": "v2:6cae1a441dc6ddc6c85a",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Leão-marinho",
-      "Toupeira",
+      "Lebre",
       "Arraia-manta",
-      "Onça-pintada"
+      "Leão-marinho",
+      "Lobo"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "leao marinho",
       "sea lion",
@@ -7861,46 +8407,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg/960px-California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg/960px-California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:California_Sea_Lion,_Monterey,_California,_United_States_imported_from_iNaturalist_photo_203598492.jpg",
       "attribution": "(c) Jonathan Eisen, some rights reserved (CC BY) · CC BY 4.0"
     },
-    "clue": "Letras: L___________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:29",
+    "id": "v2:e80350fa867043c553f1",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Ocapi",
-      "Pinguim",
+      "Texugo",
       "Leão",
-      "Gorila"
+      "Golfinho",
+      "Pinguim"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "pinguim",
       "penguin"
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg/960px-Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg",
       "attribution": "Ian Duffy from UK · CC BY 2.0"
     },
-    "clue": "Letras: P______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:30",
+    "id": "v2:53a3264e3cfcfe25f91d",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Axolote",
-      "Girafa",
       "Baleia-jubarte",
-      "Alce"
+      "Axolote",
+      "Onça-pintada",
+      "Coala"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "baleia jubarte",
       "baleia",
@@ -7909,23 +8459,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Humpback_whale_breaching_off_Cabo_San_Lucas.jpg/960px-Humpback_whale_breaching_off_Cabo_San_Lucas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Humpback_whale_breaching_off_Cabo_San_Lucas.jpg/960px-Humpback_whale_breaching_off_Cabo_San_Lucas.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Humpback_whale_breaching_off_Cabo_San_Lucas.jpg",
       "attribution": "Juan Cruzado Cortés · CC BY 4.0"
     },
-    "clue": "Letras: B_____________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:31",
+    "id": "v2:354c9727f8385ee1402d",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Suricato",
-      "Urso-pardo",
-      "Pavão",
-      "Tamanduá-bandeira"
+      "Tamanduá-bandeira",
+      "Gorila",
+      "Crocodilo"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "tamandua",
       "anteater",
@@ -7934,23 +8486,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Myresluger2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/960px-Myresluger2.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Myresluger2.jpg",
       "attribution": "Malene Thyssen · CC BY-SA 3.0"
     },
-    "clue": "Letras: T________________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:32",
+    "id": "v2:0bd4fd311e63ee29b113",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Hipopótamo",
       "Elefante",
-      "Panda",
-      "Flamingo"
+      "Alce",
+      "Hipopótamo",
+      "Guepardo"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "hipopotamo",
       "hippopotamus",
@@ -7958,115 +8512,125 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/960px-Portrait_Hippopotamus_in_the_water.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/960px-Portrait_Hippopotamus_in_the_water.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Portrait_Hippopotamus_in_the_water.jpg",
       "attribution": "Muhammad Mahdi Karim · CC BY-SA 4.0"
     },
-    "clue": "Letras: H_________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:33",
+    "id": "v2:35701361568947f3a33b",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Lobo",
-      "Castor",
-      "Lhama",
-      "Rinoceronte"
+      "Urso-pardo",
+      "Pavão",
+      "Tartaruga-marinha",
+      "Castor"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "castor",
       "beaver"
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/960px-American_Beaver.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:American_Beaver.jpg",
       "attribution": "Steve from Washington, DC, USA · CC BY-SA 2.0"
     },
-    "clue": "Letras: C_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:34",
+    "id": "v2:b83a33c37538c5b16e17",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Golfinho",
-      "Canguru",
       "Lontra",
-      "Tubarão"
+      "Panda",
+      "Zebra",
+      "Arara"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "lontra",
       "otter"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg/960px-Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg/960px-Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Northern_River_Otter_on_Seedskadee_NWR_(22802102984).jpg",
       "attribution": "USFWS Mountain-Prairie · Public domain"
     },
-    "clue": "Letras: L_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:35",
+    "id": "v2:24f587359fbaddca1e3e",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Coala",
-      "Guepardo",
-      "Cobra",
-      "Leopardo-das-neves"
+      "Lhama",
+      "Leopardo-das-neves",
+      "Orangotango",
+      "Polvo"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "leopardo das neves",
       "snow leopard"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/960px-Irbis4.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/960px-Irbis4.JPG",
       "source": "https://commons.wikimedia.org/wiki/File:Irbis4.JPG",
       "attribution": "Irbis1983 · Public domain"
     },
-    "clue": "Letras: L_________________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:36",
+    "id": "v2:15d7b8855d788e27d6be",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Flamingo",
+      "Orca",
       "Leopardo",
-      "Crocodilo",
-      "Tartaruga-marinha",
-      "Leão-marinho"
+      "Baleia-jubarte"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "leopardo",
       "leopard"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/960px-African_leopard_male_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/960px-African_leopard_male_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:African_leopard_male_(cropped).jpg",
       "attribution": "Sumeet Moghe · CC BY-SA 4.0"
     },
-    "clue": "Letras: L_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:37",
+    "id": "v2:68fe4055b56ab84a285f",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Zebra",
-      "Dragão de Komodo",
-      "Arara",
-      "Tamanduá-bandeira"
+      "Rinoceronte",
+      "Águia-americana",
+      "Castor",
+      "Dragão de Komodo"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "dragao de komodo",
       "komodo dragon",
@@ -8074,46 +8638,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/960px-202306_Varanus_komodoensis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/960px-202306_Varanus_komodoensis.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg",
       "attribution": "James Jolokia ( james1203 ) · CC BY 4.0"
     },
-    "clue": "Letras: D_____ d_ K_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:38",
+    "id": "v2:720697271537a2bdfeba",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Orangotango",
-      "Polvo",
       "Avestruz",
-      "Lontra"
+      "Tubarão",
+      "Pinguim",
+      "Leopardo"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "avestruz",
       "ostrich"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/960px-Struthio_camelus_-_Etosha_2014_%283%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/960px-Struthio_camelus_-_Etosha_2014_%283%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_-_Etosha_2014_(3).jpg",
       "attribution": "Yathin S Krishnappa · CC BY-SA 4.0"
     },
-    "clue": "Letras: A_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:39",
+    "id": "v2:27deff90b4b1540ffb15",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Orca",
-      "Baleia-jubarte",
-      "Dragão de Komodo",
-      "Chimpanzé"
+      "Cobra",
+      "Chimpanzé",
+      "Hipopótamo",
+      "Hiena"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "chimpanze",
       "chimpanzee",
@@ -8121,69 +8689,75 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/960px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/960px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
       "attribution": "Giles Laurent · CC BY-SA 4.0"
     },
-    "clue": "Letras: C________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:40",
+    "id": "v2:a9aace37984ec38c0926",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Leão-marinho",
+      "Leopardo-das-neves",
       "Hiena",
-      "Águia-americana",
-      "Castor",
-      "Pangolim"
+      "Capivara"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "hiena",
       "hyena"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/960px-Spotted_hyena_%28Crocuta_crocuta%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/960px-Spotted_hyena_%28Crocuta_crocuta%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Spotted_hyena_(Crocuta_crocuta).jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: H____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:41",
+    "id": "v2:5d55fea6894c2ab76bca",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Pinguim",
-      "Pangolim",
-      "Leopardo",
-      "Tucano"
+      "Tamanduá-bandeira",
+      "Avestruz",
+      "Raposa-do-ártico",
+      "Pangolim"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "pangolim",
       "pangolin"
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/Eupholidota.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Eupholidota.jpg/960px-Eupholidota.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Eupholidota.jpg",
       "attribution": "derivative work: user:The Explaner · CC BY-SA 4.0"
     },
-    "clue": "Letras: P_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:42",
+    "id": "v2:bf699e7300e87d4d05ef",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Hipopótamo",
-      "Chimpanzé",
       "Bicho-preguiça",
-      "Urso-polar"
+      "Lontra",
+      "Pangolim",
+      "Porco-espinho"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "bicho preguica",
       "preguica",
@@ -8192,92 +8766,100 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/960px-Bicho-pregui%C3%A7a_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/960px-Bicho-pregui%C3%A7a_3.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Bicho-pregui%C3%A7a_3.jpg",
       "attribution": "Daniella Maraschiello · CC BY-SA 4.0"
     },
-    "clue": "Letras: B_____________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:43",
+    "id": "v2:2bff70122cb1220f75e7",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Leopardo-das-neves",
-      "Bicho-preguiça",
-      "Porco-espinho",
-      "Capivara"
+      "Dragão de Komodo",
+      "Capivara",
+      "Panda-vermelho",
+      "Cavalo-marinho"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "capivara",
       "capybara"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Capybaracropped.jpg/960px-Capybaracropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Capybaracropped.jpg/960px-Capybaracropped.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Capybaracropped.jpg",
       "attribution": "Giles Laurent · CC BY-SA 4.0"
     },
-    "clue": "Letras: C_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:44",
+    "id": "v2:6ce9351ad26b446f05ae",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Hiena",
+      "Bisão",
       "Tucano",
-      "Avestruz",
-      "Raposa-do-ártico",
-      "Cavalo-marinho"
+      "Narval"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "tucano",
       "toucan"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/960px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/960px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
       "attribution": "Giles Laurent · CC BY-SA 4.0"
     },
-    "clue": "Letras: T_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:45",
+    "id": "v2:154d9c84577928ee1c10",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Pangolim",
-      "Panda-vermelho",
-      "Nhu",
-      "Narval"
+      "Capivara",
+      "Iguana",
+      "Vombate",
+      "Panda-vermelho"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "panda vermelho",
       "red panda"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg/960px-Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg/960px-Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Red_Panda,_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
       "attribution": "Sunuwargr · CC BY-SA 4.0"
     },
-    "clue": "Letras: P_____________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:46",
+    "id": "v2:b3d1bddabba432ae1a39",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Tucano",
-      "Iguana",
       "Raposa-do-ártico",
-      "Vombate"
+      "Urso-polar",
+      "Morsa",
+      "Abutre"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "raposa do artico",
       "arctic fox",
@@ -8285,46 +8867,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg/960px-Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg/960px-Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Vulpes_lagopus_in_Iceland_(cropped_3).jpg",
       "attribution": "Jonatan Pie ( unsplash.com/@r3dmax ) · CC0"
     },
-    "clue": "Letras: R_______________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:47",
+    "id": "v2:c0a4740cde3ec477eef6",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Bisão",
-      "Morsa",
-      "Abutre",
-      "Urso-polar"
+      "Camaleão",
+      "Urso-polar",
+      "Diabo-da-tasmânia",
+      "Mandril"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "urso polar",
       "polar bear"
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/960px-Polar_Bear_-_Alaska_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg",
       "attribution": "Alan Wilson · CC BY-SA 3.0"
     },
-    "clue": "Letras: U_________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:48",
+    "id": "v2:a32701ecd3257dc088ad",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Papagaio-do-mar",
+      "Kiwi",
       "Bisão",
-      "Camaleão",
-      "Diabo-da-tasmânia",
-      "Mandril"
+      "Coiote"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "bisao",
       "bison",
@@ -8332,65 +8918,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/960px-American_bison_k5680-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/960px-American_bison_k5680-1.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:American_bison_k5680-1.jpg",
       "attribution": "Jack Dykinga · Public domain"
     },
-    "clue": "Letras: B____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:49",
-    "quiz": "animais",
-    "text": "Que animal é este?",
-    "options": [
-      "Papagaio-do-mar",
-      "Nhu",
-      "Kiwi",
-      "Coiote"
-    ],
-    "correct": 1,
-    "aliases": [
-      "nhu",
-      "wildebeest",
-      "gnu"
-    ],
-    "media": null,
-    "clue": "Letras: N__"
-  },
-  {
-    "id": "animais:50",
+    "id": "v2:382efbff4ede5904dac1",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Ornitorrinco",
       "Falcão-peregrino",
-      "Porco-espinho",
-      "Raposa-do-deserto"
+      "Raposa-do-deserto",
+      "Porco-espinho"
     ],
-    "correct": 2,
+    "correct": 3,
     "aliases": [
       "porco espinho",
       "porcupine"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Erethizon_dorsatum_-_Prince_Rupert.jpg/960px-Erethizon_dorsatum_-_Prince_Rupert.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Erethizon_dorsatum_-_Prince_Rupert.jpg/960px-Erethizon_dorsatum_-_Prince_Rupert.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Erethizon_dorsatum_-_Prince_Rupert.jpg",
       "attribution": "The Cosmonaut · CC BY-SA 2.5 ca"
     },
-    "clue": "Letras: P____________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:51",
+    "id": "v2:953a9a380bb114e32289",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Camaleão",
       "Emu",
       "Guaxinim",
-      "Sapo",
-      "Camaleão"
+      "Rã"
     ],
-    "correct": 3,
+    "correct": 0,
     "aliases": [
       "camaleao",
       "chameleon",
@@ -8398,296 +8969,322 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Panther_Chameleon_738367_%28cropped%29.jpg/960px-Panther_Chameleon_738367_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Panther_Chameleon_738367_%28cropped%29.jpg/960px-Panther_Chameleon_738367_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Panther_Chameleon_738367_(cropped).jpg",
       "attribution": "Rod Waddington · CC BY-SA 2.0"
     },
-    "clue": "Letras: C_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:52",
+    "id": "v2:c66547eb753fc41e3ab2",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Iguana",
       "Coruja",
+      "Iguana",
       "Puma",
-      "Pombo"
+      "Corvo"
     ],
-    "correct": 0,
+    "correct": 1,
     "aliases": [
       "iguana"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Iguana_iguana_%28male_resting%29.jpg/960px-Iguana_iguana_%28male_resting%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Iguana_iguana_%28male_resting%29.jpg/960px-Iguana_iguana_%28male_resting%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Iguana_iguana_(male_resting).jpg",
       "attribution": "Hans Hillewaert · CC BY-SA 4.0"
     },
-    "clue": "Letras: I_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:53",
+    "id": "v2:127a4ca6cb80c96cca15",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Lêmure",
-      "Cavalo-marinho",
       "Beija-flor",
-      "Coelho"
+      "Cavalo-marinho",
+      "Hamster"
     ],
-    "correct": 1,
+    "correct": 2,
     "aliases": [
       "cavalo marinho",
       "seahorse"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/960px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/960px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg",
       "attribution": "Hans Hillewaert · CC BY-SA 4.0"
     },
-    "clue": "Letras: C_____________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:54",
+    "id": "v2:fe3be76abe9702733511",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Lince",
-      "Morcego",
-      "Papagaio-do-mar",
-      "Camundongo"
+      "Pombo",
+      "Toupeira",
+      "Papagaio-do-mar"
     ],
-    "correct": 2,
+    "correct": 3,
     "aliases": [
       "papagaio do mar",
       "puffin"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/960px-Puffin_%28Fratercula_arctica%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/960px-Puffin_%28Fratercula_arctica%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Puffin_(Fratercula_arctica).jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: P______________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:55",
+    "id": "v2:216938af9871080be293",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Morsa",
       "Tatu",
-      "Esquilo",
-      "Gambá",
-      "Morsa"
+      "Coelho",
+      "Ocapi"
     ],
-    "correct": 3,
+    "correct": 0,
     "aliases": [
       "morsa",
       "walrus"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg/960px-Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg/960px-Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg",
       "attribution": "Nixette · CC BY-SA 4.0"
     },
-    "clue": "Letras: M____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:56",
+    "id": "v2:4e3adb695fe763d346b9",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Morcego",
       "Narval",
-      "Rã",
-      "Porquinho-da-índia",
-      "Anta"
+      "Lebre",
+      "Arraia-manta"
     ],
-    "correct": 0,
+    "correct": 1,
     "aliases": [
       "narval",
       "narwhal"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg/960px-%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg/960px-%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg",
       "attribution": "пресс-служба ПАО \"Газпром нефть\" · CC BY-SA 4.0"
     },
-    "clue": "Letras: N_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:57",
+    "id": "v2:6da6a261977e4ea44a96",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Corvo",
+      "Esquilo",
+      "Texugo",
       "Ornitorrinco",
-      "Toupeira",
-      "Arraia-manta"
+      "Leão"
     ],
-    "correct": 1,
+    "correct": 2,
     "aliases": [
       "ornitorrinco",
       "platypus"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg/960px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg/960px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: O___________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:58",
+    "id": "v2:10a977ff47320e8fab2e",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Hamster",
-      "Ocapi",
-      "Diabo-da-tasmânia",
-      "Leão"
+      "Camundongo",
+      "Axolote",
+      "Onça-pintada",
+      "Diabo-da-tasmânia"
     ],
-    "correct": 2,
+    "correct": 3,
     "aliases": [
       "diabo da tasmania",
       "tasmanian devil"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/960px-Sarcophilus_harrisii_taranna.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/960px-Sarcophilus_harrisii_taranna.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Sarcophilus_harrisii_taranna.jpg",
       "attribution": "JJ Harrison ( https://www.jjharrison.com.au/ ) · CC BY-SA 3.0"
     },
-    "clue": "Letras: D________________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:59",
+    "id": "v2:5d67752f5457c98f4834",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Lebre",
-      "Axolote",
-      "Girafa",
-      "Vombate"
+      "Vombate",
+      "Gambá",
+      "Suricato",
+      "Gorila"
     ],
-    "correct": 3,
+    "correct": 0,
     "aliases": [
       "vombate",
       "wombat"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg/960px-Vombatus_ursinus_-Maria_Island_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg/960px-Vombatus_ursinus_-Maria_Island_National_Park.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Vombatus_ursinus_-Maria_Island_National_Park.jpg",
       "attribution": "JJ Harrison ( jjharrison89@facebook.com ) · CC BY-SA 3.0"
     },
-    "clue": "Letras: V______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:60",
+    "id": "v2:297ca32477f2df3f1784",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Anta",
       "Emu",
-      "Texugo",
-      "Suricato",
-      "Urso-pardo"
+      "Elefante",
+      "Alce"
     ],
-    "correct": 0,
+    "correct": 1,
     "aliases": [
       "emu"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Emu_1_-_Tidbinbilla.jpg/960px-Emu_1_-_Tidbinbilla.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Emu_1_-_Tidbinbilla.jpg/960px-Emu_1_-_Tidbinbilla.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Emu_1_-_Tidbinbilla.jpg",
       "attribution": "JJ Harrison ( https://www.jjharrison.com.au/ ) · CC BY-SA 4.0"
     },
-    "clue": "Letras: E__"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:61",
+    "id": "v2:06b14ddcd375bef838ef",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Perereca-de-olhos-vermelhos",
+      "Coruja-das-neves",
+      "Urso-pardo",
       "Kiwi",
-      "Elefante",
-      "Panda"
+      "Pavão"
     ],
-    "correct": 1,
+    "correct": 2,
     "aliases": [
       "kiwi"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/TeTuatahianui.jpg/960px-TeTuatahianui.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/TeTuatahianui.jpg/960px-TeTuatahianui.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:TeTuatahianui.jpg",
       "attribution": "Maungatautari Ecological Island Trust · Public domain"
     },
-    "clue": "Letras: K___"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:62",
+    "id": "v2:ee65281c15f0acedb1a4",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Coruja-das-neves",
-      "Lobo",
-      "Abutre",
-      "Lhama"
+      "Tigre",
+      "Panda",
+      "Zebra",
+      "Abutre"
     ],
-    "correct": 2,
+    "correct": 3,
     "aliases": [
       "abutre",
       "vulture"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Gyps_fulvus_in_flight_-_Spain.jpg/960px-Gyps_fulvus_in_flight_-_Spain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Gyps_fulvus_in_flight_-_Spain.jpg/960px-Gyps_fulvus_in_flight_-_Spain.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Gyps_fulvus_in_flight_-_Spain.jpg",
       "attribution": "Pierre Dalous · CC BY-SA 3.0"
     },
-    "clue": "Letras: A_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:63",
+    "id": "v2:1c49169b655f919664ae",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Tigre",
-      "Golfinho",
-      "Canguru",
-      "Coruja"
+      "Coruja",
+      "Lobo",
+      "Lhama",
+      "Orangotango"
     ],
-    "correct": 3,
+    "correct": 0,
     "aliases": [
       "coruja",
       "owl"
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg/960px-Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Bubo_bubo_3_(Martin_Mecnarowski).jpg",
       "attribution": "Martin Mecnarowski ( http://www.photomecan.eu/ ) · CC BY-SA 3.0"
     },
-    "clue": "Letras: C_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:64",
+    "id": "v2:177b7583e07c819056e8",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Golfinho",
       "Falcão-peregrino",
-      "Onça-pintada",
-      "Coala",
-      "Guepardo"
+      "Flamingo",
+      "Orca"
     ],
-    "correct": 0,
+    "correct": 1,
     "aliases": [
       "falcao peregrino",
       "peregrine falcon",
@@ -8695,46 +9292,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/960px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/960px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
       "attribution": "Mykola Swarnyk · CC BY-SA 3.0"
     },
-    "clue": "Letras: F_______________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:65",
+    "id": "v2:5bb977375128c5a16a97",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Gorila",
+      "Coala",
+      "Rinoceronte",
       "Mandril",
-      "Crocodilo",
-      "Tartaruga-marinha"
+      "Águia-americana"
     ],
-    "correct": 1,
+    "correct": 2,
     "aliases": [
       "mandril",
       "mandrill"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg/960px-Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg/960px-Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Mandrill_Albert_September_2015_Zoo_Berlin_(2).jpg",
       "attribution": "Katma0601 · CC BY-SA 4.0"
     },
-    "clue": "Letras: M______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:66",
+    "id": "v2:6e3fa32a95bdd110b2eb",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Alce",
-      "Zebra",
-      "Lêmure",
-      "Arara"
+      "Crocodilo",
+      "Tubarão",
+      "Pinguim",
+      "Lêmure"
     ],
-    "correct": 2,
+    "correct": 3,
     "aliases": [
       "lemure",
       "lemur",
@@ -8742,69 +9343,75 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg/960px-Ring-tailed_lemur_%28Lemur_catta%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg/960px-Ring-tailed_lemur_%28Lemur_catta%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: L_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:67",
+    "id": "v2:3fdc6752586cfab5ce05",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Pavão",
-      "Orangotango",
-      "Polvo",
-      "Guaxinim"
+      "Guaxinim",
+      "Guepardo",
+      "Cobra",
+      "Hipopótamo"
     ],
-    "correct": 3,
+    "correct": 0,
     "aliases": [
       "guaxinim",
       "raccoon"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/960px-Raccoon_in_Central_Park_%2835264%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/960px-Raccoon_in_Central_Park_%2835264%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Raccoon_in_Central_Park_(35264).jpg",
       "attribution": "Rhododendrites · CC BY-SA 4.0"
     },
-    "clue": "Letras: G_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:68",
+    "id": "v2:73f06986bce706739137",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Tartaruga-marinha",
       "Coiote",
-      "Flamingo",
-      "Orca",
-      "Baleia-jubarte"
+      "Leão-marinho",
+      "Leopardo-das-neves"
     ],
-    "correct": 0,
+    "correct": 1,
     "aliases": [
       "coiote",
       "coyote"
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/2009-Coyote-Yosemite.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/2009-Coyote-Yosemite.jpg/960px-2009-Coyote-Yosemite.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:2009-Coyote-Yosemite.jpg",
       "attribution": "Yathin S Krishnappa · CC BY-SA 3.0"
     },
-    "clue": "Letras: C_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:69",
+    "id": "v2:a8c3bd17b9bd0cb13dbb",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Rinoceronte",
+      "Arara",
+      "Tamanduá-bandeira",
       "Lince",
-      "Águia-americana",
-      "Castor"
+      "Avestruz"
     ],
-    "correct": 1,
+    "correct": 2,
     "aliases": [
       "lince",
       "bobcat",
@@ -8812,23 +9419,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bobcat_at_Columbus_Zoo_Boo.jpg/960px-Bobcat_at_Columbus_Zoo_Boo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bobcat_at_Columbus_Zoo_Boo.jpg/960px-Bobcat_at_Columbus_Zoo_Boo.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Bobcat_at_Columbus_Zoo_Boo.jpg",
       "attribution": "Becker1999 (Paul and Cathy) · CC BY 2.0"
     },
-    "clue": "Letras: L____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:70",
+    "id": "v2:84ec13713eb48e4d1d63",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Tubarão",
-      "Pinguim",
-      "Puma",
-      "Leopardo"
+      "Polvo",
+      "Lontra",
+      "Pangolim",
+      "Puma"
     ],
-    "correct": 2,
+    "correct": 3,
     "aliases": [
       "puma",
       "cougar",
@@ -8838,23 +9447,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/960px-Mountain_Lion_in_Glacier_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/960px-Mountain_Lion_in_Glacier_National_Park.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Mountain_Lion_in_Glacier_National_Park.jpg",
       "attribution": "National Park Service · Public domain"
     },
-    "clue": "Letras: P___"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:71",
+    "id": "v2:4d48f2f2b5096e7bcf99",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Cobra",
-      "Hipopótamo",
-      "Chimpanzé",
-      "Raposa-do-deserto"
+      "Raposa-do-deserto",
+      "Baleia-jubarte",
+      "Dragão de Komodo",
+      "Tucano"
     ],
-    "correct": 3,
+    "correct": 0,
     "aliases": [
       "raposa do deserto",
       "fennec fox",
@@ -8862,46 +9473,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Fennec_Fox_Vulpes_zerda.jpg/960px-Fennec_Fox_Vulpes_zerda.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Fennec_Fox_Vulpes_zerda.jpg/960px-Fennec_Fox_Vulpes_zerda.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Fennec_Fox_Vulpes_zerda.jpg",
       "attribution": "Drew Avery · CC BY 2.0"
     },
-    "clue": "Letras: R________________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:72",
+    "id": "v2:de84d67483aaca1cff3e",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
+      "Castor",
       "Tatu",
-      "Leão-marinho",
-      "Leopardo-das-neves",
-      "Bicho-preguiça"
+      "Hiena",
+      "Urso-polar"
     ],
-    "correct": 0,
+    "correct": 1,
     "aliases": [
       "tatu",
       "armadillo"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg/960px-Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg/960px-Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg",
       "attribution": "Aramburu Carlos · CC BY 4.0"
     },
-    "clue": "Letras: T___"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:73",
+    "id": "v2:02f0b38b6e8c4505e453",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Tamanduá-bandeira",
+      "Leopardo",
+      "Capivara",
       "Beija-flor",
-      "Avestruz",
-      "Panda-vermelho"
+      "Camaleão"
     ],
-    "correct": 1,
+    "correct": 2,
     "aliases": [
       "beija flor",
       "hummingbird",
@@ -8909,38 +9524,22 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Trinidad_and_Tobago_hummingbirds_composite.jpg/960px-Trinidad_and_Tobago_hummingbirds_composite.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Trinidad_and_Tobago_hummingbirds_composite.jpg/960px-Trinidad_and_Tobago_hummingbirds_composite.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Trinidad_and_Tobago_hummingbirds_composite.jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: B_________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:74",
+    "id": "v2:ac964a9f76c622edffa4",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Lontra",
-      "Pangolim",
-      "Sapo",
-      "Bisão"
-    ],
-    "correct": 2,
-    "aliases": [
-      "sapo",
-      "toad"
-    ],
-    "media": null,
-    "clue": "Letras: S___"
-  },
-  {
-    "id": "animais:75",
-    "quiz": "animais",
-    "text": "Que animal é este?",
-    "options": [
-      "Dragão de Komodo",
-      "Tucano",
-      "Camaleão",
+      "Chimpanzé",
+      "Raposa-do-ártico",
+      "Papagaio-do-mar",
       "Rã"
     ],
     "correct": 3,
@@ -8951,21 +9550,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Red-eyed_Leaf_Frog_%2849661076226%29.jpg/960px-Red-eyed_Leaf_Frog_%2849661076226%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Red-eyed_Leaf_Frog_%2849661076226%29.jpg/960px-Red-eyed_Leaf_Frog_%2849661076226%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Red-eyed_Leaf_Frog_(49661076226).jpg",
       "attribution": "Charlie Jackson · CC BY 2.0"
     },
-    "clue": "Letras: R_"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:76",
+    "id": "v2:de05fa918b545178f34c",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Morcego",
-      "Hiena",
-      "Urso-polar",
-      "Papagaio-do-mar"
+      "Bicho-preguiça",
+      "Porco-espinho",
+      "Ornitorrinco"
     ],
     "correct": 0,
     "aliases": [
@@ -8974,21 +9575,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Desmo-Flug-01.jpg/960px-Desmo-Flug-01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Desmo-Flug-01.jpg/960px-Desmo-Flug-01.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Desmo-Flug-01.jpg",
       "attribution": "Uwe Schmidt · CC BY-SA 4.0"
     },
-    "clue": "Letras: M______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:77",
+    "id": "v2:4eb6dfcc7df19e72ff61",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Capivara",
+      "Panda-vermelho",
       "Pombo",
-      "Porco-espinho",
-      "Ornitorrinco"
+      "Cavalo-marinho",
+      "Emu"
     ],
     "correct": 1,
     "aliases": [
@@ -8997,21 +9600,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Treron_vernans_male_-_Kent_Ridge_Park.jpg/960px-Treron_vernans_male_-_Kent_Ridge_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Treron_vernans_male_-_Kent_Ridge_Park.jpg/960px-Treron_vernans_male_-_Kent_Ridge_Park.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Treron_vernans_male_-_Kent_Ridge_Park.jpg",
       "attribution": "JJ Harrison ( https://tiny.jjharrison.com.au/t/3rUZckpXLJTJuAko ) · CC BY-SA 4.0"
     },
-    "clue": "Letras: P____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:78",
+    "id": "v2:1d87a81bfc741bd6328c",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Raposa-do-ártico",
-      "Cavalo-marinho",
+      "Bisão",
+      "Narval",
       "Corvo",
-      "Emu"
+      "Coruja"
     ],
     "correct": 2,
     "aliases": [
@@ -9020,20 +9625,22 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Carrion_crow_2022_04_05_05_02.jpg/960px-Carrion_crow_2022_04_05_05_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Carrion_crow_2022_04_05_05_02.jpg/960px-Carrion_crow_2022_04_05_05_02.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Carrion_crow_2022_04_05_05_02.jpg",
       "attribution": "Alexis Lours · CC BY 4.0"
     },
-    "clue": "Letras: C____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:79",
+    "id": "v2:677916d790abfa4cb58c",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Nhu",
-      "Narval",
-      "Coruja",
+      "Iguana",
+      "Vombate",
+      "Lêmure",
       "Esquilo"
     ],
     "correct": 3,
@@ -9043,21 +9650,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/EasternGraySquirrel_GAm.jpg/960px-EasternGraySquirrel_GAm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/EasternGraySquirrel_GAm.jpg/960px-EasternGraySquirrel_GAm.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:EasternGraySquirrel_GAm.jpg",
       "attribution": "JeffreyGammon · CC BY-SA 4.0"
     },
-    "clue": "Letras: E______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:80",
+    "id": "v2:a16caa8f7feac2ba191a",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Coelho",
-      "Iguana",
-      "Vombate",
-      "Lêmure"
+      "Morsa",
+      "Abutre",
+      "Lince"
     ],
     "correct": 0,
     "aliases": [
@@ -9066,21 +9675,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg/960px-Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg/960px-Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg",
       "source": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_-_euqirneto_-_419737670_(cropped).jpeg",
       "attribution": "euqirneto · CC BY 4.0"
     },
-    "clue": "Letras: C_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:81",
+    "id": "v2:16c38ccc7e922d7d9ab9",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Morsa",
+      "Diabo-da-tasmânia",
       "Hamster",
-      "Abutre",
-      "Lince"
+      "Mandril",
+      "Tatu"
     ],
     "correct": 1,
     "aliases": [
@@ -9089,41 +9700,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/European_hamster_%28Cricetus_cricetus%29_Meidling.jpg/960px-European_hamster_%28Cricetus_cricetus%29_Meidling.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/European_hamster_%28Cricetus_cricetus%29_Meidling.jpg/960px-European_hamster_%28Cricetus_cricetus%29_Meidling.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:European_hamster_(Cricetus_cricetus)_Meidling.jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: H______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:82",
-    "quiz": "animais",
-    "text": "Que animal é este?",
-    "options": [
-      "Diabo-da-tasmânia",
-      "Mandril",
-      "Porquinho-da-índia",
-      "Tatu"
-    ],
-    "correct": 2,
-    "aliases": [
-      "porquinho da india",
-      "guinea pig"
-    ],
-    "media": null,
-    "clue": "Letras: P_________________"
-  },
-  {
-    "id": "animais:83",
+    "id": "v2:521ab6e8ad8e2351fdd7",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Kiwi",
       "Coiote",
-      "Rã",
-      "Camundongo"
+      "Camundongo",
+      "Morcego"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "camundongo",
       "mouse",
@@ -9131,69 +9726,75 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Mouse_white_background.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Mouse_white_background.jpg/960px-Mouse_white_background.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Mouse_white_background.jpg",
       "attribution": "Unknown author Unknown author (original) / Ilmari Karonen (editing) · Public domain"
     },
-    "clue": "Letras: C_________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:84",
+    "id": "v2:bb1812e60c455e81d68d",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Lebre",
       "Falcão-peregrino",
       "Raposa-do-deserto",
-      "Corvo"
+      "Esquilo",
+      "Lebre"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "lebre",
       "hare"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/European_hare_%28_Lepus_europaeus%29.jpg/960px-European_hare_%28_Lepus_europaeus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/European_hare_%28_Lepus_europaeus%29.jpg/960px-European_hare_%28_Lepus_europaeus%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:European_hare_(_Lepus_europaeus).jpg",
       "attribution": "Nagusb · CC BY-SA 4.0"
     },
-    "clue": "Letras: L____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:85",
+    "id": "v2:559c17de4e3c7651952d",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Guaxinim",
       "Toupeira",
-      "Sapo",
-      "Hamster"
+      "Guaxinim",
+      "Rã",
+      "Camundongo"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "toupeira",
       "mole"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Talpa_europaea_I.jpg/960px-Talpa_europaea_I.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Talpa_europaea_I.jpg/960px-Talpa_europaea_I.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Talpa_europaea_I.jpg",
       "attribution": "bristolian · CC BY 4.0"
     },
-    "clue": "Letras: T_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:86",
+    "id": "v2:f90aa591772901efcf34",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Puma",
-      "Pombo",
       "Gambá",
-      "Lebre"
+      "Corvo",
+      "Texugo"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "gamba",
       "skunk",
@@ -9201,133 +9802,125 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/960px-Skunk_about_to_spray.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/960px-Skunk_about_to_spray.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Skunk_about_to_spray.jpg",
       "attribution": "Wallace Keck · Public domain"
     },
-    "clue": "Letras: G____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:87",
+    "id": "v2:09a7a614763e4256f9ea",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Beija-flor",
-      "Coelho",
-      "Ocapi",
-      "Texugo"
+      "Hamster",
+      "Texugo",
+      "Axolote"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "texugo",
       "badger"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/European_badger_%28Meles_meles_taxus%29_Drenthe.jpg/960px-European_badger_%28Meles_meles_taxus%29_Drenthe.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/European_badger_%28Meles_meles_taxus%29_Drenthe.jpg/960px-European_badger_%28Meles_meles_taxus%29_Drenthe.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:European_badger_(Meles_meles_taxus)_Drenthe.jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: T_____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:88",
+    "id": "v2:06175a6437d295387864",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Ocapi",
-      "Morcego",
-      "Camundongo",
-      "Axolote"
+      "Pombo",
+      "Toupeira",
+      "Suricato",
+      "Ocapi"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "ocapi",
       "okapi"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/960px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/960px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg",
       "attribution": "Daniel Jolivet · CC BY 2.0"
     },
-    "clue": "Letras: O____"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:89",
+    "id": "v2:7027a7141d07e1533c8c",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Esquilo",
       "Anta",
-      "Gambá",
-      "Suricato"
+      "Coelho",
+      "Ocapi",
+      "Elefante"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "anta",
       "tapir"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/South_American_tapir_%28Tapirus_terrestris%29.JPG/960px-South_American_tapir_%28Tapirus_terrestris%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/South_American_tapir_%28Tapirus_terrestris%29.JPG/960px-South_American_tapir_%28Tapirus_terrestris%29.JPG",
       "source": "https://commons.wikimedia.org/wiki/File:South_American_tapir_(Tapirus_terrestris).JPG",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: A___"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:90",
+    "id": "v2:68dd869c9cee71e73c4e",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Porquinho-da-índia",
-      "Anta",
-      "Perereca-de-olhos-vermelhos",
-      "Elefante"
-    ],
-    "correct": 2,
-    "aliases": [
-      "perereca de olhos vermelhos",
-      "red eyed tree frog"
-    ],
-    "media": null,
-    "clue": "Letras: P__________________________"
-  },
-  {
-    "id": "animais:91",
-    "quiz": "animais",
-    "text": "Que animal é este?",
-    "options": [
-      "Toupeira",
+      "Lebre",
+      "Axolote",
       "Coruja-das-neves",
-      "Lobo",
-      "Axolote"
+      "Urso-pardo"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "axolote",
       "axolotl"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/960px-Axolotl_ganz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/960px-Axolotl_ganz.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Axolotl_ganz.jpg",
       "attribution": "LoKiLeCh · CC BY-SA 3.0"
     },
-    "clue": "Letras: A______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:92",
+    "id": "v2:0fc08e1d2d29c6865e32",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Arraia-manta",
-      "Ocapi",
+      "Texugo",
       "Tigre",
-      "Golfinho"
+      "Arraia-manta",
+      "Panda"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "arraia manta",
       "raia manta",
@@ -9335,67 +9928,73 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG/960px-Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG/960px-Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG",
       "source": "https://commons.wikimedia.org/wiki/File:Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG",
       "attribution": "Shiyam ElkCloner · CC BY-SA 3.0"
     },
-    "clue": "Letras: A___________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:93",
+    "id": "v2:59ee6e605158913c2654",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
       "Axolote",
-      "Coruja-das-neves",
-      "Onça-pintada",
-      "Coala"
+      "Lobo",
+      "Lhama",
+      "Coruja-das-neves"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "coruja das neves",
       "snowy owl"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/960px-SnowyOwlAmericanBlackDuck.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/960px-SnowyOwlAmericanBlackDuck.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:SnowyOwlAmericanBlackDuck.jpg",
       "attribution": "Chuck Homler d/b/a Focus On Wildlife · CC BY-SA 3.0"
     },
-    "clue": "Letras: C_______________"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "animais:94",
+    "id": "v2:de4dadfbc04aee2353fc",
     "quiz": "animais",
     "text": "Que animal é este?",
     "options": [
-      "Leão",
-      "Gorila",
       "Suricato",
-      "Crocodilo"
+      "Leão",
+      "Golfinho",
+      "Flamingo"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "suricato",
       "meerkat"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/960px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/960px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_Tswalu.jpg",
       "attribution": "Charles J. Sharp · CC BY-SA 4.0"
     },
-    "clue": "Letras: S_______"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:0",
+    "id": "v2:54debcd92b224983a53e",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
       "Mona Lisa",
       "O Grito",
-      "Saturno Devorando o Filho",
-      "A Última Ceia"
+      "Davi",
+      "Vênus de Milo"
     ],
     "correct": 0,
     "aliases": [
@@ -9405,21 +10004,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Mona_Lisa.jpg",
       "attribution": "Leonardo da Vinci · Public domain"
     },
-    "clue": "Leonardo da Vinci, ~1503"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:1",
+    "id": "v2:74e69ada29ec89cc5b44",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Grande Onda de Kanagawa",
+      "O Nascimento de Vênus",
       "O Grito",
-      "Moça com Brinco de Pérola",
-      "Teto da Capela Sistina"
+      "Nighthawks",
+      "Retrato da Mãe do Artista"
     ],
     "correct": 1,
     "aliases": [
@@ -9429,21 +10030,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/960px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/960px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg",
       "attribution": "Edvard Munch · Public domain"
     },
-    "clue": "Edvard Munch, 1893"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:2",
+    "id": "v2:ac2cdbfaf048def212b6",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Persistência da Memória",
-      "Uma Tarde de Domingo na Grande Jatte",
+      "A Escola de Atenas",
+      "As Meninas",
       "A Noite Estrelada",
-      "A Ronda Noturna"
+      "O Jardim das Delícias"
     ],
     "correct": 2,
     "aliases": [
@@ -9453,40 +10056,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/960px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/960px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
       "attribution": "Vincent van Gogh · Public domain"
     },
-    "clue": "Vincent van Gogh, 1889"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:3",
+    "id": "v2:e69267f65d9e4e92d429",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Davi",
-      "Vênus de Milo",
-      "Olympia",
-      "Guernica"
+      "American Gothic",
+      "O Beijo",
+      "Andarilho sobre o Mar de Névoa",
+      "A Grande Onda de Kanagawa"
     ],
     "correct": 3,
-    "aliases": [
-      "guernica"
-    ],
-    "media": null,
-    "clue": "Pablo Picasso, 1937"
-  },
-  {
-    "id": "arte:4",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "A Grande Onda de Kanagawa",
-      "Nighthawks",
-      "Retrato da Mãe do Artista",
-      "Baile no Moulin de la Galette"
-    ],
-    "correct": 0,
     "aliases": [
       "a grande onda",
       "grande onda",
@@ -9495,23 +10083,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg",
       "attribution": "Katsushika Hokusai · Public domain"
     },
-    "clue": "Katsushika Hokusai, ~1831"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:5",
+    "id": "v2:a31d052d6bcca3ebbc6a",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "As Meninas",
       "O Nascimento de Vênus",
-      "O Jardim das Delícias",
-      "O Mundo de Christina"
+      "A Última Ceia",
+      "A Liberdade Guiando o Povo",
+      "O Carro de Feno"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "nascimento de venus",
       "o nascimento de venus",
@@ -9519,23 +10109,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
       "attribution": "Sandro Botticelli · Public domain"
     },
-    "clue": "Sandro Botticelli, ~1486"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:6",
+    "id": "v2:5314c0250e92f2666983",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Beijo",
-      "Andarilho sobre o Mar de Névoa",
+      "Teto da Capela Sistina",
       "A Criação de Adão",
+      "Retrato dos Arnolfini",
       "Os Jogadores de Cartas"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "a criacao de adao",
       "criacao de adao",
@@ -9543,42 +10135,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/960px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/960px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg",
       "attribution": "Michelangelo · Public domain"
     },
-    "clue": "Michelangelo, ~1512"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:7",
+    "id": "v2:72413481d5e508822e7d",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Liberdade Guiando o Povo",
-      "O Carro de Feno",
-      "As Senhoritas de Avignon",
-      "A Persistência da Memória"
-    ],
-    "correct": 3,
-    "aliases": [
-      "persistencia da memoria",
-      "a persistencia da memoria",
-      "persistence of memory"
-    ],
-    "media": null,
-    "clue": "Salvador Dalí, 1931"
-  },
-  {
-    "id": "arte:8",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
+      "A Ronda Noturna",
+      "Impressão, Nascer do Sol",
       "Saturno Devorando o Filho",
-      "Retrato dos Arnolfini",
-      "Whistlejacket",
-      "Ofélia"
+      "A Torre de Babel"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "saturno devorando o filho",
       "saturno",
@@ -9586,23 +10161,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg",
       "attribution": "Francisco Goya · Public domain"
     },
-    "clue": "Francisco Goya, ~1823"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:9",
+    "id": "v2:baff42d9a0ad0bc5f233",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Impressão, Nascer do Sol",
-      "A Escola de Atenas",
-      "As Duas Fridas",
-      "Composição VIII"
+      "Olympia",
+      "Whistlejacket",
+      "As Respigadoras",
+      "A Escola de Atenas"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "a escola de atenas",
       "escola de atenas",
@@ -9610,46 +10187,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/960px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/960px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
       "attribution": "Raphael · Public domain"
     },
-    "clue": "Rafael, ~1511"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:10",
+    "id": "v2:5ebeac2ff7a91e32ad18",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Cigana Dormindo",
-      "A Mulher que Chora",
       "Davi",
-      "As Respigadoras"
+      "Baile no Moulin de la Galette",
+      "A Morte de Marat",
+      "O Grito"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "davi",
       "david"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/960px-%27David%27_by_Michelangelo_Fir_JBU004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/960px-%27David%27_by_Michelangelo_Fir_JBU004.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:%27David%27_by_Michelangelo_Fir_JBU004.jpg",
       "attribution": "Jörg Bittner Unna · CC BY 3.0"
     },
-    "clue": "Michelangelo, 1504"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:11",
+    "id": "v2:c2875c663fc9bb8989dc",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Autorretrato com Colar de Espinhos",
-      "A Torre de Babel",
-      "O Grito",
-      "Moça com Brinco de Pérola"
+      "A Cigana Dormindo",
+      "Moça com Brinco de Pérola",
+      "O Três de Maio de 1808",
+      "O Nascimento de Vênus"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "moca com brinco de perola",
       "girl with a pearl earring",
@@ -9657,67 +10238,73 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg",
       "attribution": "Johannes Vermeer · Public domain"
     },
-    "clue": "Johannes Vermeer, ~1665"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:12",
+    "id": "v2:eea103d950c87d1858ca",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
+      "As Senhoritas de Avignon",
+      "Mona Lisa",
       "American Gothic",
-      "O Filho do Homem",
-      "O Três de Maio de 1808",
-      "A Grande Onda de Kanagawa"
+      "A Escola de Atenas"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "american gothic"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Grant_Wood_-_American_Gothic_%281930%29.jpg/960px-Grant_Wood_-_American_Gothic_%281930%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Grant_Wood_-_American_Gothic_%281930%29.jpg/960px-Grant_Wood_-_American_Gothic_%281930%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Grant_Wood_-_American_Gothic_(1930).jpg",
       "attribution": "Grant Wood · Public domain"
     },
-    "clue": "Grant Wood, 1930"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:13",
+    "id": "v2:a26aecae7de96445ef73",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Morte de Marat",
-      "Nighthawks",
-      "Mona Lisa",
-      "A Persistência da Memória"
+      "Nenúfares",
+      "A Grande Onda de Kanagawa",
+      "American Gothic",
+      "Nighthawks"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "nighthawks"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg/960px-Nighthawks_by_Edward_Hopper_1942.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg/960px-Nighthawks_by_Edward_Hopper_1942.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Nighthawks_by_Edward_Hopper_1942.jpg",
       "attribution": "Edward Hopper · Public domain"
     },
-    "clue": "Edward Hopper, 1942"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:14",
+    "id": "v2:f0d320d0c1c77f780f67",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Nenúfares",
-      "Guernica",
       "Uma Tarde de Domingo na Grande Jatte",
-      "Davi"
+      "Um Bar no Folies-Bergère",
+      "Saturno Devorando o Filho",
+      "As Meninas"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "uma tarde de domingo na grande jatte",
       "grande jatte",
@@ -9725,23 +10312,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg",
       "attribution": "Georges Seurat · Public domain"
     },
-    "clue": "Georges Seurat, 1886"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:15",
+    "id": "v2:907f085df62fa8d89d81",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Um Bar no Folies-Bergère",
-      "A Criação de Adão",
-      "Nighthawks",
-      "A Última Ceia"
+      "A Noite Estrelada",
+      "A Última Ceia",
+      "Moça com Brinco de Pérola",
+      "O Beijo"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "a ultima ceia",
       "ultima ceia",
@@ -9749,46 +10338,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/960px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/960px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
       "attribution": "Leonardo da Vinci · Public domain"
     },
-    "clue": "Leonardo da Vinci, ~1498"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:16",
+    "id": "v2:d43dd4c7de490690a4a6",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
+      "A Criação de Adão",
+      "Uma Tarde de Domingo na Grande Jatte",
       "As Meninas",
-      "A Noite Estrelada",
-      "A Escola de Atenas",
-      "Vênus de Milo"
+      "A Liberdade Guiando o Povo"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "as meninas",
       "las meninas"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/960px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/960px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg",
       "attribution": "Diego Velázquez · Public domain"
     },
-    "clue": "Diego Velázquez, 1656"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:17",
+    "id": "v2:d42f67abe584c2410880",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Nascimento de Vênus",
-      "Vênus de Milo",
-      "American Gothic",
-      "Retrato da Mãe do Artista"
+      "Davi",
+      "Teto da Capela Sistina",
+      "Retrato dos Arnolfini",
+      "Vênus de Milo"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "venus de milo",
       "venus",
@@ -9796,23 +10389,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/960px-Front_views_of_the_Venus_de_Milo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/960px-Front_views_of_the_Venus_de_Milo.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Front_views_of_the_Venus_de_Milo.jpg",
       "attribution": "Livioandronico2013 · CC BY-SA 4.0"
     },
-    "clue": "Escultura grega, ~100 a.C."
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:18",
+    "id": "v2:50ea212ce5775dedf5cf",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Saturno Devorando o Filho",
-      "A Última Ceia",
       "Teto da Capela Sistina",
-      "O Jardim das Delícias"
+      "Nighthawks",
+      "A Ronda Noturna",
+      "Impressão, Nascer do Sol"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "teto da capela sistina",
       "sistine chapel",
@@ -9821,23 +10416,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/960px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/960px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Sistine_Chapel_ceiling_02_(brightened).jpg",
       "attribution": "Antoine Taveneaux · CC BY-SA 3.0"
     },
-    "clue": "Michelangelo, 1508–1512"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:19",
+    "id": "v2:70a1ecfb92e60cc91c39",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Moça com Brinco de Pérola",
-      "Teto da Capela Sistina",
-      "Andarilho sobre o Mar de Névoa",
-      "O Beijo"
+      "As Meninas",
+      "O Beijo",
+      "Olympia",
+      "Whistlejacket"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "o beijo",
       "the kiss",
@@ -9846,23 +10443,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/960px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/960px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
       "attribution": "Gustav Klimt · Public domain"
     },
-    "clue": "Gustav Klimt, 1907–1908"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:20",
+    "id": "v2:bd66883128926d5bbfab",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
+      "O Beijo",
+      "Baile no Moulin de la Galette",
       "Retrato da Mãe do Artista",
-      "Uma Tarde de Domingo na Grande Jatte",
-      "A Liberdade Guiando o Povo",
-      "O Carro de Feno"
+      "A Morte de Marat"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "whistlers mother",
       "retrato da mae",
@@ -9870,23 +10469,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/960px-Whistlers_Mother_high_res.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/960px-Whistlers_Mother_high_res.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Whistlers_Mother_high_res.jpg",
       "attribution": "James McNeill Whistler · Public domain"
     },
-    "clue": "James Whistler, 1871"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:21",
+    "id": "v2:1b160b81ec52980a0dcd",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Vênus de Milo",
-      "A Ronda Noturna",
-      "Retrato dos Arnolfini",
-      "Whistlejacket"
+      "O Jardim das Delícias",
+      "A Cigana Dormindo",
+      "O Três de Maio de 1808",
+      "A Ronda Noturna"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "a ronda noturna",
       "ronda noturna",
@@ -9894,46 +10495,50 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/960px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/960px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:La_ronda_de_noche,_por_Rembrandt_van_Rijn.jpg",
       "attribution": "Rembrandt · Public domain"
     },
-    "clue": "Rembrandt, 1642"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:22",
+    "id": "v2:b6e1ea323030d02bc6a0",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Retrato da Mãe do Artista",
-      "Impressão, Nascer do Sol",
       "A Liberdade Guiando o Povo",
-      "As Duas Fridas"
+      "Andarilho sobre o Mar de Névoa",
+      "As Senhoritas de Avignon",
+      "Mona Lisa"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "a liberdade guiando o povo",
       "liberty leading the people"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/960px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/960px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
       "attribution": "Eugène Delacroix · Public domain"
     },
-    "clue": "Eugène Delacroix, 1830"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:23",
+    "id": "v2:fc3981d6999e10255003",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Olympia",
-      "A Cigana Dormindo",
-      "A Mulher que Chora",
-      "O Jardim das Delícias"
+      "O Carro de Feno",
+      "O Jardim das Delícias",
+      "Nenúfares",
+      "A Grande Onda de Kanagawa"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "o jardim das delicias",
       "jardim das delicias",
@@ -9941,137 +10546,149 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/960px-The_Garden_of_earthly_delights.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/960px-The_Garden_of_earthly_delights.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_Garden_of_earthly_delights.jpg",
       "attribution": "Hieronymus Bosch · Public domain"
     },
-    "clue": "Hieronymus Bosch, ~1500"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:24",
+    "id": "v2:9ddd5e54e7bae8c3363c",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
+      "Os Jogadores de Cartas",
+      "Um Bar no Folies-Bergère",
       "Olympia",
-      "Baile no Moulin de la Galette",
-      "Autorretrato com Colar de Espinhos",
-      "A Torre de Babel"
+      "Saturno Devorando o Filho"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "olympia"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg/960px-Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg/960px-Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg",
       "attribution": "Édouard Manet · Public domain"
     },
-    "clue": "Édouard Manet, 1863"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:25",
+    "id": "v2:bb3f9492d3e631d67740",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Mundo de Christina",
-      "Retrato dos Arnolfini",
-      "O Filho do Homem",
-      "O Três de Maio de 1808"
+      "A Torre de Babel",
+      "A Noite Estrelada",
+      "Moça com Brinco de Pérola",
+      "Retrato dos Arnolfini"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "retrato dos arnolfini",
       "arnolfini portrait"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/960px-The_Arnolfini_portrait_%281434%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/960px-The_Arnolfini_portrait_%281434%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_Arnolfini_portrait_(1434).jpg",
       "attribution": "Jan van Eyck · Public domain"
     },
-    "clue": "Jan van Eyck, 1434"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:26",
+    "id": "v2:fe9b626f3fad477f5801",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Os Jogadores de Cartas",
-      "A Morte de Marat",
       "Andarilho sobre o Mar de Névoa",
-      "Mona Lisa"
+      "As Respigadoras",
+      "A Criação de Adão",
+      "Uma Tarde de Domingo na Grande Jatte"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "andarilho sobre o mar de nevoa",
       "wanderer above the sea of fog"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
       "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
       "attribution": "Caspar David Friedrich · Public domain"
     },
-    "clue": "Caspar David Friedrich, 1818"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:27",
+    "id": "v2:5180808b862cd9ee9508",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "As Senhoritas de Avignon",
-      "Nenúfares",
-      "Guernica",
-      "Baile no Moulin de la Galette"
+      "O Grito",
+      "Baile no Moulin de la Galette",
+      "Davi",
+      "Vênus de Milo"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "baile no moulin de la galette",
       "moulin de la galette"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/960px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/960px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg",
       "attribution": "Pierre-Auguste Renoir · Public domain"
     },
-    "clue": "Renoir, 1876"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:28",
+    "id": "v2:7a0b5af332cc1b6c668e",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
+      "O Nascimento de Vênus",
+      "Nighthawks",
       "Impressão, Nascer do Sol",
-      "Ofélia",
-      "Um Bar no Folies-Bergère",
-      "A Criação de Adão"
+      "Retrato da Mãe do Artista"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "impressao nascer do sol",
       "impression sunrise"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/960px-Monet_-_Impression%2C_Sunrise.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/960px-Monet_-_Impression%2C_Sunrise.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg",
       "attribution": "Claude Monet · Public domain"
     },
-    "clue": "Claude Monet, 1872"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:29",
+    "id": "v2:b2b18801a6dac7e540ed",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Composição VIII",
-      "O Carro de Feno",
-      "A Noite Estrelada",
-      "A Escola de Atenas"
+      "A Escola de Atenas",
+      "As Meninas",
+      "O Jardim das Delícias",
+      "O Carro de Feno"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "o carro de feno",
       "carro de feno",
@@ -10079,221 +10696,122 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/960px-John_Constable_-_The_Hay_Wain_%281821%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/960px-John_Constable_-_The_Hay_Wain_%281821%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:John_Constable_-_The_Hay_Wain_(1821).jpg",
       "attribution": "John Constable · Public domain"
     },
-    "clue": "John Constable, 1821"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:30",
+    "id": "v2:0a486e6fba9cdf5a4a7e",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "As Respigadoras",
-      "O Nascimento de Vênus",
-      "O Mundo de Christina",
-      "American Gothic"
+      "A Cigana Dormindo",
+      "American Gothic",
+      "O Beijo",
+      "Andarilho sobre o Mar de Névoa"
     ],
-    "correct": 2,
-    "aliases": [
-      "o mundo de christina",
-      "christinas world"
-    ],
-    "media": null,
-    "clue": "Andrew Wyeth, 1948"
-  },
-  {
-    "id": "arte:31",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "O Grito",
-      "Saturno Devorando o Filho",
-      "A Última Ceia",
-      "A Cigana Dormindo"
-    ],
-    "correct": 3,
+    "correct": 0,
     "aliases": [
       "a cigana dormindo",
       "sleeping gypsy"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/960px-La_Boh%C3%A9mienne_endormie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/960px-La_Boh%C3%A9mienne_endormie.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg",
       "attribution": "Henri Rousseau · Public domain"
     },
-    "clue": "Henri Rousseau, 1897"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:32",
+    "id": "v2:4097164e9e791a977327",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
+      "A Última Ceia",
       "Whistlejacket",
-      "A Grande Onda de Kanagawa",
-      "Moça com Brinco de Pérola",
-      "Teto da Capela Sistina"
+      "A Liberdade Guiando o Povo",
+      "O Carro de Feno"
     ],
-    "correct": 0,
+    "correct": 1,
     "aliases": [
       "whistlejacket"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Whistlejacket_by_George_Stubbs_edit.jpg/960px-Whistlejacket_by_George_Stubbs_edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Whistlejacket_by_George_Stubbs_edit.jpg/960px-Whistlejacket_by_George_Stubbs_edit.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Whistlejacket_by_George_Stubbs_edit.jpg",
       "attribution": "George Stubbs · Public domain"
     },
-    "clue": "George Stubbs, 1762"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:33",
+    "id": "v2:2e84f7c8373830dc2f59",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Persistência da Memória",
+      "Teto da Capela Sistina",
+      "Retrato dos Arnolfini",
       "Os Jogadores de Cartas",
-      "Uma Tarde de Domingo na Grande Jatte",
-      "A Ronda Noturna"
+      "As Senhoritas de Avignon"
     ],
-    "correct": 1,
+    "correct": 2,
     "aliases": [
       "os jogadores de cartas",
       "card players"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/960px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/960px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Les_Joueurs_de_cartes,_par_Paul_C%C3%A9zanne.jpg",
       "attribution": "Paul Cézanne · Public domain"
     },
-    "clue": "Paul Cézanne, ~1895"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:34",
+    "id": "v2:b8c5792d9491bc190a04",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Davi",
-      "Vênus de Milo",
-      "Autorretrato com Colar de Espinhos",
-      "Olympia"
-    ],
-    "correct": 2,
-    "aliases": [
-      "autorretrato com colar de espinhos",
-      "self portrait with thorn necklace and hummingbird"
-    ],
-    "media": null,
-    "clue": "Frida Kahlo, 1940"
-  },
-  {
-    "id": "arte:35",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "Nighthawks",
-      "Retrato da Mãe do Artista",
-      "Baile no Moulin de la Galette",
-      "As Duas Fridas"
+      "A Ronda Noturna",
+      "Impressão, Nascer do Sol",
+      "Nenúfares",
+      "As Senhoritas de Avignon"
     ],
     "correct": 3,
-    "aliases": [
-      "as duas fridas",
-      "the two fridas",
-      "duas fridas"
-    ],
-    "media": null,
-    "clue": "Frida Kahlo, 1939"
-  },
-  {
-    "id": "arte:36",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "As Senhoritas de Avignon",
-      "As Meninas",
-      "O Jardim das Delícias",
-      "O Mundo de Christina"
-    ],
-    "correct": 0,
     "aliases": [
       "as senhoritas de avignon",
       "demoiselles davignon"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/960px-Les_Demoiselles_d%27Avignon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/960px-Les_Demoiselles_d%27Avignon.jpg",
       "source": "https://en.wikipedia.org/wiki/File:Les_Demoiselles_d%27Avignon.jpg",
       "attribution": "Pablo Picasso · PD-US"
     },
-    "clue": "Pablo Picasso, 1907"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:37",
+    "id": "v2:8df20dd1091dc39ea349",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Beijo",
-      "O Filho do Homem",
-      "Andarilho sobre o Mar de Névoa",
-      "Os Jogadores de Cartas"
-    ],
-    "correct": 1,
-    "aliases": [
-      "o filho do homem",
-      "son of man"
-    ],
-    "media": null,
-    "clue": "René Magritte, 1964"
-  },
-  {
-    "id": "arte:38",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "A Liberdade Guiando o Povo",
-      "O Carro de Feno",
-      "A Mulher que Chora",
-      "As Senhoritas de Avignon"
-    ],
-    "correct": 2,
-    "aliases": [
-      "a mulher que chora",
-      "weeping woman"
-    ],
-    "media": null,
-    "clue": "Pablo Picasso, 1937"
-  },
-  {
-    "id": "arte:39",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "Retrato dos Arnolfini",
+      "A Morte de Marat",
+      "Olympia",
       "Whistlejacket",
-      "A Morte de Marat",
-      "Ofélia"
-    ],
-    "correct": 3,
-    "aliases": [
-      "ofelia",
-      "ophelia"
-    ],
-    "media": null,
-    "clue": "John Everett Millais, 1851–1852"
-  },
-  {
-    "id": "arte:40",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "A Morte de Marat",
-      "Impressão, Nascer do Sol",
-      "As Duas Fridas",
-      "Nenúfares"
+      "Um Bar no Folies-Bergère"
     ],
     "correct": 0,
     "aliases": [
@@ -10302,21 +10820,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/960px-Death_of_Marat_by_David.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/960px-Death_of_Marat_by_David.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Death_of_Marat_by_David.jpg",
       "attribution": "Jacques-Louis David · Public domain"
     },
-    "clue": "Jacques-Louis David, 1793"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:41",
+    "id": "v2:5d999bd8d7193152179c",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Cigana Dormindo",
+      "Baile no Moulin de la Galette",
       "A Torre de Babel",
-      "A Mulher que Chora",
-      "Um Bar no Folies-Bergère"
+      "A Morte de Marat",
+      "A Noite Estrelada"
     ],
     "correct": 1,
     "aliases": [
@@ -10325,124 +10845,116 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg/960px-Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg/960px-Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg",
       "attribution": "Pieter Brueghel the Elder · Public domain"
     },
-    "clue": "Pieter Bruegel, 1563"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:42",
+    "id": "v2:6e9a863da178b9d099b4",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Autorretrato com Colar de Espinhos",
-      "A Torre de Babel",
-      "Composição VIII",
-      "A Noite Estrelada"
+      "A Cigana Dormindo",
+      "As Respigadoras",
+      "Nenúfares",
+      "A Criação de Adão"
     ],
     "correct": 2,
-    "aliases": [
-      "composicao viii",
-      "composition viii"
-    ],
-    "media": null,
-    "clue": "Wassily Kandinsky, 1923"
-  },
-  {
-    "id": "arte:43",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "O Filho do Homem",
-      "As Respigadoras",
-      "O Nascimento de Vênus",
-      "Nenúfares"
-    ],
-    "correct": 3,
     "aliases": [
       "nenufares",
       "water lilies"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg/960px-Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg/960px-Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg",
       "attribution": "Claude Monet · Public domain"
     },
-    "clue": "Claude Monet, série iniciada em 1897"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:44",
+    "id": "v2:2261efd6198a6a0082d7",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Três de Maio de 1808",
-      "A Morte de Marat",
+      "As Senhoritas de Avignon",
       "O Grito",
-      "Saturno Devorando o Filho"
+      "Davi",
+      "O Três de Maio de 1808"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "o tres de maio de 1808",
       "the third of may 1808"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/960px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/960px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg",
       "attribution": "El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth.jpg : Francisco de Goya derivative work: Papa Lima Whiskey 2 · Public domain"
     },
-    "clue": "Francisco Goya, 1814"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:45",
+    "id": "v2:05d0d7c29b779a53adcb",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Nenúfares",
       "As Respigadoras",
-      "A Grande Onda de Kanagawa",
-      "Moça com Brinco de Pérola"
+      "Nenúfares",
+      "O Nascimento de Vênus",
+      "Nighthawks"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "as respigadoras",
       "the gleaners"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/960px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/960px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
       "attribution": "Jean-François Millet · Public domain"
     },
-    "clue": "Jean-François Millet, 1857"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "arte:46",
+    "id": "v2:593b2a59820df4d53c2b",
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
       "Mona Lisa",
-      "A Persistência da Memória",
       "Um Bar no Folies-Bergère",
-      "Uma Tarde de Domingo na Grande Jatte"
+      "A Escola de Atenas",
+      "As Meninas"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "um bar no folies bergere",
       "a bar at the folies bergere"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/960px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/960px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_(1882).jpg",
       "attribution": "Édouard Manet · Public domain"
     },
-    "clue": "Édouard Manet, 1882"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:0",
+    "id": "v2:0579cf702b3b27c5ec84",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
@@ -10459,14 +10971,16 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/960px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/960px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons_(cropped).jpg",
       "attribution": "Benh LIEU SONG · Public domain"
     },
-    "clue": "Paris, França"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:1",
+    "id": "v2:c5f6b2f3f5a1b047458b",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
@@ -10481,14 +10995,16 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/960px-Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/960px-Taj_Mahal_%28Edited%29.jpeg",
       "source": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg",
       "attribution": "Yann ; edited by Jim Carter · CC BY-SA 4.0"
     },
-    "clue": "Agra, Índia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:2",
+    "id": "v2:72d9d531490a607de30e",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
@@ -10506,14 +11022,16 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/960px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/960px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
       "attribution": "Severin.stalder · CC BY-SA 3.0"
     },
-    "clue": "China"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:3",
+    "id": "v2:a8d354eea8fb20d2e5b5",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
@@ -10530,14 +11048,16 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
       "attribution": "FeaturedPics · CC BY-SA 4.0"
     },
-    "clue": "Roma, Itália"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:4",
+    "id": "v2:99794c0d2f5e787d171f",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
@@ -10554,21 +11074,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/960px-Sydney_Australia._%2821339175489%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/960px-Sydney_Australia._%2821339175489%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Sydney_Australia._(21339175489).jpg",
       "attribution": "Bernard Spragg. NZ from Christchurch, New Zealand · CC0"
     },
-    "clue": "Sydney, Austrália"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:5",
+    "id": "v2:370723b9299e2c64e0df",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Basílica de São Pedro",
       "Machu Picchu",
       "Monte Rushmore",
-      "Torre CN"
+      "Torres Petronas"
     ],
     "correct": 1,
     "aliases": [
@@ -10576,21 +11098,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_2023_(012).jpg",
       "attribution": "Draceane · CC BY-SA 4.0"
     },
-    "clue": "Peru"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:6",
+    "id": "v2:2838a46f471421c2e29f",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Acrópole de Atenas",
       "Mont-Saint-Michel",
       "Golden Gate",
-      "Alhambra"
+      "Mesquita Azul"
     ],
     "correct": 2,
     "aliases": [
@@ -10599,20 +11123,22 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/960px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/960px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
       "attribution": "Frank Schulenburg · CC BY-SA 4.0"
     },
-    "clue": "São Francisco, EUA"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:7",
+    "id": "v2:821567d89d3a9ba08f21",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Cidade Proibida",
       "Tower Bridge",
-      "Grande Pirâmide de Gizé",
+      "Esfinge de Gizé",
       "Empire State Building"
     ],
     "correct": 3,
@@ -10622,21 +11148,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Empire_State_Building_%28aerial_view%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/960px-Empire_State_Building_%28aerial_view%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Empire_State_Building_(aerial_view).jpg",
       "attribution": "Sam Valadi · Public domain"
     },
-    "clue": "Nova York, EUA"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:8",
+    "id": "v2:cc5d041ec79918f2aa78",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Burj Khalifa",
       "Castelo de Neuschwanstein",
-      "Moai",
-      "Palácio de Versalhes"
+      "Alhambra",
+      "Castelo de Windsor"
     ],
     "correct": 0,
     "aliases": [
@@ -10645,21 +11173,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/960px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/960px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(worlds_tallest_building)_and_the_Dubai_skyline_(25781049892).jpg",
       "attribution": "imran shahabuddin · CC BY 2.0"
     },
-    "clue": "Dubai, Emirados Árabes"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:9",
+    "id": "v2:44372f181c85be4c6707",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Kremlin de Moscou",
       "Cristo Redentor",
-      "Palácio de Potala",
-      "Ponte Carlos"
+      "Grande Pirâmide de Gizé",
+      "Pavilhão Dourado"
     ],
     "correct": 1,
     "aliases": [
@@ -10669,21 +11199,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/960px-Christ_the_Redeemer_-_Cristo_Redentor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/960px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg",
       "attribution": "Arne Müseler · CC BY-SA 3.0 de"
     },
-    "clue": "Rio de Janeiro, Brasil"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:10",
+    "id": "v2:a543698bd00aae2c46cf",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Torres Petronas",
-      "Borobudur",
+      "Moai",
+      "Palácio de Versalhes",
       "Big Ben",
-      "Santuário Fushimi Inari"
+      "Casa Branca"
     ],
     "correct": 2,
     "aliases": [
@@ -10692,20 +11224,22 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg/960px-Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg/960px-Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster,_London.jpg",
       "attribution": "Christian David · CC BY-SA 4.0"
     },
-    "clue": "Londres, Reino Unido"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:11",
+    "id": "v2:33b0e16c8b2086a87d72",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Mesquita Azul",
-      "Castelo de Edimburgo",
-      "Palácio de Buckingham",
+      "Palácio de Potala",
+      "Castelo de Himeji",
+      "Atomium",
       "Stonehenge"
     ],
     "correct": 3,
@@ -10714,21 +11248,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Stonehenge2007_07_30.jpg",
       "attribution": "garethwiscombe · CC BY 2.0"
     },
-    "clue": "Wiltshire, Reino Unido"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:12",
+    "id": "v2:99796a8f35d738c18dd2",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Santa Sofia",
-      "Esfinge de Gizé",
-      "Pavilhão Dourado",
-      "Space Needle"
+      "Borobudur",
+      "Memorial Lincoln",
+      "Templo de Lótus"
     ],
     "correct": 0,
     "aliases": [
@@ -10738,21 +11274,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/960px-Hagia_Sophia_%28228968325%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/960px-Hagia_Sophia_%28228968325%29.jpeg",
       "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_(228968325).jpeg",
       "attribution": "Adli Wahid · CC BY-SA 3.0"
     },
-    "clue": "Istambul, Turquia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:13",
+    "id": "v2:faf356ee2891afe62dee",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Castelo de Windsor",
+      "Castelo de Edimburgo",
       "Sagrada Família",
-      "Casa Branca",
-      "Torre Eiffel"
+      "Castelo de Bran",
+      "Grande Muralha da China"
     ],
     "correct": 1,
     "aliases": [
@@ -10761,21 +11299,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SF_maig_2_cropped.jpg/960px-SF_maig_2_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SF_maig_2_cropped.jpg/960px-SF_maig_2_cropped.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg",
       "attribution": "Canaan · CC BY-SA 4.0"
     },
-    "clue": "Barcelona, Espanha"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:14",
+    "id": "v2:c023db53a1b7254fb910",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Castelo de Himeji",
-      "Atomium",
+      "Santuário Fushimi Inari",
+      "Gateway Arch",
       "Angkor Wat",
-      "Coliseu"
+      "Machu Picchu"
     ],
     "correct": 2,
     "aliases": [
@@ -10784,20 +11324,22 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg",
       "attribution": "Bjørn Christian Tørrissen · CC BY-SA 4.0"
     },
-    "clue": "Camboja"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:15",
+    "id": "v2:12d2c15ecac827c47c55",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Memorial Lincoln",
-      "Templo de Lótus",
-      "Golden Gate",
+      "Palácio de Buckingham",
+      "Taj Mahal",
+      "Burj Khalifa",
       "Partenon"
     ],
     "correct": 3,
@@ -10807,21 +11349,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg",
       "attribution": "Steve Swayne · CC BY 2.0"
     },
-    "clue": "Atenas, Grécia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:16",
+    "id": "v2:937b6bc9ffc721e8858d",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Basílica de São Pedro",
-      "Castelo de Bran",
-      "Grande Muralha da China",
-      "Cristo Redentor"
+      "Space Needle",
+      "Ópera de Sydney",
+      "Stonehenge"
     ],
     "correct": 0,
     "aliases": [
@@ -10832,21 +11376,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/960px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/960px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
       "attribution": "Alvesgaspar · CC BY-SA 4.0"
     },
-    "clue": "Vaticano, Roma"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:17",
+    "id": "v2:8c0553e906f17d8b599e",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Gateway Arch",
+      "Torre Eiffel",
       "Torre de Pisa",
-      "Machu Picchu",
-      "Santa Sofia"
+      "Empire State Building",
+      "Angkor Wat"
     ],
     "correct": 1,
     "aliases": [
@@ -10856,21 +11402,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/960px-Italy_-_Pisa_-_Leaning_Tower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/960px-Italy_-_Pisa_-_Leaning_Tower.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Italy_-_Pisa_-_Leaning_Tower.jpg",
       "attribution": "Arne Müseler · CC BY-SA 3.0 de"
     },
-    "clue": "Pisa, Itália"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:18",
+    "id": "v2:5850179003474f41c5b8",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Taj Mahal",
-      "Burj Khalifa",
+      "Coliseu",
+      "Big Ben",
       "Notre-Dame de Paris",
-      "Partenon"
+      "Torre de Pisa"
     ],
     "correct": 2,
     "aliases": [
@@ -10880,20 +11428,22 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/960px-Notre-Dame_de_Paris%2C_4_October_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/960px-Notre-Dame_de_Paris%2C_4_October_2017.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris,_4_October_2017.jpg",
       "attribution": "Ali Sabbagh · CC0"
     },
-    "clue": "Paris, França"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:19",
+    "id": "v2:087f81f761b39bf96d42",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Ópera de Sydney",
-      "Stonehenge",
-      "Notre-Dame de Paris",
+      "Golden Gate",
+      "Sagrada Família",
+      "Chichén Itzá",
       "Acrópole de Atenas"
     ],
     "correct": 3,
@@ -10904,21 +11454,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/960px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/960px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
       "attribution": "Giles Laurent · CC BY-SA 4.0"
     },
-    "clue": "Atenas, Grécia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:20",
+    "id": "v2:8f411a7a062ce4c11dfb",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Petra",
-      "Empire State Building",
-      "Angkor Wat",
-      "Cidade Proibida"
+      "Cristo Redentor",
+      "Basílica de São Pedro",
+      "Estátua da Liberdade"
     ],
     "correct": 0,
     "aliases": [
@@ -10926,21 +11478,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG",
       "source": "https://commons.wikimedia.org/wiki/File:Al_Deir_Petra.JPG",
       "attribution": "Azurfrog · CC BY-SA 3.0"
     },
-    "clue": "Jordânia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:21",
+    "id": "v2:8ac53d2ec8711f611a91",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Big Ben",
+      "Santa Sofia",
       "Chichén Itzá",
-      "Torre de Pisa",
-      "Castelo de Neuschwanstein"
+      "Acrópole de Atenas",
+      "Portão de Brandemburgo"
     ],
     "correct": 1,
     "aliases": [
@@ -10949,21 +11503,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg",
       "attribution": "Daniel Schwen · CC BY-SA 4.0"
     },
-    "clue": "México"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:22",
+    "id": "v2:f4efe59c9ed9c063838f",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Sagrada Família",
-      "Petra",
+      "Partenon",
+      "Monte Rushmore",
       "Cidade Proibida",
-      "Kremlin de Moscou"
+      "Torres Petronas"
     ],
     "correct": 2,
     "aliases": [
@@ -10972,20 +11528,22 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
       "attribution": "Pixelflake · CC BY-SA 3.0"
     },
-    "clue": "Pequim, China"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:23",
+    "id": "v2:ef5ebaa7f2f0c9ccb322",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Basílica de São Pedro",
-      "Estátua da Liberdade",
-      "Torres Petronas",
+      "Notre-Dame de Paris",
+      "Mont-Saint-Michel",
+      "Mesquita Azul",
       "Monte Rushmore"
     ],
     "correct": 3,
@@ -10995,21 +11553,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/960px-Mount_Rushmore_detail_view_%28100MP%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/960px-Mount_Rushmore_detail_view_%28100MP%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Mount_Rushmore_detail_view_(100MP).jpg",
       "attribution": "Thomas Wolf , www.foto-tw.de · CC BY-SA 3.0"
     },
-    "clue": "Dakota do Sul, EUA"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:24",
+    "id": "v2:42773f522bda2db1ca05",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Estátua da Liberdade",
-      "Acrópole de Atenas",
-      "Portão de Brandemburgo",
-      "Mesquita Azul"
+      "Chichén Itzá",
+      "Tower Bridge",
+      "Esfinge de Gizé"
     ],
     "correct": 0,
     "aliases": [
@@ -11018,21 +11578,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/960px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/960px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Front_view_of_Statue_of_Liberty_(cropped).jpg",
       "attribution": "AskALotl · CC0"
     },
-    "clue": "Nova York, EUA"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:25",
+    "id": "v2:1a3b4c6b6ef8440557c9",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Cidade Proibida",
+      "Estátua da Liberdade",
       "Castelo de Neuschwanstein",
-      "Torre CN",
-      "Esfinge de Gizé"
+      "Alhambra",
+      "Castelo de Windsor"
     ],
     "correct": 1,
     "aliases": [
@@ -11041,21 +11603,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/960px-Schloss_Neuschwanstein_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/960px-Schloss_Neuschwanstein_2013.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Schloss_Neuschwanstein_2013.jpg",
       "attribution": "Thomas Wolf , www.foto-tw.de · CC BY-SA 3.0 de"
     },
-    "clue": "Baviera, Alemanha"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:26",
+    "id": "v2:056ecda71602e49a784b",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Castelo de Neuschwanstein",
-      "Alhambra",
+      "Kremlin de Moscou",
+      "Grande Pirâmide de Gizé",
       "Mont-Saint-Michel",
-      "Castelo de Windsor"
+      "Pavilhão Dourado"
     ],
     "correct": 2,
     "aliases": [
@@ -11064,20 +11628,22 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/960px-Mont-Saint-Michel_vu_du_ciel.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/960px-Mont-Saint-Michel_vu_du_ciel.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Mont-Saint-Michel_vu_du_ciel.jpg",
       "attribution": "Amaustan · CC BY-SA 4.0"
     },
-    "clue": "Normandia, França"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:27",
+    "id": "v2:8268f23bff80ffc3fe06",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Tower Bridge",
-      "Grande Pirâmide de Gizé",
-      "Castelo de Himeji",
+      "Moai",
+      "Palácio de Versalhes",
+      "Casa Branca",
       "Portão de Brandemburgo"
     ],
     "correct": 3,
@@ -11087,21 +11653,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/960px-Brandenburger_Tor_abends.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/960px-Brandenburger_Tor_abends.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_abends.jpg",
       "attribution": "Thomas Wolf , www.foto-tw.de · CC BY-SA 3.0"
     },
-    "clue": "Berlim, Alemanha"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:28",
+    "id": "v2:de2e5eeca37fff719502",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Kremlin de Moscou",
-      "Moai",
-      "Palácio de Versalhes",
-      "Memorial Lincoln"
+      "Palácio de Potala",
+      "Castelo de Himeji",
+      "Atomium"
     ],
     "correct": 0,
     "aliases": [
@@ -11111,21 +11679,23 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/960px-Moscow_Kremlin_%288281675670%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/960px-Moscow_Kremlin_%288281675670%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Moscow_Kremlin_(8281675670).jpg",
       "attribution": "Pavel Kazachkov from Moscow, Russia · CC BY 2.0"
     },
-    "clue": "Moscou, Rússia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:29",
+    "id": "v2:5d4c45bf65cc6484dae8",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Palácio de Potala",
+      "Borobudur",
       "Tower Bridge",
-      "Ponte Carlos",
-      "Castelo de Bran"
+      "Memorial Lincoln",
+      "Templo de Lótus"
     ],
     "correct": 1,
     "aliases": [
@@ -11133,41 +11703,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/960px-Tower_Bridge_at_Dawn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/960px-Tower_Bridge_at_Dawn.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_at_Dawn.jpg",
       "attribution": "Fuzzypiggy · CC BY-SA 3.0"
     },
-    "clue": "Londres, Reino Unido"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:30",
-    "quiz": "monumentos",
-    "text": "Que monumento ou lugar é este?",
-    "options": [
-      "Borobudur",
-      "Santuário Fushimi Inari",
-      "Torre CN",
-      "Gateway Arch"
-    ],
-    "correct": 2,
-    "aliases": [
-      "torre cn",
-      "cn tower"
-    ],
-    "media": null,
-    "clue": "Toronto, Canadá"
-  },
-  {
-    "id": "monumentos:31",
+    "id": "v2:98364d6da73dd239f594",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Castelo de Edimburgo",
-      "Palácio de Buckingham",
-      "Taj Mahal",
-      "Torres Petronas"
+      "Castelo de Bran",
+      "Torres Petronas",
+      "Grande Muralha da China"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "torres petronas",
       "petronas towers",
@@ -11175,114 +11729,124 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/960px-Petronas_Towers_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/960px-Petronas_Towers_Logo.svg.png",
       "source": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_Logo.svg",
       "attribution": "Unknown author Unknown author · Public domain"
     },
-    "clue": "Kuala Lumpur, Malásia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:32",
+    "id": "v2:580577a5547a9f9daf0d",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Moai",
-      "Pavilhão Dourado",
-      "Space Needle",
-      "Ópera de Sydney"
+      "Santuário Fushimi Inari",
+      "Gateway Arch",
+      "Machu Picchu",
+      "Moai"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "moai",
       "estatuas da ilha de pascoa"
     ],
     "media": {
       "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/AhuTongariki.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/AhuTongariki.JPG/960px-AhuTongariki.JPG",
       "source": "https://commons.wikimedia.org/wiki/File:AhuTongariki.JPG",
       "attribution": "Ian Sewell · CC BY 2.5"
     },
-    "clue": "Ilha de Páscoa, Chile"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:33",
+    "id": "v2:99da5e837bd61f34813e",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Casa Branca",
       "Alhambra",
-      "Torre Eiffel",
-      "Empire State Building"
+      "Palácio de Buckingham",
+      "Taj Mahal",
+      "Burj Khalifa"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "alhambra"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/960px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/960px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
       "attribution": "Jebulon · CC0"
     },
-    "clue": "Granada, Espanha"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:34",
+    "id": "v2:f03426b62c1ddd3858b8",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Atomium",
-      "Coliseu",
+      "Space Needle",
       "Mesquita Azul",
-      "Big Ben"
+      "Ópera de Sydney",
+      "Stonehenge"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "mesquita azul",
       "blue mosque"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Istanbul_%2834223582516%29_%28cropped%29.jpg/960px-Istanbul_%2834223582516%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Istanbul_%2834223582516%29_%28cropped%29.jpg/960px-Istanbul_%2834223582516%29_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Istanbul_(34223582516)_(cropped).jpg",
       "attribution": "Pedro Szekely from Los Angeles, USA · CC BY-SA 2.0"
     },
-    "clue": "Istambul, Turquia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:35",
+    "id": "v2:681afd71784bf9a9731b",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Templo de Lótus",
-      "Golden Gate",
-      "Sagrada Família",
-      "Palácio de Potala"
+      "Torre Eiffel",
+      "Empire State Building",
+      "Palácio de Potala",
+      "Angkor Wat"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "palacio de potala",
       "potala palace"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Potala_Palace_HQ.jpg",
       "attribution": "Lhasa Government · CC BY-SA 4.0"
     },
-    "clue": "Lhasa, Tibete"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:36",
+    "id": "v2:926713548a66022b9efa",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Grande Pirâmide de Gizé",
-      "Grande Muralha da China",
-      "Cristo Redentor",
-      "Basílica de São Pedro"
+      "Coliseu",
+      "Big Ben",
+      "Torre de Pisa",
+      "Grande Pirâmide de Gizé"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "grande piramide de gize",
       "piramide de gize",
@@ -11291,23 +11855,25 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/960px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/960px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
       "attribution": "Douwe C. van der Zee · CC BY-SA 4.0"
     },
-    "clue": "Gizé, Egito"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:37",
+    "id": "v2:94751ee83b1328e653f9",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Machu Picchu",
       "Esfinge de Gizé",
-      "Santa Sofia",
-      "Acrópole de Atenas"
+      "Golden Gate",
+      "Sagrada Família",
+      "Petra"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "esfinge de gize",
       "esfinge",
@@ -11315,155 +11881,149 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sphinx_with_the_third_pyramid.jpg/960px-Sphinx_with_the_third_pyramid.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sphinx_with_the_third_pyramid.jpg/960px-Sphinx_with_the_third_pyramid.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Sphinx_with_the_third_pyramid.jpg",
       "attribution": "Hesham Ebaid · CC0"
     },
-    "clue": "Gizé, Egito"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:38",
+    "id": "v2:50e575b17760beaea18a",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Burj Khalifa",
-      "Partenon",
+      "Cristo Redentor",
       "Borobudur",
-      "Cidade Proibida"
+      "Basílica de São Pedro",
+      "Monte Rushmore"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "borobudur"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Pradaksina.jpg",
       "attribution": "Heri nugroho · CC BY-SA 4.0"
     },
-    "clue": "Java, Indonésia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:39",
+    "id": "v2:18a295e7ff0e665a018a",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Stonehenge",
-      "Notre-Dame de Paris",
-      "Castelo de Neuschwanstein",
-      "Palácio de Versalhes"
+      "Santa Sofia",
+      "Acrópole de Atenas",
+      "Palácio de Versalhes",
+      "Mont-Saint-Michel"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "palacio de versalhes",
       "versailles"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_(cropped).jpg",
       "attribution": "ToucanWings · CC BY-SA 3.0"
     },
-    "clue": "Versalhes, França"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:40",
+    "id": "v2:b90890d7da6ff253c549",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Castelo de Windsor",
-      "Angkor Wat",
-      "Chichén Itzá",
-      "Kremlin de Moscou"
+      "Partenon",
+      "Cidade Proibida",
+      "Tower Bridge",
+      "Castelo de Windsor"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "castelo de windsor",
       "windsor castle"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Windsor_Castle_at_Sunset_-_Nov_2006.jpg/960px-Windsor_Castle_at_Sunset_-_Nov_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Windsor_Castle_at_Sunset_-_Nov_2006.jpg/960px-Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
       "attribution": "Diliff · CC BY 2.5"
     },
-    "clue": "Windsor, Reino Unido"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:41",
+    "id": "v2:c19003bbc21b81f255cd",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Torre de Pisa",
       "Castelo de Edimburgo",
-      "Estátua da Liberdade",
-      "Torres Petronas"
+      "Notre-Dame de Paris",
+      "Castelo de Neuschwanstein",
+      "Alhambra"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "castelo de edimburgo",
       "edinburgh castle"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg/960px-City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg/960px-City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg",
       "attribution": "Enric · CC BY-SA 4.0"
     },
-    "clue": "Edimburgo, Escócia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:42",
+    "id": "v2:44423fd65b03bbc4f9f7",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Petra",
-      "Portão de Brandemburgo",
-      "Ponte Carlos",
-      "Mesquita Azul"
+      "Chichén Itzá",
+      "Castelo de Himeji",
+      "Kremlin de Moscou",
+      "Grande Pirâmide de Gizé"
     ],
-    "correct": 2,
-    "aliases": [
-      "ponte carlos",
-      "charles bridge"
-    ],
-    "media": null,
-    "clue": "Praga, Rep. Tcheca"
-  },
-  {
-    "id": "monumentos:43",
-    "quiz": "monumentos",
-    "text": "Que monumento ou lugar é este?",
-    "options": [
-      "Monte Rushmore",
-      "Torre CN",
-      "Esfinge de Gizé",
-      "Castelo de Himeji"
-    ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "castelo de himeji",
       "himeji castle"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/960px-Himeji_castle_in_may_2015.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/960px-Himeji_castle_in_may_2015.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Himeji_castle_in_may_2015.jpg",
       "attribution": "Nikos Kitsakis · CC BY-SA 4.0"
     },
-    "clue": "Himeji, Japão"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:44",
+    "id": "v2:c2fd7776d0e451c3e961",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
+      "Estátua da Liberdade",
+      "Moai",
       "Pavilhão Dourado",
-      "Mont-Saint-Michel",
-      "Alhambra",
-      "Castelo de Windsor"
+      "Palácio de Versalhes"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "pavilhao dourado",
       "kinkaku-ji",
@@ -11471,221 +12031,241 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/960px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/960px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
       "attribution": "Nacaru · CC BY-SA 4.0"
     },
-    "clue": "Quioto, Japão"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:45",
+    "id": "v2:3275f0783b9fc5eddd47",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Tower Bridge",
-      "Santuário Fushimi Inari",
-      "Grande Pirâmide de Gizé",
-      "Castelo de Himeji"
+      "Portão de Brandemburgo",
+      "Palácio de Potala",
+      "Castelo de Himeji",
+      "Santuário Fushimi Inari"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "fushimi inari",
       "santuario fushimi inari"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg",
       "attribution": "Basile Morin · CC BY-SA 4.0"
     },
-    "clue": "Quioto, Japão"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:46",
+    "id": "v2:8fef6c2542eca94b3421",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Moai",
-      "Palácio de Versalhes",
       "Memorial Lincoln",
+      "Torres Petronas",
+      "Borobudur",
       "Casa Branca"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "memorial lincoln",
       "lincoln memorial"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lincoln_Memorial_east_side.JPG/960px-Lincoln_Memorial_east_side.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lincoln_Memorial_east_side.JPG/960px-Lincoln_Memorial_east_side.JPG",
       "source": "https://commons.wikimedia.org/wiki/File:Lincoln_Memorial_east_side.JPG",
       "attribution": "Martin Falbisoner · CC BY-SA 3.0"
     },
-    "clue": "Washington, EUA"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:47",
+    "id": "v2:913e6143d7842bbd0062",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Palácio de Potala",
-      "Ponte Carlos",
-      "Atomium",
-      "Casa Branca"
+      "Mesquita Azul",
+      "Casa Branca",
+      "Castelo de Edimburgo",
+      "Atomium"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "casa branca",
       "white house"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/960px-White_House_north_and_south_sides.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/960px-White_House_north_and_south_sides.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:White_House_north_and_south_sides.jpg",
       "attribution": "(top) Cezary p (bottom) MattWade · CC BY-SA 4.0"
     },
-    "clue": "Washington, EUA"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:48",
+    "id": "v2:f94e97d936fce051f8a4",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Palácio de Buckingham",
-      "Borobudur",
+      "Esfinge de Gizé",
       "Santuário Fushimi Inari",
+      "Palácio de Buckingham",
       "Templo de Lótus"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "palacio de buckingham",
       "buckingham palace"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg/960px-Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg/960px-Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_London_Morning_2020_01_(cropped).jpg",
       "attribution": "Julian Herzog ( Website ) · CC BY 4.0"
     },
-    "clue": "Londres, Reino Unido"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:49",
+    "id": "v2:2b47c7f8d08702e4e3f6",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Castelo de Edimburgo",
-      "Castelo de Bran",
+      "Castelo de Windsor",
       "Palácio de Buckingham",
-      "Grande Muralha da China"
+      "Grande Muralha da China",
+      "Castelo de Bran"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "castelo de bran",
       "bran castle"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Castelul_Bran2.jpg/960px-Castelul_Bran2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Castelul_Bran2.jpg/960px-Castelul_Bran2.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Castelul_Bran2.jpg",
       "attribution": "Dobre Cezar · CC BY-SA 3.0 ro"
     },
-    "clue": "Bran, Romênia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:50",
+    "id": "v2:cc9adb26182da2be88d0",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
+      "Atomium",
       "Pavilhão Dourado",
       "Gateway Arch",
-      "Atomium",
       "Machu Picchu"
     ],
-    "correct": 2,
+    "correct": 0,
     "aliases": [
       "atomium"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg/960px-The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg/960px-The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:The_Atomium_during_civil_twilight_(DSCF1135).jpg",
       "attribution": "Trougnouf (Benoit Brummer) · CC BY 4.0"
     },
-    "clue": "Bruxelas, Bélgica"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:51",
+    "id": "v2:a0deed9c8a321c4955ef",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Casa Branca",
+      "Space Needle",
       "Taj Mahal",
-      "Burj Khalifa",
-      "Space Needle"
+      "Burj Khalifa"
     ],
-    "correct": 3,
+    "correct": 1,
     "aliases": [
       "space needle"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/960px-Space_Needle_2011-07-04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/960px-Space_Needle_2011-07-04.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Space_Needle_2011-07-04.jpg",
       "attribution": "Jordon Kalilich · Public domain"
     },
-    "clue": "Seattle, EUA"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:52",
+    "id": "v2:fd2e19eb49f7efbc689d",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
-      "Gateway Arch",
       "Atomium",
       "Ópera de Sydney",
+      "Gateway Arch",
       "Stonehenge"
     ],
-    "correct": 0,
+    "correct": 2,
     "aliases": [
       "gateway arch",
       "arco de st louis"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/960px-St_Louis_night_expblend_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/960px-St_Louis_night_expblend_cropped.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:St_Louis_night_expblend_cropped.jpg",
       "attribution": "St_Louis_night_expblend.jpg : Daniel Schwen derivative work: ← fetch comms · CC BY-SA 3.0"
     },
-    "clue": "St. Louis, EUA"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "monumentos:53",
+    "id": "v2:a26af3ee797ab11cf433",
     "quiz": "monumentos",
     "text": "Que monumento ou lugar é este?",
     "options": [
       "Torre Eiffel",
-      "Templo de Lótus",
       "Empire State Building",
-      "Angkor Wat"
+      "Angkor Wat",
+      "Templo de Lótus"
     ],
-    "correct": 1,
+    "correct": 3,
     "aliases": [
       "templo de lotus",
       "lotus temple"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/960px-LotusDelhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/960px-LotusDelhi.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:LotusDelhi.jpg",
       "attribution": "Vandelizer · CC BY 2.0"
     },
-    "clue": "Nova Déli, Índia"
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "comidas:0",
+    "id": "v2:d6edfabdf38859b3a4ce",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato italiano é assado com molho de tomate e coberturas sobre uma massa redonda?",
     "options": [
       "Pizza",
       "Sushi",
@@ -11696,18 +12276,15 @@ export const QUESTIONS=[
     "aliases": [
       "pizza"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/960px-Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Pizza-3007395.jpg",
-      "attribution": "igorovsyannykov · CC0"
-    },
-    "clue": "Itália"
+    "media": null,
+    "clue": null,
+    "explanation": "Pizza é um prato associado a Itália.",
+    "source": "https://en.wikipedia.org/wiki/Pizza"
   },
   {
-    "id": "comidas:1",
+    "id": "v2:0378bd130d61e6aa1d7d",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato japonês combina arroz temperado com peixe, frutos do mar ou vegetais?",
     "options": [
       "Paella",
       "Sushi",
@@ -11718,18 +12295,15 @@ export const QUESTIONS=[
     "aliases": [
       "sushi"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Sushi_platter.jpg",
-      "attribution": "chidorian from Japan · CC BY-SA 2.0"
-    },
-    "clue": "Japão"
+    "media": null,
+    "clue": null,
+    "explanation": "Sushi é um prato associado a Japão.",
+    "source": "https://en.wikipedia.org/wiki/Sushi"
   },
   {
-    "id": "comidas:2",
+    "id": "v2:32bc719fdf0efc19f40a",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual sanduíche costuma levar um disco de carne servido dentro de um pão?",
     "options": [
       "Ramen",
       "Baklava",
@@ -11742,18 +12316,15 @@ export const QUESTIONS=[
       "hamburger",
       "hambúrguer"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/960px-RedDot_Burger.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:RedDot_Burger.jpg",
-      "attribution": "Hongreddotbrewhouse · CC BY-SA 3.0"
-    },
-    "clue": "EUA"
+    "media": null,
+    "clue": null,
+    "explanation": "Hambúrguer é um prato associado a EUA.",
+    "source": "https://en.wikipedia.org/wiki/Hamburger"
   },
   {
-    "id": "comidas:3",
+    "id": "v2:6181f10af992847d7fc9",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual comida mexicana usa uma tortilla dobrada em torno de um recheio?",
     "options": [
       "Pad Thai",
       "Fondue",
@@ -11764,18 +12335,15 @@ export const QUESTIONS=[
     "aliases": [
       "taco"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/960px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
-      "attribution": "Larry Miller · CC BY-SA 2.0"
-    },
-    "clue": "México"
+    "media": null,
+    "clue": null,
+    "explanation": "Taco é um prato associado a México.",
+    "source": "https://en.wikipedia.org/wiki/Taco"
   },
   {
-    "id": "comidas:4",
+    "id": "v2:f2b7e08d0e307a84d0d7",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato espanhol prepara arroz com açafrão, legumes e carnes ou frutos do mar?",
     "options": [
       "Paella",
       "Ceviche",
@@ -11786,18 +12354,15 @@ export const QUESTIONS=[
     "aliases": [
       "paella"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/01_Paella_Valenciana_original.jpg/960px-01_Paella_Valenciana_original.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:01_Paella_Valenciana_original.jpg",
-      "attribution": "Jan Harenburg · CC BY-SA 4.0"
-    },
-    "clue": "Espanha"
+    "media": null,
+    "clue": null,
+    "explanation": "Paella é um prato associado a Espanha.",
+    "source": "https://en.wikipedia.org/wiki/Paella"
   },
   {
-    "id": "comidas:5",
+    "id": "v2:e77dd18dc997ee1e9b4a",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual massa folhada francesa tem formato curvo e é comum no café da manhã?",
     "options": [
       "Crepe",
       "Croissant",
@@ -11808,18 +12373,15 @@ export const QUESTIONS=[
     "aliases": [
       "croissant"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Croissant-Petr_Kratochvil.jpg/960px-Croissant-Petr_Kratochvil.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg",
-      "attribution": "Petr Kratochvil · CC0"
-    },
-    "clue": "França"
+    "media": null,
+    "clue": null,
+    "explanation": "Croissant é um prato associado a França.",
+    "source": "https://en.wikipedia.org/wiki/Croissant"
   },
   {
-    "id": "comidas:6",
+    "id": "v2:c17c9c921273d895e4e9",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual sopa vietnamita leva caldo aromático, macarrão de arroz e ervas?",
     "options": [
       "Poutine",
       "Risoto",
@@ -11830,18 +12392,15 @@ export const QUESTIONS=[
     "aliases": [
       "pho"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Bowl_of_Meatball_pho.jpg/960px-Bowl_of_Meatball_pho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Bowl_of_Meatball_pho.jpg",
-      "attribution": "SerraKnightz · CC BY 4.0"
-    },
-    "clue": "Vietnã"
+    "media": null,
+    "clue": null,
+    "explanation": "Pho é um prato associado a Vietnã.",
+    "source": "https://en.wikipedia.org/wiki/Pho"
   },
   {
-    "id": "comidas:7",
+    "id": "v2:665fc6681d9f3960478f",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato japonês serve macarrão em caldo com acompanhamentos como ovo e carne?",
     "options": [
       "Burrito",
       "Dim Sum",
@@ -11852,18 +12411,15 @@ export const QUESTIONS=[
     "aliases": [
       "ramen"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg/960px-Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg",
-      "attribution": "Quercus acuta · CC BY-SA 4.0"
-    },
-    "clue": "Japão"
+    "media": null,
+    "clue": null,
+    "explanation": "Ramen é um prato associado a Japão.",
+    "source": "https://en.wikipedia.org/wiki/Ramen"
   },
   {
-    "id": "comidas:8",
+    "id": "v2:e29e6c64e23dd5223af6",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual bolinho do Oriente Médio é feito de grão-de-bico ou fava e frito?",
     "options": [
       "Falafel",
       "Waffle",
@@ -11874,18 +12430,15 @@ export const QUESTIONS=[
     "aliases": [
       "falafel"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/960px-Falafels_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg",
-      "attribution": "Popo le Chien · CC BY-SA 3.0"
-    },
-    "clue": "Oriente Médio"
+    "media": null,
+    "clue": null,
+    "explanation": "Falafel é um prato associado a Oriente Médio.",
+    "source": "https://en.wikipedia.org/wiki/Falafel"
   },
   {
-    "id": "comidas:9",
+    "id": "v2:bbbf812f1f758bff2370",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato brasileiro reúne feijão preto, carnes e acompanhamentos como arroz?",
     "options": [
       "Sashimi",
       "Feijoada",
@@ -11896,18 +12449,15 @@ export const QUESTIONS=[
     "aliases": [
       "feijoada"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Feijoada_%C3%A0_transmontada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Feijoada_%C3%A0_transmontada.jpg",
-      "attribution": "Adrião · CC BY 3.0"
-    },
-    "clue": "Brasil"
+    "media": null,
+    "clue": null,
+    "explanation": "Feijoada é um prato associado a Brasil.",
+    "source": "https://en.wikipedia.org/wiki/Feijoada"
   },
   {
-    "id": "comidas:10",
+    "id": "v2:0fccae1de967ad3b00c3",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato tailandês mistura macarrão de arroz salteado, molho agridoce e amendoim?",
     "options": [
       "Shakshuka",
       "Sushi",
@@ -11918,18 +12468,15 @@ export const QUESTIONS=[
     "aliases": [
       "pad thai"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/960px-Phat_Thai_kung_Chang_Khien_street_stall.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Phat_Thai_kung_Chang_Khien_street_stall.jpg",
-      "attribution": "Takeaway · CC BY-SA 3.0"
-    },
-    "clue": "Tailândia"
+    "media": null,
+    "clue": null,
+    "explanation": "Pad Thai é um prato associado a Tailândia.",
+    "source": "https://en.wikipedia.org/wiki/Pad_thai"
   },
   {
-    "id": "comidas:11",
+    "id": "v2:b499f376bd7496a3c19f",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual acompanhamento coreano é feito de vegetais fermentados e temperados?",
     "options": [
       "Homus",
       "Paella",
@@ -11940,18 +12487,15 @@ export const QUESTIONS=[
     "aliases": [
       "kimchi"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Various_kimchi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Various_kimchi.jpg",
-      "attribution": "국립국어원 · CC BY-SA 2.0 kr"
-    },
-    "clue": "Coreia do Sul"
+    "media": null,
+    "clue": null,
+    "explanation": "Kimchi é um prato associado a Coreia do Sul.",
+    "source": "https://en.wikipedia.org/wiki/Kimchi"
   },
   {
-    "id": "comidas:12",
+    "id": "v2:26dbbe4e5ffd9b2654ce",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual salgado popular na América Latina envolve recheio em massa dobrada e fechada?",
     "options": [
       "Empanada",
       "Pizza",
@@ -11962,18 +12506,15 @@ export const QUESTIONS=[
     "aliases": [
       "empanada"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Tapa_de_empanadillitas.JPG/960px-Tapa_de_empanadillitas.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Tapa_de_empanadillitas.JPG",
-      "attribution": "Tamorlan · CC BY 3.0"
-    },
-    "clue": "América Latina"
+    "media": null,
+    "clue": null,
+    "explanation": "Empanada é um prato associado a América Latina.",
+    "source": "https://en.wikipedia.org/wiki/Empanada"
   },
   {
-    "id": "comidas:13",
+    "id": "v2:233c01caf55f3e0de0a7",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato peruano marina peixe cru em suco cítrico com cebola e temperos?",
     "options": [
       "Taco",
       "Ceviche",
@@ -11984,18 +12525,15 @@ export const QUESTIONS=[
     "aliases": [
       "ceviche"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
-      "attribution": "Picanteria karol · CC BY-SA 4.0"
-    },
-    "clue": "Peru"
+    "media": null,
+    "clue": null,
+    "explanation": "Ceviche é um prato associado a Peru.",
+    "source": "https://en.wikipedia.org/wiki/Ceviche"
   },
   {
-    "id": "comidas:14",
+    "id": "v2:2be2ae12f3a3dcfa7d1a",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual doce de camadas de massa fina, nozes e calda é comum na Turquia?",
     "options": [
       "Pho",
       "Ceviche",
@@ -12006,18 +12544,15 @@ export const QUESTIONS=[
     "aliases": [
       "baklava"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Baklava(1).png",
-      "attribution": "Sakaman · CC BY-SA 4.0"
-    },
-    "clue": "Turquia"
+    "media": null,
+    "clue": null,
+    "explanation": "Baklava é um prato associado a Turquia.",
+    "source": "https://en.wikipedia.org/wiki/Baklava"
   },
   {
-    "id": "comidas:15",
+    "id": "v2:ec5d0df21cae20336294",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual sobremesa italiana gelada se parece com sorvete e costuma ter textura densa?",
     "options": [
       "Feijoada",
       "Fondue",
@@ -12029,18 +12564,15 @@ export const QUESTIONS=[
       "gelato",
       "sorvete italiano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Delicious_Gelato_on_display.jpg/960px-Delicious_Gelato_on_display.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Delicious_Gelato_on_display.jpg",
-      "attribution": "EquipmentAndConcepts · CC BY-SA 4.0"
-    },
-    "clue": "Itália"
+    "media": null,
+    "clue": null,
+    "explanation": "Gelato é um prato associado a Itália.",
+    "source": "https://en.wikipedia.org/wiki/Gelato"
   },
   {
-    "id": "comidas:16",
+    "id": "v2:a9f9812d9b4d844082b4",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual massa francesa fina é preparada na frigideira e pode levar recheios doces ou salgados?",
     "options": [
       "Crepe",
       "Empanada",
@@ -12052,18 +12584,15 @@ export const QUESTIONS=[
       "crepe",
       "crêpe"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Crepes_dsc07085.jpg/960px-Crepes_dsc07085.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Crepes_dsc07085.jpg",
-      "attribution": "David Monniaux · CC BY-SA 3.0"
-    },
-    "clue": "França"
+    "media": null,
+    "clue": null,
+    "explanation": "Crepe é um prato associado a França.",
+    "source": "https://en.wikipedia.org/wiki/Cr%C3%AApe"
   },
   {
-    "id": "comidas:17",
+    "id": "v2:3d89675df9955147bdff",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato suíço é servido em panela coletiva para mergulhar pão no queijo derretido?",
     "options": [
       "Gelato",
       "Fondue",
@@ -12074,18 +12603,15 @@ export const QUESTIONS=[
     "aliases": [
       "fondue"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Fondue_dish.jpg/960px-Fondue_dish.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Fondue_dish.jpg",
-      "attribution": "Juliano Mendes · CC BY 2.0"
-    },
-    "clue": "Suíça"
+    "media": null,
+    "clue": null,
+    "explanation": "Fondue é um prato associado a Suíça.",
+    "source": "https://en.wikipedia.org/wiki/Fondue"
   },
   {
-    "id": "comidas:18",
+    "id": "v2:172abddf8fbd58526053",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual sobremesa italiana intercala café, mascarpone e biscoitos?",
     "options": [
       "Poutine",
       "Risoto",
@@ -12097,18 +12623,15 @@ export const QUESTIONS=[
       "tiramisu",
       "tiramisù"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tiramisu_-_Raffaele_Diomede.jpg/960px-Tiramisu_-_Raffaele_Diomede.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Tiramisu_-_Raffaele_Diomede.jpg",
-      "attribution": "Raffaele Diomede from Pordenone, ITALIA · CC BY 2.0"
-    },
-    "clue": "Itália"
+    "media": null,
+    "clue": null,
+    "explanation": "Tiramisù é um prato associado a Itália.",
+    "source": "https://en.wikipedia.org/wiki/Tiramisu"
   },
   {
-    "id": "comidas:19",
+    "id": "v2:4ca5a259d6ef69cfcb98",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato canadense cobre batatas fritas com coalhada de queijo e molho quente?",
     "options": [
       "Burrito",
       "Dim Sum",
@@ -12119,18 +12642,15 @@ export const QUESTIONS=[
     "aliases": [
       "poutine"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Food_at_WIkimanian_2017_02.jpg/960px-Food_at_WIkimanian_2017_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Food_at_WIkimanian_2017_02.jpg",
-      "attribution": "Camelia.boban · CC BY-SA 4.0"
-    },
-    "clue": "Canadá"
+    "media": null,
+    "clue": null,
+    "explanation": "Poutine é um prato associado a Canadá.",
+    "source": "https://en.wikipedia.org/wiki/Poutine"
   },
   {
-    "id": "comidas:20",
+    "id": "v2:3d01d64ddccd7b0c8984",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual ensopado húngaro é temperado tradicionalmente com páprica?",
     "options": [
       "Goulash",
       "Waffle",
@@ -12142,18 +12662,15 @@ export const QUESTIONS=[
       "goulash",
       "gulache"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Gulyas080.jpg/960px-Gulyas080.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Gulyas080.jpg",
-      "attribution": "Lily15 · CC BY-SA 3.0"
-    },
-    "clue": "Hungria"
+    "media": null,
+    "clue": null,
+    "explanation": "Goulash é um prato associado a Hungria.",
+    "source": "https://en.wikipedia.org/wiki/Goulash"
   },
   {
-    "id": "comidas:21",
+    "id": "v2:19a294e4d8cee89d1217",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual lanche coloca uma salsicha em pão comprido com molhos e complementos?",
     "options": [
       "Sashimi",
       "Cachorro-quente",
@@ -12166,18 +12683,15 @@ export const QUESTIONS=[
       "hot dog",
       "cachorro-quente"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Hot_dog_with_mustard.png/960px-Hot_dog_with_mustard.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Hot_dog_with_mustard.png",
-      "attribution": "Czar , original photographed by Renee Comet · Public domain"
-    },
-    "clue": "EUA"
+    "media": null,
+    "clue": null,
+    "explanation": "Cachorro-quente é um prato associado a EUA.",
+    "source": "https://en.wikipedia.org/wiki/Hot_dog"
   },
   {
-    "id": "comidas:22",
+    "id": "v2:90b50b9f885e1d248323",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual comida mexicana enrola recheios como feijão, arroz e carne numa tortilla?",
     "options": [
       "Shakshuka",
       "Sushi",
@@ -12188,18 +12702,15 @@ export const QUESTIONS=[
     "aliases": [
       "burrito"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Burrito.JPG/960px-Burrito.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Burrito.JPG",
-      "attribution": "samuelfernandezrivera · CC0"
-    },
-    "clue": "México"
+    "media": null,
+    "clue": null,
+    "explanation": "Burrito é um prato associado a México.",
+    "source": "https://en.wikipedia.org/wiki/Burrito"
   },
   {
-    "id": "comidas:23",
+    "id": "v2:1fa940369ab08d474910",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato coreano serve arroz com vegetais, carne e ovo, geralmente misturados antes de comer?",
     "options": [
       "Homus",
       "Paella",
@@ -12210,18 +12721,15 @@ export const QUESTIONS=[
     "aliases": [
       "bibimbap"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/960px-Dolsot-bibimbap.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Dolsot-bibimbap.jpg",
-      "attribution": "Sous Chef · CC BY 2.0"
-    },
-    "clue": "Coreia do Sul"
+    "media": null,
+    "clue": null,
+    "explanation": "Bibimbap é um prato associado a Coreia do Sul.",
+    "source": "https://en.wikipedia.org/wiki/Bibimbap"
   },
   {
-    "id": "comidas:24",
+    "id": "v2:4a8a07c7e3c8d3bce972",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual doce francês é formado por dois discos de merengue de amêndoas com recheio?",
     "options": [
       "Macaron",
       "Pizza",
@@ -12232,18 +12740,15 @@ export const QUESTIONS=[
     "aliases": [
       "macaron"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/VanillaMacaron.jpg/960px-VanillaMacaron.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:VanillaMacaron.jpg",
-      "attribution": "Michelle Naherny · CC BY-SA 4.0"
-    },
-    "clue": "França"
+    "media": null,
+    "clue": null,
+    "explanation": "Macaron é um prato associado a França.",
+    "source": "https://en.wikipedia.org/wiki/Macaron"
   },
   {
-    "id": "comidas:25",
+    "id": "v2:7d2b6382ec69713d05fb",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual massa assada numa chapa forma uma grade de quadrados?",
     "options": [
       "Taco",
       "Waffle",
@@ -12254,18 +12759,15 @@ export const QUESTIONS=[
     "aliases": [
       "waffle"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Waffle_with_strawberries_and_confectioner%27s_sugar.jpg/960px-Waffle_with_strawberries_and_confectioner%27s_sugar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Waffle_with_strawberries_and_confectioner%27s_sugar.jpg",
-      "attribution": "Ralph Daily · CC BY 2.0"
-    },
-    "clue": "Bélgica"
+    "media": null,
+    "clue": null,
+    "explanation": "Waffle é um prato associado a Bélgica.",
+    "source": "https://en.wikipedia.org/wiki/Belgian_waffle"
   },
   {
-    "id": "comidas:26",
+    "id": "v2:c0f7e6dc77b748c094e6",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato italiano cozinha arroz aos poucos em caldo até ficar cremoso?",
     "options": [
       "Pho",
       "Ceviche",
@@ -12277,18 +12779,15 @@ export const QUESTIONS=[
       "risoto",
       "risotto"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg/960px-Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Risotto_with_speck_and_goat_cheese_(6101067436).jpg",
-      "attribution": "Luca Nebuloni from Milan, Italy · CC BY 2.0"
-    },
-    "clue": "Itália"
+    "media": null,
+    "clue": null,
+    "explanation": "Risoto é um prato associado a Itália.",
+    "source": "https://en.wikipedia.org/wiki/Risotto"
   },
   {
-    "id": "comidas:27",
+    "id": "v2:0eaca7bbb04775f27594",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual doce de massa frita costuma ser polvilhado com açúcar e canela?",
     "options": [
       "Feijoada",
       "Crepe",
@@ -12300,18 +12799,15 @@ export const QUESTIONS=[
       "churro",
       "churros"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Chocolate_con_churros_%2827343655726%29.jpg/960px-Chocolate_con_churros_%2827343655726%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Chocolate_con_churros_(27343655726).jpg",
-      "attribution": "Joy · CC BY 2.0"
-    },
-    "clue": "Espanha"
+    "media": null,
+    "clue": null,
+    "explanation": "Churro é um prato associado a Espanha.",
+    "source": "https://en.wikipedia.org/wiki/Churro"
   },
   {
-    "id": "comidas:28",
+    "id": "v2:9a78d25228d92a5c0255",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato japonês consiste em fatias de peixe ou frutos do mar servidas sem arroz?",
     "options": [
       "Sashimi",
       "Empanada",
@@ -12322,18 +12818,15 @@ export const QUESTIONS=[
     "aliases": [
       "sashimi"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
-      "attribution": "663highland · CC BY-SA 4.0"
-    },
-    "clue": "Japão"
+    "media": null,
+    "clue": null,
+    "explanation": "Sashimi é um prato associado a Japão.",
+    "source": "https://en.wikipedia.org/wiki/Sashimi"
   },
   {
-    "id": "comidas:29",
+    "id": "v2:9182cdd4eaa8ef538d7f",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual tradição culinária chinesa reúne pequenas porções como bolinhos cozidos no vapor?",
     "options": [
       "Gelato",
       "Dim Sum",
@@ -12344,18 +12837,15 @@ export const QUESTIONS=[
     "aliases": [
       "dim sum"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Chinese_DimSum_%289023590541%29.jpg/960px-Chinese_DimSum_%289023590541%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Chinese_DimSum_(9023590541).jpg",
-      "attribution": "LeonardKong · CC BY 2.0"
-    },
-    "clue": "China"
+    "media": null,
+    "clue": null,
+    "explanation": "Dim Sum é um prato associado a China.",
+    "source": "https://en.wikipedia.org/wiki/Dim_sum"
   },
   {
-    "id": "comidas:30",
+    "id": "v2:671e41c020dc2ed2dbc7",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato grego é montado em camadas de berinjela, carne e molho branco?",
     "options": [
       "Tiramisù",
       "Waffle",
@@ -12367,18 +12857,15 @@ export const QUESTIONS=[
       "moussaka",
       "moussaca"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/MussakasMeMelitsanesKePatates01.JPG/960px-MussakasMeMelitsanesKePatates01.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:MussakasMeMelitsanesKePatates01.JPG",
-      "attribution": "Robert Kindermann aka RobertK · CC BY-SA 2.5"
-    },
-    "clue": "Grécia"
+    "media": null,
+    "clue": null,
+    "explanation": "Moussaka é um prato associado a Grécia.",
+    "source": "https://en.wikipedia.org/wiki/Moussaka"
   },
   {
-    "id": "comidas:31",
+    "id": "v2:8b62bd244db640f2b9d4",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato do Norte da África cozinha ovos em molho de tomate e especiarias?",
     "options": [
       "Cachorro-quente",
       "Sashimi",
@@ -12390,18 +12877,15 @@ export const QUESTIONS=[
       "shakshuka",
       "shakshouka"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Shakshuka_by_Calliopejen1.jpg/960px-Shakshuka_by_Calliopejen1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg",
-      "attribution": "Calliopejen1 · CC BY-SA 3.0"
-    },
-    "clue": "Norte da África"
+    "media": null,
+    "clue": null,
+    "explanation": "Shakshuka é um prato associado a Norte da África.",
+    "source": "https://en.wikipedia.org/wiki/Shakshouka"
   },
   {
-    "id": "comidas:32",
+    "id": "v2:e6a2e866a467f34dd374",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual massa recheada polonesa costuma ser cozida e servida com manteiga ou cebola?",
     "options": [
       "Pierogi",
       "Macaron",
@@ -12412,18 +12896,15 @@ export const QUESTIONS=[
     "aliases": [
       "pierogi"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Pierogi_z_mas%C5%82em_-_2023.03.31.jpg/960px-Pierogi_z_mas%C5%82em_-_2023.03.31.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Pierogi_z_mas%C5%82em_-_2023.03.31.jpg",
-      "attribution": "Aw58 · CC BY-SA 4.0"
-    },
-    "clue": "Polônia"
+    "media": null,
+    "clue": null,
+    "explanation": "Pierogi é um prato associado a Polônia.",
+    "source": "https://en.wikipedia.org/wiki/Pierogi"
   },
   {
-    "id": "comidas:33",
+    "id": "v2:831d846a1bf40a963c76",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual sopa do Leste Europeu ganha a cor vermelha principalmente da beterraba?",
     "options": [
       "Churro",
       "Borsch",
@@ -12435,18 +12916,15 @@ export const QUESTIONS=[
       "borsch",
       "borscht"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Borscht_served.jpg/960px-Borscht_served.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Borscht_served.jpg",
-      "attribution": "liz west from Boxborough, MA · CC BY 2.0"
-    },
-    "clue": "Leste Europeu"
+    "media": null,
+    "clue": null,
+    "explanation": "Borsch é um prato associado a Leste Europeu.",
+    "source": "https://en.wikipedia.org/wiki/Borscht"
   },
   {
-    "id": "comidas:34",
+    "id": "v2:81f958a01562b41a91de",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual pasta do Oriente Médio leva grão-de-bico, tahine, limão e alho?",
     "options": [
       "Moussaka",
       "Sushi",
@@ -12458,18 +12936,15 @@ export const QUESTIONS=[
       "homus",
       "hummus"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Lebanese_style_hummus.jpg/960px-Lebanese_style_hummus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Lebanese_style_hummus.jpg",
-      "attribution": "Beyrouthhh at English Wikipedia · CC BY 3.0"
-    },
-    "clue": "Oriente Médio"
+    "media": null,
+    "clue": null,
+    "explanation": "Homus é um prato associado a Oriente Médio.",
+    "source": "https://en.wikipedia.org/wiki/Hummus"
   },
   {
-    "id": "comidas:35",
+    "id": "v2:e67ffdbe1101657a5a2d",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual prato da África Ocidental cozinha arroz em molho de tomate e temperos?",
     "options": [
       "Borsch",
       "Paella",
@@ -12481,18 +12956,15 @@ export const QUESTIONS=[
       "arroz jollof",
       "jollof rice"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
-      "attribution": "Noahalorwu · CC BY-SA 4.0"
-    },
-    "clue": "África Ocidental"
+    "media": null,
+    "clue": null,
+    "explanation": "Arroz Jollof é um prato associado a África Ocidental.",
+    "source": "https://en.wikipedia.org/wiki/Jollof_rice"
   },
   {
-    "id": "comidas:36",
+    "id": "v2:2f45c46df9fcbeeeadd0",
     "quiz": "comidas",
-    "text": "Que prato é este?",
+    "text": "Qual sanduíche vietnamita usa baguete com recheios, ervas e vegetais em conserva?",
     "options": [
       "Bánh Mì",
       "Pizza",
@@ -12503,18 +12975,15 @@ export const QUESTIONS=[
     "aliases": [
       "banh mi"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
-      "attribution": "nsaum75 ¡שיחת! ‎ · CC BY-SA 3.0"
-    },
-    "clue": "Vietnã"
+    "media": null,
+    "clue": null,
+    "explanation": "Bánh Mì é um prato associado a Vietnã.",
+    "source": "https://en.wikipedia.org/wiki/B%C3%A1nh_m%C3%AC"
   },
   {
-    "id": "instrumentos:0",
+    "id": "v2:863d326cc37f4e4e356e",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de cordas dedilhadas tem corpo acústico e é tocado apoiado no colo?",
     "options": [
       "Violão",
       "Piano",
@@ -12529,12 +12998,14 @@ export const QUESTIONS=[
       "guitarra acústica"
     ],
     "media": null,
-    "clue": "Letras: V_____"
+    "clue": null,
+    "explanation": "O instrumento descrito é Violão.",
+    "source": "https://en.wikipedia.org/wiki/Acoustic_guitar"
   },
   {
-    "id": "instrumentos:1",
+    "id": "v2:472cc65678dfef9cc80c",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de teclado aciona martelos que golpeiam cordas?",
     "options": [
       "Saxofone",
       "Piano",
@@ -12545,18 +13016,15 @@ export const QUESTIONS=[
     "aliases": [
       "piano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Steinway_Vienna_002.JPG/960px-Steinway_Vienna_002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Steinway_Vienna_002.JPG",
-      "attribution": "Gryffindor · CC BY-SA 3.0"
-    },
-    "clue": "Letras: P____"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Piano.",
+    "source": "https://en.wikipedia.org/wiki/Piano"
   },
   {
-    "id": "instrumentos:2",
+    "id": "v2:380d4e06b2e05ec70089",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de quatro cordas é tocado com arco junto ao ombro?",
     "options": [
       "Violoncelo",
       "Gaita de Foles",
@@ -12568,18 +13036,15 @@ export const QUESTIONS=[
       "violino",
       "violin"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Violin_VL100.png",
-      "attribution": "Just plain Bill · CC0"
-    },
-    "clue": "Letras: V______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Violino.",
+    "source": "https://en.wikipedia.org/wiki/Violin"
   },
   {
-    "id": "instrumentos:3",
+    "id": "v2:836c997cc5605a356054",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual conjunto de tambores e pratos é tocado com baquetas e pedais?",
     "options": [
       "Clarinete",
       "Maracas",
@@ -12592,18 +13057,15 @@ export const QUESTIONS=[
       "drum kit",
       "drums"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Drum_kit_parts.png/960px-Drum_kit_parts.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Drum_kit_parts.png",
-      "attribution": "Syed Wamiq Ahmed Hashmi re-draw SVG FOX 52 re-draw with AI Sendtel + · CC BY-SA 3.0"
-    },
-    "clue": "Letras: B______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Bateria.",
+    "source": "https://en.wikipedia.org/wiki/Drum_kit"
   },
   {
-    "id": "instrumentos:4",
+    "id": "v2:63370d4fe9372381f447",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de sopro metálico usa palheta simples e é comum no jazz?",
     "options": [
       "Saxofone",
       "Ukulele",
@@ -12616,18 +13078,15 @@ export const QUESTIONS=[
       "saxophone",
       "sax"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Eight_saxophone_sizes_smaller.png/960px-Eight_saxophone_sizes_smaller.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Eight_saxophone_sizes_smaller.png",
-      "attribution": "Jonathanischoice · CC BY 4.0"
-    },
-    "clue": "Letras: S_______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Saxofone.",
+    "source": "https://en.wikipedia.org/wiki/Saxophone"
   },
   {
-    "id": "instrumentos:5",
+    "id": "v2:a898bc3f8ee1ad019987",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de metal tem três pistões e som brilhante?",
     "options": [
       "Pandeiro",
       "Trompete",
@@ -12639,18 +13098,15 @@ export const QUESTIONS=[
       "trompete",
       "trumpet"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Yamaha_Trumpet_YTR-8335LA_crop.jpg/960px-Yamaha_Trumpet_YTR-8335LA_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_Trumpet_YTR-8335LA_crop.jpg",
-      "attribution": "Yamaha Corporation · CC BY-SA 4.0"
-    },
-    "clue": "Letras: T_______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Trompete.",
+    "source": "https://en.wikipedia.org/wiki/Trumpet"
   },
   {
-    "id": "instrumentos:6",
+    "id": "v2:a4c7a8c450420cc50560",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de sopro produz som quando o ar passa pela borda do bocal?",
     "options": [
       "Gaita de Boca",
       "Fagote",
@@ -12662,18 +13118,15 @@ export const QUESTIONS=[
       "flauta",
       "flute"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Shinobue_and_other_flutes-3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Shinobue_and_other_flutes-3.jpg",
-      "attribution": "Photos by Yasuhiko Sano, Nov 2005, Buffet Crampon and Yamaha; Editing + Collage Gisbert König · Public domain"
-    },
-    "clue": "Letras: F_____"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Flauta.",
+    "source": "https://en.wikipedia.org/wiki/Flute"
   },
   {
-    "id": "instrumentos:7",
+    "id": "v2:f385d6dae213e42a1b5b",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de cordas com arco é apoiado no chão entre os joelhos?",
     "options": [
       "Baixo",
       "Balalaica",
@@ -12685,18 +13138,15 @@ export const QUESTIONS=[
       "violoncelo",
       "cello"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cello_front_side.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Cello_front_side.png",
-      "attribution": "Georg Feitscher · CC BY 3.0"
-    },
-    "clue": "Letras: V_________"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Violoncelo.",
+    "source": "https://en.wikipedia.org/wiki/Cello"
   },
   {
-    "id": "instrumentos:8",
+    "id": "v2:6805eb45bb20117c669b",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de muitas cordas é tocado diretamente com os dedos?",
     "options": [
       "Harpa",
       "Oboé",
@@ -12708,18 +13158,15 @@ export const QUESTIONS=[
       "harpa",
       "harp"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Range_harp.svg/960px-Range_harp.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Range_harp.svg",
-      "attribution": "No machine-readable author provided. Mets501 assumed (based on copyright claims). · CC BY-SA 3.0"
-    },
-    "clue": "Letras: H____"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Harpa.",
+    "source": "https://en.wikipedia.org/wiki/Concert_harp"
   },
   {
-    "id": "instrumentos:9",
+    "id": "v2:10000d9469d6f786739e",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento usa fole, teclado e botões para movimentar o ar por palhetas?",
     "options": [
       "Didgeridoo",
       "Acordeão",
@@ -12733,18 +13180,15 @@ export const QUESTIONS=[
       "acordeão",
       "sanfona"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg/960px-A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg",
-      "attribution": "Necz0r · CC BY-SA 3.0"
-    },
-    "clue": "Letras: A_______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Acordeão.",
+    "source": "https://en.wikipedia.org/wiki/Accordion"
   },
   {
-    "id": "instrumentos:10",
+    "id": "v2:9e50709055075737850b",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de madeira usa palheta simples e corpo cilíndrico?",
     "options": [
       "Tabla",
       "Shamisen",
@@ -12756,18 +13200,15 @@ export const QUESTIONS=[
       "clarinete",
       "clarinet"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Leitner%2BKraus_410_320.png/960px-Leitner%2BKraus_410_320.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Leitner%2BKraus_410_320.png",
-      "attribution": "Leitner & Kraus GmbH, Neustadt/Aisch, Editor/Bearbeiter User:Gisbert K · CC BY-SA 4.0"
-    },
-    "clue": "Letras: C________"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Clarinete.",
+    "source": "https://en.wikipedia.org/wiki/Clarinet"
   },
   {
-    "id": "instrumentos:11",
+    "id": "v2:9525a13b5d6d3edcda56",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de metal muda as notas principalmente com uma vara deslizante?",
     "options": [
       "Kalimba",
       "Violino",
@@ -12778,18 +13219,15 @@ export const QUESTIONS=[
     "aliases": [
       "trombone"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Yamaha_Tenor_trombone_YSL-891Z_%28re-crop%29.jpg/960px-Yamaha_Tenor_trombone_YSL-891Z_%28re-crop%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_Tenor_trombone_YSL-891Z_(re-crop).jpg",
-      "attribution": "Yamaha Corporation · CC BY-SA 4.0"
-    },
-    "clue": "Letras: T_______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Trombone.",
+    "source": "https://en.wikipedia.org/wiki/Trombone"
   },
   {
-    "id": "instrumentos:12",
+    "id": "v2:dbb2d7612ec2e571557c",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de cordas tem uma caixa de ressonância parecida com um tambor?",
     "options": [
       "Banjo",
       "Djembê",
@@ -12801,12 +13239,14 @@ export const QUESTIONS=[
       "banjo"
     ],
     "media": null,
-    "clue": "Letras: B____"
+    "clue": null,
+    "explanation": "O instrumento descrito é Banjo.",
+    "source": "https://en.wikipedia.org/wiki/Five-string_banjo"
   },
   {
-    "id": "instrumentos:13",
+    "id": "v2:5cce37c64539fec6da50",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual pequeno instrumento de quatro cordas é associado à música havaiana?",
     "options": [
       "Piano",
       "Ukulele",
@@ -12817,18 +13257,15 @@ export const QUESTIONS=[
     "aliases": [
       "ukulele"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Kumalae_ukulele_of_c._1910.webm/960px--Kumalae_ukulele_of_c._1910.webm.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Kumalae_ukulele_of_c._1910.webm",
-      "attribution": "St Cecilia's Hall: all things musical instruments · CC BY 3.0"
-    },
-    "clue": "Letras: U______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Ukulele.",
+    "source": "https://en.wikipedia.org/wiki/Ukulele"
   },
   {
-    "id": "instrumentos:14",
+    "id": "v2:abe45caf5ff5a13e5742",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento mantém o ar num saco enquanto tubos produzem som?",
     "options": [
       "Saxofone",
       "Trombone",
@@ -12840,18 +13277,15 @@ export const QUESTIONS=[
       "gaita de foles",
       "bagpipes"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Scotland_Independence_March%2C_28_March_2026_%2832%29.jpg/960px-Scotland_Independence_March%2C_28_March_2026_%2832%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Scotland_Independence_March,_28_March_2026_(32).jpg",
-      "attribution": "Lucas Kendall · CC BY-SA 4.0"
-    },
-    "clue": "Letras: G____ d_ F____"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Gaita de Foles.",
+    "source": "https://en.wikipedia.org/wiki/Bagpipes"
   },
   {
-    "id": "instrumentos:15",
+    "id": "v2:67e48ed01242ef27c097",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de percussão é formado por barras de madeira afinadas?",
     "options": [
       "Violoncelo",
       "Gaita de Foles",
@@ -12863,18 +13297,15 @@ export const QUESTIONS=[
       "xilofone",
       "xylophone"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Xylophone_%28PSF%29.svg/960px-Xylophone_%28PSF%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Xylophone_(PSF).svg",
-      "attribution": "SweetCanadianMullet · CC BY-SA 4.0"
-    },
-    "clue": "Letras: X_______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Xilofone.",
+    "source": "https://en.wikipedia.org/wiki/Xylophone"
   },
   {
-    "id": "instrumentos:16",
+    "id": "v2:d4125463a3cc6046e3f2",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de percussão usa uma pele circular e pequenas platinelas?",
     "options": [
       "Pandeiro",
       "Clarinete",
@@ -12886,18 +13317,15 @@ export const QUESTIONS=[
       "pandeiro",
       "tambourine"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Pandeiro_new_30-09-07.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Pandeiro_new_30-09-07.jpg",
-      "attribution": "Frenciscobcn · CC BY-SA 1.0"
-    },
-    "clue": "Letras: P_______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Pandeiro.",
+    "source": "https://en.wikipedia.org/wiki/Tambourine"
   },
   {
-    "id": "instrumentos:17",
+    "id": "v2:9f27b5637819b80e0ab9",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual par de chocalhos produz som ao ser sacudido?",
     "options": [
       "Ukulele",
       "Maracas",
@@ -12908,18 +13336,15 @@ export const QUESTIONS=[
     "aliases": [
       "maracas"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Maracas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Maracas.jpg",
-      "attribution": "Axel Heymann · CC BY-SA 3.0"
-    },
-    "clue": "Letras: M______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Maracas.",
+    "source": "https://en.wikipedia.org/wiki/Maracas"
   },
   {
-    "id": "instrumentos:18",
+    "id": "v2:5dc9174d5eab00a1a00c",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento indiano de cordas tem braço longo e cordas ressonantes?",
     "options": [
       "Pandeiro",
       "Tuba",
@@ -12930,18 +13355,15 @@ export const QUESTIONS=[
     "aliases": [
       "sitar"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Sitar%2C_late_19th_Century.jpg/960px-Sitar%2C_late_19th_Century.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Sitar,_late_19th_Century.jpg",
-      "attribution": "unknown, MET museum · CC0"
-    },
-    "clue": "Letras: S____"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Sitar.",
+    "source": "https://en.wikipedia.org/wiki/Sitar"
   },
   {
-    "id": "instrumentos:19",
+    "id": "v2:c4ebb85952ab5cc0d5f5",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual pequeno instrumento é soprado e aspirado através de palhetas?",
     "options": [
       "Contrabaixo",
       "Bandolim",
@@ -12954,18 +13376,15 @@ export const QUESTIONS=[
       "harmonica",
       "gaita boca"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/16-hole_chrom_10-hole_diatonic.jpg/960px-16-hole_chrom_10-hole_diatonic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:16-hole_chrom_10-hole_diatonic.jpg",
-      "attribution": "George Leung · CC BY-SA 3.0"
-    },
-    "clue": "Letras: G____ d_ B___"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Gaita de Boca.",
+    "source": "https://en.wikipedia.org/wiki/Harmonica"
   },
   {
-    "id": "instrumentos:20",
+    "id": "v2:8e842ac732f4f6d70d7b",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual grande instrumento de cordas com arco toca registros muito graves na orquestra?",
     "options": [
       "Contrabaixo",
       "Trompa",
@@ -12978,18 +13397,15 @@ export const QUESTIONS=[
       "double bass",
       "baixo acustico"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/AGK_bass1_full.jpg/960px-AGK_bass1_full.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:AGK_bass1_full.jpg",
-      "attribution": "User:AndrewKepert · CC BY-SA 3.0"
-    },
-    "clue": "Letras: C__________"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Contrabaixo.",
+    "source": "https://en.wikipedia.org/wiki/Double_bass"
   },
   {
-    "id": "instrumentos:21",
+    "id": "v2:787ea7d3cad1683a3de2",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de cordas usa captadores para enviar o som a um amplificador?",
     "options": [
       "Fagote",
       "Guitarra Elétrica",
@@ -13003,12 +13419,14 @@ export const QUESTIONS=[
       "guitarra"
     ],
     "media": null,
-    "clue": "Letras: G_______ E_______"
+    "clue": null,
+    "explanation": "O instrumento descrito é Guitarra Elétrica.",
+    "source": "https://en.wikipedia.org/wiki/Electric_guitar"
   },
   {
-    "id": "instrumentos:22",
+    "id": "v2:3d80ecfd68d1acbb7126",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento elétrico de cordas sustenta as notas graves de uma banda?",
     "options": [
       "Balalaica",
       "Koto",
@@ -13021,18 +13439,15 @@ export const QUESTIONS=[
       "bass guitar",
       "guitarra baixo"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Fender_Precision_Bass.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Fender_Precision_Bass.jpg",
-      "attribution": "Own work · Public domain"
-    },
-    "clue": "Letras: B____"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Baixo.",
+    "source": "https://en.wikipedia.org/wiki/Bass_guitar"
   },
   {
-    "id": "instrumentos:23",
+    "id": "v2:f92fbac65e104d52a0e4",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de metal tem tubo enrolado e campana larga?",
     "options": [
       "Steel Drum",
       "Violão",
@@ -13044,18 +13459,15 @@ export const QUESTIONS=[
       "trompa",
       "french horn"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Yamaha_Horn_YHR-667V.tif/lossy-page1-960px-Yamaha_Horn_YHR-667V.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_Horn_YHR-667V.tif",
-      "attribution": "Yamaha Corporation · CC BY-SA 4.0"
-    },
-    "clue": "Letras: T_____"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Trompa.",
+    "source": "https://en.wikipedia.org/wiki/French_horn"
   },
   {
-    "id": "instrumentos:24",
+    "id": "v2:0f3719438e237d60aeb0",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual grande instrumento de metal produz as notas mais graves da família?",
     "options": [
       "Tuba",
       "Teremim",
@@ -13066,18 +13478,15 @@ export const QUESTIONS=[
     "aliases": [
       "tuba"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Yamaha_Bass_tuba_YFB-822.tif/lossy-page1-500px-Yamaha_Bass_tuba_YFB-822.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Yamaha_Bass_tuba_YFB-822.tif",
-      "attribution": "Yamaha Corporation · CC BY-SA 4.0"
-    },
-    "clue": "Letras: T___"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Tuba.",
+    "source": "https://en.wikipedia.org/wiki/Tuba"
   },
   {
-    "id": "instrumentos:25",
+    "id": "v2:1dad315518a9e4f56db6",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de madeira usa palheta dupla e costuma dar a nota de afinação à orquestra?",
     "options": [
       "Shamisen",
       "Oboé",
@@ -13089,18 +13498,15 @@ export const QUESTIONS=[
       "oboe",
       "oboé"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Oboe_Patricola_Artista_PT1.jpg/960px-Oboe_Patricola_Artista_PT1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Oboe_Patricola_Artista_PT1.jpg",
-      "attribution": "Fratelli Patricola, Editor/Bearbeiter User:Gisbert K · CC BY-SA 4.0"
-    },
-    "clue": "Letras: O___"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Oboé.",
+    "source": "https://en.wikipedia.org/wiki/Oboe"
   },
   {
-    "id": "instrumentos:26",
+    "id": "v2:6e161faf98756a5678fd",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento grave de madeira usa palheta dupla e um longo tubo dobrado?",
     "options": [
       "Violino",
       "Acordeão",
@@ -13113,12 +13519,14 @@ export const QUESTIONS=[
       "bassoon"
     ],
     "media": null,
-    "clue": "Letras: F_____"
+    "clue": null,
+    "explanation": "O instrumento descrito é Fagote.",
+    "source": "https://en.wikipedia.org/wiki/Bassoon"
   },
   {
-    "id": "instrumentos:27",
+    "id": "v2:7f4f11ca43c834a8b563",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual pequeno instrumento de cordas duplas é tocado com palheta?",
     "options": [
       "Trompete",
       "Banjo",
@@ -13130,18 +13538,15 @@ export const QUESTIONS=[
       "bandolim",
       "mandolin"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Mandolin_MET_DP169023_%282%29.jpg/960px-Mandolin_MET_DP169023_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Mandolin_MET_DP169023_(2).jpg",
-      "attribution": "Angelo Mannello · CC0"
-    },
-    "clue": "Letras: B_______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Bandolim.",
+    "source": "https://en.wikipedia.org/wiki/Mandolin"
   },
   {
-    "id": "instrumentos:28",
+    "id": "v2:f3ae24bb2ca39d4e05df",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual longo tubo de sopro é tradicional de povos aborígenes australianos?",
     "options": [
       "Didgeridoo",
       "Harpa",
@@ -13152,18 +13557,15 @@ export const QUESTIONS=[
     "aliases": [
       "didgeridoo"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Australiandidgeridoos.jpg/960px-Australiandidgeridoos.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Australiandidgeridoos.jpg",
-      "attribution": "Hmarin · Public domain"
-    },
-    "clue": "Letras: D_________"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Didgeridoo.",
+    "source": "https://en.wikipedia.org/wiki/Didgeridoo"
   },
   {
-    "id": "instrumentos:29",
+    "id": "v2:49b3d1ee0da9eb92dbde",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de cordas russo tem corpo triangular?",
     "options": [
       "Trombone",
       "Balalaica",
@@ -13175,18 +13577,15 @@ export const QUESTIONS=[
       "balalaica",
       "balalaika"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/3_string_prim_balalaika.png/960px-3_string_prim_balalaika.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:3_string_prim_balalaika.png",
-      "attribution": "User:MaGz96 · CC BY-SA 3.0"
-    },
-    "clue": "Letras: B________"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Balalaica.",
+    "source": "https://en.wikipedia.org/wiki/Balalaika"
   },
   {
-    "id": "instrumentos:30",
+    "id": "v2:296bfe229ed8237a9636",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento chinês de duas cordas é tocado com arco preso entre elas?",
     "options": [
       "Gaita de Foles",
       "Guitarra Elétrica",
@@ -13197,18 +13596,15 @@ export const QUESTIONS=[
     "aliases": [
       "erhu"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Erhu_in_the_Mets.jpg/960px-Erhu_in_the_Mets.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Erhu_in_the_Mets.jpg",
-      "attribution": "Unknown author Unknown author · CC0"
-    },
-    "clue": "Letras: E___"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Erhu.",
+    "source": "https://en.wikipedia.org/wiki/Erhu"
   },
   {
-    "id": "instrumentos:31",
+    "id": "v2:7c16887cf7ba78fd8d2e",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual par de tambores é muito usado na música clássica do norte da Índia?",
     "options": [
       "Maracas",
       "Tuba",
@@ -13220,12 +13616,14 @@ export const QUESTIONS=[
       "tabla"
     ],
     "media": null,
-    "clue": "Letras: T____"
+    "clue": null,
+    "explanation": "O instrumento descrito é Tabla.",
+    "source": "https://en.wikipedia.org/wiki/Tabla"
   },
   {
-    "id": "instrumentos:32",
+    "id": "v2:bd4de770f747737619c0",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento caribenho de percussão usa uma superfície metálica afinada?",
     "options": [
       "Steel Drum",
       "Contrabaixo",
@@ -13237,18 +13635,15 @@ export const QUESTIONS=[
       "steel drum",
       "tambor de aco"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg/960px-Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg",
-      "attribution": "Kip1234 · CC BY-SA 4.0"
-    },
-    "clue": "Letras: S____ D___"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Steel Drum.",
+    "source": "https://en.wikipedia.org/wiki/Steel_drum"
   },
   {
-    "id": "instrumentos:33",
+    "id": "v2:ab1e82bddbba388ab247",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento de cordas usa uma roda acionada por manivela no lugar do arco?",
     "options": [
       "Trompa",
       "Sanfona Medieval",
@@ -13261,12 +13656,14 @@ export const QUESTIONS=[
       "hurdy gurdy"
     ],
     "media": null,
-    "clue": "Letras: S______ M_______"
+    "clue": null,
+    "explanation": "O instrumento descrito é Sanfona Medieval.",
+    "source": "https://en.wikipedia.org/wiki/Hurdy-gurdy"
   },
   {
-    "id": "instrumentos:34",
+    "id": "v2:c343f33f5619406499a2",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento lamelofone é tocado com os polegares?",
     "options": [
       "Fagote",
       "Sanfona Medieval",
@@ -13278,18 +13675,15 @@ export const QUESTIONS=[
       "kalimba",
       "piano de polegar"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Ene_mbira.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Ene_mbira.jpg",
-      "attribution": "Zanzambira at English Wikipedia · Public domain"
-    },
-    "clue": "Letras: K______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Kalimba.",
+    "source": "https://en.wikipedia.org/wiki/Kalimba"
   },
   {
-    "id": "instrumentos:35",
+    "id": "v2:1622f0497b3d9f307012",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento eletrônico é tocado sem contato físico, com as mãos perto de antenas?",
     "options": [
       "Balalaica",
       "Djembê",
@@ -13301,18 +13695,15 @@ export const QUESTIONS=[
       "teremim",
       "theremin"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Etherwave_Theremin_Kit.jpg/960px-Etherwave_Theremin_Kit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Etherwave_Theremin_Kit.jpg",
-      "attribution": "Hutschi · CC BY-SA 3.0"
-    },
-    "clue": "Letras: T______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Teremim.",
+    "source": "https://en.wikipedia.org/wiki/Theremin"
   },
   {
-    "id": "instrumentos:36",
+    "id": "v2:9e4fcd2b72205d2e3613",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento japonês tem cordas esticadas sobre uma longa caixa de madeira?",
     "options": [
       "Koto",
       "Steel Drum",
@@ -13323,18 +13714,15 @@ export const QUESTIONS=[
     "aliases": [
       "koto"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Japanese_Koto.jpg/960px-Japanese_Koto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Japanese_Koto.jpg",
-      "attribution": "Original uploader and author was Smgregory at en.wikipedia · CC BY-SA 3.0"
-    },
-    "clue": "Letras: K___"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Koto.",
+    "source": "https://en.wikipedia.org/wiki/Koto_(instrument)"
   },
   {
-    "id": "instrumentos:37",
+    "id": "v2:192feeaf72005aa55d30",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual tambor em forma de cálice é tocado com as mãos e tem origem na África Ocidental?",
     "options": [
       "Teremim",
       "Djembê",
@@ -13346,18 +13734,15 @@ export const QUESTIONS=[
       "djembe",
       "djembe africano"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Lenke_djembe_from_Mali.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Lenke_djembe_from_Mali.jpeg",
-      "attribution": "Djembe Art · CC BY-SA 3.0"
-    },
-    "clue": "Letras: D_____"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Djembê.",
+    "source": "https://en.wikipedia.org/wiki/Djembe"
   },
   {
-    "id": "instrumentos:38",
+    "id": "v2:d2ca75f94e6cbc35c934",
     "quiz": "instrumentos",
-    "text": "Que instrumento musical é este?",
+    "text": "Qual instrumento japonês de três cordas é tocado com uma grande palheta?",
     "options": [
       "Violão",
       "Violoncelo",
@@ -13368,18 +13753,15 @@ export const QUESTIONS=[
     "aliases": [
       "shamisen"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Tokyo_Geisha_with_Shamisen_c1870s%2C.jpg/960px-Tokyo_Geisha_with_Shamisen_c1870s%2C.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-      "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Geisha_with_Shamisen_c1870s,.jpg",
-      "attribution": "Unknown Artist, Unknown School · Public domain"
-    },
-    "clue": "Letras: S_______"
+    "media": null,
+    "clue": null,
+    "explanation": "O instrumento descrito é Shamisen.",
+    "source": "https://en.wikipedia.org/wiki/Shamisen"
   },
   {
-    "id": "anime:0",
+    "id": "v2:36827aecb8db81ce10b1",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Qual anime ou mangá corresponde a esta história: Ninja da Vila da Folha que sonha em se tornar Hokage.",
     "options": [
       "Naruto",
       "One Piece",
@@ -13391,12 +13773,14 @@ export const QUESTIONS=[
       "naruto"
     ],
     "media": null,
-    "clue": "Ninja da Vila da Folha que sonha em se tornar Hokage."
+    "clue": null,
+    "explanation": "Naruto Uzumaki aparece em Naruto.",
+    "source": "https://en.wikipedia.org/wiki/Naruto_Uzumaki"
   },
   {
-    "id": "anime:1",
+    "id": "v2:33064847c023fd8d301b",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Sasuke Uchiha?",
     "options": [
       "Death Note",
       "Naruto",
@@ -13408,12 +13792,14 @@ export const QUESTIONS=[
       "naruto"
     ],
     "media": null,
-    "clue": "Ninja da Vila da Folha que sonha em se tornar Hokage."
+    "clue": null,
+    "explanation": "Sasuke Uchiha aparece em Naruto.",
+    "source": "https://en.wikipedia.org/wiki/Sasuke_Uchiha"
   },
   {
-    "id": "anime:2",
+    "id": "v2:a53480f6e11c3309b987",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Luffy?",
     "options": [
       "Demon Slayer",
       "Pokémon",
@@ -13425,12 +13811,14 @@ export const QUESTIONS=[
       "one piece"
     ],
     "media": null,
-    "clue": "Personagem: Luffy"
+    "clue": null,
+    "explanation": "Luffy aparece em One Piece.",
+    "source": "https://en.wikipedia.org/wiki/Monkey_D._Luffy"
   },
   {
-    "id": "anime:3",
+    "id": "v2:209d08b4ca49b4629f25",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Zoro?",
     "options": [
       "Cowboy Bebop",
       "Yu Yu Hakusho",
@@ -13442,12 +13830,14 @@ export const QUESTIONS=[
       "one piece"
     ],
     "media": null,
-    "clue": "Personagem: Zoro"
+    "clue": null,
+    "explanation": "Zoro aparece em One Piece.",
+    "source": "https://en.wikipedia.org/wiki/Roronoa_Zoro"
   },
   {
-    "id": "anime:4",
+    "id": "v2:f92047094d7ed4a5e865",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Goku?",
     "options": [
       "Dragon Ball",
       "Sailor Moon",
@@ -13460,12 +13850,14 @@ export const QUESTIONS=[
       "dragonball"
     ],
     "media": null,
-    "clue": "Personagem: Goku"
+    "clue": null,
+    "explanation": "Goku aparece em Dragon Ball.",
+    "source": "https://en.wikipedia.org/wiki/Goku"
   },
   {
-    "id": "anime:5",
+    "id": "v2:1c4af581b5fc5bad5500",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Vegeta?",
     "options": [
       "Hunter x Hunter",
       "Dragon Ball",
@@ -13478,12 +13870,14 @@ export const QUESTIONS=[
       "dragonball"
     ],
     "media": null,
-    "clue": "Personagem: Vegeta"
+    "clue": null,
+    "explanation": "Vegeta aparece em Dragon Ball.",
+    "source": "https://en.wikipedia.org/wiki/Vegeta"
   },
   {
-    "id": "anime:6",
+    "id": "v2:e92d4d1c5bd828bf7f4c",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Edward Elric?",
     "options": [
       "Doraemon",
       "Haikyu!!",
@@ -13496,12 +13890,14 @@ export const QUESTIONS=[
       "full metal alchemist"
     ],
     "media": null,
-    "clue": "Personagem: Edward Elric"
+    "clue": null,
+    "explanation": "Edward Elric aparece em Fullmetal Alchemist.",
+    "source": "https://en.wikipedia.org/wiki/Edward_Elric"
   },
   {
-    "id": "anime:7",
+    "id": "v2:a91c0c8021d937b260bb",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Light Yagami?",
     "options": [
       "Spy x Family",
       "Berserk",
@@ -13513,12 +13909,14 @@ export const QUESTIONS=[
       "death note"
     ],
     "media": null,
-    "clue": "Personagem: Light Yagami"
+    "clue": null,
+    "explanation": "Light Yagami aparece em Death Note.",
+    "source": "https://en.wikipedia.org/wiki/Light_Yagami"
   },
   {
-    "id": "anime:8",
+    "id": "v2:b721d0ee3dbb85e633d3",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece L?",
     "options": [
       "Death Note",
       "Black Clover",
@@ -13530,12 +13928,14 @@ export const QUESTIONS=[
       "death note"
     ],
     "media": null,
-    "clue": "Personagem: L"
+    "clue": null,
+    "explanation": "L aparece em Death Note.",
+    "source": "https://en.wikipedia.org/wiki/L_(Death_Note)"
   },
   {
-    "id": "anime:9",
+    "id": "v2:f9c92ece8fece11563c7",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Ichigo Kurosaki?",
     "options": [
       "The Promised Neverland",
       "Bleach",
@@ -13547,12 +13947,14 @@ export const QUESTIONS=[
       "bleach"
     ],
     "media": null,
-    "clue": "Personagem: Ichigo Kurosaki"
+    "clue": null,
+    "explanation": "Ichigo Kurosaki aparece em Bleach.",
+    "source": "https://en.wikipedia.org/wiki/Ichigo_Kurosaki"
   },
   {
-    "id": "anime:10",
+    "id": "v2:4ad80b90a6cd7ba261a5",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Eren Yeager?",
     "options": [
       "Mob Psycho 100",
       "Digimon",
@@ -13566,12 +13968,14 @@ export const QUESTIONS=[
       "shingeki no kyojin"
     ],
     "media": null,
-    "clue": "Personagem: Eren Yeager"
+    "clue": null,
+    "explanation": "Eren Yeager aparece em Attack on Titan.",
+    "source": "https://en.wikipedia.org/wiki/Eren_Yeager"
   },
   {
-    "id": "anime:11",
+    "id": "v2:bb97055aece1ff96a0fa",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Mikasa Ackerman?",
     "options": [
       "Konosuba",
       "Mashle",
@@ -13585,12 +13989,14 @@ export const QUESTIONS=[
       "shingeki no kyojin"
     ],
     "media": null,
-    "clue": "Personagem: Mikasa Ackerman"
+    "clue": null,
+    "explanation": "Mikasa Ackerman aparece em Attack on Titan.",
+    "source": "https://en.wikipedia.org/wiki/Mikasa_Ackerman"
   },
   {
-    "id": "anime:12",
+    "id": "v2:283f848b6bc86be38642",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Tanjiro Kamado?",
     "options": [
       "Demon Slayer",
       "Yu-Gi-Oh!",
@@ -13603,12 +14009,14 @@ export const QUESTIONS=[
       "kimetsu no yaiba"
     ],
     "media": null,
-    "clue": "Personagem: Tanjiro Kamado"
+    "clue": null,
+    "explanation": "Tanjiro Kamado aparece em Demon Slayer.",
+    "source": "https://en.wikipedia.org/wiki/Tanjiro_Kamado"
   },
   {
-    "id": "anime:13",
+    "id": "v2:edf03811965f2b6df7a7",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Nezuko Kamado?",
     "options": [
       "Frieren",
       "Demon Slayer",
@@ -13621,12 +14029,14 @@ export const QUESTIONS=[
       "kimetsu no yaiba"
     ],
     "media": null,
-    "clue": "Personagem: Nezuko Kamado"
+    "clue": null,
+    "explanation": "Nezuko Kamado aparece em Demon Slayer.",
+    "source": "https://en.wikipedia.org/wiki/Nezuko_Kamado"
   },
   {
-    "id": "anime:14",
+    "id": "v2:b25b638e7ea1c03ad430",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Izuku Midoriya (Deku)?",
     "options": [
       "Blue Lock",
       "Bleach",
@@ -13639,12 +14049,14 @@ export const QUESTIONS=[
       "boku no hero academia"
     ],
     "media": null,
-    "clue": "Personagem: Izuku Midoriya (Deku)"
+    "clue": null,
+    "explanation": "Izuku Midoriya (Deku) aparece em My Hero Academia.",
+    "source": "https://en.wikipedia.org/wiki/Izuku_Midoriya"
   },
   {
-    "id": "anime:15",
+    "id": "v2:59232e2422bb4b4d8ab5",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Bakugo?",
     "options": [
       "One Piece",
       "One-Punch Man",
@@ -13657,12 +14069,14 @@ export const QUESTIONS=[
       "boku no hero academia"
     ],
     "media": null,
-    "clue": "Personagem: Bakugo"
+    "clue": null,
+    "explanation": "Bakugo aparece em My Hero Academia.",
+    "source": "https://en.wikipedia.org/wiki/Katsuki_Bakugo"
   },
   {
-    "id": "anime:16",
+    "id": "v2:9c5492423c9a8126b3bb",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Saitama?",
     "options": [
       "One-Punch Man",
       "Death Note",
@@ -13675,12 +14089,14 @@ export const QUESTIONS=[
       "one-punch man"
     ],
     "media": null,
-    "clue": "Personagem: Saitama"
+    "clue": null,
+    "explanation": "Saitama aparece em One-Punch Man.",
+    "source": "https://en.wikipedia.org/wiki/Saitama_(One-Punch_Man)"
   },
   {
-    "id": "anime:17",
+    "id": "v2:ad53f984032147115783",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Spike Spiegel?",
     "options": [
       "Demon Slayer",
       "Cowboy Bebop",
@@ -13692,12 +14108,14 @@ export const QUESTIONS=[
       "cowboy bebop"
     ],
     "media": null,
-    "clue": "Personagem: Spike Spiegel"
+    "clue": null,
+    "explanation": "Spike Spiegel aparece em Cowboy Bebop.",
+    "source": "https://en.wikipedia.org/wiki/Spike_Spiegel"
   },
   {
-    "id": "anime:18",
+    "id": "v2:4b7e03470127945003ce",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Lelouch?",
     "options": [
       "Cowboy Bebop",
       "Inuyasha",
@@ -13709,12 +14127,14 @@ export const QUESTIONS=[
       "code geass"
     ],
     "media": null,
-    "clue": "Personagem: Lelouch"
+    "clue": null,
+    "explanation": "Lelouch aparece em Code Geass.",
+    "source": "https://en.wikipedia.org/wiki/Lelouch_Lamperouge"
   },
   {
-    "id": "anime:19",
+    "id": "v2:4b472b91e51b45e1df94",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Shinji Ikari?",
     "options": [
       "Pokémon",
       "Chainsaw Man",
@@ -13727,12 +14147,14 @@ export const QUESTIONS=[
       "neon genesis evangelion"
     ],
     "media": null,
-    "clue": "Personagem: Shinji Ikari"
+    "clue": null,
+    "explanation": "Shinji Ikari aparece em Evangelion.",
+    "source": "https://en.wikipedia.org/wiki/Shinji_Ikari"
   },
   {
-    "id": "anime:20",
+    "id": "v2:b33f964afc39ae891375",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Usagi Tsukino?",
     "options": [
       "Sailor Moon",
       "Yu Yu Hakusho",
@@ -13744,12 +14166,14 @@ export const QUESTIONS=[
       "sailor moon"
     ],
     "media": null,
-    "clue": "Personagem: Usagi Tsukino"
+    "clue": null,
+    "explanation": "Usagi Tsukino aparece em Sailor Moon.",
+    "source": "https://en.wikipedia.org/wiki/Usagi_Tsukino"
   },
   {
-    "id": "anime:21",
+    "id": "v2:523b31061c95f7a88fc9",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Pikachu?",
     "options": [
       "Jujutsu Kaisen",
       "Pokémon",
@@ -13762,12 +14186,14 @@ export const QUESTIONS=[
       "pokémon"
     ],
     "media": null,
-    "clue": "Personagem: Pikachu"
+    "clue": null,
+    "explanation": "Pikachu aparece em Pokémon.",
+    "source": "https://en.wikipedia.org/wiki/Pikachu"
   },
   {
-    "id": "anime:22",
+    "id": "v2:cf4b9b29e554228c8806",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Ash Ketchum?",
     "options": [
       "Tokyo Ghoul",
       "Vinland Saga",
@@ -13780,12 +14206,14 @@ export const QUESTIONS=[
       "pokémon"
     ],
     "media": null,
-    "clue": "Personagem: Ash Ketchum"
+    "clue": null,
+    "explanation": "Ash Ketchum aparece em Pokémon.",
+    "source": "https://en.wikipedia.org/wiki/Ash_Ketchum"
   },
   {
-    "id": "anime:23",
+    "id": "v2:313e023efc312da31a78",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Kirito?",
     "options": [
       "Haikyu!!",
       "Re:Zero",
@@ -13798,12 +14226,14 @@ export const QUESTIONS=[
       "sao"
     ],
     "media": null,
-    "clue": "Personagem: Kirito"
+    "clue": null,
+    "explanation": "Kirito aparece em Sword Art Online.",
+    "source": "https://en.wikipedia.org/wiki/Sword_Art_Online"
   },
   {
-    "id": "anime:24",
+    "id": "v2:9db1fa1d6d94c1674aaa",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Killua Zoldyck?",
     "options": [
       "Hunter x Hunter",
       "Berserk",
@@ -13816,12 +14246,14 @@ export const QUESTIONS=[
       "hunter×hunter"
     ],
     "media": null,
-    "clue": "Personagem: Killua Zoldyck"
+    "clue": null,
+    "explanation": "Killua Zoldyck aparece em Hunter x Hunter.",
+    "source": "https://en.wikipedia.org/wiki/Killua_Zoldyck"
   },
   {
-    "id": "anime:25",
+    "id": "v2:6d9ae19ba60d12df763d",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Gon Freecss?",
     "options": [
       "JoJo's Bizarre Adventure",
       "Hunter x Hunter",
@@ -13834,12 +14266,14 @@ export const QUESTIONS=[
       "hunter×hunter"
     ],
     "media": null,
-    "clue": "Personagem: Gon Freecss"
+    "clue": null,
+    "explanation": "Gon Freecss aparece em Hunter x Hunter.",
+    "source": "https://en.wikipedia.org/wiki/Gon_Freecss"
   },
   {
-    "id": "anime:26",
+    "id": "v2:a3fe04378b2d6b6e9578",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Yusuke Urameshi?",
     "options": [
       "Fruits Basket",
       "Diários de uma Apotecária",
@@ -13852,12 +14286,14 @@ export const QUESTIONS=[
       "yuyu hakusho"
     ],
     "media": null,
-    "clue": "Personagem: Yusuke Urameshi"
+    "clue": null,
+    "explanation": "Yusuke Urameshi aparece em Yu Yu Hakusho.",
+    "source": "https://en.wikipedia.org/wiki/Yusuke_Urameshi"
   },
   {
-    "id": "anime:27",
+    "id": "v2:3c13e048d62ce138505e",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Qual anime ou mangá corresponde a esta história: Meio-demônio que viaja pelo Japão feudal com Kagome.",
     "options": [
       "Digimon",
       "Naruto",
@@ -13869,12 +14305,14 @@ export const QUESTIONS=[
       "inuyasha"
     ],
     "media": null,
-    "clue": "Meio-demônio que viaja pelo Japão feudal com Kagome."
+    "clue": null,
+    "explanation": "Inuyasha aparece em Inuyasha.",
+    "source": "https://en.wikipedia.org/wiki/Inuyasha"
   },
   {
-    "id": "anime:28",
+    "id": "v2:511f3af85838703881ba",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Qual anime ou mangá corresponde a esta história: Gato robótico azul que ajuda Nobita com invenções do futuro.",
     "options": [
       "Doraemon",
       "Mashle",
@@ -13886,12 +14324,14 @@ export const QUESTIONS=[
       "doraemon"
     ],
     "media": null,
-    "clue": "Gato robótico azul que ajuda Nobita com invenções do futuro."
+    "clue": null,
+    "explanation": "Doraemon aparece em Doraemon.",
+    "source": "https://en.wikipedia.org/wiki/Doraemon"
   },
   {
-    "id": "anime:29",
+    "id": "v2:ac5c69d5cad059463fb1",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Yuji Itadori?",
     "options": [
       "Solo Leveling",
       "Jujutsu Kaisen",
@@ -13904,12 +14344,14 @@ export const QUESTIONS=[
       "jjk"
     ],
     "media": null,
-    "clue": "Personagem: Yuji Itadori"
+    "clue": null,
+    "explanation": "Yuji Itadori aparece em Jujutsu Kaisen.",
+    "source": "https://en.wikipedia.org/wiki/Yuji_Itadori"
   },
   {
-    "id": "anime:30",
+    "id": "v2:192d026fe63d4f42671a",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Denji?",
     "options": [
       "Dragon Ball",
       "One-Punch Man",
@@ -13921,12 +14363,14 @@ export const QUESTIONS=[
       "chainsaw man"
     ],
     "media": null,
-    "clue": "Personagem: Denji"
+    "clue": null,
+    "explanation": "Denji aparece em Chainsaw Man.",
+    "source": "https://en.wikipedia.org/wiki/Denji_(Chainsaw_Man)"
   },
   {
-    "id": "anime:31",
+    "id": "v2:004f69fa109e4c2a3c9a",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Loid Forger?",
     "options": [
       "Bleach",
       "Evangelion",
@@ -13939,12 +14383,14 @@ export const QUESTIONS=[
       "spy×family"
     ],
     "media": null,
-    "clue": "Personagem: Loid Forger"
+    "clue": null,
+    "explanation": "Loid Forger aparece em Spy x Family.",
+    "source": "https://en.wikipedia.org/wiki/Loid_Forger"
   },
   {
-    "id": "anime:32",
+    "id": "v2:94d83dbf4ac824de4375",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Ken Kaneki?",
     "options": [
       "Tokyo Ghoul",
       "My Hero Academia",
@@ -13956,12 +14402,14 @@ export const QUESTIONS=[
       "tokyo ghoul"
     ],
     "media": null,
-    "clue": "Personagem: Ken Kaneki"
+    "clue": null,
+    "explanation": "Ken Kaneki aparece em Tokyo Ghoul.",
+    "source": "https://en.wikipedia.org/wiki/Ken_Kaneki"
   },
   {
-    "id": "anime:33",
+    "id": "v2:0f7909b4404e93126a7f",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Natsu Dragneel?",
     "options": [
       "Code Geass",
       "Fairy Tail",
@@ -13973,12 +14421,14 @@ export const QUESTIONS=[
       "fairy tail"
     ],
     "media": null,
-    "clue": "Personagem: Natsu Dragneel"
+    "clue": null,
+    "explanation": "Natsu Dragneel aparece em Fairy Tail.",
+    "source": "https://en.wikipedia.org/wiki/Natsu_Dragneel"
   },
   {
-    "id": "anime:34",
+    "id": "v2:27873158d956a234331d",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Asta?",
     "options": [
       "Pokémon",
       "Chainsaw Man",
@@ -13990,12 +14440,14 @@ export const QUESTIONS=[
       "black clover"
     ],
     "media": null,
-    "clue": "Personagem: Asta"
+    "clue": null,
+    "explanation": "Asta aparece em Black Clover.",
+    "source": "https://en.wikipedia.org/wiki/Asta_(Black_Clover)"
   },
   {
-    "id": "anime:35",
+    "id": "v2:87fc933f9e2b0b3b3200",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Hinata Shoyo?",
     "options": [
       "Yu Yu Hakusho",
       "Fairy Tail",
@@ -14008,12 +14460,14 @@ export const QUESTIONS=[
       "haikyuu"
     ],
     "media": null,
-    "clue": "Personagem: Hinata Shoyo"
+    "clue": null,
+    "explanation": "Hinata Shoyo aparece em Haikyu!!.",
+    "source": "https://en.wikipedia.org/wiki/Shoyo_Hinata"
   },
   {
-    "id": "anime:36",
+    "id": "v2:ada68b2f3afcd040b65a",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Kakashi Hatake?",
     "options": [
       "Naruto",
       "Chainsaw Man",
@@ -14025,12 +14479,14 @@ export const QUESTIONS=[
       "naruto"
     ],
     "media": null,
-    "clue": "Ninja da Vila da Folha que sonha em se tornar Hokage."
+    "clue": null,
+    "explanation": "Kakashi Hatake aparece em Naruto.",
+    "source": "https://en.wikipedia.org/wiki/Kakashi_Hatake"
   },
   {
-    "id": "anime:37",
+    "id": "v2:97097436a6cec6dbbfa1",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Itachi Uchiha?",
     "options": [
       "Fairy Tail",
       "Naruto",
@@ -14042,12 +14498,14 @@ export const QUESTIONS=[
       "naruto"
     ],
     "media": null,
-    "clue": "Ninja da Vila da Folha que sonha em se tornar Hokage."
+    "clue": null,
+    "explanation": "Itachi Uchiha aparece em Naruto.",
+    "source": "https://en.wikipedia.org/wiki/Itachi_Uchiha"
   },
   {
-    "id": "anime:38",
+    "id": "v2:44d17404ac61ec02d219",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Gaara?",
     "options": [
       "Dr. Stone",
       "Konosuba",
@@ -14059,12 +14517,14 @@ export const QUESTIONS=[
       "naruto"
     ],
     "media": null,
-    "clue": "Ninja da Vila da Folha que sonha em se tornar Hokage."
+    "clue": null,
+    "explanation": "Gaara aparece em Naruto.",
+    "source": "https://en.wikipedia.org/wiki/Gaara"
   },
   {
-    "id": "anime:39",
+    "id": "v2:902db4e9c80a59ad3eb1",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Hinata Hyuga?",
     "options": [
       "Vinland Saga",
       "Yu-Gi-Oh!",
@@ -14076,12 +14536,14 @@ export const QUESTIONS=[
       "naruto"
     ],
     "media": null,
-    "clue": "Ninja da Vila da Folha que sonha em se tornar Hokage."
+    "clue": null,
+    "explanation": "Hinata Hyuga aparece em Naruto.",
+    "source": "https://en.wikipedia.org/wiki/Hinata_Hyuga"
   },
   {
-    "id": "anime:40",
+    "id": "v2:d8e31ea1ffc87f0fa7f2",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Nami?",
     "options": [
       "One Piece",
       "Re:Zero",
@@ -14092,18 +14554,15 @@ export const QUESTIONS=[
     "aliases": [
       "one piece"
     ],
-    "media": {
-      "type": "image",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Nami_%28One_Piece_Odyssey%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-      "source": "https://commons.wikimedia.org/wiki/File:Nami_(One_Piece_Odyssey).jpg",
-      "attribution": "Bandai Namco Entertainment America · CC BY 4.0"
-    },
-    "clue": "Personagem: Nami"
+    "media": null,
+    "clue": null,
+    "explanation": "Nami aparece em One Piece.",
+    "source": "https://en.wikipedia.org/wiki/Nami_(One_Piece)"
   },
   {
-    "id": "anime:41",
+    "id": "v2:a1279ef3bfdf98360fbc",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Sanji?",
     "options": [
       "Soul Eater",
       "One Piece",
@@ -14115,12 +14574,14 @@ export const QUESTIONS=[
       "one piece"
     ],
     "media": null,
-    "clue": "Personagem: Sanji"
+    "clue": null,
+    "explanation": "Sanji aparece em One Piece.",
+    "source": "https://en.wikipedia.org/wiki/Sanji_(One_Piece)"
   },
   {
-    "id": "anime:42",
+    "id": "v2:57ea804022f2ba6801fb",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Chopper?",
     "options": [
       "Gintama",
       "Dragon Ball",
@@ -14132,12 +14593,14 @@ export const QUESTIONS=[
       "one piece"
     ],
     "media": null,
-    "clue": "Personagem: Chopper"
+    "clue": null,
+    "explanation": "Chopper aparece em One Piece.",
+    "source": "https://en.wikipedia.org/wiki/Tony_Tony_Chopper"
   },
   {
-    "id": "anime:43",
+    "id": "v2:a42b918c6b045a787f6f",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Piccolo?",
     "options": [
       "Diários de uma Apotecária",
       "Bleach",
@@ -14150,12 +14613,14 @@ export const QUESTIONS=[
       "dragonball"
     ],
     "media": null,
-    "clue": "Personagem: Piccolo"
+    "clue": null,
+    "explanation": "Piccolo aparece em Dragon Ball.",
+    "source": "https://en.wikipedia.org/wiki/Piccolo_(Dragon_Ball)"
   },
   {
-    "id": "anime:44",
+    "id": "v2:2a1b0695d8b8b87057a9",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Gohan?",
     "options": [
       "Dragon Ball",
       "Naruto",
@@ -14168,12 +14633,14 @@ export const QUESTIONS=[
       "dragonball"
     ],
     "media": null,
-    "clue": "Personagem: Gohan"
+    "clue": null,
+    "explanation": "Gohan aparece em Dragon Ball.",
+    "source": "https://en.wikipedia.org/wiki/Gohan"
   },
   {
-    "id": "anime:45",
+    "id": "v2:d7927a7b1db7c9c53030",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Bulma?",
     "options": [
       "Death Note",
       "Dragon Ball",
@@ -14186,12 +14653,14 @@ export const QUESTIONS=[
       "dragonball"
     ],
     "media": null,
-    "clue": "Personagem: Bulma"
+    "clue": null,
+    "explanation": "Bulma aparece em Dragon Ball.",
+    "source": "https://en.wikipedia.org/wiki/Bulma"
   },
   {
-    "id": "anime:46",
+    "id": "v2:3cc44f36ce6ca4d0024b",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Zenitsu Agatsuma?",
     "options": [
       "Attack on Titan",
       "Pokémon",
@@ -14204,12 +14673,14 @@ export const QUESTIONS=[
       "kimetsu no yaiba"
     ],
     "media": null,
-    "clue": "Personagem: Zenitsu Agatsuma"
+    "clue": null,
+    "explanation": "Zenitsu Agatsuma aparece em Demon Slayer.",
+    "source": "https://en.wikipedia.org/wiki/Zenitsu_Agatsuma"
   },
   {
-    "id": "anime:47",
+    "id": "v2:100b6aba66dc79f49ad1",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Inosuke Hashibira?",
     "options": [
       "Cowboy Bebop",
       "Yu Yu Hakusho",
@@ -14222,12 +14693,14 @@ export const QUESTIONS=[
       "kimetsu no yaiba"
     ],
     "media": null,
-    "clue": "Personagem: Inosuke Hashibira"
+    "clue": null,
+    "explanation": "Inosuke Hashibira aparece em Demon Slayer.",
+    "source": "https://en.wikipedia.org/wiki/Inosuke_Hashibira"
   },
   {
-    "id": "anime:48",
+    "id": "v2:8eb4e0554d015a2fb9ed",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece All Might?",
     "options": [
       "My Hero Academia",
       "Sailor Moon",
@@ -14240,12 +14713,14 @@ export const QUESTIONS=[
       "boku no hero academia"
     ],
     "media": null,
-    "clue": "Personagem: All Might"
+    "clue": null,
+    "explanation": "All Might aparece em My Hero Academia.",
+    "source": "https://en.wikipedia.org/wiki/All_Might_(My_Hero_Academia)"
   },
   {
-    "id": "anime:49",
+    "id": "v2:91406df071813f7f48d1",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Levi Ackerman?",
     "options": [
       "Hunter x Hunter",
       "Attack on Titan",
@@ -14259,12 +14734,14 @@ export const QUESTIONS=[
       "shingeki no kyojin"
     ],
     "media": null,
-    "clue": "Personagem: Levi Ackerman"
+    "clue": null,
+    "explanation": "Levi Ackerman aparece em Attack on Titan.",
+    "source": "https://en.wikipedia.org/wiki/Levi_Ackerman"
   },
   {
-    "id": "anime:50",
+    "id": "v2:32d39cb5f684cf0da258",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Rukia Kuchiki?",
     "options": [
       "Doraemon",
       "Haikyu!!",
@@ -14276,12 +14753,14 @@ export const QUESTIONS=[
       "bleach"
     ],
     "media": null,
-    "clue": "Personagem: Rukia Kuchiki"
+    "clue": null,
+    "explanation": "Rukia Kuchiki aparece em Bleach.",
+    "source": "https://en.wikipedia.org/wiki/Rukia_Kuchiki"
   },
   {
-    "id": "anime:51",
+    "id": "v2:eb5e5e558aecd19e9bcc",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Hisoka Morow?",
     "options": [
       "Spy x Family",
       "Berserk",
@@ -14294,12 +14773,14 @@ export const QUESTIONS=[
       "hunter×hunter"
     ],
     "media": null,
-    "clue": "Personagem: Hisoka Morow"
+    "clue": null,
+    "explanation": "Hisoka Morow aparece em Hunter x Hunter.",
+    "source": "https://en.wikipedia.org/wiki/Hisoka_Morow"
   },
   {
-    "id": "anime:52",
+    "id": "v2:10546f82b54a3be617d6",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Asuna Yuuki?",
     "options": [
       "Sword Art Online",
       "Black Clover",
@@ -14312,12 +14793,14 @@ export const QUESTIONS=[
       "sao"
     ],
     "media": null,
-    "clue": "Personagem: Asuna Yuuki"
+    "clue": null,
+    "explanation": "Asuna Yuuki aparece em Sword Art Online.",
+    "source": "https://en.wikipedia.org/wiki/Asuna_Yuuki"
   },
   {
-    "id": "anime:53",
+    "id": "v2:0a122e1b30777af995bd",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Rei Ayanami?",
     "options": [
       "The Promised Neverland",
       "Evangelion",
@@ -14330,12 +14813,14 @@ export const QUESTIONS=[
       "neon genesis evangelion"
     ],
     "media": null,
-    "clue": "Personagem: Rei Ayanami"
+    "clue": null,
+    "explanation": "Rei Ayanami aparece em Evangelion.",
+    "source": "https://en.wikipedia.org/wiki/Rei_Ayanami"
   },
   {
-    "id": "anime:54",
+    "id": "v2:38b72f693fc1e298bf28",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Asuka Langley?",
     "options": [
       "Mob Psycho 100",
       "Digimon",
@@ -14348,12 +14833,14 @@ export const QUESTIONS=[
       "neon genesis evangelion"
     ],
     "media": null,
-    "clue": "Personagem: Asuka Langley"
+    "clue": null,
+    "explanation": "Asuka Langley aparece em Evangelion.",
+    "source": "https://en.wikipedia.org/wiki/Asuka_Langley_Soryu"
   },
   {
-    "id": "anime:55",
+    "id": "v2:c178e7a0933589d4c074",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Faye Valentine?",
     "options": [
       "Konosuba",
       "Mashle",
@@ -14365,12 +14852,14 @@ export const QUESTIONS=[
       "cowboy bebop"
     ],
     "media": null,
-    "clue": "Personagem: Faye Valentine"
+    "clue": null,
+    "explanation": "Faye Valentine aparece em Cowboy Bebop.",
+    "source": "https://en.wikipedia.org/wiki/Faye_Valentine"
   },
   {
-    "id": "anime:56",
+    "id": "v2:c7acbf5070b4a6c3b76d",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Misty?",
     "options": [
       "Pokémon",
       "Yu-Gi-Oh!",
@@ -14383,12 +14872,14 @@ export const QUESTIONS=[
       "pokémon"
     ],
     "media": null,
-    "clue": "Personagem: Misty"
+    "clue": null,
+    "explanation": "Misty aparece em Pokémon.",
+    "source": "https://en.wikipedia.org/wiki/Misty_(Pok%C3%A9mon)"
   },
   {
-    "id": "anime:57",
+    "id": "v2:76d9c30c74a3849f6402",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Senku Ishigami?",
     "options": [
       "Frieren",
       "Dr. Stone",
@@ -14401,12 +14892,14 @@ export const QUESTIONS=[
       "dr. stone"
     ],
     "media": null,
-    "clue": "Personagem: Senku Ishigami"
+    "clue": null,
+    "explanation": "Senku Ishigami aparece em Dr. Stone.",
+    "source": "https://en.wikipedia.org/wiki/Senku_Ishigami"
   },
   {
-    "id": "anime:58",
+    "id": "v2:f2715d10b1ea4a5881f0",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Emma?",
     "options": [
       "Blue Lock",
       "Bleach",
@@ -14419,12 +14912,14 @@ export const QUESTIONS=[
       "promised neverland"
     ],
     "media": null,
-    "clue": "Personagem: Emma"
+    "clue": null,
+    "explanation": "Emma aparece em The Promised Neverland.",
+    "source": "https://en.wikipedia.org/wiki/Emma_(The_Promised_Neverland)"
   },
   {
-    "id": "anime:59",
+    "id": "v2:600fe87b0e8a6eaf515b",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Guts?",
     "options": [
       "One Piece",
       "My Hero Academia",
@@ -14436,12 +14931,14 @@ export const QUESTIONS=[
       "berserk"
     ],
     "media": null,
-    "clue": "Personagem: Guts"
+    "clue": null,
+    "explanation": "Guts aparece em Berserk.",
+    "source": "https://en.wikipedia.org/wiki/Guts_(Berserk)"
   },
   {
-    "id": "anime:60",
+    "id": "v2:0e7bd0cf64f145d22bb7",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Thorfinn?",
     "options": [
       "Vinland Saga",
       "Death Note",
@@ -14453,12 +14950,14 @@ export const QUESTIONS=[
       "vinland saga"
     ],
     "media": null,
-    "clue": "Personagem: Thorfinn"
+    "clue": null,
+    "explanation": "Thorfinn aparece em Vinland Saga.",
+    "source": "https://en.wikipedia.org/wiki/Thorfinn_(Vinland_Saga)"
   },
   {
-    "id": "anime:61",
+    "id": "v2:bd722029579bb1bcc46c",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Mob (Shigeo Kageyama)?",
     "options": [
       "Demon Slayer",
       "Mob Psycho 100",
@@ -14471,12 +14970,14 @@ export const QUESTIONS=[
       "mob psycho"
     ],
     "media": null,
-    "clue": "Personagem: Mob (Shigeo Kageyama)"
+    "clue": null,
+    "explanation": "Mob (Shigeo Kageyama) aparece em Mob Psycho 100.",
+    "source": "https://en.wikipedia.org/wiki/Shigeo_Kageyama"
   },
   {
-    "id": "anime:62",
+    "id": "v2:c4006fe8eea5dc4190a2",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Jotaro Kujo?",
     "options": [
       "Cowboy Bebop",
       "Yu Yu Hakusho",
@@ -14489,12 +14990,14 @@ export const QUESTIONS=[
       "jojo"
     ],
     "media": null,
-    "clue": "Personagem: Jotaro Kujo"
+    "clue": null,
+    "explanation": "Jotaro Kujo aparece em JoJo's Bizarre Adventure.",
+    "source": "https://en.wikipedia.org/wiki/Jotaro_Kujo"
   },
   {
-    "id": "anime:63",
+    "id": "v2:824938e7fe262da048d0",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Subaru Natsuki?",
     "options": [
       "Sailor Moon",
       "Jujutsu Kaisen",
@@ -14507,12 +15010,14 @@ export const QUESTIONS=[
       "rezero"
     ],
     "media": null,
-    "clue": "Personagem: Subaru Natsuki"
+    "clue": null,
+    "explanation": "Subaru Natsuki aparece em Re:Zero.",
+    "source": "https://en.wikipedia.org/wiki/Re%3AZero"
   },
   {
-    "id": "anime:64",
+    "id": "v2:19d2bb34cf29232d3b03",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Megumin?",
     "options": [
       "Konosuba",
       "Hunter x Hunter",
@@ -14524,12 +15029,14 @@ export const QUESTIONS=[
       "konosuba"
     ],
     "media": null,
-    "clue": "Personagem: Megumin"
+    "clue": null,
+    "explanation": "Megumin aparece em Konosuba.",
+    "source": "https://en.wikipedia.org/wiki/Megumin"
   },
   {
-    "id": "anime:65",
+    "id": "v2:1e5e80ba79df574863ad",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Tohru Honda?",
     "options": [
       "Doraemon",
       "Fruits Basket",
@@ -14541,12 +15048,14 @@ export const QUESTIONS=[
       "fruits basket"
     ],
     "media": null,
-    "clue": "Personagem: Tohru Honda"
+    "clue": null,
+    "explanation": "Tohru Honda aparece em Fruits Basket.",
+    "source": "https://en.wikipedia.org/wiki/Tohru_Honda"
   },
   {
-    "id": "anime:66",
+    "id": "v2:ca6e81f77e54b24030fa",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Qual anime ou mangá corresponde a esta história: Alunos da academia Shibusen lutam usando armas que assumem forma humana.",
     "options": [
       "Spy x Family",
       "Berserk",
@@ -14558,12 +15067,14 @@ export const QUESTIONS=[
       "soul eater"
     ],
     "media": null,
-    "clue": "Alunos da academia Shibusen lutam usando armas que assumem forma humana."
+    "clue": null,
+    "explanation": "Soul Eater aparece em Soul Eater.",
+    "source": "https://en.wikipedia.org/wiki/Soul_Eater_(manga)"
   },
   {
-    "id": "anime:67",
+    "id": "v2:92b1d942c27380e356d4",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Yugi Muto?",
     "options": [
       "Black Clover",
       "JoJo's Bizarre Adventure",
@@ -14576,12 +15087,14 @@ export const QUESTIONS=[
       "yugioh"
     ],
     "media": null,
-    "clue": "Personagem: Yugi Muto"
+    "clue": null,
+    "explanation": "Yugi Muto aparece em Yu-Gi-Oh!.",
+    "source": "https://en.wikipedia.org/wiki/Yugi_Muto"
   },
   {
-    "id": "anime:68",
+    "id": "v2:0a7b89c378c5a0df89d8",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Agumon?",
     "options": [
       "Digimon",
       "The Promised Neverland",
@@ -14593,12 +15106,14 @@ export const QUESTIONS=[
       "digimon"
     ],
     "media": null,
-    "clue": "Personagem: Agumon"
+    "clue": null,
+    "explanation": "Agumon aparece em Digimon.",
+    "source": "https://en.wikipedia.org/wiki/Agumon"
   },
   {
-    "id": "anime:69",
+    "id": "v2:a65d58c530bbbadbfbf6",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Sakata Gintoki?",
     "options": [
       "Mob Psycho 100",
       "Gintama",
@@ -14610,12 +15125,14 @@ export const QUESTIONS=[
       "gintama"
     ],
     "media": null,
-    "clue": "Personagem: Sakata Gintoki"
+    "clue": null,
+    "explanation": "Sakata Gintoki aparece em Gintama.",
+    "source": "https://en.wikipedia.org/wiki/Sakata_Gintoki"
   },
   {
-    "id": "anime:70",
+    "id": "v2:95ee8822082d7d67b170",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Qual anime ou mangá corresponde a esta história: Uma elfa maga reflete sobre o tempo após o fim da jornada de seu grupo.",
     "options": [
       "Konosuba",
       "Diários de uma Apotecária",
@@ -14628,12 +15145,14 @@ export const QUESTIONS=[
       "frieren beyond journey's end"
     ],
     "media": null,
-    "clue": "Personagem: Frieren"
+    "clue": null,
+    "explanation": "Frieren aparece em Frieren.",
+    "source": "https://en.wikipedia.org/wiki/Frieren"
   },
   {
-    "id": "anime:71",
+    "id": "v2:0654238b3cf662f03b32",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Mash Burnedead?",
     "options": [
       "Yu-Gi-Oh!",
       "Naruto",
@@ -14646,12 +15165,14 @@ export const QUESTIONS=[
       "mashle magic and muscles"
     ],
     "media": null,
-    "clue": "Personagem: Mash Burnedead"
+    "clue": null,
+    "explanation": "Mash Burnedead aparece em Mashle.",
+    "source": "https://en.wikipedia.org/wiki/Mashle"
   },
   {
-    "id": "anime:72",
+    "id": "v2:2e5a3136cb7600f39440",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Maomao?",
     "options": [
       "Diários de uma Apotecária",
       "Frieren",
@@ -14664,12 +15185,14 @@ export const QUESTIONS=[
       "the apothecary diaries"
     ],
     "media": null,
-    "clue": "Personagem: Maomao"
+    "clue": null,
+    "explanation": "Maomao aparece em Diários de uma Apotecária.",
+    "source": "https://en.wikipedia.org/wiki/The_Apothecary_Diaries"
   },
   {
-    "id": "anime:73",
+    "id": "v2:6f42f4ceaf33786137d0",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Yoichi Isagi?",
     "options": [
       "Solo Leveling",
       "Blue Lock",
@@ -14681,12 +15204,14 @@ export const QUESTIONS=[
       "blue lock"
     ],
     "media": null,
-    "clue": "Personagem: Yoichi Isagi"
+    "clue": null,
+    "explanation": "Yoichi Isagi aparece em Blue Lock.",
+    "source": "https://en.wikipedia.org/wiki/Blue_Lock"
   },
   {
-    "id": "anime:74",
+    "id": "v2:6541e8c9a7a3688fadb0",
     "quiz": "anime",
-    "text": "Que anime ou mangá é este?",
+    "text": "Em qual anime ou mangá aparece Sung Jinwoo?",
     "options": [
       "Dragon Ball",
       "One-Punch Man",
@@ -14698,12 +15223,14 @@ export const QUESTIONS=[
       "solo leveling"
     ],
     "media": null,
-    "clue": "Personagem: Sung Jinwoo"
+    "clue": null,
+    "explanation": "Sung Jinwoo aparece em Solo Leveling.",
+    "source": "https://en.wikipedia.org/wiki/Solo_Leveling"
   },
   {
-    "id": "super-herois:0",
+    "id": "v2:2a56113f5dcf1cf438f1",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Jornalista kryptoniano criado no Kansas, conhecido pela capa vermelha.",
     "options": [
       "Superman",
       "Batman",
@@ -14715,12 +15242,14 @@ export const QUESTIONS=[
       "superman"
     ],
     "media": null,
-    "clue": "Jornalista kryptoniano criado no Kansas, conhecido pela capa vermelha."
+    "clue": null,
+    "explanation": "A descrição é de Superman.",
+    "source": "https://en.wikipedia.org/wiki/Superman"
   },
   {
-    "id": "super-herois:1",
+    "id": "v2:bcb01810025471ac1251",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Bilionário de Gotham que combate o crime sem superpoderes.",
     "options": [
       "Capitão América",
       "Batman",
@@ -14732,12 +15261,14 @@ export const QUESTIONS=[
       "batman"
     ],
     "media": null,
-    "clue": "Bilionário de Gotham que combate o crime sem superpoderes."
+    "clue": null,
+    "explanation": "A descrição é de Batman.",
+    "source": "https://en.wikipedia.org/wiki/Batman"
   },
   {
-    "id": "super-herois:2",
+    "id": "v2:b243014a3a48ac8a5049",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Jovem de Nova York que lança teias e escala paredes.",
     "options": [
       "Mulher-Maravilha",
       "Gavião Arqueiro",
@@ -14752,12 +15283,14 @@ export const QUESTIONS=[
       "homem-aranha"
     ],
     "media": null,
-    "clue": "Jovem de Nova York que lança teias e escala paredes."
+    "clue": null,
+    "explanation": "A descrição é de Homem-Aranha.",
+    "source": "https://en.wikipedia.org/wiki/Spider-Man"
   },
   {
-    "id": "super-herois:3",
+    "id": "v2:db72b6d4b69a98ac23ce",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Inventor bilionário que construiu uma armadura de alta tecnologia.",
     "options": [
       "Lanterna Verde",
       "Demolidor",
@@ -14770,12 +15303,14 @@ export const QUESTIONS=[
       "iron man"
     ],
     "media": null,
-    "clue": "Inventor bilionário que construiu uma armadura de alta tecnologia."
+    "clue": null,
+    "explanation": "A descrição é de Homem de Ferro.",
+    "source": "https://en.wikipedia.org/wiki/Iron_Man"
   },
   {
-    "id": "super-herois:4",
+    "id": "v2:6e8185d3a2fd1fea8aac",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Soldado aprimorado que luta com um escudo circular.",
     "options": [
       "Capitão América",
       "Viúva Negra",
@@ -14789,12 +15324,14 @@ export const QUESTIONS=[
       "capitão america"
     ],
     "media": null,
-    "clue": "Soldado aprimorado que luta com um escudo circular."
+    "clue": null,
+    "explanation": "A descrição é de Capitão América.",
+    "source": "https://en.wikipedia.org/wiki/Captain_America_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:5",
+    "id": "v2:db1a91948e0cf3e17743",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Deus nórdico do trovão que empunha um martelo.",
     "options": [
       "Deadpool",
       "Thor",
@@ -14806,12 +15343,14 @@ export const QUESTIONS=[
       "thor"
     ],
     "media": null,
-    "clue": "Deus nórdico do trovão que empunha um martelo."
+    "clue": null,
+    "explanation": "A descrição é de Thor.",
+    "source": "https://en.wikipedia.org/wiki/Thor_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:6",
+    "id": "v2:dbf40fee9cbcfc36ebb3",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Cientista que se transforma num gigante verde quando perde o controle.",
     "options": [
       "Capitã Marvel",
       "Robin",
@@ -14823,12 +15362,14 @@ export const QUESTIONS=[
       "hulk"
     ],
     "media": null,
-    "clue": "Cientista que se transforma num gigante verde quando perde o controle."
+    "clue": null,
+    "explanation": "A descrição é de Hulk.",
+    "source": "https://en.wikipedia.org/wiki/Hulk_(comics)"
   },
   {
-    "id": "super-herois:7",
+    "id": "v2:a3bb578117a82336134e",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Princesa amazona de Themyscira com um laço da verdade.",
     "options": [
       "Groot",
       "Cyborg",
@@ -14842,12 +15383,14 @@ export const QUESTIONS=[
       "mulher-maravilha"
     ],
     "media": null,
-    "clue": "Princesa amazona de Themyscira com um laço da verdade."
+    "clue": null,
+    "explanation": "A descrição é de Mulher-Maravilha.",
+    "source": "https://en.wikipedia.org/wiki/Wonder_Woman"
   },
   {
-    "id": "super-herois:8",
+    "id": "v2:5423f1d7cf4849cb5835",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Velocista da DC capaz de correr além da velocidade do som.",
     "options": [
       "Flash",
       "Asa Noturna",
@@ -14859,12 +15402,14 @@ export const QUESTIONS=[
       "flash"
     ],
     "media": null,
-    "clue": "Velocista da DC capaz de correr além da velocidade do som."
+    "clue": null,
+    "explanation": "A descrição é de Flash.",
+    "source": "https://en.wikipedia.org/wiki/The_Flash"
   },
   {
-    "id": "super-herois:9",
+    "id": "v2:d2f2e135f14e16496477",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Soberano de Atlântida que se comunica com a vida marinha.",
     "options": [
       "Arqueiro Verde",
       "Aquaman",
@@ -14876,12 +15421,14 @@ export const QUESTIONS=[
       "aquaman"
     ],
     "media": null,
-    "clue": "Soberano de Atlântida que se comunica com a vida marinha."
+    "clue": null,
+    "explanation": "A descrição é de Aquaman.",
+    "source": "https://en.wikipedia.org/wiki/Aquaman"
   },
   {
-    "id": "super-herois:10",
+    "id": "v2:d8511a7862a22a1b687f",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Herói da DC cuja força de vontade alimenta um anel cósmico.",
     "options": [
       "Caçador de Marte",
       "Professor X",
@@ -14894,12 +15441,14 @@ export const QUESTIONS=[
       "green lantern"
     ],
     "media": null,
-    "clue": "Herói da DC cuja força de vontade alimenta um anel cósmico."
+    "clue": null,
+    "explanation": "A descrição é de Lanterna Verde.",
+    "source": "https://en.wikipedia.org/wiki/Green_Lantern"
   },
   {
-    "id": "super-herois:11",
+    "id": "v2:d9bff26ffd71a45345fd",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Rei de Wakanda, nação conhecida pelo vibranium.",
     "options": [
       "Tempestade",
       "Falcão",
@@ -14912,12 +15461,14 @@ export const QUESTIONS=[
       "black panther"
     ],
     "media": null,
-    "clue": "Rei de Wakanda, nação conhecida pelo vibranium."
+    "clue": null,
+    "explanation": "A descrição é de Pantera Negra.",
+    "source": "https://en.wikipedia.org/wiki/Black_Panther_(character)"
   },
   {
-    "id": "super-herois:12",
+    "id": "v2:aaef21c44259ad2d262a",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Cirurgião que se tornou mestre das artes místicas.",
     "options": [
       "Doutor Estranho",
       "Fera",
@@ -14930,12 +15481,14 @@ export const QUESTIONS=[
       "doctor strange"
     ],
     "media": null,
-    "clue": "Cirurgião que se tornou mestre das artes místicas."
+    "clue": null,
+    "explanation": "A descrição é de Doutor Estranho.",
+    "source": "https://en.wikipedia.org/wiki/Doctor_Strange"
   },
   {
-    "id": "super-herois:13",
+    "id": "v2:41ec811585ea4aefd5c8",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Ex-espiã russa que integra os Vingadores.",
     "options": [
       "Nick Fury",
       "Viúva Negra",
@@ -14949,12 +15502,14 @@ export const QUESTIONS=[
       "viúva negra"
     ],
     "media": null,
-    "clue": "Ex-espiã russa que integra os Vingadores."
+    "clue": null,
+    "explanation": "A descrição é de Viúva Negra.",
+    "source": "https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanoff)"
   },
   {
-    "id": "super-herois:14",
+    "id": "v2:083af582d0605169e618",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vingador conhecido pela precisão com arco e flecha.",
     "options": [
       "Visão",
       "Coringa",
@@ -14968,12 +15523,14 @@ export const QUESTIONS=[
       "gavião arqueiro"
     ],
     "media": null,
-    "clue": "Vingador conhecido pela precisão com arco e flecha."
+    "clue": null,
+    "explanation": "A descrição é de Gavião Arqueiro.",
+    "source": "https://en.wikipedia.org/wiki/Hawkeye_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:15",
+    "id": "v2:c3f688244724ebf001a3",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Mutante com garras de adamantium e fator de cura.",
     "options": [
       "Cavaleiro da Lua",
       "Venom",
@@ -14985,12 +15542,14 @@ export const QUESTIONS=[
       "wolverine"
     ],
     "media": null,
-    "clue": "Mutante com garras de adamantium e fator de cura."
+    "clue": null,
+    "explanation": "A descrição é de Wolverine.",
+    "source": "https://en.wikipedia.org/wiki/Wolverine_(character)"
   },
   {
-    "id": "super-herois:16",
+    "id": "v2:e79032ada5cbc9e56402",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Mercenário tagarela com cura acelerada e humor irreverente.",
     "options": [
       "Deadpool",
       "Vespa",
@@ -15002,12 +15561,14 @@ export const QUESTIONS=[
       "deadpool"
     ],
     "media": null,
-    "clue": "Mercenário tagarela com cura acelerada e humor irreverente."
+    "clue": null,
+    "explanation": "A descrição é de Deadpool.",
+    "source": "https://en.wikipedia.org/wiki/Deadpool"
   },
   {
-    "id": "super-herois:17",
+    "id": "v2:db643de2071f4e50ec28",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Advogado cego que patrulha Hell's Kitchen.",
     "options": [
       "Lex Luthor",
       "Demolidor",
@@ -15020,12 +15581,14 @@ export const QUESTIONS=[
       "daredevil"
     ],
     "media": null,
-    "clue": "Advogado cego que patrulha Hell's Kitchen."
+    "clue": null,
+    "explanation": "A descrição é de Demolidor.",
+    "source": "https://en.wikipedia.org/wiki/Daredevil_(Marvel_Comics_character)"
   },
   {
-    "id": "super-herois:18",
+    "id": "v2:b9259e0e8ec288ed9afd",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Herói que muda de tamanho usando partículas Pym.",
     "options": [
       "Loki",
       "Duas Caras",
@@ -15039,12 +15602,14 @@ export const QUESTIONS=[
       "homem-formiga"
     ],
     "media": null,
-    "clue": "Herói que muda de tamanho usando partículas Pym."
+    "clue": null,
+    "explanation": "A descrição é de Homem-Formiga.",
+    "source": "https://en.wikipedia.org/wiki/Ant-Man"
   },
   {
-    "id": "super-herois:19",
+    "id": "v2:21a237cafd66c991ddbe",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Piloto da Marvel com poderes cósmicos.",
     "options": [
       "Ultron",
       "Darkseid",
@@ -15058,12 +15623,14 @@ export const QUESTIONS=[
       "capitã marvel"
     ],
     "media": null,
-    "clue": "Piloto da Marvel com poderes cósmicos."
+    "clue": null,
+    "explanation": "A descrição é de Capitã Marvel.",
+    "source": "https://en.wikipedia.org/wiki/Captain_Marvel_(Carol_Danvers)"
   },
   {
-    "id": "super-herois:20",
+    "id": "v2:10b0dfb08854f47acc39",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Mutante da Marvel associada à magia do caos.",
     "options": [
       "Feiticeira Escarlate",
       "Arlequina",
@@ -15076,12 +15643,14 @@ export const QUESTIONS=[
       "scarlet witch"
     ],
     "media": null,
-    "clue": "Mutante da Marvel associada à magia do caos."
+    "clue": null,
+    "explanation": "A descrição é de Feiticeira Escarlate.",
+    "source": "https://en.wikipedia.org/wiki/Scarlet_Witch"
   },
   {
-    "id": "super-herois:21",
+    "id": "v2:43b4c113df08fe045b65",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Líder humano dos Guardiões da Galáxia que adora mixtapes.",
     "options": [
       "Ra's al Ghul",
       "Senhor das Estrelas",
@@ -15095,12 +15664,14 @@ export const QUESTIONS=[
       "star-lord"
     ],
     "media": null,
-    "clue": "Líder humano dos Guardiões da Galáxia que adora mixtapes."
+    "clue": null,
+    "explanation": "A descrição é de Senhor das Estrelas.",
+    "source": "https://en.wikipedia.org/wiki/Star-Lord"
   },
   {
-    "id": "super-herois:22",
+    "id": "v2:c8824a268cc1e0a623e1",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Árvore alienígena dos Guardiões com vocabulário muito limitado.",
     "options": [
       "Carnificina",
       "Doutor Octopus",
@@ -15112,12 +15683,14 @@ export const QUESTIONS=[
       "groot"
     ],
     "media": null,
-    "clue": "Árvore alienígena dos Guardiões com vocabulário muito limitado."
+    "clue": null,
+    "explanation": "A descrição é de Groot.",
+    "source": "https://en.wikipedia.org/wiki/Groot"
   },
   {
-    "id": "super-herois:23",
+    "id": "v2:dbf6819672f0ac668647",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Guaxinim espacial especialista em armas e engenharia.",
     "options": [
       "Adão Negro",
       "Homem-Aranha",
@@ -15130,12 +15703,14 @@ export const QUESTIONS=[
       "rocket"
     ],
     "media": null,
-    "clue": "Guaxinim espacial especialista em armas e engenharia."
+    "clue": null,
+    "explanation": "A descrição é de Rocket Raccoon.",
+    "source": "https://en.wikipedia.org/wiki/Rocket_Raccoon"
   },
   {
-    "id": "super-herois:24",
+    "id": "v2:6b7334574c274b9336ff",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Filha adotiva de Thanos e integrante dos Guardiões.",
     "options": [
       "Gamora",
       "Surfista Prateado",
@@ -15147,12 +15722,14 @@ export const QUESTIONS=[
       "gamora"
     ],
     "media": null,
-    "clue": "Filha adotiva de Thanos e integrante dos Guardiões."
+    "clue": null,
+    "explanation": "A descrição é de Gamora.",
+    "source": "https://en.wikipedia.org/wiki/Gamora"
   },
   {
-    "id": "super-herois:25",
+    "id": "v2:5f0b02d42b5f7c0cba56",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Ex-Robin que protege Blüdhaven com bastões de combate.",
     "options": [
       "Batman",
       "Asa Noturna",
@@ -15165,12 +15742,14 @@ export const QUESTIONS=[
       "nightwing"
     ],
     "media": null,
-    "clue": "Ex-Robin que protege Blüdhaven com bastões de combate."
+    "clue": null,
+    "explanation": "A descrição é de Asa Noturna.",
+    "source": "https://en.wikipedia.org/wiki/Nightwing"
   },
   {
-    "id": "super-herois:26",
+    "id": "v2:b89c7151dfaa7beb822b",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Parceiro jovem do vigilante de Gotham.",
     "options": [
       "Capitão América",
       "Pantera Negra",
@@ -15182,12 +15761,14 @@ export const QUESTIONS=[
       "robin"
     ],
     "media": null,
-    "clue": "Parceiro jovem do vigilante de Gotham."
+    "clue": null,
+    "explanation": "A descrição é de Robin.",
+    "source": "https://en.wikipedia.org/wiki/Robin_(character)"
   },
   {
-    "id": "super-herois:27",
+    "id": "v2:4d4e58c2af30382705ab",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Ladra de Gotham associada a Selina Kyle.",
     "options": [
       "Mulher-Maravilha",
       "Gavião Arqueiro",
@@ -15201,12 +15782,14 @@ export const QUESTIONS=[
       "mulher-gato"
     ],
     "media": null,
-    "clue": "Ladra de Gotham associada a Selina Kyle."
+    "clue": null,
+    "explanation": "A descrição é de Mulher-Gato.",
+    "source": "https://en.wikipedia.org/wiki/Catwoman"
   },
   {
-    "id": "super-herois:28",
+    "id": "v2:d6c7fe30745d100e5c47",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vigilante de Star City que usa arco e flechas especiais.",
     "options": [
       "Arqueiro Verde",
       "Lanterna Verde",
@@ -15219,12 +15802,14 @@ export const QUESTIONS=[
       "green arrow"
     ],
     "media": null,
-    "clue": "Vigilante de Star City que usa arco e flechas especiais."
+    "clue": null,
+    "explanation": "A descrição é de Arqueiro Verde.",
+    "source": "https://en.wikipedia.org/wiki/Green_Arrow"
   },
   {
-    "id": "super-herois:29",
+    "id": "v2:4304cd7908338a9dcae8",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Integrante da Liga da Justiça com corpo parcialmente mecânico.",
     "options": [
       "Viúva Negra",
       "Cyborg",
@@ -15236,12 +15821,14 @@ export const QUESTIONS=[
       "cyborg"
     ],
     "media": null,
-    "clue": "Integrante da Liga da Justiça com corpo parcialmente mecânico."
+    "clue": null,
+    "explanation": "A descrição é de Cyborg.",
+    "source": "https://en.wikipedia.org/wiki/Cyborg_(DC_Comics)"
   },
   {
-    "id": "super-herois:30",
+    "id": "v2:469714769dcc319b70a6",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Adolescente que ganha poderes mágicos ao dizer uma palavra.",
     "options": [
       "Deadpool",
       "Rocket Raccoon",
@@ -15253,12 +15840,14 @@ export const QUESTIONS=[
       "shazam"
     ],
     "media": null,
-    "clue": "Adolescente que ganha poderes mágicos ao dizer uma palavra."
+    "clue": null,
+    "explanation": "A descrição é de Shazam.",
+    "source": "https://en.wikipedia.org/wiki/Shazam_(DC_Comics)"
   },
   {
-    "id": "super-herois:31",
+    "id": "v2:3bc3c0b6604281b4b6ab",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Marciano telepata que participa da Liga da Justiça.",
     "options": [
       "Capitã Marvel",
       "Robin",
@@ -15272,12 +15861,14 @@ export const QUESTIONS=[
       "caçador de marte"
     ],
     "media": null,
-    "clue": "Marciano telepata que participa da Liga da Justiça."
+    "clue": null,
+    "explanation": "A descrição é de Caçador de Marte.",
+    "source": "https://en.wikipedia.org/wiki/Martian_Manhunter"
   },
   {
-    "id": "super-herois:32",
+    "id": "v2:9a59c7d2ffd338b83a21",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Prima kryptoniana do herói da capa vermelha.",
     "options": [
       "Supergirl",
       "Groot",
@@ -15289,12 +15880,14 @@ export const QUESTIONS=[
       "supergirl"
     ],
     "media": null,
-    "clue": "Prima kryptoniana do herói da capa vermelha."
+    "clue": null,
+    "explanation": "A descrição é de Supergirl.",
+    "source": "https://en.wikipedia.org/wiki/Supergirl"
   },
   {
-    "id": "super-herois:33",
+    "id": "v2:be08601d03b76fc4cc65",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vigilante de Gotham ligada a Barbara Gordon.",
     "options": [
       "Asa Noturna",
       "Batgirl",
@@ -15306,12 +15899,14 @@ export const QUESTIONS=[
       "batgirl"
     ],
     "media": null,
-    "clue": "Vigilante de Gotham ligada a Barbara Gordon."
+    "clue": null,
+    "explanation": "A descrição é de Batgirl.",
+    "source": "https://en.wikipedia.org/wiki/Batgirl"
   },
   {
-    "id": "super-herois:34",
+    "id": "v2:a734ea058100f04389cf",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Mutante dos X-Men que controla o clima.",
     "options": [
       "Arqueiro Verde",
       "Jean Grey",
@@ -15324,12 +15919,14 @@ export const QUESTIONS=[
       "storm"
     ],
     "media": null,
-    "clue": "Mutante dos X-Men que controla o clima."
+    "clue": null,
+    "explanation": "A descrição é de Tempestade.",
+    "source": "https://en.wikipedia.org/wiki/Storm_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:35",
+    "id": "v2:313979a2c4db01b78627",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Líder dos X-Men que usa visor para controlar rajadas ópticas.",
     "options": [
       "Caçador de Marte",
       "Magneto",
@@ -15343,12 +15940,14 @@ export const QUESTIONS=[
       "ciclope"
     ],
     "media": null,
-    "clue": "Líder dos X-Men que usa visor para controlar rajadas ópticas."
+    "clue": null,
+    "explanation": "A descrição é de Ciclope.",
+    "source": "https://en.wikipedia.org/wiki/Cyclops_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:36",
+    "id": "v2:65cc3a3f00e2da9e2410",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Telepata dos X-Men ligada à Força Fênix.",
     "options": [
       "Jean Grey",
       "Tempestade",
@@ -15360,12 +15959,14 @@ export const QUESTIONS=[
       "jean grey"
     ],
     "media": null,
-    "clue": "Telepata dos X-Men ligada à Força Fênix."
+    "clue": null,
+    "explanation": "A descrição é de Jean Grey.",
+    "source": "https://en.wikipedia.org/wiki/Jean_Grey"
   },
   {
-    "id": "super-herois:37",
+    "id": "v2:80c704d7f7a9ad040c7f",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Cientista mutante dos X-Men com pelagem azul.",
     "options": [
       "Professor X",
       "Fera",
@@ -15378,12 +15979,14 @@ export const QUESTIONS=[
       "beast"
     ],
     "media": null,
-    "clue": "Cientista mutante dos X-Men com pelagem azul."
+    "clue": null,
+    "explanation": "A descrição é de Fera.",
+    "source": "https://en.wikipedia.org/wiki/Beast_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:38",
+    "id": "v2:6f2c47fcb08cabf53193",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Telepata que fundou uma escola para jovens mutantes.",
     "options": [
       "Falcão",
       "Miss Marvel",
@@ -15395,12 +15998,14 @@ export const QUESTIONS=[
       "professor x"
     ],
     "media": null,
-    "clue": "Telepata que fundou uma escola para jovens mutantes."
+    "clue": null,
+    "explanation": "A descrição é de Professor X.",
+    "source": "https://en.wikipedia.org/wiki/Professor_X"
   },
   {
-    "id": "super-herois:39",
+    "id": "v2:097a8522e930ecab9eeb",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Mutante que controla campos magnéticos e confronta os X-Men.",
     "options": [
       "Punho de Ferro",
       "Thanos",
@@ -15412,12 +16017,14 @@ export const QUESTIONS=[
       "magneto"
     ],
     "media": null,
-    "clue": "Mutante que controla campos magnéticos e confronta os X-Men."
+    "clue": null,
+    "explanation": "A descrição é de Magneto.",
+    "source": "https://en.wikipedia.org/wiki/Magneto_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:40",
+    "id": "v2:388a373956344a4b7d8c",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Agente de tapa-olho que dirige a S.H.I.E.L.D.",
     "options": [
       "Nick Fury",
       "Mulher-Hulk",
@@ -15429,12 +16036,14 @@ export const QUESTIONS=[
       "nick fury"
     ],
     "media": null,
-    "clue": "Agente de tapa-olho que dirige a S.H.I.E.L.D."
+    "clue": null,
+    "explanation": "A descrição é de Nick Fury.",
+    "source": "https://en.wikipedia.org/wiki/Nick_Fury"
   },
   {
-    "id": "super-herois:41",
+    "id": "v2:b7f4163333fc67942a30",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Aliado de Steve Rogers que voa com asas mecânicas.",
     "options": [
       "Coringa",
       "Falcão",
@@ -15448,12 +16057,14 @@ export const QUESTIONS=[
       "falcão"
     ],
     "media": null,
-    "clue": "Aliado de Steve Rogers que voa com asas mecânicas."
+    "clue": null,
+    "explanation": "A descrição é de Falcão.",
+    "source": "https://en.wikipedia.org/wiki/Falcon_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:42",
+    "id": "v2:0d9229a0a043e7042f2d",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Militar que pilota uma armadura semelhante à de Tony Stark.",
     "options": [
       "Venom",
       "Hera Venenosa",
@@ -15466,12 +16077,14 @@ export const QUESTIONS=[
       "war machine"
     ],
     "media": null,
-    "clue": "Militar que pilota uma armadura semelhante à de Tony Stark."
+    "clue": null,
+    "explanation": "A descrição é de Máquina de Combate.",
+    "source": "https://en.wikipedia.org/wiki/War_Machine"
   },
   {
-    "id": "super-herois:43",
+    "id": "v2:bcdff626dfee344205bb",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Sintozóide dos Vingadores associado à Joia da Mente.",
     "options": [
       "Caveira Vermelha",
       "Bane",
@@ -15485,12 +16098,14 @@ export const QUESTIONS=[
       "visão"
     ],
     "media": null,
-    "clue": "Sintozóide dos Vingadores associado à Joia da Mente."
+    "clue": null,
+    "explanation": "A descrição é de Visão.",
+    "source": "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:44",
+    "id": "v2:1a099e70c50ed756c9c5",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Artista marcial capaz de concentrar energia no punho.",
     "options": [
       "Punho de Ferro",
       "Mística",
@@ -15503,12 +16118,14 @@ export const QUESTIONS=[
       "iron fist"
     ],
     "media": null,
-    "clue": "Artista marcial capaz de concentrar energia no punho."
+    "clue": null,
+    "explanation": "A descrição é de Punho de Ferro.",
+    "source": "https://en.wikipedia.org/wiki/Iron_Fist_(comics)"
   },
   {
-    "id": "super-herois:45",
+    "id": "v2:1bf0ad163f7aa72191fb",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Herói do Harlem com pele quase indestrutível.",
     "options": [
       "Duas Caras",
       "Luke Cage",
@@ -15520,12 +16137,14 @@ export const QUESTIONS=[
       "luke cage"
     ],
     "media": null,
-    "clue": "Herói do Harlem com pele quase indestrutível."
+    "clue": null,
+    "explanation": "A descrição é de Luke Cage.",
+    "source": "https://en.wikipedia.org/wiki/Luke_Cage"
   },
   {
-    "id": "super-herois:46",
+    "id": "v2:0f46a2d5e927a82ebee9",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vigilante de branco ligado ao deus egípcio Khonshu.",
     "options": [
       "Darkseid",
       "Mera",
@@ -15538,12 +16157,14 @@ export const QUESTIONS=[
       "moon knight"
     ],
     "media": null,
-    "clue": "Vigilante de branco ligado ao deus egípcio Khonshu."
+    "clue": null,
+    "explanation": "A descrição é de Cavaleiro da Lua.",
+    "source": "https://en.wikipedia.org/wiki/Moon_Knight"
   },
   {
-    "id": "super-herois:47",
+    "id": "v2:d690b9eaf848dc3fdc36",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Advogada que ganhou poderes após uma transfusão de sangue do primo.",
     "options": [
       "Electro",
       "Superman",
@@ -15557,12 +16178,14 @@ export const QUESTIONS=[
       "mulher-hulk"
     ],
     "media": null,
-    "clue": "Advogada que ganhou poderes após uma transfusão de sangue do primo."
+    "clue": null,
+    "explanation": "A descrição é de Mulher-Hulk.",
+    "source": "https://en.wikipedia.org/wiki/She-Hulk"
   },
   {
-    "id": "super-herois:48",
+    "id": "v2:a0bb1456879362e48c22",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Adolescente de Jersey City chamada Kamala Khan.",
     "options": [
       "Miss Marvel",
       "Ravena",
@@ -15576,12 +16199,14 @@ export const QUESTIONS=[
       "kamala khan"
     ],
     "media": null,
-    "clue": "Adolescente de Jersey City chamada Kamala Khan."
+    "clue": null,
+    "explanation": "A descrição é de Miss Marvel.",
+    "source": "https://en.wikipedia.org/wiki/Ms._Marvel_(Kamala_Khan)"
   },
   {
-    "id": "super-herois:49",
+    "id": "v2:49cee1e2a4a77e80b53d",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Heroína que encolhe, voa e integra os Vingadores.",
     "options": [
       "Doutor Octopus",
       "Vespa",
@@ -15594,12 +16219,14 @@ export const QUESTIONS=[
       "wasp"
     ],
     "media": null,
-    "clue": "Heroína que encolhe, voa e integra os Vingadores."
+    "clue": null,
+    "explanation": "A descrição é de Vespa.",
+    "source": "https://en.wikipedia.org/wiki/Wasp_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:50",
+    "id": "v2:5685bd5b00b74f001499",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vilão de Gotham com maquiagem de palhaço e riso inquietante.",
     "options": [
       "Homem-Aranha",
       "Aquaman",
@@ -15612,12 +16239,14 @@ export const QUESTIONS=[
       "joker"
     ],
     "media": null,
-    "clue": "Vilão de Gotham com maquiagem de palhaço e riso inquietante."
+    "clue": null,
+    "explanation": "A descrição é de Coringa.",
+    "source": "https://en.wikipedia.org/wiki/Joker_(character)"
   },
   {
-    "id": "super-herois:51",
+    "id": "v2:494b02493f3ea2174763",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Titã obcecado pelas Joias do Infinito.",
     "options": [
       "Thor",
       "Doutor Estranho",
@@ -15629,12 +16258,14 @@ export const QUESTIONS=[
       "thanos"
     ],
     "media": null,
-    "clue": "Titã obcecado pelas Joias do Infinito."
+    "clue": null,
+    "explanation": "A descrição é de Thanos.",
+    "source": "https://en.wikipedia.org/wiki/Thanos"
   },
   {
-    "id": "super-herois:52",
+    "id": "v2:d783ca8cded0d2e88d60",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Empresário de Metrópolis e rival de um kryptoniano.",
     "options": [
       "Lex Luthor",
       "Flash",
@@ -15646,12 +16277,14 @@ export const QUESTIONS=[
       "lex luthor"
     ],
     "media": null,
-    "clue": "Empresário de Metrópolis e rival de um kryptoniano."
+    "clue": null,
+    "explanation": "A descrição é de Lex Luthor.",
+    "source": "https://en.wikipedia.org/wiki/Lex_Luthor"
   },
   {
-    "id": "super-herois:53",
+    "id": "v2:9a2e00a88090e2083f18",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Simbionte alienígena que se liga a Eddie Brock.",
     "options": [
       "Pantera Negra",
       "Venom",
@@ -15663,12 +16296,14 @@ export const QUESTIONS=[
       "venom"
     ],
     "media": null,
-    "clue": "Simbionte alienígena que se liga a Eddie Brock."
+    "clue": null,
+    "explanation": "A descrição é de Venom.",
+    "source": "https://en.wikipedia.org/wiki/Venom_(Marvel_Comics_character)"
   },
   {
-    "id": "super-herois:54",
+    "id": "v2:cf889c6f0ec1a948715b",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Inimigo do herói das teias que usa planador e bombas.",
     "options": [
       "Gavião Arqueiro",
       "Senhor das Estrelas",
@@ -15681,12 +16316,14 @@ export const QUESTIONS=[
       "green goblin"
     ],
     "media": null,
-    "clue": "Inimigo do herói das teias que usa planador e bombas."
+    "clue": null,
+    "explanation": "A descrição é de Duende Verde.",
+    "source": "https://en.wikipedia.org/wiki/Green_Goblin"
   },
   {
-    "id": "super-herois:55",
+    "id": "v2:87f37d660a93f00a3725",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Deus asgardiano da trapaça e irmão adotivo de Thor.",
     "options": [
       "Demolidor",
       "Gamora",
@@ -15698,12 +16335,14 @@ export const QUESTIONS=[
       "loki"
     ],
     "media": null,
-    "clue": "Deus asgardiano da trapaça e irmão adotivo de Thor."
+    "clue": null,
+    "explanation": "A descrição é de Loki.",
+    "source": "https://en.wikipedia.org/wiki/Loki_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:56",
+    "id": "v2:dd1639fa5240bc94b32d",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Líder da HIDRA e inimigo de Steve Rogers.",
     "options": [
       "Caveira Vermelha",
       "Feiticeira Escarlate",
@@ -15716,12 +16355,14 @@ export const QUESTIONS=[
       "red skull"
     ],
     "media": null,
-    "clue": "Líder da HIDRA e inimigo de Steve Rogers."
+    "clue": null,
+    "explanation": "A descrição é de Caveira Vermelha.",
+    "source": "https://en.wikipedia.org/wiki/Red_Skull"
   },
   {
-    "id": "super-herois:57",
+    "id": "v2:4f989bbc6333dcf0a77c",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Monarca de Latveria que domina ciência e magia.",
     "options": [
       "Rocket Raccoon",
       "Doutor Destino",
@@ -15734,12 +16375,14 @@ export const QUESTIONS=[
       "doctor doom"
     ],
     "media": null,
-    "clue": "Monarca de Latveria que domina ciência e magia."
+    "clue": null,
+    "explanation": "A descrição é de Doutor Destino.",
+    "source": "https://en.wikipedia.org/wiki/Doctor_Doom"
   },
   {
-    "id": "super-herois:58",
+    "id": "v2:7fb915f97d8500952314",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Inteligência artificial hostil criada no universo dos Vingadores.",
     "options": [
       "Robin",
       "Batgirl",
@@ -15751,12 +16394,14 @@ export const QUESTIONS=[
       "ultron"
     ],
     "media": null,
-    "clue": "Inteligência artificial hostil criada no universo dos Vingadores."
+    "clue": null,
+    "explanation": "A descrição é de Ultron.",
+    "source": "https://en.wikipedia.org/wiki/Ultron"
   },
   {
-    "id": "super-herois:59",
+    "id": "v2:7305b1d857a0afcd6d74",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Mutante azul capaz de assumir a aparência de outras pessoas.",
     "options": [
       "Cyborg",
       "Jean Grey",
@@ -15770,12 +16415,14 @@ export const QUESTIONS=[
       "mística"
     ],
     "media": null,
-    "clue": "Mutante azul capaz de assumir a aparência de outras pessoas."
+    "clue": null,
+    "explanation": "A descrição é de Mística.",
+    "source": "https://en.wikipedia.org/wiki/Mystique_(X-Men)"
   },
   {
-    "id": "super-herois:60",
+    "id": "v2:5e7928e014043aca73e5",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vilã de Gotham que controla plantas e toxinas.",
     "options": [
       "Hera Venenosa",
       "Supergirl",
@@ -15788,12 +16435,14 @@ export const QUESTIONS=[
       "poison ivy"
     ],
     "media": null,
-    "clue": "Vilã de Gotham que controla plantas e toxinas."
+    "clue": null,
+    "explanation": "A descrição é de Hera Venenosa.",
+    "source": "https://en.wikipedia.org/wiki/Poison_Ivy_(character)"
   },
   {
-    "id": "super-herois:61",
+    "id": "v2:ed52d62df01d1d785ff2",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Ex-psiquiatra de Gotham conhecida pelo visual de arlequim.",
     "options": [
       "Ciclope",
       "Arlequina",
@@ -15806,12 +16455,14 @@ export const QUESTIONS=[
       "harley quinn"
     ],
     "media": null,
-    "clue": "Ex-psiquiatra de Gotham conhecida pelo visual de arlequim."
+    "clue": null,
+    "explanation": "A descrição é de Arlequina.",
+    "source": "https://en.wikipedia.org/wiki/Harley_Quinn"
   },
   {
-    "id": "super-herois:62",
+    "id": "v2:bb62e1bcffc073a181cd",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Promotor de Gotham que decide ações com uma moeda.",
     "options": [
       "Professor X",
       "Luke Cage",
@@ -15824,12 +16475,14 @@ export const QUESTIONS=[
       "two face"
     ],
     "media": null,
-    "clue": "Promotor de Gotham que decide ações com uma moeda."
+    "clue": null,
+    "explanation": "A descrição é de Duas Caras.",
+    "source": "https://en.wikipedia.org/wiki/Two-Face"
   },
   {
-    "id": "super-herois:63",
+    "id": "v2:5f8ae35a26c92e6d86ae",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vilão mascarado que usa Venom para ampliar sua força.",
     "options": [
       "Falcão",
       "Miss Marvel",
@@ -15841,12 +16494,14 @@ export const QUESTIONS=[
       "bane"
     ],
     "media": null,
-    "clue": "Vilão mascarado que usa Venom para ampliar sua força."
+    "clue": null,
+    "explanation": "A descrição é de Bane.",
+    "source": "https://en.wikipedia.org/wiki/Bane_(DC_Comics)"
   },
   {
-    "id": "super-herois:64",
+    "id": "v2:818db15990359feefcf7",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Líder da Liga dos Assassinos ligado ao Poço de Lázaro.",
     "options": [
       "Ra's al Ghul",
       "Punho de Ferro",
@@ -15859,12 +16514,14 @@ export const QUESTIONS=[
       "ra's al ghul"
     ],
     "media": null,
-    "clue": "Líder da Liga dos Assassinos ligado ao Poço de Lázaro."
+    "clue": null,
+    "explanation": "A descrição é de Ra's al Ghul.",
+    "source": "https://en.wikipedia.org/wiki/Ra's_al_Ghul"
   },
   {
-    "id": "super-herois:65",
+    "id": "v2:a01fe0ff2269ef9b3516",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Tirano de Apokolips que busca a Equação Antivida.",
     "options": [
       "Mulher-Hulk",
       "Darkseid",
@@ -15876,12 +16533,14 @@ export const QUESTIONS=[
       "darkseid"
     ],
     "media": null,
-    "clue": "Tirano de Apokolips que busca a Equação Antivida."
+    "clue": null,
+    "explanation": "A descrição é de Darkseid.",
+    "source": "https://en.wikipedia.org/wiki/Darkseid"
   },
   {
-    "id": "super-herois:66",
+    "id": "v2:2ba8f1af913cd154843e",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Criatura da DC que enfrenta o kryptoniano de Metrópolis.",
     "options": [
       "Coringa",
       "Doutor Destino",
@@ -15894,12 +16553,14 @@ export const QUESTIONS=[
       "doomsday"
     ],
     "media": null,
-    "clue": "Criatura da DC que enfrenta o kryptoniano de Metrópolis."
+    "clue": null,
+    "explanation": "A descrição é de Apocalipse.",
+    "source": "https://en.wikipedia.org/wiki/Doomsday_(DC_Comics)"
   },
   {
-    "id": "super-herois:67",
+    "id": "v2:af339c74accb5a2d696f",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Simbionte vermelho associado a Cletus Kasady.",
     "options": [
       "Venom",
       "Hera Venenosa",
@@ -15912,12 +16573,14 @@ export const QUESTIONS=[
       "carnage"
     ],
     "media": null,
-    "clue": "Simbionte vermelho associado a Cletus Kasady."
+    "clue": null,
+    "explanation": "A descrição é de Carnificina.",
+    "source": "https://en.wikipedia.org/wiki/Carnage_(character)"
   },
   {
-    "id": "super-herois:68",
+    "id": "v2:f7076a3582a4981d2f85",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Inimigo do herói das teias que controla eletricidade.",
     "options": [
       "Electro",
       "Caveira Vermelha",
@@ -15929,12 +16592,14 @@ export const QUESTIONS=[
       "electro"
     ],
     "media": null,
-    "clue": "Inimigo do herói das teias que controla eletricidade."
+    "clue": null,
+    "explanation": "A descrição é de Electro.",
+    "source": "https://en.wikipedia.org/wiki/Electro_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:69",
+    "id": "v2:1ecf4b025e7f86a83574",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vilão alado do universo do Homem-Aranha.",
     "options": [
       "Mística",
       "Abutre",
@@ -15947,12 +16612,14 @@ export const QUESTIONS=[
       "vulture"
     ],
     "media": null,
-    "clue": "Vilão alado do universo do Homem-Aranha."
+    "clue": null,
+    "explanation": "A descrição é de Abutre.",
+    "source": "https://en.wikipedia.org/wiki/Vulture_(Marvel_Comics)"
   },
   {
-    "id": "super-herois:70",
+    "id": "v2:14a19c432580bc16bf10",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Antigo campeão de Kahndaq que usa poderes semelhantes aos de Shazam.",
     "options": [
       "Duas Caras",
       "Abutre",
@@ -15965,12 +16632,14 @@ export const QUESTIONS=[
       "black adam"
     ],
     "media": null,
-    "clue": "Antigo campeão de Kahndaq que usa poderes semelhantes aos de Shazam."
+    "clue": null,
+    "explanation": "A descrição é de Adão Negro.",
+    "source": "https://en.wikipedia.org/wiki/Black_Adam"
   },
   {
-    "id": "super-herois:71",
+    "id": "v2:5fea515b03bb655bfc66",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Integrante dos Jovens Titãs, ligada à magia e ao demônio Trigon.",
     "options": [
       "Darkseid",
       "Surfista Prateado",
@@ -15983,12 +16652,14 @@ export const QUESTIONS=[
       "raven"
     ],
     "media": null,
-    "clue": "Integrante dos Jovens Titãs, ligada à magia e ao demônio Trigon."
+    "clue": null,
+    "explanation": "A descrição é de Ravena.",
+    "source": "https://en.wikipedia.org/wiki/Raven_(DC_Comics)"
   },
   {
-    "id": "super-herois:72",
+    "id": "v2:b028b8e19ba239e53118",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Guerreira atlante e parceira de Aquaman.",
     "options": [
       "Mera",
       "Electro",
@@ -16000,12 +16671,14 @@ export const QUESTIONS=[
       "mera"
     ],
     "media": null,
-    "clue": "Guerreira atlante e parceira de Aquaman."
+    "clue": null,
+    "explanation": "A descrição é de Mera.",
+    "source": "https://en.wikipedia.org/wiki/Mera_(comics)"
   },
   {
-    "id": "super-herois:73",
+    "id": "v2:fd1faec2760aa1c558f2",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Arauto cósmico de Galactus que viaja numa prancha.",
     "options": [
       "Ravena",
       "Surfista Prateado",
@@ -16018,12 +16691,14 @@ export const QUESTIONS=[
       "silver surfer"
     ],
     "media": null,
-    "clue": "Arauto cósmico de Galactus que viaja numa prancha."
+    "clue": null,
+    "explanation": "A descrição é de Surfista Prateado.",
+    "source": "https://en.wikipedia.org/wiki/Silver_Surfer"
   },
   {
-    "id": "super-herois:74",
+    "id": "v2:236dc95fdd81a67a2904",
     "quiz": "super-herois",
-    "text": "Que personagem é este?",
+    "text": "Qual personagem corresponde à descrição: Vilão de Otto Octavius com quatro braços mecânicos.",
     "options": [
       "Superman",
       "Mulher-Maravilha",
@@ -16037,10 +16712,12 @@ export const QUESTIONS=[
       "doc ock"
     ],
     "media": null,
-    "clue": "Vilão de Otto Octavius com quatro braços mecânicos."
+    "clue": null,
+    "explanation": "A descrição é de Doutor Octopus.",
+    "source": "https://en.wikipedia.org/wiki/Doctor_Octopus"
   },
   {
-    "id": "mapa:0",
+    "id": "v2:a82228fd05afc0e61121",
     "quiz": "mapa",
     "text": "Em qual país fica Brasília?",
     "options": [
@@ -16052,10 +16729,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:1",
+    "id": "v2:a615d1200fe0ffd6dd1f",
     "quiz": "mapa",
     "text": "Em qual país fica Buenos Aires?",
     "options": [
@@ -16067,10 +16746,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:2",
+    "id": "v2:cadef8510138fb77c3fc",
     "quiz": "mapa",
     "text": "Em qual país fica Ottawa?",
     "options": [
@@ -16082,10 +16763,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:3",
+    "id": "v2:2cd732664146118cb445",
     "quiz": "mapa",
     "text": "Em qual país fica Washington?",
     "options": [
@@ -16097,10 +16780,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:4",
+    "id": "v2:99aede56c9678bc0a708",
     "quiz": "mapa",
     "text": "Em qual país fica Cidade do México?",
     "options": [
@@ -16112,10 +16797,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:5",
+    "id": "v2:cf04af52de13809ec012",
     "quiz": "mapa",
     "text": "Em qual país fica Lima?",
     "options": [
@@ -16127,10 +16814,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:6",
+    "id": "v2:24f48be8c0535fc5dea1",
     "quiz": "mapa",
     "text": "Em qual país fica Bogotá?",
     "options": [
@@ -16142,10 +16831,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:7",
+    "id": "v2:3d5b66403279f9408302",
     "quiz": "mapa",
     "text": "Em qual país fica Santiago?",
     "options": [
@@ -16157,10 +16848,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:8",
+    "id": "v2:0c542d98345325fb90af",
     "quiz": "mapa",
     "text": "Em qual país fica Lisboa?",
     "options": [
@@ -16172,10 +16865,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:9",
+    "id": "v2:b56bc315194c250e7f9c",
     "quiz": "mapa",
     "text": "Em qual país fica Londres?",
     "options": [
@@ -16187,10 +16882,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:10",
+    "id": "v2:1845787ccac7ef9e8a09",
     "quiz": "mapa",
     "text": "Em qual país fica Paris?",
     "options": [
@@ -16202,10 +16899,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:11",
+    "id": "v2:6e0bfd26ab82c39eb4f3",
     "quiz": "mapa",
     "text": "Em qual país fica Roma?",
     "options": [
@@ -16217,10 +16916,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:12",
+    "id": "v2:d4cd3638fb322f5c13c0",
     "quiz": "mapa",
     "text": "Em qual país fica Berlim?",
     "options": [
@@ -16232,10 +16933,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:13",
+    "id": "v2:db9292e98bba4d86ce22",
     "quiz": "mapa",
     "text": "Em qual país fica Cairo?",
     "options": [
@@ -16247,10 +16950,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:14",
+    "id": "v2:865005a8f76957ae88fc",
     "quiz": "mapa",
     "text": "Em qual país fica Nairóbi?",
     "options": [
@@ -16262,10 +16967,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:15",
+    "id": "v2:df3768a879ee68d76510",
     "quiz": "mapa",
     "text": "Em qual país fica Rabat?",
     "options": [
@@ -16277,10 +16984,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:16",
+    "id": "v2:a778a8b026463613f6ed",
     "quiz": "mapa",
     "text": "Em qual país fica Moscou?",
     "options": [
@@ -16292,10 +17001,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:17",
+    "id": "v2:7b3dee47d79b2fd0083d",
     "quiz": "mapa",
     "text": "Em qual país fica Ancara?",
     "options": [
@@ -16307,10 +17018,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:18",
+    "id": "v2:068721d7d228732b82a9",
     "quiz": "mapa",
     "text": "Em qual país fica Nova Délhi?",
     "options": [
@@ -16322,10 +17035,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:19",
+    "id": "v2:191d0aabe347762ff48a",
     "quiz": "mapa",
     "text": "Em qual país fica Pequim?",
     "options": [
@@ -16337,10 +17052,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:20",
+    "id": "v2:d38f2277c939f93ebc0e",
     "quiz": "mapa",
     "text": "Em qual país fica Tóquio?",
     "options": [
@@ -16352,10 +17069,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:21",
+    "id": "v2:fe828f2bd3aa33edbd6d",
     "quiz": "mapa",
     "text": "Em qual país fica Seul?",
     "options": [
@@ -16367,10 +17086,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:22",
+    "id": "v2:4c51face4cebd079f933",
     "quiz": "mapa",
     "text": "Em qual país fica Bangcoc?",
     "options": [
@@ -16382,10 +17103,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:23",
+    "id": "v2:4da4d768f07988dbb321",
     "quiz": "mapa",
     "text": "Em qual país fica Camberra?",
     "options": [
@@ -16397,10 +17120,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:24",
+    "id": "v2:d5cda093ca11b3999283",
     "quiz": "mapa",
     "text": "Em qual país fica Wellington?",
     "options": [
@@ -16412,10 +17137,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:25",
+    "id": "v2:896d637dac1c682e215a",
     "quiz": "mapa",
     "text": "Em qual país fica Riade?",
     "options": [
@@ -16427,10 +17154,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:26",
+    "id": "v2:53eca574cef7aadeb770",
     "quiz": "mapa",
     "text": "Em qual país fica Manila?",
     "options": [
@@ -16442,10 +17171,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:27",
+    "id": "v2:2a095bdb993bc0c11531",
     "quiz": "mapa",
     "text": "Em qual país fica Reykjavík?",
     "options": [
@@ -16457,10 +17188,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:28",
+    "id": "v2:c46b70b3d2173ac3b712",
     "quiz": "mapa",
     "text": "Em qual país fica Dacar?",
     "options": [
@@ -16472,10 +17205,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:29",
+    "id": "v2:bcc81855a94ef66cd8e9",
     "quiz": "mapa",
     "text": "Em qual país fica Acra?",
     "options": [
@@ -16487,10 +17222,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:30",
+    "id": "v2:a09ac12d3c74a6b56ffb",
     "quiz": "mapa",
     "text": "Em qual país fica Luanda?",
     "options": [
@@ -16502,10 +17239,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:31",
+    "id": "v2:e5cae614f3d442c41a1c",
     "quiz": "mapa",
     "text": "Em qual país fica Amã?",
     "options": [
@@ -16517,10 +17256,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:32",
+    "id": "v2:05907a920feac203fb9f",
     "quiz": "mapa",
     "text": "Em qual país fica Hanói?",
     "options": [
@@ -16532,10 +17273,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:33",
+    "id": "v2:396bff82476e746275ba",
     "quiz": "mapa",
     "text": "Em qual país fica Jacarta?",
     "options": [
@@ -16547,10 +17290,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "mapa:34",
+    "id": "v2:02b91506a33f576a3c78",
     "quiz": "mapa",
     "text": "Em qual país fica Helsinque?",
     "options": [
@@ -16562,10 +17307,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:0",
+    "id": "v2:262156a17b09c4b7c287",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16577,10 +17324,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:1",
+    "id": "v2:d67c88f9ac0dd527380f",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16592,10 +17341,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:2",
+    "id": "v2:c6497d9905eaddc5e4cf",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16607,10 +17358,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:3",
+    "id": "v2:2c0a44725c927121384f",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16622,10 +17375,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:4",
+    "id": "v2:16607c2ef995d0dd6fe2",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16637,10 +17392,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:5",
+    "id": "v2:c71b6e82168c3f2f6369",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16652,10 +17409,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:6",
+    "id": "v2:5116ae3ab1905b000a6b",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16667,10 +17426,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:7",
+    "id": "v2:074565b48899dc18ba52",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16682,10 +17443,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:8",
+    "id": "v2:4483d34c2b20e6b9a649",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16697,10 +17460,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:9",
+    "id": "v2:ba4741994c7870d41c69",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16712,10 +17477,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:10",
+    "id": "v2:f27033e0b224b255d4af",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16727,10 +17494,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:11",
+    "id": "v2:1637f2d207253cfb2d4d",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16742,10 +17511,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:12",
+    "id": "v2:1e521cc7a14f38914d43",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16757,10 +17528,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:13",
+    "id": "v2:de87620e74ee16113c37",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16772,10 +17545,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:14",
+    "id": "v2:5053a86815830f29eb85",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16787,10 +17562,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:15",
+    "id": "v2:a65f9844107a9656d004",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16802,10 +17579,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:16",
+    "id": "v2:e1f39874dbbb4135eaeb",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16817,10 +17596,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:17",
+    "id": "v2:6405509ca1d77153b007",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16832,10 +17613,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:18",
+    "id": "v2:b3568d18c23d066fe482",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16847,10 +17630,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:19",
+    "id": "v2:b22df93786abec8d8ac6",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16862,10 +17647,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:20",
+    "id": "v2:7239fe1b7831f464400b",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16877,10 +17664,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:21",
+    "id": "v2:9dd5fecfdd6956927ce6",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16892,10 +17681,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:22",
+    "id": "v2:74d3da82c92fa26a07a3",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16907,10 +17698,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:23",
+    "id": "v2:8bb651c0cc720ded5590",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16922,10 +17715,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:24",
+    "id": "v2:d4bf19bcdc5f6e7b7e43",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16937,10 +17732,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:25",
+    "id": "v2:b3ddb38a3a21ceaf846f",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16952,10 +17749,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:26",
+    "id": "v2:1be7ad3db50f8356118e",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16967,10 +17766,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:27",
+    "id": "v2:d43252c28a055cae8aad",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16982,10 +17783,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:28",
+    "id": "v2:23b2a621be1d5e2576c1",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -16997,10 +17800,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "linha-do-tempo:29",
+    "id": "v2:d5eededa2f5a44bb47d1",
     "quiz": "linha-do-tempo",
     "text": "Qual destes acontecimentos ocorreu primeiro?",
     "options": [
@@ -17012,10 +17817,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:0",
+    "id": "v2:eb4d8edc9a53a0344134",
     "quiz": "associacoes",
     "text": "Qual é a capital de Brasil?",
     "options": [
@@ -17027,10 +17834,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:1",
+    "id": "v2:9109bb18a9ec5258953b",
     "quiz": "associacoes",
     "text": "Qual é a capital de Venezuela?",
     "options": [
@@ -17042,10 +17851,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:2",
+    "id": "v2:ddd09ab0e36962498371",
     "quiz": "associacoes",
     "text": "Qual é a capital de México?",
     "options": [
@@ -17057,10 +17868,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:3",
+    "id": "v2:35dfdb123747f9497ba3",
     "quiz": "associacoes",
     "text": "Qual é a capital de Honduras?",
     "options": [
@@ -17072,10 +17885,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:4",
+    "id": "v2:0f157ffaf5273c55f5f4",
     "quiz": "associacoes",
     "text": "Qual é a capital de Panamá?",
     "options": [
@@ -17087,10 +17902,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:5",
+    "id": "v2:151005288b65ff509f57",
     "quiz": "associacoes",
     "text": "Qual é a capital de Portugal?",
     "options": [
@@ -17102,10 +17919,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:6",
+    "id": "v2:9f599f248359c621b768",
     "quiz": "associacoes",
     "text": "Qual é a capital de Reino Unido?",
     "options": [
@@ -17117,10 +17936,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:7",
+    "id": "v2:4e616f9015eb4c31e183",
     "quiz": "associacoes",
     "text": "Qual é a capital de Suécia?",
     "options": [
@@ -17132,10 +17953,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:8",
+    "id": "v2:d9a15884575b538ec3a4",
     "quiz": "associacoes",
     "text": "Qual é a capital de Noruega?",
     "options": [
@@ -17147,10 +17970,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:9",
+    "id": "v2:7846bddda70fb6d42e27",
     "quiz": "associacoes",
     "text": "Qual é a capital de Rep. Tcheca?",
     "options": [
@@ -17162,10 +17987,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:10",
+    "id": "v2:3ef4761337daadb8a7f3",
     "quiz": "associacoes",
     "text": "Qual é a capital de Rússia?",
     "options": [
@@ -17177,10 +18004,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:11",
+    "id": "v2:c6259638f9fb40f8ea03",
     "quiz": "associacoes",
     "text": "Qual é a capital de Índia?",
     "options": [
@@ -17192,10 +18021,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:12",
+    "id": "v2:8216a2fa0ddc8bc74a5a",
     "quiz": "associacoes",
     "text": "Qual é a capital de Paquistão?",
     "options": [
@@ -17207,10 +18038,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:13",
+    "id": "v2:f2fbceb5235f39af1926",
     "quiz": "associacoes",
     "text": "Qual é a capital de Singapura?",
     "options": [
@@ -17222,10 +18055,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:14",
+    "id": "v2:a19edb27eb9a726d361f",
     "quiz": "associacoes",
     "text": "Qual é a capital de Catar?",
     "options": [
@@ -17237,10 +18072,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:15",
+    "id": "v2:3137cfb234f65f8a8d35",
     "quiz": "associacoes",
     "text": "Qual é a capital de Marrocos?",
     "options": [
@@ -17252,10 +18089,12 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:16",
+    "id": "v2:745e3c71666b728b1bab",
     "quiz": "associacoes",
     "text": "Qual é a capital de Egito?",
     "options": [
@@ -17267,10 +18106,12 @@ export const QUESTIONS=[
     "correct": 0,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:17",
+    "id": "v2:7b9005c570568c8b640d",
     "quiz": "associacoes",
     "text": "Qual é a capital de Austrália?",
     "options": [
@@ -17282,10 +18123,12 @@ export const QUESTIONS=[
     "correct": 1,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:18",
+    "id": "v2:b32ea945ba72242052ea",
     "quiz": "associacoes",
     "text": "Qual é a capital de Sérvia?",
     "options": [
@@ -17297,10 +18140,12 @@ export const QUESTIONS=[
     "correct": 2,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "associacoes:19",
+    "id": "v2:ef0cfd12fbb460d7f825",
     "quiz": "associacoes",
     "text": "Qual é a capital de Bangladesh?",
     "options": [
@@ -17312,238 +18157,587 @@ export const QUESTIONS=[
     "correct": 3,
     "aliases": [],
     "media": null,
-    "clue": null
+    "clue": null,
+    "explanation": null,
+    "source": null
   },
   {
-    "id": "audio-instrumentos:0",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:004f9b12f8816db09118",
+    "quiz": "ciencias",
+    "text": "Qual planeta do Sistema Solar está mais próximo do Sol?",
     "options": [
-      "Piano",
-      "Flauta",
-      "Saxofone",
-      "Acordeão"
+      "Mercúrio",
+      "Vênus",
+      "Marte",
+      "Netuno"
     ],
     "correct": 0,
     "aliases": [
-      "piano"
+      "mercurio"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/piano.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:E_major_piano.ogg",
-      "attribution": "→ROUX ₪ · CC0 1.0"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Mercúrio é o planeta com a órbita mais próxima do Sol.",
+    "source": "https://science.nasa.gov/mercury/"
   },
   {
-    "id": "audio-instrumentos:1",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:2e9aec4c69335600a05f",
+    "quiz": "ciencias",
+    "text": "Qual é o maior planeta do Sistema Solar?",
     "options": [
-      "Violão",
-      "Flauta",
-      "Violino",
-      "Trompete"
+      "Saturno",
+      "Júpiter",
+      "Urano",
+      "Terra"
     ],
     "correct": 1,
     "aliases": [
-      "flauta",
-      "flute"
+      "jupiter"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/flauta.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:Flute.ogg",
-      "attribution": "hokuspokus · Domínio público"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Júpiter tem o maior diâmetro entre os planetas do Sistema Solar.",
+    "source": "https://science.nasa.gov/jupiter/"
   },
   {
-    "id": "audio-instrumentos:2",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:d11c72ed56a10ced5e9d",
+    "quiz": "ciencias",
+    "text": "Qual planeta é conhecido como planeta vermelho?",
     "options": [
-      "Violoncelo",
-      "Clarinete",
-      "Violino",
-      "Bateria"
+      "Vênus",
+      "Mercúrio",
+      "Marte",
+      "Saturno"
     ],
     "correct": 2,
     "aliases": [
-      "violino",
-      "violin"
+      "marte"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/violino.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:Violin-440Hz.ogg",
-      "attribution": "SVGguru · CC BY-SA 4.0"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "A aparência avermelhada de Marte vem de minerais de ferro em sua superfície.",
+    "source": "https://science.nasa.gov/mars/"
   },
   {
-    "id": "audio-instrumentos:3",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:81470d92ccb3016b1ebd",
+    "quiz": "ciencias",
+    "text": "Qual planeta é famoso por seu amplo sistema de anéis?",
     "options": [
-      "Piano",
-      "Saxofone",
-      "Acordeão",
-      "Bateria"
+      "Júpiter",
+      "Netuno",
+      "Mercúrio",
+      "Saturno"
     ],
     "correct": 3,
     "aliases": [
-      "bateria",
-      "drums"
+      "saturno"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/bateria.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:Drum_-_Cadence_A.ogg",
-      "attribution": "United States Navy Band · Domínio público"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Saturno tem anéis extensos compostos principalmente de gelo e fragmentos rochosos.",
+    "source": "https://science.nasa.gov/saturn/"
   },
   {
-    "id": "audio-instrumentos:4",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:ab331c2ac91b6297b7d0",
+    "quiz": "ciencias",
+    "text": "Qual elemento químico tem símbolo O?",
     "options": [
-      "Violão",
-      "Bateria",
-      "Flauta",
-      "Trompete"
+      "Oxigênio",
+      "Ouro",
+      "Ósmio",
+      "Hidrogênio"
     ],
     "correct": 0,
     "aliases": [
-      "violão",
-      "violao",
-      "guitarra acústica"
+      "oxigenio"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/violao.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:AcousticGuitarSample.ogg",
-      "attribution": "RyGuy · Domínio público"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "O é o símbolo do oxigênio na tabela periódica.",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/element/Oxygen"
   },
   {
-    "id": "audio-instrumentos:5",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:7ffcbebb47623c8ea5db",
+    "quiz": "ciencias",
+    "text": "Qual elemento químico tem símbolo C e está na base das moléculas orgânicas?",
     "options": [
-      "Violoncelo",
-      "Clarinete",
-      "Violão",
-      "Violino"
+      "Cálcio",
+      "Carbono",
+      "Cobre",
+      "Cloro"
     ],
     "correct": 1,
     "aliases": [
-      "clarinete",
-      "clarinet"
+      "carbono"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/clarinete.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:Jazz_Clarinet.ogg",
-      "attribution": "Serolillo · CC BY 2.5"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "O símbolo C identifica o carbono.",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/element/Carbon"
   },
   {
-    "id": "audio-instrumentos:6",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:3c19937304d83da9b290",
+    "quiz": "ciencias",
+    "text": "Qual gás representa a maior parte da atmosfera terrestre?",
     "options": [
-      "Piano",
-      "Saxofone",
-      "Acordeão",
-      "Clarinete"
+      "Oxigênio",
+      "Argônio",
+      "Nitrogênio",
+      "Dióxido de carbono"
     ],
     "correct": 2,
     "aliases": [
-      "acordeão",
-      "acordeao",
-      "sanfona"
+      "nitrogenio"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/acordeao.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:Accordion_registers.ogg",
-      "attribution": "Necz0r · Domínio público"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "O nitrogênio corresponde a cerca de quatro quintos da atmosfera seca.",
+    "source": "https://www.nasa.gov/general/what-is-earths-atmosphere/"
   },
   {
-    "id": "audio-instrumentos:7",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:89813e1406d0ea52fbde",
+    "quiz": "ciencias",
+    "text": "Como se chama o processo pelo qual plantas usam luz para produzir açúcares?",
     "options": [
-      "Bateria",
-      "Flauta",
-      "Trompete",
-      "Violoncelo"
+      "Respiração",
+      "Fermentação",
+      "Evaporação",
+      "Fotossíntese"
     ],
     "correct": 3,
     "aliases": [
-      "violoncelo",
-      "cello"
+      "fotossintese"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/violoncelo.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:Cello_strings.ogg",
-      "attribution": "Georg Feitscher · CC BY-SA 3.0"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Na fotossíntese, energia luminosa é convertida em energia química.",
+    "source": "https://www.britannica.com/science/photosynthesis"
   },
   {
-    "id": "audio-instrumentos:8",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:f6f6e46849177ca77e9d",
+    "quiz": "ciencias",
+    "text": "Qual força mantém os planetas em órbita ao redor do Sol?",
     "options": [
-      "Saxofone",
-      "Acordeão",
-      "Violão",
-      "Violino"
+      "Gravidade",
+      "Magnetismo",
+      "Atrito",
+      "Empuxo"
     ],
     "correct": 0,
     "aliases": [
-      "saxofone",
-      "saxophone",
-      "sax"
+      "gravidade"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/saxofone.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:Stlouisblues-9bars.ogg",
-      "attribution": "Julien Grandgagnage · CC BY-SA 3.0"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "A atração gravitacional do Sol mantém os planetas em suas órbitas.",
+    "source": "https://science.nasa.gov/solar-system/"
   },
   {
-    "id": "audio-instrumentos:9",
-    "quiz": "audio-instrumentos",
-    "text": "Qual instrumento você ouve?",
+    "id": "v2:e6578b4cbd080411b7b7",
+    "quiz": "ciencias",
+    "text": "Qual é a unidade estrutural básica dos seres vivos?",
     "options": [
-      "Piano",
-      "Trompete",
-      "Violoncelo",
-      "Clarinete"
+      "Átomo",
+      "Célula",
+      "Tecido",
+      "Órgão"
     ],
     "correct": 1,
     "aliases": [
-      "trompete",
-      "trumpet"
+      "celula"
     ],
-    "media": {
-      "type": "audio",
-      "src": "audio/trompete.ogg",
-      "source": "https://commons.wikimedia.org/wiki/File:06._F5-trumpet.ogg",
-      "attribution": "ПростоУчастник · CC0 1.0"
-    },
-    "clue": null
+    "media": null,
+    "clue": null,
+    "explanation": "Os seres vivos são formados por uma ou mais células.",
+    "source": "https://www.britannica.com/science/cell-biology"
+  },
+  {
+    "id": "v2:a5a75af472f6e0ccedec",
+    "quiz": "ciencias",
+    "text": "Qual elemento químico, de símbolo He, é o segundo mais abundante no universo?",
+    "options": [
+      "Hidrogênio",
+      "Neônio",
+      "Hélio",
+      "Argônio"
+    ],
+    "correct": 2,
+    "aliases": [
+      "helio"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O hélio é superado em abundância cósmica apenas pelo hidrogênio.",
+    "source": "https://pubchem.ncbi.nlm.nih.gov/element/Helium"
+  },
+  {
+    "id": "v2:98aaddf37b320a7f8f36",
+    "quiz": "ciencias",
+    "text": "Como se chama a galáxia que contém o Sistema Solar?",
+    "options": [
+      "Andrômeda",
+      "Triângulo",
+      "Grande Nuvem de Magalhães",
+      "Via Láctea"
+    ],
+    "correct": 3,
+    "aliases": [
+      "via lactea"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Sol é uma estrela da Via Láctea.",
+    "source": "https://science.nasa.gov/universe/galaxies/milky-way/"
+  },
+  {
+    "id": "v2:e3828c26f6a04c7ddb22",
+    "quiz": "ciencias",
+    "text": "Qual é o maior oceano da Terra em área?",
+    "options": [
+      "Oceano Pacífico",
+      "Atlântico",
+      "Índico",
+      "Ártico"
+    ],
+    "correct": 0,
+    "aliases": [
+      "oceano pacifico",
+      "pacifico"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Pacífico ocupa a maior área entre os oceanos.",
+    "source": "https://oceanservice.noaa.gov/facts/biggestocean.html"
+  },
+  {
+    "id": "v2:222233186bf97afe1e5d",
+    "quiz": "ciencias",
+    "text": "Qual processo transforma água líquida em vapor?",
+    "options": [
+      "Condensação",
+      "Evaporação",
+      "Congelamento",
+      "Precipitação"
+    ],
+    "correct": 1,
+    "aliases": [
+      "evaporacao"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A evaporação é a passagem da água líquida para o estado gasoso.",
+    "source": "https://www.usgs.gov/special-topics/water-science-school/science/evaporation-and-water-cycle"
+  },
+  {
+    "id": "v2:16bf4929f8eac08c7124",
+    "quiz": "ciencias",
+    "text": "Em qual continente fica o Polo Sul geográfico?",
+    "options": [
+      "Ásia",
+      "Oceania",
+      "Antártida",
+      "África"
+    ],
+    "correct": 2,
+    "aliases": [
+      "antartida"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "O Polo Sul geográfico está na Antártida.",
+    "source": "https://www.bas.ac.uk/about/antarctica/"
+  },
+  {
+    "id": "v2:008c83135992895758ee",
+    "quiz": "historia-geral",
+    "text": "Em qual civilização antiga foram construídas as pirâmides de Gizé?",
+    "options": [
+      "Egito",
+      "Grécia",
+      "Roma",
+      "Pérsia"
+    ],
+    "correct": 0,
+    "aliases": [
+      "egito"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "As pirâmides de Gizé foram construídas no Egito antigo.",
+    "source": "https://www.britannica.com/place/Pyramids-of-Giza"
+  },
+  {
+    "id": "v2:28d980ef25ab49863b88",
+    "quiz": "historia-geral",
+    "text": "Qual cidade foi o centro político do Império Romano?",
+    "options": [
+      "Atenas",
+      "Roma",
+      "Alexandria",
+      "Cartago"
+    ],
+    "correct": 1,
+    "aliases": [
+      "roma"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Roma foi a capital e o centro simbólico do Império Romano.",
+    "source": "https://www.britannica.com/place/Rome"
+  },
+  {
+    "id": "v2:a259d91eb9cb2376bc74",
+    "quiz": "historia-geral",
+    "text": "Quem é associado à difusão da prensa de tipos móveis na Europa no século XV?",
+    "options": [
+      "Leonardo da Vinci",
+      "Galileu Galilei",
+      "Gutenberg",
+      "Isaac Newton"
+    ],
+    "correct": 2,
+    "aliases": [
+      "gutenberg",
+      "johannes gutenberg"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Johannes Gutenberg aperfeiçoou a impressão com tipos móveis na Europa.",
+    "source": "https://www.britannica.com/biography/Johannes-Gutenberg"
+  },
+  {
+    "id": "v2:39b1867b5791b206bd81",
+    "quiz": "historia-geral",
+    "text": "Qual revolução começou em 1789 e derrubou a monarquia absolutista na França?",
+    "options": [
+      "Revolução Industrial",
+      "Revolução Russa",
+      "Revolução Americana",
+      "Revolução Francesa"
+    ],
+    "correct": 3,
+    "aliases": [
+      "revolucao francesa"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Revolução Francesa começou em 1789.",
+    "source": "https://www.britannica.com/event/French-Revolution"
+  },
+  {
+    "id": "v2:66450b8f1855454df431",
+    "quiz": "historia-geral",
+    "text": "Qual país declarou independência de Portugal em 1822?",
+    "options": [
+      "Brasil",
+      "Argentina",
+      "México",
+      "Chile"
+    ],
+    "correct": 0,
+    "aliases": [
+      "brasil"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A independência do Brasil foi proclamada em 1822.",
+    "source": "https://www.britannica.com/place/Brazil/Independence"
+  },
+  {
+    "id": "v2:47f74da54333d9793135",
+    "quiz": "historia-geral",
+    "text": "Qual cidade inca foi construída nos Andes do atual Peru?",
+    "options": [
+      "Chichén Itzá",
+      "Machu Picchu",
+      "Tikal",
+      "Teotihuacán"
+    ],
+    "correct": 1,
+    "aliases": [
+      "machu picchu"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Machu Picchu é um sítio inca nos Andes peruanos.",
+    "source": "https://whc.unesco.org/en/list/274/"
+  },
+  {
+    "id": "v2:326caf860497f71b4d77",
+    "quiz": "historia-geral",
+    "text": "Quem se tornou o primeiro presidente negro da África do Sul em 1994?",
+    "options": [
+      "Desmond Tutu",
+      "F. W. de Klerk",
+      "Nelson Mandela",
+      "Thabo Mbeki"
+    ],
+    "correct": 2,
+    "aliases": [
+      "nelson mandela",
+      "mandela"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Nelson Mandela assumiu a presidência sul-africana em 1994.",
+    "source": "https://www.nelsonmandela.org/content/page/biography"
+  },
+  {
+    "id": "v2:73079787e6dadb98a430",
+    "quiz": "historia-geral",
+    "text": "Qual evento de 1989 simbolizou o fim da divisão da Alemanha?",
+    "options": [
+      "Reunificação italiana",
+      "Crise dos Mísseis",
+      "Plano Marshall",
+      "Queda do Muro de Berlim"
+    ],
+    "correct": 3,
+    "aliases": [
+      "queda do muro de berlim",
+      "muro de berlim"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A abertura do Muro de Berlim ocorreu em novembro de 1989.",
+    "source": "https://www.britannica.com/topic/Berlin-Wall"
+  },
+  {
+    "id": "v2:f5899511b201c2b59c70",
+    "quiz": "historia-geral",
+    "text": "Qual conflito mundial começou em 1914?",
+    "options": [
+      "Primeira Guerra Mundial",
+      "Segunda Guerra Mundial",
+      "Guerra da Crimeia",
+      "Guerra Fria"
+    ],
+    "correct": 0,
+    "aliases": [
+      "primeira guerra mundial",
+      "primeira guerra"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Primeira Guerra Mundial durou de 1914 a 1918.",
+    "source": "https://www.britannica.com/event/World-War-I"
+  },
+  {
+    "id": "v2:b9c0c91682403d462108",
+    "quiz": "historia-geral",
+    "text": "Qual conflito mundial terminou em 1945?",
+    "options": [
+      "Primeira Guerra Mundial",
+      "Segunda Guerra Mundial",
+      "Guerra da Coreia",
+      "Guerra do Vietnã"
+    ],
+    "correct": 1,
+    "aliases": [
+      "segunda guerra mundial",
+      "segunda guerra"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Segunda Guerra Mundial terminou em 1945.",
+    "source": "https://www.britannica.com/event/World-War-II"
+  },
+  {
+    "id": "v2:0a4b883c49cfbfd2051c",
+    "quiz": "historia-geral",
+    "text": "Qual aviador brasileiro realizou voos públicos com o 14-bis em 1906?",
+    "options": [
+      "Irmãos Wright",
+      "Charles Lindbergh",
+      "Santos Dumont",
+      "Antoine de Saint-Exupéry"
+    ],
+    "correct": 2,
+    "aliases": [
+      "santos dumont",
+      "alberto santos dumont"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Alberto Santos Dumont voou com o 14-bis em Paris em 1906.",
+    "source": "https://www.britannica.com/biography/Alberto-Santos-Dumont"
+  },
+  {
+    "id": "v2:bf02df00f4a5dc9120aa",
+    "quiz": "historia-geral",
+    "text": "Qual militar brasileira lutou na Independência da Bahia no século XIX?",
+    "options": [
+      "Anita Garibaldi",
+      "Bárbara de Alencar",
+      "Maria Leopoldina",
+      "Maria Quitéria"
+    ],
+    "correct": 3,
+    "aliases": [
+      "maria quiteria"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Maria Quitéria participou das lutas pela Independência da Bahia.",
+    "source": "https://www.gov.br/pt-br/noticias/cultura-artes-historia-e-esportes/2022/09/maria-quiteria-heroina-da-independencia"
+  },
+  {
+    "id": "v2:63608cf6d455a8dfbd31",
+    "quiz": "historia-geral",
+    "text": "O que a Lei Áurea de 1888 determinou no Brasil?",
+    "options": [
+      "Abolição da escravidão",
+      "Proclamação da República",
+      "Independência do Brasil",
+      "Criação da Constituição"
+    ],
+    "correct": 0,
+    "aliases": [
+      "abolicao da escravidao",
+      "fim da escravidao"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "A Lei Áurea declarou extinta a escravidão no Brasil.",
+    "source": "https://www.planalto.gov.br/ccivil_03/leis/lim/lim3353.htm"
+  },
+  {
+    "id": "v2:bf7f75797b925370862b",
+    "quiz": "historia-geral",
+    "text": "Qual império pré-colombiano tinha centro na região de Cusco?",
+    "options": [
+      "Império Asteca",
+      "Império Inca",
+      "Império Romano",
+      "Império Persa"
+    ],
+    "correct": 1,
+    "aliases": [
+      "imperio inca",
+      "inca"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Cusco foi o centro político do Império Inca.",
+    "source": "https://www.britannica.com/place/Inca-people"
+  },
+  {
+    "id": "v2:a73025600a991bd8e6d0",
+    "quiz": "historia-geral",
+    "text": "Qual aviadora foi a primeira mulher a cruzar o Atlântico sozinha de avião?",
+    "options": [
+      "Bessie Coleman",
+      "Harriet Quimby",
+      "Amelia Earhart",
+      "Jacqueline Cochran"
+    ],
+    "correct": 2,
+    "aliases": [
+      "amelia earhart"
+    ],
+    "media": null,
+    "clue": null,
+    "explanation": "Amelia Earhart realizou o voo solo transatlântico em 1932.",
+    "source": "https://www.britannica.com/biography/Amelia-Earhart"
   }
 ];

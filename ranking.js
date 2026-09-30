@@ -1,6 +1,6 @@
 (()=>{
   const el=id=>document.getElementById(id);
-  const title=Object.fromEntries(QUIZZES.map(quiz=>[quiz.id,quiz.title]));title.misto='Misto';title.idiomas='Línguas do Mundo';
+  const title=Object.fromEntries(QUIZZES.map(quiz=>[quiz.id,quiz.title]));title.misto='Misto';title.idiomas='Línguas do Mundo';title['audio-instrumentos']='Som dos Instrumentos (antigo)';
   const difficulty={easy:'Fácil',hard:'Difícil'};
   let user=null,runId=null,current=null,hits=0,deadline=0,tick=null,busy=false,profileOffset=0,boardDifficulty='easy';
   const categories=[{id:'misto',title:'Misto',count:QUIZZES.reduce((sum,quiz)=>sum+quiz.getPool('all').length,0)},...QUIZZES.map(quiz=>({id:quiz.id,title:quiz.title,count:quiz.getPool('all').length}))];
@@ -36,7 +36,6 @@
     el('rank-progress-bar').style.width=`${(question.number-1)/question.total*100}%`;el('rank-prompt').textContent=question.text;
     gameStatus('');const media=el('rank-media');media.replaceChildren();media.hidden=!question.media&&!question.clue;
     if(question.media?.type==='image'){const img=document.createElement('img');img.src=question.media.src;img.alt='Imagem da pergunta';img.referrerPolicy='no-referrer';img.onerror=()=>{media.replaceChildren();media.textContent=question.clue||'Imagem indisponível.'};media.append(img)}
-    else if(question.media?.type==='audio'){const audio=document.createElement('audio');audio.src=question.media.src;audio.preload='none';const button=document.createElement('button');button.type='button';button.textContent='Ouvir trecho';button.addEventListener('click',()=>{audio.currentTime=0;audio.play().catch(()=>{gameStatus('Não foi possível carregar o áudio.')})});media.append(button,audio)}
     else if(question.clue)media.textContent=question.clue;
     if(question.media?.source){const source=document.createElement('a');source.href=question.media.source;source.target='_blank';source.rel='noopener noreferrer';source.textContent=question.media.attribution||'Fonte: Wikimedia Commons';media.append(source)}
     const choices=el('rank-options');choices.replaceChildren();choices.hidden=question.difficulty==='hard';el('rank-answer').hidden=question.difficulty!=='hard';
@@ -46,7 +45,7 @@
   }
   async function answer(choice){
     if(busy||!current)return;busy=true;clearInterval(tick);el('rank-options').querySelectorAll('button').forEach(button=>button.disabled=true);el('rank-input').disabled=true;
-    try{const result=await api('/api/run/answer',{method:'POST',body:JSON.stringify({runId,choice})});hits=result.hits;gameStatus(result.correct?'Resposta correta.':`Resposta: ${result.answer}`);
+    try{const result=await api('/api/run/answer',{method:'POST',body:JSON.stringify({runId,choice})});hits=result.hits;gameStatus((result.correct?'Resposta correta.':`Resposta: ${result.answer}.`)+(result.explanation?' '+result.explanation:''));
       if(result.finished){current=null;runId=null;el('rank-game').hidden=true;el('rank-finish').hidden=false;el('rank-result').textContent=`${hits} de ${result.total} acertos em ${duration(result.elapsedMs)}.`;await board()}
       else{await new Promise(resolve=>setTimeout(resolve,900));renderQuestion(result.question)}
     }catch(error){gameStatus(error.message);el('rank-input').disabled=false;el('rank-options').querySelectorAll('button').forEach(button=>button.disabled=false);if(/registrada|encerrada/.test(error.message))await resume().catch(()=>{})}

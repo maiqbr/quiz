@@ -103,7 +103,6 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 @media(max-width:700px){
   .g-opt{padding:9px 10px;font-size:14px}
   .g-image-wrap{height:260px}
-  .g-image-wrap.has-hints{height:230px}
 }
 .hbtn-reset{border-color:rgba(248,113,113,.3);background:rgba(248,113,113,.07);color:var(--danger)}.hbtn-reset:hover{background:rgba(248,113,113,.15)}
 .hbtn-sidebar{border-color:rgba(139,92,246,.3);background:rgba(139,92,246,.08);color:var(--purple2)}.hbtn-sidebar:hover{background:rgba(139,92,246,.18)}
@@ -117,8 +116,6 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 #g-img-ph{font-size:44px;color:rgba(139,92,246,.3);z-index:2;position:relative;display:flex;flex-direction:column;align-items:center;gap:8px}
 #g-img-ph span{font-size:11px;color:var(--dim);font-family:inherit}
 .g-qlabel{font-size:12px;color:var(--muted);text-align:center;min-height:18px}
-.g-hint-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:center}
-.g-hint{font-size:12px;color:var(--muted);background:rgba(139,92,246,.07);border:1px solid var(--border);border-radius:7px;padding:4px 11px}
 .g-input-area{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%;max-width:390px}
 #g-input{width:100%;font-size:18px;padding:14px 20px;border-radius:13px;border:1.5px solid rgba(139,92,246,.35);background:rgba(255,255,255,.04);color:var(--text);text-align:center;outline:none;transition:border-color .15s,background .15s;font-family:inherit}
 #g-input::placeholder{color:var(--dim)}
@@ -201,7 +198,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
 <body>
 <div id="home" class="screen active">
   <header class="home-topbar"><div class="home-logo"><div class="home-logo-icon" aria-hidden="true"><img src="icon-192.png" alt=""></div><div class="home-logo-name">Quiz<span>Arena</span></div></div><div class="home-actions"><a id="header-discord-login" class="discord-header" href="/auth/discord/start">Entrar com Discord</a><button id="header-profile" class="profile-header" type="button" hidden><span id="header-avatar" class="profile-avatar" aria-hidden="true"></span><span id="header-name">Perfil</span></button><button class="theme-switch" type="button" role="switch" aria-checked="true" aria-label="Modo escuro ativo; alternar para modo claro"><span class="theme-switch-track" aria-hidden="true"><span></span></span><span class="theme-switch-label">Escuro</span></button><button id="install-btn" class="install-btn" style="display:none">Instalar aplicativo</button></div></header>
-  <div class="home-intro"><div><span class="eyebrow">QUIZARENA / 15 TEMAS</span><h1>Escolha um quiz.</h1><p>Clique em um tema para começar. Você pode jogar sozinho ou apresentar para a turma.</p></div></div>
+  <div class="home-intro"><div><span class="eyebrow">QUIZARENA / 16 TEMAS</span><h1>Escolha um quiz.</h1><p>Clique em um tema para começar. Você pode jogar sozinho ou apresentar para a turma.</p></div></div>
   <div class="home-layout"><section class="catalog-pane" aria-label="Quizzes disponíveis"><div class="play-mode" aria-label="Como você vai jogar"><div class="play-mode-main"><div class="play-mode-buttons" role="group" aria-label="Tipo de partida"><button type="button" data-play-mode="solo">Jogar sozinho</button><button type="button" data-play-mode="host">Apresentar com placar</button></div><div class="solo-length" id="solo-length"><span>PARTIDA</span><div class="length-switch" role="group" aria-label="Duração da partida"><button type="button" data-solo-length="full">Completa</button><button type="button" data-solo-length="quick">Rápida · 10</button></div></div><p id="play-mode-description">Todas as perguntas do tema, com resultado ao final.</p></div><button id="mixed-start" class="mixed-start" type="button"><strong>Jogar misto</strong><small>Todas as categorias</small></button></div><div class="home-grid" id="quiz-grid"></div></section>
   <aside class="rank-hub" id="ranking" aria-label="Ranking online"><div class="rank-hub-head"><span class="eyebrow">DESAFIO ONLINE</span><h2>Ranking</h2><p>Responda todas as perguntas do tema. Acertos primeiro; tempo para desempatar.</p></div><div id="rank-connect" class="rank-connect"><strong>Conecte seu Discord</strong><p>Seu perfil, resultados e posições ficam salvos online.</p><a href="/auth/discord/start" class="rank-connect-button">Entrar com Discord</a></div><div id="rank-signed" class="rank-signed" hidden><span class="rank-signed-dot"></span><span>Conectado como <strong id="rank-user">Jogador</strong></span><button id="rank-logout" type="button">Sair</button></div><div class="rank-config"><h3>Nova partida ranqueada</h3><div class="rank-config-fields"><label for="rank-category">Tema<select id="rank-category"></select></label><label for="rank-difficulty">Dificuldade<select id="rank-difficulty"><option value="easy">Fácil · alternativas</option><option value="hard">Difícil · digitar</option></select></label></div><button id="rank-begin" class="rank-action" type="button">Jogar ranqueado</button><p id="rank-status" role="status"></p></div><div class="rank-board"><div class="rank-board-title"><h3>Melhores resultados</h3><span id="rank-board-count">Top 50</span></div><div class="rank-board-filters"><select id="board-category" aria-label="Tema do ranking"></select><div class="board-difficulty" role="group" aria-label="Dificuldade do ranking"><button type="button" data-board-difficulty="easy">Fácil</button><button type="button" data-board-difficulty="hard">Difícil</button></div></div><table class="rank-table"><thead><tr><th>#</th><th>Jogador</th><th>Acertos</th><th>Tempo</th></tr></thead><tbody id="rank-rows"></tbody></table></div></aside></div>
   <section class="home-history" id="home-history"></section>
@@ -248,11 +245,10 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
       </div>
       <div class="g-map-card" id="g-map-card" style="display:none"></div>
       <div class="g-format-card" id="g-format-card" style="display:none"></div>
-      <div class="g-audio-card" id="g-audio-card" style="display:none"><span class="eyebrow">DESAFIO DE ESCUTA</span><button type="button" id="g-audio-play">Ouvir trecho</button><audio id="g-audio" preload="none"></audio><p>Trecho original com crédito da Wikimedia Commons.</p></div>
       </div>
       <div id="g-image-credit" class="g-image-credit" style="display:none"></div>
       <div id="g-qlabel" class="g-qlabel"></div>
-      <div id="g-hint-row" class="g-hint-row" style="display:none"></div>
+      <div id="g-explanation" class="g-explanation" hidden></div>
       <div class="g-input-area">
         <input id="g-input" type="text" placeholder="Digite a resposta..." autocomplete="off" spellcheck="false"/>
         <div id="g-options" class="g-options" style="display:none"></div>
@@ -295,6 +291,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
     <div class="modal-actions" style="justify-content:center"><button class="mbtn mbtn-cancel" id="reset-cancel">Cancelar</button><button class="mbtn mbtn-danger" id="reset-ok">Sim, reiniciar</button></div>
   </div>
 </div>
+<script src="maps/world-land.js"></script>
 <script src="content.js"></script>
 <script>
 /* A curadoria fica em content.js; nenhuma miniatura muda durante a partida. */
@@ -324,7 +321,7 @@ function $(id){return document.getElementById(id);}
 /* ══════════════════════════════════════════════════════════════════
    STATE
 ══════════════════════════════════════════════════════════════════ */
-let AQ=null,queue=[],current=null,round=0,hits=0,revealed=false,currentMedia=null,mapOptions=[],isMixed=false;
+let AQ=null,queue=[],current=null,round=0,hits=0,revealed=false,currentMedia=null,mapOptions=[],isMixed=false,failedImages=new Set();
 let players=[],pid=1,sidebarOpen=true;
 let gameMode="all",gameCont="americas",pendingMode="all",pendingCont="americas";
 let timerSec=0,timerInt=null;
@@ -399,6 +396,7 @@ function stopTimer(){if(timerInt){clearInterval(timerInt);timerInt=null;}}
 function updateTimer(){const m=String(Math.floor(timerSec/60)).padStart(2,"0"),s=String(timerSec%60).padStart(2,"0");$("g-timer").textContent=m+":"+s;$('g-round-timer').textContent=questionSecondsLeft+'s';}
 
 function freshStart(){
+  failedImages=new Set();
   queue=shuffle(isMixed?QUIZZES.flatMap(quiz=>quiz.getPool('all').map(item=>({quizId:quiz.id,item}))):[...AQ.getPool(gameMode,gameCont)]);
   round=0;hits=0;roundResults=[];sessionClosed=false;$("g-hits").textContent="0 acertos";$("g-timer").textContent="00:00";
   startTimer();nextRound();
@@ -435,19 +433,30 @@ function fitImageCard(img){
   card.style.height=Math.round(h)+"px";
 }
 
-const MAP_SVG=`<svg viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
-  <path class="map-grid" d="M0 125H1000M0 250H1000M0 375H1000M250 0V500M500 0V500M750 0V500"/>
-  <path class="map-equator" d="M0 250H1000"/>
-  <path class="map-land" d="M28 83L47 53 87 44 124 60 171 55 191 72 217 62 246 81 285 89 309 110 340 114 359 139 345 158 327 160 312 183 287 195 280 217 260 221 248 202 218 197 199 183 178 177 157 160 140 176 117 162 97 142 73 139 54 119 32 115Z M144 183L166 183 177 194 169 207 151 206Z M271 218L294 216 321 223 345 241 372 251 389 274 385 294 373 315 379 337 368 359 354 381 346 409 332 445 312 462 300 437 297 412 285 389 282 360 269 335 255 302 246 279 252 256Z M407 33L431 22 459 28 467 50 449 73 423 70Z M459 132L480 104 516 92 548 94 580 83 603 66 646 56 690 54 724 43 770 48 804 57 845 54 876 63 913 76 934 92 960 94 979 109 969 129 943 132 923 148 899 151 876 172 856 163 832 178 816 168 794 179 773 173 762 189 738 187 728 173 707 167 690 151 676 166 656 162 640 175 623 169 600 187 583 167 561 171 546 155 527 160 510 146 492 153 472 145Z M490 168L517 160 551 166 580 178 615 180 640 199 651 226 644 256 626 280 617 312 596 342 578 382 561 412 537 405 523 379 508 355 496 328 478 306 468 281 460 255 467 223Z M659 177L690 169 714 179 724 198 716 223 702 239 684 220 673 198Z M723 191L747 188 765 204 769 225 754 243 738 230Z M783 207L817 217 827 238 807 246 785 227Z M843 247L863 250 872 267 855 274Z M828 367L854 349 887 345 911 351 938 372 955 394 950 422 928 438 898 446 872 439 850 418 823 404Z M971 344L983 349 986 363 980 372 970 365Z M983 374L995 379 996 398 989 405 981 394Z"/>
-  <text class="map-label" x="32" y="480">MAPA ESQUEMÁTICO</text>
-</svg>`;
+function drawWorldMap(canvas){
+  const ctx=canvas.getContext('2d'),width=canvas.width,height=canvas.height;
+  ctx.fillStyle='#142130';ctx.fillRect(0,0,width,height);
+  ctx.strokeStyle='rgba(211,221,232,.12)';ctx.lineWidth=1;
+  for(let lon=-150;lon<=150;lon+=30){const x=(lon+180)/360*width;ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,height);ctx.stroke()}
+  for(let lat=-60;lat<=60;lat+=30){const y=(90-lat)/180*height;ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(width,y);ctx.stroke()}
+  ctx.fillStyle='#63766f';ctx.strokeStyle='#9db1a7';ctx.lineWidth=.7;
+  for(const ring of WORLD_LAND){
+    if(!ring.length)continue;
+    ctx.beginPath();
+    ring.forEach(([lon,lat],index)=>{const x=(lon+180)/360*width,y=(90-lat)/180*height;if(index===0)ctx.moveTo(x,y);else ctx.lineTo(x,y)});
+    ctx.closePath();ctx.fill();ctx.stroke();
+  }
+}
 function mapPoint(item){return {x:(item.lon+180)/360*100,y:(90-item.lat)/180*100};}
 function renderMap(){
-  const card=$("g-map-card");card.innerHTML=MAP_SVG;
+  const card=$("g-map-card");card.replaceChildren();
+  const canvas=document.createElement('canvas');canvas.width=1000;canvas.height=500;canvas.setAttribute('aria-hidden','true');card.append(canvas);drawWorldMap(canvas);
+  const credit=document.createElement('span');credit.className='map-credit';credit.textContent='Base cartográfica: Natural Earth';card.append(credit);
   mapOptions=[current];
-  for(const city of shuffle(MAPA_CAPITAIS.filter(x=>x!==current))){
+  const currentPoint=mapPoint(current),distance=city=>{const p=mapPoint(city);return Math.hypot((p.x-currentPoint.x)*1.6,p.y-currentPoint.y)};
+  for(const city of MAPA_CAPITAIS.filter(x=>x!==current).sort((a,b)=>distance(a)-distance(b))){
     const p=mapPoint(city);
-    if(mapOptions.every(other=>{const q=mapPoint(other);return Math.hypot((p.x-q.x)*1.6,p.y-q.y)>18;}))mapOptions.push(city);
+    if(mapOptions.every(other=>{const q=mapPoint(other);return Math.hypot((p.x-q.x)*1.6,p.y-q.y)>8;}))mapOptions.push(city);
     if(mapOptions.length===4)break;
   }
   mapOptions=shuffle(mapOptions);
@@ -455,7 +464,7 @@ function renderMap(){
     const point=mapPoint(city),pin=document.createElement("button");
     pin.type="button";pin.className="map-pin";pin.textContent="ABCD"[i];
     pin.style.left=Math.max(5,Math.min(95,point.x))+"%";pin.style.top=point.y+"%";
-    pin.setAttribute("aria-label","Ponto "+"ABCD"[i]);
+    pin.setAttribute("aria-label","Ponto "+"ABCD"[i]+" no mapa");
     pin.addEventListener("click",()=>{
       if(revealed)return;
       if(city===current){markCorrect();reveal(false);}
@@ -477,12 +486,6 @@ function showMapAnswer(){
 function showMediaCredit(){
   const box=$("g-image-credit");box.replaceChildren();
   if(AQ.kind==="map"||AQ.kind==="timeline"||AQ.kind==="match"||AQ.getText)return;
-  if(AQ.kind==="audio"){
-    box.append(document.createTextNode('Áudio: '+current.author+' · '));
-    const license=document.createElement('a');license.href=current.licenseUrl;license.target='_blank';license.rel='noopener noreferrer';license.textContent=current.license;box.append(license);
-    box.append(document.createTextNode(' · '));const file=document.createElement('a');file.href=current.fileUrl;file.target='_blank';file.rel='noopener noreferrer';file.textContent='página do arquivo';box.append(file);
-    box.style.display='';return;
-  }
   if(currentMedia?.fileUrl){
     box.append(document.createTextNode("Imagem: "+currentMedia.author+" · "));
     if(currentMedia.licenseUrl){const license=document.createElement("a");license.href=currentMedia.licenseUrl;license.target="_blank";license.rel="noopener noreferrer";license.textContent=currentMedia.license;box.append(license);}else box.append(document.createTextNode(currentMedia.license));
@@ -496,36 +499,40 @@ function showMediaCredit(){
   }
   box.style.display=box.childNodes.length?"":"none";
 }
-function showFallbackClue(){
-  const clue=AQ.getFallbackText?.(current)||current.hint||"Letras: "+current.name.split(/\s+/).map(word=>word[0]+"_".repeat(Math.max(0,word.length-1))).join(" ");
-  $("g-image-card").style.display="none";
-  $("g-text-card").style.display="flex";
-  $("g-text-phrase").textContent=clue;
-  $("g-qlabel").textContent="Descubra pela pista";
+function skipUnavailableImage(){
+  failedImages.add(current);round=Math.max(0,round-1);loadingRound=-1;
+  if(playMode==='host'&&!isMixed&&!queue.length)queue=shuffle(AQ.getPool(gameMode,gameCont).filter(item=>!failedImages.has(item)));
+  if(!queue.length&&playMode==='host'){finishSession();return}
+  nextRound();
 }
 function renderTimeline(){
   const card=$('g-format-card');card.replaceChildren();
-  const instruction=document.createElement('p');instruction.textContent='Selecione os quatro eventos do mais antigo para o mais recente.';card.append(instruction);
-  const chosen=document.createElement('ol');chosen.className='format-chosen';card.append(chosen);
-  const choices=document.createElement('div');choices.className='format-choices';card.append(choices);
+  const heading=document.createElement('div');heading.className='format-heading';heading.innerHTML='<span>LINHA DO TEMPO</span><strong>Qual veio primeiro?</strong><small>Organize os quatro acontecimentos do mais antigo ao mais recente.</small>';card.append(heading);
+  const chosen=document.createElement('div');chosen.className='timeline-track';card.append(chosen);
+  const slots=Array.from({length:4},(_,index)=>{const slot=document.createElement('div');slot.className='timeline-slot';slot.innerHTML=`<span>${index+1}</span><strong>Escolha um evento</strong>`;chosen.append(slot);return slot});
+  const controls=document.createElement('div');controls.className='format-controls';const progress=document.createElement('span');progress.textContent='0 de 4 na ordem';const undo=document.createElement('button');undo.type='button';undo.textContent='Desfazer última';undo.disabled=true;controls.append(progress,undo);card.append(controls);
+  const choices=document.createElement('div');choices.className='format-choices timeline-choices';card.append(choices);
   const selected=[];
   shuffle(current.events).forEach(event=>{const button=document.createElement('button');button.type='button';button.textContent=event.label;button.addEventListener('click',()=>{
-    if(revealed)return;selected.push(event);button.disabled=true;const item=document.createElement('li');item.textContent=event.label;chosen.append(item);
-    if(selected.length===4){const correct=selected.every((entry,index)=>entry===current.events[index]);if(correct)markCorrect();reveal(!correct,correct?'':'Ordem incorreta')}
+    if(revealed)return;selected.push({event,button});button.disabled=true;const slot=slots[selected.length-1];slot.classList.add('filled');slot.querySelector('strong').textContent=event.label;progress.textContent=`${selected.length} de 4 na ordem`;undo.disabled=false;
+    if(selected.length===4){const correct=selected.every((entry,index)=>entry.event===current.events[index]);if(correct)markCorrect();reveal(!correct,correct?'':'Ordem incorreta')}
   });choices.append(button)});
+  undo.addEventListener('click',()=>{if(revealed||!selected.length)return;const last=selected.pop();last.button.disabled=false;const slot=slots[selected.length];slot.classList.remove('filled');slot.querySelector('strong').textContent='Escolha um evento';progress.textContent=`${selected.length} de 4 na ordem`;undo.disabled=!selected.length});
 }
 function renderMatching(){
   const card=$('g-format-card');card.replaceChildren();
-  const instruction=document.createElement('p');instruction.textContent='Escolha um país e sua capital para formar cada par.';card.append(instruction);
+  const heading=document.createElement('div');heading.className='format-heading';heading.innerHTML='<span>PAÍS E CAPITAL</span><strong>Encontre os pares</strong><small>Toque em um país e depois na capital correspondente.</small>';card.append(heading);
+  const progress=document.createElement('div');progress.className='match-progress';progress.textContent='0 de 4 pares encontrados';card.append(progress);
   const columns=document.createElement('div');columns.className='match-columns';card.append(columns);
-  const countries=document.createElement('div'),capitals=document.createElement('div');columns.append(countries,capitals);
+  const countries=document.createElement('div'),capitals=document.createElement('div');countries.innerHTML='<h3>Países</h3>';capitals.innerHTML='<h3>Capitais</h3>';columns.append(countries,capitals);
+  const completed=document.createElement('div');completed.className='match-completed';card.append(completed);
   let active=null,matched=0,mistakes=0;
-  shuffle(current.pairs).forEach(pair=>{const button=document.createElement('button');button.type='button';button.textContent=pair.country;button.addEventListener('click',()=>{if(revealed||button.disabled)return;countries.querySelectorAll('button').forEach(other=>other.classList.remove('selected'));active=pair;button.classList.add('selected')});countries.append(button)});
+  shuffle(current.pairs).forEach(pair=>{const button=document.createElement('button');button.type='button';button.textContent=pair.country;button.addEventListener('click',()=>{if(revealed||button.disabled)return;countries.querySelectorAll('button').forEach(other=>other.classList.remove('selected'));active=pair;button.classList.add('selected');progress.textContent='Agora escolha a capital de '+pair.country});countries.append(button)});
   shuffle(current.pairs).forEach(pair=>{const button=document.createElement('button');button.type='button';button.textContent=pair.capital;button.addEventListener('click',()=>{
     if(revealed||button.disabled||!active)return;
     const source=[...countries.querySelectorAll('button')].find(candidate=>candidate.textContent===active.country);
-    if(pair===active){source.disabled=true;button.disabled=true;source.classList.add('matched');button.classList.add('matched');matched++;if(matched===4){if(!mistakes)markCorrect();reveal(Boolean(mistakes),mistakes?'Houve '+mistakes+' tentativa(s) incorreta(s)':'')}}
-    else{mistakes++;button.classList.add('mismatch');setTimeout(()=>button.classList.remove('mismatch'),550)}
+    if(pair===active){source.disabled=true;button.disabled=true;source.classList.add('matched');button.classList.add('matched');matched++;const chip=document.createElement('span');chip.textContent=pair.country+' · '+pair.capital;completed.append(chip);progress.textContent=`${matched} de 4 pares encontrados`;if(matched===4){if(!mistakes)markCorrect();reveal(Boolean(mistakes),mistakes?'Houve '+mistakes+' tentativa(s) incorreta(s)':'')}}
+    else{mistakes++;button.classList.add('mismatch');progress.textContent='Tente outra capital para '+active.country;setTimeout(()=>button.classList.remove('mismatch'),550)}
     active=null;countries.querySelectorAll('button').forEach(other=>other.classList.remove('selected'));
   });capitals.append(button)});
 }
@@ -534,11 +541,10 @@ function showFormatAnswer(){
   answer.textContent=AQ.kind==='timeline'?'Ordem: '+current.events.map(event=>`${event.year}: ${event.label}`).join(' → '):'Pares: '+current.pairs.map(pair=>`${pair.country} — ${pair.capital}`).join(' · ');
   card.append(answer);card.querySelectorAll('button').forEach(button=>button.disabled=true);
 }
-$('g-audio-play').addEventListener('click',()=>{$('g-audio').currentTime=0;$('g-audio').play().catch(()=>{$('g-feedback').textContent='Não foi possível carregar o áudio. Tente novamente.'})});
-
 async function nextRound(){
   if((playMode==='solo'||isMixed)&&(!queue.length||playMode==='solo'&&soloLength==='quick'&&round>=10)){finishSession();return;}
-  if(!queue.length)queue=shuffle([...AQ.getPool(gameMode,gameCont)]);
+  if(!queue.length)queue=shuffle(AQ.getPool(gameMode,gameCont).filter(item=>!failedImages.has(item)));
+  if(!queue.length){finishSession();return}
   const selected=queue.pop();
   if(isMixed){AQ=QUIZZES.find(quiz=>quiz.id===selected.quizId);current=selected.item;$('g-quiz-name').textContent='Misto · '+AQ.title;$('g-btn-diff').style.display=AQ.kind==='map'||AQ.kind==='timeline'||AQ.kind==='match'?'none':''}
   else current=selected;
@@ -548,19 +554,17 @@ async function nextRound(){
 
   // Reset UI
   const img=$("g-img"),ph=$("g-img-ph"),phIcon=$("g-img-ph-icon"),phLabel=$("g-img-ph-label");
-  const imageCard=$("g-image-card"),textCard=$("g-text-card"),mapCard=$("g-map-card"),formatCard=$('g-format-card'),audioCard=$('g-audio-card');
-  formatCard.style.display='none';audioCard.style.display='none';$('g-audio').pause();$('g-audio').removeAttribute('src');
+  const imageCard=$("g-image-card"),textCard=$("g-text-card"),mapCard=$("g-map-card"),formatCard=$('g-format-card');
+  formatCard.style.display='none';$('g-explanation').hidden=true;$('g-explanation').replaceChildren();
   currentMedia=null;$("g-image-credit").style.display="none";
   img.style.display="none";ph.style.display="flex";
   resetImageCardSize();
   phIcon.textContent="···";phLabel.textContent="Carregando imagem...";
 
   $("g-round").textContent="Rodada "+round;
-  $("g-qlabel").textContent=AQ.kind==="map"?"Onde fica "+current.name+"?":AQ.question;
-  const hints=AQ.getHints(current),hr=$("g-hint-row");
-  if(hints.length){hr.style.display="flex";hr.innerHTML=hints.map(h=>`<span class="g-hint">${h}</span>`).join("");}
-  else{hr.style.display="none";hr.innerHTML="";}
-  $("g-image-wrap-el")?.classList.toggle("has-hints",hints.length>0);
+  $("g-qlabel").textContent=AQ.kind==="map"?"Onde fica "+current.name+"?":(AQ.getText||AQ.kind==='timeline'||AQ.kind==='match'?"":AQ.question);
+  $('g-image-wrap-el').classList.toggle('is-text',Boolean(AQ.getText));
+  $('g-image-wrap-el').classList.toggle('is-format',AQ.kind==='timeline'||AQ.kind==='match');
   $("g-feedback").innerHTML="&nbsp;";$("g-feedback").className="";
   $("g-next").style.display="none";$("g-skip").style.display="";
   renderAnswerUI();
@@ -573,9 +577,6 @@ async function nextRound(){
   if(AQ.kind==='timeline'||AQ.kind==='match'){
     imageCard.style.display='none';textCard.style.display='none';formatCard.style.display='block';
     if(AQ.kind==='timeline')renderTimeline();else renderMatching();loadingRound=-1;return;
-  }
-  if(AQ.kind==='audio'){
-    imageCard.style.display='none';textCard.style.display='none';audioCard.style.display='flex';$('g-audio').src=current.src;loadingRound=-1;return;
   }
   // Text-based quiz
   if(AQ.getText){
@@ -596,13 +597,13 @@ async function nextRound(){
     const src=currentMedia?.src;
     if(src){
       img.onload=()=>{if(loadingRound===thisRound){fitImageCard(img);img.style.display="block";ph.style.display="none";}};
-      img.onerror=()=>{if(loadingRound===thisRound)showFallbackClue();};
+      img.onerror=()=>{if(loadingRound===thisRound)skipUnavailableImage();};
       img.src=src;
     } else {
-      showFallbackClue();
+      skipUnavailableImage();
     }
   }catch{
-    showFallbackClue();
+    skipUnavailableImage();
   }
 }
 
@@ -628,6 +629,7 @@ function reveal(skipped,wrongLabel){
   if(AQ.kind==="map")showMapAnswer();
   else if(AQ.kind==='timeline'||AQ.kind==='match')showFormatAnswer();
   else showMediaCredit();
+  if(current.explanation){const box=$('g-explanation');box.hidden=false;const text=document.createElement('p');text.textContent=current.explanation;box.append(text);if(current.source){const source=document.createElement('a');source.href=current.source;source.target='_blank';source.rel='noopener noreferrer';source.textContent='Conferir fonte';box.append(source)}}
 }
 
 function markCorrect(){
@@ -674,6 +676,7 @@ function renderAnswerUI(){
 }
 
 function buildOptions(item){
+  if(item.distractors)return shuffle([{name:item.name,isCorrect:true},...item.distractors.map(name=>({name,isCorrect:false}))]);
   const pool=AQ.getPool(gameMode,gameCont);
   const correctName=item.name;
   const others=shuffle(pool.filter(p=>p.name!==correctName));

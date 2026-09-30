@@ -148,7 +148,7 @@ const PAISES=[
 const COPA_CODES=new Set(["us","ca","mx","br","ar","co","ec","uy","ve","py","de","fr","es","pt","gb","nl","be","it","hr","at","hu","tr","ro","si","al","me","ge","rs","cz","sk","ua","no","is","ch","ma","ng","eg","sn","ci","cm","rw","za","jp","kr","sa","ir","ae","jo","uz","gt","pa","jm","nz","au"]);
 const COPA=PAISES.filter(c=>COPA_CODES.has(c.code));
 
-// CAPITAIS — bandeira do país como imagem + nome do país como hint
+// CAPITAIS — a bandeira é a única pista visível antes da resposta.
 const CAPITAIS=[
   {code:"br",name:"Brasília",a:["brasilia"],hint:"Brasil"},
   {code:"ar",name:"Buenos Aires",a:["buenos aires"],hint:"Argentina"},
@@ -609,7 +609,8 @@ const ANIME_CLUES={
   "Naruto":"Ninja da Vila da Folha que sonha em se tornar Hokage.",
   "Inuyasha":"Meio-demônio que viaja pelo Japão feudal com Kagome.",
   "Doraemon":"Gato robótico azul que ajuda Nobita com invenções do futuro.",
-  "Soul Eater":"Alunos da academia Shibusen lutam usando armas que assumem forma humana."
+  "Soul Eater":"Alunos da academia Shibusen lutam usando armas que assumem forma humana.",
+  "Frieren":"Uma elfa maga reflete sobre o tempo após o fim da jornada de seu grupo."
 };
 
 // SUPER-HERÓIS — título Wikipedia inglês
@@ -957,7 +958,7 @@ const LINGUAS_FRASES=[
 const CURATED_MEDIA={
   "Lion": {
     "file": "File:020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
     "author": "Giles Laurent",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -969,7 +970,7 @@ const CURATED_MEDIA={
   },
   "Tiger": {
     "file": "File:Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -981,7 +982,7 @@ const CURATED_MEDIA={
   },
   "African_bush_elephant": {
     "file": "File:178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/960px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/960px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
     "author": "Giles Laurent",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -997,7 +998,7 @@ const CURATED_MEDIA={
   },
   "Jaguar": {
     "file": "File:Standing_jaguar.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/960px-Standing_jaguar.jpg",
     "author": "USFWS",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1009,7 +1010,7 @@ const CURATED_MEDIA={
   },
   "Gray_wolf": {
     "file": "File:Eurasian_wolf_2.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/960px-Eurasian_wolf_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/960px-Eurasian_wolf_2.jpg",
     "author": "User:Mas3cf",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1021,7 +1022,7 @@ const CURATED_MEDIA={
   },
   "Brown_bear": {
     "file": "File:2010-kodiak-bear-1.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/960px-2010-kodiak-bear-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/960px-2010-kodiak-bear-1.jpg",
     "author": "Yathin S Krishnappa",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1033,7 +1034,7 @@ const CURATED_MEDIA={
   },
   "Gorilla": {
     "file": "File:Gorille_des_plaines_de_l'ouest_à_l'Espace_Zoologique.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/960px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/960px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg",
     "author": "Thurundir",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1045,7 +1046,7 @@ const CURATED_MEDIA={
   },
   "Bottlenose_dolphin": {
     "file": "File:Tursiops_truncatus_01.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/960px-Tursiops_truncatus_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/960px-Tursiops_truncatus_01.jpg",
     "author": "NASA",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1057,7 +1058,7 @@ const CURATED_MEDIA={
   },
   "Giant_panda": {
     "file": "File:Grosser_Panda.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/960px-Grosser_Panda.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/960px-Grosser_Panda.JPG",
     "author": "J. Patrick Fischer",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1069,7 +1070,7 @@ const CURATED_MEDIA={
   },
   "Moose": {
     "file": "File:Alaska_moose.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/960px-Alaska_moose.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/960px-Alaska_moose.jpg",
     "author": "Paxson Woelber",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1081,7 +1082,7 @@ const CURATED_MEDIA={
   },
   "Koala": {
     "file": "File:Koala_climbing_tree.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/960px-Koala_climbing_tree.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/960px-Koala_climbing_tree.jpg",
     "author": "Diliff",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1093,7 +1094,7 @@ const CURATED_MEDIA={
   },
   "Llama": {
     "file": "File:Llamas,_Vernagt-Stausee,_Italy.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/960px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/960px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg",
     "author": "Andrija12345678",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1105,7 +1106,7 @@ const CURATED_MEDIA={
   },
   "Indian_peafowl": {
     "file": "File:Peacock_on_tree_(52077240794).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Peacock_on_tree_%2852077240794%29.jpg/960px-Peacock_on_tree_%2852077240794%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Peacock_on_tree_%2852077240794%29.jpg/960px-Peacock_on_tree_%2852077240794%29.jpg",
     "author": "Kandukuru Nagarjun from Bangalore, India",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -1117,7 +1118,7 @@ const CURATED_MEDIA={
   },
   "American_crocodile": {
     "file": "File:Crocodylus_acutus_mexico_02-edit1.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg/960px-Crocodylus_acutus_mexico_02-edit1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg/960px-Crocodylus_acutus_mexico_02-edit1.jpg",
     "author": "Tomás Castelazo",
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
@@ -1133,7 +1134,7 @@ const CURATED_MEDIA={
   },
   "Greater_flamingo": {
     "file": "File:010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg/960px-010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg/960px-010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
     "author": "Giles Laurent",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1145,7 +1146,7 @@ const CURATED_MEDIA={
   },
   "Plains_zebra": {
     "file": "File:Equus_quagga_burchellii_-_Etosha,_2014.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/960px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/960px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
     "author": "Yathin S Krishnappa",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1157,7 +1158,7 @@ const CURATED_MEDIA={
   },
   "Cheetah": {
     "file": "File:Male_cheetah_facing_left_in_South_Africa.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/960px-Male_cheetah_facing_left_in_South_Africa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/960px-Male_cheetah_facing_left_in_South_Africa.jpg",
     "author": "AfricanConservation",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1169,7 +1170,7 @@ const CURATED_MEDIA={
   },
   "White_rhinoceros": {
     "file": "File:109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
     "author": "Giles Laurent",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1181,7 +1182,7 @@ const CURATED_MEDIA={
   },
   "Bornean_orangutan": {
     "file": "File:Tanjung_Puting30477.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tanjung_Puting30477.jpg/960px-Tanjung_Puting30477.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tanjung_Puting30477.jpg/960px-Tanjung_Puting30477.jpg",
     "author": "Nanosanchez",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1193,7 +1194,7 @@ const CURATED_MEDIA={
   },
   "Green_sea_turtle": {
     "file": "File:Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1205,7 +1206,7 @@ const CURATED_MEDIA={
   },
   "Great_white_shark": {
     "file": "File:White_shark.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/960px-White_shark.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/960px-White_shark.jpg",
     "author": "Pterantula (Terry Goss) at en.wikipedia",
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
@@ -1217,7 +1218,7 @@ const CURATED_MEDIA={
   },
   "Orca": {
     "file": "File:Killerwhales_jumping.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/960px-Killerwhales_jumping.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/960px-Killerwhales_jumping.jpg",
     "author": "Robert Pittman",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1229,7 +1230,7 @@ const CURATED_MEDIA={
   },
   "Scarlet_macaw": {
     "file": "File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/960px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/960px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1241,7 +1242,7 @@ const CURATED_MEDIA={
   },
   "King_cobra": {
     "file": "File:12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg/960px-12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg/960px-12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg",
     "author": "Michael Allen Smith from Seattle, USA",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
@@ -1253,7 +1254,7 @@ const CURATED_MEDIA={
   },
   "Bald_eagle": {
     "file": "File:Bald_eagle_about_to_fly_in_Alaska_(2016).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/960px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/960px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
     "author": "Andy Morffew from Itchen Abbas, Hampshire, UK",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -1265,7 +1266,7 @@ const CURATED_MEDIA={
   },
   "Common_octopus": {
     "file": "File:Octopus2.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/960px-Octopus2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/960px-Octopus2.jpg",
     "author": "albert kok",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1277,7 +1278,7 @@ const CURATED_MEDIA={
   },
   "California_sea_lion": {
     "file": "File:California_Sea_Lion,_Monterey,_California,_United_States_imported_from_iNaturalist_photo_203598492.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg/960px-California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg/960px-California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg",
     "author": "(c) Jonathan Eisen, some rights reserved (CC BY)",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -1289,7 +1290,7 @@ const CURATED_MEDIA={
   },
   "Emperor_penguin": {
     "file": "File:Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg/960px-Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
     "author": "Ian Duffy from UK",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -1301,7 +1302,7 @@ const CURATED_MEDIA={
   },
   "Humpback_whale": {
     "file": "File:Humpback_whale_breaching_off_Cabo_San_Lucas.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Humpback_whale_breaching_off_Cabo_San_Lucas.jpg/960px-Humpback_whale_breaching_off_Cabo_San_Lucas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Humpback_whale_breaching_off_Cabo_San_Lucas.jpg/960px-Humpback_whale_breaching_off_Cabo_San_Lucas.jpg",
     "author": "Juan Cruzado Cortés",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -1313,7 +1314,7 @@ const CURATED_MEDIA={
   },
   "Giant_anteater": {
     "file": "File:Myresluger2.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Myresluger2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/960px-Myresluger2.jpg",
     "author": "Malene Thyssen",
     "license": "CC BY-SA 3.0",
     "licenseUrl": null,
@@ -1325,7 +1326,7 @@ const CURATED_MEDIA={
   },
   "Hippopotamus": {
     "file": "File:Portrait_Hippopotamus_in_the_water.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/960px-Portrait_Hippopotamus_in_the_water.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/960px-Portrait_Hippopotamus_in_the_water.jpg",
     "author": "Muhammad Mahdi Karim",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1337,7 +1338,7 @@ const CURATED_MEDIA={
   },
   "North_American_beaver": {
     "file": "File:American_Beaver.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/960px-American_Beaver.jpg",
     "author": "Steve from Washington, DC, USA",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
@@ -1349,7 +1350,7 @@ const CURATED_MEDIA={
   },
   "North_American_river_otter": {
     "file": "File:Northern_River_Otter_on_Seedskadee_NWR_(22802102984).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg/960px-Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg/960px-Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg",
     "author": "USFWS Mountain-Prairie",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1361,7 +1362,7 @@ const CURATED_MEDIA={
   },
   "Snow_leopard": {
     "file": "File:Irbis4.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/960px-Irbis4.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/960px-Irbis4.JPG",
     "author": "Irbis1983",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1373,7 +1374,7 @@ const CURATED_MEDIA={
   },
   "Leopard": {
     "file": "File:African_leopard_male_(cropped).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/960px-African_leopard_male_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/960px-African_leopard_male_%28cropped%29.jpg",
     "author": "Sumeet Moghe",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1385,7 +1386,7 @@ const CURATED_MEDIA={
   },
   "Komodo_dragon": {
     "file": "File:202306_Varanus_komodoensis.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/960px-202306_Varanus_komodoensis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/960px-202306_Varanus_komodoensis.jpg",
     "author": "James Jolokia ( james1203 )",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -1397,7 +1398,7 @@ const CURATED_MEDIA={
   },
   "Common_ostrich": {
     "file": "File:Struthio_camelus_-_Etosha_2014_(3).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/960px-Struthio_camelus_-_Etosha_2014_%283%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/960px-Struthio_camelus_-_Etosha_2014_%283%29.jpg",
     "author": "Yathin S Krishnappa",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1409,7 +1410,7 @@ const CURATED_MEDIA={
   },
   "Common_chimpanzee": {
     "file": "File:015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/960px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/960px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
     "author": "Giles Laurent",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1421,7 +1422,7 @@ const CURATED_MEDIA={
   },
   "Spotted_hyena": {
     "file": "File:Spotted_hyena_(Crocuta_crocuta).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/960px-Spotted_hyena_%28Crocuta_crocuta%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/960px-Spotted_hyena_%28Crocuta_crocuta%29.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1433,7 +1434,7 @@ const CURATED_MEDIA={
   },
   "Pangolin": {
     "file": "File:Eupholidota.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/Eupholidota.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Eupholidota.jpg/960px-Eupholidota.jpg",
     "author": "derivative work: user:The Explaner",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1445,7 +1446,7 @@ const CURATED_MEDIA={
   },
   "Sloth": {
     "file": "File:Bicho-preguiça_3.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/960px-Bicho-pregui%C3%A7a_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/960px-Bicho-pregui%C3%A7a_3.jpg",
     "author": "Daniella Maraschiello",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1457,7 +1458,7 @@ const CURATED_MEDIA={
   },
   "Capybara": {
     "file": "File:Capybaracropped.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Capybaracropped.jpg/960px-Capybaracropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Capybaracropped.jpg/960px-Capybaracropped.jpg",
     "author": "Giles Laurent",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1469,7 +1470,7 @@ const CURATED_MEDIA={
   },
   "Toco_toucan": {
     "file": "File:006_Toco_toucan_in_Encontro_das_Águas_State_Park_Photo_by_Giles_Laurent.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/960px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/960px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
     "author": "Giles Laurent",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1481,7 +1482,7 @@ const CURATED_MEDIA={
   },
   "Red_panda": {
     "file": "File:Red_Panda,_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg/960px-Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg/960px-Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
     "author": "Sunuwargr",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1493,7 +1494,7 @@ const CURATED_MEDIA={
   },
   "Arctic_fox": {
     "file": "File:Vulpes_lagopus_in_Iceland_(cropped_3).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg/960px-Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg/960px-Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg",
     "author": "Jonatan Pie ( unsplash.com/@r3dmax )",
     "license": "CC0",
     "licenseUrl": null,
@@ -1505,7 +1506,7 @@ const CURATED_MEDIA={
   },
   "Polar_bear": {
     "file": "File:Polar_Bear_-_Alaska_(cropped).jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/960px-Polar_Bear_-_Alaska_%28cropped%29.jpg",
     "author": "Alan Wilson",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1517,7 +1518,7 @@ const CURATED_MEDIA={
   },
   "American_bison": {
     "file": "File:American_bison_k5680-1.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/960px-American_bison_k5680-1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/960px-American_bison_k5680-1.jpg",
     "author": "Jack Dykinga",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1533,7 +1534,7 @@ const CURATED_MEDIA={
   },
   "Porcupine": {
     "file": "File:Erethizon_dorsatum_-_Prince_Rupert.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Erethizon_dorsatum_-_Prince_Rupert.jpg/960px-Erethizon_dorsatum_-_Prince_Rupert.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Erethizon_dorsatum_-_Prince_Rupert.jpg/960px-Erethizon_dorsatum_-_Prince_Rupert.jpg",
     "author": "The Cosmonaut",
     "license": "CC BY-SA 2.5 ca",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
@@ -1545,7 +1546,7 @@ const CURATED_MEDIA={
   },
   "Chameleon": {
     "file": "File:Panther_Chameleon_738367_(cropped).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Panther_Chameleon_738367_%28cropped%29.jpg/960px-Panther_Chameleon_738367_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Panther_Chameleon_738367_%28cropped%29.jpg/960px-Panther_Chameleon_738367_%28cropped%29.jpg",
     "author": "Rod Waddington",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
@@ -1557,7 +1558,7 @@ const CURATED_MEDIA={
   },
   "Green_iguana": {
     "file": "File:Iguana_iguana_(male_resting).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Iguana_iguana_%28male_resting%29.jpg/960px-Iguana_iguana_%28male_resting%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Iguana_iguana_%28male_resting%29.jpg/960px-Iguana_iguana_%28male_resting%29.jpg",
     "author": "Hans Hillewaert",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1569,7 +1570,7 @@ const CURATED_MEDIA={
   },
   "Seahorse": {
     "file": "File:Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/960px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/960px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg",
     "author": "Hans Hillewaert",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1581,7 +1582,7 @@ const CURATED_MEDIA={
   },
   "Atlantic_puffin": {
     "file": "File:Puffin_(Fratercula_arctica).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/960px-Puffin_%28Fratercula_arctica%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/960px-Puffin_%28Fratercula_arctica%29.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1593,7 +1594,7 @@ const CURATED_MEDIA={
   },
   "Walrus": {
     "file": "File:Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg/960px-Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg/960px-Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg",
     "author": "Nixette",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1605,7 +1606,7 @@ const CURATED_MEDIA={
   },
   "Narwhal": {
     "file": "File:Нарвал_в_российской_Арктике.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg/960px-%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg/960px-%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg",
     "author": "пресс-служба ПАО \"Газпром нефть\"",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1617,7 +1618,7 @@ const CURATED_MEDIA={
   },
   "Platypus": {
     "file": "File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg/960px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg/960px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1629,7 +1630,7 @@ const CURATED_MEDIA={
   },
   "Tasmanian_devil": {
     "file": "File:Sarcophilus_harrisii_taranna.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/960px-Sarcophilus_harrisii_taranna.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/960px-Sarcophilus_harrisii_taranna.jpg",
     "author": "JJ Harrison ( https://www.jjharrison.com.au/ )",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1641,7 +1642,7 @@ const CURATED_MEDIA={
   },
   "Common_wombat": {
     "file": "File:Vombatus_ursinus_-Maria_Island_National_Park.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg/960px-Vombatus_ursinus_-Maria_Island_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg/960px-Vombatus_ursinus_-Maria_Island_National_Park.jpg",
     "author": "JJ Harrison ( jjharrison89@facebook.com )",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1653,7 +1654,7 @@ const CURATED_MEDIA={
   },
   "Emu": {
     "file": "File:Emu_1_-_Tidbinbilla.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Emu_1_-_Tidbinbilla.jpg/960px-Emu_1_-_Tidbinbilla.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Emu_1_-_Tidbinbilla.jpg/960px-Emu_1_-_Tidbinbilla.jpg",
     "author": "JJ Harrison ( https://www.jjharrison.com.au/ )",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1665,7 +1666,7 @@ const CURATED_MEDIA={
   },
   "Kiwi_(bird)": {
     "file": "File:TeTuatahianui.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/TeTuatahianui.jpg/960px-TeTuatahianui.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/TeTuatahianui.jpg/960px-TeTuatahianui.jpg",
     "author": "Maungatautari Ecological Island Trust",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1677,7 +1678,7 @@ const CURATED_MEDIA={
   },
   "Griffon_vulture": {
     "file": "File:Gyps_fulvus_in_flight_-_Spain.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Gyps_fulvus_in_flight_-_Spain.jpg/960px-Gyps_fulvus_in_flight_-_Spain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Gyps_fulvus_in_flight_-_Spain.jpg/960px-Gyps_fulvus_in_flight_-_Spain.jpg",
     "author": "Pierre Dalous",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1689,7 +1690,7 @@ const CURATED_MEDIA={
   },
   "Eurasian_eagle-owl": {
     "file": "File:Bubo_bubo_3_(Martin_Mecnarowski).jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg/960px-Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg",
     "author": "Martin Mecnarowski ( http://www.photomecan.eu/ )",
     "license": "CC BY-SA 3.0",
     "licenseUrl": null,
@@ -1701,7 +1702,7 @@ const CURATED_MEDIA={
   },
   "Peregrine_falcon": {
     "file": "File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/960px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/960px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
     "author": "Mykola Swarnyk",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1713,7 +1714,7 @@ const CURATED_MEDIA={
   },
   "Mandrill": {
     "file": "File:Mandrill_Albert_September_2015_Zoo_Berlin_(2).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg/960px-Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg/960px-Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg",
     "author": "Katma0601",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1725,7 +1726,7 @@ const CURATED_MEDIA={
   },
   "Ring-tailed_lemur": {
     "file": "File:Ring-tailed_lemur_(Lemur_catta).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg/960px-Ring-tailed_lemur_%28Lemur_catta%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg/960px-Ring-tailed_lemur_%28Lemur_catta%29.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1737,7 +1738,7 @@ const CURATED_MEDIA={
   },
   "Raccoon": {
     "file": "File:Raccoon_in_Central_Park_(35264).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/960px-Raccoon_in_Central_Park_%2835264%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/960px-Raccoon_in_Central_Park_%2835264%29.jpg",
     "author": "Rhododendrites",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1749,7 +1750,7 @@ const CURATED_MEDIA={
   },
   "Coyote": {
     "file": "File:2009-Coyote-Yosemite.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/9/9c/2009-Coyote-Yosemite.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/2009-Coyote-Yosemite.jpg/960px-2009-Coyote-Yosemite.jpg",
     "author": "Yathin S Krishnappa",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1761,7 +1762,7 @@ const CURATED_MEDIA={
   },
   "Bobcat": {
     "file": "File:Bobcat_at_Columbus_Zoo_Boo.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bobcat_at_Columbus_Zoo_Boo.jpg/960px-Bobcat_at_Columbus_Zoo_Boo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bobcat_at_Columbus_Zoo_Boo.jpg/960px-Bobcat_at_Columbus_Zoo_Boo.jpg",
     "author": "Becker1999 (Paul and Cathy)",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -1773,7 +1774,7 @@ const CURATED_MEDIA={
   },
   "Cougar": {
     "file": "File:Mountain_Lion_in_Glacier_National_Park.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/960px-Mountain_Lion_in_Glacier_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/960px-Mountain_Lion_in_Glacier_National_Park.jpg",
     "author": "National Park Service",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1785,7 +1786,7 @@ const CURATED_MEDIA={
   },
   "Fennec_fox": {
     "file": "File:Fennec_Fox_Vulpes_zerda.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Fennec_Fox_Vulpes_zerda.jpg/960px-Fennec_Fox_Vulpes_zerda.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Fennec_Fox_Vulpes_zerda.jpg/960px-Fennec_Fox_Vulpes_zerda.jpg",
     "author": "Drew Avery",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -1797,7 +1798,7 @@ const CURATED_MEDIA={
   },
   "Nine-banded_armadillo": {
     "file": "File:Dasypus_novemcinctus_en_Zoológico_de_Paraguaná.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg/960px-Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg/960px-Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg",
     "author": "Aramburu Carlos",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -1809,7 +1810,7 @@ const CURATED_MEDIA={
   },
   "Hummingbird": {
     "file": "File:Trinidad_and_Tobago_hummingbirds_composite.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Trinidad_and_Tobago_hummingbirds_composite.jpg/960px-Trinidad_and_Tobago_hummingbirds_composite.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Trinidad_and_Tobago_hummingbirds_composite.jpg/960px-Trinidad_and_Tobago_hummingbirds_composite.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1825,7 +1826,7 @@ const CURATED_MEDIA={
   },
   "Frog": {
     "file": "File:Red-eyed_Leaf_Frog_(49661076226).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Red-eyed_Leaf_Frog_%2849661076226%29.jpg/960px-Red-eyed_Leaf_Frog_%2849661076226%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Red-eyed_Leaf_Frog_%2849661076226%29.jpg/960px-Red-eyed_Leaf_Frog_%2849661076226%29.jpg",
     "author": "Charlie Jackson",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -1837,7 +1838,7 @@ const CURATED_MEDIA={
   },
   "Common_vampire_bat": {
     "file": "File:Desmo-Flug-01.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Desmo-Flug-01.jpg/960px-Desmo-Flug-01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Desmo-Flug-01.jpg/960px-Desmo-Flug-01.jpg",
     "author": "Uwe Schmidt",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1849,7 +1850,7 @@ const CURATED_MEDIA={
   },
   "Columbidae": {
     "file": "File:Treron_vernans_male_-_Kent_Ridge_Park.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Treron_vernans_male_-_Kent_Ridge_Park.jpg/960px-Treron_vernans_male_-_Kent_Ridge_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Treron_vernans_male_-_Kent_Ridge_Park.jpg/960px-Treron_vernans_male_-_Kent_Ridge_Park.jpg",
     "author": "JJ Harrison ( https://tiny.jjharrison.com.au/t/3rUZckpXLJTJuAko )",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1861,7 +1862,7 @@ const CURATED_MEDIA={
   },
   "Carrion_crow": {
     "file": "File:Carrion_crow_2022_04_05_05_02.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Carrion_crow_2022_04_05_05_02.jpg/960px-Carrion_crow_2022_04_05_05_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Carrion_crow_2022_04_05_05_02.jpg/960px-Carrion_crow_2022_04_05_05_02.jpg",
     "author": "Alexis Lours",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -1873,7 +1874,7 @@ const CURATED_MEDIA={
   },
   "Eastern_gray_squirrel": {
     "file": "File:EasternGraySquirrel_GAm.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/EasternGraySquirrel_GAm.jpg/960px-EasternGraySquirrel_GAm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/EasternGraySquirrel_GAm.jpg/960px-EasternGraySquirrel_GAm.jpg",
     "author": "JeffreyGammon",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1885,7 +1886,7 @@ const CURATED_MEDIA={
   },
   "European_rabbit": {
     "file": "File:Oryctolagus_cuniculus_-_euqirneto_-_419737670_(cropped).jpeg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg/960px-Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg/960px-Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg",
     "author": "euqirneto",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -1897,7 +1898,7 @@ const CURATED_MEDIA={
   },
   "Hamster": {
     "file": "File:European_hamster_(Cricetus_cricetus)_Meidling.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/European_hamster_%28Cricetus_cricetus%29_Meidling.jpg/960px-European_hamster_%28Cricetus_cricetus%29_Meidling.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/European_hamster_%28Cricetus_cricetus%29_Meidling.jpg/960px-European_hamster_%28Cricetus_cricetus%29_Meidling.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1913,7 +1914,7 @@ const CURATED_MEDIA={
   },
   "House_mouse": {
     "file": "File:Mouse_white_background.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Mouse_white_background.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Mouse_white_background.jpg/960px-Mouse_white_background.jpg",
     "author": "Unknown author Unknown author (original) / Ilmari Karonen (editing)",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1925,7 +1926,7 @@ const CURATED_MEDIA={
   },
   "European_hare": {
     "file": "File:European_hare_(_Lepus_europaeus).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/European_hare_%28_Lepus_europaeus%29.jpg/960px-European_hare_%28_Lepus_europaeus%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/European_hare_%28_Lepus_europaeus%29.jpg/960px-European_hare_%28_Lepus_europaeus%29.jpg",
     "author": "Nagusb",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1937,7 +1938,7 @@ const CURATED_MEDIA={
   },
   "European_mole": {
     "file": "File:Talpa_europaea_I.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Talpa_europaea_I.jpg/960px-Talpa_europaea_I.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Talpa_europaea_I.jpg/960px-Talpa_europaea_I.jpg",
     "author": "bristolian",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -1949,7 +1950,7 @@ const CURATED_MEDIA={
   },
   "Striped_skunk": {
     "file": "File:Skunk_about_to_spray.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/960px-Skunk_about_to_spray.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/960px-Skunk_about_to_spray.jpg",
     "author": "Wallace Keck",
     "license": "Public domain",
     "licenseUrl": null,
@@ -1961,7 +1962,7 @@ const CURATED_MEDIA={
   },
   "European_badger": {
     "file": "File:European_badger_(Meles_meles_taxus)_Drenthe.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/European_badger_%28Meles_meles_taxus%29_Drenthe.jpg/960px-European_badger_%28Meles_meles_taxus%29_Drenthe.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/European_badger_%28Meles_meles_taxus%29_Drenthe.jpg/960px-European_badger_%28Meles_meles_taxus%29_Drenthe.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -1973,7 +1974,7 @@ const CURATED_MEDIA={
   },
   "Okapi": {
     "file": "File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/960px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/960px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg",
     "author": "Daniel Jolivet",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -1985,7 +1986,7 @@ const CURATED_MEDIA={
   },
   "South_American_tapir": {
     "file": "File:South_American_tapir_(Tapirus_terrestris).JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/South_American_tapir_%28Tapirus_terrestris%29.JPG/960px-South_American_tapir_%28Tapirus_terrestris%29.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/South_American_tapir_%28Tapirus_terrestris%29.JPG/960px-South_American_tapir_%28Tapirus_terrestris%29.JPG",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2001,7 +2002,7 @@ const CURATED_MEDIA={
   },
   "Axolotl": {
     "file": "File:Axolotl_ganz.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/960px-Axolotl_ganz.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/960px-Axolotl_ganz.jpg",
     "author": "LoKiLeCh",
     "license": "CC BY-SA 3.0",
     "licenseUrl": null,
@@ -2013,7 +2014,7 @@ const CURATED_MEDIA={
   },
   "Manta_ray": {
     "file": "File:Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG/960px-Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG/960px-Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG",
     "author": "Shiyam ElkCloner",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2025,7 +2026,7 @@ const CURATED_MEDIA={
   },
   "Snowy_owl": {
     "file": "File:SnowyOwlAmericanBlackDuck.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/960px-SnowyOwlAmericanBlackDuck.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/960px-SnowyOwlAmericanBlackDuck.jpg",
     "author": "Chuck Homler d/b/a Focus On Wildlife",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2037,7 +2038,7 @@ const CURATED_MEDIA={
   },
   "Meerkat": {
     "file": "File:Meerkat_(Suricata_suricatta)_Tswalu.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/960px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/960px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg",
     "author": "Charles J. Sharp",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2049,7 +2050,7 @@ const CURATED_MEDIA={
   },
   "Mona_Lisa": {
     "file": "File:Mona_Lisa.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg",
     "author": "Leonardo da Vinci",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2061,7 +2062,7 @@ const CURATED_MEDIA={
   },
   "The_Scream": {
     "file": "File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/960px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/960px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
     "author": "Edvard Munch",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2073,7 +2074,7 @@ const CURATED_MEDIA={
   },
   "The_Starry_Night": {
     "file": "File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/960px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/960px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
     "author": "Vincent van Gogh",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2089,7 +2090,7 @@ const CURATED_MEDIA={
   },
   "The_Great_Wave_off_Kanagawa": {
     "file": "File:Tsunami_by_hokusai_19th_century.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg",
     "author": "Katsushika Hokusai",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2101,7 +2102,7 @@ const CURATED_MEDIA={
   },
   "The_Birth_of_Venus_(Botticelli)": {
     "file": "File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
     "author": "Sandro Botticelli",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2113,7 +2114,7 @@ const CURATED_MEDIA={
   },
   "The_Creation_of_Adam": {
     "file": "File:Michelangelo_-_Creation_of_Adam_(cropped).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/960px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/960px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg",
     "author": "Michelangelo",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2129,7 +2130,7 @@ const CURATED_MEDIA={
   },
   "Saturn_Devouring_His_Son": {
     "file": "File:Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg",
     "author": "Francisco Goya",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2141,7 +2142,7 @@ const CURATED_MEDIA={
   },
   "School_of_Athens": {
     "file": "File:\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/960px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/960px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
     "author": "Raphael",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2153,7 +2154,7 @@ const CURATED_MEDIA={
   },
   "David_(Michelangelo)": {
     "file": "File:'David'_by_Michelangelo_Fir_JBU004.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/960px-%27David%27_by_Michelangelo_Fir_JBU004.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/960px-%27David%27_by_Michelangelo_Fir_JBU004.jpg",
     "author": "Jörg Bittner Unna",
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
@@ -2165,7 +2166,7 @@ const CURATED_MEDIA={
   },
   "Girl_with_a_Pearl_Earring": {
     "file": "File:1665_Girl_with_a_Pearl_Earring.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg",
     "author": "Johannes Vermeer",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2177,7 +2178,7 @@ const CURATED_MEDIA={
   },
   "American_Gothic": {
     "file": "File:Grant_Wood_-_American_Gothic_(1930).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Grant_Wood_-_American_Gothic_%281930%29.jpg/960px-Grant_Wood_-_American_Gothic_%281930%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Grant_Wood_-_American_Gothic_%281930%29.jpg/960px-Grant_Wood_-_American_Gothic_%281930%29.jpg",
     "author": "Grant Wood",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2189,7 +2190,7 @@ const CURATED_MEDIA={
   },
   "Nighthawks_(painting)": {
     "file": "File:Nighthawks_by_Edward_Hopper_1942.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg/960px-Nighthawks_by_Edward_Hopper_1942.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg/960px-Nighthawks_by_Edward_Hopper_1942.jpg",
     "author": "Edward Hopper",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2201,7 +2202,7 @@ const CURATED_MEDIA={
   },
   "A_Sunday_on_La_Grande_Jatte": {
     "file": "File:A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
     "author": "Georges Seurat",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2213,7 +2214,7 @@ const CURATED_MEDIA={
   },
   "The_Last_Supper_(Leonardo_da_Vinci)": {
     "file": "File:The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/960px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/960px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
     "author": "Leonardo da Vinci",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2225,7 +2226,7 @@ const CURATED_MEDIA={
   },
   "Las_Meninas": {
     "file": "File:Las_Meninas,_by_Diego_Velázquez,_from_Prado_in_Google_Earth.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/960px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/960px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg",
     "author": "Diego Velázquez",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2237,7 +2238,7 @@ const CURATED_MEDIA={
   },
   "Venus_de_Milo": {
     "file": "File:Front_views_of_the_Venus_de_Milo.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/960px-Front_views_of_the_Venus_de_Milo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/960px-Front_views_of_the_Venus_de_Milo.jpg",
     "author": "Livioandronico2013",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2249,7 +2250,7 @@ const CURATED_MEDIA={
   },
   "Sistine_Chapel_ceiling": {
     "file": "File:Sistine_Chapel_ceiling_02_(brightened).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/960px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/960px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg",
     "author": "Antoine Taveneaux",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2261,7 +2262,7 @@ const CURATED_MEDIA={
   },
   "The_Kiss_(Klimt)": {
     "file": "File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/960px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/960px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
     "author": "Gustav Klimt",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2273,7 +2274,7 @@ const CURATED_MEDIA={
   },
   "Whistler's_Mother": {
     "file": "File:Whistlers_Mother_high_res.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/960px-Whistlers_Mother_high_res.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/960px-Whistlers_Mother_high_res.jpg",
     "author": "James McNeill Whistler",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2285,7 +2286,7 @@ const CURATED_MEDIA={
   },
   "The_Night_Watch": {
     "file": "File:La_ronda_de_noche,_por_Rembrandt_van_Rijn.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/960px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/960px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg",
     "author": "Rembrandt",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2297,7 +2298,7 @@ const CURATED_MEDIA={
   },
   "Liberty_Leading_the_People": {
     "file": "File:La_Liberté_guidant_le_peuple_-_Eugène_Delacroix_-_Musée_du_Louvre_Peintures_RF_129_-_après_restauration_2024.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/960px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/960px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
     "author": "Eugène Delacroix",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2309,7 +2310,7 @@ const CURATED_MEDIA={
   },
   "The_Garden_of_Earthly_Delights": {
     "file": "File:The_Garden_of_earthly_delights.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/960px-The_Garden_of_earthly_delights.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/960px-The_Garden_of_earthly_delights.jpg",
     "author": "Hieronymus Bosch",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2321,7 +2322,7 @@ const CURATED_MEDIA={
   },
   "Olympia_(Manet)": {
     "file": "File:Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg/960px-Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg/960px-Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg",
     "author": "Édouard Manet",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2333,7 +2334,7 @@ const CURATED_MEDIA={
   },
   "The_Arnolfini_Portrait": {
     "file": "File:The_Arnolfini_portrait_(1434).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/960px-The_Arnolfini_portrait_%281434%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/960px-The_Arnolfini_portrait_%281434%29.jpg",
     "author": "Jan van Eyck",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2345,7 +2346,7 @@ const CURATED_MEDIA={
   },
   "Wanderer_above_the_Sea_of_Fog": {
     "file": "File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
     "author": "Caspar David Friedrich",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2357,7 +2358,7 @@ const CURATED_MEDIA={
   },
   "Bal_du_moulin_de_la_Galette": {
     "file": "File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/960px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/960px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg",
     "author": "Pierre-Auguste Renoir",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2369,7 +2370,7 @@ const CURATED_MEDIA={
   },
   "Impression,_Sunrise": {
     "file": "File:Monet_-_Impression,_Sunrise.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/960px-Monet_-_Impression%2C_Sunrise.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/960px-Monet_-_Impression%2C_Sunrise.jpg",
     "author": "Claude Monet",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2381,7 +2382,7 @@ const CURATED_MEDIA={
   },
   "The_Hay_Wain": {
     "file": "File:John_Constable_-_The_Hay_Wain_(1821).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/960px-John_Constable_-_The_Hay_Wain_%281821%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/960px-John_Constable_-_The_Hay_Wain_%281821%29.jpg",
     "author": "John Constable",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2397,7 +2398,7 @@ const CURATED_MEDIA={
   },
   "The_Sleeping_Gypsy": {
     "file": "File:La_Bohémienne_endormie.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/960px-La_Boh%C3%A9mienne_endormie.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/960px-La_Boh%C3%A9mienne_endormie.jpg",
     "author": "Henri Rousseau",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2409,7 +2410,7 @@ const CURATED_MEDIA={
   },
   "Whistlejacket": {
     "file": "File:Whistlejacket_by_George_Stubbs_edit.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Whistlejacket_by_George_Stubbs_edit.jpg/960px-Whistlejacket_by_George_Stubbs_edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Whistlejacket_by_George_Stubbs_edit.jpg/960px-Whistlejacket_by_George_Stubbs_edit.jpg",
     "author": "George Stubbs",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2421,7 +2422,7 @@ const CURATED_MEDIA={
   },
   "The_Card_Players": {
     "file": "File:Les_Joueurs_de_cartes,_par_Paul_Cézanne.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/960px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/960px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg",
     "author": "Paul Cézanne",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2441,7 +2442,7 @@ const CURATED_MEDIA={
   },
   "Les_Demoiselles_d'Avignon": {
     "file": "File:Les_Demoiselles_d'Avignon.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/960px-Les_Demoiselles_d%27Avignon.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/960px-Les_Demoiselles_d%27Avignon.jpg",
     "author": "Pablo Picasso",
     "license": "PD-US",
     "licenseUrl": null,
@@ -2465,7 +2466,7 @@ const CURATED_MEDIA={
   },
   "The_Death_of_Marat": {
     "file": "File:Death_of_Marat_by_David.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/960px-Death_of_Marat_by_David.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/960px-Death_of_Marat_by_David.jpg",
     "author": "Jacques-Louis David",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2477,7 +2478,7 @@ const CURATED_MEDIA={
   },
   "The_Tower_of_Babel_(Bruegel)": {
     "file": "File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg/960px-Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg/960px-Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg",
     "author": "Pieter Brueghel the Elder",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2493,7 +2494,7 @@ const CURATED_MEDIA={
   },
   "Water_Lilies_(Monet_series)": {
     "file": "File:Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg/960px-Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg/960px-Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg",
     "author": "Claude Monet",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2505,7 +2506,7 @@ const CURATED_MEDIA={
   },
   "The_Third_of_May_1808": {
     "file": "File:El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/960px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/960px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg",
     "author": "El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth.jpg : Francisco de Goya derivative work: Papa Lima Whiskey 2",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2517,7 +2518,7 @@ const CURATED_MEDIA={
   },
   "The_Gleaners": {
     "file": "File:Jean-François_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/960px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/960px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
     "author": "Jean-François Millet",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2529,7 +2530,7 @@ const CURATED_MEDIA={
   },
   "A_Bar_at_the_Folies-Bergère": {
     "file": "File:\"Un_Bar_aux_Folies-Bergère\"_by_Édouard_Manet_(1882).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/960px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/960px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg",
     "author": "Édouard Manet",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2541,7 +2542,7 @@ const CURATED_MEDIA={
   },
   "Eiffel_Tower": {
     "file": "File:Tour_Eiffel_Wikimedia_Commons_(cropped).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/960px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/960px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
     "author": "Benh LIEU SONG",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2553,7 +2554,7 @@ const CURATED_MEDIA={
   },
   "Taj_Mahal": {
     "file": "File:Taj_Mahal_(Edited).jpeg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/960px-Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/960px-Taj_Mahal_%28Edited%29.jpeg",
     "author": "Yann ; edited by Jim Carter",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2565,7 +2566,7 @@ const CURATED_MEDIA={
   },
   "Great_Wall_of_China": {
     "file": "File:The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/960px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/960px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
     "author": "Severin.stalder",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2577,7 +2578,7 @@ const CURATED_MEDIA={
   },
   "Colosseum": {
     "file": "File:Colosseo_2020.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg",
     "author": "FeaturedPics",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2589,7 +2590,7 @@ const CURATED_MEDIA={
   },
   "Sydney_Opera_House": {
     "file": "File:Sydney_Australia._(21339175489).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/960px-Sydney_Australia._%2821339175489%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/960px-Sydney_Australia._%2821339175489%29.jpg",
     "author": "Bernard Spragg. NZ from Christchurch, New Zealand",
     "license": "CC0",
     "licenseUrl": null,
@@ -2601,7 +2602,7 @@ const CURATED_MEDIA={
   },
   "Machu_Picchu": {
     "file": "File:Machu_Picchu,_2023_(012).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg",
     "author": "Draceane",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2613,7 +2614,7 @@ const CURATED_MEDIA={
   },
   "Golden_Gate_Bridge": {
     "file": "File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/960px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/960px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
     "author": "Frank Schulenburg",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2625,7 +2626,7 @@ const CURATED_MEDIA={
   },
   "Empire_State_Building": {
     "file": "File:Empire_State_Building_(aerial_view).jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/10/Empire_State_Building_%28aerial_view%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/960px-Empire_State_Building_%28aerial_view%29.jpg",
     "author": "Sam Valadi",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2637,7 +2638,7 @@ const CURATED_MEDIA={
   },
   "Burj_Khalifa": {
     "file": "File:Burj_Khalifa_(worlds_tallest_building)_and_the_Dubai_skyline_(25781049892).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/960px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/960px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
     "author": "imran shahabuddin",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -2649,7 +2650,7 @@ const CURATED_MEDIA={
   },
   "Christ_the_Redeemer_(statue)": {
     "file": "File:Christ_the_Redeemer_-_Cristo_Redentor.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/960px-Christ_the_Redeemer_-_Cristo_Redentor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/960px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
     "author": "Arne Müseler",
     "license": "CC BY-SA 3.0 de",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
@@ -2661,7 +2662,7 @@ const CURATED_MEDIA={
   },
   "Big_Ben": {
     "file": "File:Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster,_London.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg/960px-Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg/960px-Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg",
     "author": "Christian David",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2673,7 +2674,7 @@ const CURATED_MEDIA={
   },
   "Stonehenge": {
     "file": "File:Stonehenge2007_07_30.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg",
     "author": "garethwiscombe",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -2685,7 +2686,7 @@ const CURATED_MEDIA={
   },
   "Hagia_Sophia": {
     "file": "File:Hagia_Sophia_(228968325).jpeg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/960px-Hagia_Sophia_%28228968325%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/960px-Hagia_Sophia_%28228968325%29.jpeg",
     "author": "Adli Wahid",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2697,7 +2698,7 @@ const CURATED_MEDIA={
   },
   "Sagrada_Família": {
     "file": "File:SF_maig_2_cropped.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SF_maig_2_cropped.jpg/960px-SF_maig_2_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SF_maig_2_cropped.jpg/960px-SF_maig_2_cropped.jpg",
     "author": "Canaan",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2709,7 +2710,7 @@ const CURATED_MEDIA={
   },
   "Angkor_Wat": {
     "file": "File:Angkor_Wat.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg",
     "author": "Bjørn Christian Tørrissen",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2721,7 +2722,7 @@ const CURATED_MEDIA={
   },
   "Parthenon": {
     "file": "File:The_Parthenon_in_Athens.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg",
     "author": "Steve Swayne",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -2733,7 +2734,7 @@ const CURATED_MEDIA={
   },
   "St._Peter's_Basilica": {
     "file": "File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/960px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/960px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
     "author": "Alvesgaspar",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2745,7 +2746,7 @@ const CURATED_MEDIA={
   },
   "Leaning_Tower_of_Pisa": {
     "file": "File:Italy_-_Pisa_-_Leaning_Tower.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/960px-Italy_-_Pisa_-_Leaning_Tower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/960px-Italy_-_Pisa_-_Leaning_Tower.jpg",
     "author": "Arne Müseler",
     "license": "CC BY-SA 3.0 de",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
@@ -2757,7 +2758,7 @@ const CURATED_MEDIA={
   },
   "Notre-Dame_de_Paris": {
     "file": "File:Notre-Dame_de_Paris,_4_October_2017.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/960px-Notre-Dame_de_Paris%2C_4_October_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/960px-Notre-Dame_de_Paris%2C_4_October_2017.jpg",
     "author": "Ali Sabbagh",
     "license": "CC0",
     "licenseUrl": null,
@@ -2769,7 +2770,7 @@ const CURATED_MEDIA={
   },
   "Acropolis_of_Athens": {
     "file": "File:1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/960px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/960px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
     "author": "Giles Laurent",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2781,7 +2782,7 @@ const CURATED_MEDIA={
   },
   "Petra": {
     "file": "File:Al_Deir_Petra.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG",
     "author": "Azurfrog",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2793,7 +2794,7 @@ const CURATED_MEDIA={
   },
   "Chichen_Itza": {
     "file": "File:Chichen_Itza_3.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg",
     "author": "Daniel Schwen",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2805,7 +2806,7 @@ const CURATED_MEDIA={
   },
   "Forbidden_City": {
     "file": "File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
     "author": "Pixelflake",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2817,7 +2818,7 @@ const CURATED_MEDIA={
   },
   "Mount_Rushmore": {
     "file": "File:Mount_Rushmore_detail_view_(100MP).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/960px-Mount_Rushmore_detail_view_%28100MP%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/960px-Mount_Rushmore_detail_view_%28100MP%29.jpg",
     "author": "Thomas Wolf , www.foto-tw.de",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2829,7 +2830,7 @@ const CURATED_MEDIA={
   },
   "Statue_of_Liberty": {
     "file": "File:Front_view_of_Statue_of_Liberty_(cropped).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/960px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/960px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
     "author": "AskALotl",
     "license": "CC0",
     "licenseUrl": null,
@@ -2841,7 +2842,7 @@ const CURATED_MEDIA={
   },
   "Neuschwanstein_Castle": {
     "file": "File:Schloss_Neuschwanstein_2013.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/960px-Schloss_Neuschwanstein_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/960px-Schloss_Neuschwanstein_2013.jpg",
     "author": "Thomas Wolf , www.foto-tw.de",
     "license": "CC BY-SA 3.0 de",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
@@ -2853,7 +2854,7 @@ const CURATED_MEDIA={
   },
   "Mont-Saint-Michel": {
     "file": "File:Mont-Saint-Michel_vu_du_ciel.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/960px-Mont-Saint-Michel_vu_du_ciel.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/960px-Mont-Saint-Michel_vu_du_ciel.jpg",
     "author": "Amaustan",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2865,7 +2866,7 @@ const CURATED_MEDIA={
   },
   "Brandenburg_Gate": {
     "file": "File:Brandenburger_Tor_abends.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/960px-Brandenburger_Tor_abends.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/960px-Brandenburger_Tor_abends.jpg",
     "author": "Thomas Wolf , www.foto-tw.de",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2877,7 +2878,7 @@ const CURATED_MEDIA={
   },
   "Moscow_Kremlin": {
     "file": "File:Moscow_Kremlin_(8281675670).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/960px-Moscow_Kremlin_%288281675670%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/960px-Moscow_Kremlin_%288281675670%29.jpg",
     "author": "Pavel Kazachkov from Moscow, Russia",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -2889,7 +2890,7 @@ const CURATED_MEDIA={
   },
   "Tower_Bridge": {
     "file": "File:Tower_Bridge_at_Dawn.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/960px-Tower_Bridge_at_Dawn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/960px-Tower_Bridge_at_Dawn.jpg",
     "author": "Fuzzypiggy",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -2905,7 +2906,7 @@ const CURATED_MEDIA={
   },
   "Petronas_Twin_Towers": {
     "file": "File:Petronas_Towers_Logo.svg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/960px-Petronas_Towers_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/960px-Petronas_Towers_Logo.svg.png",
     "author": "Unknown author Unknown author",
     "license": "Public domain",
     "licenseUrl": null,
@@ -2917,7 +2918,7 @@ const CURATED_MEDIA={
   },
   "Moai": {
     "file": "File:AhuTongariki.JPG",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/5/50/AhuTongariki.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/AhuTongariki.JPG/960px-AhuTongariki.JPG",
     "author": "Ian Sewell",
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
@@ -2929,7 +2930,7 @@ const CURATED_MEDIA={
   },
   "Alhambra": {
     "file": "File:Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/960px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/960px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
     "author": "Jebulon",
     "license": "CC0",
     "licenseUrl": null,
@@ -2941,7 +2942,7 @@ const CURATED_MEDIA={
   },
   "Sultan_Ahmed_Mosque": {
     "file": "File:Istanbul_(34223582516)_(cropped).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Istanbul_%2834223582516%29_%28cropped%29.jpg/960px-Istanbul_%2834223582516%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Istanbul_%2834223582516%29_%28cropped%29.jpg/960px-Istanbul_%2834223582516%29_%28cropped%29.jpg",
     "author": "Pedro Szekely from Los Angeles, USA",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
@@ -2953,7 +2954,7 @@ const CURATED_MEDIA={
   },
   "Potala_Palace": {
     "file": "File:Potala_Palace_HQ.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg",
     "author": "Lhasa Government",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2965,7 +2966,7 @@ const CURATED_MEDIA={
   },
   "Great_Pyramid_of_Giza": {
     "file": "File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/960px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/960px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
     "author": "Douwe C. van der Zee",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -2977,7 +2978,7 @@ const CURATED_MEDIA={
   },
   "Great_Sphinx_of_Giza": {
     "file": "File:Sphinx_with_the_third_pyramid.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sphinx_with_the_third_pyramid.jpg/960px-Sphinx_with_the_third_pyramid.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sphinx_with_the_third_pyramid.jpg/960px-Sphinx_with_the_third_pyramid.jpg",
     "author": "Hesham Ebaid",
     "license": "CC0",
     "licenseUrl": null,
@@ -2989,7 +2990,7 @@ const CURATED_MEDIA={
   },
   "Borobudur": {
     "file": "File:Pradaksina.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg",
     "author": "Heri nugroho",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -3001,7 +3002,7 @@ const CURATED_MEDIA={
   },
   "Palace_of_Versailles": {
     "file": "File:Vue_aérienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_(cropped).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg",
     "author": "ToucanWings",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -3013,7 +3014,7 @@ const CURATED_MEDIA={
   },
   "Windsor_Castle": {
     "file": "File:Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Windsor_Castle_at_Sunset_-_Nov_2006.jpg/960px-Windsor_Castle_at_Sunset_-_Nov_2006.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Windsor_Castle_at_Sunset_-_Nov_2006.jpg/960px-Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
     "author": "Diliff",
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
@@ -3025,7 +3026,7 @@ const CURATED_MEDIA={
   },
   "Edinburgh_Castle": {
     "file": "File:City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg/960px-City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg/960px-City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg",
     "author": "Enric",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -3041,7 +3042,7 @@ const CURATED_MEDIA={
   },
   "Himeji_Castle": {
     "file": "File:Himeji_castle_in_may_2015.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/960px-Himeji_castle_in_may_2015.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/960px-Himeji_castle_in_may_2015.jpg",
     "author": "Nikos Kitsakis",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -3053,7 +3054,7 @@ const CURATED_MEDIA={
   },
   "Kinkaku-ji": {
     "file": "File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/960px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/960px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
     "author": "Nacaru",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -3065,7 +3066,7 @@ const CURATED_MEDIA={
   },
   "Fushimi_Inari-taisha": {
     "file": "File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
     "author": "Basile Morin",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -3077,7 +3078,7 @@ const CURATED_MEDIA={
   },
   "Lincoln_Memorial": {
     "file": "File:Lincoln_Memorial_east_side.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lincoln_Memorial_east_side.JPG/960px-Lincoln_Memorial_east_side.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lincoln_Memorial_east_side.JPG/960px-Lincoln_Memorial_east_side.JPG",
     "author": "Martin Falbisoner",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -3089,7 +3090,7 @@ const CURATED_MEDIA={
   },
   "White_House": {
     "file": "File:White_House_north_and_south_sides.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/960px-White_House_north_and_south_sides.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/960px-White_House_north_and_south_sides.jpg",
     "author": "(top) Cezary p (bottom) MattWade",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -3101,7 +3102,7 @@ const CURATED_MEDIA={
   },
   "Buckingham_Palace": {
     "file": "File:Buckingham_Palace_London_Morning_2020_01_(cropped).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg/960px-Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg/960px-Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg",
     "author": "Julian Herzog ( Website )",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -3113,7 +3114,7 @@ const CURATED_MEDIA={
   },
   "Bran_Castle": {
     "file": "File:Castelul_Bran2.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Castelul_Bran2.jpg/960px-Castelul_Bran2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Castelul_Bran2.jpg/960px-Castelul_Bran2.jpg",
     "author": "Dobre Cezar",
     "license": "CC BY-SA 3.0 ro",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/ro/deed.en",
@@ -3125,7 +3126,7 @@ const CURATED_MEDIA={
   },
   "Atomium": {
     "file": "File:The_Atomium_during_civil_twilight_(DSCF1135).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg/960px-The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg/960px-The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg",
     "author": "Trougnouf (Benoit Brummer)",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
@@ -3137,7 +3138,7 @@ const CURATED_MEDIA={
   },
   "Space_Needle": {
     "file": "File:Space_Needle_2011-07-04.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/960px-Space_Needle_2011-07-04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/960px-Space_Needle_2011-07-04.jpg",
     "author": "Jordon Kalilich",
     "license": "Public domain",
     "licenseUrl": null,
@@ -3149,7 +3150,7 @@ const CURATED_MEDIA={
   },
   "Gateway_Arch": {
     "file": "File:St_Louis_night_expblend_cropped.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/960px-St_Louis_night_expblend_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/960px-St_Louis_night_expblend_cropped.jpg",
     "author": "St_Louis_night_expblend.jpg : Daniel Schwen derivative work: ← fetch comms",
     "license": "CC BY-SA 3.0",
     "licenseUrl": null,
@@ -3161,7 +3162,7 @@ const CURATED_MEDIA={
   },
   "Lotus_Temple": {
     "file": "File:LotusDelhi.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/960px-LotusDelhi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/960px-LotusDelhi.jpg",
     "author": "Vandelizer",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
@@ -3170,1481 +3171,9 @@ const CURATED_MEDIA={
     "fileVersion": "2009-06-06T18:37:30Z",
     "sha1": "954d98655eaeda9c348304a799c9938e75a941a5",
     "status": "selected"
-  },
-  "Pizza": {
-    "file": "File:Pizza-3007395.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/960px-Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "igorovsyannykov",
-    "license": "CC0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Pizza-3007395.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2018-06-10T17:14:25Z",
-    "sha1": "852a22c407d32260e0eaa1f09435a70d7a056358",
-    "status": "selected"
-  },
-  "Sushi": {
-    "file": "File:Sushi_platter.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "chidorian from Japan",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Sushi_platter.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2007-08-25T13:48:43Z",
-    "sha1": "548c0a123b8278fa3994c4f110c20196ec6e31c5",
-    "status": "selected"
-  },
-  "Hamburger": {
-    "file": "File:RedDot_Burger.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/960px-RedDot_Burger.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Hongreddotbrewhouse",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:RedDot_Burger.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2014-06-24T02:03:44Z",
-    "sha1": "4f17ff057bad539aed50cb6e19d3a632f86f73f9",
-    "status": "selected"
-  },
-  "Taco": {
-    "file": "File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/960px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Larry Miller",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2014-04-08T07:58:52Z",
-    "sha1": "aa92255a07bc7fa7b0efd0721cd21c9df6332648",
-    "status": "selected"
-  },
-  "Paella": {
-    "file": "File:01_Paella_Valenciana_original.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/01_Paella_Valenciana_original.jpg/960px-01_Paella_Valenciana_original.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Jan Harenburg",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:01_Paella_Valenciana_original.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2017-09-04T20:02:16Z",
-    "sha1": "4c533e2924e21f4d6eba0e4fa8b299ff8dfde95b",
-    "status": "selected"
-  },
-  "Croissant": {
-    "file": "File:Croissant-Petr_Kratochvil.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Croissant-Petr_Kratochvil.jpg/960px-Croissant-Petr_Kratochvil.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Petr Kratochvil",
-    "license": "CC0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2011-12-19T06:20:52Z",
-    "sha1": "eeebab3198cb77a97874ce4cca826d7bde6aea0c",
-    "status": "selected"
-  },
-  "Pho": {
-    "file": "File:Bowl_of_Meatball_pho.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Bowl_of_Meatball_pho.jpg/960px-Bowl_of_Meatball_pho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "SerraKnightz",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_Meatball_pho.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2026-02-23T05:55:06Z",
-    "sha1": "de97fee8f86ef50e59bf534b91b6106bc677dad2",
-    "status": "selected"
-  },
-  "Ramen": {
-    "file": "File:Shoyu_Ramen（Tokyo_Ramen）_-_01.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg/960px-Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Quercus acuta",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2026-06-05T10:05:42Z",
-    "sha1": "5f3e335daa5cf13ace6bed587b4e5ee6d3fa4f00",
-    "status": "selected"
-  },
-  "Falafel": {
-    "file": "File:Falafels_2.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/960px-Falafels_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Popo le Chien",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2022-10-09T17:44:42Z",
-    "sha1": "dae679cdb308d2b3200c624391648f9b90fdd659",
-    "status": "selected"
-  },
-  "Feijoada": {
-    "file": "File:Feijoada_à_transmontada.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/9/90/Feijoada_%C3%A0_transmontada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Adrião",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Feijoada_%C3%A0_transmontada.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2022-08-21T10:02:20Z",
-    "sha1": "61f47469c046dae6c2fc2f0016125e0946a31be1",
-    "status": "selected"
-  },
-  "Pad_thai": {
-    "file": "File:Phat_Thai_kung_Chang_Khien_street_stall.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Phat_Thai_kung_Chang_Khien_street_stall.jpg/960px-Phat_Thai_kung_Chang_Khien_street_stall.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Takeaway",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Phat_Thai_kung_Chang_Khien_street_stall.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2013-07-25T12:59:25Z",
-    "sha1": "da958da739267481ac76e5f20c3617347fbcadc6",
-    "status": "selected"
-  },
-  "Kimchi": {
-    "file": "File:Various_kimchi.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Various_kimchi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "국립국어원",
-    "license": "CC BY-SA 2.0 kr",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Various_kimchi.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2023-11-26T09:58:33Z",
-    "sha1": "e265583ac9360170b196370aff0a0b8b0f1fc691",
-    "status": "selected"
-  },
-  "Empanada": {
-    "file": "File:Tapa_de_empanadillitas.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Tapa_de_empanadillitas.JPG/960px-Tapa_de_empanadillitas.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Tamorlan",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Tapa_de_empanadillitas.JPG",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2024-05-20T17:44:06Z",
-    "sha1": "bc87c6e3f28cbc87b6b84f247dc174a87e5cd2b5",
-    "status": "selected"
-  },
-  "Ceviche": {
-    "file": "File:Cebiche_de_corvina.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Picanteria karol",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2014-08-23T03:56:25Z",
-    "sha1": "6862f9c33cc1e939393b4e662a0db3a21cd503f1",
-    "status": "selected"
-  },
-  "Baklava": {
-    "file": "File:Baklava(1).png",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Baklava%281%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Sakaman",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Baklava(1).png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2015-11-01T20:17:01Z",
-    "sha1": "4c2c97e8bff22c29b12cebd0a10ab34084adf52c",
-    "status": "selected"
-  },
-  "Gelato": {
-    "file": "File:Delicious_Gelato_on_display.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Delicious_Gelato_on_display.jpg/960px-Delicious_Gelato_on_display.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "EquipmentAndConcepts",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Delicious_Gelato_on_display.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2024-11-15T21:07:31Z",
-    "sha1": "fc1c9323deb9a5a055c6464a9e107c516aa7fb04",
-    "status": "selected"
-  },
-  "Crêpe": {
-    "file": "File:Crepes_dsc07085.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Crepes_dsc07085.jpg/960px-Crepes_dsc07085.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "David Monniaux",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Crepes_dsc07085.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2006-02-28T10:19:25Z",
-    "sha1": "d7ff06767f046c7464f343684d7b0b4aa70469a1",
-    "status": "selected"
-  },
-  "Fondue": {
-    "file": "File:Fondue_dish.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Fondue_dish.jpg/960px-Fondue_dish.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Juliano Mendes",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Fondue_dish.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2023-02-20T12:11:31Z",
-    "sha1": "3b09bc808f9af230861e0dfee76caf03578f5a26",
-    "status": "selected"
-  },
-  "Tiramisu": {
-    "file": "File:Tiramisu_-_Raffaele_Diomede.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tiramisu_-_Raffaele_Diomede.jpg/960px-Tiramisu_-_Raffaele_Diomede.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Raffaele Diomede from Pordenone, ITALIA",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Tiramisu_-_Raffaele_Diomede.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2022-10-10T10:30:49Z",
-    "sha1": "4a2cbdd900082a20a96acef32861168cfab2545b",
-    "status": "selected"
-  },
-  "Poutine": {
-    "file": "File:Food_at_WIkimanian_2017_02.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Food_at_WIkimanian_2017_02.jpg/960px-Food_at_WIkimanian_2017_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Camelia.boban",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Food_at_WIkimanian_2017_02.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2017-09-02T12:35:48Z",
-    "sha1": "7d63c7ff99764cb428d156a2af6371b38011875c",
-    "status": "selected"
-  },
-  "Goulash": {
-    "file": "File:Gulyas080.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Gulyas080.jpg/960px-Gulyas080.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Lily15",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Gulyas080.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2007-12-13T17:35:43Z",
-    "sha1": "fb4caf8045c4eaa2f6b62cf06af76daed771bb51",
-    "status": "selected"
-  },
-  "Hot_dog": {
-    "file": "File:Hot_dog_with_mustard.png",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Hot_dog_with_mustard.png/960px-Hot_dog_with_mustard.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Czar , original photographed by Renee Comet",
-    "license": "Public domain",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Hot_dog_with_mustard.png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2024-01-15T02:50:03Z",
-    "sha1": "ce0d4b1104b960da65c1796728e6b1186c1e8f74",
-    "status": "selected"
-  },
-  "Burrito": {
-    "file": "File:Burrito.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Burrito.JPG/960px-Burrito.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "samuelfernandezrivera",
-    "license": "CC0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Burrito.JPG",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2021-12-13T17:53:17Z",
-    "sha1": "b664f2ab6a646d1f73bbc8362f5d78d0d218401c",
-    "status": "selected"
-  },
-  "Bibimbap": {
-    "file": "File:Dolsot-bibimbap.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dolsot-bibimbap.jpg/960px-Dolsot-bibimbap.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Sous Chef",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Dolsot-bibimbap.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2018-03-23T09:34:44Z",
-    "sha1": "fa9d2f36889d3364772392a2ffa78e5185992219",
-    "status": "selected"
-  },
-  "Macaron": {
-    "file": "File:VanillaMacaron.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/VanillaMacaron.jpg/960px-VanillaMacaron.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Michelle Naherny",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:VanillaMacaron.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2016-12-12T19:01:40Z",
-    "sha1": "d5dfc83c9272ea44696099eb86061f8a0e49ec88",
-    "status": "selected"
-  },
-  "Belgian_waffle": {
-    "file": "File:Waffle_with_strawberries_and_confectioner's_sugar.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Waffle_with_strawberries_and_confectioner%27s_sugar.jpg/960px-Waffle_with_strawberries_and_confectioner%27s_sugar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Ralph Daily",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Waffle_with_strawberries_and_confectioner%27s_sugar.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2012-06-15T01:56:19Z",
-    "sha1": "c5c11b1d417d53dbb0435c3bdaef97db8cdc1896",
-    "status": "selected"
-  },
-  "Risotto": {
-    "file": "File:Risotto_with_speck_and_goat_cheese_(6101067436).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg/960px-Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Luca Nebuloni from Milan, Italy",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Risotto_with_speck_and_goat_cheese_(6101067436).jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2016-08-24T01:39:23Z",
-    "sha1": "26e92b9398911192ea9522ce8b86ca282d6c8d41",
-    "status": "selected"
-  },
-  "Churro": {
-    "file": "File:Chocolate_con_churros_(27343655726).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Chocolate_con_churros_%2827343655726%29.jpg/960px-Chocolate_con_churros_%2827343655726%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Joy",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Chocolate_con_churros_(27343655726).jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2016-06-13T00:31:13Z",
-    "sha1": "2807eedddd8ed6d29c713270052b256ace4c41fe",
-    "status": "selected"
-  },
-  "Sashimi": {
-    "file": "File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "663highland",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2025-01-19T14:00:09Z",
-    "sha1": "c38c192a5de4b6bc17defb091fb6cd4e2e076a7a",
-    "status": "selected"
-  },
-  "Dim_sum": {
-    "file": "File:Chinese_DimSum_(9023590541).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Chinese_DimSum_%289023590541%29.jpg/960px-Chinese_DimSum_%289023590541%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "LeonardKong",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Chinese_DimSum_(9023590541).jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2022-10-30T11:37:30Z",
-    "sha1": "ed5e9539281bed57f91f28a4a7853c9cfe2892c9",
-    "status": "selected"
-  },
-  "Moussaka": {
-    "file": "File:MussakasMeMelitsanesKePatates01.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/MussakasMeMelitsanesKePatates01.JPG/960px-MussakasMeMelitsanesKePatates01.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Robert Kindermann aka RobertK",
-    "license": "CC BY-SA 2.5",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:MussakasMeMelitsanesKePatates01.JPG",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2022-10-22T23:42:50Z",
-    "sha1": "e8a635af35b961cbc835a10212fa88e16480aa8d",
-    "status": "selected"
-  },
-  "Shakshouka": {
-    "file": "File:Shakshuka_by_Calliopejen1.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Shakshuka_by_Calliopejen1.jpg/960px-Shakshuka_by_Calliopejen1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Calliopejen1",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2015-03-28T18:00:10Z",
-    "sha1": "f19bb21e69c97351be2eee6669866b122246a0fc",
-    "status": "selected"
-  },
-  "Pierogi": {
-    "file": "File:Pierogi_z_masłem_-_2023.03.31.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Pierogi_z_mas%C5%82em_-_2023.03.31.jpg/960px-Pierogi_z_mas%C5%82em_-_2023.03.31.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Aw58",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Pierogi_z_mas%C5%82em_-_2023.03.31.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2023-04-06T12:19:33Z",
-    "sha1": "62300255113b6b89fb533ff0235c865f25a99c31",
-    "status": "selected"
-  },
-  "Borscht": {
-    "file": "File:Borscht_served.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Borscht_served.jpg/960px-Borscht_served.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "liz west from Boxborough, MA",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Borscht_served.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2012-03-18T10:01:45Z",
-    "sha1": "de5303f86efaabe3c7c0ec396c0c610312a54618",
-    "status": "selected"
-  },
-  "Hummus": {
-    "file": "File:Lebanese_style_hummus.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Lebanese_style_hummus.jpg/960px-Lebanese_style_hummus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Beyrouthhh at English Wikipedia",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Lebanese_style_hummus.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2013-10-28T16:29:44Z",
-    "sha1": "07db138851b02ff613aa2531a2b23cf3ecf6af00",
-    "status": "selected"
-  },
-  "Jollof_rice": {
-    "file": "File:Jollof_Rice_with_Stew.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Noahalorwu",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2019-02-25T14:38:56Z",
-    "sha1": "0132c2314193aa698a96190ed9a094859ef43f64",
-    "status": "selected"
-  },
-  "Bánh_mì": {
-    "file": "File:Bánh_mì_thịt_nướng.png",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "nsaum75 ¡שיחת! ‎",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2012-01-27T17:30:45Z",
-    "sha1": "7add86744427cb64b3148d3a831dd7a7a447a653",
-    "status": "selected"
-  },
-  "Acoustic_guitar": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Piano": {
-    "file": "File:Steinway_Vienna_002.JPG",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Steinway_Vienna_002.JPG/960px-Steinway_Vienna_002.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Gryffindor",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Steinway_Vienna_002.JPG",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2012-06-05T01:10:30Z",
-    "sha1": "905148327adb1d0518a6750f82598db76630d5a0",
-    "status": "selected"
-  },
-  "Violin": {
-    "file": "File:Violin_VL100.png",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Just plain Bill",
-    "license": "CC0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Violin_VL100.png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2013-01-13T13:56:14Z",
-    "sha1": "cac244fc52511ee7c7f81236d1955dba0a9b16de",
-    "status": "selected"
-  },
-  "Drum_kit": {
-    "file": "File:Drum_kit_parts.png",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Drum_kit_parts.png/960px-Drum_kit_parts.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Syed Wamiq Ahmed Hashmi re-draw SVG FOX 52 re-draw with AI Sendtel +",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Drum_kit_parts.png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2025-10-29T23:21:25Z",
-    "sha1": "a13fd1012eb6c18b377b69ec548792bc50b156e3",
-    "status": "selected"
-  },
-  "Saxophone": {
-    "file": "File:Eight_saxophone_sizes_smaller.png",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Eight_saxophone_sizes_smaller.png/960px-Eight_saxophone_sizes_smaller.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Jonathanischoice",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Eight_saxophone_sizes_smaller.png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2026-05-27T11:27:44Z",
-    "sha1": "03ffee772f1fdb3e50afcd55156fc37520ec62b7",
-    "status": "selected"
-  },
-  "Trumpet": {
-    "file": "File:Yamaha_Trumpet_YTR-8335LA_crop.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Yamaha_Trumpet_YTR-8335LA_crop.jpg/960px-Yamaha_Trumpet_YTR-8335LA_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Yamaha Corporation",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Yamaha_Trumpet_YTR-8335LA_crop.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2022-07-25T02:40:38Z",
-    "sha1": "a026c66ecbae1a77a68a266dc5355640fba3763e",
-    "status": "selected"
-  },
-  "Flute": {
-    "file": "File:Shinobue_and_other_flutes-3.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Shinobue_and_other_flutes-3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Photos by Yasuhiko Sano, Nov 2005, Buffet Crampon and Yamaha; Editing + Collage Gisbert König",
-    "license": "Public domain",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Shinobue_and_other_flutes-3.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2023-10-22T08:13:23Z",
-    "sha1": "b7d9a4e1f01f83335f3658928f715db15c1d65c2",
-    "status": "selected"
-  },
-  "Cello": {
-    "file": "File:Cello_front_side.png",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cello_front_side.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Georg Feitscher",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Cello_front_side.png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2010-02-12T02:54:40Z",
-    "sha1": "c96c28a8437e518f67d6803c45654fe4bd5a9367",
-    "status": "selected"
-  },
-  "Concert_harp": {
-    "file": "File:Range_harp.svg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Range_harp.svg/960px-Range_harp.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "No machine-readable author provided. Mets501 assumed (based on copyright claims).",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Range_harp.svg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2007-11-01T23:23:36Z",
-    "sha1": "1432aa1e0e7c8294f8c0832abee9a5cea819fb2c",
-    "status": "selected"
-  },
-  "Accordion": {
-    "file": "File:A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg/960px-A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Necz0r",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:A_converter_free-bass_piano-accordion_and_a_Russian_bayan.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2008-09-29T22:16:47Z",
-    "sha1": "1a52cd17955b4ecfd502e8644d28ab2e75b9b8fb",
-    "status": "selected"
-  },
-  "Clarinet": {
-    "file": "File:Leitner+Kraus_410_320.png",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Leitner%2BKraus_410_320.png/960px-Leitner%2BKraus_410_320.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Leitner & Kraus GmbH, Neustadt/Aisch, Editor/Bearbeiter User:Gisbert K",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Leitner%2BKraus_410_320.png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2025-03-25T08:04:34Z",
-    "sha1": "a32bfaaf0c38ee778001def927c82c76fee58e97",
-    "status": "selected"
-  },
-  "Trombone": {
-    "file": "File:Yamaha_Tenor_trombone_YSL-891Z_(re-crop).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Yamaha_Tenor_trombone_YSL-891Z_%28re-crop%29.jpg/960px-Yamaha_Tenor_trombone_YSL-891Z_%28re-crop%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Yamaha Corporation",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Yamaha_Tenor_trombone_YSL-891Z_(re-crop).jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2023-06-17T14:26:49Z",
-    "sha1": "59712fa097d2ef02d77ad5b47380c356c9f310a9",
-    "status": "selected"
-  },
-  "Five-string_banjo": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Ukulele": {
-    "file": "File:Kumalae_ukulele_of_c._1910.webm",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Kumalae_ukulele_of_c._1910.webm/960px--Kumalae_ukulele_of_c._1910.webm.jpg",
-    "author": "St Cecilia's Hall: all things musical instruments",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Kumalae_ukulele_of_c._1910.webm",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2022-04-18T21:58:26Z",
-    "sha1": "9184a7cdbb6e9564669864e1b792af43f01cb306",
-    "status": "selected"
-  },
-  "Bagpipes": {
-    "file": "File:Scotland_Independence_March,_28_March_2026_(32).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Scotland_Independence_March%2C_28_March_2026_%2832%29.jpg/960px-Scotland_Independence_March%2C_28_March_2026_%2832%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Lucas Kendall",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Scotland_Independence_March,_28_March_2026_(32).jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2026-03-29T18:45:27Z",
-    "sha1": "bea8361c4996b324f79a4e0e581627bcbaa27a93",
-    "status": "selected"
-  },
-  "Xylophone|Xylophone_(musical_instrument)": {
-    "file": "File:Xylophone_(PSF).svg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Xylophone_%28PSF%29.svg/960px-Xylophone_%28PSF%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "SweetCanadianMullet",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Xylophone_(PSF).svg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2017-07-18T04:37:04Z",
-    "sha1": "089911fd40551379256af8ced6df5d885148b607",
-    "status": "selected"
-  },
-  "Tambourine": {
-    "file": "File:Pandeiro_new_30-09-07.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Pandeiro_new_30-09-07.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Frenciscobcn",
-    "license": "CC BY-SA 1.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Pandeiro_new_30-09-07.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2007-09-30T14:42:17Z",
-    "sha1": "45986c8a0a4aa4cb67c5d4b79e0fd5c7de562bfa",
-    "status": "selected"
-  },
-  "Maracas": {
-    "file": "File:Maracas.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Maracas.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Axel Heymann",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Maracas.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2017-10-15T14:51:04Z",
-    "sha1": "cc8192ea2196c802371ad39bb15d89980840d7f3",
-    "status": "selected"
-  },
-  "Sitar": {
-    "file": "File:Sitar,_late_19th_Century.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Sitar%2C_late_19th_Century.jpg/960px-Sitar%2C_late_19th_Century.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "unknown, MET museum",
-    "license": "CC0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Sitar,_late_19th_Century.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2022-11-04T06:16:22Z",
-    "sha1": "239816928b3b4e2904e83d60f2c9a29c73c31eb4",
-    "status": "selected"
-  },
-  "Harmonica": {
-    "file": "File:16-hole_chrom_10-hole_diatonic.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/16-hole_chrom_10-hole_diatonic.jpg/960px-16-hole_chrom_10-hole_diatonic.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "George Leung",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:16-hole_chrom_10-hole_diatonic.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2017-02-04T11:59:41Z",
-    "sha1": "3ebda491afb20aa1f542580e1a5f994fe71440d7",
-    "status": "selected"
-  },
-  "Double_bass": {
-    "file": "File:AGK_bass1_full.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/AGK_bass1_full.jpg/960px-AGK_bass1_full.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "User:AndrewKepert",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:AGK_bass1_full.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2010-02-22T10:06:56Z",
-    "sha1": "0fb81831712cbcc1fe56c4c3488635557c0018a4",
-    "status": "selected"
-  },
-  "Electric_guitar": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Bass_guitar": {
-    "file": "File:Fender_Precision_Bass.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Fender_Precision_Bass.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Own work",
-    "license": "Public domain",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Fender_Precision_Bass.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2014-05-08T12:51:59Z",
-    "sha1": "882fe7ba6cb163c2e5b9670a49a390c55e4b8ac4",
-    "status": "selected"
-  },
-  "French_horn": {
-    "file": "File:Yamaha_Horn_YHR-667V.tif",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Yamaha_Horn_YHR-667V.tif/lossy-page1-960px-Yamaha_Horn_YHR-667V.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Yamaha Corporation",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Yamaha_Horn_YHR-667V.tif",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2017-02-20T19:43:51Z",
-    "sha1": "65c5c7bcb59e18b4999e2b7312bb01a462d3dbb6",
-    "status": "selected"
-  },
-  "Tuba": {
-    "file": "File:Yamaha_Bass_tuba_YFB-822.tif",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Yamaha_Bass_tuba_YFB-822.tif/lossy-page1-500px-Yamaha_Bass_tuba_YFB-822.tif.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Yamaha Corporation",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Yamaha_Bass_tuba_YFB-822.tif",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2017-02-21T13:07:46Z",
-    "sha1": "fddd59fc37f6b8e3eda0a5f2889d575460f84e73",
-    "status": "selected"
-  },
-  "Oboe": {
-    "file": "File:Oboe_Patricola_Artista_PT1.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Oboe_Patricola_Artista_PT1.jpg/960px-Oboe_Patricola_Artista_PT1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Fratelli Patricola, Editor/Bearbeiter User:Gisbert K",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Oboe_Patricola_Artista_PT1.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2023-02-05T08:05:09Z",
-    "sha1": "8f2de35def7d3119072e0c3f9a43c0dae375b150",
-    "status": "selected"
-  },
-  "Bassoon": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Mandolin": {
-    "file": "File:Mandolin_MET_DP169023_(2).jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Mandolin_MET_DP169023_%282%29.jpg/960px-Mandolin_MET_DP169023_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Angelo Mannello",
-    "license": "CC0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Mandolin_MET_DP169023_(2).jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2021-06-18T19:27:50Z",
-    "sha1": "00aa7fc0a552a60fcb09c96ff49f047ba384132e",
-    "status": "selected"
-  },
-  "Didgeridoo": {
-    "file": "File:Australiandidgeridoos.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Australiandidgeridoos.jpg/960px-Australiandidgeridoos.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Hmarin",
-    "license": "Public domain",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Australiandidgeridoos.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2012-04-21T14:29:27Z",
-    "sha1": "1a56a734ab1bf88dc0545799ac7bf81e7e49d277",
-    "status": "selected"
-  },
-  "Balalaika": {
-    "file": "File:3_string_prim_balalaika.png",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/3_string_prim_balalaika.png/960px-3_string_prim_balalaika.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "User:MaGz96",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:3_string_prim_balalaika.png",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2021-05-23T20:51:36Z",
-    "sha1": "02c7560d6b81890c07b6db2a7b9900dffa0d3cf0",
-    "status": "selected"
-  },
-  "Erhu": {
-    "file": "File:Erhu_in_the_Mets.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Erhu_in_the_Mets.jpg/960px-Erhu_in_the_Mets.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Unknown author Unknown author",
-    "license": "CC0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Erhu_in_the_Mets.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2026-05-15T12:53:26Z",
-    "sha1": "df28a493e5b56de0e2805934c37588418d7740ed",
-    "status": "selected"
-  },
-  "Tabla": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Steel_drum": {
-    "file": "File:Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg/960px-Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Kip1234",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Steelpan_Instruments_at_Trinidad_and_Tobago_Carnival.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2020-05-28T02:03:59Z",
-    "sha1": "f43c49aca536b0a450ef0afe09248d3e37e33dfc",
-    "status": "selected"
-  },
-  "Hurdy-gurdy": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Kalimba": {
-    "file": "File:Ene_mbira.jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Ene_mbira.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Zanzambira at English Wikipedia",
-    "license": "Public domain",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Ene_mbira.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2007-05-07T14:24:25Z",
-    "sha1": "75202f1b42af87cebe4e70b334d904c8e29a46cb",
-    "status": "selected"
-  },
-  "Theremin": {
-    "file": "File:Etherwave_Theremin_Kit.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Etherwave_Theremin_Kit.jpg/960px-Etherwave_Theremin_Kit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Hutschi",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Etherwave_Theremin_Kit.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2016-03-08T18:57:26Z",
-    "sha1": "4301390fce928e86dd8791e039f704d5a2988aa9",
-    "status": "selected"
-  },
-  "Koto_(instrument)": {
-    "file": "File:Japanese_Koto.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Japanese_Koto.jpg/960px-Japanese_Koto.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Original uploader and author was Smgregory at en.wikipedia",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Japanese_Koto.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2007-08-09T14:45:26Z",
-    "sha1": "d088436b7451e687299f30dae45a5e59fe82bd38",
-    "status": "selected"
-  },
-  "Djembe": {
-    "file": "File:Lenke_djembe_from_Mali.jpeg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/6/60/Lenke_djembe_from_Mali.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Djembe Art",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Lenke_djembe_from_Mali.jpeg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2012-01-18T02:03:36Z",
-    "sha1": "9815114bca1ee68172a06ea54a22ba2e8726352b",
-    "status": "selected"
-  },
-  "Shamisen": {
-    "file": "File:Tokyo_Geisha_with_Shamisen_c1870s,.jpg",
-    "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Tokyo_Geisha_with_Shamisen_c1870s%2C.jpg/960px-Tokyo_Geisha_with_Shamisen_c1870s%2C.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "author": "Unknown Artist, Unknown School",
-    "license": "Public domain",
-    "licenseUrl": null,
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Geisha_with_Shamisen_c1870s,.jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2017-05-19T12:29:37Z",
-    "sha1": "de2025114cb0400cf8151d01c799e3240ba96287",
-    "status": "selected"
-  },
-  "Naruto_Uzumaki": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Sasuke_Uchiha": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Monkey_D._Luffy": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Roronoa_Zoro": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Goku|Dragon_Ball_(manga)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Vegeta": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Edward_Elric": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Light_Yagami": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "L_(Death_Note)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Ichigo_Kurosaki": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Eren_Yeager|Attack_on_Titan": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Mikasa_Ackerman": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Tanjiro_Kamado": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Nezuko_Kamado": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Izuku_Midoriya|My_Hero_Academia": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Katsuki_Bakugo|My_Hero_Academia": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Saitama_(One-Punch_Man)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Spike_Spiegel": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Lelouch_Lamperouge": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Shinji_Ikari": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Usagi_Tsukino": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Pikachu": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Ash_Ketchum": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Sword_Art_Online": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Killua_Zoldyck": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Gon_Freecss": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Yusuke_Urameshi": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Inuyasha": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Doraemon": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Yuji_Itadori": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Denji_(Chainsaw_Man)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Loid_Forger": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Ken_Kaneki|Tokyo_Ghoul": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Natsu_Dragneel": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Asta_(Black_Clover)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Shoyo_Hinata": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Kakashi_Hatake": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Itachi_Uchiha": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Gaara": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Hinata_Hyuga": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Nami_(One_Piece)": {
-    "file": "File:Nami_(One_Piece_Odyssey).jpg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Nami_%28One_Piece_Odyssey%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "author": "Bandai Namco Entertainment America",
-    "license": "CC BY 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-    "fileUrl": "https://commons.wikimedia.org/wiki/File:Nami_(One_Piece_Odyssey).jpg",
-    "reviewed": "2026-09-29",
-    "fileVersion": "2026-08-18T17:58:27Z",
-    "sha1": "e7e908c6349054f2f58e772cb9abbdb137dd3f1c",
-    "status": "selected"
-  },
-  "Sanji_(One_Piece)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Tony_Tony_Chopper": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Piccolo_(Dragon_Ball)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Gohan": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Bulma": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Zenitsu_Agatsuma": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Inosuke_Hashibira": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "All_Might_(My_Hero_Academia)|My_Hero_Academia": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Levi_Ackerman|Attack_on_Titan": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Rukia_Kuchiki": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Hisoka_Morow|Hunter_×_Hunter": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Asuna_Yuuki|Sword_Art_Online": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Rei_Ayanami": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Asuka_Langley_Soryu": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Faye_Valentine|Cowboy_Bebop": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Misty_(Pokémon)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Senku_Ishigami": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Emma_(The_Promised_Neverland)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Guts_(Berserk)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Thorfinn_(Vinland_Saga)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Shigeo_Kageyama": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Jotaro_Kujo": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Re:Zero|Re:Zero_−_Starting_Life_in_Another_World": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Megumin|KonoSuba": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Tohru_Honda": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Soul_Eater_(manga)|Soul_Eater_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Yugi_Muto": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Agumon|Digimon": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Sakata_Gintoki": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Frieren": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Mashle": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "The_Apothecary_Diaries": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Blue_Lock": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Solo_Leveling": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Superman": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Batman": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Spider-Man": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Iron_Man": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Captain_America_(Marvel_Comics)|Captain_America": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Thor_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Hulk_(comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Wonder_Woman": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "The_Flash": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Aquaman": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Green_Lantern": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Black_Panther_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Doctor_Strange": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Black_Widow_(Natasha_Romanoff)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Hawkeye_(Marvel_Comics)|Hawkeye_(comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Wolverine_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Deadpool": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Daredevil_(Marvel_Comics_character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Ant-Man": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Captain_Marvel_(Carol_Danvers)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Scarlet_Witch": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Star-Lord": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Groot": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Rocket_Raccoon": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Gamora": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Nightwing": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Robin_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Catwoman": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Green_Arrow": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Cyborg_(DC_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Shazam_(DC_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Martian_Manhunter": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Supergirl": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Batgirl": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Storm_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Cyclops_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Jean_Grey": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Beast_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Professor_X": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Magneto_(Marvel_Comics)|Magneto_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Nick_Fury": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Falcon_(Marvel_Comics)|Sam_Wilson_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "War_Machine": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Vision_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Iron_Fist_(comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Luke_Cage": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Moon_Knight": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "She-Hulk|She-Hulk_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Ms._Marvel_(Kamala_Khan)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Wasp_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Joker_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Thanos": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Lex_Luthor": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Venom_(Marvel_Comics_character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Green_Goblin": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Loki_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Red_Skull": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Doctor_Doom": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Ultron": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Mystique_(X-Men)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Poison_Ivy_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Harley_Quinn": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Two-Face": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Bane_(DC_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Ra's_al_Ghul": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Darkseid": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Doomsday_(DC_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Carnage_(character)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Electro_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Vulture_(Marvel_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Black_Adam": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Raven_(DC_Comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Mera_(comics)": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Silver_Surfer": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
-  },
-  "Doctor_Octopus": {
-    "reviewed": "2026-09-29",
-    "status": "no-free-image"
   }
 };
-for(const item of [ANIMAIS,ARTE,MONUMENTOS,COMIDAS,INSTRUMENTOS,ANIME_TITULOS,SUPER_HEROIS].flat())item.media=CURATED_MEDIA[(Array.isArray(item.wiki)?item.wiki:[item.wiki]).join("|")];
+for(const item of [ANIMAIS,ARTE,MONUMENTOS].flat())item.media=CURATED_MEDIA[(Array.isArray(item.wiki)?item.wiki:[item.wiki]).join("|")];
 // END CURATED MEDIA
 
 // Formatos de sequência e associação: cada rodada usa quatro respostas.
@@ -4692,20 +3221,126 @@ const MATCH_ROUNDS=Array.from({length:20},(_,index)=>{
   const pairs=CAPITAIS.slice(index*4,index*4+4).map(item=>({country:item.hint,capital:item.name}));
   return {name:pairs.map(pair=>pair.country+' — '+pair.capital).join('; '),a:['pares '+(index+1)],pairs};
 });
-// Trechos servidos pela Wikimedia Commons. Metadados revistos em 29/09/2026.
-const AUDIO_INSTRUMENTS=[
-  {name:"Piano",a:["piano"],file:"E major piano.ogg",author:"→ROUX ₪",license:"CC0 1.0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",reviewed:"2026-09-29"},
-  {name:"Flauta",a:["flauta","flute"],file:"Flute.ogg",author:"hokuspokus",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"},
-  {name:"Violino",a:["violino","violin"],file:"Violin-440Hz.ogg",author:"SVGguru",license:"CC BY-SA 4.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/4.0/",reviewed:"2026-09-29"},
-  {name:"Bateria",a:["bateria","drums"],file:"Drum - Cadence A.ogg",author:"United States Navy Band",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"},
-  {name:"Violão",a:["violão","violao","guitarra acústica"],file:"AcousticGuitarSample.ogg",author:"RyGuy",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"},
-  {name:"Clarinete",a:["clarinete","clarinet"],file:"Jazz Clarinet.ogg",author:"Serolillo",license:"CC BY 2.5",licenseUrl:"https://creativecommons.org/licenses/by/2.5/",reviewed:"2026-09-29"},
-  {name:"Acordeão",a:["acordeão","acordeao","sanfona"],file:"Accordion registers.ogg",author:"Necz0r",license:"Domínio público",licenseUrl:"https://creativecommons.org/publicdomain/mark/1.0/",reviewed:"2026-09-29"},
-  {name:"Violoncelo",a:["violoncelo","cello"],file:"Cello strings.ogg",author:"Georg Feitscher",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",reviewed:"2026-09-29"},
-  {name:"Saxofone",a:["saxofone","saxophone","sax"],file:"Stlouisblues-9bars.ogg",author:"Julien Grandgagnage",license:"CC BY-SA 3.0",licenseUrl:"https://creativecommons.org/licenses/by-sa/3.0/",reviewed:"2026-09-29"},
-  {name:"Trompete",a:["trompete","trumpet"],file:"06. F5-trumpet.ogg",author:"ПростоУчастник",license:"CC0 1.0",licenseUrl:"https://creativecommons.org/publicdomain/zero/1.0/",reviewed:"2026-09-29"}
+const FOOD_QUESTIONS={
+  Pizza:'Qual prato italiano é assado com molho de tomate e coberturas sobre uma massa redonda?',
+  Sushi:'Qual prato japonês combina arroz temperado com peixe, frutos do mar ou vegetais?',
+  Hambúrguer:'Qual sanduíche costuma levar um disco de carne servido dentro de um pão?',
+  Taco:'Qual comida mexicana usa uma tortilla dobrada em torno de um recheio?',
+  Paella:'Qual prato espanhol prepara arroz com açafrão, legumes e carnes ou frutos do mar?',
+  Croissant:'Qual massa folhada francesa tem formato curvo e é comum no café da manhã?',
+  Pho:'Qual sopa vietnamita leva caldo aromático, macarrão de arroz e ervas?',
+  Ramen:'Qual prato japonês serve macarrão em caldo com acompanhamentos como ovo e carne?',
+  Falafel:'Qual bolinho do Oriente Médio é feito de grão-de-bico ou fava e frito?',
+  Feijoada:'Qual prato brasileiro reúne feijão preto, carnes e acompanhamentos como arroz?',
+  'Pad Thai':'Qual prato tailandês mistura macarrão de arroz salteado, molho agridoce e amendoim?',
+  Kimchi:'Qual acompanhamento coreano é feito de vegetais fermentados e temperados?',
+  Empanada:'Qual salgado popular na América Latina envolve recheio em massa dobrada e fechada?',
+  Ceviche:'Qual prato peruano marina peixe cru em suco cítrico com cebola e temperos?',
+  Baklava:'Qual doce de camadas de massa fina, nozes e calda é comum na Turquia?',
+  Gelato:'Qual sobremesa italiana gelada se parece com sorvete e costuma ter textura densa?',
+  Crepe:'Qual massa francesa fina é preparada na frigideira e pode levar recheios doces ou salgados?',
+  Fondue:'Qual prato suíço é servido em panela coletiva para mergulhar pão no queijo derretido?',
+  'Tiramisù':'Qual sobremesa italiana intercala café, mascarpone e biscoitos?',
+  Poutine:'Qual prato canadense cobre batatas fritas com coalhada de queijo e molho quente?',
+  Goulash:'Qual ensopado húngaro é temperado tradicionalmente com páprica?',
+  'Cachorro-quente':'Qual lanche coloca uma salsicha em pão comprido com molhos e complementos?',
+  Burrito:'Qual comida mexicana enrola recheios como feijão, arroz e carne numa tortilla?',
+  Bibimbap:'Qual prato coreano serve arroz com vegetais, carne e ovo, geralmente misturados antes de comer?',
+  Macaron:'Qual doce francês é formado por dois discos de merengue de amêndoas com recheio?',
+  Waffle:'Qual massa assada numa chapa forma uma grade de quadrados?',
+  Risoto:'Qual prato italiano cozinha arroz aos poucos em caldo até ficar cremoso?',
+  Churro:'Qual doce de massa frita costuma ser polvilhado com açúcar e canela?',
+  Sashimi:'Qual prato japonês consiste em fatias de peixe ou frutos do mar servidas sem arroz?',
+  'Dim Sum':'Qual tradição culinária chinesa reúne pequenas porções como bolinhos cozidos no vapor?',
+  Moussaka:'Qual prato grego é montado em camadas de berinjela, carne e molho branco?',
+  Shakshuka:'Qual prato do Norte da África cozinha ovos em molho de tomate e especiarias?',
+  Pierogi:'Qual massa recheada polonesa costuma ser cozida e servida com manteiga ou cebola?',
+  Borsch:'Qual sopa do Leste Europeu ganha a cor vermelha principalmente da beterraba?',
+  Homus:'Qual pasta do Oriente Médio leva grão-de-bico, tahine, limão e alho?',
+  'Arroz Jollof':'Qual prato da África Ocidental cozinha arroz em molho de tomate e temperos?',
+  'Bánh Mì':'Qual sanduíche vietnamita usa baguete com recheios, ervas e vegetais em conserva?'
+};
+const INSTRUMENT_QUESTIONS={
+  Violão:'Qual instrumento de cordas dedilhadas tem corpo acústico e é tocado apoiado no colo?',
+  Piano:'Qual instrumento de teclado aciona martelos que golpeiam cordas?',
+  Violino:'Qual instrumento de quatro cordas é tocado com arco junto ao ombro?',
+  Bateria:'Qual conjunto de tambores e pratos é tocado com baquetas e pedais?',
+  Saxofone:'Qual instrumento de sopro metálico usa palheta simples e é comum no jazz?',
+  Trompete:'Qual instrumento de metal tem três pistões e som brilhante?',
+  Flauta:'Qual instrumento de sopro produz som quando o ar passa pela borda do bocal?',
+  Violoncelo:'Qual instrumento de cordas com arco é apoiado no chão entre os joelhos?',
+  Harpa:'Qual instrumento de muitas cordas é tocado diretamente com os dedos?',
+  Acordeão:'Qual instrumento usa fole, teclado e botões para movimentar o ar por palhetas?',
+  Clarinete:'Qual instrumento de madeira usa palheta simples e corpo cilíndrico?',
+  Trombone:'Qual instrumento de metal muda as notas principalmente com uma vara deslizante?',
+  Banjo:'Qual instrumento de cordas tem uma caixa de ressonância parecida com um tambor?',
+  Ukulele:'Qual pequeno instrumento de quatro cordas é associado à música havaiana?',
+  'Gaita de Foles':'Qual instrumento mantém o ar num saco enquanto tubos produzem som?',
+  Xilofone:'Qual instrumento de percussão é formado por barras de madeira afinadas?',
+  Pandeiro:'Qual instrumento de percussão usa uma pele circular e pequenas platinelas?',
+  Maracas:'Qual par de chocalhos produz som ao ser sacudido?',
+  Sitar:'Qual instrumento indiano de cordas tem braço longo e cordas ressonantes?',
+  'Gaita de Boca':'Qual pequeno instrumento é soprado e aspirado através de palhetas?',
+  Contrabaixo:'Qual grande instrumento de cordas com arco toca registros muito graves na orquestra?',
+  'Guitarra Elétrica':'Qual instrumento de cordas usa captadores para enviar o som a um amplificador?',
+  Baixo:'Qual instrumento elétrico de cordas sustenta as notas graves de uma banda?',
+  Trompa:'Qual instrumento de metal tem tubo enrolado e campana larga?',
+  Tuba:'Qual grande instrumento de metal produz as notas mais graves da família?',
+  Oboé:'Qual instrumento de madeira usa palheta dupla e costuma dar a nota de afinação à orquestra?',
+  Fagote:'Qual instrumento grave de madeira usa palheta dupla e um longo tubo dobrado?',
+  Bandolim:'Qual pequeno instrumento de cordas duplas é tocado com palheta?',
+  Didgeridoo:'Qual longo tubo de sopro é tradicional de povos aborígenes australianos?',
+  Balalaica:'Qual instrumento de cordas russo tem corpo triangular?',
+  Erhu:'Qual instrumento chinês de duas cordas é tocado com arco preso entre elas?',
+  Tabla:'Qual par de tambores é muito usado na música clássica do norte da Índia?',
+  'Steel Drum':'Qual instrumento caribenho de percussão usa uma superfície metálica afinada?',
+  'Sanfona Medieval':'Qual instrumento de cordas usa uma roda acionada por manivela no lugar do arco?',
+  Kalimba:'Qual instrumento lamelofone é tocado com os polegares?',
+  Teremim:'Qual instrumento eletrônico é tocado sem contato físico, com as mãos perto de antenas?',
+  Koto:'Qual instrumento japonês tem cordas esticadas sobre uma longa caixa de madeira?',
+  Djembê:'Qual tambor em forma de cálice é tocado com as mãos e tem origem na África Ocidental?',
+  Shamisen:'Qual instrumento japonês de três cordas é tocado com uma grande palheta?'
+};
+for(const item of COMIDAS){item.question=FOOD_QUESTIONS[item.name];item.explanation=`${item.name} é um prato associado a ${item.hint}.`;item.source='https://en.wikipedia.org/wiki/'+encodeURIComponent(item.wiki);}
+for(const item of INSTRUMENTOS){item.question=INSTRUMENT_QUESTIONS[item.name];item.explanation=`O instrumento descrito é ${item.name}.`;item.source='https://en.wikipedia.org/wiki/'+encodeURIComponent(Array.isArray(item.wiki)?item.wiki[0]:item.wiki);}
+for(const item of ANIME_TITULOS){const character=item.hint.replace(/^Personagem:\s*/, '');item.question=character.toLowerCase().includes(item.name.toLowerCase())&&ANIME_CLUES[item.name]?`Qual anime ou mangá corresponde a esta história: ${ANIME_CLUES[item.name]}`:`Em qual anime ou mangá aparece ${character}?`;item.explanation=`${character} aparece em ${item.name}.`;item.source='https://en.wikipedia.org/wiki/'+encodeURIComponent(Array.isArray(item.wiki)?item.wiki[0]:item.wiki);}
+for(const item of SUPER_HEROIS){item.question=`Qual personagem corresponde à descrição: ${HERO_CLUES[item.name]}`;item.explanation=`A descrição é de ${item.name}.`;item.source='https://en.wikipedia.org/wiki/'+encodeURIComponent(Array.isArray(item.wiki)?item.wiki[0]:item.wiki);}
+for(const item of LINGUA_PAISES){item.question=`Qual idioma é predominante ou amplamente falado em ${item.country}?`;item.explanation=`${item.name} é um dos idiomas associados a ${item.country} neste quiz.`;item.source='https://www.wikidata.org/wiki/Special:Search?search='+encodeURIComponent(item.country);}
+
+const CIENCIAS=[
+  {name:'Mercúrio',question:'Qual planeta do Sistema Solar está mais próximo do Sol?',a:['mercurio'],distractors:['Vênus','Marte','Netuno'],explanation:'Mercúrio é o planeta com a órbita mais próxima do Sol.',source:'https://science.nasa.gov/mercury/'},
+  {name:'Júpiter',question:'Qual é o maior planeta do Sistema Solar?',a:['jupiter'],distractors:['Saturno','Urano','Terra'],explanation:'Júpiter tem o maior diâmetro entre os planetas do Sistema Solar.',source:'https://science.nasa.gov/jupiter/'},
+  {name:'Marte',question:'Qual planeta é conhecido como planeta vermelho?',a:['marte'],distractors:['Vênus','Mercúrio','Saturno'],explanation:'A aparência avermelhada de Marte vem de minerais de ferro em sua superfície.',source:'https://science.nasa.gov/mars/'},
+  {name:'Saturno',question:'Qual planeta é famoso por seu amplo sistema de anéis?',a:['saturno'],distractors:['Júpiter','Netuno','Mercúrio'],explanation:'Saturno tem anéis extensos compostos principalmente de gelo e fragmentos rochosos.',source:'https://science.nasa.gov/saturn/'},
+  {name:'Oxigênio',question:'Qual elemento químico tem símbolo O?',a:['oxigenio'],distractors:['Ouro','Ósmio','Hidrogênio'],explanation:'O é o símbolo do oxigênio na tabela periódica.',source:'https://pubchem.ncbi.nlm.nih.gov/element/Oxygen'},
+  {name:'Carbono',question:'Qual elemento químico tem símbolo C e está na base das moléculas orgânicas?',a:['carbono'],distractors:['Cálcio','Cobre','Cloro'],explanation:'O símbolo C identifica o carbono.',source:'https://pubchem.ncbi.nlm.nih.gov/element/Carbon'},
+  {name:'Nitrogênio',question:'Qual gás representa a maior parte da atmosfera terrestre?',a:['nitrogenio'],distractors:['Oxigênio','Argônio','Dióxido de carbono'],explanation:'O nitrogênio corresponde a cerca de quatro quintos da atmosfera seca.',source:'https://www.nasa.gov/general/what-is-earths-atmosphere/'},
+  {name:'Fotossíntese',question:'Como se chama o processo pelo qual plantas usam luz para produzir açúcares?',a:['fotossintese'],distractors:['Respiração','Fermentação','Evaporação'],explanation:'Na fotossíntese, energia luminosa é convertida em energia química.',source:'https://www.britannica.com/science/photosynthesis'},
+  {name:'Gravidade',question:'Qual força mantém os planetas em órbita ao redor do Sol?',a:['gravidade'],distractors:['Magnetismo','Atrito','Empuxo'],explanation:'A atração gravitacional do Sol mantém os planetas em suas órbitas.',source:'https://science.nasa.gov/solar-system/'},
+  {name:'Célula',question:'Qual é a unidade estrutural básica dos seres vivos?',a:['celula'],distractors:['Átomo','Tecido','Órgão'],explanation:'Os seres vivos são formados por uma ou mais células.',source:'https://www.britannica.com/science/cell-biology'},
+  {name:'Hélio',question:'Qual elemento químico, de símbolo He, é o segundo mais abundante no universo?',a:['helio'],distractors:['Hidrogênio','Neônio','Argônio'],explanation:'O hélio é superado em abundância cósmica apenas pelo hidrogênio.',source:'https://pubchem.ncbi.nlm.nih.gov/element/Helium'},
+  {name:'Via Láctea',question:'Como se chama a galáxia que contém o Sistema Solar?',a:['via lactea'],distractors:['Andrômeda','Triângulo','Grande Nuvem de Magalhães'],explanation:'O Sol é uma estrela da Via Láctea.',source:'https://science.nasa.gov/universe/galaxies/milky-way/'},
+  {name:'Oceano Pacífico',question:'Qual é o maior oceano da Terra em área?',a:['oceano pacifico','pacifico'],distractors:['Atlântico','Índico','Ártico'],explanation:'O Pacífico ocupa a maior área entre os oceanos.',source:'https://oceanservice.noaa.gov/facts/biggestocean.html'},
+  {name:'Evaporação',question:'Qual processo transforma água líquida em vapor?',a:['evaporacao'],distractors:['Condensação','Congelamento','Precipitação'],explanation:'A evaporação é a passagem da água líquida para o estado gasoso.',source:'https://www.usgs.gov/special-topics/water-science-school/science/evaporation-and-water-cycle'},
+  {name:'Antártida',question:'Em qual continente fica o Polo Sul geográfico?',a:['antartida'],distractors:['Ásia','Oceania','África'],explanation:'O Polo Sul geográfico está na Antártida.',source:'https://www.bas.ac.uk/about/antarctica/'},
 ];
-for(const item of AUDIO_INSTRUMENTS){item.fileUrl='https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(item.file.replaceAll(' ','_'));item.asset=item.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-');item.src='audio/'+item.asset+'.ogg';}
+const HISTORIA_GERAL=[
+  {name:'Egito',question:'Em qual civilização antiga foram construídas as pirâmides de Gizé?',a:['egito'],distractors:['Grécia','Roma','Pérsia'],explanation:'As pirâmides de Gizé foram construídas no Egito antigo.',source:'https://www.britannica.com/place/Pyramids-of-Giza'},
+  {name:'Roma',question:'Qual cidade foi o centro político do Império Romano?',a:['roma'],distractors:['Atenas','Alexandria','Cartago'],explanation:'Roma foi a capital e o centro simbólico do Império Romano.',source:'https://www.britannica.com/place/Rome'},
+  {name:'Gutenberg',question:'Quem é associado à difusão da prensa de tipos móveis na Europa no século XV?',a:['gutenberg','johannes gutenberg'],distractors:['Leonardo da Vinci','Galileu Galilei','Isaac Newton'],explanation:'Johannes Gutenberg aperfeiçoou a impressão com tipos móveis na Europa.',source:'https://www.britannica.com/biography/Johannes-Gutenberg'},
+  {name:'Revolução Francesa',question:'Qual revolução começou em 1789 e derrubou a monarquia absolutista na França?',a:['revolucao francesa'],distractors:['Revolução Industrial','Revolução Russa','Revolução Americana'],explanation:'A Revolução Francesa começou em 1789.',source:'https://www.britannica.com/event/French-Revolution'},
+  {name:'Brasil',question:'Qual país declarou independência de Portugal em 1822?',a:['brasil'],distractors:['Argentina','México','Chile'],explanation:'A independência do Brasil foi proclamada em 1822.',source:'https://www.britannica.com/place/Brazil/Independence'},
+  {name:'Machu Picchu',question:'Qual cidade inca foi construída nos Andes do atual Peru?',a:['machu picchu'],distractors:['Chichén Itzá','Tikal','Teotihuacán'],explanation:'Machu Picchu é um sítio inca nos Andes peruanos.',source:'https://whc.unesco.org/en/list/274/'},
+  {name:'Nelson Mandela',question:'Quem se tornou o primeiro presidente negro da África do Sul em 1994?',a:['nelson mandela','mandela'],distractors:['Desmond Tutu','F. W. de Klerk','Thabo Mbeki'],explanation:'Nelson Mandela assumiu a presidência sul-africana em 1994.',source:'https://www.nelsonmandela.org/content/page/biography'},
+  {name:'Queda do Muro de Berlim',question:'Qual evento de 1989 simbolizou o fim da divisão da Alemanha?',a:['queda do muro de berlim','muro de berlim'],distractors:['Reunificação italiana','Crise dos Mísseis','Plano Marshall'],explanation:'A abertura do Muro de Berlim ocorreu em novembro de 1989.',source:'https://www.britannica.com/topic/Berlin-Wall'},
+  {name:'Primeira Guerra Mundial',question:'Qual conflito mundial começou em 1914?',a:['primeira guerra mundial','primeira guerra'],distractors:['Segunda Guerra Mundial','Guerra da Crimeia','Guerra Fria'],explanation:'A Primeira Guerra Mundial durou de 1914 a 1918.',source:'https://www.britannica.com/event/World-War-I'},
+  {name:'Segunda Guerra Mundial',question:'Qual conflito mundial terminou em 1945?',a:['segunda guerra mundial','segunda guerra'],distractors:['Primeira Guerra Mundial','Guerra da Coreia','Guerra do Vietnã'],explanation:'A Segunda Guerra Mundial terminou em 1945.',source:'https://www.britannica.com/event/World-War-II'},
+  {name:'Santos Dumont',question:'Qual aviador brasileiro realizou voos públicos com o 14-bis em 1906?',a:['santos dumont','alberto santos dumont'],distractors:['Irmãos Wright','Charles Lindbergh','Antoine de Saint-Exupéry'],explanation:'Alberto Santos Dumont voou com o 14-bis em Paris em 1906.',source:'https://www.britannica.com/biography/Alberto-Santos-Dumont'},
+  {name:'Maria Quitéria',question:'Qual militar brasileira lutou na Independência da Bahia no século XIX?',a:['maria quiteria'],distractors:['Anita Garibaldi','Bárbara de Alencar','Maria Leopoldina'],explanation:'Maria Quitéria participou das lutas pela Independência da Bahia.',source:'https://www.gov.br/pt-br/noticias/cultura-artes-historia-e-esportes/2022/09/maria-quiteria-heroina-da-independencia'},
+  {name:'Abolição da escravidão',question:'O que a Lei Áurea de 1888 determinou no Brasil?',a:['abolicao da escravidao','fim da escravidao'],distractors:['Proclamação da República','Independência do Brasil','Criação da Constituição'],explanation:'A Lei Áurea declarou extinta a escravidão no Brasil.',source:'https://www.planalto.gov.br/ccivil_03/leis/lim/lim3353.htm'},
+  {name:'Império Inca',question:'Qual império pré-colombiano tinha centro na região de Cusco?',a:['imperio inca','inca'],distractors:['Império Asteca','Império Romano','Império Persa'],explanation:'Cusco foi o centro político do Império Inca.',source:'https://www.britannica.com/place/Inca-people'},
+  {name:'Amelia Earhart',question:'Qual aviadora foi a primeira mulher a cruzar o Atlântico sozinha de avião?',a:['amelia earhart'],distractors:['Bessie Coleman','Harriet Quimby','Jacqueline Cochran'],explanation:'Amelia Earhart realizou o voo solo transatlântico em 1932.',source:'https://www.britannica.com/biography/Amelia-Earhart'},
+];
 
 /* ══════════════════════════════════════════════════════════════════
    QUIZ DEFINITIONS
@@ -4742,17 +3377,16 @@ const QUIZZES=[
     hasModes:false,
     getPool(){return CAPITAIS;},
     async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
-    getHints(item){return["País: "+item.hint];},
+    getHints(){return[];},
   },
   {
     id:"lingua-paises",title:"Língua do País",
-    desc:"Veja a bandeira e descubra um idioma predominante no país.",
-    tags:[{t:"62 países",cls:"tag-purple"},{t:"FlagCDN",cls:"tag-green"}],
-    question:"Qual idioma predomina neste país?",placeholder:"Digite o nome do idioma...",
+    desc:"Responda perguntas sobre os idiomas falados pelo mundo.",
+    tags:[{t:"62 perguntas",cls:"tag-purple"},{t:"Perguntas",cls:"tag-green"}],
+    question:"Qual é o idioma?",placeholder:"Digite o nome do idioma...",
     hasModes:false,
     getPool(){return LINGUA_PAISES;},
-    async loadImage(item){return"https://flagcdn.com/w320/"+item.code+".png";},
-    getHints(item){return["País: "+item.country];},
+    getText(item){return item.question;},getHints(){return[];},
   },
   {
     id:"linguas-frases",title:"Línguas do Mundo",
@@ -4771,7 +3405,7 @@ const QUIZZES=[
     tags:[{t:"95 animais",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-green"}],
     question:"Que animal é este?",placeholder:"Digite o nome do animal...",
     hasModes:false,
-    getPool(){return ANIMAIS;},
+    getPool(){return ANIMAIS.filter(item=>item.media?.status==='selected');},
     async loadImage(item){return fetchCuratedMedia(item);},
     getHints(){return[];},
   },
@@ -4781,9 +3415,9 @@ const QUIZZES=[
     tags:[{t:"47 obras",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-gold"}],
     question:"Qual é o nome desta obra?",placeholder:"Digite o nome da obra...",
     hasModes:false,
-    getPool(){return ARTE;},
+    getPool(){return ARTE.filter(item=>item.media?.status==='selected');},
     async loadImage(item){return fetchCuratedMedia(item);},
-    getHints(item){return[item.hint];},
+    getHints(){return[];},
   },
   {
     id:"monumentos",title:"Monumentos do Mundo",
@@ -4791,51 +3425,48 @@ const QUIZZES=[
     tags:[{t:"54 monumentos",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-pink"}],
     question:"Que monumento ou lugar é este?",placeholder:"Digite o nome do lugar...",
     hasModes:false,
-    getPool(){return MONUMENTOS;},
+    getPool(){return MONUMENTOS.filter(item=>item.media?.status==='selected');},
     async loadImage(item){return fetchCuratedMedia(item);},
-    getHints(item){return[item.hint];},
+    getHints(){return[];},
   },
 
   {
     id:"comidas",title:"Pratos Típicos",
-    desc:"Teste seus conhecimentos sobre os pratos típicos do mundo!",
-    tags:[{t:"37 pratos",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-green"}],
-    question:"Que prato é este?",placeholder:"Digite o nome do prato...",
+    desc:"Descubra o prato pela receita e pela tradição culinária.",
+    tags:[{t:"37 perguntas",cls:"tag-purple"},{t:"Perguntas",cls:"tag-green"}],
+    question:"Qual é o prato?",placeholder:"Digite o nome do prato...",
     hasModes:false,
     getPool(){return COMIDAS;},
-    async loadImage(item){return fetchCuratedMedia(item);},
-    getHints(item){return[item.hint];},
+    getText(item){return item.question;},getHints(){return[];},
   },
   {
     id:"instrumentos",title:"Instrumentos Musicais",
-    desc:"Teste seus conhecimentos sobre os instrumentos musicais!",
-    tags:[{t:"39 instrumentos",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-pink"}],
-    question:"Que instrumento musical é este?",placeholder:"Digite o nome do instrumento...",
+    desc:"Identifique instrumentos por suas características.",
+    tags:[{t:"39 perguntas",cls:"tag-purple"},{t:"Perguntas",cls:"tag-pink"}],
+    question:"Qual é o instrumento?",placeholder:"Digite o nome do instrumento...",
     hasModes:false,
     getPool(){return INSTRUMENTOS;},
-    async loadImage(item){return fetchCuratedMedia(item);},
+    getText(item){return item.question;},
     getHints(){return[];},
   },
   {
     id:"anime",title:"Anime & Mangá",
-    desc:"Reconheça o personagem e descubra de qual anime ou mangá ele é!",
-    tags:[{t:"75 itens",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-pink"}],
-    question:"Que anime ou mangá é este?",placeholder:"Digite o nome da obra...",
+    desc:"Associe personagens às obras em perguntas textuais.",
+    tags:[{t:"75 perguntas",cls:"tag-purple"},{t:"Perguntas",cls:"tag-pink"}],
+    question:"Qual é a obra?",placeholder:"Digite o nome da obra...",
     hasModes:false,
     getPool(){return ANIME_TITULOS;},
-    async loadImage(item){return fetchCuratedMedia(item);},
-    getFallbackText(item){return ANIME_CLUES[item.name]||item.hint;},
+    getText(item){return item.question;},
     getHints(){return[];},
   },
   {
     id:"super-herois",title:"Heróis & Vilões",
-    desc:"Descubra personagens dos universos Marvel e DC.",
-    tags:[{t:"75 personagens",cls:"tag-purple"},{t:"Wikipedia",cls:"tag-gold"}],
-    question:"Que personagem é este?",placeholder:"Digite o nome do personagem...",
+    desc:"Descubra os personagens pelas suas histórias e poderes.",
+    tags:[{t:"75 perguntas",cls:"tag-purple"},{t:"Perguntas",cls:"tag-gold"}],
+    question:"Qual é o personagem?",placeholder:"Digite o nome do personagem...",
     hasModes:false,
     getPool(){return SUPER_HEROIS;},
-    async loadImage(item){return fetchCuratedMedia(item);},
-    getFallbackText(item){return HERO_CLUES[item.name];},
+    getText(item){return item.question;},
     getHints(){return[];},
   },
   {
@@ -4845,7 +3476,7 @@ const QUIZZES=[
     question:"Qual ponto marca esta capital?",placeholder:"",
     kind:"map",hasModes:false,
     getPool(){return MAPA_CAPITAIS;},
-    getHints(item){return["País: "+item.country];},
+    getHints(){return[];},
   },
   {
     id:"linha-do-tempo",title:"Linha do Tempo",desc:"Coloque quatro acontecimentos em ordem cronológica.",
@@ -4860,9 +3491,16 @@ const QUIZZES=[
     getPool(){return MATCH_ROUNDS;},getHints(){return[];}
   },
   {
-    id:"audio-instrumentos",title:"Som dos Instrumentos",desc:"Ouça trechos reais e identifique os instrumentos.",
-    tags:[{t:"10 trechos",cls:"tag-purple"},{t:"Áudio",cls:"tag-green"}],
-    question:"Qual instrumento você ouve?",placeholder:"Digite o instrumento...",kind:"audio",hasModes:false,
-    getPool(){return AUDIO_INSTRUMENTS;},getHints(){return[];}
+    id:"ciencias",title:"Ciência e Natureza",desc:"Perguntas de astronomia, biologia e mundo natural.",
+    tags:[{t:"15 perguntas",cls:"tag-purple"},{t:"Conhecimento",cls:"tag-green"}],
+    question:"Escolha a resposta certa.",placeholder:"Digite a resposta...",hasModes:false,
+    getPool(){return CIENCIAS;},getText(item){return item.question;},getHints(){return[];}
+  },
+  {
+    id:"historia-geral",title:"História Geral",desc:"Fatos, pessoas e acontecimentos de diferentes épocas.",
+    tags:[{t:"15 perguntas",cls:"tag-purple"},{t:"Conhecimento",cls:"tag-gold"}],
+    question:"Escolha a resposta certa.",placeholder:"Digite a resposta...",hasModes:false,
+    getPool(){return HISTORIA_GERAL;},getText(item){return item.question;},getHints(){return[];}
   },
 ];
+for(const quiz of QUIZZES)quiz.tags[0].t=quiz.tags[0].t.replace(/^\d+/,String(quiz.getPool('all').length));

@@ -1,28 +1,35 @@
 # Fontes e expansão do QuizArena
 
-Revisado em 29/09/2026.
+Revisado em 30/09/2026.
 
-## Fontes e limites
+## Decisão editorial
+
+O jogo usa um **catálogo local revisado** para que solo, apresentação e ranking tenham as mesmas perguntas, respostas e totais, mesmo quando uma API pública estiver indisponível. Novos fatos podem ser pesquisados em fontes externas, mas entram no site somente depois de revisão em português, alternativas sem ambiguidade, explicação e URL da fonte. `node scripts/validate-content.mjs` verifica a estrutura; uma revisão humana continua necessária para a correção factual e a qualidade da pergunta.
+
+| Fonte examinada | Conclusão para o QuizArena |
+| --- | --- |
+| [The Trivia API](https://the-trivia-api.com/) do [post original](https://www.reddit.com/r/trivia/comments/lj22qd/i_created_an_open_trivia_api_with_4000_approved/) | Oferece perguntas prontas e acesso público gratuito para uso não comercial sob CC BY-NC. A documentação também mostra chave de API e planos com recursos extras; não há promessa de requisições ilimitadas. Pode servir para pesquisa ou importação revisada com crédito, não como dependência ao vivo do ranking. |
+| [Open-trivia-database](https://github.com/el-cms/Open-trivia-database) | Arquivos em inglês e francês, com respostas e fonte por pergunta. O README pede crédito; seria preciso revisar tradução, alternativas e a origem dos enunciados antes de incorporar. |
+| [Wikidata](https://www.wikidata.org/wiki/Wikidata:Data_access) | Dados estruturados sob [CC0](https://www.wikidata.org/wiki/Wikidata:Licensing), úteis para gerar rascunhos e conferir fatos. As consultas públicas têm políticas de uso e limites operacionais; um script de atualização pontual e snapshot local é melhor do que consultar o serviço a cada partida. |
+| [QuizAPI Web da Mirai](https://github.com/miraidevelopment/quizapi-web) | Projeto em português, licença Apache 2.0 para o código, mas o repositório não estabelece uma garantia de disponibilidade ou ausência de limites para uma API hospedada. É uma referência de implementação, não uma dependência de produção. |
+
+## Mídia e mapa
 
 | Conteúdo | Origem e tratamento | Limite conhecido |
 | --- | --- | --- |
-| Bandeiras | FlagCDN por código de país; respostas locais | Exige conexão e disponibilidade da FlagCDN. |
-| Fotos | Arquivo fixo da Wikimedia Commons por pergunta em `content.js`, com autor, licença, página e data de revisão | 250 imagens selecionadas; 172 itens usam pista textual porque não foi encontrada imagem livre adequada automaticamente. A seleção ainda precisa de revisão visual/editorial individual. |
-| Áudios | Quatro arquivos da Wikimedia Commons com créditos em `content.js` | A disponibilidade e a adequação do trecho dependem da origem. |
-| Frases, respostas, mapa | Dados editoriais locais; o mapa é esquemático | A validação estrutural não prova a correção factual de cada entrada. |
-| Ranking | Cloudflare Worker + D1 + Discord OAuth em `quiz.maiq.dev.br` | Respostas públicas permitem automação; placar casual. |
+| Bandeiras e capitais | [FlagCDN](https://flagcdn.com/) por código de país; a imagem é a única pista visual antes da resposta | Dependem da disponibilidade da FlagCDN. |
+| Animais, arte e monumentos | Arquivo fixo da Wikimedia Commons por pergunta, com autor, licença, página e revisão em `content.js` | Só entram itens com imagem selecionada: 89 animais, 38 obras e 52 monumentos. A seleção visual ainda precisa de conferência editorial contínua. |
+| Mapa | Dados públicos [Natural Earth 1:110m](https://www.naturalearthdata.com/about/terms-of-use/) em `maps/world-land.js`, desenhados localmente; pontos vêm das coordenadas em `content.js` | Precisão visual é adequada ao jogo, não a navegação ou georreferenciamento profissional. |
+| Perguntas textuais | Conteúdo local em português, com explicação e URL de referência por item novo ou convertido | Fontes podem mudar; revisar periodicamente. |
+| Ranking | Cloudflare Worker + D1 + Discord OAuth | O banco de respostas público permite automação; o placar é casual. |
 
-`node scripts/validate-content.mjs` verifica estrutura, contagens, coordenadas e créditos. `node scripts/curate-media.mjs` refaz a consulta à Wikimedia; **não rode sem revisar o diff**, pois uma nova consulta pode trocar os arquivos escolhidos. A curação usa licenças CC BY, CC BY-SA, CC0 e domínio público. O uso sem fins lucrativos não dispensa atribuição. Veja [orientação do Wikimedia Commons](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/technical) e [MediaWiki API](https://www.mediawiki.org/wiki/API:Imageinfo).
+`node scripts/curate-media.mjs` refaz a consulta das três categorias fotográficas à Wikimedia; **revise o diff antes de publicar**, pois uma consulta nova pode trocar os arquivos. `node scripts/prune-unused-media.mjs` mantém apenas metadados dessas categorias. Licenças de foto CC BY, CC BY-SA, CC0 e domínio público não desaparecem porque o site não gera receita; veja [reutilização no Wikimedia Commons](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia/technical) e [NOTICE.md](NOTICE.md).
 
-## Formatos e partidas
+## Próximas expansões
 
-Há linha do tempo, associação país/capital, áudio de instrumentos, mapa, texto, bandeiras e imagens. Solo e apresentação têm resumo e histórico local. O modo de apresentação permite pontuação manual de equipes durante a transmissão da tela. As coleções de linha do tempo, associações e áudio foram ampliadas para 30, 20 e 10 rodadas. O ranking online abrange as 15 categorias e Misto reúne todas elas. Mapa, linha do tempo e associação têm perguntas de resposta única no ranking para manter uma regra de validação no servidor.
+1. Ampliar Ciência e Natureza e História Geral com perguntas revisadas, fontes por item e explicações úteis após a resposta; criar outros temas de conhecimento geral com o mesmo modelo.
+2. Adicionar um importador editorial que produza rascunhos a partir de Wikidata ou de um banco de trivia, sem publicar automaticamente nem depender de API durante as partidas.
+3. Revisar as 179 fotografias selecionadas no navegador e substituir arquivos que deixarem de carregar; novas perguntas visuais só entram com imagem e crédito válidos.
+4. Refinar os formatos de mapa, cronologia e associação também no ranking sem abrir espaço para pontuação enviada pelo cliente.
 
-Próximas expansões úteis:
-
-1. Revisar visualmente cada arquivo curado e substituir pistas textuais por imagens adequadas quando existir uma opção reutilizável.
-2. Continuar a curadoria de áudios curtos e acessíveis, com licença conferida, e adicionar novas sequências históricas e associações.
-3. Refinar os formatos especiais no ranking sem perder a validação no servidor. Para competição séria, criar um conjunto de perguntas privado diferente do catálogo aberto.
-4. Criar salas sincronizadas somente se houver demanda por jogadores em aparelhos separados; a apresentação na mesma tela já cobre o uso em grupo atual.
-
-Para novos dados de países, a [REST Countries](https://restcountries.com/) pode auxiliar uma geração de snapshot revisado; respostas do jogo não devem depender de uma API em tempo real.
+Solo e apresentação mantêm histórico local. O modo de apresentação permite pontuação manual durante transmissão de tela; aparelhos separados exigiriam salas e sincronização em um backend.
