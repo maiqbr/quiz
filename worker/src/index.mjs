@@ -17,7 +17,7 @@ function cookie(request,name){return (request.headers.get('cookie')||'').split('
 function setCookie(name,value,age,origin){return `${name}=${value}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${age}${new URL(origin).hostname==='localhost'?'':'; Secure'}`}
 function cleanName(value){return String(value||'Jogador').replace(/[\u0000-\u001f<>]/g,'').trim().slice(0,40)||'Jogador'}
 function originFor(request,env){return env.APP_ORIGIN||new URL(request.url).origin}
-function questionView(question,position,total,startedAt,difficulty){return {id:question.id,category:question.quiz,text:question.text,media:question.media,clue:question.clue,options:difficulty==='easy'?question.options:undefined,number:position+1,total,difficulty,secondsLeft:Math.max(0,Math.ceil((QUESTION_MS-(Date.now()-startedAt))/1000))}}
+function questionView(question,position,total,startedAt,difficulty){return {id:question.id,category:question.quiz,text:question.text,media:question.media?{type:question.media.type,src:question.media.src}:null,clue:question.clue,options:difficulty==='easy'?question.options:undefined,number:position+1,total,difficulty,secondsLeft:Math.max(0,Math.ceil((QUESTION_MS-(Date.now()-startedAt))/1000))}}
 const normalize=value=>String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 function shuffle(list){const array=[...list];for(let i=array.length-1;i>0;i--){const j=crypto.getRandomValues(new Uint32Array(1))[0]%(i+1);[array[i],array[j]]=[array[j],array[i]]}return array}
 async function userFor(request,env){
@@ -30,6 +30,8 @@ function invalidOrigin(request){return request.headers.get('origin')!==new URL(r
 export default {async fetch(request,env){
   const url=new URL(request.url),path=url.pathname,origin=originFor(request,env);
   if(path==='/index.html'&&request.method==='GET')return Response.redirect(origin+'/'+url.search,308);
+  if(path==='/creditos.html'&&request.method==='GET')return Response.redirect(origin+'/creditos'+url.search,308);
+  if(path==='/creditos'&&request.method==='GET'){const assetUrl=new URL(request.url);assetUrl.pathname='/creditos-data.txt';const asset=await env.ASSETS.fetch(new Request(assetUrl,request));if(!asset.ok)return asset;const headers=new Headers(asset.headers);headers.set('Content-Type','text/html; charset=utf-8');return new Response(asset.body,{status:asset.status,headers})}
   if(!env.DB)return json({error:'Banco indisponível'},503);
   try{
     if(path==='/auth/discord/start'&&request.method==='GET'){

@@ -7745,9 +7745,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
-      "attribution": "Giles Laurent · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7770,9 +7768,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7795,9 +7791,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/960px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
-      "attribution": "Giles Laurent · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/960px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7822,9 +7816,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/960px-Standing_jaguar.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Standing_jaguar.jpg",
-      "attribution": "USFWS · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/960px-Standing_jaguar.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7847,9 +7839,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/960px-Eurasian_wolf_2.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg",
-      "attribution": "User:Mas3cf · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/960px-Eurasian_wolf_2.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7873,9 +7863,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/960px-2010-kodiak-bear-1.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:2010-kodiak-bear-1.jpg",
-      "attribution": "Yathin S Krishnappa · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/960px-2010-kodiak-bear-1.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7898,9 +7886,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/960px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg",
-      "attribution": "Thurundir · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/960px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7923,9 +7909,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/960px-Tursiops_truncatus_01.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Tursiops_truncatus_01.jpg",
-      "attribution": "NASA · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/960px-Tursiops_truncatus_01.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7948,9 +7932,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/960px-Grosser_Panda.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG",
-      "attribution": "J. Patrick Fischer · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/960px-Grosser_Panda.JPG"
     },
     "clue": null,
     "explanation": null,
@@ -7974,9 +7956,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/960px-Alaska_moose.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Alaska_moose.jpg",
-      "attribution": "Paxson Woelber · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/960px-Alaska_moose.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -7999,9 +7979,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/960px-Koala_climbing_tree.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg",
-      "attribution": "Diliff · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/960px-Koala_climbing_tree.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8024,9 +8002,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/960px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Llamas,_Vernagt-Stausee,_Italy.jpg",
-      "attribution": "Andrija12345678 · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/960px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8050,9 +8026,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Peacock_on_tree_%2852077240794%29.jpg/960px-Peacock_on_tree_%2852077240794%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Peacock_on_tree_(52077240794).jpg",
-      "attribution": "Kandukuru Nagarjun from Bangalore, India · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Peacock_on_tree_%2852077240794%29.jpg/960px-Peacock_on_tree_%2852077240794%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8075,9 +8049,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg/960px-Crocodylus_acutus_mexico_02-edit1.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Crocodylus_acutus_mexico_02-edit1.jpg",
-      "attribution": "Tomás Castelazo · CC BY-SA 2.5"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg/960px-Crocodylus_acutus_mexico_02-edit1.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8099,9 +8071,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg/960px-010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
-      "attribution": "Giles Laurent · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg/960px-010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8123,9 +8093,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/960px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Equus_quagga_burchellii_-_Etosha,_2014.jpg",
-      "attribution": "Yathin S Krishnappa · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/960px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8149,9 +8117,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/960px-Male_cheetah_facing_left_in_South_Africa.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Male_cheetah_facing_left_in_South_Africa.jpg",
-      "attribution": "AfricanConservation · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/960px-Male_cheetah_facing_left_in_South_Africa.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8175,9 +8141,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg",
-      "attribution": "Giles Laurent · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg/960px-109_Male_White_rhinoceros_walking_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8200,9 +8164,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tanjung_Puting30477.jpg/960px-Tanjung_Puting30477.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Tanjung_Puting30477.jpg",
-      "attribution": "Nanosanchez · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Tanjung_Puting30477.jpg/960px-Tanjung_Puting30477.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8227,9 +8189,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg/960px-Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8253,9 +8213,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/960px-White_shark.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:White_shark.jpg",
-      "attribution": "Pterantula (Terry Goss) at en.wikipedia · CC BY 2.5"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/960px-White_shark.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8278,9 +8236,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/960px-Killerwhales_jumping.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg",
-      "attribution": "Robert Pittman · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/960px-Killerwhales_jumping.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8303,9 +8259,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/960px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/960px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8329,9 +8283,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg/960px-12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg",
-      "attribution": "Michael Allen Smith from Seattle, USA · CC BY-SA 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg/960px-12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8356,9 +8308,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/960px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Bald_eagle_about_to_fly_in_Alaska_(2016).jpg",
-      "attribution": "Andy Morffew from Itchen Abbas, Hampshire, UK · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg/960px-Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8381,9 +8331,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/960px-Octopus2.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Octopus2.jpg",
-      "attribution": "albert kok · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/960px-Octopus2.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8407,9 +8355,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg/960px-California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:California_Sea_Lion,_Monterey,_California,_United_States_imported_from_iNaturalist_photo_203598492.jpg",
-      "attribution": "(c) Jonathan Eisen, some rights reserved (CC BY) · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg/960px-California_Sea_Lion%2C_Monterey%2C_California%2C_United_States_imported_from_iNaturalist_photo_203598492.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8432,9 +8378,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg/960px-Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg",
-      "attribution": "Ian Duffy from UK · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg/960px-Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8459,9 +8403,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Humpback_whale_breaching_off_Cabo_San_Lucas.jpg/960px-Humpback_whale_breaching_off_Cabo_San_Lucas.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Humpback_whale_breaching_off_Cabo_San_Lucas.jpg",
-      "attribution": "Juan Cruzado Cortés · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Humpback_whale_breaching_off_Cabo_San_Lucas.jpg/960px-Humpback_whale_breaching_off_Cabo_San_Lucas.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8486,9 +8428,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/960px-Myresluger2.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Myresluger2.jpg",
-      "attribution": "Malene Thyssen · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/960px-Myresluger2.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8512,9 +8452,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/960px-Portrait_Hippopotamus_in_the_water.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Portrait_Hippopotamus_in_the_water.jpg",
-      "attribution": "Muhammad Mahdi Karim · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/960px-Portrait_Hippopotamus_in_the_water.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8537,9 +8475,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/960px-American_Beaver.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:American_Beaver.jpg",
-      "attribution": "Steve from Washington, DC, USA · CC BY-SA 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/960px-American_Beaver.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8562,9 +8498,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg/960px-Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Northern_River_Otter_on_Seedskadee_NWR_(22802102984).jpg",
-      "attribution": "USFWS Mountain-Prairie · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg/960px-Northern_River_Otter_on_Seedskadee_NWR_%2822802102984%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8587,9 +8521,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/960px-Irbis4.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:Irbis4.JPG",
-      "attribution": "Irbis1983 · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Irbis4.JPG/960px-Irbis4.JPG"
     },
     "clue": null,
     "explanation": null,
@@ -8612,9 +8544,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/960px-African_leopard_male_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:African_leopard_male_(cropped).jpg",
-      "attribution": "Sumeet Moghe · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/960px-African_leopard_male_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8638,9 +8568,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/960px-202306_Varanus_komodoensis.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg",
-      "attribution": "James Jolokia ( james1203 ) · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/202306_Varanus_komodoensis.jpg/960px-202306_Varanus_komodoensis.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8663,9 +8591,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/960px-Struthio_camelus_-_Etosha_2014_%283%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_-_Etosha_2014_(3).jpg",
-      "attribution": "Yathin S Krishnappa · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg/960px-Struthio_camelus_-_Etosha_2014_%283%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8689,9 +8615,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/960px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
-      "attribution": "Giles Laurent · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/960px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8714,9 +8638,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/960px-Spotted_hyena_%28Crocuta_crocuta%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Spotted_hyena_(Crocuta_crocuta).jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/960px-Spotted_hyena_%28Crocuta_crocuta%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8739,9 +8661,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Eupholidota.jpg/960px-Eupholidota.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Eupholidota.jpg",
-      "attribution": "derivative work: user:The Explaner · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Eupholidota.jpg/960px-Eupholidota.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8766,9 +8686,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/960px-Bicho-pregui%C3%A7a_3.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Bicho-pregui%C3%A7a_3.jpg",
-      "attribution": "Daniella Maraschiello · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/960px-Bicho-pregui%C3%A7a_3.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8791,9 +8709,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Capybaracropped.jpg/960px-Capybaracropped.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Capybaracropped.jpg",
-      "attribution": "Giles Laurent · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Capybaracropped.jpg/960px-Capybaracropped.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8816,9 +8732,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/960px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
-      "attribution": "Giles Laurent · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/960px-006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8841,9 +8755,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg/960px-Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Red_Panda,_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
-      "attribution": "Sunuwargr · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg/960px-Red_Panda%2C_Gentle_Tree-Dweller_of_the_Himalayas.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8867,9 +8779,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg/960px-Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Vulpes_lagopus_in_Iceland_(cropped_3).jpg",
-      "attribution": "Jonatan Pie ( unsplash.com/@r3dmax ) · CC0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg/960px-Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8892,9 +8802,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/960px-Polar_Bear_-_Alaska_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg",
-      "attribution": "Alan Wilson · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/960px-Polar_Bear_-_Alaska_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8918,9 +8826,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/960px-American_bison_k5680-1.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:American_bison_k5680-1.jpg",
-      "attribution": "Jack Dykinga · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/960px-American_bison_k5680-1.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8943,9 +8849,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Erethizon_dorsatum_-_Prince_Rupert.jpg/960px-Erethizon_dorsatum_-_Prince_Rupert.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Erethizon_dorsatum_-_Prince_Rupert.jpg",
-      "attribution": "The Cosmonaut · CC BY-SA 2.5 ca"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Erethizon_dorsatum_-_Prince_Rupert.jpg/960px-Erethizon_dorsatum_-_Prince_Rupert.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8969,9 +8873,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Panther_Chameleon_738367_%28cropped%29.jpg/960px-Panther_Chameleon_738367_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Panther_Chameleon_738367_(cropped).jpg",
-      "attribution": "Rod Waddington · CC BY-SA 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Panther_Chameleon_738367_%28cropped%29.jpg/960px-Panther_Chameleon_738367_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -8993,9 +8895,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Iguana_iguana_%28male_resting%29.jpg/960px-Iguana_iguana_%28male_resting%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Iguana_iguana_(male_resting).jpg",
-      "attribution": "Hans Hillewaert · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Iguana_iguana_%28male_resting%29.jpg/960px-Iguana_iguana_%28male_resting%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9018,9 +8918,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/960px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg",
-      "attribution": "Hans Hillewaert · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/960px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9043,9 +8941,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/960px-Puffin_%28Fratercula_arctica%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Puffin_(Fratercula_arctica).jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/960px-Puffin_%28Fratercula_arctica%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9068,9 +8964,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg/960px-Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg",
-      "attribution": "Nixette · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg/960px-Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9093,9 +8987,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg/960px-%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg",
-      "attribution": "пресс-служба ПАО \"Газпром нефть\" · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg/960px-%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9118,9 +9010,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg/960px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg/960px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9143,9 +9033,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/960px-Sarcophilus_harrisii_taranna.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Sarcophilus_harrisii_taranna.jpg",
-      "attribution": "JJ Harrison ( https://www.jjharrison.com.au/ ) · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/960px-Sarcophilus_harrisii_taranna.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9168,9 +9056,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg/960px-Vombatus_ursinus_-Maria_Island_National_Park.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Vombatus_ursinus_-Maria_Island_National_Park.jpg",
-      "attribution": "JJ Harrison ( jjharrison89@facebook.com ) · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg/960px-Vombatus_ursinus_-Maria_Island_National_Park.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9192,9 +9078,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Emu_1_-_Tidbinbilla.jpg/960px-Emu_1_-_Tidbinbilla.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Emu_1_-_Tidbinbilla.jpg",
-      "attribution": "JJ Harrison ( https://www.jjharrison.com.au/ ) · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Emu_1_-_Tidbinbilla.jpg/960px-Emu_1_-_Tidbinbilla.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9216,9 +9100,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/TeTuatahianui.jpg/960px-TeTuatahianui.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:TeTuatahianui.jpg",
-      "attribution": "Maungatautari Ecological Island Trust · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/TeTuatahianui.jpg/960px-TeTuatahianui.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9241,9 +9123,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Gyps_fulvus_in_flight_-_Spain.jpg/960px-Gyps_fulvus_in_flight_-_Spain.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Gyps_fulvus_in_flight_-_Spain.jpg",
-      "attribution": "Pierre Dalous · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Gyps_fulvus_in_flight_-_Spain.jpg/960px-Gyps_fulvus_in_flight_-_Spain.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9266,9 +9146,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg/960px-Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Bubo_bubo_3_(Martin_Mecnarowski).jpg",
-      "attribution": "Martin Mecnarowski ( http://www.photomecan.eu/ ) · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg/960px-Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9292,9 +9170,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/960px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
-      "attribution": "Mykola Swarnyk · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg/960px-Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9317,9 +9193,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg/960px-Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mandrill_Albert_September_2015_Zoo_Berlin_(2).jpg",
-      "attribution": "Katma0601 · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg/960px-Mandrill_Albert_September_2015_Zoo_Berlin_%282%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9343,9 +9217,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg/960px-Ring-tailed_lemur_%28Lemur_catta%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg/960px-Ring-tailed_lemur_%28Lemur_catta%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9368,9 +9240,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/960px-Raccoon_in_Central_Park_%2835264%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Raccoon_in_Central_Park_(35264).jpg",
-      "attribution": "Rhododendrites · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/960px-Raccoon_in_Central_Park_%2835264%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9393,9 +9263,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/2009-Coyote-Yosemite.jpg/960px-2009-Coyote-Yosemite.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:2009-Coyote-Yosemite.jpg",
-      "attribution": "Yathin S Krishnappa · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/2009-Coyote-Yosemite.jpg/960px-2009-Coyote-Yosemite.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9419,9 +9287,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bobcat_at_Columbus_Zoo_Boo.jpg/960px-Bobcat_at_Columbus_Zoo_Boo.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Bobcat_at_Columbus_Zoo_Boo.jpg",
-      "attribution": "Becker1999 (Paul and Cathy) · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Bobcat_at_Columbus_Zoo_Boo.jpg/960px-Bobcat_at_Columbus_Zoo_Boo.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9447,9 +9313,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/960px-Mountain_Lion_in_Glacier_National_Park.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mountain_Lion_in_Glacier_National_Park.jpg",
-      "attribution": "National Park Service · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg/960px-Mountain_Lion_in_Glacier_National_Park.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9473,9 +9337,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Fennec_Fox_Vulpes_zerda.jpg/960px-Fennec_Fox_Vulpes_zerda.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Fennec_Fox_Vulpes_zerda.jpg",
-      "attribution": "Drew Avery · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Fennec_Fox_Vulpes_zerda.jpg/960px-Fennec_Fox_Vulpes_zerda.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9498,9 +9360,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg/960px-Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg",
-      "attribution": "Aramburu Carlos · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg/960px-Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9524,9 +9384,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Trinidad_and_Tobago_hummingbirds_composite.jpg/960px-Trinidad_and_Tobago_hummingbirds_composite.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Trinidad_and_Tobago_hummingbirds_composite.jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Trinidad_and_Tobago_hummingbirds_composite.jpg/960px-Trinidad_and_Tobago_hummingbirds_composite.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9550,9 +9408,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Red-eyed_Leaf_Frog_%2849661076226%29.jpg/960px-Red-eyed_Leaf_Frog_%2849661076226%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Red-eyed_Leaf_Frog_(49661076226).jpg",
-      "attribution": "Charlie Jackson · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Red-eyed_Leaf_Frog_%2849661076226%29.jpg/960px-Red-eyed_Leaf_Frog_%2849661076226%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9575,9 +9431,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Desmo-Flug-01.jpg/960px-Desmo-Flug-01.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Desmo-Flug-01.jpg",
-      "attribution": "Uwe Schmidt · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Desmo-Flug-01.jpg/960px-Desmo-Flug-01.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9600,9 +9454,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Treron_vernans_male_-_Kent_Ridge_Park.jpg/960px-Treron_vernans_male_-_Kent_Ridge_Park.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Treron_vernans_male_-_Kent_Ridge_Park.jpg",
-      "attribution": "JJ Harrison ( https://tiny.jjharrison.com.au/t/3rUZckpXLJTJuAko ) · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Treron_vernans_male_-_Kent_Ridge_Park.jpg/960px-Treron_vernans_male_-_Kent_Ridge_Park.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9625,9 +9477,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Carrion_crow_2022_04_05_05_02.jpg/960px-Carrion_crow_2022_04_05_05_02.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Carrion_crow_2022_04_05_05_02.jpg",
-      "attribution": "Alexis Lours · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Carrion_crow_2022_04_05_05_02.jpg/960px-Carrion_crow_2022_04_05_05_02.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9650,9 +9500,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/EasternGraySquirrel_GAm.jpg/960px-EasternGraySquirrel_GAm.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:EasternGraySquirrel_GAm.jpg",
-      "attribution": "JeffreyGammon · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/EasternGraySquirrel_GAm.jpg/960px-EasternGraySquirrel_GAm.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9675,9 +9523,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg/960px-Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg",
-      "source": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_-_euqirneto_-_419737670_(cropped).jpeg",
-      "attribution": "euqirneto · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg/960px-Oryctolagus_cuniculus_-_euqirneto_-_419737670_%28cropped%29.jpeg"
     },
     "clue": null,
     "explanation": null,
@@ -9700,9 +9546,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/European_hamster_%28Cricetus_cricetus%29_Meidling.jpg/960px-European_hamster_%28Cricetus_cricetus%29_Meidling.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:European_hamster_(Cricetus_cricetus)_Meidling.jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/European_hamster_%28Cricetus_cricetus%29_Meidling.jpg/960px-European_hamster_%28Cricetus_cricetus%29_Meidling.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9726,9 +9570,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Mouse_white_background.jpg/960px-Mouse_white_background.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mouse_white_background.jpg",
-      "attribution": "Unknown author Unknown author (original) / Ilmari Karonen (editing) · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Mouse_white_background.jpg/960px-Mouse_white_background.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9751,9 +9593,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/European_hare_%28_Lepus_europaeus%29.jpg/960px-European_hare_%28_Lepus_europaeus%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:European_hare_(_Lepus_europaeus).jpg",
-      "attribution": "Nagusb · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/European_hare_%28_Lepus_europaeus%29.jpg/960px-European_hare_%28_Lepus_europaeus%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9776,9 +9616,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Talpa_europaea_I.jpg/960px-Talpa_europaea_I.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Talpa_europaea_I.jpg",
-      "attribution": "bristolian · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Talpa_europaea_I.jpg/960px-Talpa_europaea_I.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9802,9 +9640,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/960px-Skunk_about_to_spray.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Skunk_about_to_spray.jpg",
-      "attribution": "Wallace Keck · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/960px-Skunk_about_to_spray.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9827,9 +9663,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/European_badger_%28Meles_meles_taxus%29_Drenthe.jpg/960px-European_badger_%28Meles_meles_taxus%29_Drenthe.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:European_badger_(Meles_meles_taxus)_Drenthe.jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/European_badger_%28Meles_meles_taxus%29_Drenthe.jpg/960px-European_badger_%28Meles_meles_taxus%29_Drenthe.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9852,9 +9686,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/960px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg",
-      "attribution": "Daniel Jolivet · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg/960px-Saint-Aignan_%28Loir-et-Cher%29._Okapi.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9877,9 +9709,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/South_American_tapir_%28Tapirus_terrestris%29.JPG/960px-South_American_tapir_%28Tapirus_terrestris%29.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:South_American_tapir_(Tapirus_terrestris).JPG",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/South_American_tapir_%28Tapirus_terrestris%29.JPG/960px-South_American_tapir_%28Tapirus_terrestris%29.JPG"
     },
     "clue": null,
     "explanation": null,
@@ -9902,9 +9732,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/960px-Axolotl_ganz.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Axolotl_ganz.jpg",
-      "attribution": "LoKiLeCh · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/960px-Axolotl_ganz.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9928,9 +9756,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG/960px-Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG",
-      "attribution": "Shiyam ElkCloner · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG/960px-Dharavandhoo_Thila_-_Manata_Black_Pearl.JPG"
     },
     "clue": null,
     "explanation": null,
@@ -9953,9 +9779,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/960px-SnowyOwlAmericanBlackDuck.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:SnowyOwlAmericanBlackDuck.jpg",
-      "attribution": "Chuck Homler d/b/a Focus On Wildlife · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/960px-SnowyOwlAmericanBlackDuck.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -9978,9 +9802,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/960px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_Tswalu.jpg",
-      "attribution": "Charles J. Sharp · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/960px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10004,9 +9826,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mona_Lisa.jpg",
-      "attribution": "Leonardo da Vinci · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10030,9 +9850,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/960px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg",
-      "attribution": "Edvard Munch · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/960px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10056,9 +9874,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/960px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
-      "attribution": "Vincent van Gogh · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/960px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10083,9 +9899,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg",
-      "attribution": "Katsushika Hokusai · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/960px-Tsunami_by_hokusai_19th_century.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10109,9 +9923,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
-      "attribution": "Sandro Botticelli · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10135,9 +9947,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/960px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg",
-      "attribution": "Michelangelo · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/960px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10151,7 +9961,7 @@ export const QUESTIONS=[
       "A Ronda Noturna",
       "Impressão, Nascer do Sol",
       "Saturno Devorando o Filho",
-      "A Torre de Babel"
+      "Nenúfares"
     ],
     "correct": 2,
     "aliases": [
@@ -10161,9 +9971,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg",
-      "attribution": "Francisco Goya · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/960px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10176,7 +9984,7 @@ export const QUESTIONS=[
     "options": [
       "Olympia",
       "Whistlejacket",
-      "As Respigadoras",
+      "Um Bar no Folies-Bergère",
       "A Escola de Atenas"
     ],
     "correct": 3,
@@ -10187,9 +9995,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/960px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg",
-      "attribution": "Raphael · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/960px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10202,8 +10008,8 @@ export const QUESTIONS=[
     "options": [
       "Davi",
       "Baile no Moulin de la Galette",
-      "A Morte de Marat",
-      "O Grito"
+      "A Torre de Babel",
+      "A Noite Estrelada"
     ],
     "correct": 0,
     "aliases": [
@@ -10212,9 +10018,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/960px-%27David%27_by_Michelangelo_Fir_JBU004.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:%27David%27_by_Michelangelo_Fir_JBU004.jpg",
-      "attribution": "Jörg Bittner Unna · CC BY 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/960px-%27David%27_by_Michelangelo_Fir_JBU004.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10227,8 +10031,8 @@ export const QUESTIONS=[
     "options": [
       "A Cigana Dormindo",
       "Moça com Brinco de Pérola",
-      "O Três de Maio de 1808",
-      "O Nascimento de Vênus"
+      "As Respigadoras",
+      "A Criação de Adão"
     ],
     "correct": 1,
     "aliases": [
@@ -10238,9 +10042,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg",
-      "attribution": "Johannes Vermeer · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10251,10 +10053,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "As Senhoritas de Avignon",
-      "Mona Lisa",
+      "A Morte de Marat",
+      "O Grito",
       "American Gothic",
-      "A Escola de Atenas"
+      "Davi"
     ],
     "correct": 2,
     "aliases": [
@@ -10262,9 +10064,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Grant_Wood_-_American_Gothic_%281930%29.jpg/960px-Grant_Wood_-_American_Gothic_%281930%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Grant_Wood_-_American_Gothic_(1930).jpg",
-      "attribution": "Grant Wood · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Grant_Wood_-_American_Gothic_%281930%29.jpg/960px-Grant_Wood_-_American_Gothic_%281930%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10275,9 +10075,9 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Nenúfares",
-      "A Grande Onda de Kanagawa",
-      "American Gothic",
+      "O Três de Maio de 1808",
+      "O Nascimento de Vênus",
+      "Uma Tarde de Domingo na Grande Jatte",
       "Nighthawks"
     ],
     "correct": 3,
@@ -10286,9 +10086,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg/960px-Nighthawks_by_Edward_Hopper_1942.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Nighthawks_by_Edward_Hopper_1942.jpg",
-      "attribution": "Edward Hopper · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Nighthawks_by_Edward_Hopper_1942.jpg/960px-Nighthawks_by_Edward_Hopper_1942.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10300,9 +10098,9 @@ export const QUESTIONS=[
     "text": "Qual é o nome desta obra?",
     "options": [
       "Uma Tarde de Domingo na Grande Jatte",
-      "Um Bar no Folies-Bergère",
-      "Saturno Devorando o Filho",
-      "As Meninas"
+      "Mona Lisa",
+      "A Escola de Atenas",
+      "Vênus de Milo"
     ],
     "correct": 0,
     "aliases": [
@@ -10312,9 +10110,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg",
-      "attribution": "Georges Seurat · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/960px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10325,10 +10121,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Noite Estrelada",
+      "A Grande Onda de Kanagawa",
       "A Última Ceia",
-      "Moça com Brinco de Pérola",
-      "O Beijo"
+      "American Gothic",
+      "Retrato da Mãe do Artista"
     ],
     "correct": 1,
     "aliases": [
@@ -10338,9 +10134,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/960px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
-      "attribution": "Leonardo da Vinci · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/960px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10351,10 +10145,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Criação de Adão",
-      "Uma Tarde de Domingo na Grande Jatte",
+      "Saturno Devorando o Filho",
+      "A Última Ceia",
       "As Meninas",
-      "A Liberdade Guiando o Povo"
+      "O Jardim das Delícias"
     ],
     "correct": 2,
     "aliases": [
@@ -10363,9 +10157,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/960px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg",
-      "attribution": "Diego Velázquez · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/960px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10376,9 +10168,9 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Davi",
-      "Teto da Capela Sistina",
-      "Retrato dos Arnolfini",
+      "Moça com Brinco de Pérola",
+      "O Beijo",
+      "Andarilho sobre o Mar de Névoa",
       "Vênus de Milo"
     ],
     "correct": 3,
@@ -10389,9 +10181,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/960px-Front_views_of_the_Venus_de_Milo.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Front_views_of_the_Venus_de_Milo.jpg",
-      "attribution": "Livioandronico2013 · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Front_views_of_the_Venus_de_Milo.jpg/960px-Front_views_of_the_Venus_de_Milo.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10403,9 +10193,9 @@ export const QUESTIONS=[
     "text": "Qual é o nome desta obra?",
     "options": [
       "Teto da Capela Sistina",
-      "Nighthawks",
-      "A Ronda Noturna",
-      "Impressão, Nascer do Sol"
+      "Uma Tarde de Domingo na Grande Jatte",
+      "A Liberdade Guiando o Povo",
+      "O Carro de Feno"
     ],
     "correct": 0,
     "aliases": [
@@ -10416,9 +10206,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/960px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Sistine_Chapel_ceiling_02_(brightened).jpg",
-      "attribution": "Antoine Taveneaux · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/960px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10429,10 +10217,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "As Meninas",
+      "Vênus de Milo",
       "O Beijo",
-      "Olympia",
-      "Whistlejacket"
+      "Retrato dos Arnolfini",
+      "Os Jogadores de Cartas"
     ],
     "correct": 1,
     "aliases": [
@@ -10443,9 +10231,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/960px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
-      "attribution": "Gustav Klimt · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/960px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10456,10 +10242,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Beijo",
-      "Baile no Moulin de la Galette",
+      "A Ronda Noturna",
+      "Impressão, Nascer do Sol",
       "Retrato da Mãe do Artista",
-      "A Morte de Marat"
+      "Nenúfares"
     ],
     "correct": 2,
     "aliases": [
@@ -10469,9 +10255,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/960px-Whistlers_Mother_high_res.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Whistlers_Mother_high_res.jpg",
-      "attribution": "James McNeill Whistler · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/960px-Whistlers_Mother_high_res.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10482,9 +10266,9 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Jardim das Delícias",
-      "A Cigana Dormindo",
-      "O Três de Maio de 1808",
+      "Olympia",
+      "Whistlejacket",
+      "Um Bar no Folies-Bergère",
       "A Ronda Noturna"
     ],
     "correct": 3,
@@ -10495,9 +10279,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/960px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:La_ronda_de_noche,_por_Rembrandt_van_Rijn.jpg",
-      "attribution": "Rembrandt · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/960px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10509,9 +10291,9 @@ export const QUESTIONS=[
     "text": "Qual é o nome desta obra?",
     "options": [
       "A Liberdade Guiando o Povo",
-      "Andarilho sobre o Mar de Névoa",
-      "As Senhoritas de Avignon",
-      "Mona Lisa"
+      "Baile no Moulin de la Galette",
+      "A Torre de Babel",
+      "A Noite Estrelada"
     ],
     "correct": 0,
     "aliases": [
@@ -10520,9 +10302,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/960px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
-      "attribution": "Eugène Delacroix · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/960px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10533,10 +10313,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Carro de Feno",
+      "A Cigana Dormindo",
       "O Jardim das Delícias",
-      "Nenúfares",
-      "A Grande Onda de Kanagawa"
+      "As Respigadoras",
+      "A Criação de Adão"
     ],
     "correct": 1,
     "aliases": [
@@ -10546,9 +10326,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/960px-The_Garden_of_earthly_delights.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Garden_of_earthly_delights.jpg",
-      "attribution": "Hieronymus Bosch · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/The_Garden_of_earthly_delights.jpg/960px-The_Garden_of_earthly_delights.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10559,10 +10337,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Os Jogadores de Cartas",
-      "Um Bar no Folies-Bergère",
+      "A Morte de Marat",
+      "O Grito",
       "Olympia",
-      "Saturno Devorando o Filho"
+      "Davi"
     ],
     "correct": 2,
     "aliases": [
@@ -10570,9 +10348,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg/960px-Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg",
-      "attribution": "Édouard Manet · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg/960px-Edouard_Manet_-_Olympia_-_Google_Art_ProjectFXD.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10583,9 +10359,9 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Torre de Babel",
-      "A Noite Estrelada",
-      "Moça com Brinco de Pérola",
+      "O Três de Maio de 1808",
+      "O Nascimento de Vênus",
+      "Nighthawks",
       "Retrato dos Arnolfini"
     ],
     "correct": 3,
@@ -10595,9 +10371,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/960px-The_Arnolfini_portrait_%281434%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Arnolfini_portrait_(1434).jpg",
-      "attribution": "Jan van Eyck · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/The_Arnolfini_portrait_%281434%29.jpg/960px-The_Arnolfini_portrait_%281434%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10609,9 +10383,9 @@ export const QUESTIONS=[
     "text": "Qual é o nome desta obra?",
     "options": [
       "Andarilho sobre o Mar de Névoa",
-      "As Respigadoras",
-      "A Criação de Adão",
-      "Uma Tarde de Domingo na Grande Jatte"
+      "Mona Lisa",
+      "A Escola de Atenas",
+      "As Meninas"
     ],
     "correct": 0,
     "aliases": [
@@ -10620,9 +10394,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
-      "source": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
-      "attribution": "Caspar David Friedrich · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg"
     },
     "clue": null,
     "explanation": null,
@@ -10633,10 +10405,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Grito",
+      "A Grande Onda de Kanagawa",
       "Baile no Moulin de la Galette",
-      "Davi",
-      "Vênus de Milo"
+      "American Gothic",
+      "O Beijo"
     ],
     "correct": 1,
     "aliases": [
@@ -10645,9 +10417,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/960px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg",
-      "attribution": "Pierre-Auguste Renoir · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/960px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10658,10 +10428,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "O Nascimento de Vênus",
-      "Nighthawks",
+      "Saturno Devorando o Filho",
+      "A Última Ceia",
       "Impressão, Nascer do Sol",
-      "Retrato da Mãe do Artista"
+      "A Liberdade Guiando o Povo"
     ],
     "correct": 2,
     "aliases": [
@@ -10670,9 +10440,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/960px-Monet_-_Impression%2C_Sunrise.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg",
-      "attribution": "Claude Monet · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/960px-Monet_-_Impression%2C_Sunrise.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10683,9 +10451,9 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Escola de Atenas",
-      "As Meninas",
-      "O Jardim das Delícias",
+      "Moça com Brinco de Pérola",
+      "Teto da Capela Sistina",
+      "Retrato dos Arnolfini",
       "O Carro de Feno"
     ],
     "correct": 3,
@@ -10696,9 +10464,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/960px-John_Constable_-_The_Hay_Wain_%281821%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:John_Constable_-_The_Hay_Wain_(1821).jpg",
-      "attribution": "John Constable · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/John_Constable_-_The_Hay_Wain_%281821%29.jpg/960px-John_Constable_-_The_Hay_Wain_%281821%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10710,9 +10476,9 @@ export const QUESTIONS=[
     "text": "Qual é o nome desta obra?",
     "options": [
       "A Cigana Dormindo",
-      "American Gothic",
-      "O Beijo",
-      "Andarilho sobre o Mar de Névoa"
+      "Uma Tarde de Domingo na Grande Jatte",
+      "A Ronda Noturna",
+      "Impressão, Nascer do Sol"
     ],
     "correct": 0,
     "aliases": [
@@ -10721,9 +10487,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/960px-La_Boh%C3%A9mienne_endormie.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:La_Boh%C3%A9mienne_endormie.jpg",
-      "attribution": "Henri Rousseau · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/La_Boh%C3%A9mienne_endormie.jpg/960px-La_Boh%C3%A9mienne_endormie.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10734,10 +10498,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Última Ceia",
+      "Vênus de Milo",
       "Whistlejacket",
-      "A Liberdade Guiando o Povo",
-      "O Carro de Feno"
+      "Olympia",
+      "Os Jogadores de Cartas"
     ],
     "correct": 1,
     "aliases": [
@@ -10745,9 +10509,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Whistlejacket_by_George_Stubbs_edit.jpg/960px-Whistlejacket_by_George_Stubbs_edit.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Whistlejacket_by_George_Stubbs_edit.jpg",
-      "attribution": "George Stubbs · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Whistlejacket_by_George_Stubbs_edit.jpg/960px-Whistlejacket_by_George_Stubbs_edit.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10758,10 +10520,10 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Teto da Capela Sistina",
-      "Retrato dos Arnolfini",
+      "Retrato da Mãe do Artista",
+      "Baile no Moulin de la Galette",
       "Os Jogadores de Cartas",
-      "As Senhoritas de Avignon"
+      "Nenúfares"
     ],
     "correct": 2,
     "aliases": [
@@ -10770,34 +10532,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/960px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Les_Joueurs_de_cartes,_par_Paul_C%C3%A9zanne.jpg",
-      "attribution": "Paul Cézanne · Public domain"
-    },
-    "clue": null,
-    "explanation": null,
-    "source": null
-  },
-  {
-    "id": "v2:b8c5792d9491bc190a04",
-    "quiz": "arte",
-    "text": "Qual é o nome desta obra?",
-    "options": [
-      "A Ronda Noturna",
-      "Impressão, Nascer do Sol",
-      "Nenúfares",
-      "As Senhoritas de Avignon"
-    ],
-    "correct": 3,
-    "aliases": [
-      "as senhoritas de avignon",
-      "demoiselles davignon"
-    ],
-    "media": {
-      "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/960px-Les_Demoiselles_d%27Avignon.jpg",
-      "source": "https://en.wikipedia.org/wiki/File:Les_Demoiselles_d%27Avignon.jpg",
-      "attribution": "Pablo Picasso · PD-US"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg/960px-Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10808,21 +10543,19 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Morte de Marat",
-      "Olympia",
-      "Whistlejacket",
-      "Um Bar no Folies-Bergère"
+      "O Jardim das Delícias",
+      "A Cigana Dormindo",
+      "Um Bar no Folies-Bergère",
+      "A Morte de Marat"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "a morte de marat",
       "death of marat"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/960px-Death_of_Marat_by_David.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Death_of_Marat_by_David.jpg",
-      "attribution": "Jacques-Louis David · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Death_of_Marat_by_David.jpg/960px-Death_of_Marat_by_David.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10833,21 +10566,19 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Baile no Moulin de la Galette",
       "A Torre de Babel",
+      "Andarilho sobre o Mar de Névoa",
       "A Morte de Marat",
       "A Noite Estrelada"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "a torre de babel",
       "tower of babel"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg/960px-Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg",
-      "attribution": "Pieter Brueghel the Elder · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg/960px-Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_%28Vienna%29_-_Google_Art_Project_-_edited.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10858,21 +10589,19 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "A Cigana Dormindo",
-      "As Respigadoras",
+      "O Carro de Feno",
       "Nenúfares",
+      "As Respigadoras",
       "A Criação de Adão"
     ],
-    "correct": 2,
+    "correct": 1,
     "aliases": [
       "nenufares",
       "water lilies"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg/960px-Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg",
-      "attribution": "Claude Monet · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg/960px-Reflections_of_Clouds_on_the_Water-Lily_Pond.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10883,21 +10612,19 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "As Senhoritas de Avignon",
+      "Os Jogadores de Cartas",
       "O Grito",
-      "Davi",
-      "O Três de Maio de 1808"
+      "O Três de Maio de 1808",
+      "Davi"
     ],
-    "correct": 3,
+    "correct": 2,
     "aliases": [
       "o tres de maio de 1808",
       "the third of may 1808"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/960px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg",
-      "attribution": "El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_in_Google_Earth.jpg : Francisco de Goya derivative work: Papa Lima Whiskey 2 · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg/960px-El_Tres_de_Mayo%2C_by_Francisco_de_Goya%2C_from_Prado_thin_black_margin.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10908,21 +10635,19 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "As Respigadoras",
       "Nenúfares",
       "O Nascimento de Vênus",
-      "Nighthawks"
+      "Nighthawks",
+      "As Respigadoras"
     ],
-    "correct": 0,
+    "correct": 3,
     "aliases": [
       "as respigadoras",
       "the gleaners"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/960px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg",
-      "attribution": "Jean-François Millet · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg/960px-Jean-Fran%C3%A7ois_Millet_-_Gleaners_-_Google_Art_Project_2.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10933,21 +10658,19 @@ export const QUESTIONS=[
     "quiz": "arte",
     "text": "Qual é o nome desta obra?",
     "options": [
-      "Mona Lisa",
       "Um Bar no Folies-Bergère",
+      "Mona Lisa",
       "A Escola de Atenas",
       "As Meninas"
     ],
-    "correct": 1,
+    "correct": 0,
     "aliases": [
       "um bar no folies bergere",
       "a bar at the folies bergere"
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/960px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_(1882).jpg",
-      "attribution": "Édouard Manet · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg/960px-%22Un_Bar_aux_Folies-Berg%C3%A8re%22_by_%C3%89douard_Manet_%281882%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10971,9 +10694,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/960px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons_(cropped).jpg",
-      "attribution": "Benh LIEU SONG · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/960px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -10995,9 +10716,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/960px-Taj_Mahal_%28Edited%29.jpeg",
-      "source": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg",
-      "attribution": "Yann ; edited by Jim Carter · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/960px-Taj_Mahal_%28Edited%29.jpeg"
     },
     "clue": null,
     "explanation": null,
@@ -11022,9 +10741,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/960px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
-      "attribution": "Severin.stalder · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/960px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11048,9 +10765,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
-      "attribution": "FeaturedPics · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/960px-Colosseo_2020.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11074,9 +10789,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/960px-Sydney_Australia._%2821339175489%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Sydney_Australia._(21339175489).jpg",
-      "attribution": "Bernard Spragg. NZ from Christchurch, New Zealand · CC0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/960px-Sydney_Australia._%2821339175489%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11098,9 +10811,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_2023_(012).jpg",
-      "attribution": "Draceane · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11123,9 +10834,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/960px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
-      "attribution": "Frank Schulenburg · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/960px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11148,9 +10857,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/960px-Empire_State_Building_%28aerial_view%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Empire_State_Building_(aerial_view).jpg",
-      "attribution": "Sam Valadi · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/960px-Empire_State_Building_%28aerial_view%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11173,9 +10880,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/960px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa_(worlds_tallest_building)_and_the_Dubai_skyline_(25781049892).jpg",
-      "attribution": "imran shahabuddin · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/960px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11199,9 +10904,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/960px-Christ_the_Redeemer_-_Cristo_Redentor.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg",
-      "attribution": "Arne Müseler · CC BY-SA 3.0 de"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/960px-Christ_the_Redeemer_-_Cristo_Redentor.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11224,9 +10927,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg/960px-Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster,_London.jpg",
-      "attribution": "Christian David · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg/960px-Elizabeth_Tower_and_the_north_front_of_the_Palace_of_Westminster%2C_London.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11248,9 +10949,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Stonehenge2007_07_30.jpg",
-      "attribution": "garethwiscombe · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/960px-Stonehenge2007_07_30.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11274,9 +10973,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/960px-Hagia_Sophia_%28228968325%29.jpeg",
-      "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_(228968325).jpeg",
-      "attribution": "Adli Wahid · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/960px-Hagia_Sophia_%28228968325%29.jpeg"
     },
     "clue": null,
     "explanation": null,
@@ -11299,9 +10996,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SF_maig_2_cropped.jpg/960px-SF_maig_2_cropped.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:SF_maig_2_cropped.jpg",
-      "attribution": "Canaan · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/SF_maig_2_cropped.jpg/960px-SF_maig_2_cropped.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11324,9 +11019,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg",
-      "attribution": "Bjørn Christian Tørrissen · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/960px-Angkor_Wat.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11349,9 +11042,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg",
-      "attribution": "Steve Swayne · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/960px-The_Parthenon_in_Athens.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11376,9 +11067,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/960px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
-      "attribution": "Alvesgaspar · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/960px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11402,9 +11091,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/960px-Italy_-_Pisa_-_Leaning_Tower.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Italy_-_Pisa_-_Leaning_Tower.jpg",
-      "attribution": "Arne Müseler · CC BY-SA 3.0 de"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Italy_-_Pisa_-_Leaning_Tower.jpg/960px-Italy_-_Pisa_-_Leaning_Tower.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11428,9 +11115,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/960px-Notre-Dame_de_Paris%2C_4_October_2017.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris,_4_October_2017.jpg",
-      "attribution": "Ali Sabbagh · CC0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/960px-Notre-Dame_de_Paris%2C_4_October_2017.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11454,9 +11139,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/960px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
-      "attribution": "Giles Laurent · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg/960px-1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11478,9 +11161,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:Al_Deir_Petra.JPG",
-      "attribution": "Azurfrog · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG"
     },
     "clue": null,
     "explanation": null,
@@ -11503,9 +11184,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg",
-      "attribution": "Daniel Schwen · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/960px-Chichen_Itza_3.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11528,9 +11207,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Forbidden_City_-_View_from_Coal_Hill.jpg",
-      "attribution": "Pixelflake · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/960px-The_Forbidden_City_-_View_from_Coal_Hill.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11553,9 +11230,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/960px-Mount_Rushmore_detail_view_%28100MP%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mount_Rushmore_detail_view_(100MP).jpg",
-      "attribution": "Thomas Wolf , www.foto-tw.de · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/960px-Mount_Rushmore_detail_view_%28100MP%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11578,9 +11253,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/960px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Front_view_of_Statue_of_Liberty_(cropped).jpg",
-      "attribution": "AskALotl · CC0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/960px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11603,9 +11276,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/960px-Schloss_Neuschwanstein_2013.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Schloss_Neuschwanstein_2013.jpg",
-      "attribution": "Thomas Wolf , www.foto-tw.de · CC BY-SA 3.0 de"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Schloss_Neuschwanstein_2013.jpg/960px-Schloss_Neuschwanstein_2013.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11628,9 +11299,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/960px-Mont-Saint-Michel_vu_du_ciel.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Mont-Saint-Michel_vu_du_ciel.jpg",
-      "attribution": "Amaustan · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mont-Saint-Michel_vu_du_ciel.jpg/960px-Mont-Saint-Michel_vu_du_ciel.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11653,9 +11322,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/960px-Brandenburger_Tor_abends.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_abends.jpg",
-      "attribution": "Thomas Wolf , www.foto-tw.de · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/960px-Brandenburger_Tor_abends.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11679,9 +11346,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/960px-Moscow_Kremlin_%288281675670%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Moscow_Kremlin_(8281675670).jpg",
-      "attribution": "Pavel Kazachkov from Moscow, Russia · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/960px-Moscow_Kremlin_%288281675670%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11703,9 +11368,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/960px-Tower_Bridge_at_Dawn.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_at_Dawn.jpg",
-      "attribution": "Fuzzypiggy · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/960px-Tower_Bridge_at_Dawn.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11729,9 +11392,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/960px-Petronas_Towers_Logo.svg.png",
-      "source": "https://commons.wikimedia.org/wiki/File:Petronas_Towers_Logo.svg",
-      "attribution": "Unknown author Unknown author · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/960px-Petronas_Towers_Logo.svg.png"
     },
     "clue": null,
     "explanation": null,
@@ -11754,9 +11415,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/AhuTongariki.JPG/960px-AhuTongariki.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:AhuTongariki.JPG",
-      "attribution": "Ian Sewell · CC BY 2.5"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/AhuTongariki.JPG/960px-AhuTongariki.JPG"
     },
     "clue": null,
     "explanation": null,
@@ -11778,9 +11437,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/960px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
-      "attribution": "Jebulon · CC0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/960px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11803,9 +11460,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Istanbul_%2834223582516%29_%28cropped%29.jpg/960px-Istanbul_%2834223582516%29_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Istanbul_(34223582516)_(cropped).jpg",
-      "attribution": "Pedro Szekely from Los Angeles, USA · CC BY-SA 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Istanbul_%2834223582516%29_%28cropped%29.jpg/960px-Istanbul_%2834223582516%29_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11828,9 +11483,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Potala_Palace_HQ.jpg",
-      "attribution": "Lhasa Government · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/960px-Potala_Palace_HQ.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11855,9 +11508,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/960px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
-      "attribution": "Douwe C. van der Zee · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/960px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11881,9 +11532,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sphinx_with_the_third_pyramid.jpg/960px-Sphinx_with_the_third_pyramid.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Sphinx_with_the_third_pyramid.jpg",
-      "attribution": "Hesham Ebaid · CC0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Sphinx_with_the_third_pyramid.jpg/960px-Sphinx_with_the_third_pyramid.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11905,9 +11554,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Pradaksina.jpg",
-      "attribution": "Heri nugroho · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/960px-Pradaksina.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11930,9 +11577,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_(cropped).jpg",
-      "attribution": "ToucanWings · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg/960px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_081_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11955,9 +11600,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Windsor_Castle_at_Sunset_-_Nov_2006.jpg/960px-Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
-      "attribution": "Diliff · CC BY 2.5"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Windsor_Castle_at_Sunset_-_Nov_2006.jpg/960px-Windsor_Castle_at_Sunset_-_Nov_2006.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -11980,9 +11623,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg/960px-City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg",
-      "attribution": "Enric · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg/960px-City_of_Edinburgh_-_Edinburgh_Castle_-_20140421004403.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12005,9 +11646,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/960px-Himeji_castle_in_may_2015.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Himeji_castle_in_may_2015.jpg",
-      "attribution": "Nikos Kitsakis · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Himeji_castle_in_may_2015.jpg/960px-Himeji_castle_in_may_2015.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12031,9 +11670,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/960px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg",
-      "attribution": "Nacaru · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg/960px-Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12056,9 +11693,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg",
-      "attribution": "Basile Morin · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg/960px-Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine%2C_Kyoto%2C_Japan.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12081,9 +11716,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lincoln_Memorial_east_side.JPG/960px-Lincoln_Memorial_east_side.JPG",
-      "source": "https://commons.wikimedia.org/wiki/File:Lincoln_Memorial_east_side.JPG",
-      "attribution": "Martin Falbisoner · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lincoln_Memorial_east_side.JPG/960px-Lincoln_Memorial_east_side.JPG"
     },
     "clue": null,
     "explanation": null,
@@ -12106,9 +11739,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/960px-White_House_north_and_south_sides.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:White_House_north_and_south_sides.jpg",
-      "attribution": "(top) Cezary p (bottom) MattWade · CC BY-SA 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/960px-White_House_north_and_south_sides.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12131,9 +11762,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg/960px-Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_London_Morning_2020_01_(cropped).jpg",
-      "attribution": "Julian Herzog ( Website ) · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg/960px-Buckingham_Palace_London_Morning_2020_01_%28cropped%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12156,9 +11785,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Castelul_Bran2.jpg/960px-Castelul_Bran2.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Castelul_Bran2.jpg",
-      "attribution": "Dobre Cezar · CC BY-SA 3.0 ro"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Castelul_Bran2.jpg/960px-Castelul_Bran2.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12180,9 +11807,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg/960px-The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Atomium_during_civil_twilight_(DSCF1135).jpg",
-      "attribution": "Trougnouf (Benoit Brummer) · CC BY 4.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg/960px-The_Atomium_during_civil_twilight_%28DSCF1135%29.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12204,9 +11829,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/960px-Space_Needle_2011-07-04.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Space_Needle_2011-07-04.jpg",
-      "attribution": "Jordon Kalilich · Public domain"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/960px-Space_Needle_2011-07-04.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12229,9 +11852,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/960px-St_Louis_night_expblend_cropped.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:St_Louis_night_expblend_cropped.jpg",
-      "attribution": "St_Louis_night_expblend.jpg : Daniel Schwen derivative work: ← fetch comms · CC BY-SA 3.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/960px-St_Louis_night_expblend_cropped.jpg"
     },
     "clue": null,
     "explanation": null,
@@ -12254,9 +11875,7 @@ export const QUESTIONS=[
     ],
     "media": {
       "type": "image",
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/960px-LotusDelhi.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:LotusDelhi.jpg",
-      "attribution": "Vandelizer · CC BY 2.0"
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/960px-LotusDelhi.jpg"
     },
     "clue": null,
     "explanation": null,

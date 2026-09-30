@@ -202,7 +202,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
   <div class="home-layout"><section class="catalog-pane" aria-label="Quizzes disponíveis"><div class="play-mode" aria-label="Como você vai jogar"><div class="play-mode-main"><div class="play-mode-buttons" role="group" aria-label="Tipo de partida"><button type="button" data-play-mode="solo">Jogar sozinho</button><button type="button" data-play-mode="host">Apresentar com placar</button></div><div class="solo-length" id="solo-length"><span>PARTIDA</span><div class="length-switch" role="group" aria-label="Duração da partida"><button type="button" data-solo-length="quick">Rápida · 10</button><button type="button" data-solo-length="casual">Casual · 50</button><button type="button" data-solo-length="training">Treino · 100</button></div></div><p id="play-mode-description">Escolha até 10, 50 ou 100 perguntas, com resultado ao final.</p></div><button id="mixed-start" class="mixed-start" type="button"><strong>Jogar misto</strong><small>Todas as categorias</small></button></div><div class="home-grid" id="quiz-grid"></div></section>
   <aside class="rank-hub" id="ranking" aria-label="Ranking online"><div class="rank-hub-head"><span class="eyebrow">DESAFIO ONLINE</span><h2>Ranking</h2><p>Escolha até 10, 50 ou 100 perguntas. Acertos primeiro; tempo para desempatar.</p></div><div id="rank-connect" class="rank-connect"><strong>Conecte seu Discord</strong><p>Seu perfil, resultados e posições ficam salvos online.</p><a href="/auth/discord/start" class="rank-connect-button">Entrar com Discord</a></div><div id="rank-signed" class="rank-signed" hidden><span class="rank-signed-dot"></span><span>Conectado como <strong id="rank-user">Jogador</strong></span><button id="rank-logout" type="button">Sair</button></div><div class="rank-config"><h3>Nova partida ranqueada</h3><div class="rank-config-fields"><label for="rank-category">Tema<select id="rank-category"></select></label><label for="rank-difficulty">Dificuldade<select id="rank-difficulty"><option value="easy">Fácil · alternativas</option><option value="hard">Difícil · digitar</option></select></label></div><div class="rank-length-group"><span class="rank-length-label">PARTIDA</span><div class="rank-length-switch" role="group" aria-label="Duração da partida ranqueada"><button type="button" data-rank-length="quick">Rápida · 10</button><button type="button" data-rank-length="casual">Casual · 50</button><button type="button" data-rank-length="training">Treino · 100</button></div><small id="rank-length-note"></small></div><button id="rank-begin" class="rank-action" type="button">Jogar ranqueado</button><p id="rank-status" role="status"></p></div><div class="rank-board"><div class="rank-board-title"><h3>Melhores resultados</h3><span id="rank-board-count">Top 50</span></div><div class="rank-board-filters"><select id="board-category" aria-label="Tema do ranking"></select><div class="board-difficulty" role="group" aria-label="Dificuldade do ranking"><button type="button" data-board-difficulty="easy">Fácil</button><button type="button" data-board-difficulty="hard">Difícil</button></div></div><div class="board-length-switch" role="group" aria-label="Duração do ranking"><button type="button" data-board-length="quick">10</button><button type="button" data-board-length="casual">50</button><button type="button" data-board-length="training">100</button></div><small id="board-length-note"></small><table class="rank-table"><thead><tr><th>#</th><th>Jogador</th><th>Acertos</th><th>Tempo</th></tr></thead><tbody id="rank-rows"></tbody></table></div></aside></div>
   <section class="home-history" id="home-history"></section>
-  <footer class="home-footer"><span>QUIZARENA · FEITO PARA JOGAR JUNTO</span><span>Escolha um tema e comece.</span></footer>
+  <footer class="home-footer"><span>QUIZARENA · FEITO PARA JOGAR JUNTO</span><a href="/creditos">Créditos das imagens</a></footer>
 </div>
 <div id="ranked" class="screen"><header class="flow-header"><button id="rank-back" type="button">Voltar</button><span>QUIZARENA / RANQUEADO</span><strong id="rank-flow-title">Desafio</strong></header><main class="ranked-main"><div id="rank-game" class="ranked-card" hidden><div class="ranked-progress"><span>Pergunta <strong id="rank-position"></strong></span><span><strong id="rank-hits">0</strong> acertos</span><span id="rank-time">45s</span></div><div class="ranked-progress-track"><span id="rank-progress-bar"></span></div><div class="ranked-question-label"><span class="ranked-question-icon"><img id="rank-question-icon" src="category-icons/capitais.png" alt=""></span><span><small>DESAFIO RANQUEADO</small><strong id="rank-question-category">Categoria</strong></span></div><h1 id="rank-prompt"></h1><div id="rank-media" class="rank-media" hidden></div><div id="rank-options" class="rank-options"></div><form id="rank-answer" class="rank-answer" hidden><input id="rank-input" aria-label="Sua resposta" autocomplete="off" maxlength="120"><button type="submit">Responder</button></form><p id="rank-game-status" role="status"></p></div><div id="rank-finish" class="ranked-card rank-finish-card" hidden><div class="result-heading"><span class="eyebrow">DESAFIO RANQUEADO</span><h1>Partida concluída</h1><p id="rank-result">Resultado salvo no seu perfil.</p></div><div class="result-overview"><div class="result-gauge" id="rank-result-gauge"><span id="rank-result-rate">0%</span><small>DE ACERTOS</small></div><div class="result-metrics"><div><span>RESPOSTAS CERTAS</span><strong id="rank-result-score">0 / 0</strong></div><div><span>TEMPO TOTAL</span><strong id="rank-result-time">0m 00s</strong></div></div></div><p class="result-footnote">Resultado salvo no seu perfil. Compare sua marca no ranking da categoria.</p><button id="rank-restart" class="rank-action" type="button">Ver rankings e jogar de novo</button></div></main></div>
 <div id="host-info" class="host-info-modal" role="dialog" aria-modal="true" aria-labelledby="host-info-title" hidden><div class="host-info-card"><span class="eyebrow">PARA JOGAR EM GRUPO</span><h2 id="host-info-title">Apresentar com placar</h2><p>Compartilhe sua tela com a turma. Leia a pergunta, escolha quem respondeu e marque os pontos no painel lateral.</p><p>Você pode adicionar pessoas ou equipes, ajustar o tempo por pergunta e ver o resumo no fim. A pontuação fica neste navegador.</p><button id="host-info-close" type="button">Entendi, vamos jogar</button></div></div>
@@ -253,7 +253,6 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
           <div class="g-map-card" id="g-map-card" style="display:none"></div>
           <div class="g-format-card" id="g-format-card" style="display:none"></div>
         </div>
-        <div id="g-image-credit" class="g-image-credit" style="display:none"></div>
         <div class="g-input-area">
           <label id="g-answer-label" class="g-answer-label" for="g-input">Sua resposta</label>
           <input id="g-input" type="text" placeholder="Digite a resposta..." autocomplete="off" spellcheck="false"/>
@@ -505,22 +504,6 @@ function showMapAnswer(){
   label.style.left=Math.max(5,Math.min(95,point.x))+"%";label.style.top=point.y+"%";
   card.appendChild(label);
 }
-function showMediaCredit(){
-  const box=$("g-image-credit");box.replaceChildren();
-  if(AQ.kind==="map"||AQ.kind==="timeline"||AQ.kind==="match"||AQ.getText)return;
-  if(currentMedia?.fileUrl){
-    box.append(document.createTextNode("Imagem: "+currentMedia.author+" · "));
-    if(currentMedia.licenseUrl){const license=document.createElement("a");license.href=currentMedia.licenseUrl;license.target="_blank";license.rel="noopener noreferrer";license.textContent=currentMedia.license;box.append(license);}else box.append(document.createTextNode(currentMedia.license));
-    box.append(document.createTextNode(" · "));
-    const link=document.createElement("a");link.href=currentMedia.fileUrl;link.target="_blank";link.rel="noopener noreferrer";link.textContent="página do arquivo";box.append(link);
-  }else if(currentMedia?.src){
-    box.append(document.createTextNode("Bandeira: FlagCDN / Flagpedia · "));
-    const link=document.createElement("a");link.href=currentMedia.src;link.target="_blank";link.rel="noopener noreferrer";link.textContent="abrir imagem";box.append(link);
-  }else if(current?.wiki){
-    const link=document.createElement("a");link.href="https://en.wikipedia.org/wiki/"+encodeURIComponent((Array.isArray(current.wiki)?current.wiki[0]:current.wiki).replace(/ /g,"_"));link.target="_blank";link.rel="noopener noreferrer";link.textContent="Ver artigo de referência";box.append(link);
-  }
-  box.style.display=box.childNodes.length?"":"none";
-}
 function skipUnavailableImage(){
   failedImages.add(current);round=Math.max(0,round-1);loadingRound=-1;
   if(playMode==='solo'&&reserveQueue.length)queue.push(reserveQueue.pop());
@@ -590,7 +573,7 @@ async function nextRound(){
   const img=$("g-img"),ph=$("g-img-ph"),phIcon=$("g-img-ph-icon"),phLabel=$("g-img-ph-label");
   const imageCard=$("g-image-card"),textCard=$("g-text-card"),mapCard=$("g-map-card"),formatCard=$('g-format-card');
   formatCard.style.display='none';$('g-explanation').hidden=true;$('g-explanation').replaceChildren();
-  currentMedia=null;$("g-image-credit").style.display="none";
+  currentMedia=null;
   img.style.display="none";ph.style.display="flex";
   resetImageCardSize();
   phIcon.textContent="···";phLabel.textContent="Carregando imagem...";
@@ -665,7 +648,6 @@ function reveal(skipped,wrongLabel){
   }
   if(AQ.kind==="map")showMapAnswer();
   else if(AQ.kind==='timeline'||AQ.kind==='match')showFormatAnswer();
-  else showMediaCredit();
   if(current.explanation){const box=$('g-explanation');box.hidden=false;const text=document.createElement('p');text.textContent=current.explanation;box.append(text);if(current.source){const source=document.createElement('a');source.href=current.source;source.target='_blank';source.rel='noopener noreferrer';source.textContent='Conferir fonte';box.append(source)}requestAnimationFrame(()=>box.scrollIntoView({block:'nearest',behavior:'smooth'}))}
 }
 

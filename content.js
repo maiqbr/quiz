@@ -2450,7 +2450,7 @@ const CURATED_MEDIA={
     "reviewed": "2026-09-29",
     "fileVersion": "2008-12-29T13:54:37Z",
     "sha1": "195ad1c0f988b8ecd1cf34dca81f102370ae2b06",
-    "status": "selected"
+    "status": "no-free-image"
   },
   "The_Son_of_Man": {
     "reviewed": "2026-09-29",

@@ -37,7 +37,7 @@ for(const quiz of QUIZZES){
       const pair=item.pairs[index%item.pairs.length];text=`Qual é a capital de ${pair.country}?`;answer=pair.capital;options=pool.flatMap(entry=>entry.pairs.map(p=>p.capital));aliases=[];
     }else if(['animais','arte','monumentos'].includes(quiz.id)){
       if(item.media?.status!=='selected')throw new Error(`${quiz.id}: item sem imagem no ranking`);
-      media={type:'image',src:item.media.src,source:item.media.fileUrl,attribution:`${item.media.author} · ${item.media.license}`};
+      media={type:'image',src:item.media.src};
     }
     all.push(make(id,quiz.id,text,answer,index,options,{aliases,media,clue,explanation:item.explanation||null,source:item.source||null,distractors:item.distractors||null}));
   });

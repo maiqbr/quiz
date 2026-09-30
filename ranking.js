@@ -50,7 +50,6 @@
     gameStatus('');const media=el('rank-media');media.replaceChildren();media.hidden=!question.media&&!question.clue;
     if(question.media?.type==='image'){const img=document.createElement('img');img.src=question.media.src;img.alt='Imagem da pergunta';img.referrerPolicy='no-referrer';img.onerror=()=>{media.replaceChildren();media.textContent=question.clue||'Imagem indisponível.'};media.append(img)}
     else if(question.clue)media.textContent=question.clue;
-    if(question.media?.source){const source=document.createElement('a');source.href=question.media.source;source.target='_blank';source.rel='noopener noreferrer';source.textContent=question.media.attribution||'Fonte: Wikimedia Commons';media.append(source)}
     const choices=el('rank-options');choices.replaceChildren();choices.hidden=question.difficulty==='hard';el('rank-answer').hidden=question.difficulty!=='hard';
     if(question.difficulty==='easy')question.options.forEach((name,index)=>{const button=document.createElement('button');button.type='button';button.textContent=name;button.addEventListener('click',()=>answer(index));choices.append(button)});
     else{el('rank-input').value='';el('rank-input').disabled=false;el('rank-input').focus()}
