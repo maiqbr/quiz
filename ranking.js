@@ -10,6 +10,7 @@
     categories.forEach(category=>{const option=document.createElement('option');option.value=category.id;option.textContent=includeCount?`${category.title} · ${category.count}`:category.title;select.append(option)});
     select.value=id==='rank-category'?'capitais':'misto';
   }
+  el('rank-difficulty').value='easy';
   function countFor(categoryId,length){return Math.min(categories.find(category=>category.id===categoryId)?.count||0,lengths[length].limit)}
   function rankLengthNote(){const count=countFor(el('rank-category').value,rankLength);el('rank-length-note').textContent=`${count} perguntas neste tema${count<lengths[rankLength].limit?' · todas as disponíveis':''}.`}
   function setRankLength(value){if(!lengths[value]?.limit)return;rankLength=value;document.querySelectorAll('[data-rank-length]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.rankLength===value)));rankLengthNote()}
@@ -25,7 +26,7 @@
     let data;try{data=await response.json()}catch{throw new Error('Ranking online indisponível neste endereço.')}
     if(!response.ok)throw new Error(data.error||'Falha na requisição');return data;
   }
-  function show(id){for(const screen of document.querySelectorAll('.screen'))screen.classList.toggle('active',screen.id===id);window.scrollTo(0,0)}
+  function show(id){for(const screen of document.querySelectorAll('.screen'))screen.classList.toggle('active',screen.id===id);if(location.hash)history.replaceState(null,'',location.pathname+location.search);el(id).scrollTo(0,0);window.scrollTo(0,0)}
   function status(message){el('rank-status').textContent=message}
   function gameStatus(message,kind=''){const box=el('rank-game-status');box.textContent=message;box.className=kind}
   function avatar(target,account){target.replaceChildren();if(account.avatar){const img=document.createElement('img');img.src=account.avatar;img.alt='';img.referrerPolicy='no-referrer';target.append(img)}else target.textContent=(account.name||'?').slice(0,1).toUpperCase()}
@@ -58,6 +59,11 @@
   async function answer(choice){
     if(busy||!current)return;busy=true;clearInterval(tick);el('rank-options').querySelectorAll('button').forEach(button=>button.disabled=true);el('rank-input').disabled=true;
     try{const result=await api('/api/run/answer',{method:'POST',body:JSON.stringify({runId,choice})});hits=result.hits;gameStatus((result.correct?'Resposta correta.':`Resposta: ${result.answer}.`)+(result.explanation?' '+result.explanation:''),result.correct?'success':'danger');
+      if(current.difficulty==='easy'){
+        const buttons=[...el('rank-options').querySelectorAll('button')];
+        if(Number.isInteger(choice)&&choice>=0&&buttons[choice])buttons[choice].classList.add(result.correct?'answer-correct':'answer-wrong');
+        if(!result.correct){const correctIndex=current.options.indexOf(result.answer);if(buttons[correctIndex]&&correctIndex!==choice)buttons[correctIndex].classList.add('answer-correct')}
+      }else el('rank-input').classList.add(result.correct?'answer-correct':'answer-wrong');
       if(result.finished){current=null;runId=null;el('rank-game').hidden=true;el('rank-finish').hidden=false;el('rank-result').textContent=`${title[runQuiz]||'Quiz Misto'} · ${lengths[runLength]?.label||'Partida'}`;el('rank-result-score').textContent=`${hits} / ${result.total}`;el('rank-result-time').textContent=duration(result.elapsedMs);const rate=result.total?Math.round(hits/result.total*100):0;el('rank-result-rate').textContent=`${rate}%`;el('rank-result-gauge').style.setProperty('--result-rate',`${rate}%`);el('rank-restart').focus();await board()}
       else{await new Promise(resolve=>setTimeout(resolve,900));renderQuestion(result.question)}
     }catch(error){gameStatus(error.message);el('rank-input').disabled=false;el('rank-options').querySelectorAll('button').forEach(button=>button.disabled=false);if(/registrada|encerrada/.test(error.message))await resume().catch(()=>{})}
@@ -102,9 +108,10 @@
   }
   async function logout(){try{await api('/api/logout',{method:'POST',body:'{}'});location.href='/'}catch(error){status(error.message)}}
   el('rank-begin').addEventListener('click',start);el('rank-answer').addEventListener('submit',event=>{event.preventDefault();answer(el('rank-input').value)});
-  el('rank-back').addEventListener('click',()=>{clearInterval(tick);current=null;show('home')});el('rank-restart').addEventListener('click',()=>{show('home');location.hash='ranking'});
+  el('rank-back').addEventListener('click',()=>{clearInterval(tick);current=null;show('home')});el('rank-restart').addEventListener('click',()=>{show('home');requestAnimationFrame(()=>el('ranking').scrollIntoView({behavior:'smooth',block:'start'}))});
   el('board-category').addEventListener('change',board);document.querySelectorAll('[data-board-difficulty]').forEach(button=>button.addEventListener('click',()=>setBoardDifficulty(button.dataset.boardDifficulty)));setBoardLength(boardLength,false);setBoardDifficulty(boardDifficulty,false);
   el('header-profile').addEventListener('click',()=>profile());el('profile-back').addEventListener('click',()=>show('home'));
   el('profile-more').addEventListener('click',()=>profile(false));el('rank-logout').addEventListener('click',logout);el('profile-logout').addEventListener('click',logout);
+  const openRanking=location.hash==='#ranking';if(location.hash)history.replaceState(null,'',location.pathname+location.search);if(openRanking)requestAnimationFrame(()=>el('ranking').scrollIntoView({block:'start'}));
   (async()=>{try{const data=await api('/api/me');user=data.user;if(user){el('header-discord-login').hidden=true;el('header-profile').hidden=false;el('header-name').textContent=user.name;avatar(el('header-avatar'),user);el('rank-connect').hidden=true;el('rank-signed').hidden=false;el('rank-user').textContent=user.name;if(await resume())status('Partida em andamento retomada.')}await board()}catch(error){status(error.message);await board()}})();
 })();

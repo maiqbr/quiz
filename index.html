@@ -334,7 +334,7 @@ let players=[],pid=1,sidebarOpen=true;
 let gameMode="all",gameCont="americas",pendingMode="all",pendingCont="americas";
 let timerSec=0,timerInt=null;
 let loadingRound=0,requestToken=0; // track async loads across quiz changes
-let difficulty=localStorage.getItem("quizDifficulty")||"hard"; // "hard" = digitar | "easy" = múltipla escolha
+let difficulty="easy"; // Cada visita e nova partida começam com alternativas.
 let playMode=localStorage.getItem("quizPlayMode")==="host"?"host":"solo";
 let questionSecondsLeft=0,roundStartedAt=0,roundResults=[],roundCorrect=false,sessionClosed=false;
 const LENGTH_LIMITS={quick:10,casual:50,training:100};
@@ -405,6 +405,7 @@ function stopTimer(){if(timerInt){clearInterval(timerInt);timerInt=null;}}
 function updateTimer(){const m=String(Math.floor(timerSec/60)).padStart(2,"0"),s=String(timerSec%60).padStart(2,"0");$("g-timer").textContent=m+":"+s;$('g-round-timer').textContent=questionSecondsLeft+'s';}
 
 function freshStart(){
+  difficulty="easy";updateDiffToggle();
   failedImages=new Set();
   const shuffled=shuffle(isMixed?QUIZZES.flatMap(quiz=>quiz.getPool('all').map(item=>({quizId:quiz.id,item}))):[...AQ.getPool(gameMode,gameCont)]);
   sessionTotal=playMode==='solo'?Math.min(LENGTH_LIMITS[soloLength],shuffled.length):shuffled.length;
@@ -675,7 +676,7 @@ function markCorrect(){
 }
 
 function setDifficulty(mode){
-  difficulty=mode;localStorage.setItem("quizDifficulty",mode);
+  difficulty=mode;
   updateDiffToggle();
   if(AQ&&current&&!revealed)renderAnswerUI();
 }
