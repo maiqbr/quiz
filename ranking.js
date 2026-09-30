@@ -19,7 +19,7 @@
   }
   function show(id){for(const screen of document.querySelectorAll('.screen'))screen.classList.toggle('active',screen.id===id);window.scrollTo(0,0)}
   function status(message){el('rank-status').textContent=message}
-  function gameStatus(message){el('rank-game-status').textContent=message}
+  function gameStatus(message,kind=''){const box=el('rank-game-status');box.textContent=message;box.className=kind}
   function avatar(target,account){target.replaceChildren();if(account.avatar){const img=document.createElement('img');img.src=account.avatar;img.alt='';img.referrerPolicy='no-referrer';target.append(img)}else target.textContent=(account.name||'?').slice(0,1).toUpperCase()}
   async function board(){
     const rows=el('rank-rows');rows.replaceChildren();
@@ -34,6 +34,7 @@
     el('rank-game').hidden=false;el('rank-finish').hidden=true;el('rank-flow-title').textContent=title[question.category]||'Desafio';
     el('rank-position').textContent=`${question.number} / ${question.total}`;el('rank-hits').textContent=hits;
     el('rank-progress-bar').style.width=`${(question.number-1)/question.total*100}%`;el('rank-prompt').textContent=question.text;
+    el('rank-question-icon').src=`category-icons/${question.category}.png`;el('rank-question-category').textContent=title[question.category]||'Quiz Misto';
     gameStatus('');const media=el('rank-media');media.replaceChildren();media.hidden=!question.media&&!question.clue;
     if(question.media?.type==='image'){const img=document.createElement('img');img.src=question.media.src;img.alt='Imagem da pergunta';img.referrerPolicy='no-referrer';img.onerror=()=>{media.replaceChildren();media.textContent=question.clue||'Imagem indisponível.'};media.append(img)}
     else if(question.clue)media.textContent=question.clue;
@@ -45,7 +46,7 @@
   }
   async function answer(choice){
     if(busy||!current)return;busy=true;clearInterval(tick);el('rank-options').querySelectorAll('button').forEach(button=>button.disabled=true);el('rank-input').disabled=true;
-    try{const result=await api('/api/run/answer',{method:'POST',body:JSON.stringify({runId,choice})});hits=result.hits;gameStatus((result.correct?'Resposta correta.':`Resposta: ${result.answer}.`)+(result.explanation?' '+result.explanation:''));
+    try{const result=await api('/api/run/answer',{method:'POST',body:JSON.stringify({runId,choice})});hits=result.hits;gameStatus((result.correct?'Resposta correta.':`Resposta: ${result.answer}.`)+(result.explanation?' '+result.explanation:''),result.correct?'success':'danger');
       if(result.finished){current=null;runId=null;el('rank-game').hidden=true;el('rank-finish').hidden=false;el('rank-result').textContent=`${hits} de ${result.total} acertos em ${duration(result.elapsedMs)}.`;await board()}
       else{await new Promise(resolve=>setTimeout(resolve,900));renderQuestion(result.question)}
     }catch(error){gameStatus(error.message);el('rank-input').disabled=false;el('rank-options').querySelectorAll('button').forEach(button=>button.disabled=false);if(/registrada|encerrada/.test(error.message))await resume().catch(()=>{})}

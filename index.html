@@ -204,7 +204,7 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
   <section class="home-history" id="home-history"></section>
   <footer class="home-footer"><span>QUIZARENA · FEITO PARA JOGAR JUNTO</span><span>Escolha um tema e comece.</span></footer>
 </div>
-<div id="ranked" class="screen"><header class="flow-header"><button id="rank-back" type="button">Voltar</button><span>QUIZARENA / RANQUEADO</span><strong id="rank-flow-title">Desafio</strong></header><main class="ranked-main"><div id="rank-game" class="ranked-card" hidden><div class="ranked-progress"><span>Pergunta <strong id="rank-position"></strong></span><span><strong id="rank-hits">0</strong> acertos</span><span id="rank-time">45s</span></div><div class="ranked-progress-track"><span id="rank-progress-bar"></span></div><h1 id="rank-prompt"></h1><div id="rank-media" class="rank-media" hidden></div><div id="rank-options" class="rank-options"></div><form id="rank-answer" class="rank-answer" hidden><input id="rank-input" aria-label="Sua resposta" autocomplete="off" maxlength="120"><button type="submit">Responder</button></form><p id="rank-game-status" role="status"></p></div><div id="rank-finish" class="ranked-card" hidden><span class="eyebrow">PARTIDA CONCLUÍDA</span><h1>Seu resultado</h1><p id="rank-result"></p><button id="rank-restart" class="rank-action" type="button">Voltar aos quizzes</button></div></main></div>
+<div id="ranked" class="screen"><header class="flow-header"><button id="rank-back" type="button">Voltar</button><span>QUIZARENA / RANQUEADO</span><strong id="rank-flow-title">Desafio</strong></header><main class="ranked-main"><div id="rank-game" class="ranked-card" hidden><div class="ranked-progress"><span>Pergunta <strong id="rank-position"></strong></span><span><strong id="rank-hits">0</strong> acertos</span><span id="rank-time">45s</span></div><div class="ranked-progress-track"><span id="rank-progress-bar"></span></div><div class="ranked-question-label"><span class="ranked-question-icon"><img id="rank-question-icon" src="category-icons/capitais.png" alt=""></span><span><small>DESAFIO RANQUEADO</small><strong id="rank-question-category">Categoria</strong></span></div><h1 id="rank-prompt"></h1><div id="rank-media" class="rank-media" hidden></div><div id="rank-options" class="rank-options"></div><form id="rank-answer" class="rank-answer" hidden><input id="rank-input" aria-label="Sua resposta" autocomplete="off" maxlength="120"><button type="submit">Responder</button></form><p id="rank-game-status" role="status"></p></div><div id="rank-finish" class="ranked-card" hidden><span class="eyebrow">PARTIDA CONCLUÍDA</span><h1>Seu resultado</h1><p id="rank-result"></p><button id="rank-restart" class="rank-action" type="button">Voltar aos quizzes</button></div></main></div>
 <div id="host-info" class="host-info-modal" role="dialog" aria-modal="true" aria-labelledby="host-info-title" hidden><div class="host-info-card"><span class="eyebrow">PARA JOGAR EM GRUPO</span><h2 id="host-info-title">Apresentar com placar</h2><p>Compartilhe sua tela com a turma. Leia a pergunta, escolha quem respondeu e marque os pontos no painel lateral.</p><p>Você pode adicionar pessoas ou equipes, ajustar o tempo por pergunta e ver o resumo no fim. A pontuação fica neste navegador.</p><button id="host-info-close" type="button">Entendi, vamos jogar</button></div></div>
 <div id="profile" class="screen"><header class="flow-header profile-flow"><button id="profile-back" type="button">Voltar aos quizzes</button><span>QUIZARENA / JOGADOR</span><button id="profile-logout" type="button">Sair do Discord</button></header><main class="profile-main"><div class="profile-hero"><div class="profile-hero-top"><span class="eyebrow">PERFIL DO JOGADOR</span><span class="profile-online"><span></span> Conectado com Discord</span></div><div class="profile-title"><span id="profile-avatar" class="profile-avatar" aria-hidden="true"></span><div><h1 id="profile-name">Perfil</h1><p>Seus resultados, recordes e posições em um só lugar.</p></div></div><div id="profile-stats" class="profile-stats"></div></div><section class="profile-section profile-records-section"><div class="profile-section-head"><div><span class="eyebrow">MELHORES MARCAS</span><h2>Seus recordes</h2></div><p>Um resultado por tema e dificuldade.</p></div><div id="profile-records" class="profile-records"></div></section><div class="profile-activity"><section class="profile-section"><div class="profile-section-head"><div><span class="eyebrow">PARTIDAS RANQUEADAS</span><h2>Histórico online</h2></div></div><div id="profile-history" class="profile-history"></div><button id="profile-more" type="button" hidden>Carregar mais</button></section><section class="profile-section"><div class="profile-section-head"><div><span class="eyebrow">NESTE DISPOSITIVO</span><h2>Partidas locais</h2></div></div><div id="profile-local" class="profile-history"></div></section></div></main></div>
 <div id="game" class="screen">
@@ -235,28 +235,36 @@ body{background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI
   <div class="g-body">
     <div class="g-left">
       <div class="g-glow"></div>
-      <div class="g-image-wrap" id="g-image-wrap-el">
-      <div class="g-image-card" id="g-image-card">
-        <img id="g-img" src="" alt="Imagem da pergunta"/>
-        <div id="g-img-ph"><span id="g-img-ph-icon">···</span><span id="g-img-ph-label"></span></div>
-      </div>
-      <div class="g-text-card" id="g-text-card" style="display:none">
-        <div class="g-text-phrase" id="g-text-phrase"></div>
-      </div>
-      <div class="g-map-card" id="g-map-card" style="display:none"></div>
-      <div class="g-format-card" id="g-format-card" style="display:none"></div>
-      </div>
-      <div id="g-image-credit" class="g-image-credit" style="display:none"></div>
-      <div id="g-qlabel" class="g-qlabel"></div>
-      <div id="g-explanation" class="g-explanation" hidden></div>
-      <div class="g-input-area">
-        <input id="g-input" type="text" placeholder="Digite a resposta..." autocomplete="off" spellcheck="false"/>
-        <div id="g-options" class="g-options" style="display:none"></div>
-        <div id="g-feedback">&nbsp;</div>
-        <div class="g-btn-row">
-          <button class="gbtn gbtn-skip" id="g-skip">Desistir</button>
-          <button class="gbtn gbtn-next" id="g-next" style="display:none">Próxima →</button>
+      <div class="g-stage" id="g-stage">
+        <div class="g-stage-head">
+          <div class="g-stage-identity"><span class="g-stage-icon"><img id="g-stage-icon" src="category-icons/bandeiras.png" alt=""></span><span class="g-stage-heading"><span id="g-stage-kicker">DESAFIO VISUAL</span><strong id="g-stage-topic">Quiz</strong></span></div>
+          <span class="g-stage-count" id="g-stage-count">01 / 10</span>
         </div>
+        <div class="g-stage-track" id="g-stage-track"><span id="g-stage-progress"></span></div>
+        <div id="g-qlabel" class="g-qlabel"></div>
+        <div class="g-image-wrap" id="g-image-wrap-el">
+          <div class="g-image-card" id="g-image-card">
+            <img id="g-img" src="" alt="Imagem da pergunta"/>
+            <div id="g-img-ph"><span id="g-img-ph-icon">···</span><span id="g-img-ph-label"></span></div>
+          </div>
+          <div class="g-text-card" id="g-text-card" style="display:none">
+            <div class="g-text-phrase" id="g-text-phrase"></div>
+          </div>
+          <div class="g-map-card" id="g-map-card" style="display:none"></div>
+          <div class="g-format-card" id="g-format-card" style="display:none"></div>
+        </div>
+        <div id="g-image-credit" class="g-image-credit" style="display:none"></div>
+        <div class="g-input-area">
+          <label id="g-answer-label" class="g-answer-label" for="g-input">Sua resposta</label>
+          <input id="g-input" type="text" placeholder="Digite a resposta..." autocomplete="off" spellcheck="false"/>
+          <div id="g-options" class="g-options" style="display:none"></div>
+          <div id="g-feedback" role="status"></div>
+          <div class="g-btn-row">
+            <button class="gbtn gbtn-skip" id="g-skip">Desistir</button>
+            <button class="gbtn gbtn-next" id="g-next" style="display:none">Próxima →</button>
+          </div>
+        </div>
+        <div id="g-explanation" class="g-explanation" hidden></div>
       </div>
     </div>
     <div class="g-right" id="g-right">
@@ -541,6 +549,17 @@ function showFormatAnswer(){
   answer.textContent=AQ.kind==='timeline'?'Ordem: '+current.events.map(event=>`${event.year}: ${event.label}`).join(' → '):'Pares: '+current.pairs.map(pair=>`${pair.country} — ${pair.capital}`).join(' · ');
   card.append(answer);card.querySelectorAll('button').forEach(button=>button.disabled=true);
 }
+function updateStageProgress(completed=false){
+  const total=(isMixed?QUIZZES.reduce((sum,quiz)=>sum+quiz.getPool('all').length,0):AQ.getPool(gameMode,gameCont).length)-failedImages.size;
+  const visibleTotal=playMode==='solo'&&soloLength==='quick'?Math.min(10,total):total;
+  const track=$('g-stage-track');track.hidden=playMode==='host';
+  $('g-stage-count').textContent=playMode==='host'?`RODADA ${String(round).padStart(2,'0')}`:`${String(round).padStart(2,'0')} / ${visibleTotal}`;
+  $('g-stage-progress').style.width=playMode==='host'?'0%':`${Math.min(100,(round-(completed?0:1))/Math.max(1,visibleTotal)*100)}%`;
+  $('g-stage-icon').src=`category-icons/${AQ.id}.png`;
+  $('g-text-card').dataset.round=String(round).padStart(2,'0');
+  $('g-stage-topic').textContent=AQ.title;
+  $('g-stage-kicker').textContent=AQ.kind==='map'?'DESAFIO NO MAPA':AQ.kind==='timeline'?'ORDEM CRONOLÓGICA':AQ.kind==='match'?'ENCONTRE OS PARES':AQ.getText?'PERGUNTA DO TEMA':'DESAFIO VISUAL';
+}
 async function nextRound(){
   if((playMode==='solo'||isMixed)&&(!queue.length||playMode==='solo'&&soloLength==='quick'&&round>=10)){finishSession();return;}
   if(!queue.length)queue=shuffle(AQ.getPool(gameMode,gameCont).filter(item=>!failedImages.has(item)));
@@ -562,10 +581,12 @@ async function nextRound(){
   phIcon.textContent="···";phLabel.textContent="Carregando imagem...";
 
   $("g-round").textContent="Rodada "+round;
+  $('g-stage').classList.remove('is-revealed');
+  updateStageProgress();
   $("g-qlabel").textContent=AQ.kind==="map"?"Onde fica "+current.name+"?":(AQ.getText||AQ.kind==='timeline'||AQ.kind==='match'?"":AQ.question);
   $('g-image-wrap-el').classList.toggle('is-text',Boolean(AQ.getText));
   $('g-image-wrap-el').classList.toggle('is-format',AQ.kind==='timeline'||AQ.kind==='match');
-  $("g-feedback").innerHTML="&nbsp;";$("g-feedback").className="";
+  $("g-feedback").textContent="";$("g-feedback").className="";
   $("g-next").style.display="none";$("g-skip").style.display="";
   renderAnswerUI();
 
@@ -610,6 +631,7 @@ async function nextRound(){
 function reveal(skipped,wrongLabel){
   if(revealed)return;
   revealed=true;loadingRound=-1;
+  $('g-stage').classList.add('is-revealed');updateStageProgress(true);
   roundResults.push({name:current.name,correct:roundCorrect,seconds:Math.max(0,Math.round((Date.now()-roundStartedAt)/1000))});
   const inp=$("g-input");inp.disabled=true;
   $("g-next").style.display="";$("g-skip").style.display="none";
@@ -629,7 +651,7 @@ function reveal(skipped,wrongLabel){
   if(AQ.kind==="map")showMapAnswer();
   else if(AQ.kind==='timeline'||AQ.kind==='match')showFormatAnswer();
   else showMediaCredit();
-  if(current.explanation){const box=$('g-explanation');box.hidden=false;const text=document.createElement('p');text.textContent=current.explanation;box.append(text);if(current.source){const source=document.createElement('a');source.href=current.source;source.target='_blank';source.rel='noopener noreferrer';source.textContent='Conferir fonte';box.append(source)}}
+  if(current.explanation){const box=$('g-explanation');box.hidden=false;const text=document.createElement('p');text.textContent=current.explanation;box.append(text);if(current.source){const source=document.createElement('a');source.href=current.source;source.target='_blank';source.rel='noopener noreferrer';source.textContent='Conferir fonte';box.append(source)}requestAnimationFrame(()=>box.scrollIntoView({block:'nearest',behavior:'smooth'}))}
 }
 
 function markCorrect(){
@@ -645,12 +667,14 @@ function setDifficulty(mode){
 }
 
 function renderAnswerUI(){
-  const inp=$("g-input"),opts=$("g-options"),skip=$("g-skip");
+  const inp=$("g-input"),opts=$("g-options"),skip=$("g-skip"),label=$('g-answer-label');
   inp.value="";inp.className="";inp.disabled=false;inp.placeholder=AQ.placeholder;
   if(AQ.kind==="map"||AQ.kind==='timeline'||AQ.kind==='match'){
+    label.hidden=true;
     inp.style.display="none";opts.style.display="none";opts.replaceChildren();skip.style.display="";
     return;
   }
+  label.hidden=false;label.textContent=difficulty==='easy'?'ESCOLHA UMA RESPOSTA':'SUA RESPOSTA';
   if(difficulty==="easy"){
     inp.style.display="none";opts.style.display="grid";skip.style.display="none";
     opts.innerHTML="";
