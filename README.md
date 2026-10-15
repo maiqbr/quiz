@@ -1,5 +1,7 @@
 # QuizArena
 
+**Para entender ou modificar o projeto, comece pelo [Guia do projeto](GUIA-DO-PROJETO.md).** Ele reúne mapa dos arquivos, fluxos de jogo, conteúdo, identidade visual, ranking, publicação e decisões. Toda alteração futura deve atualizar o guia no mesmo commit.
+
 Quiz de 17 temas para jogar sozinho ou apresentar em uma tela compartilhada. [Site publicado](https://quiz.maiq.dev.br), servido por Cloudflare Workers com D1 para o ranking.
 
 O modo solo oferece **Rápida (até 10)**, **Casual (até 50)** e **Treino (até 100)**, inclusive no quiz misto. As perguntas não se repetem na mesma partida; temas menores usam todas as perguntas disponíveis. O modo de apresentação mantém um placar manual para pessoas ou equipes, tempo opcional por pergunta, resumo e histórico no navegador. Os dois modos funcionam sem conta. O tema escuro é o padrão; há um switch para o modo claro.

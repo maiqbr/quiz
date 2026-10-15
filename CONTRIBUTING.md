@@ -1,5 +1,7 @@
 # Contribuindo
 
+Leia o [Guia do projeto](GUIA-DO-PROJETO.md) antes de mudar o QuizArena. **Toda mudança deve atualizar o guia no mesmo commit**, tanto a seção afetada quanto seu registro de mudanças. Assim, os próximos colaboradores encontram o comportamento atual e o motivo da alteração em um só lugar.
+
 Correções de respostas, acessibilidade, interface e novas perguntas são bem-vindas. Abra uma issue ou pull request com a mudança e a fonte usada para conferir fatos ou grafias.
 
 Para acrescentar perguntas, edite `content.js`, atualize a contagem do cartão correspondente e rode `node scripts/validate-content.mjs`. Prefira respostas sem ambiguidade, inclua grafias alternativas úteis e teste a pergunta nos modos de digitação e múltipla escolha. Para imagens, registre arquivo, autor, licença, página de origem e data de revisão; não adicione arquivos de terceiros ao repositório sem direito de distribuição. Mantenha a interface sem emojis.
